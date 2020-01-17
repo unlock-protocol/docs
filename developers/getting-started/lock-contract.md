@@ -1,6 +1,6 @@
 # Lock Contract
 
-Lock contracts are smart contract “class”, deployed on an Ethereum Blockchain and written in Solidity. Each instance is owned by a creator and represents access to a given resource \(or set of resources\). The Lock keeps track of its keys, which are non fungible tokens. We do not expect any deployed lock to be upgraded, however we will likely introduce more complex versions of the Lock with more features or characteristics.
+A Lock contract is a smart contract “class”, deployed on an Ethereum Blockchain and written in Solidity. Each instance is owned by a creator and represents access to a given resource \(or set of resources\). The Lock keeps track of its keys, which are non fungible tokens. We do not expect any deployed lock to be upgraded, however we will likely introduce more complex versions of the Lock with more features or characteristics.
 
 One of its characteristics is that instances of it are deployed **from the Unlock Protocol smart contract**. The goal of this is to guarantee that the Unlock Protocol smart contract can keep track of revenue it generates as well as decides of discounts when users purchase them. As such the “address” of the Unlock Smart Contract is kept in each Lock contract and can only be changed by the Unlock Smart Contract itself.
 
