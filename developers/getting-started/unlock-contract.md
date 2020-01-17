@@ -4,9 +4,9 @@ The Unlock Smart contract is only deployed once. It has several roles:
 
 * Deploying Locks: locks are deployed through the Unlock smart contract. This is important because the Locks will actually invoke the Unlock smart contract when keys are sold and the Unlock smart contract will check that the invoking lock has been deployed through it.
 * Keeping Track of the Unlock Discount Tokens. Unlock Discount Tokens are ERC20 tokens \(TODO\) which implement the Unlock network loyalty program. The Discount Tokens are granted when keys are purchased, either thru referrals or when a creator grants a discount.
-* Granting Discount. The Unlock smart contract will compute the available discount for each key purchase based on the amount of discount tokens owned by the key buyer.
+* Granting Discounts. The Unlock smart contract will compute the available discount for each key purchase based on the amount of discount tokens owned by the key buyer.
 
-This smart contract needs to be "upgradable" to deploy changes. It is critical that its address does not change however so that all the Locks deployed by it can still access it. We are using zeppelinOS \(zOS\) to enable upgradeability. This requires us to use openzeppelin-eth \(instead of openzeppelin-solidity\), as its contracts have been modified to use init functions instead of constructors. Openzeppelin-solidity does not work correctly!
+This smart contract needs to be "upgradable" to deploy changes. It is critical that its address does not change however so that all the Locks deployed by it can still access it. We are using [openzeppelin](https://openzeppelin.com/)  to enable upgradeability. 
 
 ### **Structs**
 

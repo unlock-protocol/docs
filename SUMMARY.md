@@ -11,9 +11,9 @@
 
 * [Unlock.js](developers/unlock.js.md)
 * [Smart Contracts](developers/getting-started/README.md)
-  * [Usage](developers/getting-started/usage.md)
-  * [Lock Contract](developers/getting-started/lock-contract.md)
   * [Unlock Contract](developers/getting-started/unlock-contract.md)
+  * [Lock Contract](developers/getting-started/lock-contract.md)
+  * [Usage](developers/getting-started/usage.md)
 * [Subgraph](developers/subgraph.md)
 
 ## Applications

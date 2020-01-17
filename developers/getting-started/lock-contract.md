@@ -1,6 +1,6 @@
 # Lock Contract
 
-The lock contract is a smart contract “class”, deployed on an Ethereum Blockchain and written in Solidity. Each instance is owned by a creator and represents access to a given resource \(or set of resources\). The Lock keeps track of its keys, which are non fungible tokens. We do not expect any deployed lock to be upgraded, however we will likely introduce more complex versions of the Lock with more features or characteristics.
+Lock contracts are smart contract “class”, deployed on an Ethereum Blockchain and written in Solidity. Each instance is owned by a creator and represents access to a given resource \(or set of resources\). The Lock keeps track of its keys, which are non fungible tokens. We do not expect any deployed lock to be upgraded, however we will likely introduce more complex versions of the Lock with more features or characteristics.
 
 One of its characteristics is that instances of it are deployed **from the Unlock Protocol smart contract**. The goal of this is to guarantee that the Unlock Protocol smart contract can keep track of revenue it generates as well as decides of discounts when users purchase them. As such the “address” of the Unlock Smart Contract is kept in each Lock contract and can only be changed by the Unlock Smart Contract itself.
 
@@ -22,8 +22,8 @@ The Lock Smart Contract has multiple capabilities:
 
 The key is a struct which encapsulate data relative to an individual key. It has the following fields:
 
-* _Expiration date_ \(date\): the timestamp at which the key is not considered valid anymore. The lock owner only can change this value, effectively expiring individual keys.
-* _Data field \(string\)_: this can be changed only by the key owner who may use this to mark the key. The size of this field is unbounded and should be used as a pointer to the actual data. It can also be used to store encrypted data to identify the key owner.
+* tokenId \(uint\): A unique identifier for each key on a given lock.
+* expirationTimestamp __ \(uint\): the timestamp at which the key is not considered valid anymore. The lock owner only can change this value, effectively expiring individual keys.
 
 ### **Data**
 
