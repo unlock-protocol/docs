@@ -1,5 +1,5 @@
 ---
-description: This page provides document for the Unlock Wordpress plugin.
+description: This page provides documentation for the Unlock Wordpress plugin.
 ---
 
 # Wordpress Plugin
