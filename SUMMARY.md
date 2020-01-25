@@ -6,6 +6,7 @@
 ## Plugins and Integrations
 
 * [Wordpress Plugin](plugins-and-integrations/wordpress-plugin.md)
+* [Drupal Plugin](plugins-and-integrations/drupal-plugin.md)
 
 ## Developers
 
