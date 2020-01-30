@@ -1,13 +1,6 @@
 # Smart Contracts
 
-## Smart Contracts
-
-This is the code for Unlock protocol's smart contracts. There are 2 "main" smart contracts:
-
-* [Unlock](https://docs.unlock-protocol.com/developers/getting-started#unlock)
-* [Lock](https://docs.unlock-protocol.com/developers/getting-started#lock)
-
-## High-Level overview of contracts & Interfaces
+## High-Level Overview of Architecture
 
 ### Lock
 
