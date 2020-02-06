@@ -3,6 +3,10 @@
 * [Getting Started](README.md)
 * [Frequently Asked Questions](frequently-asked-questions.md)
 
+## Use Cases
+
+* [Ad Free Experience](use-cases/ad-free-experience.md)
+
 ## Plugins and Integrations
 
 * [Wordpress Plugin](plugins-and-integrations/wordpress-plugin.md)

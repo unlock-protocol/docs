@@ -23,7 +23,7 @@ In the search bar on the plugins page, search for "Unlock Protocol"
 
 ![Search for the plugin](../.gitbook/assets/image%20%286%29.png)
 
-![Click on &quot;Install Now&quot;, and then on &quot;Activate&quot;.](../.gitbook/assets/image%20%2811%29.png)
+![Click on &quot;Install Now&quot;, and then on &quot;Activate&quot;.](../.gitbook/assets/image%20%2810%29.png)
 
 Once the plugin has been installed, you need to configure it with your lock address.
 
@@ -47,7 +47,7 @@ Like any other block, click on the ⊕ sign to add an "Unock Protocol Block".
 
 Once added to the page, the block contains a visual indication \(only when editint the post!\) to show the block's status:
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 From there you can add more content which will only be visible by members.
 
