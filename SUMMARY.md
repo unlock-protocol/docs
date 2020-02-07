@@ -3,10 +3,6 @@
 * [Getting Started](README.md)
 * [Frequently Asked Questions](frequently-asked-questions.md)
 
-## Use Cases
-
-* [Ad Free Experience](use-cases/ad-free-experience.md)
-
 ## Plugins and Integrations
 
 * [Wordpress Plugin](plugins-and-integrations/wordpress-plugin.md)
@@ -24,6 +20,10 @@
     * [Lock Contract](developers/smart-contracts-architecture/deprecated/lock-contract.md)
     * [Unlock Contract](developers/smart-contracts-architecture/deprecated/unlock-contract.md)
 * [Subgraph](developers/subgraph.md)
+
+## Tutorials
+
+* [Building an Ad Free Experience](tutorials/ad-free-experience.md)
 
 ## Applications
 
