@@ -10,7 +10,6 @@
 
 ## Developers
 
-* [Unlock.js](developers/unlock.js.md)
 * [Smart Contracts Architecture](developers/smart-contracts-architecture/README.md)
   * [Lock Api](developers/smart-contracts-architecture/lock-api.md)
   * [Unlock API](developers/smart-contracts-architecture/unlock-api.md)
@@ -19,11 +18,12 @@
     * [Smart Contracts](developers/smart-contracts-architecture/deprecated/getting-started.md)
     * [Lock Contract](developers/smart-contracts-architecture/deprecated/lock-contract.md)
     * [Unlock Contract](developers/smart-contracts-architecture/deprecated/unlock-contract.md)
+* [Unlock.js](developers/unlock.js.md)
 * [Subgraph](developers/subgraph.md)
 
 ## Tutorials
 
-* [Building an Ad Free Experience](tutorials/ad-free-experience.md)
+* [Building an Ad Free Experience](use-cases/ad-free-experience.md)
 
 ## Applications
 
