@@ -23,7 +23,8 @@
 
 ## Tutorials
 
-* [Building an Ad Free Experience](use-cases/ad-free-experience.md)
+* [Building an Ad Free Experience](tutorials/ad-free-experience.md)
+* [Using Unlock for Newsletters](tutorials/using-unlock-newsletter.md)
 
 ## Applications
 
