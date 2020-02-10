@@ -29,6 +29,7 @@
 ## Applications
 
 * [Paywall](applications/paywall/README.md)
+  * [Advanced Paywall Configuration](applications/paywall/advanced-paywall-configuration.md)
   * [Paywall Postmessaging](applications/paywall/paywall-postmessaging/README.md)
     * [Types used in messages](applications/paywall/paywall-postmessaging/types-used-in-messages.md)
     * [PostMessages Enum](applications/paywall/paywall-postmessaging/postmessages-enum.md)
