@@ -8,7 +8,7 @@ description: >-
 
 ## Collecting User Metadata
 
-In some cases, it may be valuable to collect information from purchasers before they purchase a key. For example, you may want to know the email address of all keyholders so that you can send updates to them.
+In some cases, it may be valuable to collect information from purchasers before they purchase a key. For example, you may want to know the email address of all keyholders so that you can send updates to them. In that case, you will want to work with [user-specific metadata](../../developers/metadata.md#user-specific-metadata).
 
 To achieve this, add a property called `metadataInputs` to your configuration object:
 

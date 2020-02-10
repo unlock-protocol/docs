@@ -20,6 +20,7 @@
     * [Unlock Contract](developers/smart-contracts-architecture/deprecated/unlock-contract.md)
 * [Unlock.js](developers/unlock.js.md)
 * [Subgraph](developers/subgraph.md)
+* [Metadata](developers/metadata.md)
 
 ## Tutorials
 
