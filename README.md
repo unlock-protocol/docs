@@ -80,6 +80,8 @@ var unlockProtocolConfig = {
 
 The object has the following optional attributes: icon and callToAction. `​icon​` references an image to be shown on the modal and the `​callToAction`​ object with a ​default​ value set to the text shown on the checkout modal.
 
+For more advanced configuration settings, including the collection of user metadata before a key purchase, see [Advanced Paywall Configuration](applications/paywall/advanced-paywall-configuration.md).
+
 ## Handle Events
 
 Once loaded the unlock script will trigger events on the page’s ​`window`​ object. These events will indicate to the page whether the current visitor owns a key to any of the lock \(the state should be `​unlocked`​ or if they do not, and the state should be `​locked​`\).
