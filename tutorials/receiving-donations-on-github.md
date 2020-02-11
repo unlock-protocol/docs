@@ -49,6 +49,7 @@ An optional, but recommended step is to add the members wall to your Github page
 
 It will add an image like this one, which is the list of all Unlock blog members as of writing ;\)
 
+![Blog Members](https://member-wall.unlock-protocol.com/api/members?locks=0xB0114bbDCe17e0AF91b2Be32916a1e236cf6034F&maxWidth=1000)
 
 
 
