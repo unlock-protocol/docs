@@ -25,7 +25,7 @@ You can customize it by adding the following parameters in the URL:
 
 Make sure you separate each of these with the `&` character. For example, Camila Russo uses the [following url](https://newsletter.unlock-protocol.com/?title=The%20Defiant&description=A%20daily%20newsletter%20decrypting%20the%20intersection%20of%20blockchain%20and%20finance.&locks=0x43154Efc9cb33c80833C0dEc1E15bb9CfC1275e5&locks=0xFA7001A0310B5E69B7b95B72aeBaA66C72E084bf) which renders in the following:
 
-![Example of landing page for a Newsletter \(title and description are set from the URL query parameters\)](../.gitbook/assets/image%20%2812%29.png)
+![Example of landing page for a Newsletter \(title and description are set from the URL query parameters\)](../.gitbook/assets/image%20%2813%29.png)
 
 ### Send the URL to your fans!
 
@@ -35,7 +35,7 @@ Once they submit their email address, they crypto-wallet will prompt your member
 
 Immediately after this, they will be asked to purchase the membership.
 
-![The checkout interface to purchase a membership and join your newsletter \(the price and name are based on your own lock...\)](../.gitbook/assets/image%20%2810%29.png)
+![The checkout interface to purchase a membership and join your newsletter \(the price and name are based on your own lock...\)](../.gitbook/assets/image%20%2811%29.png)
 
 ### List members and email addresses
 

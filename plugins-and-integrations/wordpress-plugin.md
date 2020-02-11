@@ -21,15 +21,15 @@ Inside the admin section of your WordPress site, click on Plugins &gt; Add New
 
 In the search bar on the plugins page, search for "Unlock Protocol"
 
-![Search for the plugin](../.gitbook/assets/image%20%289%29.png)
+![Search for the plugin](../.gitbook/assets/image%20%2810%29.png)
 
-![Click on &quot;Install Now&quot;, and then on &quot;Activate&quot;.](../.gitbook/assets/image%20%2817%29.png)
+![Click on &quot;Install Now&quot;, and then on &quot;Activate&quot;.](../.gitbook/assets/image%20%2818%29.png)
 
 Once the plugin has been installed, you need to configure it with your lock address.
 
 ![For this, in the Settings Menu, pick Unlock.](../.gitbook/assets/image%20%283%29.png)
 
-![Enter your lock address. \(See per-requisite to deploy your own lock\)](../.gitbook/assets/image%20%286%29.png)
+![Enter your lock address. \(See per-requisite to deploy your own lock\)](../.gitbook/assets/image%20%287%29.png)
 
 After this, you're all set and you can start locking content on your posts or pages!
 
@@ -43,11 +43,11 @@ The second block is actually a button to let your visitors purchase an access ke
 
 Like any other block, click on the ⊕ sign to add an "Unock Protocol Block".
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 Once added to the page, the block contains a visual indication \(only when editint the post!\) to show the block's status:
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 From there you can add more content which will only be visible by members.
 
@@ -69,7 +69,7 @@ The Editor also lets you chose a "Checkout Button" which users can click on to b
 
 Once added to the page you can customize its text. The button defaults to the template style.
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 Make sure you save your post or page once it's been configured! 
 
