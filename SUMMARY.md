@@ -26,6 +26,7 @@
 
 * [Building an Ad Free Experience](tutorials/ad-free-experience.md)
 * [Using Unlock for Newsletters](tutorials/using-unlock-newsletter.md)
+* [Receiving donations on Github](tutorials/receiving-donations-on-github.md)
 
 ## Applications
 
