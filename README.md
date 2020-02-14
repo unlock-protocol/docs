@@ -30,16 +30,16 @@ When creating a lock, the creator can select the following attributes:
 * The price consumers need to pay to get a key, including its currency
 * How many keys at most can be sold
 
-The UI only offers to chose between DAI and Ether, but any ERC20 can be used. You can configure the UI to display any ERC20 token, by adding the `erc20` and `ticker` query parameters to the dashboard URL. For example, [this URL](https://app.unlock-protocol.com/dashboard/?ticker=USDc&erc20=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) let's use deploy a [USDc](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) lock when you click on the "Create Lock" button.
-
 Once deployed the lock will have its own address and is fully owned by the creator \(no-one, including Unlock Inc. can change or remove it\). Locks can also be transferred to a different owner after they've been created.
 
 ### Creating a Stable Coin Backed Lock
 
-Locks can be configured to be backed by any token that conforms to the ERC20 specification.  Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and \`ticker\` query parameters.
+The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Locks can be configured to be backed by any token that conforms to the ERC20 specification.  Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and `ticker` query parameters.
 
 * [Create a DAI Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x6b175474e89094c44da98b954eedeac495271d0f&ticker=DAI)
 * [Create a USDC Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&ticker=USDC)
+
+
 
 ## Install a Lock on a Web Page
 
