@@ -9,7 +9,7 @@ We will walk through the process of setting up Unlock from the creator's perspec
 Things can be broken in the following steps:
 
 * [Create a Lock](https://docs.unlock-protocol.com/#create-a-lock)
-  * Creating a Stable Coin Backed Lock
+  * [Creating a Stable Coin Backed Lock](https://docs.unlock-protocol.com/#creating-a-stable-coin-backed-lock)
 * [Install a Lock on a Web Page](https://docs.unlock-protocol.com/#install-a-lock-on-a-web-page)
 * [Configure the Lock](https://docs.unlock-protocol.com/#configure-the-lock)
 * [Handle Events](https://docs.unlock-protocol.com/#handle-events)
