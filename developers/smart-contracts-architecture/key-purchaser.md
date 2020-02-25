@@ -23,4 +23,6 @@ Locks priced in ETH are not supported, however you could use WETH instead.
 A factory for creating keyPurchasers. This contract acts as a registry to discover purchasers for a lock, guarantees a consistent implementation of KeyPurchaser, and that confirms it was created by the lock owner.
 
 # Future improvements
-Merge with swap-and-call: allow users to subscribe using any ERC20 token, regardless of what the lock is priced in. This is hard to do safely due to possible price manipulation - I think we should revisit this after UniswapV2 is released.
+
+ - Merge with swap-and-call: allow users to subscribe using any ERC20 token, regardless of what the lock is priced in. This is hard to do safely due to possible price manipulation - I think we should revisit this after UniswapV2 is released.
+ - Introduce a financial reward to cover the gas fees
