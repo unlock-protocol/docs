@@ -12,6 +12,16 @@ Our first version of Unlock is for technical publishers who also control their t
 
 As part of our roadmap, we plan on allowing users who do not know of cryptocurrencies or have a crypto wallet to pay us \(Unlock Inc\) with their credit card in order to perform the transaction on chain for them. In that context we will charge a convenience fee on top of the \(crypto\) price of the keys. This convenience fee will cover the gas price, the credit card transaction and a small margin for us.
 
+## What crypto wallet are supported?
+
+Unlock is powered by Ethereum, which means that you can use your own wallet to purchase memberships \(we call them keys\).  
+
+We recommend the use of in-browser wallets such as [MetaMask](https://MetaMask.io/) \(for both Firefox and Chrome\), or browsers which include wallets directly, such as [Opera](https://www.opera.com/) or [Brave](https://brave.com/).
+
+February 2020: We are working on adding support for [WalletConnect](https://walletconnect.org/). Please reach out if you can help!
+
+If you do not have your own cryptocurrency wallet, you can create an account with Unlock and purchase memberships with your traditional payment \(credit or debit\) cards on _selected_ _locks_.
+
 ## Can users bypass the paywall?
 
 Our goal is to optimize for convenience and remove as much friction as possible. We want to make it easy for most people to pay to access the content they care about. This means that yes, some users will find ways to abuse Unlock's paywall for example, by disabling JavaScript in their browsers, or by using incognito windows \(on the metered paywalls...\) etc.
