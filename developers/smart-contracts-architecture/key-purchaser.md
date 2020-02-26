@@ -10,7 +10,7 @@ The lock manager deploys a KeyPurchaser via the KeyPurchaserFactory contract. Th
 
 Users can remove the allowance to cancel anytime.
 
-A backend service monitors approvals and issues a transaction to the KeyPurchaser to execute the purchase as appropriate. Unlock-Protocol will host this service but there are no restrictions - anyone could perform this service.
+A backend service monitors approvals and issues a transaction to the KeyPurchaser to execute the purchase as appropriate. Unlock-Protocol will host this but there are no restrictions - anyone could perform this service.
 
 ## Limitations
 
