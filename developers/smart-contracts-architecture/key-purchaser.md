@@ -25,4 +25,4 @@ A factory for creating keyPurchasers. This contract acts as a registry to discov
 # Future improvements
 
  - Merge with swap-and-call: allow users to subscribe using any ERC20 token, regardless of what the lock is priced in. This is hard to do safely due to possible price manipulation - I think we should revisit this after UniswapV2 is released.
- - Introduce a financial reward to cover the gas fees
+ - Introduce a financial reward to cover the gas fees.
