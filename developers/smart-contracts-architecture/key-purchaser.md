@@ -16,7 +16,7 @@ A backend service monitors approvals and issues a transaction to the KeyPurchase
 
 Risk: if the user transfers or cancels the key, they would naturally expect that also cancels the subscription but it does not. This should be handled by the frontend.
 
-Locks priced in ETH are not supported, however you could use WETH instead.
+Locks priced in ETH are not supported, however you could use WETH instead. KeyPurchases supports any lock where the keyPrice is 0 (even if the tokenAddress is ETH).
 
 # KeyPurchaserFactory
 
