@@ -28,7 +28,7 @@ Again someone could spread the discount code further than intended, but this is 
 
 Example: `KYC required`
 
-A whitelist can be created with this feature as well. This allows a trusted operator to confirm which ETH accounts may purchase a key. e.g. maybe there is a KYC process.
+A whitelist can be created with this feature as well. This allows a trusted operator to confirm which ETH accounts may purchase a key. e.g. maybe you need to check IDs first.
 
 Once approved, the operator shares the signature required to purchase. This allows only that account to purchase and the secret itself can remain secure (with the operator).
 
