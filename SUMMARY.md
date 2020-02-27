@@ -14,6 +14,7 @@
   * [Lock Api](developers/smart-contracts-architecture/lock-api.md)
   * [Unlock API](developers/smart-contracts-architecture/unlock-api.md)
   * [Usage & Integration](developers/smart-contracts-architecture/usage.md)
+  * [Code Required Hook](developers/smart-contracts-architecture/code-required-hook.md)
   * [Key Purchaser](developers/smart-contracts-architecture/key-purchaser.md)
   * [Deprecated](developers/smart-contracts-architecture/deprecated/README.md)
     * [Smart Contracts](developers/smart-contracts-architecture/deprecated/getting-started.md)
