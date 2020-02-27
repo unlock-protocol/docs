@@ -10,7 +10,7 @@ Simply put, with this feature we can require a secret is known in order to purch
 
 ### Access code
 
-Example: `Enter the code 'this is a beta' to gain access`
+Example: `Enter 'this is a beta' to gain access`
 
 You might want to limit access to a smaller group, e.g. maybe you are beta testing a new feature and want to invite everyone from your Telegram channel. You could offer a key for free, but require they explicitly acknowledge the risks by entering this code.
 
