@@ -2,6 +2,8 @@
 
 The CodeRequiredHook contract allows lock creators to restrict key purchases.
 
+Note that this has not yet been launched, but coming soon!
+
 ## About
 
 Simply put, with this feature we can require a secret is known in order to purchase keys. Here are a few use cases this enables:
