@@ -38,7 +38,7 @@ Are you an Open Source developer? Are you an artist? Do you want to monetize you
 custom: https://donate.unlock-protocol.com/?r=<USERNAME/ORG>/<REPO>
 ```
 
-1. Upload all this to Github and you should see the ![](../.gitbook/assets/image%20%2814%29.png) button on your repository!
+1. Upload all this to Github and you should see the ![](../.gitbook/assets/image%20%2817%29.png) button on your repository!
 
 An optional, but recommended step is to add the members wall to your Github page! This is a way to show all the avatars of your patrons and supporters! Just add the following to your Github README page where you replaced `<LOCKS>` with a coma separated list of lock addresses.
 
