@@ -62,5 +62,7 @@ Eventually: no. We plan on making it easy for people who do not have a crypto wa
 
 Yes - if you are using an Ethereum-enabled web browser such as Opera or Coinbase's Wallet.
 
+## Is there a test net deployment?
 
+Yes, Unlock has been deployed on the Rinkeby test network. You can use it by going to [https://staging.unlock-protocol.com](https://staging.unlock-protocol.com). 
 
