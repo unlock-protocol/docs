@@ -11,7 +11,7 @@ Are you an Open Source developer? Are you an artist? Do you want to monetize you
 1. The first step is to deploy a lock. Follow [these steps](https://docs.unlock-protocol.com/#create-a-lock) from the Unlock Dashboard. For patronage, it may make sense to limit the maximum number of patrons for example. 
 2. Then, you should use our [donation page generator](https://donate.unlock-protocol.com/generate.html). It lets you build the configuration to use for your donation lock. It lets you change the logo, the call to action \(which is shown to users before they purchase your membership keys\) and the thank you message displayed for them.
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 1. After this, you need to add the lock address from the first step in this tutorial. You can add more than one lock if you want to give multiple options to your supporters
 2. After this, click on the **Generate** button.This will generate a blob of JSON like the one below. Save it inside of your repository with the name `.unlock-protocol.config.json`
@@ -38,7 +38,7 @@ Are you an Open Source developer? Are you an artist? Do you want to monetize you
 custom: https://donate.unlock-protocol.com/?r=<USERNAME/ORG>/<REPO>
 ```
 
-1. Upload all this to Github and you should see the ![](../.gitbook/assets/image%20%2817%29.png) button on your repository!
+1. Upload all this to Github and you should see the ![](../.gitbook/assets/image%20%2819%29.png) button on your repository!
 
 An optional, but recommended step is to add the members wall to your Github page! This is a way to show all the avatars of your patrons and supporters! Just add the following to your Github README page where you replaced `<LOCKS>` with a coma separated list of lock addresses.
 

@@ -25,7 +25,7 @@ You can customize it by adding the following parameters in the URL:
 
 Make sure you separate each of these with the `&` character. For example, Camila Russo uses the [following url](https://newsletter.unlock-protocol.com/?title=The%20Defiant&description=A%20daily%20newsletter%20decrypting%20the%20intersection%20of%20blockchain%20and%20finance.&locks=0x43154Efc9cb33c80833C0dEc1E15bb9CfC1275e5&locks=0xFA7001A0310B5E69B7b95B72aeBaA66C72E084bf) which renders in the following:
 
-![Example of landing page for a Newsletter \(title and description are set from the URL query parameters\)](../.gitbook/assets/image%20%2815%29.png)
+![Example of landing page for a Newsletter \(title and description are set from the URL query parameters\)](../.gitbook/assets/image%20%2817%29.png)
 
 ### Send the URL to your fans!
 
@@ -35,17 +35,17 @@ Once they submit their email address, they crypto-wallet will prompt your member
 
 Immediately after this, they will be asked to purchase the membership.
 
-![The checkout interface to purchase a membership and join your newsletter \(the price and name are based on your own lock...\)](../.gitbook/assets/image%20%2813%29.png)
+![The checkout interface to purchase a membership and join your newsletter \(the price and name are based on your own lock...\)](../.gitbook/assets/image.png)
 
 ### List members and email addresses
 
 Once people have purchased a membership, the [Unlock Dashboard](https://app.unlock-protocol.com/dashboard/) lets you easily list all members, including their email addresses. For this, click on the members icon ![](../.gitbook/assets/members%20%281%29.png) on your lock in the list of locks.
 
-![A lock in the Unlock Dashboard](../.gitbook/assets/image%20%285%29.png)
+![A lock in the Unlock Dashboard](../.gitbook/assets/image%20%2815%29.png)
 
 The list of members includes the lock name, the address of the member \(key holder\), the expiration date for their membership, as well as their email address.
 
-![The members list](../.gitbook/assets/image.png)
+![](../.gitbook/assets/newsletter-members.png)
 
 You can export that list as CSV and import it into your email sending tool, such as [Substack](https://substack.com/), [Mailchimp](https://mailchimp.com/), and more. You can also send the emails directly from your own email client.
 
