@@ -6,6 +6,8 @@ description: >-
 
 # Selling tickets for an event
 
+To get started, please check [this demo website](https://unlock-event-ticket.glitch.me/) which shows an example of a fake event selling tickets through Unlock.
+
 ## Deploying the lock\(s\)
 
 This is the first step. The [Unlock Dashboard](https://app.unlock-protocol.com/dashboard/) provides the easiest interface to deploy your lock.
