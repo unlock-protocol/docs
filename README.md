@@ -9,9 +9,9 @@ We will walk through the process of setting up Unlock from the creator's perspec
 Things can be broken in the following steps:
 
 * [Create a Lock](https://docs.unlock-protocol.com/#create-a-lock)
-  * [Creating a Stable Coin Backed Lock](https://docs.unlock-protocol.com/#creating-a-stable-coin-backed-lock)
+  * [Creating a custom ERC20 lock ](https://docs.unlock-protocol.com/#creating-a-stable-coin-backed-lock) 
 * [Install a Lock on a Web Page](https://docs.unlock-protocol.com/#install-a-lock-on-a-web-page)
-* [Configure the Lock](https://docs.unlock-protocol.com/#configure-the-lock)
+* [Configure the paywall ](https://docs.unlock-protocol.com/#configure-the-lock)
 * [Handle Events](https://docs.unlock-protocol.com/#handle-events)
 * [Initiate Checkout](https://docs.unlock-protocol.com/#initiate-checkout)
 
@@ -32,14 +32,13 @@ When creating a lock, the creator can select the following attributes:
 
 Once deployed the lock will have its own address and is fully owned by the creator \(no-one, including Unlock Inc. can change or remove it\). Locks can also be transferred to a different owner after they've been created.
 
-### Creating a Stable Coin Backed Lock
+### Creating a Lock for a custom ERC20 token
 
 The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Locks can be configured to be backed by any token that conforms to the ERC20 specification.  Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and `ticker` query parameters.
 
 * [Create a DAI Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x6b175474e89094c44da98b954eedeac495271d0f&ticker=DAI)
 * [Create a USDC Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&ticker=USDC)
-
-
+* [Create a BAT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x0d8775f648430679a709e98d2b0cb6250d2887ef&ticker=BAT)
 
 ## Install a Lock on a Web Page
 
@@ -56,7 +55,7 @@ sc.parentNode.insertBefore(js, sc); }(document, "script"));
 </script>
 ```
 
-## Configure the Lock
+## Configure the Paywall
 
 The following snippet should also be placed in the ​`<head>`​ section of the HTML document and will let you configure the behavior of the paywall.
 
@@ -86,7 +85,7 @@ var unlockProtocolConfig = {
 
 `​unlockProtocolConfig​` is a global object which includes the locks indexed by their address on the Ethereum blockchain. Each lock is an object which can have an optional name \(string\).
 
-The object has the following optional attributes: icon and callToAction. `​icon​` references an image to be shown on the modal and the `​callToAction`​ object with a ​default​ value set to the text shown on the checkout modal.
+The object has the following optional attributes: `icon` and `callToAction`. `​icon​` references an image to be shown on the modal and the `​callToAction`​ object with a ​default​ value set to the text shown on the checkout modal.
 
 For more advanced configuration settings, including the collection of user metadata before a key purchase, see [Advanced Paywall Configuration](applications/paywall/advanced-paywall-configuration.md).
 
