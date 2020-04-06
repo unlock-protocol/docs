@@ -42,7 +42,7 @@ The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Lo
 
 ## Install a Lock on a Web Page
 
-The first part of this requires embedding a script on the web page where the lock should be installed. You need to achieve this in the `​<head>` section of the HTML body. The script to be loaded is located at the following address: `https://paywall.unlock-protocol.com/static/unlock.1.0.min.js`
+The first part of this requires embedding a script on the web page where the lock should be installed. You need to achieve this in the `​<head>` section of the HTML body. The script to be loaded is located at the following address: `https://paywall.unlock-protocol.com/static/unlock.latest.min.js`
 
 We recommend loading the script using the following approach:
 
@@ -50,7 +50,7 @@ We recommend loading the script using the following approach:
 <script> (function(d, s) {
 var js = d.createElement(s),
 sc = d.getElementsByTagName(s)[0];
-js.src="https://paywall.unlock-protocol.com/static/unlock.1.0.min.js";
+js.src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
 sc.parentNode.insertBefore(js, sc); }(document, "script"));
 </script>
 ```
