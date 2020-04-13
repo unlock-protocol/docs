@@ -4,9 +4,9 @@ description: Utilizing Unlock Protocol to Provide an Ad Free Experience to Membe
 
 # Building an Ad Free Experience
 
-The Unlock Protocol and its supporting software can be used for a multitude of uses cases. One of these use cases currently in the wild is leveraging the Unlock Protocol to provide an [Ad Free Experience ](https://www.forbes.com/sites/cbovaird/2020/01/15/what-really-drove-bitcoins-new-years-rally)to key holders. 
+The Unlock Protocol and its supporting software can be used for a multitude of uses cases. One of these use cases currently in the wild is leveraging the Unlock Protocol to provide an [Ad Free Experience ](https://www.forbes.com/sites/cbovaird/2020/01/15/what-really-drove-bitcoins-new-years-rally)to key holders.
 
-The general approach to towards the implementation follows the generic steps outline below. 
+The general approach to towards the implementation follows the generic steps outline below.
 
 1. The first step is to deploy a lock. Follow [these steps](https://docs.unlock-protocol.com/#create-a-lock) from the Unlock Dashboard.
 2. Add the Unlock paywall application JavaScript to your page:
@@ -20,7 +20,7 @@ sc.parentNode.insertBefore(js, sc); }(document, "script"));
 </script>
 ```
 
-2. Configure the display of the paywall component:
+1. Configure the display of the paywall component:
 
 ```javascript
 var unlockProtocolConfig = { 
@@ -36,14 +36,14 @@ var unlockProtocolConfig = {
 }
 ```
 
-_Further configuration details are provided in the_ [_Configure the Lock_](%20https://docs.unlock-protocol.com/#install-a-lock-on-a-web-page%20) _section of the documentation_.
+_Further configuration details are provided in the_ [_Configure the Lock_](../#install-a-lock-on-a-web-page) _section of the documentation_.
 
-3. Add an event handler to capture the change of state between locked and unlocked; rendering ad components when relevant.
+1. Add an event handler to capture the change of state between locked and unlocked; rendering ad components when relevant.
 
 ```javascript
 window.addEventListener('unlockProtocol', function(e) {
   var state = e.detail
-  
+
   if(state === 'locked' ){
      // load ad rendering component here
   } else {

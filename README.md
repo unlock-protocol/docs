@@ -21,7 +21,7 @@ Locks are smart contracts on the Ethereum blockchain. This provides creators wit
 
 {% embed url="https://unlock-protocol.com/" caption="https://unlock-protocol.com" %}
 
-_note: this currently requires an_ [_Ethereum wallet_](https://metamask.io)_._ 
+_note: this currently requires an_ [_Ethereum wallet_](https://metamask.io)_._
 
 When creating a lock, the creator can select the following attributes:
 
@@ -34,7 +34,7 @@ Once deployed the lock will have its own address and is fully owned by the creat
 
 ### Creating a Lock for a custom ERC20 token
 
-The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Locks can be configured to be backed by any token that conforms to the ERC20 specification.  Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and `ticker` query parameters.
+The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Locks can be configured to be backed by any token that conforms to the ERC20 specification. Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and `ticker` query parameters.
 
 * [Create a DAI Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x6b175474e89094c44da98b954eedeac495271d0f&ticker=DAI)
 * [Create a USDC Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&ticker=USDC)

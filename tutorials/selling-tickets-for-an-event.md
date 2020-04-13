@@ -12,7 +12,7 @@ To get started, please check [this demo website](https://unlock-event-ticket.gli
 
 This is the first step. The [Unlock Dashboard](https://app.unlock-protocol.com/dashboard/) provides the easiest interface to deploy your lock.
 
-Please, follow [these indications](https://docs.unlock-protocol.com/#create-a-lock) on how to create your lock. 
+Please, follow [these indications](https://docs.unlock-protocol.com/#create-a-lock) on how to create your lock.
 
 You can deploy one or more locks. One approach is to create 1 lock per class of tickets. For example, a limited number of "early bird" tickets, or tickets which provides multiple admissions \(day 1 workshops & day 2 conference... etc\)
 
@@ -31,7 +31,7 @@ sc.parentNode.insertBefore(js, sc); }(document, "script"));
 </script>
 ```
 
-Then,  you need to configure the paywall application to work on your own site. Here's a basic configuration:
+Then, you need to configure the paywall application to work on your own site. Here's a basic configuration:
 
 ```bash
 var unlockProtocolConfig = { 
@@ -107,8 +107,4 @@ On the day of your event, you will ask attendees to show you their QR codes \(se
 Additionally if the verification URL is loaded from a web browser which has the same crypto-wallet as the lock creator, then the verification page will show all of the tickets' collected attendee information.
 
 Additionnaly, a button will be visible to mark the ticket as "checked-in". This step can be done at any point, and after that, the ticket will forever be marked as having been used. This means that the next time the ticket is scanned, a message will indicate that the ticket has already been checked-in. This prevents someone from "re-using" the QR code that someone else already used.
-
-
-
-
 

@@ -11,6 +11,7 @@
 ## Developers
 
 * [Smart Contracts Architecture](developers/smart-contracts-architecture/README.md)
+  * [Access Control](developers/smart-contracts-architecture/access-control.md)
   * [Lock Api](developers/smart-contracts-architecture/lock-api.md)
   * [Unlock API](developers/smart-contracts-architecture/unlock-api.md)
   * [Usage & Integration](developers/smart-contracts-architecture/usage.md)
