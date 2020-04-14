@@ -27,11 +27,12 @@ The members of this array should have the following shape:
   name: string,
   type: 'text' | 'date' | 'color' | 'email' | 'url',
   required: boolean,
+  defaultValue?: 'string',
   public?: true,
 }
 ```
 
-All fields are required except for `public`, which defaults to `false`. Metadata is considered protected by default, so the only people who can view it are the lock owner and the user associated with the metadata. If any metadata should be visible to everyone, mark the `public` field as `true`.
+All fields are required except for `public`, which defaults to `false` and `defaultValue`. Metadata is considered protected by default, so the only people who can view it are the lock owner and the user associated with the metadata. If any metadata should be visible to everyone, mark the `public` field as `true`.
 
 If any input has `required: true`, it will render on the form with a red asterisk next to it and the metadata form will not submit until it is filled appropriately.
 
