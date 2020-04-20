@@ -132,7 +132,7 @@ If the code is missing or incorrect, the lock's normal `keyPrice` will be used.
 
 ## Security
 
-How secure this solution is depends on the discount code you select. For common use cases such as the 'joe rogan' example we have been working with, it would not be difficult for someone to guess and check to find that discount.
+How secure this solution is depends on the discount code you select. For common use cases such as the `joe rogan` example we have been working with, it would not be difficult for someone to guess and check to find that discount.
 
 If security is a concern, you could generate discount codes that look a bit more like an Amazon gift card as they have enough entropy that users would not be able to brute force it without incurring significant cost.
 
