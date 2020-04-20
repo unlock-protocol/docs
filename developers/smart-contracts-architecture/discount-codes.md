@@ -99,8 +99,9 @@ In order to add support for discount codes, there are a few steps required:
     ```
 
     This function will sign the message as follows `"\x19Ethereum Signed Message:\n32" + messageToSign`.
-    
+
     &nbsp;
+
 
  5. To confirm the discount code and to display the correct price for this purchase, use the following function:
 
