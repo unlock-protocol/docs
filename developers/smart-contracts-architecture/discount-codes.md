@@ -46,7 +46,7 @@ First we need to generate the `codeAddress`. This step is required so that we do
 To generate the `codeAddress` the following steps are recommended. This process is not yet integrated onto our dashboard so they will need to be performed manually.
 
  1. Sanitize the input for ease of use. For example, if the code is "joe rogan" we want to be flexible on how that is written by the end user: "Joe Rogan" and "joerogan" should also be accepted. We recommend you remove whitespace \(and maybe underscores as well\) and lower case the input before proceeding to the next step.
- 1. Generate the private key from the sanitized input. Include your lock's address so that the same discount code may be used by multiple different locks without making it easy for people to discover that the same code works elsewhere. For this we recommend the following:
+ 2. Generate the private key from the sanitized input. Include your lock's address so that the same discount code may be used by multiple different locks without making it easy for people to discover that the same code works elsewhere. For this we recommend the following:
 
     ```javascript
     const codePrivateKey = web3.utils.keccak256(
@@ -57,19 +57,19 @@ To generate the `codeAddress` the following steps are recommended. This process 
     )
     ```
 
- 1. Generate the account representing the discount code with the following:
+ 3. Generate the account representing the discount code with the following:
 
     ```javascript
     const codeAccount = web3.eth.accounts.privateKeyToAccount(codePrivateKey)
     ```
 
- 1. Get the address for the `codeAccount` which is what we will store on-chain:
+ 4. Get the address for the `codeAccount` which is what we will store on-chain:
 
     ```javascript
     const codeAddress = codeAccount.address
     ```
 
- 1. Call `addCodes` on the discount code contract from the lock manager's account. You can use [Etherscan's Write Contract page](https://etherscan.io/address/0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c#writeContract) to make the call. There are 3 parameters:
+ 5. Call `addCodes` on the discount code contract from the lock manager's account. You can use [Etherscan's Write Contract page](https://etherscan.io/address/0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c#writeContract) to make the call. There are 3 parameters:
     - `_lock` is the address of the lock that this discount applies to. You can copy this from the [Unlock dashboard](https://app.unlock-protocol.com/dashboard/).
     - `_codeAddresses` is an array of addresses. If you are only adding a single discount code then it can be populated like so: `[0x1234...]`
     - `_discountBasisPoints` is also an array. The discounts are represented in basis points which means 100 represents 1%. This allows you to be more precise on discounts, e.g. if you wanted to offer 12.42% off. The order should align with the `_codeAddresses` so that if the first discount code is 15% off and the second is 50% off you can enter the following: `[1500, 5000]`
@@ -83,8 +83,8 @@ Discount codes have not yet been integrated into the frontend provided by Unlock
 In order to add support for discount codes, there are a few steps required:
 
  1. Add an input box allowing end users to enter a discount code if they have one.
- 1. Sanitize the input and generate the `codeAccount` using the same approach that we used when adding the discount code originally \(steps 1-3\).
- 1. Generate the message to sign by hashing the address of the account purchasing a key as follows:
+ 2. Sanitize the input and generate the `codeAccount` using the same approach that we used when adding the discount code originally \(steps 1-3\).
+ 3. Generate the message to sign by hashing the address of the account purchasing a key as follows:
 
     ```javascript
     const messageToSign = web3.utils.keccak256(
@@ -92,7 +92,7 @@ In order to add support for discount codes, there are a few steps required:
     )
     ```
 
- 1. Then sign that message:
+ 4. Then sign that message:
 
     ```javascript
     const signature = (await codeAccount.sign(messageToSign)).signature
@@ -100,7 +100,7 @@ In order to add support for discount codes, there are a few steps required:
 
     This function will sign the message as follows `"\x19Ethereum Signed Message:\n32" + messageToSign`.
 
- 1. To confirm the discount code and to display the correct price for this purchase, use the following function:
+ 5. To confirm the discount code and to display the correct price for this purchase, use the following function:
 
     ```javascript
     const purchasePrice = await lock.purchasePriceFor(
@@ -113,7 +113,7 @@ In order to add support for discount codes, there are a few steps required:
     )
     ```
 
- 1. Update the `purchase` call to use the `purchasePrice` calculated above and include the signature if the user has entered a discount code. For example:
+ 6. Update the `purchase` call to use the `purchasePrice` calculated above and include the signature if the user has entered a discount code. For example:
 
     ```javascript
     await lock.purchase(
