@@ -48,14 +48,14 @@ To generate the `codeAddress` the following steps are recommended. This process 
  1. Sanitize the input for ease of use. For example, if the code is "joe rogan" we want to be flexible on how that is written by the end user: "Joe Rogan" and "joerogan" should also be accepted. We recommend you remove whitespace \(and maybe underscores as well\) and lower case the input before proceeding to the next step.
  2. Generate the private key from the sanitized input. Include your lock's address so that the same discount code may be used by multiple different locks without making it easy for people to discover that the same code works elsewhere. For this we recommend the following:
 
-```javascript
-const codePrivateKey = web3.utils.keccak256(
-  web3.eth.abi.encodeParameters(
-    ['address', 'bytes32'],
-    [lock.address, web3.utils.keccak256(discountCode)]
-  )
-)
-```
+    ```javascript
+    const codePrivateKey = web3.utils.keccak256(
+      web3.eth.abi.encodeParameters(
+        ['address', 'bytes32'],
+        [lock.address, web3.utils.keccak256(discountCode)]
+      )
+    )
+    ```
 
  3. Generate the account representing the discount code with the following:
 
