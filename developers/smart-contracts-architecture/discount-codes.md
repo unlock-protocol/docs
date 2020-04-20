@@ -3,8 +3,8 @@
 We created a contract that allows you to add discount codes to your lock. For example, enter the code `joe rogan` for 50% off.
 
 The contract is deployed here and may be leveraged by all v7 locks \(i.e. you do not need to deploy your own discount code contract\):
- - Mainnet address: 0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c
- - Rinkeby address: 0x13738ae895f1e35eedf7f3227109567a5ce40eab
+ - Mainnet address: [0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c](https://etherscan.io/address/0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c)
+ - Rinkeby address: [0x13738ae895f1e35eedf7f3227109567a5ce40eab](https://rinkeby.etherscan.io/address/0x13738ae895f1e35eedf7f3227109567a5ce40eab)
 
 ## How it works
 
@@ -41,7 +41,7 @@ The easiest way to do this today is on [Etherscan's Write Contract page](https:/
 
 Once the discount code contract has been registered you can start adding codes.
 
-First we need to generate the `codeAddress`. This step is required so that we don't publish the code directly as all information on Ethereum is public and we don't want user's to simply look at the transaction history in order to discover a discount anyone could use.
+First we need to generate the `codeAddress`. This step is required so that we don't publish the code directly as all information on Ethereum is public and we don't want user's to simply look at the transaction history in order to discover a discount that anyone could use.
 
 To generate the `codeAddress` the following steps are recommended. This process is not yet integrated onto our dashboard so they will need to be performed manually.
 
@@ -69,12 +69,12 @@ const codeAccount = web3.eth.accounts.privateKeyToAccount(codePrivateKey)
 const codeAddress = codeAccount.address
 ```
 
- 5. Call `addCodes` on the discount code contract from the lock manager's account. You can use [Etherscan's `Write Contract` page](https://etherscan.io/address/0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c#writeContract) to make the call. There are 3 parameters:
-    - `_lock` is the address of the lock this discount applies to. You can copy this from the [Unlock dashboard](https://app.unlock-protocol.com/dashboard/).
+ 5. Call `addCodes` on the discount code contract from the lock manager's account. You can use [Etherscan's Write Contract page](https://etherscan.io/address/0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c#writeContract) to make the call. There are 3 parameters:
+    - `_lock` is the address of the lock that this discount applies to. You can copy this from the [Unlock dashboard](https://app.unlock-protocol.com/dashboard/).
     - `_codeAddresses` is an array of addresses. If you are only adding a single discount code then it can be populated like so: `[0x1234...]`
-    - `_discountBasisPoints` is also an array. The discounts are represented in basis points which means 100 represents 1%. This allows you to be more precise on discounts, e.g. if you wanted to offer 12.50% off. The order should align with the `_codeAddresses` so that if the first discount code is 15% off and the second is 50% off you can enter the following: `[1500, 5000]`
+    - `_discountBasisPoints` is also an array. The discounts are represented in basis points which means 100 represents 1%. This allows you to be more precise on discounts, e.g. if you wanted to offer 12.42% off. The order should align with the `_codeAddresses` so that if the first discount code is 15% off and the second is 50% off you can enter the following: `[1500, 5000]`
 
-To remove a code in the future, just call `addCodes` again and set the discount to 0.
+To remove a code in the future, just call `addCodes` again and set the discount for that `codeAddress` to 0.
 
 ## Frontend Integration
 
@@ -83,7 +83,7 @@ Discount codes have not yet been integrated into the frontend provided by Unlock
 In order to add support for discount codes, there are a few steps required:
 
  1. Add an input box allowing end users to enter a discount code if they have one.
- 2. Sanitize the input and generate the code account using the same approach used when adding the discount code \(steps 1-3\).
+ 2. Sanitize the input and generate the `codeAccount` using the same approach that we used when adding the discount code originally \(steps 1-3\).
  3. Generate the message to sign by hashing the address of the account purchasing a key as follows:
 
 ```javascript
@@ -100,12 +100,12 @@ const signature = (await codeAccount.sign(messageToSign)).signature
 
 This function will sign the message as follows `"\x19Ethereum Signed Message:\n32" + messageToSign`.
 
- 5. To confirm the discount code and to calculate and display the correct price for this purchase, use the following function:
+ 5. To confirm the discount code and to display the correct price for this purchase, use the following function:
 
 ```javascript
 const purchasePrice = await lock.purchasePriceFor(
   keyBuyer,
-  '0x0000000000000000000000000000000000000000',
+  '0x0000000000000000000000000000000000000000', // Referrer, n/a here
   signature,
   {
     from: keyBuyer,
@@ -113,13 +113,13 @@ const purchasePrice = await lock.purchasePriceFor(
 )
 ```
 
- 6. Update the `purchase` call to include the signature if the user has entered a discount code. For example:
+ 6. Update the `purchase` call to use the `purchasePrice` calculated above and include the signature if the user has entered a discount code. For example:
 
 ```javascript
 await lock.purchase(
   purchasePrice,
   keyBuyer,
-  '0x0000000000000000000000000000000000000000',
+  '0x0000000000000000000000000000000000000000', // Referrer, n/a here
   signature,
   {
     value: purchasePrice,
@@ -128,7 +128,7 @@ await lock.purchase(
 )
 ```
 
-If the code is missing or incorrect, the lock's normal keyPrice will be used.
+If the code is missing or incorrect, the lock's normal `keyPrice` will be used.
 
 ## Security
 
@@ -138,12 +138,12 @@ If security is a concern, you could generate discount codes that look a bit more
 
 Even if the code you select has enough randomness to it, anyone who does know the code could post it publicly for others to use as well.
 
-The `keyOwner` is included in the signature to ensure that another account cannot simply replay the same transaction `_data` to purchase with a discount for themselves.
+The `keyOwner` is included in the signature to ensure that another account cannot simply replay the same transaction `_data` field to purchase with a discount for themselves.
 
-Some of the process described above is our recommendations. The contract itself will not enforce these best practices on you if you choose to use a different strategy:
+Some of the process described above is our recommendations. The contract itself will not enforce these best practices on you if you choose to use a different strategy, specifically:
 
  - Sanitizing the input reduces entropy but makes for a better user experience.
- - How the codeAccount itself is generated is flexible, for example including the lock's address in the private key prevents users from discovering that a discount code can also be used on another lock.
+ - How the `codeAccount` itself is generated is flexible, for example including the lock's address in the private key prevents users from discovering that a discount code can also be used on another lock.
 
 -------
 
