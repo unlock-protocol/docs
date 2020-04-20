@@ -16,14 +16,6 @@ You might want to limit access to a smaller group, e.g. maybe you are beta testi
 
 Obviously someone could Tweet the code, spreading it future than intended. However it still effectively limits access to "insiders".
 
-### Discount code
-
-Example: `Enter the code 'joerogan' for 15% off`
-
-To create a discount code, we treat it just like an "access code" above. 2 locks are created, one general purpose full-priced lock and another lock that's 15% cheaper with a code required.
-
-Again someone could spread the discount code further than intended, but this is also true for discount code implementation examples in general \(such as the podcast example I gave\). And the code can be changed at anytime.
-
 ### Whitelist
 
 Example: `KYC required`
