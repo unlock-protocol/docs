@@ -18,6 +18,7 @@
   * [Discount Codes Hook](developers/smart-contracts-architecture/discount-codes.md)
   * [Code Required Hook](developers/smart-contracts-architecture/code-required-hook.md)
   * [Key Purchaser](developers/smart-contracts-architecture/key-purchaser.md)
+  * [Swap and Call](developers/smart-contracts-architecture/swap-and-call.md)
 * [Unlock.js](developers/unlock.js.md)
 * [Subgraph](developers/subgraph.md)
 * [Metadata](developers/metadata.md)
