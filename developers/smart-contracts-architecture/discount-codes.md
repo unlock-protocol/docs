@@ -35,7 +35,7 @@ function setEventHooks(
 
 You can set the `_onKeyCancelHook` to `0x0000000000000000000000000000000000000000` if you don't have a use case for that. Additional you can de-register the hook anytime by setting both params to 0.
 
-The easiest way to do this today is on [Etherscan's Write Contract page](https://etherscan.io/address/0x6E4B1990EBc79040E369Df2Eb8BE16bBB709B0d0#writeContract) \(but replace the address with your lock's address\) - you can copy this from the [Unlock dashboard](https://app.unlock-protocol.com/dashboard/).
+The easiest way to do this today is on [Etherscan's Write Contract page](https://etherscan.io/address/0x6E4B1990EBc79040E369Df2Eb8BE16bBB709B0d0#writeContract) \(but replace the address with your lock's address - you can copy this from the [Unlock dashboard](https://app.unlock-protocol.com/dashboard/)\).
 
 ### Add discount codes
 
