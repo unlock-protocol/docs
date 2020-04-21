@@ -41,7 +41,7 @@ The easiest way to do this today is on [Etherscan's Write Contract page](https:/
 
 Once the discount code contract has been registered you can start adding codes.
 
-First we need to generate the `codeAddress`. This step is required so that we don't publish the code directly as all information on Ethereum is public and we don't want user's to simply look at the transaction history in order to discover a discount that anyone could use.
+First we need to generate the `codeAddress`. This step is required so that we don't publish the code directly as all information on Ethereum is public and we don't want users to simply look at the transaction history in order to discover a discount that anyone could use.
 
 To generate the `codeAddress` the following steps are recommended. This process is not yet integrated onto our dashboard so they will need to be performed manually.
 
