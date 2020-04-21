@@ -142,7 +142,7 @@ Even if the code you select has enough randomness to it, anyone who does know th
 
 The `keyOwner` is included in the signature to ensure that another account cannot simply replay the same transaction `_data` field to purchase with a discount for themselves.
 
-Some of the process described above is our recommendations. The contract itself will not enforce these best practices on you if you choose to use a different strategy, specifically:
+Some of the process described above is our recommendations. The contract itself will not enforce these best practices if you choose to use a different strategy, specifically:
 
  - Sanitizing the input reduces entropy but makes for a better user experience.
  - How the `codeAccount` itself is generated is flexible, for example including the lock's address in the private key prevents users from discovering that a discount code can also be used on another lock.
