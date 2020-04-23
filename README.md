@@ -108,7 +108,7 @@ window.addEventListener('unlockProtocol', function(e) {
 })
 ```
 
-Note: the callback can be invoked several times. For example, a visitor might purchase a key while they are on the page, going from the `unlocked` to the `locked` state. Similarly, the key that the visitor owns may expire during a visit which would result in the state going from `unlocked` to `locked`.
+Note: the callback can be invoked several times. For example, a visitor might purchase a key while they are on the page, going from the `locked` to the `unlocked` state. Similarly, the key that the visitor owns may expire during a visit which would result in the state going from `unlocked` to `locked`.
 
 ## Initiate Checkout
 
