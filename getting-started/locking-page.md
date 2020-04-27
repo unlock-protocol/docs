@@ -102,3 +102,6 @@ In order to purchase keys, Unlock provides a modal which lets the user pick the 
 window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()
 ```
 
+## Full code example
+
+<script async src="//jsfiddle.net/unlockprotocol/53qmdxLh/20/embed/"></script>
