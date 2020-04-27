@@ -1,4 +1,4 @@
-# Smart Contracts Architecture
+# Smart Contracts
 
 The unlock-protocol, at it's core, is enabled by 2 primary ethereum smart contracts. 
 
