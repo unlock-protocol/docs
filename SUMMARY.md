@@ -3,6 +3,11 @@
 * [Getting Started](README.md)
 * [Frequently Asked Questions](frequently-asked-questions.md)
 
+## Getting Started
+
+* [Deploying a lock](getting-started/deploying-lock.md)
+* [Adding a Lock to Web Page](getting-started/locking-page.md)
+
 ## Plugins and Integrations
 
 * [Wordpress Plugin](plugins-and-integrations/wordpress-plugin.md)
