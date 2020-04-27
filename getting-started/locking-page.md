@@ -104,4 +104,4 @@ window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()
 
 ## Full code example
 
-<script async src="//jsfiddle.net/unlockprotocol/53qmdxLh/20/embed/"></script>
+<iframe width="100%" height="300" src="//jsfiddle.net/unlockprotocol/53qmdxLh/21/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
