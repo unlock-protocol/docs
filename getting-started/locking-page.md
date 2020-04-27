@@ -6,6 +6,10 @@ description: >-
 
 # Adding a Lock to Web Page
 
+Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems. See the _Plugins and Integrations_ section.
+
+## Embedding the paywall
+
 The first part of this requires embedding a script on the web page where the lock should be installed. You need to achieve this in the `​<head>` section of the HTML body. The script to be loaded is located at the following address: `https://paywall.unlock-protocol.com/static/unlock.latest.min.js`
 
 We recommend loading the script using the following approach:
