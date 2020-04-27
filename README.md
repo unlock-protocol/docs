@@ -13,6 +13,8 @@ Yet, most websites are moving to memberships with their own system which creates
 
 With Unlock, we believe there is a better way, which reduces friction, increases conversation rate and reduces prices while aligning interests between creators and consumers!
 
+{% embed url="https://www.youtube.com/watch?v=tBuMj0eRrYQ" caption="A quick intro video to explain what Unlock." %}
+
 ## For Creators 
 
 As a creator, you want to monetize your work and ensure that only your _members_ can access it. For this you should create a Lock. The lock is a smart contract deployed on the Ethereum blockchain which defines the terms of your membership. The Lock is yours and cannot be modified by anyone else, unless you grant them the permission. 

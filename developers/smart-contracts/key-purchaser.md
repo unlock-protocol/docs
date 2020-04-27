@@ -10,7 +10,7 @@ Note that this has not yet been launched, but coming soon!
 
 The `KeyPurchaser` is deployed via the `KeyPurchaserFactory` contract. There are a few settings to enter at this time and they may not be changed. This allows us to set terms \(such as allowing the subscription to continue so long as the `keyPrice` does not increase by more than 10%\). These terms can and should be communicated to the end user before they approve.
 
-Users can remove the allowance (by calling ERC-20 `approve` again with `0`) to cancel their subscription anytime.
+Users can remove the allowance \(by calling ERC-20 `approve` again with `0`\) to cancel their subscription anytime.
 
 A backend service monitors approvals and issues a transaction to the `KeyPurchaser` to execute the purchase as appropriate. Unlock-Protocol will host this but there are no restrictions - anyone could perform this service.
 
