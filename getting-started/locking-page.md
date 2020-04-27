@@ -40,7 +40,7 @@ var unlockProtocolConfig = {
       name: 'One Year'
     } // you can add as many locks as you want.
   },
-  icon: 'https://staging-app.unlock-protocol.com/static/images/svg/default.svg', 
+  icon: 'https://app.unlock-protocol.com/static/images/svg/default.svg', 
   callToAction: {
     default: 'This content is locked. Pay with cryptocurrency to access it!',
     expired: 'This is what is shown when the user had a key which is now expired',
