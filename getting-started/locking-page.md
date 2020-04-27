@@ -59,14 +59,30 @@ For more advanced configuration settings, including the collection of user metad
 
 ## Handle Events
 
-Once loaded the unlock script will trigger events on the page’s ​`window`​ object. These events will indicate to the page whether the current visitor owns a key to any of the lock \(the state should be `​unlocked`​ or if they do not, and the state should be `​locked​`\).
+Once loaded the unlock script will trigger events on the page’s ​`window`​ object.  These events let your web application adjust its behaving or the content it displayed based on the the status.
 
-On your site, you can now implement the behavior based on whether the current visitor has a key to any of the locks or not.
+There are types of events being triggered:
+
+### Paywall status
+
+* Event Name: `unlockProtocol.status`
+* Values `event.detail.state`:  `locked`or `unlocked`.
+
+### User info
+
+* Event Name: `unlockProtocol.authenticated`
+* Values `event.detail.address`:  the Ethereum address of the connected user.
+
+### Transaction status
+
+* Event Name:  `unlockProtocol.transactionSent`
+* Values `event.detail.hash`:  the Ethereum transaction,
+* Values `event.detail.lock`:  the Ethereum address of the lock.
 
 Here is an example:
 
 ```javascript
-window.addEventListener('unlockProtocol', function(e) {
+window.addEventListener('unlockProtocol.status', function(e) {
   var state = e.detail
   // the state is a string whose value can either be 'unlocked' or 'locked'...
   // If state is 'unlocked': implement code here which will be triggered when 
