@@ -59,7 +59,7 @@ For more advanced configuration settings, including the collection of user metad
 
 ## Handle Events
 
-Once loaded the unlock script will trigger events on the page’s ​`window`​ object.  These events let your web application adjust its behaving or the content it displayed based on the the status.
+Once loaded the unlock script will trigger events on the page’s ​`window`​ object. These events let your web application adjust its behaving or the content it displayed based on the the status.
 
 There are types of events being triggered:
 
@@ -104,4 +104,7 @@ window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()
 
 ## Full code example
 
-<iframe width="100%" height="300" src="//jsfiddle.net/unlockprotocol/53qmdxLh/21/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+{% embed url="http://jsfiddle.net/unlockprotocol/53qmdxLh/21/" %}
+
+
+
