@@ -10,11 +10,11 @@ First, let's define the elements of our Access control system for the purposes o
 
 ### Roles
 
-We use the term "Role" to refer to a collection of permissions which may be added to \(or renounced  by\) a user. Roles are implemented at the Lock level  using the pattern described [here](https://docs.openzeppelin.com/contracts/2.x/access-control#role-based-access-control). Multiple users may have a given role simultaneously. The Lock contract has 2 Roles associated with each Lock:
+We use the term "Role" to refer to a collection of permissions which may be added to \(or renounced by\) a user. Roles are implemented at the Lock level using the pattern described [here](https://docs.openzeppelin.com/contracts/2.x/access-control#role-based-access-control). Multiple users may have a given role simultaneously. The Lock contract has 2 Roles associated with each Lock:
 
 #### _LockManager_
 
-The creator of a Lock becomes the only **LockManager** by default, granting them the highest level of permissions for their lock \(More or less equivalent to  the former "Owner"\). Additional **LockManager**s may be added as needed \(only by an existing **LockManager**\), and a **LockManager** may also renounce the role. There is a new modifier `onlyLockManager()`, as well as the new functions `isLockManager()`, `addLockManager()`& `renounceLockManager()`.
+The creator of a Lock becomes the only **LockManager** by default, granting them the highest level of permissions for their lock \(More or less equivalent to the former "Owner"\). Additional **LockManager**s may be added as needed \(only by an existing **LockManager**\), and a **LockManager** may also renounce the role. There is a new modifier `onlyLockManager()`, as well as the new functions `isLockManager()`, `addLockManager()`& `renounceLockManager()`.
 
 #### _KeyGranter_
 
@@ -22,7 +22,7 @@ The lock creator is also the default KeyGranter. The primary reason for this rol
 
 ### Titles
 
-Unlike a Role,  a Title is implemented at the Key level and confers some of the rights for a given key on its holder. As of v7, we've decoupled the ownership rights from the transfer rights to enable new use-cases. Only one user may hold a title at a time for a given key. The  2 Titles associated with each key are:
+Unlike a Role, a Title is implemented at the Key level and confers some of the rights for a given key on its holder. As of v7, we've decoupled the ownership rights from the transfer rights to enable new use-cases. Only one user may hold a title at a time for a given key. The 2 Titles associated with each key are:
 
 #### _KeyOwner_
 
@@ -35,9 +35,4 @@ Only the key manager is authorized to transfer, share or cancel keys, and may or
 To help understand the keyManager assignment in different scenarios, the following table is provided. It specifies how the keyManager is assigned for each relevant function in each of 3 key states: **New Key creation, Valid Key extension,** or **Expired Key renewal.**
 
 ![](../../.gitbook/assets/screen-shot-2020-04-13-at-10.24.32-am.png)
-
-  
- 
-
-
 
