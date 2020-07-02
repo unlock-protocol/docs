@@ -70,3 +70,6 @@ Our production application available at [https://app.unlock-protocol.com/](https
 
 You can interract with our Rinkeby deployment by going to [https://staging.unlock-protocol.com/](https://staging.unlock-protocol.com/)
 
+## As a creator, can I set a recurring membership?
+
+Yes! The "lock" itself does not include the logic for recurring memberships, but we provide another contract, called the [KeyPurchaser](https://docs.unlock-protocol.com/developers/smart-contracts/key-purchaser), whose logic enables recurring membership.
