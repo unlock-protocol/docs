@@ -73,3 +73,4 @@ You can interract with our Rinkeby deployment by going to [https://staging.unloc
 ## As a creator, can I set a recurring membership?
 
 Yes! The "lock" itself does not include the logic for recurring memberships, but we provide another contract, called the [KeyPurchaser](https://docs.unlock-protocol.com/developers/smart-contracts/key-purchaser), whose logic enables recurring membership.
+At a high level, this only works for ERC20 locks, and leverages the _allowance_ mechanism of the ERC20 specification. Instead of purchasing a key themselves, members have approve the `keyPurchaser` contract to spend some of the ERC20 tokens. They will approve a multiple of the key price, which will let the creator (or a third party, like Unlock Inc) call the `keyPurchaser` contract to purchase keys for them. The `keyPurchaser` contract guarantees that not all ERC20 tokens are withdrawn at once, by only performing successful key purchases when a an existing key is soon to be expired.
