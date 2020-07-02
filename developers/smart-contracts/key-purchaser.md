@@ -10,7 +10,7 @@ Note: this only applies to ERC20 locks. Locks priced in Ether cannot use this fe
 
 * Deployed Key Purchase factory contract: [`0xe66f332d24a7aabdbc97fb38cea7259137e2f2e9`](https://etherscan.io/address/0xe66f332d24a7aabdbc97fb38cea7259137e2f2e9).  (you could deploy your own!)
 * [Code for the KeyPurchaserFactory](https://github.com/unlock-protocol/unlock/blob/master/smart-contract-extensions/contracts/KeyPurchaserFactory.sol)
-* [Code for the KeyPurcahser](https://github.com/unlock-protocol/unlock/blob/master/smart-contract-extensions/contracts/KeyPurchaser.sol).
+* [Code for the KeyPurchaser](https://github.com/unlock-protocol/unlock/blob/master/smart-contract-extensions/contracts/KeyPurchaser.sol).
 
 ### How it works
 
