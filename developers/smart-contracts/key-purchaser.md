@@ -9,7 +9,7 @@ This enables the implementation of recurring memberships where a soon-to-be-memb
 Note: this only applies to ERC20 locks. Locks priced in Ether cannot use this feature. It also requires the use of a v7 lock.
 
 * Deployed Key Purchase factory contract (you could also deploy your own if you wanted): 
-  * Mainnet: [`0xe66f332d24a7aabdbc97fb38cea7259137e2f2e9`](https://etherscan.io/address/0xe66f332d24a7aabdbc97fb38cea7259137e2f2e9). 
+  * Mainnet: [`0xe66f332d24a7aabdbc97fb38cea7259137e2f2e9`](https://etherscan.io/address/0xe66f332d24a7aabdbc97fb38cea7259137e2f2e9),
   * Rinkeby: [`0x7cc3573b8d6d4a4162d624fbdceed242acbe9690`](https://rinkeby.etherscan.io/address/0x7cc3573b8d6d4a4162d624fbdceed242acbe9690)
 * [Code for the KeyPurchaserFactory](https://github.com/unlock-protocol/unlock/blob/master/smart-contract-extensions/contracts/KeyPurchaserFactory.sol)
 * [Code for the KeyPurchaser](https://github.com/unlock-protocol/unlock/blob/master/smart-contract-extensions/contracts/KeyPurchaser.sol).
