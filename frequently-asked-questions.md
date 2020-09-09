@@ -79,8 +79,9 @@ At a high level, this only works for ERC20 locks, and leverages the _allowance_ 
 ## How mucch gas does it cost to purchase a key to a lock?
 
 When purchasing a key to a lock, the member has to also pay for gas to the Ethereum network in order to get the transation mined.
-Here are rough indication of the gas amount to be paid (this can vary base on some lock specific parameters, such as the lock version):
-* ETH lock: 70,000 gas,
+Here are rough indication of the gas amount to be paid to purchase a key a a lock when the purchases did not have a key previously (this can vary base on some lock specific parameters, such as the lock version):
+* ETH lock: 160,000 gas,
 * ERC20 lock: 175,000 gas, to which we should add 45,000 for the ERC20 approval
+When performing renewals, the user should expect to spend 70,000 gas.
 
 Note for ERC20 locks, if your application uses the key purchaser pattern, then, the user only has to pay for the ERC20 approval, while the entity sending the transaction has to pay for the key purchase gas.
