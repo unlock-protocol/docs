@@ -28,7 +28,8 @@ sc.parentNode.insertBefore(js, sc); }(document, "script"));
 The following snippet should also be placed in the ​`<head>`​ section of the HTML document and will let you configure the behavior of the paywall.
 
 ```javascript
-var unlockProtocolConfig = { 
+var unlockProtocolConfig = {
+  network: "1", // Network ID (1 is for mainnet, 4 for rinkeby... etc)
   locks: {
     '0xabc': { // 0xabc is the address of a lock.
       name: 'One Week'
