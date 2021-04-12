@@ -18,7 +18,7 @@ Unlock is powered by Ethereum, which means that you can use your own wallet to p
 
 We recommend the use of in-browser wallets such as [MetaMask](https://MetaMask.io/) \(for both Firefox and Chrome\), or browsers which include wallets directly, such as [Opera](https://www.opera.com/) or [Brave](https://brave.com/).
 
-February 2020: We are working on adding support for [WalletConnect](https://walletconnect.org/). Please reach out if you can help!
+We added support for [WalletConnect](https://walletconnect.org/), which means any wallet which supports it can be used with Unlock.
 
 If you do not have your own cryptocurrency wallet, you can create an account with Unlock and purchase memberships with your traditional payment \(credit or debit\) cards on _selected_ _locks_.
 
@@ -66,9 +66,7 @@ Yes - if you are using an Ethereum-enabled web browser such as Opera or Coinbase
 
 Unlock is using the Ethereum blockchain. We have deployed our contracts on the main [network](https://etherscan.io/address/0x3d5409cce1d45233de1d4ebdee74b8e004abdd13), [rinkeby](https://rinkeby.etherscan.io/address/0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b) and [kovan](https://kovan.etherscan.io/address/0x0B9fe963b789151E53b8bd601590Ea32F9f2453D).
 
-Our production application available at [https://app.unlock-protocol.com/](https://app.unlock-protocol.com/) is connected to our mainnet deployment.
-
-You can interract with our Rinkeby deployment by going to [https://staging.unlock-protocol.com/](https://staging.unlock-protocol.com/)
+We are also deployed [on xDAI](https://blockscout.com/xdai/mainnet/address/0x7633dd082406861C384309c67576a4260C5775E0/transactions) and will soon be available on more EVM based blockchains or layer2.
 
 ## As a creator, can I set a recurring membership?
 
@@ -85,3 +83,6 @@ Here are rough indication of the gas amount to be paid to purchase a key a a loc
 When performing renewals, the user should expect to spend 70,000 gas.
 
 Note for ERC20 locks, if your application uses the key purchaser pattern, then, the user only has to pay for the ERC20 approval, while the entity sending the transaction has to pay for the key purchase gas.
+
+We are well aware that the Ethereum mainnet may soon become impractical as gas fees are skyrocketing. Please use Unlock on other EVM chains, such as xdai (just point your wallet to the xDAI chain)
+
