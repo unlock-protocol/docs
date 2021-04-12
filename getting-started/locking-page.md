@@ -56,7 +56,7 @@ var unlockProtocolConfig = {
 
 The object has the following optional attributes: `icon` and `callToAction`. `​icon​` references an image to be shown on the modal and the `​callToAction`​ object with a ​default​ value set to the text shown on the checkout modal.
 
-For more advanced configuration settings, including the collection of user metadata before a key purchase, see [Advanced Paywall Configuration](https://github.com/unlock-protocol/docs/tree/7eb0d592bdb90b83e9778a6d4227e3e1be53b004/getting-started/applications/paywall/advanced-paywall-configuration.md).
+For more advanced configuration settings, including the collection of user metadata before a key purchase, see [Advanced Paywall Configuration](https://docs.unlock-protocol.com/applications/paywall/advanced-paywall-configuration).
 
 ## Handle Events
 
