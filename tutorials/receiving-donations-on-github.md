@@ -15,6 +15,7 @@ Are you an Open Source developer? Are you an artist? Do you want to monetize you
 
 ```javascript
 {
+  "network": 1,
   "persistentCheckout": true,
   "icon": "https://assets.unlock-protocol.com/tmp/my-crypto.png",
   "callToAction": {
