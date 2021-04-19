@@ -10,7 +10,7 @@ Locks are smart contracts on the Ethereum blockchain. This provides creators wit
 
 {% embed url="https://unlock-protocol.com/" caption="https://unlock-protocol.com" %}
 
-_note: this currently requires an Ethereum wallet. You can point to wallet to any network that Unlock is [currently deployed on](https://docs.unlock-protocol.com/frequently-asked-questions#what-networks-are-supported)_
+_Note: this currently requires an Ethereum wallet. You can point the wallet to any network that Unlock is [currently deployed on](https://docs.unlock-protocol.com/frequently-asked-questions#what-networks-are-supported)._
 
 When creating a lock, the creator can select the following attributes:
 
@@ -21,7 +21,7 @@ When creating a lock, the creator can select the following attributes:
 
 Once deployed the lock will have its own address and is fully owned by the creator \(no-one, including Unlock Inc. can change or remove it\). Locks can also be transferred to a different owner after they've been created.
 
-The lock can also be customized even further, please, get in touch if you have questions!
+The lock can also be customized even further, please get in touch if you have questions!
 
 ### Creating a Lock for a custom ERC20 token
 
