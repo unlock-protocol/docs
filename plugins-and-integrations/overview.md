@@ -22,4 +22,16 @@ A Wordpress Plugin that integrates the Unlock [Paywall Application](../applicati
 
 # Discourse
 
-Coming Soon
+More info coming soon.
+
+# Shopify
+
+More info coming soon.
+
+# Ghost
+
+More info coming soon.
+
+# Webflow
+
+More info coming soon.
