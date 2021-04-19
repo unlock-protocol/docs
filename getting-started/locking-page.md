@@ -18,7 +18,7 @@ We recommend loading the script using the following approach:
 <script>
 (function(d, s) {
   var js = d.createElement(s),
-  sc = d.getElementsByTagName(s)[0];
+    sc = d.getElementsByTagName(s)[0];
   js.src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
   sc.parentNode.insertBefore(js, sc); }(document, "script"));
 </script>
