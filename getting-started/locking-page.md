@@ -105,7 +105,7 @@ window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()
 
 ## Full code example
 
-Use this [JSFiddle](http://jsfiddle.net/unlockprotocol/53qmdxLh/24/).
+Use this [JSFiddle](https://jsfiddle.net/unlockprotocol/x53c0yak/).
 
 {% embed url="http://jsfiddle.net/unlockprotocol/x53c0yak/" %}
 
