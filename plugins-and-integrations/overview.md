@@ -8,7 +8,7 @@ Drupal module that allows only members to see specific parts of your site conten
 
 - [Drupal Module Page](https://www.drupal.org/project/unlock).
 - [GitHub Repository](https://github.com/mikedotexe/unlock)
-- [Created by Mike Purvis](https://github.com/mikedotexe)
+- Created by [Mike Purvis](https://github.com/mikedotexe)
 
 # WordPress Plugin
 
@@ -18,6 +18,7 @@ A Wordpress Plugin that integrates the Unlock [Paywall Application](../applicati
 - [Demo](https://wordpress-demo.unlock-protocol.com/)
 - [WordPress.org Plugin Page](https://wordpress.org/plugins/unlock-protocol/)
 - [GitHub Repo](https://github.com/unlock-protocol/unlock-wordpress-plugin)
+- Created by [Unlock](https://github.com/unlock-protocol)
 
 # Discourse
 
