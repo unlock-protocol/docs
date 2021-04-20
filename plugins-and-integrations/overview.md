@@ -33,5 +33,7 @@ More info coming soon.
 More info coming soon.
 
 # Webflow
-
-More info coming soon.
+**Work in Progress**
+- [Demo & Integration Details](https://unlock-integration.webflow.io/)
+- [Clone](#) Coming Soon
+- Created by [Sascha Mombartz](https://github.com/smombartz)
