@@ -14,12 +14,13 @@ The first part of this requires embedding a script on the web page where the loc
 
 We recommend loading the script using the following approach:
 
-```markup
-<script> (function(d, s) {
-var js = d.createElement(s),
-sc = d.getElementsByTagName(s)[0];
-js.src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
-sc.parentNode.insertBefore(js, sc); }(document, "script"));
+```javascript
+<script>
+(function(d, s) {
+  var js = d.createElement(s),
+    sc = d.getElementsByTagName(s)[0];
+  js.src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
+  sc.parentNode.insertBefore(js, sc); }(document, "script"));
 </script>
 ```
 
@@ -28,6 +29,7 @@ sc.parentNode.insertBefore(js, sc); }(document, "script"));
 The following snippet should also be placed in the ​`<head>`​ section of the HTML document and will let you configure the behavior of the paywall.
 
 ```javascript
+<script>
 var unlockProtocolConfig = {
   network: "1", // Network ID (1 is for mainnet, 4 for rinkeby... etc)
   locks: {
@@ -50,6 +52,7 @@ var unlockProtocolConfig = {
     noWallet: 'This is the message shown when the user does not have a crypto wallet which is required...',
   }
 }
+</script>
 ```
 
 `​unlockProtocolConfig​` is a global object which includes the locks indexed by their address on the Ethereum blockchain. Each lock is an object which can have an optional name \(string\).
