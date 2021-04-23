@@ -51,4 +51,10 @@
 * [Reddit](https://www.reddit.com/r/unlock_protocol/)
 * [Telegram](https://t.me/unlockprotocol)
 * [Twitter](https://twitter.com/UnlockProtocol)
+* [LinkedIn](http://linkedin.com/company/unlock-protocol)
+
+## More
+
+* [Unlock Mentions](more/unlock-mentions.md)
+* [Unlock Brand Guidelines](more/unlock-brand-guidelines.md)
 

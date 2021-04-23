@@ -14,7 +14,7 @@ As part of our roadmap, we plan on allowing users who do not know of cryptocurre
 
 ## What crypto wallet are supported?
 
-Unlock is powered by Ethereum, which means that you can use your own wallet to purchase memberships \(we call them keys\).  
+Unlock is powered by Ethereum, which means that you can use your own wallet to purchase memberships \(we call them keys\).
 
 We recommend the use of in-browser wallets such as [MetaMask](https://MetaMask.io/) \(for both Firefox and Chrome\), or browsers which include wallets directly, such as [Opera](https://www.opera.com/) or [Brave](https://brave.com/).
 
@@ -32,7 +32,7 @@ We strongly believe that, at this point, the biggest revenue loss for creators o
 
 ## What is Optimistic Unlocking?
 
-When you purchase a lock and you see a Confirming Purchase notification we're using Optimistic Unlocking to confirm your purchase. 
+When you purchase a lock and you see a Confirming Purchase notification we're using Optimistic Unlocking to confirm your purchase.
 
 Usually a transaction needs to be confirmed on the Ethereum Blockchain before it is validated – this can take a few minutes, depending on how busy the network is. Optimistic Unlocking provides you access while the transactions is confirming rather than after. We do this to create a faster purchase and more seamless user experience. Read more about it in our release [blog post](https://medium.com/unlock-protocol/optimistic-unlocking-a539d08bf756).
 
@@ -48,13 +48,13 @@ Yes! Even though our earliest iterations are around paywalls for text, we are de
 
 ## Do I need cryptocurrencies to access the content of my favorite sites with a Lock?
 
-Right now: yes. 
+Right now: yes.
 
 Eventually: no. Our roadmap is to start with the most "crypto-friendly" crowds because they know and understand some of the constraints that arise from using cryptocurrencies ... but it is our goal to make it trivial for anyone to use Unlock, whether they want, care or even know about cryptocurrencies.
 
 ## Do I need a crypto-wallet to access the content of my favorite sites with a Lock?
 
-Right now: yes. 
+Right now: yes.
 
 Eventually: no. We plan on making it easy for people who do not have a crypto wallet to use an Unlock application which can help them manage their keys.
 
@@ -70,19 +70,18 @@ We are also deployed [on xDAI](https://blockscout.com/xdai/mainnet/address/0x763
 
 ## As a creator, can I set a recurring membership?
 
-Yes! The "lock" itself does not include the logic for recurring memberships, but we provide another contract, called the [KeyPurchaser](https://docs.unlock-protocol.com/developers/smart-contracts/key-purchaser), whose logic enables recurring membership.
-At a high level, this only works for ERC20 locks, and leverages the _allowance_ mechanism of the ERC20 specification. Instead of purchasing a key themselves, members have approve the `keyPurchaser` contract to spend some of the ERC20 tokens. They will approve a multiple of the key price, which will let the creator (or a third party, like Unlock Inc) call the `keyPurchaser` contract to purchase keys for them. The `keyPurchaser` contract guarantees that not all ERC20 tokens are withdrawn at once, by only performing successful key purchases when a an existing key is soon to be expired.
-
+Yes! The "lock" itself does not include the logic for recurring memberships, but we provide another contract, called the [KeyPurchaser](https://docs.unlock-protocol.com/developers/smart-contracts/key-purchaser), whose logic enables recurring membership. At a high level, this only works for ERC20 locks, and leverages the _allowance_ mechanism of the ERC20 specification. Instead of purchasing a key themselves, members have approve the `keyPurchaser` contract to spend some of the ERC20 tokens. They will approve a multiple of the key price, which will let the creator \(or a third party, like Unlock Inc\) call the `keyPurchaser` contract to purchase keys for them. The `keyPurchaser` contract guarantees that not all ERC20 tokens are withdrawn at once, by only performing successful key purchases when a an existing key is soon to be expired.
 
 ## How mucch gas does it cost to purchase a key to a lock?
 
-When purchasing a key to a lock, the member has to also pay for gas to the Ethereum network in order to get the transation mined.
-Here are rough indication of the gas amount to be paid to purchase a key a a lock when the purchases did not have a key previously (this can vary base on some lock specific parameters, such as the lock version):
+When purchasing a key to a lock, the member has to also pay for gas to the Ethereum network in order to get the transation mined. Here are rough indication of the gas amount to be paid to purchase a key a a lock when the purchases did not have a key previously \(this can vary base on some lock specific parameters, such as the lock version\):
+
 * ETH lock: 160,000 gas,
 * ERC20 lock: 175,000 gas, to which we should add 45,000 for the ERC20 approval
-When performing renewals, the user should expect to spend 70,000 gas.
+
+  When performing renewals, the user should expect to spend 70,000 gas.
 
 Note for ERC20 locks, if your application uses the key purchaser pattern, then, the user only has to pay for the ERC20 approval, while the entity sending the transaction has to pay for the key purchase gas.
 
-We are well aware that the Ethereum mainnet may soon become impractical as gas fees are skyrocketing. Please use Unlock on other EVM chains, such as xdai (just point your wallet to the xDAI chain)
+We are well aware that the Ethereum mainnet may soon become impractical as gas fees are skyrocketing. Please use Unlock on other EVM chains, such as xdai \(just point your wallet to the xDAI chain\)
 

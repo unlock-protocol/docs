@@ -10,7 +10,7 @@ Locks are smart contracts on the Ethereum blockchain. This provides creators wit
 
 {% embed url="https://unlock-protocol.com/" caption="https://unlock-protocol.com" %}
 
-_Note: this currently requires an Ethereum wallet. You can point the wallet to any network that Unlock is [currently deployed on](https://docs.unlock-protocol.com/frequently-asked-questions#what-networks-are-supported)._
+_Note: this currently requires an Ethereum wallet. You can point the wallet to any network that Unlock is_ [_currently deployed on_](https://docs.unlock-protocol.com/frequently-asked-questions#what-networks-are-supported)_._
 
 When creating a lock, the creator can select the following attributes:
 
@@ -23,7 +23,7 @@ Once deployed the lock will have its own address and is fully owned by the creat
 
 The lock can also be customized even further, please get in touch if you have questions!
 
-### Creating a Lock for a custom ERC20 token
+## Creating a Lock for a custom ERC20 token
 
 The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Locks can be configured to be backed by any token that conforms to the [ERC20](https://eips.ethereum.org/EIPS/eip-20) specification. Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and `ticker` query parameters.
 

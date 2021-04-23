@@ -21,9 +21,9 @@ Inside the admin section of your WordPress site, click on Plugins &gt; Add New
 
 In the search bar on the plugins page, search for "Unlock Protocol"
 
-![Search for the plugin](../.gitbook/assets/image%20%286%29%20%281%29.png)
+![Search for the plugin](../.gitbook/assets/image%20%286%29%20%281%29%20%281%29.png)
 
-![Click on &quot;Install Now&quot;, and then on &quot;Activate&quot;.](../.gitbook/assets/image%20%2810%29%20%281%29.png)
+![Click on &quot;Install Now&quot;, and then on &quot;Activate&quot;.](../.gitbook/assets/image%20%2810%29%20%281%29%20%281%29.png)
 
 After this, you're all set and you can start locking content on your posts or pages!
 
@@ -49,7 +49,7 @@ Like any other block, click on the ⊕ sign to add an "Unlock Protocol Block".
 
 Once added to the page, the block contains a visual indication \(only when editing the post!\) to show the block's status: you can easily toggle between content that's only available for members and content that is not available for members.
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2810%29%20%281%29.png)
 
 From there you can add more content which will only be visible by members. The Unlock Blocks can include their own  nested blocks, making it easy to lock images, videos, or even attachments.
 
