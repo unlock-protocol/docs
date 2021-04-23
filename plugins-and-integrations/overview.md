@@ -35,5 +35,10 @@ More info coming soon.
 # Webflow
 **Work in Progress**
 - [Demo & Integration Details](https://unlock-integration.webflow.io/)
+- View in Designer
 - [Clone](#) Coming Soon
 - Created by [Sascha Mombartz](https://github.com/smombartz)
+
+# Squarespace
+
+Interested in building the [Squarespace Extension](https://www.squarespace.com/extensions/home)? Get in touch with us.
