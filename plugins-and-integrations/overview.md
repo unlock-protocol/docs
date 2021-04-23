@@ -22,22 +22,29 @@ A Wordpress Plugin that integrates the Unlock [Paywall Application](../applicati
 
 # Discourse
 
+⚠️ **Work in Progress** 🚧
 More info coming soon.
 
 # Shopify
 
-More info coming soon.
-
-# Ghost
-
+⚠️ **Work in Progress** 🚧
 More info coming soon.
 
 # Webflow
-**Work in Progress**
+⚠️ **Work in Progress** 🚧
 - [Demo & Integration Details](https://unlock-integration.webflow.io/)
 - View in Designer
 - [Clone](#) Coming Soon
 - Created by [Sascha Mombartz](https://github.com/smombartz)
+
+# StreamLabs
+
+⚠️ **Work Starting Soon** 🚧
+
+
+# Ghost
+
+Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)? Get in touch with us.
 
 # Squarespace
 
