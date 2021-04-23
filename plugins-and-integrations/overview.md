@@ -2,7 +2,24 @@
 description: An overview of exisitng and in progress integrations.
 ---
 
-# Drupal Module
+[Cloudflare](#cloudflare), [Discord](#discord), [Discourse](#discourse), [Drupal](#drupal), [Ghost](#ghost), [Shopify](#shopify), [StreamLabs](#streamlabs), [Squarespace](#squarespace), [Webflow](#webflow), [WordPress](#wordpress)
+
+# Cloudflare
+
+- [Unlock Cloudflare Worker GitHub](https://github.com/unlock-protocol/cloudflare-worker)
+- Created by [Unlock](https://github.com/unlock-protocol)
+
+# Discord
+
+- [Swordy Bot](https://swordybot.com)
+- Created by [Patrick Gallagher](https://patrickgallagher.dev/)
+
+# Discourse
+
+⚠️ **Work in Progress** 🚧
+More info coming soon.
+
+# Drupal 
 
 Drupal module that allows only members to see specific parts of your site content.
 
@@ -10,7 +27,25 @@ Drupal module that allows only members to see specific parts of your site conten
 - [GitHub Repository](https://github.com/mikedotexe/unlock)
 - Created by [Mike Purvis](https://github.com/mikedotexe)
 
-# WordPress Plugin
+# Ghost
+
+Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)? Get in touch with us.
+
+# Shopify
+
+⚠️ **Work in Progress** 🚧
+More info coming soon.
+
+# StreamLabs
+
+⚠️ **Work Starting Soon** 🚧
+
+# Squarespace
+
+Interested in building the [Squarespace Extension](https://www.squarespace.com/extensions/home)? Get in touch with us.
+
+
+# WordPress
 
 A Wordpress Plugin that integrates the Unlock [Paywall Application](../applications/paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
 
@@ -20,32 +55,9 @@ A Wordpress Plugin that integrates the Unlock [Paywall Application](../applicati
 - [GitHub Repo](https://github.com/unlock-protocol/unlock-wordpress-plugin)
 - Created by [Unlock](https://github.com/unlock-protocol)
 
-# Discourse
-
-⚠️ **Work in Progress** 🚧
-More info coming soon.
-
-# Shopify
-
-⚠️ **Work in Progress** 🚧
-More info coming soon.
-
 # Webflow
 ⚠️ **Work in Progress** 🚧
 - [Demo & Integration Details](https://unlock-integration.webflow.io/)
 - View in Designer
 - [Clone](#) Coming Soon
-- Created by [Sascha Mombartz](https://github.com/smombartz)
-
-# StreamLabs
-
-⚠️ **Work Starting Soon** 🚧
-
-
-# Ghost
-
-Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)? Get in touch with us.
-
-# Squarespace
-
-Interested in building the [Squarespace Extension](https://www.squarespace.com/extensions/home)? Get in touch with us.
+- Created by [Sascha Mombartz](https://twitter.com/supermombartz)
