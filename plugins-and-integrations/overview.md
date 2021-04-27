@@ -14,6 +14,7 @@ description: An overview of exisitng and in progress integrations.
 ## Discord
 
 * [Swordy Bot](https://swordybot.com)
+* [Instructions](https://unlock-protocol.com/blog/swordy-bot-intro)
 * Created by [Patrick Gallagher](https://patrickgallagher.dev/)
 
 ## Discourse
