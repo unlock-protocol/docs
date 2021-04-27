@@ -35,7 +35,10 @@ Interested in building the [Ghost Integration](https://ghost.org/integrations/cu
 
 ## Shopify
 
-⚠️ **Work in Progress** 🚧 More info coming soon.
+⚠️ **Work in Progress** 🚧  More coming soon.
+
+* [GitHub](https://github.com/pwagner/unlock-shopify-app)
+* Created by [Paul Wagner](https://twitter.com/pswgnr)
 
 ## StreamLabs
 
