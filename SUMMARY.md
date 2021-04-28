@@ -11,6 +11,7 @@
 ## Plugins and Integrations
 
 * [Overview](plugins-and-integrations/overview.md)
+* [Discrod](plugins-and-integrations/discrod.md)
 * [Wordpress Plugin](plugins-and-integrations/wordpress-plugin.md)
 * [Drupal Plugin](plugins-and-integrations/drupal-plugin.md)
 
