@@ -54,19 +54,23 @@ var unlockProtocolConfig = {
 }
 </script>
 ```
+
 `network` is the configuration required to switch from Ethereum to other networks such as xDai. If no network config is provided Etherum mainnet is the default.
 
 Etherum mainnet
+
 ```javascript
 network:1
 ```
 
 Rinkbey
+
 ```javascript
 network:4
 ```
 
 xDai
+
 ```javascript
 network:100
 ```
