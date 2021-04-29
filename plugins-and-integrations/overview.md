@@ -34,6 +34,13 @@ Drupal module that allows only members to see specific parts of your site conten
 
 Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)? Get in touch with us.
 
+## Known
+
+[Known](%20https://withknown.com/) is a collaborative social publishing engine.
+
+* [GitHub Repository](https://github.com/idno/Unlock)
+* Created by [Ben Werdmuller](https://twitter.com/benwerd/)
+
 ## Shopify
 
 ⚠️ **Work in Progress** 🚧  More coming soon.
