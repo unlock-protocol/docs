@@ -60,3 +60,7 @@
 * [Unlock Mentions](more/unlock-mentions.md)
 * [Unlock Brand Guidelines](more/unlock-brand-guidelines.md)
 
+---
+
+* [Our Code of Conduct](our-code-of-conduct.md)
+
