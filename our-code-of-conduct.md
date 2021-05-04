@@ -1,5 +1,5 @@
 ---
-description: Out community and contributor covenant code of conduct
+description: Our community and contributor covenant code of conduct
 ---
 
 # Our Code of Conduct
