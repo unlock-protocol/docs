@@ -44,7 +44,8 @@
 
 ## Governance
 
-* [The Unlock Token](governance/the-unlock-token.md)
+* [The Unlock Token](governance/the-unlock-token/README.md)
+  * [The Path to UDT!](governance/the-unlock-token/the-path-to-udt.md)
 * [Grants, Bounties and Matchings](governance/grants-bounties-and-matchings.md)
 * [Roadmap](governance/roadmap.md)
 * [Frequently Asked Questions](governance/frequently-asked-questions.md)
