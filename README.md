@@ -24,7 +24,7 @@ The lock itself does not _know_ about the content or features which it locks. Th
 Read more about:
 
 * [The smart contracts](https://docs.unlock-protocol.com/developers/smart-contracts-architecture)
-* [How to deploy your first lock](getting-started/deploying-lock.md)
+* [How to deploy your first lock](deploying-lock/)
 
 ## For Consumers
 

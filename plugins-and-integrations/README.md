@@ -2,9 +2,9 @@
 description: An overview of exisitng and in progress integrations.
 ---
 
-# Overview
+# Plugins and Integrations
 
-[Cloudflare](overview.md#cloudflare), [Discord](overview.md#discord), [Discourse](overview.md#discourse), [Drupal](overview.md#drupal), [Ghost](overview.md#ghost), [Shopify](overview.md#shopify), [StreamLabs](overview.md#streamlabs), [Squarespace](overview.md#squarespace), [Webflow](overview.md#webflow), [WordPress](overview.md#wordpress)
+[Cloudflare](./#cloudflare), [Discord](./#discord), [Discourse](./#discourse), [Drupal](./#drupal), [Ghost](./#ghost), [Shopify](./#shopify), [StreamLabs](./#streamlabs), [Squarespace](./#squarespace), [Webflow](./#webflow), [WordPress](./#wordpress)
 
 ## Cloudflare
 
@@ -58,7 +58,7 @@ Interested in building the [Squarespace Extension](https://www.squarespace.com/e
 
 ## WordPress
 
-A Wordpress Plugin that integrates the Unlock [Paywall Application](../applications/paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
+A Wordpress Plugin that integrates the Unlock [Paywall Application](../developers/paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
 
 * [Integration Details](wordpress-plugin.md)
 * [Demo](https://wordpress-demo.unlock-protocol.com/)
@@ -72,6 +72,6 @@ A Wordpress Plugin that integrates the Unlock [Paywall Application](../applicati
 
 * [Demo & Integration Details](https://unlock-integration.webflow.io/)
 * View in Designer
-* [Clone](overview.md) Coming Soon
+* [Clone](./) Coming Soon
 * Created by [Sascha Mombartz](https://twitter.com/supermombartz)
 

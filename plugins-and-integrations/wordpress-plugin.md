@@ -4,7 +4,7 @@ description: This page provides documentation for the Unlock Wordpress plugin.
 
 # Wordpress Plugin
 
-Unlock provides a [Wordpress Plugin](https://wordpress.org/plugins/unlock-protocol/) which integrates our [Paywall](../applications/paywall/) application into any WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
+Unlock provides a [Wordpress Plugin](https://wordpress.org/plugins/unlock-protocol/) which integrates our [Paywall](../developers/paywall/) application into any WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
 
 We maintain a WordPress.org site which lets you experience the membership experience from a visitor's point of view: [wordpress-demo.unlock-protocol.com](https://wordpress-demo.unlock-protocol.com/).
 
