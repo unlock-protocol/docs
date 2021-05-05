@@ -4,6 +4,9 @@ description: UDT and its Tokenomics
 
 # The Unlock Token
 
+* **Status**: [partially implemented](https://github.com/unlock-protocol/unlock/wiki/The-Path-to-UDT!). You can earn UDT today by using the protocol, or through [grants from the Unlock Treasury](https://github.com/unlock-protocol/unlock/wiki/Unlock-Inc's-Treasury:-Grants,-bounties-and-matchings).
+* [Address](https://etherscan.io/token/0x90de74265a416e1393a450752175aed98fe11517)
+
 ### Definitions
 
 #### Lock
