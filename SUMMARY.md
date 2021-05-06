@@ -23,12 +23,10 @@
 ## For Developers <a id="developers"></a>
 
 * [Unlock Platform](developers/unlock-platform.md)
-* [Our GitHub Workflow](developers/our-github-workflow.md)
 * [Smart Contracts](developers/smart-contracts/README.md)
-  * [Access Control](developers/smart-contracts/access-control.md)
-  * [Lock Api](developers/smart-contracts/lock-api.md)
-  * [Unlock API](developers/smart-contracts/unlock-api.md)
-  * [Usage & Integration](developers/smart-contracts/usage.md)
+  * [Unlock Contract](developers/smart-contracts/unlock-api.md)
+  * [Lock Contract](developers/smart-contracts/lock-api/README.md)
+    * [Access Control](developers/smart-contracts/lock-api/access-control.md)
   * [Discount Codes Hook](developers/smart-contracts/discount-codes.md)
   * [Code Required Hook](developers/smart-contracts/code-required-hook.md)
   * [Key Purchaser](developers/smart-contracts/key-purchaser.md)
@@ -46,6 +44,7 @@
 
 * [The Unlock Token](governance/the-unlock-token/README.md)
   * [The Path to UDT!](governance/the-unlock-token/the-path-to-udt.md)
+  * [Side-chains and layer 2](governance/the-unlock-token/side-chains-and-layer-2.md)
 * [Grants, Bounties and Matchings](governance/grants-bounties-and-matchings.md)
 * [Roadmap](governance/roadmap.md)
 * [Frequently Asked Questions](governance/frequently-asked-questions.md)
