@@ -1,18 +1,41 @@
-# Roadmap
+---
+description: This document presents the Unlock roadmap.
+---
 
-This document presents a brief Unlock roadmap and should guide our decisions.
+# Roadmap
 
 As of April 2021, the Unlock ecosystem consists of the following:
 
-* a set of smart contracts which let creators deploy their locks, as well as lets consumer unlock the locks
-* an unlockjs library which developers can use to interact with the contracts
-* a paywall application which can be embedded on any web site or application to limit access to members and then lets users purchase keys to unlock content
-* an unlock-app application that lets creators deploy their lock and view their members, as well as lets consumers view the keys they purchased and interact with them \(keychain\). The Unlock app also provides user accounts that enable people to create an account with their email and password and then purchase keys with their credit cards through Unlock Inc.
-* the [Unlock Tokens](https://github.com/unlock-protocol/unlock/wiki/The-Unlock-Tokens), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
+* A set of smart contracts which let creators deploy their locks, as well as lets consumer unlock the locks
+* An [unlock-js](https://www.npmjs.com/package/@unlock-protocol/unlock-js) library which developers can use to interact with the contracts
+* A [paywall application](https://paywall.unlock-protocol.com/) which can be embedded on any web site or application to limit access to members and then lets users purchase keys to unlock content
+* An [unlock-app ](https://app.unlock-protocol.com/dashboard)application that lets creators deploy their lock and view their members, as well as lets consumers view the keys they purchased and interact with them \(keychain\). The Unlock app also provides user accounts that enable people to create an account with their email and password and then purchase keys with their credit cards through Unlock Inc.
+* The [Unlock Tokens](https://github.com/unlock-protocol/unlock/wiki/The-Unlock-Tokens), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
 
-In the next few months, we will focus on the following projects.
+## 1 Month Roadmap
 
-## Decentralization of governance \(Unlock DAO\)
+For June 1st 2021, here are the goals:
+
+* Enable UDT rewards on xDAI \([or any other side chain](the-unlock-token/side-chains-and-layer-2.md)\). 
+* Enable credit card checkout for any lock \(if creator agrees to it!\)
+* Update home page design
+* Addition of a `/developer`landing page
+* Addition of a `/creator` landing page
+* Formal launch of grant program process \([see grants page](grants-bounties-and-matchings.md)\)
+* Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.gg/nBNPqmPW)
+* Developer forum launched on Discourse
+
+## 3 Month Roadmap
+
+* Decentralized governance \(see below\)
+* Launch Unlock on 2 more side-chains/network \(see below\)
+* ApplePay or GooglePay or Paypal integration
+* Customizable NFT icon from dashboard
+* Lock configuration from dashboard \(metadata collection\)
+* Full "static" website relaunch
+* First Hackathon \(remote\)
+
+### Decentralization of governance \(Unlock DAO\)
 
 At this point, protocol upgrades are still performed via Unlock Inc's multi-sig wallet. Now that UDT is being minted and distributed on transactions will referrals, we need to live by our goal to provide a way to vote to all UDT holders. The process, to be confirmed would be like this:
 
@@ -24,7 +47,7 @@ There are several challenges to take into account: how can we guarantee that we 
 
 Our goal for this milestone is summer 2021 \(was May 31 2021, but given recent developments, we had to shift priorities to support massive adoption\).
 
-## Support for more EVM chains and L2.
+### Support for more EVM chains and L2.
 
 Unlock is currently deployed on Rinkeby, Kovan as well as Ethereum's mainnet. The protocol is also [deployed xDAI](https://unlock-protocol.com/blog/xdai) but we also want to also deploy on other chains such as Matic/Polygon or even 3rd party chains that support the EVM \(Near\) as well Optimism and other Layer 2.
 
@@ -33,7 +56,9 @@ There are 2 challenges:
 * Making sure our front-end can easily support any of these chains \(maybe by just switching to the network of the wallet or indicating to users that they need to switch to a special one\),
 * Making sure that the side chains' UDT can share liquidity with the main chain's UDT. Our approach for this is evolving, but one clear design goal is to make sure mainnet's UDT is the most important token in the Unlock ecosystem. All other chains's UDT will only be used locally to that chain.
 
-## Others
+## Beyond
+
+These are opportunities we will eventually work on, based on user demand or available bandwidth.
 
 ### Smart contracts
 
@@ -42,25 +67,22 @@ There are 2 challenges:
 
 ### Locksmith
 
-* Multi chain on each env. Currently locksmith instances are 'chain specific'. We're making them agnostic.
-* Better Credit card support. Our goal is to enable credit card payment for every lock, in a permission-less way \(self serve!\)
-* better metadata support. Allowing lock owners to change metadata on their locks.
+* Multi chain on each env. Currently locksmith instances are 'chain specific'. We're making them agnostic. 80% ✅
 
 ### Paywall
 
-* Multi chain on checkout \(locks can each be on different chains\)
+* Multi chain on checkout \(locks can each be on different chains\) 80% ✅
 * "stronger" security requirement \(ask user to sign a message to verify they actually own the address\)
 
 ### Unlock App
 
 * Wallet Connect ✅
-* Unlock user accounts can toggle network.
-* grant memberships UI
-* UI to set NFT metadata \(image\)
+* Unlock account refactors
+* Grant memberships UI
 
 ### Tooling
 
-* Github actions to replace CircleCi.
+* Github actions to replace CircleCi
 * Better dependency management \(use of lerna and yarn workspaces\)
 * Better integration tests
 
