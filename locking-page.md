@@ -50,7 +50,8 @@ var unlockProtocolConfig = {
     pending: 'This is the message shown when the user sent a transaction to purchase a key which has not be confirmed yet',
     confirmed: 'This is the message shown when the user has a confirmed key',
     noWallet: 'This is the message shown when the user does not have a crypto wallet which is required...',
-  }
+  },
+  referrer: '0xreferrer' // Address of the referrer who will earn UDT governance tokens if the transaction is elligible.
 }
 </script>
 ```
