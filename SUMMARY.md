@@ -5,20 +5,18 @@
 
 ## For Creators <a id="creators"></a>
 
----
-
-* [Deploying a lock](deploying-lock/README.md)
-  * [Dashboard](deploying-lock/dashboard.md)
-* [Adding a Lock to Web Page](locking-page.md)
-* [Plugins and Integrations](plugins-and-integrations/README.md)
-  * [Wordpress Plugin](plugins-and-integrations/wordpress-plugin.md)
-  * [Discord](plugins-and-integrations/discord.md)
-  * [Drupal Plugin](plugins-and-integrations/drupal-plugin.md)
-* [Tutorials](tutorials-1/README.md)
-  * [Building an Ad Free Experience](tutorials-1/ad-free-experience.md)
-  * [Using Unlock for Newsletters](tutorials-1/using-unlock-newsletter.md)
-  * [Receiving donations on Github](tutorials-1/receiving-donations-on-github.md)
-  * [Selling tickets for an event](tutorials-1/selling-tickets-for-an-event.md)
+* [Deploying a lock](creators/deploying-lock/README.md)
+  * [Dashboard](creators/deploying-lock/dashboard.md)
+* [Adding a Lock to Web Page](creators/locking-page.md)
+* [Plugins and Integrations](creators/plugins-and-integrations/README.md)
+  * [Wordpress Plugin](creators/plugins-and-integrations/wordpress-plugin.md)
+  * [Discord](creators/plugins-and-integrations/discord.md)
+  * [Drupal Plugin](creators/plugins-and-integrations/drupal-plugin.md)
+* [Tutorials](creators/tutorials-1/README.md)
+  * [Building an Ad Free Experience](creators/tutorials-1/ad-free-experience.md)
+  * [Using Unlock for Newsletters](creators/tutorials-1/using-unlock-newsletter.md)
+  * [Receiving donations on Github](creators/tutorials-1/receiving-donations-on-github.md)
+  * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
 
 ## For Developers <a id="developers"></a>
 

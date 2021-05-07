@@ -36,7 +36,7 @@ var unlockProtocolConfig = {
 }
 ```
 
-_Further configuration details are provided in the_ [_Configure the Lock_](../#install-a-lock-on-a-web-page) _section of the documentation_.
+_Further configuration details are provided in the_ [_Configure the Lock_](../../#install-a-lock-on-a-web-page) _section of the documentation_.
 
 1. Add an event handler to capture the change of state between locked and unlocked; rendering ad components when relevant.
 

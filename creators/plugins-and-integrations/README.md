@@ -13,7 +13,7 @@ description: An overview of exisitng and in progress integrations.
 
 ## Discord
 
-* Instructions
+* [Instructions & Documentation](discord.md)
 * [Swordy Bot Website](https://swordybot.com)
 * [Blog Post](https://unlock-protocol.com/blog/swordy-bot-intro)
 * Created by [Patrick Gallagher](https://patrickgallagher.dev/)
@@ -58,7 +58,7 @@ Interested in building the [Squarespace Extension](https://www.squarespace.com/e
 
 ## WordPress
 
-A Wordpress Plugin that integrates the Unlock [Paywall Application](../developers/paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
+A Wordpress Plugin that integrates the Unlock [Paywall Application](../../developers/paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
 
 * [Integration Details](wordpress-plugin.md)
 * [Demo](https://wordpress-demo.unlock-protocol.com/)
