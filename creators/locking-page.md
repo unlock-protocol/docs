@@ -1,12 +1,13 @@
 ---
 description: >-
-  Unlock can be added to any web page which supports JavaScript. For this, you
-  would use our Paywall application.
+  Once created, you need to embed your lock(s) in your web page or application.
+  There are many ways to do this, but the easiest way is to use our Paywall
+  application.
 ---
 
 # Adding a Lock to Web Page
 
-Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems. See the _Plugins and Integrations_ section.
+Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications \(such as chat messaging applications, e-commerce stores or even gaming engines!\). See the _Plugins and Integrations_ section.
 
 ## Embedding the paywall
 
@@ -26,21 +27,23 @@ We recommend loading the script using the following approach:
 
 ## Configure the Paywall
 
-The following snippet should also be placed in the ​`<head>`​ section of the HTML document and will let you configure the behavior of the paywall.
+The second step required is to configure the paywall so that it uses your lock. There again, you will need to use a `<script>`element added to your page's HTML.  Ideally, it should also be placed in the ​`<head>`​ section will let you configure the behavior of the paywall.
 
 ```javascript
 <script>
 var unlockProtocolConfig = {
-  network: "1", // Network ID (1 is for mainnet, 4 for rinkeby... etc)
+  network: 1, // Network ID (1 is for mainnet, 4 for rinkeby... etc)
   locks: {
     '0xabc': { // 0xabc is the address of a lock.
-      name: 'One Week'
+      name: 'One Week',
+      network: 1 // you can customize the network for each lock
     }, 
     '0xdef': {
       name: 'One Month' 
+      network: 100 // lock on the xDai chain
     },
     '0xghi': {
-      name: 'One Year'
+      // if no name is used, the default from the contract is used
     } // you can add as many locks as you want.
   },
   icon: 'https://app.unlock-protocol.com/static/images/svg/default.svg', 
@@ -54,31 +57,20 @@ var unlockProtocolConfig = {
   referrer: '0xreferrer' // Address of the referrer who will earn UDT governance tokens if the transaction is elligible.
 }
 </script>
+`
 ```
 
-`network` is the configuration required to switch from Ethereum to other networks such as xDai. If no network config is provided Etherum mainnet is the default.
+### Details
 
-Etherum mainnet
+`​unlockProtocolConfig​` is a global object.
 
-```javascript
-network:1
-```
+`network` is the configuration required to switch from Ethereum's main net to other networks such as xDai. If no network config is provided Etherum mainnet is the default. For reference, Ethereum's main net uses the network id of `1`rinkeby uses `4`inkeby and xDai uses `100`
 
-Rinkbey
-
-```javascript
-network:4
-```
-
-xDai
-
-```javascript
-network:100
-```
-
-`​unlockProtocolConfig​` is a global object which includes the locks indexed by their address on the Ethereum blockchain. Each lock is an object which can have an optional name \(string\).
+The `locks` object should contain all of the locks which are available on the page. They are indexed by their addresses. Each lock can have an optional name displayed on the checkout interface, as well as an optional network id on which it has been deployed. This enables embedding multiple locks from different networks.
 
 The object has the following optional attributes: `icon` and `callToAction`. `​icon​` references an image to be shown on the modal and the `​callToAction`​ object with a ​default​ value set to the text shown on the checkout modal.
+
+Finally, the `referrer` key should point to the address which will receive newly minted [UDT governance](../governance/the-unlock-token/) tokens. 
 
 For more advanced configuration settings, including the collection of user metadata before a key purchase, see [Advanced Paywall Configuration](https://docs.unlock-protocol.com/applications/paywall/advanced-paywall-configuration).
 
@@ -124,8 +116,10 @@ Note: the callback can be invoked several times. For example, a visitor might pu
 In order to purchase keys, Unlock provides a modal which lets the user pick the lock of their choice \(based on the configuration above\). The modal can be loaded by invoking the following:
 
 ```javascript
-window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()
+window.unlockProtocol && window.unlockProtocol.loadCheckoutModal(/* optional configuration*/)
 ```
+
+In some cases, you may want to customize what locks are available for purchase, or even the messaging. For this, the `loadCheckoutModal` call accepts an optional configuration object. This configuration object has the same shape then the global `unlockProtocolConfig`
 
 ## Full code example
 

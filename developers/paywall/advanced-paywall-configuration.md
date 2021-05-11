@@ -48,9 +48,7 @@ Note: you can customize the `callToAction` value for the metadata form by adding
 
 ## Accepting card payments
 
-For some selected locks, Unlock Inc provides the ability to purchase a key through their credit or debit cards. For this, you currently need approval from our team \(the payment will not go through if your lock has not previously been manually approved\). You can reach out to us via hello@unlock-protocol.com.
-
-Once your lock has been approved, you just need to add the following to the top level of your paywall script configuration: `unlockUserAccounts: true`.
+_To be announced soon..._
 
 ## Pessimistic Unlocking
 
@@ -59,4 +57,8 @@ One of the features of the paywall application is that it [optimistically unlock
 In some cases, your application may want to _not_ unlock until the transaction is fully confirmed. For this you should add `pessimistic: true` to the paywall configuration.
 
 When doing this, you should ensure that your application handles the events such as `unlockProtocol.authenticated` and `unlockProtocol.transactionSent` to show valuable feedback to the user. See the [Handle Event](https://docs.unlock-protocol.com/getting-started/locking-page#handle-events) section on this page.
+
+### Providing a custom web3 provider
+
+_To be announced..._
 
