@@ -4,9 +4,9 @@ description: An overview of exisitng and in progress integrations.
 
 # Plugins and Integrations
 
-[Cloudflare](./#cloudflare), [Discord](./#discord), [Discourse](./#discourse), [Drupal](./#drupal), [Ghost](./#ghost), [Shopify](./#shopify), [StreamLabs](./#streamlabs), [Squarespace](./#squarespace), [Webflow](./#webflow), [WordPress](./#wordpress)
+[Cloudflare](./#cloudflare), [Discord](./#discord), [Discourse](./#discourse), [Drupal](./#drupal), [Ghost](./#ghost), [Known](./#known), [Shopify](./#shopify), [StreamLabs](./#streamlabs), [Squarespace](./#squarespace), [Webflow](./#webflow), [WordPress](./#wordpress)
 
-👀 Get a [grant](../../governance/grants-bounties-and-matchings.md) for building an integration including: [Notion](http://developers.notion.com)
+👀 Get a [grant](../../governance/grants-bounties-and-matchings.md) for building an integration including: [Notion](http://developers.notion.com), [Squarespace](https://www.squarespace.com/extensions/home), ...
 
 ## Cloudflare
 
