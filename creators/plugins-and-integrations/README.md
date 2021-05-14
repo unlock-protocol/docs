@@ -6,7 +6,7 @@ description: An overview of exisitng and in progress integrations.
 
 [Cloudflare](./#cloudflare), [Discord](./#discord), [Discourse](./#discourse), [Drupal](./#drupal), [Ghost](./#ghost), [Shopify](./#shopify), [StreamLabs](./#streamlabs), [Squarespace](./#squarespace), [Webflow](./#webflow), [WordPress](./#wordpress)
 
-👀 Get a [grant](../../governance/grants-bounties-and-matchings.md) for building an integration for: [Notion](http://developers.notion.com)
+👀 Get a [grant](../../governance/grants-bounties-and-matchings.md) for building an integration including: [Notion](http://developers.notion.com)
 
 ## Cloudflare
 
