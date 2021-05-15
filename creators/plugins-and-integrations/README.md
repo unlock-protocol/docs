@@ -4,9 +4,12 @@ description: An overview of exisitng and in progress integrations.
 
 # Plugins and Integrations
 
-[Cloudflare](./#cloudflare), [Discord](./#discord), [Discourse](./#discourse), [Drupal](./#drupal), [Ghost](./#ghost), [Known](./#known), [Shopify](./#shopify), [StreamLabs](./#streamlabs), [Squarespace](./#squarespace), [Webflow](./#webflow), [WordPress](./#wordpress)
+[Cloudflare](./#cloudflare), [Discord](./#discord), [Discourse](./#discourse), [Drupal](./#drupal), [Known](./#known), [Shopify](./#shopify), [StreamLabs](./#streamlabs), [Squarespace](./#squarespace), [Webflow](./#webflow), [WordPress](./#wordpress)
 
-👀 Get a [grant](../../governance/grants-bounties-and-matchings.md) for building an integration including: [Notion](http://developers.notion.com), [Squarespace](https://www.squarespace.com/extensions/home), ...
+### Grants for Integrations
+
+👀 Get a grant for building an integration including: [Ghost](https://ghost.org/integrations/custom-integrations/), [Notion](http://developers.notion.com), [Squarespace](https://www.squarespace.com/extensions/home), ...   
+→ Learn more [here](../../governance/grants-bounties-and-matchings.md#grants) and [apply here](../../governance/grants-bounties-and-matchings.md#grant-applications).
 
 ## Cloudflare
 
@@ -34,7 +37,7 @@ Drupal module that allows only members to see specific parts of your site conten
 
 ## Ghost
 
-Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)? Get in touch with us.
+⚠️ 👀 Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)? Get in touch with us.
 
 ## Known
 
