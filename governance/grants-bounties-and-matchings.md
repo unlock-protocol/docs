@@ -3,7 +3,7 @@
 When Unlock Inc. created the [UDT tokens](https://github.com/unlock-protocol/unlock/wiki/The-Unlock-Tokens), we premined a total of 1,000,000 tokens. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 them to foster adoption of the protocol (the company will keep at least 200,000).
 
 By November 1st 2021, we want to have distributed at least 100,000 tokens.
-By May 1st 2021, we want to have distrubuted another 200,000 tokens, totalling at least 300,000 tokens.
+By May 1st 2022, we want to have distrubuted another 200,000 tokens, totalling at least 300,000 tokens.
 
 For this, we are considering 3 mechanisms: grants, bounties and matchings.
 
