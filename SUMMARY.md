@@ -5,7 +5,7 @@
 
 ## For Creators <a id="creators"></a>
 
-* [Creating a lock](creators/deploying-lock.md)
+* [Creating a Lock](creators/deploying-lock.md)
 * [Adding a Lock to Web Page](creators/locking-page.md)
 * [Plugins and Integrations](creators/plugins-and-integrations/README.md)
   * [Wordpress Plugin](creators/plugins-and-integrations/wordpress-plugin.md)

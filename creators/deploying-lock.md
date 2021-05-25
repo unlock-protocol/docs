@@ -4,7 +4,9 @@ description: >-
   can sell memberships to your own content!
 ---
 
-# Creating a lock
+# Creating a Lock
+
+{% embed url="https://youtu.be/jKj3l4Ei-i4" %}
 
 Locks are smart contracts on an Ethereum-compatible blockchain. This provides creators with **unmediated control over who can access their work**, and how much they want to charge for this. Unlock Inc. provides a simple dashboard to create a lock at the following address.
 
