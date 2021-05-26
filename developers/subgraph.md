@@ -15,7 +15,7 @@ The Graph Protocol provides an accessible GraphQL service providing useful aggre
 
 {% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-rinkeby" %}
 
-{% embed url="https://thegraph.com/explorer/subgraphs/unlock-protocol/xdai" %}
+{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/xdai" %}
 
 
 
