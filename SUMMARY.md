@@ -50,7 +50,7 @@
 
 * [Website](https://unlock-protocol.com)
 * [Github](https://github.com/unlock-protocol)
-* [Telegram](https://t.me/unlockprotocol)
+* [Discord](https://discord.com/invite/Ah6ZEJyTDp)
 * [Twitter](https://twitter.com/UnlockProtocol)
 * [LinkedIn](http://linkedin.com/company/unlock-protocol)
 * [Reddit](https://www.reddit.com/r/unlock_protocol/)
