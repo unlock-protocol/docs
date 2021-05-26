@@ -73,10 +73,9 @@ A Wordpress Plugin that integrates the Unlock [Paywall Application](../../develo
 
 ## Webflow
 
-⚠️ **Work in Progress** 🚧
-
 * [Demo & Integration Details](https://unlock-integration.webflow.io/)
-* View in Designer
-* [Clone](./) Coming Soon
+* [Clone Project](https://preview.webflow.com/preview/unlock-integration?utm_medium=preview_link&utm_source=showcase&utm_content=unlock-integration&preview=d2b65d0b804e0767c26e883d94d9ebbb)
+* [Webflow Showcase](https://webflow.com/website/Integrating-Unlock)
+* [Blog Post](https://unlock-protocol.com/blog/webflow-integration)
 * Created by [Sascha Mombartz](https://twitter.com/supermombartz)
 
