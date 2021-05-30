@@ -123,6 +123,8 @@ In some cases, you may want to customize what locks are available for purchase, 
 
 ## Full code example
 
+You can easily configure the following with your lock by replacing the lock address and setting up a network if your lock is not on the mainnet.
+
 Use this [JSFiddle](https://jsfiddle.net/unlockprotocol/x53c0yak/).
 
 {% embed url="http://jsfiddle.net/unlockprotocol/x53c0yak/" caption="" %}
