@@ -44,7 +44,7 @@
   * [Side-chains and layer 2](governance/the-unlock-token/side-chains-and-layer-2.md)
 * [Grants, Bounties and Matchings](governance/grants-bounties-and-matchings.md)
 * [Roadmap](governance/roadmap.md)
-* [Frequently Asked Questions](governance/frequently-asked-questions.md)
+* [FAQ](governance/frequently-asked-questions.md)
 
 ## Connect
 

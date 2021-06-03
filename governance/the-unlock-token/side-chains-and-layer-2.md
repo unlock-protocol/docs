@@ -12,7 +12,7 @@ Using this approach we guarantee that no new supply is added to the circulating 
 
 Users who have earned side chain UDT are welcome to bring these UDT back to the main-net network if they want to participate in governance there, or can transfer them to any of the other side chains where they could join more "local" governance decisions.
 
-Formula \(note: the same mechanism limiting the amount of tokens minted to gas spent applies here\). If the side chain has an available supply of N to distribute. For a GDP growth of 𝝙, the reward is 𝝙/(2*(1+𝝙)). This number is between 0 and 0.5 for any 𝝙 between 0 and Infinity. This means that the "reserve" is never fully distributed but the amount of tokens distrubuted with every new purchase decrases.
+Formula \(note: the same mechanism limiting the amount of tokens minted to gas spent applies here\). If the side chain has an available supply of N to distribute. For a GDP growth of 𝝙, the reward is 𝝙/\(2\*\(1+𝝙\)\). This number is between 0 and 0.5 for any 𝝙 between 0 and Infinity. This means that the "reserve" is never fully distributed but the amount of tokens distrubuted with every new purchase decrases.
 
 Status: [WIP](https://github.com/unlock-protocol/unlock/pull/7087).
 

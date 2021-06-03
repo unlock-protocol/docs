@@ -1,4 +1,8 @@
-# Frequently Asked Questions
+---
+description: Frequently Asked Questions
+---
+
+# FAQ
 
 ## Why is Unlock better for publishers, and for users?
 
@@ -74,7 +78,7 @@ Yes! The "lock" itself does not include the logic for recurring memberships, but
 
 ## How much gas does it cost to purchase a key to a lock?
 
-When purchasing a key to a lock, the member has to also pay for gas to the Ethereum network in order to get the transation mined. Here are rough indication of the gas amount to be paid to purchase a key a a lock when the purchases did not have a key previously \(this can vary base on some lock specific parameters, such as the lock version\):
+When purchasing a key to a lock, the member has to also pay for gas to the Ethereum network in order to get the transaction mined. Here are rough indication of the gas amount to be paid to purchase a key a a lock when the purchases did not have a key previously \(this can vary base on some lock specific parameters, such as the lock version\):
 
 * ETH lock: 160,000 gas,
 * ERC20 lock: 175,000 gas, to which we should add 45,000 for the ERC20 approval
@@ -84,4 +88,8 @@ When purchasing a key to a lock, the member has to also pay for gas to the Ether
 Note for ERC20 locks, if your application uses the key purchaser pattern, then, the user only has to pay for the ERC20 approval, while the entity sending the transaction has to pay for the key purchase gas.
 
 We are well aware that the Ethereum mainnet may soon become impractical as gas fees are skyrocketing. Please use Unlock on other EVM chains, such as xdai \(just point your wallet to the xDAI chain\)
+
+## What are the Credit Card Fees?
+
+When you pay with credit card we charge fees to cover stripe credit card processing, the blockchain transaction fees and an Unlock Inc. fee.
 

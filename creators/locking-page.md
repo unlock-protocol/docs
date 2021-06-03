@@ -27,7 +27,7 @@ We recommend loading the script using the following approach:
 
 ## Configure the Paywall
 
-The second step required is to configure the paywall so that it uses your lock. There again, you will need to use a `<script>`element added to your page's HTML.  Ideally, it should also be placed in the ​`<head>`​ section will let you configure the behavior of the paywall.
+The second step required is to configure the paywall so that it uses your lock. There again, you will need to use a `<script>`element added to your page's HTML. Ideally, it should also be placed in the ​`<head>`​ section will let you configure the behavior of the paywall.
 
 ```javascript
 <script>
@@ -70,7 +70,7 @@ The `locks` object should contain all of the locks which are available on the pa
 
 The object has the following optional attributes: `icon` and `callToAction`. `​icon​` references an image to be shown on the modal and the `​callToAction`​ object with a ​default​ value set to the text shown on the checkout modal.
 
-Finally, the `referrer` key should point to the address which will receive newly minted [UDT governance](../governance/the-unlock-token/) tokens. 
+Finally, the `referrer` key should point to the address which will receive newly minted [UDT governance](../governance/the-unlock-token/) tokens.
 
 For more advanced configuration settings, including the collection of user metadata before a key purchase, see [Advanced Paywall Configuration](https://docs.unlock-protocol.com/applications/paywall/advanced-paywall-configuration).
 
