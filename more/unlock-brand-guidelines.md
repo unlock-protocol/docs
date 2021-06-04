@@ -1,5 +1,27 @@
 # Unlock Brand Guidelines
 
+Unlock is a decentralized and open source protocol created by Unlock Inc and maintained by its community. Because of that we ask all developers and creators to name and brand their projects and products independently of Unlock Inc. That said, Unlock is a community that builds on and supports each other's work.
+
+Here you can find some branding guidelines and all of our brand assets.
+
+### Name & brand Your Project Independently
+
+* Try to come up with a unique name that communicates what you’re doing to your members, audience and customers. It does not have to include the word unlock. Remember there are going to be many products that will be part of this ecosystem and they should all be unique, recognisable and in the end, yours.
+
+### Powered by Unlock
+
+* Show that you’re leveraging the Unlock Protocol and part of Unlock’s community by including a “powered by Unlock” on your website, documentation and graphics.
+* This is not required but appreciated by other members of the community as it  helps strengthen our ecosystem.
+
+![](../.gitbook/assets/member-benefits-5.png)
+
+### Tools & Apps
+
+* Unlock Inc as well as the community are building and providing pre-built tools and apps for everyone to use. Some of these tools will allow for the explicit configuration and customization with your brand assets. Please use your brand in that case
+* One example is the Paywall App. The config file has a placeholder for a logo, which should match the site or app that it’s being integrated on.
+
+![](../.gitbook/assets/paywall-defiant.png)
+
 ## Powered by Unlock
 
 ![](../.gitbook/assets/powered-by-unlock.svg)
