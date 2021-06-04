@@ -93,3 +93,7 @@ We are well aware that the Ethereum mainnet may soon become impractical as gas f
 
 When you pay with credit card we charge fees to cover stripe credit card processing, the blockchain transaction fees and an Unlock Inc. fee.
 
+## Can I use a custom token instead of ETH or xDAI for my lock?
+
+Yes! You can use any ERC20 token. Check out the instructions [here](https://docs.unlock-protocol.com/creators/deploying-lock#creating-a-lock-for-a-custom-erc20-token).
+
