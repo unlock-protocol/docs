@@ -35,3 +35,20 @@ The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Lo
 * [Create a USDC Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&ticker=USDC)
 * [Create a BAT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x0d8775f648430679a709e98d2b0cb6250d2887ef&ticker=BAT)
 
+The parameters for BAT for example are as follows
+
+* erc20: 0x0d8775f648430679a709e98d2b0cb6250d2887ef
+* ticker: BAT
+
+The erc20 parameter is the tokens contract address. Here the BAT contract on [etherscan](https://etherscan.io/token/0x0d8775f648430679a709e98d2b0cb6250d2887ef).
+
+Once you have the correct details you add them to the URL in the following way:
+
+```text
+https://app.unlock-protocol.com/dashboard?erc20=0x0d8775f648430679a709e98d2b0cb6250d2887ef&ticker=BAT
+```
+
+This will enable an option on the dashboard to switch to your desired token.
+
+![](../.gitbook/assets/image%20%287%29.png)
+
