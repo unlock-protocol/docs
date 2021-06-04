@@ -57,7 +57,6 @@ var unlockProtocolConfig = {
   referrer: '0xreferrer' // Address of the referrer who will earn UDT governance tokens if the transaction is elligible.
 }
 </script>
-`
 ```
 
 ### Details
