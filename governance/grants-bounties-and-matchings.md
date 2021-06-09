@@ -14,6 +14,12 @@ These integrations can be in open source libraries or products \(see our [Wordpr
 
 For these, Unlock Inc. will **publicly** assign grants assigned to the teams in charge of building these integrations. The amount in the grants will generally be agreed to in DAI amount, but payed in tokens \(using the DAI value at the time of shipping/payment\).
 
+### Grant Application
+
+{% hint style="info" %}
+Interested? [Please apply for a grant here](https://share.hsforms.com/1gAdLgNOESNCWJ9bJxCUAMwbvg22).
+{% endhint %}
+
 Additionally, these grants will all be subject to vesting using smart contracts such as [Trustswap's](https://trustswap.org/)
 
 Past grants:
@@ -39,7 +45,5 @@ In some cases, people will perform single actions for the protocol which will ha
 
 As the protocol is gaining adoption, we want to offer disproportionate rewards to early adopters. The protocol itself has a minting curve which is logarithmic, which means early rewards will be larger than late rewards. However, we also want to allocate a non-trivial part of our treasury to "matchings". Our goal is to link rewards to performances. These matchings are limited in volume and time \(first of any limit reached\).
 
-## Grant applications
 
-Interested? [Please apply for a grant now](https://share.hsforms.com/1gAdLgNOESNCWJ9bJxCUAMwbvg22).
 
