@@ -37,7 +37,8 @@ Drupal module that allows only members to see specific parts of your site conten
 
 ## Ghost
 
-⚠️ 👀 Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)? Get in touch with us.
+👀 Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)?  
+→ **Apply for a** [**grant**](https://share.hsforms.com/1gAdLgNOESNCWJ9bJxCUAMwbvg22)**.**
 
 ## Known
 
@@ -53,13 +54,19 @@ Drupal module that allows only members to see specific parts of your site conten
 * [GitHub](https://github.com/pwagner/unlock-shopify-app)
 * Created by [Paul Wagner](https://twitter.com/pswgnr)
 
+## Slack
+
+👀 Interested in building a Slack integration?  
+→ **Apply for a** [**grant**](https://share.hsforms.com/1gAdLgNOESNCWJ9bJxCUAMwbvg22)**.**
+
 ## StreamLabs
 
-⚠️ **Work Starting Soon** 🚧
+⚠️ **Work In Progress** 🚧
 
 ## Squarespace
 
-Interested in building the [Squarespace Extension](https://www.squarespace.com/extensions/home)? Get in touch with us.
+👀 Interested in building the [Squarespace Extension](https://www.squarespace.com/extensions/home)?  
+→ **Apply for a** [**grant**](https://share.hsforms.com/1gAdLgNOESNCWJ9bJxCUAMwbvg22)**.**
 
 ## WordPress
 
