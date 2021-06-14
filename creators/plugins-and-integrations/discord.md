@@ -1,4 +1,4 @@
-# Discord
+# Discord with Swordy Bot
 
 ## Swordy Bot
 

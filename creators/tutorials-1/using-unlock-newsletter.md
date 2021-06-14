@@ -35,7 +35,7 @@ Once they submit their email address, they crypto-wallet will prompt your member
 
 Immediately after this, they will be asked to purchase the membership.
 
-![The checkout interface to purchase a membership and join your newsletter \(the price and name are based on your own lock...\)](../../.gitbook/assets/image%20%2814%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![The checkout interface to purchase a membership and join your newsletter \(the price and name are based on your own lock...\)](../../.gitbook/assets/image%20%2814%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
 
 ### List members and email addresses
 
