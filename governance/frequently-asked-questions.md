@@ -72,8 +72,8 @@ Unlock aims at supporting any EVM compatible blockchain and layer 2. Here is a l
 
 Production networks:
 1. Ethereum mainnet: [`0x3d5409cce1d45233de1d4ebdee74b8e004abdd13`](https://etherscan.io/address/0x3d5409cce1d45233de1d4ebdee74b8e004abdd13)
-2. Xdai: [`0x7633dd082406861C384309c67576a4260C5775E0`]((https://blockscout.com/xdai/mainnet/address/0x7633dd082406861C384309c67576a4260C5775E0). \(configure [MetaMask for xDAI](https://www.xdaichain.com/for-users/wallets/metamask)\)
-3. Polygon (ex-Matic): coming soon.
+2. Xdai: [`0x7633dd082406861C384309c67576a4260C5775E0`](https://blockscout.com/xdai/mainnet/address/0x7633dd082406861C384309c67576a4260C5775E0) \(configure [MetaMask for xDAI](https://www.xdaichain.com/for-users/wallets/metamask)\)
+3. Polygon (ex-Matic): coming soon
 
 Test networks:
 * Rinkeby: [`0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b`](https://rinkeby.etherscan.io/address/0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b)
