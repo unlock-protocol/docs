@@ -7,6 +7,7 @@
 
 * [Creating a Lock](creators/deploying-lock.md)
 * [Adding a Lock to Web Page](creators/locking-page.md)
+* [Enabling Credit Cards](creators/enabling-credit-cards.md)
 * [Plugins and Integrations](creators/plugins-and-integrations/README.md)
   * [Wordpress Plugin](creators/plugins-and-integrations/wordpress-plugin.md)
   * [Discord with Swordy Bot](creators/plugins-and-integrations/discord.md)

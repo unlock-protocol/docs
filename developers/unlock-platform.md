@@ -28,13 +28,13 @@ In order to make it easy to interface with smart contracts, developers are build
 
 Finally, wallets are "wrappers" around private keys which let user sign messages and transactions sent through Dapps, RPC to distributed computer. These wallet can also store valuable state for users such as their balance of Ether, or even data from some specific smart contracts, such as their balances of certain tokens.
 
-## A protocol
+## A protocol \(smart contracts\)
 
 The most central piece of what Unlock ****is building is the **"protocol" for memberships**. The protocol defines what locks and keys are, how to deploy the former or purchase the latter. A membership is represented by keys to a given lock.
 
 The protocol is implemented in the form of smart contracts. It is visible in our [open source code](https://github.com/unlock-protocol/unlock) under `/smart-contracts`.
 
-## Unlockjs
+## Unlock.js
 
 As we've seen above RPC calls are ways to interact with smart contracts. Unlock-js is a wrapper around these RPC calls to provide specific ways to interact with the smart contracts. The code can be found in our code repository under `/unlock-js`.
 
