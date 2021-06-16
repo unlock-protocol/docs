@@ -36,8 +36,9 @@ The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Lo
 * [Create a BAT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x0d8775f648430679a709e98d2b0cb6250d2887ef&ticker=BAT)
 * [Create a UDT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x90de74265a416e1393a450752175aed98fe11517&ticker=UDT) - UDT is our governance token.
 
-The parameters for BAT for example are as follows
+### Example
 
+The parameters for BAT for example are as follows: 
 * erc20: `0x0d8775f648430679a709e98d2b0cb6250d2887ef`
 * ticker: `BAT`
 
