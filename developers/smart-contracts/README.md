@@ -52,6 +52,8 @@ Every time we release a new version of the contracts, we publish a new npm modul
 * [unlock-abi-5](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-5)
 * [unlock-abi-6](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-6)
 * [unlock-abi-7](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-7)
+* [unlock-abi-8](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-8)
+* [unlock-abi-9](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-9)
 
 ## Standards
 
