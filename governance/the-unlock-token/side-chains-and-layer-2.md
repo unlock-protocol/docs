@@ -25,4 +25,4 @@ Sidechains/L2 on which UDT have been deployed (bridged from mainnet):
 * Polygon: 
   * UDT: [0xf7e78d9c4c74df889a83c8c8d6d05bf70ff75876](https://polygonscan.com/address/0xf7e78d9c4c74df889a83c8c8d6d05bf70ff75876)
   * Pool: [0xc0f0bb742168ce7cd7533353e48869ee82a9401a](https://info.quickswap.exchange/pair/0xc0f0bb742168ce7cd7533353e48869ee82a9401a)
-  * Oracle: TBA
+  * Oracle: [0xe20ef269ce3ac2af8107e706fc2ec6e1831e3125](https://polygonscan.com/address/0xe20ef269ce3ac2af8107e706fc2ec6e1831e3125)
