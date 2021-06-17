@@ -14,5 +14,15 @@ Users who have earned side chain UDT are welcome to bring these UDT back to the 
 
 Formula \(note: the same mechanism limiting the amount of tokens minted to gas spent applies here\). If the side chain has an available supply of N to distribute. For a GDP growth of 𝝙, the reward is 𝝙/\(2\*\(1+𝝙\)\). This number is between 0 and 0.5 for any 𝝙 between 0 and Infinity. This means that the "reserve" is never fully distributed but the amount of tokens distrubuted with every new purchase decrases.
 
-Status: [WIP](https://github.com/unlock-protocol/unlock/pull/7087).
+Status: merged, waiting for full deployment.
 
+Sidechains/L2 on which UDT have been deployed (bridged from mainnet):
+
+* xDAI: 
+  * UDT: [0x24Cb95c7f0c39759c4165b053730126C7102BbE8](https://blockscout.com/xdai/mainnet/tokens/0x24Cb95c7f0c39759c4165b053730126C7102BbE8)
+  * Pool: [0x679678311239967536f83a40d45f18a0c84af4cb](https://info.honeyswap.org/#/pair/0x679678311239967536f83a40d45f18a0c84af4cb) 
+  * Oracle: [0x5553712a8d7c56a4EF54488d1628684A2948F756](https://blockscout.com/xdai/mainnet/address/0x5553712a8d7c56a4EF54488d1628684A2948F756)
+* Polygon: 
+  * UDT: [0xf7e78d9c4c74df889a83c8c8d6d05bf70ff75876](https://polygonscan.com/address/0xf7e78d9c4c74df889a83c8c8d6d05bf70ff75876)
+  * Pool: [0xc0f0bb742168ce7cd7533353e48869ee82a9401a](https://info.quickswap.exchange/pair/0xc0f0bb742168ce7cd7533353e48869ee82a9401a)
+  * Oracle: TBA
