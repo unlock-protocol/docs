@@ -14,18 +14,18 @@ As of April 2021, the Unlock ecosystem consists of the following:
 
 ## 1 Month Roadmap
 
-For June 1st 2021, here are the goals:
+For June 2021, here are the goals:
 
-* Enable UDT rewards on xDAI \([or any other side chain](the-unlock-token/side-chains-and-layer-2.md)\). 
-* Enable credit card checkout for any lock \(if creator agrees to it!\)
-* Update home page design
-* Addition of a `/developer`landing page
-* Addition of a `/creator` landing page
-* Formal launch of grant program process \([see grants page](grants-bounties-and-matchings.md)\)
-* Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.gg/nBNPqmPW)
-* Developer forum launched on Discourse
-
-## 3 Month Roadmap
+* Enable UDT rewards on xDAI \([or any other side chain](the-unlock-token/side-chains-and-layer-2.md)\). State: shipped. Waiting gto be announced. ✅
+* Enable credit card checkout for any lock \(if creator agrees to it!\). State: Shipped. ✅
+* Update home page design. State: delayed
+* Addition of a `/developer`landing page. State: delayed
+* Addition of a `/creator` landing page. State: delayed
+* Formal launch of grant program process \([see grants page](grants-bounties-and-matchings.md)\). State: shipped. ✅
+* Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.gg/nBNPqmPW) State: done. ✅
+* Developer forum launched on Discourse,  State: shipped. Waiting gto be announced ✅
+ 
+## August 1st 2021
 
 * Decentralized governance \(see below\)
 * Launch Unlock on 2 more side-chains/network \(see below\)
@@ -33,7 +33,7 @@ For June 1st 2021, here are the goals:
 * Customizable NFT icon from dashboard
 * Lock configuration from dashboard \(metadata collection\)
 * Full "static" website relaunch
-* First Hackathon \(remote\)
+* First Hackathon \(remote\). ✅
 
 ### Decentralization of governance \(Unlock DAO\)
 
@@ -67,17 +67,17 @@ These are opportunities we will eventually work on, based on user demand or avai
 
 ### Locksmith
 
-* Multi chain on each env. Currently locksmith instances are 'chain specific'. We're making them agnostic. 80% ✅
+* Multi chain on each env. Currently locksmith instances are 'chain specific'. We're making them agnostic. ✅
 
 ### Paywall
 
-* Multi chain on checkout \(locks can each be on different chains\) 80% ✅
+* Multi chain on checkout \(locks can each be on different chains\) ✅
 * "stronger" security requirement \(ask user to sign a message to verify they actually own the address\)
 
 ### Unlock App
 
 * Wallet Connect ✅
-* Unlock account refactors
+* Unlock account refactors ✅
 * Grant memberships UI
 
 ### Tooling
