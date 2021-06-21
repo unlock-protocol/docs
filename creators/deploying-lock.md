@@ -12,7 +12,7 @@ Locks are smart contracts on an Ethereum-compatible blockchain. This provides cr
 
 {% embed url="https://unlock-protocol.com/" caption="https://unlock-protocol.com" %}
 
-_Note: this currently requires an Ethereum wallet. You can point the wallet to any network that Unlock is_ [_currently deployed on_](https://docs.unlock-protocol.com/frequently-asked-questions#what-networks-are-supported) _\(including Ethereum's main network, or xDAI for cheaper transaction fees\)._
+_Note: this currently requires an Ethereum wallet. You can point the wallet to any network that Unlock is_ [_currently deployed on_](https://docs.unlock-protocol.com/frequently-asked-questions#what-networks-are-supported) _\(including Ethereum's main network\)._
 
 When creating a lock, the creator can select the following attributes:
 
