@@ -25,7 +25,9 @@ description: An overview of exisitng and in progress integrations.
 
 ## Discourse
 
-⚠️ **Work in Progress** 🚧 More info coming soon.
+* [Instructions & Documentation](https://unlock.community/t/unlock-discourse-plugin/64)
+* [Blog Post](https://unlock-protocol.com/blog/discourse-plugin)
+* Created by [Camille Besse](https://twitter.com/camillebesse)
 
 ## Drupal
 
