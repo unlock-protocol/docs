@@ -19,11 +19,11 @@ You can find the application at this URL: [`https://newsletter.unlock-protocol.c
 
 You can customize it by adding the following parameters in the URL:
 
-* `locks` You can add as at least one `locks` query parameters to the URL. The value should be the address of the lock created in the first step.
+* `locks` You can add as at least one `locks` query parameters to the URL. The value should be the address of the lock created in the first step. If the locks are not on mainnet, you should prefix their address with the network id (100 for xDAI, 137 for polygon...). For example `locks=1370x9999` for a lock on Polygon whose address is `0x9999`
 * `title` The title of your newsletter
 * `description` A description for your newsletter to  invite members to join it.
 
-Make sure you separate each of these with the `&` character. For example, Camila Russo uses the [following url](https://newsletter.unlock-protocol.com/?title=The%20Defiant&description=A%20daily%20newsletter%20decrypting%20the%20intersection%20of%20blockchain%20and%20finance.&locks=0x43154Efc9cb33c80833C0dEc1E15bb9CfC1275e5&locks=0xFA7001A0310B5E69B7b95B72aeBaA66C72E084bf) which renders in the following:
+Make sure you separate each of these with the `&` character. For example, Camila Russo uses the [following url](https://newsletter.unlock-protocol.com/?title=The%20Defiant&description=A%20daily%20newsletter%20decrypting%20the%20intersection%20of%20blockchain%20and%20finance.&locks=10x43154Efc9cb33c80833C0dEc1E15bb9CfC1275e5&locks=10xFA7001A0310B5E69B7b95B72aeBaA66C72E084bf) which renders in the following:
 
 ![Example of landing page for a Newsletter \(title and description are set from the URL query parameters\)](../../.gitbook/assets/image%20%2811%29%20%281%29.png)
 
