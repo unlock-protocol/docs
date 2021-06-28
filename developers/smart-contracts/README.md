@@ -1,6 +1,6 @@
 # Smart Contracts
 
-The unlock-protocol, at it's core, is enabled by 2 primary ethereum smart contracts.
+The Unlock Protocol, at it's core, is enabled by 2 primary ethereum smart contracts.
 
 ## **Unlock**
 
@@ -10,7 +10,7 @@ This is our "factory" contract **\(Unlock.sol\)** and has several roles.
 * Keeping Track of the Unlock Discount Tokens. Unlock Discount Tokens are ERC20 tokens \(TODO\) which implement the Unlock network referral program. The Discount Tokens are granted when keys \(NFT\) are purchased.
 * Granting Discounts. The Unlock smart contract will compute the available discount for each key purchase based on the amount of discount tokens owned by the key buyer.
 
-You should not need to deploy an Unlock contract yourself. Here are the addresses of contracts deployed on respective networks:
+You should not need to deploy an Unlock contract yourself. Here are the addresses of contracts deployed on respective networks and you can call them directly using the block explorer.
 
 Production networks:
 
@@ -32,6 +32,8 @@ This is the contract \(**PublicLock.sol**\) which users can configure and deploy
 * We follow [erc-1167](https://eips.ethereum.org/EIPS/eip-1167) to deploy minimal proxies for each lock, rather than a complete PublicLock contract. This helps to keep deployment costs down, as well as minimizing blockchain bloat.
 * Keys for one lock are valid only for the lock which created them.
 * A given user may own only 1 key at a time
+
+There as well you can call the Lock contracts directly using the block explorers.
 
 ## Upgradeability
 
