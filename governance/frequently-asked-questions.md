@@ -28,7 +28,7 @@ If you do not have your own cryptocurrency wallet, you can create an account wit
 
 ## Can users bypass the paywall?
 
-Our goal is to optimize for convenience and remove as much friction as possible. We want to make it easy for most people to pay to access the content they care about. This means that yes, some users will find ways to abuse Unlock's paywall for example, by disabling JavaScript in their browsers, or by using incognito windows \(on the metered paywalls...\) etc.
+Our goal is to optimize for convenience and remove as much friction as possible. We want to make it easy for most people to pay to access the content they care about. This means that yes, some users will find ways to abuse Unlock's paywall by tinkering through the JavaScript console in their web browsers.
 
 We are working to provide lower level integrations which will make it harder to bypass limitations set by creators, but as always these will come at the expense of some usability for creators and consumers.
 
