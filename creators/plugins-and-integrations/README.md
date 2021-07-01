@@ -8,7 +8,7 @@ description: An overview of exisitng and in progress integrations.
 
 ### Grants for Integrations
 
-👀 Get a grant for building an integration including: [Ghost](https://ghost.org/integrations/custom-integrations/), [Notion](http://developers.notion.com), [Squarespace](https://www.squarespace.com/extensions/home), ...   
+👀 Get a grant for building an integration including: [Ghost](https://ghost.org/integrations/custom-integrations/), [Notion](http://developers.notion.com), [Squarespace](https://www.squarespace.com/extensions/home), ...  
 → Learn more [here](../../governance/grants-bounties-and-matchings.md#grants) and [apply here](../../governance/grants-bounties-and-matchings.md#grant-applications).
 
 ## Cloudflare
@@ -33,7 +33,7 @@ description: An overview of exisitng and in progress integrations.
 
 Drupal module that allows only members to see specific parts of your site content.
 
-* [Drupal Module Page](https://www.drupal.org/project/unlock).
+* [Drupal Module Page](https://www.drupal.org/project/unlock)
 * [GitHub Repository](https://github.com/mikedotexe/unlock)
 * Created by [Mike Purvis](https://github.com/mikedotexe)
 
@@ -44,14 +44,14 @@ Drupal module that allows only members to see specific parts of your site conten
 
 ## Known
 
-[Known](%20https://withknown.com/) is a collaborative social publishing engine.
+[Known](../../) is a collaborative social publishing engine.
 
 * [GitHub Repository](https://github.com/idno/Unlock)
 * Created by [Ben Werdmuller](https://twitter.com/benwerd/)
 
 ## Shopify
 
-⚠️ **Work in Progress** 🚧  More coming soon.
+⚠️ **Work in Progress** 🚧 More coming soon.
 
 * [GitHub](https://github.com/pwagner/unlock-shopify-app)
 * Created by [Paul Wagner](https://twitter.com/pswgnr)

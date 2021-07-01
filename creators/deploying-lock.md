@@ -6,7 +6,7 @@ description: >-
 
 # Creating a Lock
 
-{% embed url="https://youtu.be/jKj3l4Ei-i4" %}
+{% embed url="https://youtu.be/jKj3l4Ei-i4" caption="" %}
 
 Locks are smart contracts on an Ethereum-compatible blockchain. This provides creators with **unmediated control over who can access their work**, and how much they want to charge for this. Unlock Inc. provides a simple dashboard to create a lock at the following address.
 
@@ -38,7 +38,8 @@ The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Lo
 
 ### Example
 
-The parameters for BAT for example are as follows: 
+The parameters for BAT for example are as follows:
+
 * erc20: `0x0d8775f648430679a709e98d2b0cb6250d2887ef`
 * ticker: `BAT`
 
