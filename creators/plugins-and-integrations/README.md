@@ -18,10 +18,16 @@ description: An overview of exisitng and in progress integrations.
 
 ## Discord
 
+#### Swordy Bot
+
 * [Instructions & Documentation](discord.md)
 * [Swordy Bot Website](https://swordybot.com)
 * [Blog Post](https://unlock-protocol.com/blog/swordy-bot-intro)
 * Created by [Patrick Gallagher](https://patrickgallagher.dev/)
+
+#### Collab.Land
+
+* [Instructions & Documentation](discord-with-collab.land.md)
 
 ## Discourse
 
