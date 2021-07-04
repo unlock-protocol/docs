@@ -11,7 +11,7 @@ We believe the web is [moving away from attention](https://medium.com/unlock-pro
 
 Yet, most websites are moving to memberships with their own system which creates a lot of friction for them \(adding user accounts, supporting credit payments...\) and for their users.
 
-With Unlock, we believe there is a better way, which reduces friction, increases conversation rate and reduces prices while aligning interests between creators and consumers!
+With Unlock, we believe there is a better way, which reduces friction, increases conversion rate and reduces prices while aligning interests between creators and consumers!
 
 {% embed url="https://www.youtube.com/watch?v=tBuMj0eRrYQ" caption="A quick intro video to explain what Unlock." %}
 
