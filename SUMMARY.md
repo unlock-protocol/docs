@@ -18,6 +18,7 @@
   * [Using Unlock for Newsletters](creators/tutorials-1/using-unlock-newsletter.md)
   * [Receiving donations on Github](creators/tutorials-1/receiving-donations-on-github.md)
   * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
+* [FAQ](creators/faq.md)
 
 ## For Developers <a id="developers"></a>
 
@@ -38,6 +39,7 @@
 * [Locksmith](developers/locksmith/README.md)
   * [Authorization Strategy](developers/locksmith/authorization-strategy.md)
   * [Token Metadata API](developers/locksmith/token-metadata-api.md)
+* [FAQ](developers/faq.md)
 
 ## Governance
 

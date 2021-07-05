@@ -15,9 +15,9 @@ With Unlock, we believe there is a better way, which reduces friction, increases
 
 {% embed url="https://www.youtube.com/watch?v=tBuMj0eRrYQ" caption="A quick intro video to explain what Unlock." %}
 
-## For Creators 
+## For Creators
 
-As a creator, you want to monetize your work and ensure that only your _members_ can access it. For this you should create a Lock. The lock is a smart contract deployed on the Ethereum blockchain which defines the terms of your membership. The Lock is yours and cannot be modified by anyone else, unless you grant them the permission. 
+As a creator, you want to monetize your work and ensure that only your _members_ can access it. For this you should create a Lock. The lock is a smart contract deployed on the Ethereum blockchain which defines the terms of your membership. The Lock is yours and cannot be modified by anyone else, unless you grant them the permission.
 
 The lock itself does not _know_ about the content or features which it locks. The lock is also completely decoupled from your application, which means that it can be implemented in many different contexts: on the front-end, on the back-end, inside of chat applications, or even in other smart contracts.
 
@@ -30,7 +30,5 @@ Read more about:
 
 As consumers, you want to easily unlock access to your favorite websites, or be part of communities. Unlock represents these memberships as [Non Fungible Tokens](https://en.wikipedia.org/wiki/Non-fungible_token). These tokens are directly linked to your Ethereum wallet. If you do not have a wallet, or do not care about owning one, you should consider our Unlock User accounts which make it trivial for anyone to unlock content with their credit cards.
 
-We also built a [_keychain_](https://app.unlock-protocol.com/keychain/) __for consumers to easily view all of their memberships and use them. This involves cancelling them, transferring them or printing codes to assert ownership \(very useful for tickets!\)
-
-
+We also built a [_keychain_](https://app.unlock-protocol.com/keychain/) \_\_for consumers to easily view all of their memberships and use them. This involves cancelling them, transferring them or printing codes to assert ownership \(very useful for tickets!\)
 
