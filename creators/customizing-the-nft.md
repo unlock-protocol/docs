@@ -16,7 +16,7 @@ However, with Unlock you can easily customize this image. For this, in the dashb
 
 ![When hovered, you can click the camera to customize the image](../.gitbook/assets/image%20%2825%29.png)
 
-From there, you can upload an image \(2MM maximum\), or select an external URL:
+From there, you can upload an image \(2MB maximum\), or select an external URL. We also recommend using a square of at least 300x300 pixels.
 
 ![](../.gitbook/assets/image%20%2823%29.png)
 
