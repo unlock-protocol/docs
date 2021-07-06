@@ -1,16 +1,17 @@
 ---
 description: >-
   The first step to using Unlock as a creator is to deploy your own lock so you
-  can sell memberships to your own content!
+  can sell memberships to your own content! Each membership is a Non Fungible
+  Token which you can customize easily.
 ---
 
-# Deploying a lock
+# Creating a Lock
 
-Locks are smart contracts on the Ethereum blockchain. This provides creators with **unmediated control over who can access their work**, and how much they want to charge for this. Unlock Inc. provides a simple dashboard to create a lock at the following address.
+_Prerequisite: this currently requires an_ [_Ethereum wallet_](https://ethereum.org/en/wallets/)_. You can point the wallet to any network that Unlock is_ [_currently deployed on_](https://docs.unlock-protocol.com/frequently-asked-questions#what-networks-are-supported) _\(including Ethereum's main network\) to deploy a lock there. You will also need a little bit of the network's native currency to pay for gas._
 
-{% embed url="https://unlock-protocol.com/" caption="https://unlock-protocol.com" %}
+{% embed url="https://youtu.be/jKj3l4Ei-i4" caption="This video shows how you can deploy a lock!" %}
 
-_Note: this currently requires an Ethereum wallet. You can point the wallet to any network that Unlock is_ [_currently deployed on_](https://docs.unlock-protocol.com/frequently-asked-questions#what-networks-are-supported)_._
+Locks are smart contracts on an Ethereum-compatible blockchain. This provides creators with **unmediated control over who can access their work**, and how much they want to charge for this. Unlock Inc. provides a simple dashboard to create a lock at the following address.
 
 When creating a lock, the creator can select the following attributes:
 
@@ -19,15 +20,24 @@ When creating a lock, the creator can select the following attributes:
 * The price consumers need to pay to get a key, including its currency
 * How many keys at most can be sold
 
-Once deployed the lock will have its own address and is fully owned by the creator \(no-one, including Unlock Inc. can change or remove it\). Locks can also be transferred to a different owner after they've been created.
+Once deployed the lock will have its own address and is **fully owned** by the creator \(no-one, including Unlock Inc. can change or remove it\). The initial creator of the lock can also add other "lock managers" who are able to co-manage the lock.
 
-The lock can also be customized even further, please get in touch if you have questions!
+Once deployed, the dashboard will show you details about your lock:
 
-## Creating a Lock for a custom ERC20 token
+![](../../.gitbook/assets/image%20%2811%29.png)
 
-The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Locks can be configured to be backed by any token that conforms to the [ERC20](https://eips.ethereum.org/EIPS/eip-20) specification. Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and `ticker` query parameters.
+The logo of your lock can be customized. This logo is the one [used for the NFT](../customizing-the-nft.md) that your users will purchase when they get a membership.
 
-* [Create a DAI Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x6b175474e89094c44da98b954eedeac495271d0f&ticker=DAI)
-* [Create a USDC Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&ticker=USDC)
-* [Create a BAT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x0d8775f648430679a709e98d2b0cb6250d2887ef&ticker=BAT)
+You will see the name \(_First Euro lock_ for this example\), its address \(_0x09159A5..._ here\), its duration \(1 day\), the number of existing memberships and the maximum amount that the lock can grant \(_0/∞_\), the price \(_10 EURS_\) and the current balance on the lock \(_0 EURS_ since none has been sold\). The icon bar lets you do the following:
+
+* [Enable credit card payments](../enabling-credit-cards.md)
+* Withdraw funds \(once memberships have been sold!\)
+* See a demo of your lock on a _fake_ paywall-ed site
+* View the list of members,
+* [Easily integrate your lock in existing applications](../plugins-and-integrations/)
+* Inspect your lock using a _block explorer \(see below\)_
+
+The lock's behavior can also be customized even further. The smart contracts are _verified_, click on the explorer icon to inspect it or interact with it from the block explorer.
+
+![](../../.gitbook/assets/image.png)
 

@@ -5,9 +5,10 @@
 
 ## For Creators <a id="creators"></a>
 
-* [Creating a Lock](creators/deploying-lock.md)
-* [Adding a Lock to Web Page](creators/locking-page.md)
+* [Creating a Lock](creators/deploying-lock/README.md)
+  * [Using a custom currency](creators/deploying-lock/using-a-custom-currency.md)
 * [Enabling Credit Cards](creators/enabling-credit-cards.md)
+* [Customizing the NFT](creators/customizing-the-nft.md)
 * [Plugins and Integrations](creators/plugins-and-integrations/README.md)
   * [Wordpress Plugin](creators/plugins-and-integrations/wordpress-plugin.md)
   * [Discord with Swordy Bot](creators/plugins-and-integrations/discord.md)
@@ -35,6 +36,7 @@
 * [Subgraph](developers/subgraph.md)
 * [Metadata](developers/metadata.md)
 * [Paywall](developers/paywall/README.md)
+  * [Adding a Lock to Web Page](developers/paywall/locking-page.md)
   * [Advanced Paywall Configuration](developers/paywall/advanced-paywall-configuration.md)
 * [Locksmith](developers/locksmith/README.md)
   * [Authorization Strategy](developers/locksmith/authorization-strategy.md)

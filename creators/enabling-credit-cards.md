@@ -25,7 +25,7 @@ The first step, if your lock is eligible, is to connect your lock to a Stripe ac
 
 ![Click on the Credit Card button in your lock&apos;s toolbar](../.gitbook/assets/image%20%2814%29.png)
 
-Once the Credit Card pane is displayed, click on the "Connect Stripe" button. When clicking you will first be prompted to **sign** a message confirming that you own that lock \(any lock manager can do that\) and that you want to enable credit card payments for it. Once confirmed, you will be redirected to the Stripe Website, where you need to follow multiple steps, including connecting a bank account, and providing informations about your identity.
+Once the Credit Card pane is displayed, click on the "Connect Stripe" button. When clicking you will first be prompted to **sign** a message confirming that you own that lock \(any lock manager can do that\) and that you want to enable credit card payments for it. Once confirmed, you will be redirected to the Stripe Website, where you need to follow multiple steps, including connecting a bank account and providing information about your identity.
 
 ![Follow Stripe&apos;s required steps](../.gitbook/assets/image%20%2821%29.png)
 
@@ -49,7 +49,7 @@ If you use Unlock's paywall application, the credit card flow is directly integr
 
 ![If they select Credit card, they need to complete this information.](../.gitbook/assets/image%20%2812%29.png)
 
-In order to allow them to re-identify themselves, this flow creates an account for them using their email and a password of their choice that they can use to login if they want to. Unlock Inc. does not store credit card numbers.
+In order to allow them to re-identify themselves, this flow creates an account for them using their email and a password of their choice that they can use to log in if they want to. Unlock Inc. does not store credit card numbers.
 
 ![Once their information was saved, they are prompted once last time to confirm the transaction.](../.gitbook/assets/image%20%2820%29.png)
 
@@ -63,11 +63,11 @@ The fees are a combination of Stripe's fees \(2.9% + $0.30\) as well as Unlock's
 
 ### How is fraud prevented?
 
-When a key/NFT is purchased via credit card, Unlock Inc., as the granter, retains the key manager title \(see [roles on a lock contract](https://docs.unlock-protocol.com/developers/smart-contracts/lock-api/access-control)\). This role means that the NFT owner cannot sell or cancel their membership themselves directly. This mechanism prevents malevolent users from using stolen cards, as they would not be able to monetize the NFT by selling or cancelling it.
+When a key/NFT is purchased via credit card, Unlock Inc., as the granter, retains the key manager title \(see [roles on a lock contract](https://docs.unlock-protocol.com/developers/smart-contracts/lock-api/access-control)\). This role means that the NFT owner cannot sell or cancel their membership themselves directly. This mechanism prevents malevolent users from using stolen cards, as they would not be able to monetize the NFT by selling or canceling it.
 
 ### How to handle chargebacks?
 
-When a credit card transaction has been reversed, it is recommended that the lock owners cancel the existing user's membership as this user should not be able to benefit from their cancelled membership anymore.
+When a credit card transaction has been reversed, it is recommended that the lock owners cancel the existing user's membership as this user should not be able to benefit from their canceled membership anymore.
 
 
 

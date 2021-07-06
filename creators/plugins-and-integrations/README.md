@@ -1,10 +1,14 @@
 ---
-description: An overview of exisitng and in progress integrations.
+description: An overview of existing and in progress integrations.
 ---
 
 # Plugins and Integrations
 
-[Cloudflare](./#cloudflare), [Discord](./#discord), [Discourse](./#discourse), [Drupal](./#drupal), [Known](./#known), [Shopify](./#shopify), [StreamLabs](./#streamlabs), [Squarespace](./#squarespace), [Webflow](./#webflow), [WordPress](./#wordpress)
+Our community has deployed integrations using many different existing platforms and software: [Cloudflare](./#cloudflare), [Discord](./#discord), [Discourse](./#discourse), [Drupal](./#drupal), [Known](./#known), [Shopify](./#shopify), [StreamLabs](./#streamlabs), [Squarespace](./#squarespace), [Webflow](./#webflow), [WordPress](./#wordpress)
+
+![You can easily access integrations from your dashboard. click on the &quot;cube&quot; icon.](../../.gitbook/assets/image%20%2824%29.png)
+
+### 
 
 ### Grants for Integrations
 
