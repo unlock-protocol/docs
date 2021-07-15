@@ -3,6 +3,9 @@ description: >-
   Unlock is a protocol for memberships which lets creators monetize their work,
   on their own terms, without having to rely on 3rd party applications or
   platform.
+  
+  Unlock is a flexible web3 protocol that allows you to put a “lock” on certain features on your site. It’s powered by NFTs that verify memberships. A single NFT can be used to allow access to multiple areas and groups, regardless of whether they are on the web or in the physical world. This means that Unlock can be used to group together formerly distributed fanbases, or accept and verify tickets to events and venues. 
+
 ---
 
 # Introduction
