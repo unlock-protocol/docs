@@ -8,7 +8,7 @@ description: >-
 
 Unlock memberships are Non-Fungible Tokens. They use the same specification used by other NFT projects, called [ERC721](http://erc721.org/). This means that, exactly like other NFT, they are visible in wallets.
 
-By default, Unlock provides a generated image for each lock, which looks like this: 
+By default, Unlock provides a generated image for each lock, which looks like this:
 
 ![Example of generate logo image](../.gitbook/assets/logo-example.png)
 
@@ -22,11 +22,11 @@ From there, you can upload an image \(2MB maximum\), or select an external URL. 
 
 If you select an external URL, we will hotlink to it, which means that you will need to make sure this image will remain available.
 
-#### Customize each membership's icon
+### Customize each membership's icon
 
-If you use an external URL, you can customize each membership from your lock in a more unique way. Indeed, the image URL that we pass includes `?id=<token id>`. 
+If you use an external URL, you can customize each membership from your lock in a more unique way. Indeed, the image URL that we pass includes `?id=<token id>`.
 
-### Advanced metadata customization
+## Advanced metadata customization
 
 When using Unlock, by default, we provide some metadata for each token \(including the image URL\). The locks smart contracts are using the ERC721's specification method `tokenURI`. By default, we point to an Unlock hosted URI for this meta-data, but can be customized by any lock manager, by calling the method `baseTokenURI`. By doing this, the lock manager removes the only dependency on Unlock Inc.
 
