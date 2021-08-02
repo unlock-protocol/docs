@@ -9,6 +9,7 @@
   * [Using a custom currency](creators/deploying-lock/using-a-custom-currency.md)
 * [Enabling Credit Cards](creators/enabling-credit-cards.md)
 * [Customizing the NFT](creators/customizing-the-nft.md)
+* [Selling Memberships](creators/selling-memberships.md)
 * [Plugins and Integrations](creators/plugins-and-integrations/README.md)
   * [Wordpress Plugin](creators/plugins-and-integrations/wordpress-plugin.md)
   * [Discord with Swordy Bot](creators/plugins-and-integrations/discord.md)
