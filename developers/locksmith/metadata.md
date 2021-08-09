@@ -47,7 +47,7 @@ Only authenticated lock owners and authenticated users can read protected user-s
 
 ### The Members Page
 
-![Each lock on the dashboard shows a link to the associated Members page](../.gitbook/assets/cleanmemberspagelink.png)
+![Each lock on the dashboard shows a link to the associated Members page](../../.gitbook/assets/cleanmemberspagelink.png)
 
 Lock owners can view the user-specific metadata for all key holders on a lock on the Members page associated with that lock. On visiting that page, the lock owner will be prompted by their wallet to sign a message verifying their identity. When they have authenticated, they will see the public and private metadata for each key holder.
 

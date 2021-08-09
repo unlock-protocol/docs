@@ -6,7 +6,7 @@ description: >-
 
 # Collecting Metadata
 
-In some cases, it may be valuable to collect information from purchasers before they purchase a key. For example, you may want to know the email address of all key holders so that you can send updates to them. In that case, you will want to work with [user-specific metadata](../metadata.md#user-specific-metadata).
+In some cases, it may be valuable to collect information from purchasers before they purchase a key. For example, you may want to know the email address of all key holders so that you can send updates to them. In that case, you will want to work with [user-specific metadata](../locksmith/metadata.md#user-specific-metadata).
 
 To achieve this, add a property called `metadataInputs` to your configuration object:
 
@@ -42,7 +42,7 @@ The `type` field maps to a certain subset of HTML `<input>` types, which influen
 
 After the user fills out the form and clicks the Continue button, they will be prompted to sign a message so the data can be verified as coming from then. After they sign, the key purchase will initiate.
 
-Note: you can customize the `callToAction` value for the metadata form by adding a `metadata` value to this `callToAction` object. In some cases, it may be valuable to collect information from purchasers before they purchase a key. For example, you may want to know the email address of all key holders so that you can send updates to them. In that case, you will want to work with [user-specific metadata](../metadata.md#user-specific-metadata).
+Note: you can customize the `callToAction` value for the metadata form by adding a `metadata` value to this `callToAction` object. In some cases, it may be valuable to collect information from purchasers before they purchase a key. For example, you may want to know the email address of all key holders so that you can send updates to them. In that case, you will want to work with [user-specific metadata](../locksmith/metadata.md#user-specific-metadata).
 
 To achieve this, add a property called `metadataInputs` to your configuration object:
 
