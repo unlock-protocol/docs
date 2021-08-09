@@ -16,7 +16,7 @@ Our dashboard offers a "purchase" URL that can easily be shared.
 
 You can set a custom redirect URL to which the URL is redirected when they have unlocked the membership.
 
-There are more advanced customization options, but they will require some more advanced techniques, which you can find in our developer section.
+There are more advanced customization options, but they will require some more advanced techniques, which you can [find in our developer section](../developers/paywall/configuring-checkout.md).
 
 ### Re\(selling\) memberships
 

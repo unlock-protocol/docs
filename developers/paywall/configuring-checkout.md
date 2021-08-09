@@ -1,7 +1,7 @@
 ---
 description: >-
   When building a checkout URL or configuring the paywall, you can customize
-  things. Here are docs on how to achieve thise
+  things. Here are docs on how to achieve this.
 ---
 
 # Configuring Checkout
