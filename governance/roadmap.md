@@ -27,13 +27,17 @@ For June 2021, here are the goals:
 
 ## August 1st 2021
 
-* Decentralized governance \(see below\). Delayed as we're waiting for OpenZeppelin to ship its ocntract.
+* Decentralized governance \(see below\). Delayed as we're waiting for OpenZeppelin to ship its contract.
 * Launch Unlock on 2 more side-chains/network. State: Shipped. ✅
 * ApplePay or GooglePay or Paypal integration. Delayed
 * Customizable NFT icon from the dashboard. State: Shipped. ✅
 * Lock configuration from dashboard \(metadata collection\). Delayed
 * Full "static" website relaunch. State: Shipped. ✅
 * First Hackathon \(remote\). ✅
+
+## December 31st 2021
+
+To be announced.
 
 ### Decentralization of governance \(Unlock DAO\)
 
@@ -45,9 +49,9 @@ At this point, protocol upgrades are still performed via Unlock Inc's multi-sig 
 
 There are several challenges to take into account: how can we guarantee that we have a 1 token/1 vote representation \(people should not be able to transfer their tokens once they have voted!\)? How are the upgrades to the governance mechanism \(vote thresholds...\) itself performed? etc. How are Unlocks' contract parameters changes \(developer reward address, base gas price used to compute UDT minted... etc\)?
 
-Our goal for this milestone is summer 2021 \(was May 31 2021, but given recent developments, we had to shift priorities to support massive adoption\). 
+Our goal for this milestone is summer 2021. 
 
-Status:
+#### Status
 
 * We have successfully upgraded the UDT tokens to support governance requirements \(vote delegation...\)
 * We are waiting for OpenZeppelin to formally launch their Governor Contracts
@@ -67,12 +71,12 @@ These are opportunities we will eventually work on, based on user demand or avai
 
 ### Locksmith
 
-* Mult-chain on each env. Currently locksmith instances are 'chain specific'. We're making them agnostic. ✅
+* Mult-chain on each env. Currently, locksmith instances are 'chain specific'. We're making them agnostic. ✅
 
 ### Paywall
 
 * Multi-chain on checkout \(locks can each be on different chains\) ✅
-* "stronger" security requirement \(ask user to sign a message to verify they actually own the address\). In progress
+* "stronger" security requirement \(ask the user to sign a message to verify they actually own the address\). In progress
 
 ### Unlock App
 
