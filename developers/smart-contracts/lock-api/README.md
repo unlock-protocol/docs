@@ -10,10 +10,10 @@ The Lock Smart Contract has multiple capabilities:
 
 ## Structs
 
-###  Key
+### Key
 
 The key is a struct which encapsulate data relative to an individual key. It has the following fields:
 
 * **`tokenId`** **\(** _**uint**_ **\)**: A unique identifier for each key on a given lock.
-* **`expirationTimestamp`** __ **\(** _**uint**_ **\)**: the timestamp at which the key is not considered valid anymore. The lock owner only can change this value, effectively expiring individual keys.
+* **`expirationTimestamp`** _\_ **\(**_ **uint**\_ **\)**: the timestamp at which the key is not considered valid anymore. The lock owner only can change this value, effectively expiring individual keys.
 
