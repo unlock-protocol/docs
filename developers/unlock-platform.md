@@ -4,7 +4,6 @@ It is often hard to define what Unlock is and what it is not. This document prov
 
 ## A high level Ethereum architecture
 
-
 ```text
 ----------------------------------
             Wallets
@@ -33,7 +32,7 @@ Given the popularity of the Ethereum main-net, several side-chains and "layer 2"
 
 ## A protocol \(smart contracts\)
 
-The most central piece of what Unlock ****is building is the **"protocol" for memberships**. The protocol defines what locks and keys are, how to deploy the former or purchase the latter. A membership is represented by keys to a given lock.
+The most central piece of what Unlock **\*\*is building is the** "protocol" for memberships\*\*. The protocol defines what locks and keys are, how to deploy the former or purchase the latter. A membership is represented by keys to a given lock.
 
 The protocol is implemented in the form of smart contracts. It is visible in our [open source code](https://github.com/unlock-protocol/unlock) under `/smart-contracts`.
 
@@ -58,6 +57,7 @@ We also provide several products which are using the paywall infrastructure. For
 ### Tickets
 
 [Tickets](https://tickets.unlock-protocol.com/) is an application that lets event organizers sell tickets to their event in the form of keys to a lock. Organizers can create an event, attendees can purchase keys and, the organizers can then check the validity of these keys at the event itself.
+
 ## User accounts
 
 Even though we believe that most people should eventually own a wallet themselves, there is a strong need in today's market for a convenience layer that lets consumers interact with locks without having to know \(or care\) about their private keys, gas fees, or Ethereum as a currency. Our convenience is similar to an Ethereum wallet for the Unlock ecosystem. It lets users purchase keys using their credit or debit cards, only for applicable locks.

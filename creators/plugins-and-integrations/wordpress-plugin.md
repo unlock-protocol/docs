@@ -55,7 +55,7 @@ From there you can add more content which will only be visible by members. The U
 
 
 
-![You can click on the &#x244; at any point to display the setting for this block.](../../.gitbook/assets/image%20%2811%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![You can click on the &#x244; at any point to display the setting for this block.](../../.gitbook/assets/image%20%2811%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 #### Showing a button to let visitors become members
 

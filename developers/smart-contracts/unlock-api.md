@@ -1,18 +1,18 @@
 # Unlock Contract
 
-The Unlock contract is a **factory contract**. Its main purpose is to create new locks based on a template. Additionally it keeps track of locks after they have been created and grants [Unlock tokens](/governance/the-unlock-token) when new memberships have been purchased.
+The Unlock contract is a **factory contract**. Its main purpose is to create new locks based on a template. Additionally it keeps track of locks after they have been created and grants [Unlock tokens](../../governance/the-unlock-token/) when new memberships have been purchased.
 
-As of summer 2021, the unlock contract is __owned__ by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transfering ownership of the Unlock contact to [the Unlock DAO](/governance/unlock-dao).
+As of summer 2021, the unlock contract is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transfering ownership of the Unlock contact to [the Unlock DAO](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/unlock-dao/README.md).
 
-This contract is upgradable using OpenZeppelin's upgradability framework. As of now, the ProxyAdmin is __owned__ by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transfering ownership of the Unlock contact to [the Unlock DAO](/governance/unlock-dao). Each implementation is versioned. The method `unlockVersion()` will yield the current version.
+This contract is upgradable using OpenZeppelin's upgradability framework. As of now, the ProxyAdmin is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transfering ownership of the Unlock contact to [the Unlock DAO](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/unlock-dao/README.md). Each implementation is versioned. The method `unlockVersion()` will yield the current version.
 
-Some functions that are deprecated or not implemented yet (no-op) have been ommitted.
+Some functions that are deprecated or not implemented yet \(no-op\) have been ommitted.
 
 ## `createLock`
 
-This function can be invoked by any Ethereum address and creates a new lock using the current template. (see below).
+This function can be invoked by any Ethereum address and creates a new lock using the current template. \(see below\).
 
-```
+```text
   function createLock(
     uint _expirationDuration, // Duration for each membership
     address _tokenAddress, // Address of an ERC20 contract used as currency
@@ -29,7 +29,7 @@ Once minted, the lock belongs to the caller of the function. The Unlock contract
 
 This read-only function does not modify the state and yields the ERC721 base URL for metadata used by the locks. Each lock can override this.
 
-```
+```text
   function globalBaseTokenURI()
     external
     view
@@ -40,7 +40,7 @@ This read-only function does not modify the state and yields the ERC721 base URL
 
 This read-only function does not modify the state and yields the ERC721 base token symbol used by the locks. Each lock can override this.
 
-```
+```text
   function globalTokenSymbol()
     external
     view
@@ -49,9 +49,9 @@ This read-only function does not modify the state and yields the ERC721 base tok
 
 ## `chainId`
 
-This read-only function does not modify the state and yields the network id on which this Unlock has been deployed. Some functionnality in the protocol differs based on the network (related to the [functionning of our governance token](/governance/the-unlock-token/side-chains-and-layer-2)).
+This read-only function does not modify the state and yields the network id on which this Unlock has been deployed. Some functionnality in the protocol differs based on the network \(related to the [functionning of our governance token](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/the-unlock-token/side-chains-and-layer-2/README.md)\).
 
-```
+```text
   function chainId()
     external
     view
@@ -62,7 +62,7 @@ This read-only function does not modify the state and yields the network id on w
 
 This function modifies the state and sets multiple configuration parameters used by the protocol. It can be called several times in order to change the behavior of the protocol, but only by the owner of the Unlock contract.
 
-```
+```text
   function configUnlock(
     address _udt, // Address of the UDT contract
     address _weth, // Address of the wrapped Ethereum contract*
@@ -74,13 +74,13 @@ This function modifies the state and sets multiple configuration parameters used
     external;
 ```
 
-The `_weth` should be the chain's native token ERC20 (or wrapped as an ERC20). On Ethereum's mainet, it is be wrapped Ether for example.
+The `_weth` should be the chain's native token ERC20 \(or wrapped as an ERC20\). On Ethereum's mainet, it is be wrapped Ether for example.
 
 ## `setLockTemplate`
 
 This function modifies the state and can only be called by the Unlock contract owner. It sets the template used to deploy locks. The address' should be a lock and its `initialize` and `revokeOwnership` functions will be called.
 
-```
+```text
   function setLockTemplate(
     address payable _publicLockAddress
   ) external;
@@ -88,20 +88,20 @@ This function modifies the state and can only be called by the Unlock contract o
 
 ## `resetTrackedValue`
 
-This function modifies the state and can only be called by the Unlock contract owner. It changes the gross network product value as well as the amount of discount granted. (note: as of summer 2021, it is unclear whether we will ever implement a discount meechanism).
+This function modifies the state and can only be called by the Unlock contract owner. It changes the gross network product value as well as the amount of discount granted. \(note: as of summer 2021, it is unclear whether we will ever implement a discount meechanism\).
 
-
-```
+```text
   function resetTrackedValue(
     uint _grossNetworkProduct,
     uint _totalDiscountGranted
   ) external;
 ```
+
 ## `locks`
 
-This read-only function does not modify the state. The Unlock contract keeps track of all locks deployed by the protocol. It can be used to check if a lock was deployed using the protocol and yields a triplet of (boolean, total exchanged value recorded, amount of UDT yielded by this lock)
+This read-only function does not modify the state. The Unlock contract keeps track of all locks deployed by the protocol. It can be used to check if a lock was deployed using the protocol and yields a triplet of \(boolean, total exchanged value recorded, amount of UDT yielded by this lock\)
 
-```
+```text
   function locks(address) external view returns(bool deployed, uint totalSales, uint yieldedDiscountTokens);
 ```
 
@@ -109,7 +109,7 @@ This read-only function does not modify the state. The Unlock contract keeps tra
 
 This function modifies the state and can only be called by the Unlock contract owner. It adds an oracle to the list of oracles, for a specific token address. Since locks can be deployed using any ERC20, we need on-chain oracles to provide a conversion rate in order to compute the revenue addded by each purchase.
 
-```
+```text
   function setOracle(
     address _tokenAddress,
     address _oracleAddress
@@ -120,7 +120,7 @@ This function modifies the state and can only be called by the Unlock contract o
 
 This function modifies the state and can only be called by the Unlock contract owner. It lets the owner transfer ownership to another address. It is a highly sensitive function as the supplied address will get full contol of the protocol after the transfer. We expect this function to only be called to transfer ownership to DAO contracts.
 
-```
+```text
   function transferOwnership(address newOwner) external;
 ```
 
@@ -128,15 +128,15 @@ This function modifies the state and can only be called by the Unlock contract o
 
 This function modifies the state and can only be called by the Unlock contract owner. It renounces ownership of the Unlock contract, thereby removing any functionality that is only available to the owner.
 
-```
+```text
   function renounceOwnership() external;
 ```
 
 ## Other functions
 
-The functions below are getters (read only functions).
+The functions below are getters \(read only functions\).
 
-```
+```text
   // Total sales recorded by the protocol converted in the chains "native" currency
   function grossNetworkProduct() external view returns(uint);
 
@@ -160,5 +160,5 @@ The functions below are getters (read only functions).
 
   // Returns the oracle address for a token address
   function uniswapOracles(address) external view returns(address);
-
 ```
+

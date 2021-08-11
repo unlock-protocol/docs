@@ -29,9 +29,9 @@
 * [Smart Contracts](developers/smart-contracts/README.md)
   * [Unlock Contract](developers/smart-contracts/unlock-api.md)
   * [Lock Contract](developers/smart-contracts/lock-api/README.md)
+    * [Code Required Hook](developers/smart-contracts/lock-api/code-required-hook.md)
+    * [Discount Codes Hook](developers/smart-contracts/lock-api/discount-codes.md)
     * [Access Control](developers/smart-contracts/lock-api/access-control.md)
-  * [Discount Codes Hook](developers/smart-contracts/discount-codes.md)
-  * [Code Required Hook](developers/smart-contracts/code-required-hook.md)
   * [Key Purchaser](developers/smart-contracts/key-purchaser.md)
   * [Swap and Call](developers/smart-contracts/swap-and-call.md)
 * [Unlock.js](developers/unlock.js.md)
@@ -69,7 +69,6 @@
 
 ## More
 
-* [Unlock Use Cases](more/unlock-use-cases.md)
 * [Unlock Mentions](more/unlock-mentions.md)
 * [Unlock Brand Guidelines](more/unlock-brand-guidelines.md)
 
