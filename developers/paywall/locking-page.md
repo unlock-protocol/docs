@@ -7,7 +7,7 @@ description: >-
 
 # Adding a Lock to Web Page
 
-Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications \(such as chat messaging applications, e-commerce stores or even gaming engines!\). See the _Plugins and Integrations_ section.
+Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications \(such as chat messaging applications, e-commerce stores or, even gaming engines!\). See the [_Plugins and Integrations_](../../creators/plugins-and-integrations/) section.
 
 ## Embedding the paywall
 
@@ -60,11 +60,13 @@ There are types of events being triggered:
   * `event.detail.address`:  the Ethereum address of the connected user.
   * `event.detail.signedMessage`: the signature perform by the user if your configuration includes a  `messageToSign`option \([more info](https://docs.unlock-protocol.com/developers/paywall/configuring-checkout#the-paywallconfig-object)\)
 
+_Note:_ if the even is triggered without any payload, please consider that the user has "logged out".
+
 ### Transaction status
 
 * Event Name:  `unlockProtocol.transactionSent`
 * Values
-  *  `event.detail.hash`:  the Ethereum transaction,
+  * `event.detail.hash`:  the Ethereum transaction,
   * `event.detail.lock`:  the Ethereum address of the lock.
 
 Here is an example:
@@ -80,7 +82,7 @@ window.addEventListener('unlockProtocol.status', function(e) {
 })
 ```
 
-Note: the callback can be invoked several times. For example, a visitor might purchase a key while they are on the page, going from the `locked` to the `unlocked` state. Similarly, the key that the visitor owns may expire during a visit which would result in the state going from `unlocked` to `locked`.
+_Note_: the callback can be invoked several times. For example, a visitor might purchase a key while they are on the page, going from the `locked` to the `unlocked` state. Similarly, the key that the visitor owns may expire during a visit which would result in the state going from `unlocked` to `locked`.
 
 ## Initiate Checkout
 
@@ -90,11 +92,11 @@ In order to purchase keys, Unlock provides a modal that lets the user pick the l
 window.unlockProtocol && window.unlockProtocol.loadCheckoutModal(/* optional configuration*/)
 ```
 
-In some cases, you may want to customize what locks are available for purchase, or even the messaging. For this, the `loadCheckoutModal` call accepts an optional configuration object. This configuration object has the same shape than the global `unlockProtocolConfig`
+In some cases, you may want to customize what locks are available for purchase, or even the messaging. For this, the `loadCheckoutModal` call accepts an optional configuration object. This configuration object has the same shape as the global `unlockProtocolConfig`
 
 ## Full code example
 
-You can easily configure the following with your lock by replacing the lock address and setting up a network if your lock is not on the mainnet.
+You can easily configure the following with your lock by replacing the lock address and setting up a network if your lock is not on the main network.
 
 Use this [JSFiddle](https://jsfiddle.net/unlockprotocol/x53c0yak/).
 
