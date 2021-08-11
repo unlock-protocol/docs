@@ -1,79 +1,164 @@
 # Unlock Contract
 
-## Public Storage Fields
+The Unlock contract is a **factory contract**. Its main purpose is to create new locks based on a template. Additionally it keeps track of locks after they have been created and grants [Unlock tokens](/governance/the-unlock-token) when new memberships have been purchased.
 
-These represent data which is persisted on the network, and which are accessible via auto-created getter functions. In order to read this data you must call the function from your code. Here's an example of checking the `unlockVersion` field using JavaScript in a test:
+As of summer 2021, the unlock contract is __owned__ by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transfering ownership of the Unlock contact to [the Unlock DAO](/governance/unlock-dao).
 
-```javascript
-it('getVersion', async () => {
-    assert.equal(
-      (await unlock.unlockVersion.call()).toString(),
-      6
-    )
-  })
+This contract is upgradable using OpenZeppelin's upgradability framework. As of now, the ProxyAdmin is __owned__ by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transfering ownership of the Unlock contact to [the Unlock DAO](/governance/unlock-dao). Each implementation is versioned. The method `unlockVersion()` will yield the current version.
+
+Some functions that are deprecated or not implemented yet (no-op) have been ommitted.
+
+## `createLock`
+
+This function can be invoked by any Ethereum address and creates a new lock using the current template. (see below).
+
+```
+  function createLock(
+    uint _expirationDuration, // Duration for each membership
+    address _tokenAddress, // Address of an ERC20 contract used as currency
+    uint _keyPrice, // Key price expressed in the ERC20 currency
+    uint _maxNumberOfKeys, // Maximum number of memberships which an be purchased
+    string calldata _lockName, // Name of the lock
+    bytes12 _salt // Unique salt used to compute the counterfactual lock address
+  ) external returns(address); // Returns the addres of the lock
 ```
 
-### **`grossNetworkProduct` \(**_**uint**_ **\)**
+Once minted, the lock belongs to the caller of the function. The Unlock contract also keeps track of each locks' address.
 
-The total sales of all locks to date, in ETH.
+## `globalBaseTokenURI`
 
-### **`totalDiscountGranted` \(**_**uint**_ **\)**
+This read-only function does not modify the state and yields the ERC721 base URL for metadata used by the locks. Each lock can override this.
 
-TODO
+```
+  function globalBaseTokenURI()
+    external
+    view
+    returns(string memory);
+```
 
-### `LockBalances` **\( mapping** \) 
+## `globalTokenSymbol`
 
-Address =&gt; Struct `LockBalances`
+This read-only function does not modify the state and yields the ERC721 base token symbol used by the locks. Each lock can override this.
 
-## Structs
+```
+  function globalTokenSymbol()
+    external
+    view
+    returns(string memory);
+```
 
-### LockBalances
+## `chainId`
 
-LockBalances is a struct which encapsulate data relative to an individual lock deployed through the smart contract. Keeping these balances will help us assess how many discount tokens a given lock can yield optimally.
+This read-only function does not modify the state and yields the network id on which this Unlock has been deployed. Some functionnality in the protocol differs based on the network (related to the [functionning of our governance token](/governance/the-unlock-token/side-chains-and-layer-2)).
 
-It has the following fields:
+```
+  function chainId()
+    external
+    view
+    returns(uint);
+```
 
-* `deployed` \(boolean\) : A boolean to indicate that a lock has been deployed \(this is required because both default values for `tokenSales` and `yieldedDiscountTokens` are 0 which is the same for non deployed locks\).
-* `totalSales` \(unsigned integer\) : An unsigned integer to keep track of the total sales for this lock in WEI.
-* `yieldedDiscountTokens` \(unsigned integer\): An unsigned integer to keep track of the total number of discount tokens yielded through that lock.
+## `configUnlock`
 
-### **`globalBaseTokenURI` \(** returns ****_**string**_ **\)** 
+This function modifies the state and sets multiple configuration parameters used by the protocol. It can be called several times in order to change the behavior of the protocol, but only by the owner of the Unlock contract.
 
-URI used by locks where the owner has not set a custom base URI
+```
+  function configUnlock(
+    address _udt, // Address of the UDT contract
+    address _weth, // Address of the wrapped Ethereum contract*
+    uint _estimatedGasForPurchase, // Amount of gas spent for each key purchase. Used to compute the UDT to be minted
+    string calldata _symbol, // Symbol of the ERC721 NFT
+    string calldata _URI, // Metadata URI for each ERC721
+    uint _chainId // network Id
+  )
+    external;
+```
 
-### **`globalTokenSymbol` \(** returns _**string**_ **\)** 
+The `_weth` should be the chain's native token ERC20 (or wrapped as an ERC20). On Ethereum's mainet, it is be wrapped Ether for example.
 
-Token symbol used by locks where the owner has not set a custom symbol
+## `setLockTemplate`
 
-### **`publicLockAddress` \(** returns _**address**_ **\)** 
+This function modifies the state and can only be called by the Unlock contract owner. It sets the template used to deploy locks. The address' should be a lock and its `initialize` and `revokeOwnership` functions will be called.
 
-The address of the public lock template, used when `createLock` is called
+```
+  function setLockTemplate(
+    address payable _publicLockAddress
+  ) external;
+```
 
-### **`uniswapExchanges` \(** returns _**mapping**_ ****\)  
+## `resetTrackedValue`
 
-Token address =&gt; exchange contract address for supported tokens
+This function modifies the state and can only be called by the Unlock contract owner. It changes the gross network product value as well as the amount of discount granted. (note: as of summer 2021, it is unclear whether we will ever implement a discount meechanism).
 
-### **`Owner`** \( returns _address_\)
 
-The owner of the Unlock Discount Token smart contract.
+```
+  function resetTrackedValue(
+    uint _grossNetworkProduct,
+    uint _totalDiscountGranted
+  ) external;
+```
+## `locks`
 
-## Unlock Interface
+This read-only function does not modify the state. The Unlock contract keeps track of all locks deployed by the protocol. It can be used to check if a lock was deployed using the protocol and yields a triplet of (boolean, total exchanged value recorded, amount of UDT yielded by this lock)
 
-In addition to this resource, you can refer to the npm module for the version you want to build on. It contains the interface for Unlock, with description of the parameters, return values, etc. For example, to refer to the interface for Unlock V6 you would look [here](https://github.com/unlock-protocol/unlock/blob/master/smart-contracts/published-npm-modules/V1.3/IUnlockV6.sol).
+```
+  function locks(address) external view returns(bool deployed, uint totalSales, uint yieldedDiscountTokens);
+```
 
-## **Modifiers**
+## `setOracle`
 
-We use modifiers to restrict calls to certain functions.
+This function modifies the state and can only be called by the Unlock contract owner. It adds an oracle to the list of oracles, for a specific token address. Since locks can be deployed using any ERC20, we need on-chain oracles to provide a conversion rate in order to compute the revenue addded by each purchase.
 
-### **`onlyFromDeployedLock()`**
+```
+  function setOracle(
+    address _tokenAddress,
+    address _oracleAddress
+  ) external;
+```
 
- this method can only be invoked by a previously deployed lock.
+## `transferOwnership`
 
-## Public Methods
+This function modifies the state and can only be called by the Unlock contract owner. It lets the owner transfer ownership to another address. It is a highly sensitive function as the supplied address will get full contol of the protocol after the transfer. We expect this function to only be called to transfer ownership to DAO contracts.
 
-### `createLock(...)`
+```
+  function transferOwnership(address newOwner) external;
+```
 
-**Description**: This is the main point of interaction with Unlock.sol, and is used to create and deploy new Lock contracts. The rest of the methods in Unlock are guarded by either the `onlyOwner` modifier, or the `onlyFromDeployedLock` modifier, making them unavailable for public use.
+## `renounceOwnership`
 
-**parameters**: `uint _expirationDuration`, `address _tokenAddress`, `uint _keyPrice`, `uint _maxNumberOfKeys`, `string memory _lockName`, `bytes12 _salt`
+This function modifies the state and can only be called by the Unlock contract owner. It renounces ownership of the Unlock contract, thereby removing any functionality that is only available to the owner.
 
+```
+  function renounceOwnership() external;
+```
+
+## Other functions
+
+The functions below are getters (read only functions).
+
+```
+  // Total sales recorded by the protocol converted in the chains "native" currency
+  function grossNetworkProduct() external view returns(uint);
+
+  // The address of the public lock template, used when `createLock` is called
+  function publicLockAddress() external view returns(address);
+
+  // The WETH token address, used for value calculations
+  function weth() external view returns(address);
+
+  // The UDT token address, used to mint tokens on referral
+  function udt() external view returns(address);
+
+  // The approx amount of gas required to purchase a key
+  function estimatedGasForPurchase() external view returns(uint);
+
+  // The version number of the current Unlock implementation on this network
+  function unlockVersion() external pure returns(uint16);
+
+  // Returns the address of the current owner
+  function owner() external view returns(address);
+
+  // Returns the oracle address for a token address
+  function uniswapOracles(address) external view returns(address);
+
+```

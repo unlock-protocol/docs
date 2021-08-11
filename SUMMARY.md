@@ -59,6 +59,7 @@
 ## Connect
 
 * [Website](https://unlock-protocol.com)
+* [Community](https://unlock.community)
 * [Github](https://github.com/unlock-protocol)
 * [Discord](https://discord.com/invite/Ah6ZEJyTDp)
 * [Twitter](https://twitter.com/UnlockProtocol)
