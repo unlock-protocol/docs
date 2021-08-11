@@ -58,7 +58,7 @@ There are types of events being triggered:
 * Event Name: `unlockProtocol.authenticated`
 * Values 
   * `event.detail.address`:  the Ethereum address of the connected user.
-  * `event.detail.signedMessage`: the signature perform by the user if your configuration includes a  `messedToSign`option \([more info](https://docs.unlock-protocol.com/developers/paywall/configuring-checkout#the-paywallconfig-object)\)
+  * `event.detail.signedMessage`: the signature perform by the user if your configuration includes a  `messageToSign`option \([more info](https://docs.unlock-protocol.com/developers/paywall/configuring-checkout#the-paywallconfig-object)\)
 
 ### Transaction status
 
