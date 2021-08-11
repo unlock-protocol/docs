@@ -1,27 +1,28 @@
 # Smart Contracts
 
-The Unlock Protocol, at it's core, is enabled by 2 primary ethereum smart contracts.
+The Unlock Protocol, at it's core, is enabled by 2 primary ethereum smart contracts, deployed on all networks supported by Unlock.
 
 ## **Unlock**
 
 This is our "factory" contract **\(Unlock.sol\)** and has several roles.
 
-* Deploying Locks: locks are deployed through the Unlock smart contract. This is important because the Locks will actually invoke the Unlock smart contract when keys are sold and the Unlock smart contract will check that the invoking lock has been deployed through it.
-* Keeping Track of the Unlock Discount Tokens. Unlock Discount Tokens are ERC20 tokens \(TODO\) which implement the Unlock network referral program. The Discount Tokens are granted when keys \(NFT\) are purchased.
-* Granting Discounts. The Unlock smart contract will compute the available discount for each key purchase based on the amount of discount tokens owned by the key buyer.
+* __Deploying Locks__: locks are deployed through the Unlock smart contract. This is important because the Locks will actually invoke the Unlock smart contract when keys are sold and the Unlock smart contract will check that the invoking lock has been deployed through it.
+* __Keeping Track of the Unlock Discount Tokens__. Unlock Discount Tokens are ERC20 tokens \(TODO\) which implement the Unlock network referral program. The Discount Tokens are granted when keys \(NFT\) are purchased.
 
-You should not need to deploy an Unlock contract yourself. Here are the addresses of contracts deployed on respective networks and you can call them directly using the block explorer.
-
-Production networks:
+You should **not need to deploy an Unlock contract yourself**. Here are the addresses of contracts deployed on respective networks and you can call them directly using the block explorer.
+### Production networks:
 
 1. Ethereum mainnet: [`0x3d5409cce1d45233de1d4ebdee74b8e004abdd13`](https://etherscan.io/address/0x3d5409cce1d45233de1d4ebdee74b8e004abdd13)
 2. Xdai: [`0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863`](https://blockscout.com/xdai/mainnet/address/0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863) \(configure [MetaMask for xDAI](https://www.xdaichain.com/for-users/wallets/metamask)\)
-3. Polygon \(ex-Matic\): [`0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863`](https://polygonscan.com/address/0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863) 
+3. Polygon \(ex-Matic\): [`0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863`](https://polygonscan.com/address/0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863)
 
-Test networks:
+### Test networks:
 
 * Rinkeby: [`0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b`](https://rinkeby.etherscan.io/address/0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b)
 * Kovan: [`0x0B9fe963b789151E53b8bd601590Ea32F9f2453D`](https://kovan.etherscan.io/address/0x0B9fe963b789151E53b8bd601590Ea32F9f2453D)
+
+
+Please, refer to the [Unlock contract documentation](developers/smart-contracts/unlock-api.md) for more details.
 
 ## **Lock Contract**
 
@@ -33,6 +34,9 @@ This is the contract \(**PublicLock.sol**\) which users can configure and deploy
 * A given user may own only 1 key at a time
 
 There as well you can call the Lock contracts directly using the block explorers.
+
+Please, refer to the [Unlock contract documentation](developers/smart-contracts/lock-api.md) for more details.
+
 
 ## Upgradeability
 
