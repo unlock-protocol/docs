@@ -4,5 +4,5 @@ description: The Unlock Protocol is a public good aimed at being governed by a D
 
 # Unlock DAO
 
-Work in progress. Please follow progress on our community site.
+Work in progress. Please follow progress on our [community site](https://unlock.community/t/introducing-the-dao/).
 
