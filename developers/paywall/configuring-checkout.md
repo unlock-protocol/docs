@@ -43,8 +43,8 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 * `useDelegatedProvider`: _optional boolean._  To be announced.
 * `network`: _optional integer._ defaults to `1`.  See below.
 * `referrer`: _optional string_. The address which will [receive UDT tokens](../../governance/the-unlock-token/) \(if the transaction is applicable\)
-* `messageToSign`: _optional string_. If supplied, the user is prompted to sign this message using their wallet. If using a checkout URL,the signature is then appended to the `redirectUri` \(see above\). If using the embedded paywall, the `unlockProtocol.authenticated` includes the signatrure.
-* `pessimistic`: _optional boolean._ defaults to `false`_._ By default, to reduce friction, we do not requir users to wait for the transaction to be mined before offering them to be redirected. By setting this to `true`, users will need to wait for the transaction to have been mined in order to proceed to the next step. 
+* `messageToSign`: _optional string_. If supplied, the user is prompted to sign this message using their wallet. If using a checkout URL, the signature is then appended to the `redirectUri` \(see above\). If using the embedded paywall, the `unlockProtocol.authenticated` includes the signature.
+* `pessimistic`: _optional boolean._ defaults to `false`_._ By default, to reduce friction, we do not require users to wait for the transaction to be mined before offering them to be redirected. By setting this to `true`, users will need to wait for the transaction to have been mined in order to proceed to the next step. 
 
 #### Locks
 
@@ -68,7 +68,7 @@ The `callToAction` object lets you customize the messages displayed on the check
 * `100`: xdai, 
 * `137`: polygon.
 
-### Full example:
+### Full example
 
 ```javascript
 {
