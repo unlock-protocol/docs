@@ -50,18 +50,22 @@ There are types of events being triggered:
 ### Paywall status
 
 * Event Name: `unlockProtocol.status`
-* Values `event.detail.state`:  `locked`or `unlocked`.
+* Values 
+  * `event.detail.state`:  `locked`or `unlocked`.
 
 ### User info
 
 * Event Name: `unlockProtocol.authenticated`
-* Values `event.detail.address`:  the Ethereum address of the connected user.
+* Values 
+  * `event.detail.address`:  the Ethereum address of the connected user.
+  * `event.detail.signedMessage`: the signature perform by the user if your configuration includes a  `messedToSign`option \([more info](https://docs.unlock-protocol.com/developers/paywall/configuring-checkout#the-paywallconfig-object)\)
 
 ### Transaction status
 
 * Event Name:  `unlockProtocol.transactionSent`
-* Values `event.detail.hash`:  the Ethereum transaction,
-* Values `event.detail.lock`:  the Ethereum address of the lock.
+* Values
+  *  `event.detail.hash`:  the Ethereum transaction,
+  * `event.detail.lock`:  the Ethereum address of the lock.
 
 Here is an example:
 

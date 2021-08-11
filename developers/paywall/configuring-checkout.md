@@ -16,7 +16,20 @@ All of the purchase URsL start with the following base
 https://app.unlock-protocol.com/checkout?
 ```
 
-After this, you will need to include the following `paywallConfig=...` where `...` is replaced with the URL encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object. You can use online tools such as [https://www.urlencoder.io/](https://www.urlencoder.io/) to build the encoded version of the object.
+After this, you will need to include the following parameters:
+
+* `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object. You can use online tools such as [https://www.urlencoder.io/](https://www.urlencoder.io/) to build the encoded version of the object.
+* `redirectUri=...` where `...` is replaced with the URL-encodded address of a webpage where the user will be redirected when their membership is valid. 
+
+These parameters are all separated by the `&` sign.
+
+#### Example
+
+```javascript
+https://app.unlock-protocol.com/checkout?redirectUri=https://ouvre-boite.com&paywallConfig=%7B%22locks%22%3A%7B%220x15F67811Beb43aCE162693fe1415916F87B8C5C2%22%3A%7B%22network%22%3A137%7D%7D%2C%22persistentCheckout%22%3Atrue%2C%22icon%22%3A%22https%3A%2F%2Frinkeby.locksmith.unlock-protocol.com%2Flock%2F0x15F67811Beb43aCE162693fe1415916F87B8C5C2%2Ficon%22%7D
+```
+
+This URL will redirect members to this page [`https://ouvre-boite.com/`](https://ouvre-boite.com/). 
 
 ## The paywallConfig object
 
@@ -30,8 +43,8 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 * `useDelegatedProvider`: _optional boolean._  To be announced.
 * `network`: _optional integer._ defaults to `1`.  See below.
 * `referrer`: _optional string_. The address which will [receive UDT tokens](../../governance/the-unlock-token/) \(if the transaction is applicable\)
-* `messageToSign`: _optional string_. To be announced.
-* `pessimistic`: _optional boolean._ To be announced.
+* `messageToSign`: _optional string_. If supplied, the user is prompted to sign this message using their wallet. If using a checkout URL,the signature is then appended to the `redirectUri` \(see above\). If using the embedded paywall, the `unlockProtocol.authenticated` includes the signatrure.
+* `pessimistic`: _optional boolean._ defaults to `false`_._ By default, to reduce friction, we do not requir users to wait for the transaction to be mined before offering them to be redirected. By setting this to `true`, users will need to wait for the transaction to have been mined in order to proceed to the next step. 
 
 #### Locks
 
@@ -60,6 +73,8 @@ The `callToAction` object lets you customize the messages displayed on the check
 ```javascript
 {
   network: 1, // Network ID (1 is for mainnet, 4 for rinkeby... etc)
+  messageToSign: "Connecting my wallet to MyApp",
+  pessimistic: true,
   locks: {
     '0xabc': { // 0xabc is the address of a lock.
       name: 'One Week',
