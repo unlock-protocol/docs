@@ -1,18 +1,18 @@
 # Unlock Contract
 
-The Unlock contract is a **factory contract**. Its main purpose is to create new locks based on a template. Additionally it keeps track of locks after they have been created and grants [Unlock tokens](../../governance/the-unlock-token/) when new memberships have been purchased.
+The Unlock contract is a **factory contract**. Its main purpose is to create new locks based on a template. Additionally, it keeps track of locks after they have been created and grants [Unlock tokens](../../governance/the-unlock-token/) when new memberships have been purchased.
 
-As of summer 2021, the unlock contract is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transfering ownership of the Unlock contact to [the Unlock DAO](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/unlock-dao/README.md).
+As of summer 2021, the unlock contract is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transferring ownership of the Unlock contact to [the Unlock DAO](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/unlock-dao/README.md).
 
-This contract is upgradable using OpenZeppelin's upgradability framework. As of now, the ProxyAdmin is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transfering ownership of the Unlock contact to [the Unlock DAO](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/unlock-dao/README.md). Each implementation is versioned. The method `unlockVersion()` will yield the current version.
+This contract is upgradable using OpenZeppelin's upgradability framework. As of now, the ProxyAdmin is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transferring ownership of the Unlock contact to [the Unlock DAO](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/unlock-dao/README.md). Each implementation is versioned. The method `unlockVersion()` will yield the current version.
 
-Some functions that are deprecated or not implemented yet \(no-op\) have been ommitted.
+Some functions that are deprecated or not implemented yet \(no-op\) have been omitted.
 
 ## `createLock`
 
 This function can be invoked by any Ethereum address and creates a new lock using the current template. \(see below\).
 
-```text
+```javascript
   function createLock(
     uint _expirationDuration, // Duration for each membership
     address _tokenAddress, // Address of an ERC20 contract used as currency
@@ -49,7 +49,7 @@ This read-only function does not modify the state and yields the ERC721 base tok
 
 ## `chainId`
 
-This read-only function does not modify the state and yields the network id on which this Unlock has been deployed. Some functionnality in the protocol differs based on the network \(related to the [functionning of our governance token](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/the-unlock-token/side-chains-and-layer-2/README.md)\).
+This read-only function does not modify the state and yields the network id on which this Unlock has been deployed. Some functionnality in the protocol differs based on the network \(related to[ our governance token](../../governance/the-unlock-token/)\).
 
 ```text
   function chainId()
@@ -74,7 +74,7 @@ This function modifies the state and sets multiple configuration parameters used
     external;
 ```
 
-The `_weth` should be the chain's native token ERC20 \(or wrapped as an ERC20\). On Ethereum's mainet, it is be wrapped Ether for example.
+The `_weth` should be the chain's native token ERC20 \(or wrapped as an ERC20\). On Ethereum's main network, it is wrapped Ether for example.
 
 ## `setLockTemplate`
 
@@ -88,7 +88,7 @@ This function modifies the state and can only be called by the Unlock contract o
 
 ## `resetTrackedValue`
 
-This function modifies the state and can only be called by the Unlock contract owner. It changes the gross network product value as well as the amount of discount granted. \(note: as of summer 2021, it is unclear whether we will ever implement a discount meechanism\).
+This function modifies the state and can only be called by the Unlock contract owner. It changes the gross network product value as well as the amount of discount granted. \(note: as of summer 2021, it is unclear whether we will ever implement a discount mechanism, as we will let these decisions to the DAO\).
 
 ```text
   function resetTrackedValue(
@@ -107,7 +107,7 @@ This read-only function does not modify the state. The Unlock contract keeps tra
 
 ## `setOracle`
 
-This function modifies the state and can only be called by the Unlock contract owner. It adds an oracle to the list of oracles, for a specific token address. Since locks can be deployed using any ERC20, we need on-chain oracles to provide a conversion rate in order to compute the revenue addded by each purchase.
+This function modifies the state and can only be called by the Unlock contract owner. It adds an oracle to the list of oracles, for a specific token address. Since locks can be deployed using any ERC20, we need on-chain oracles to provide a conversion rate in order to compute the revenue added by each purchase.
 
 ```text
   function setOracle(
@@ -118,7 +118,7 @@ This function modifies the state and can only be called by the Unlock contract o
 
 ## `transferOwnership`
 
-This function modifies the state and can only be called by the Unlock contract owner. It lets the owner transfer ownership to another address. It is a highly sensitive function as the supplied address will get full contol of the protocol after the transfer. We expect this function to only be called to transfer ownership to DAO contracts.
+This function modifies the state and can only be called by the Unlock contract owner. It lets the owner transfer ownership to another address. It is a highly sensitive function as the supplied address will get the full control of the protocol after the transfer. We expect this function to only be called to transfer ownership to DAO contracts.
 
 ```text
   function transferOwnership(address newOwner) external;
@@ -134,7 +134,7 @@ This function modifies the state and can only be called by the Unlock contract o
 
 ## Other functions
 
-The functions below are getters \(read only functions\).
+The functions below are getters \(read-only functions\).
 
 ```text
   // Total sales recorded by the protocol converted in the chains "native" currency
