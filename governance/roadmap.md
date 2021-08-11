@@ -22,7 +22,7 @@ For June 2021, here are the goals:
 * Addition of a `/developer`landing page. State: Shipped. ✅
 * Addition of a `/creator` landing page. State: delayed
 * Formal launch of grant program process \([see grants page](grants-bounties-and-matchings.md)\). State: shipped. ✅
-* Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.gg/nBNPqmPW) State: done. ✅
+* Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.com/invite/Ah6ZEJyTDp) State: done. ✅
 * Developer forum launched on Discourse,  State: shipped. Waiting to be announced ✅
 
 ## August 1st 2021
