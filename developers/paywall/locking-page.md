@@ -100,13 +100,8 @@ You can easily configure the following with your lock by replacing the lock addr
 
 Use this [JSFiddle](https://jsfiddle.net/unlockprotocol/x53c0yak/).
 
-{% embed url="http://jsfiddle.net/unlockprotocol/x53c0yak/" caption="" %}
+{% embed url="http://jsfiddle.net/unlockprotocol/x53c0yak/" caption="Try Unlock" height="500" %}
 
----
 
-<script async src="//jsfiddle.net/unlockprotocol/x53c0yak/4/embed/"></script>
-
----
-
-Update: August 2021
+Update: August, 13th 202
 
