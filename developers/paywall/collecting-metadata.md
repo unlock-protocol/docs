@@ -8,6 +8,8 @@ description: >-
 
 In some cases, it may be valuable to collect information from purchasers before they purchase a key. For example, you may want to know the email address of all key holders so that you can send updates to them. In that case, you will want to work with [user-specific metadata](../locksmith/metadata.md#user-specific-metadata).
 
+Warning: if the user already has an active membership, they will not be prompted to complete the metadata form!
+
 To achieve this, add a property called `metadataInputs` to your configuration object:
 
 ```text
