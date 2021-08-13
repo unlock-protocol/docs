@@ -98,10 +98,7 @@ In some cases, you may want to customize what locks are available for purchase, 
 
 You can easily configure the following with your lock by replacing the lock address and setting up a network if your lock is not on the main network.
 
-Use this [JSFiddle](https://jsfiddle.net/unlockprotocol/x53c0yak/).
-
-{% embed url="http://jsfiddle.net/unlockprotocol/x53c0yak/" caption="Try Unlock" height="500" %}
+{% embed url="https://codepen.io/unlock-protocol/pen/bGWZvGM" %}
 
 
-Update: August, 13th 202
 
