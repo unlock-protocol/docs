@@ -23,12 +23,13 @@ There are more advanced customization options, but they will require some more a
 Once a lock gets sold, the balance will be initially held within the smart contract for the lock, until you withdraw the funds. To withdraw your funds:
 
 1. In the Creator Dashboard, if you see a positive balance for a Lock, you can click the circular button to withdraw funds.
-2. Once you click to withdraw funds, there will be a transaction that charges a gas fee. This will begin the transactions to move funds from the smart contract to your connected wallet.
-3. You will see pending transactions on the Creator Dashboard. Once these finish, your funds will be available in the wallet you are connected to the Creator Dashboard with.
+2. By default, the funds are sent to the "beneficiary", which is the address which created the lock, but the beneficiary can be changed to any address by a [lock manager](/developers/smart-contracts/lock-api/access-control). The beneficairy can be a 3rd party address, or even a smart contract, which would then split them between multiple addresses...
+3. Once you click to withdraw funds, there will be a transaction that charges a gas fee. This will begin the transactions to move funds from the smart contract to ythe beneficiary.
+4. You will see pending transactions on the Creator Dashboard. Once these finish, your funds will be available!
 
 ### Re\(selling\) memberships
 
-Unlock memberships are Non-Fungible Tokens \(using the ERC721 standard\), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
+Unlock memberships (called keys!) are Non-Fungible Tokens \(using the ERC721 standard\), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
 
 
 
