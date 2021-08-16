@@ -47,6 +47,14 @@ Drupal module that allows only members to see specific parts of your site conten
 * [GitHub Repository](https://github.com/mikedotexe/unlock)
 * Created by [Mike Purvis](https://github.com/mikedotexe)
 
+## Firebase
+
+Firebase is a platform developed by Google for creating mobile and web applications. You can easily integrate Unlock into any Firebase application, access roles are assigned based on the user's wallet's owned lock memberships.
+
+* [GitHub](https://github.com/novum-insights/unlock-protocol-firebase)
+* [Documentation](https://david-layton.gitbook.io/novum/)
+* [NPM module](https://www.npmjs.com/package/@novuminsights/unlock-protocol-firebase)
+
 ## Ghost
 
 👀 Interested in building the [Ghost Integration](https://ghost.org/integrations/custom-integrations/)?  
