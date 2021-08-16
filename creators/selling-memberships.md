@@ -8,9 +8,9 @@ description: >-
 
 There are multiple ways to sell memberships, and some of the integrations built by the community already include that step. However, in some context, you may want to have a single URL to share with your community so they can purchase your membership!
 
-### Using a purchase URL
+## Using a purchase URL
 
-Our dashboard offers a "purchase" URL that can easily be shared. 
+Our dashboard offers a "purchase" URL that can easily be shared.
 
 ![The Purchase URL is visible on the dashboard](../.gitbook/assets/image%20%2828%29%20%282%29%20%282%29%20%282%29%20%281%29.png)
 
@@ -18,18 +18,16 @@ You can set a custom redirect URL to which the URL is redirected when they have 
 
 There are more advanced customization options, but they will require some more advanced techniques, which you can [find in our developer section](../developers/paywall/configuring-checkout.md).
 
-### How to get paid
+## How to get paid
 
 Once a lock gets sold, the balance will be initially held within the smart contract for the lock, until you withdraw the funds. To withdraw your funds:
 
 1. In the Creator Dashboard, if you see a positive balance for a Lock, you can click the circular button to withdraw funds.
-2. By default, the funds are sent to the "beneficiary", which is the address which created the lock, but the beneficiary can be changed to any address by a [lock manager](/developers/smart-contracts/lock-api/access-control). The beneficairy can be a 3rd party address, or even a smart contract, which would then split them between multiple addresses...
+2. By default, the funds are sent to the "beneficiary", which is the address which created the lock, but the beneficiary can be changed to any address by a [lock manager](https://github.com/unlock-protocol/docs/tree/075aaf67dd7225103e8bcaa72856331fa0f43cd7/developers/smart-contracts/lock-api/access-control/README.md). The beneficairy can be a 3rd party address, or even a smart contract, which would then split them between multiple addresses...
 3. Once you click to withdraw funds, there will be a transaction that charges a gas fee. This will begin the transactions to move funds from the smart contract to ythe beneficiary.
 4. You will see pending transactions on the Creator Dashboard. Once these finish, your funds will be available!
 
-### Re\(selling\) memberships
+## Re\(selling\) memberships
 
-Unlock memberships (called keys!) are Non-Fungible Tokens \(using the ERC721 standard\), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
-
-
+Unlock memberships \(called keys!\) are Non-Fungible Tokens \(using the ERC721 standard\), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
 

@@ -17,7 +17,7 @@
   * [Drupal Plugin](creators/plugins-and-integrations/drupal-plugin.md)
 * [Tutorials](creators/tutorials-1/README.md)
   * [Organizing a vote by members](creators/tutorials-1/organizing-a-vote-by-members.md)
-  * [How to resell a lock](creators/tutorials-1/how-to-resell-a-lock.md)
+  * [How to resell a membership](creators/tutorials-1/how-to-resell-a-lock.md)
   * [Building an Ad Free Experience](creators/tutorials-1/ad-free-experience.md)
   * [Using Unlock for Newsletters](creators/tutorials-1/using-unlock-newsletter.md)
   * [Receiving donations on Github](creators/tutorials-1/receiving-donations-on-github.md)
