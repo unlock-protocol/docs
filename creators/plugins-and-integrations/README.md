@@ -8,8 +8,6 @@ Our community has deployed integrations using many different existing platforms 
 
 ![You can easily access integrations from your dashboard. click on the &quot;cube&quot; icon.](../../.gitbook/assets/image%20%2824%29.png)
 
-### 
-
 ### Grants for Integrations
 
 👀 Get a grant for building an integration including: [Ghost](https://ghost.org/integrations/custom-integrations/), [Notion](http://developers.notion.com), [Squarespace](https://www.squarespace.com/extensions/home), ...  

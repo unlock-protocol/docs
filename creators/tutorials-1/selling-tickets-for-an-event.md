@@ -86,7 +86,7 @@ If you decide to collect `emailAddress`, then, we will automatically send an ema
 
 ## Listing all attendees
 
-As an event organizer, you may want to list the attendees coming to your event. This is possible through the [Unlock Dashboard](https://app.unlock-protocol.com/dashboard/). On that page, click on the members icon ![](../../.gitbook/assets/members%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png) on your lock in the list of locks. On the next page, you will be able to list all of the key owners \(attendees who have RSVP\) as well as the information that you have collected.
+As an event organizer, you may want to list the attendees coming to your event. This is possible through the [Unlock Dashboard](https://app.unlock-protocol.com/dashboard/). On that page, click on the members icon ![](../../.gitbook/assets/members%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png) on your lock in the list of locks. On the next page, you will be able to list all of the key owners \(attendees who have RSVP\) as well as the information that you have collected.
 
 You can export the list as CSV from that page.
 
