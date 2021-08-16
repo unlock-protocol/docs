@@ -1,3 +1,7 @@
+---
+description: Sell an Unlock NFT on a secondary marketplace.
+---
+
 # How to resell a lock
 
 Because Unlock’s locks use the NFT ERC-721 standard, you can easily sell or transfer ownership of a lock once you have purchased it. 
