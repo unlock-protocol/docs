@@ -16,15 +16,21 @@ However, with Unlock you can easily customize this image. For this, in the dashb
 
 ![When hovered, you can click the camera to customize the image](../.gitbook/assets/image%20%2825%29.png)
 
-From there, you can upload an image \(2MB maximum\), or select an external URL. We also recommend using a square of at least 300x300 pixels.
+From there, you can upload an image \(1MB maximum\), or select an external URL. We also recommend using a square of at least 300x300 pixels.
 
 ![](../.gitbook/assets/image%20%2823%29.png)
 
-If you select an external URL, we will hotlink to it, which means that you will need to make sure this image will remain available.
+If you select an external URL, we will hot-link to it, which means that you will need to make sure this image will remain available.
 
 ### Customize each membership's icon
 
-If you use an external URL, you can customize each membership from your lock in a more unique way. Indeed, the image URL that we pass includes `?id=<token id>`.
+To customize each memberships' icon, you must use an external URL. Indeed, the image URL that we pass includes `?id=<token id>`. You can then have a different image URL for membership 1, 2, ... etc.
+
+For example: 
+
+* The lock at the address `0x979B341B7C8863A236702E577dc8286Ca66423c0` on [Rinkeby](https://rinkeby.etherscan.io/address/0x979B341B7C8863A236702E577dc8286Ca66423c0) has [this URL](https://locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon) :`https://locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`
+* The NFT with id `1` \(first membership\) has [this metadata URI](https://rinkeby.locksmith.unlock-protocol.com/api/key/0x979b341b7c8863a236702e577dc8286ca66423c0/1) :`https://rinkeby.locksmith.unlock-protocol.com/api/key/0x979b341b7c8863a236702e577dc8286ca66423c0/1`
+* And when inspecting its metadata, the image address is:`http://rinkeby.locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`**`?id=1`**
 
 ## Advanced metadata customization
 
