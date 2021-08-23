@@ -8,7 +8,7 @@ description: >-
 
 ## **Unlock + Mintgate**
 
-Because Unlock’s locks use the ERC-721 standard \(NFT\), your lock that you create through Unlock can be integrated with other tools that build utility for NFTs as well. This includes Mintgate, which gives the ability to gate any link. So, when you create a lock on Unlock -- you can also use it to gate links through Mintgate.
+Because Unlock’s locks use the ERC-721 standard \(NFT\), your lock that you create through Unlock can be integrated with other tools that build utility for NFTs as well. This includes [Mintgate](https://www.mintgate.app/), which gives the ability to gate any link. So, when you create a lock on Unlock -- you can also use it to gate links through Mintgate.
 
 Here are some examples of services you can gate using an Unlock lock + Mintgate.
 
@@ -28,7 +28,7 @@ This will allow only people with a particular token in their wallet to be able t
 
 ### **Unlock: Create a Lock**
 
-In the Unlock Creator Dashboard, create a Lock. After naming the Lock, and filling in the duration, quantity, and price fields, confirm the new lock.
+In the Unlock Creator Dashboard, create a Lock. After naming the Lock, and filling in the duration, quantity, and price fields, confirm the new lock. [See this section](https://docs.unlock-protocol.com/creators/deploying-lock) for nore details!
 
 ![](https://lh6.googleusercontent.com/lzoRqjw0febK0j13crm5Hlsu-2yde3KqJ5uW1NqvISeWC4LhFdDF7BD_ltyZ1MA5oBrG2g-xHl88p1Yx3FAONVQsTEp-EAIK-uaglpK3AHnJbYfVC9NdC4fS5540e5lwL1yPd26A)
 
