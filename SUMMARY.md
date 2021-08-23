@@ -15,6 +15,7 @@
   * [Discord with Swordy Bot](creators/plugins-and-integrations/discord.md)
   * [Discord with Collab.Land](creators/plugins-and-integrations/discord-with-collab.land.md)
   * [Drupal Plugin](creators/plugins-and-integrations/drupal-plugin.md)
+  * [Mintgate](creators/plugins-and-integrations/mintgate.md)
 * [Tutorials](creators/tutorials-1/README.md)
   * [Organizing a vote by members](creators/tutorials-1/organizing-a-vote-by-members.md)
   * [How to resell a membership](creators/tutorials-1/how-to-resell-a-lock.md)
