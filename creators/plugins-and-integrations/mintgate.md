@@ -38,28 +38,30 @@ This is the unique identifying address for your lock. Keep this tab open so you 
 
 Log into MintGate. Click on the Create button and choose “Token Gated Link.”
 
-![](https://lh5.googleusercontent.com/lJT95sLsA6r1GRqQkf8IzdCxHAuU6en8b9koRMNW11FpLFpYKaIW4qiErpbs1f4Yab_sFsK20GTVyPuEtM_SSwJOjveVqJQjSiUkfXQOLTEnDnYeu9r29FCH4n7Ngd6eiMAOmMSP)
+![](../../.gitbook/assets/image1.png)
 
 Paste the Youtube link that you would like to gate and add a title. 
+
+![](../../.gitbook/assets/image9.png)
 
 Select the blockchain that your Unlock key was created on \(MintGate currently supports redirects Unlock paywall links for locks on Ethereum, xDai, and Polygon\), and choose NFT ERC-721 Collectibles. Add the address associated with your Lock into the contract address field. You can leave the 721 Token ID field blank. If you are looking to gate using specific keys, you can specify them in that field.   
 
 
-![](https://lh6.googleusercontent.com/oin5Y0FvwLe_rGe8C4KxOskJ_TjHSTKOcvERDFrTlAjzAVcz6PO64t3-gEkgZ1VykL3jBUcU-jjrlPxSTmOYMUWLLNU-YNH1cDjUN-wH0ODtQ0ASyEYRhoh0n1iU16fPrri_eluw)
+![](../../.gitbook/assets/image8.png)
 
 If you’d like, you can also add other Unlock Keys or other non-Unlock Keys that can give access to this same link as well by pressing “add token”.
 
 After you finish, you should get a link from MintGate. Using this link, only people with your Unlock Key in their wallet can access the Youtube link.
 
-![](https://lh5.googleusercontent.com/ra7nQ3LOg7GZQU99gWBKJN5-IM7TSMPRGmrIs1nIncJ0MEV8pMvyEH8F8k_igAHS_05SAOQrwlEO6P-Hgr8_2i7ObH4t0Xai0I8CwaIkAsFNaidO2-xgto2XBvKwlSoqjzJcuUp8)
-
 When users click on this link, they are asked to connect their wallet. If they have the correct Unlock Key, they are able to access the Youtube link. 
 
 If they do not have the right key, they get this message:
 
-![](https://lh6.googleusercontent.com/m1sDmZ5gNpulaHaouLaYHl7AxyL3wxZPPaG82klFxyruIClLZRsNzCn4rUAxFTB5zskr3Nlg6WEgi21pATjj0pqs3gU1PZXVD-Q2U-Qm92xM4U9xaGP6IorSBkuuG8dRkJEEmfnh)
+![](../../.gitbook/assets/image2.png)
 
 If they decide to buy the key, they can click on the Buy Key on Unlock button where they will be redirected to the Unlock paywall.
+
+![](../../.gitbook/assets/image3.png)
 
 Once they purchase the key, they can click on the Return to mgate.io to redirect back to MintGate and access the Youtube video.
 
