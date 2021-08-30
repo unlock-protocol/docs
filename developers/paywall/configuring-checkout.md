@@ -18,10 +18,10 @@ https://app.unlock-protocol.com/checkout?
 
 After this, you will need to include the following parameters:
 
-* `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object. You can use online tools such as [https://www.urlencoder.io/](https://www.urlencoder.io/) to build the encoded version of the object.
+* `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object. 
 * `redirectUri=...` where `...` is replaced with the URL-encodded address of a webpage where the user will be redirected when their membership is valid. 
 
-These parameters are all separated by the `&` sign.
+These parameters are all separated by the `&` sign and you can use online tools such as [https://www.urlencoder.io/](https://www.urlencoder.io/) to build the encoded version of the parameters.
 
 #### Example
 
@@ -72,24 +72,21 @@ The `callToAction` object lets you customize the messages displayed on the check
 
 ```javascript
 {
-  network: 1, // Network ID (1 is for mainnet, 4 for rinkeby... etc)
-  messageToSign: "Connecting my wallet to MyApp",
-  pessimistic: true,
-  locks: {
-    '0xabc': { // 0xabc is the address of a lock.
-      name: 'One Week',
-      network: 1 // you can customize the network for each lock
-    }, 
-    '0xdef': {
-      name: 'One Month' 
-      network: 100 // lock on the xDai chain
+    "pessimistic": true,
+    "locks": {
+        "0x250a0153DfB52B44c560524283A6629C1d347545": {}
     },
-  },
-  icon: 'https://app.unlock-protocol.com/static/images/svg/default.svg', 
-  callToAction: {
-    default: 'This content is locked. Pay with cryptocurrency to access it!',
-  },
-  referrer: '0xreferrer' // Address of the referrer who will earn UDT governance tokens if the transaction is eligible.
+    "icon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.10UUFNA8oLdFdDpzt-Em_QHaHa%26pid%3DApi&f=1",
+    "callToAction": {
+        "default": "Please join the Amber membership!"
+    },
+    "metadataInputs": [
+        {
+            "name": "Name",
+            "type": "text",
+            "required": true
+        }
+    ]
 }
 ```
 
