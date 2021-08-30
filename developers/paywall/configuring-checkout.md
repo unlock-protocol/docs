@@ -61,7 +61,9 @@ The `callToAction` object lets you customize the messages displayed on the check
 * `expired` : displayed when the user had a membership previously that expired
 * `metadata`: displayed when the user is prompted for metadata
 
-#### Network values:
+#### Network values
+
+(Make sure you use a number and not a string!)
 
 * `1`: mainnet, 
 * `4`: rinkeby, 
