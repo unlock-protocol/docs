@@ -60,7 +60,7 @@ Here is an example:
 
 ## Collecting attendee information
 
-Most events will need to gather some attendee information \(name, email address or tee-shirt size for example\). For this, you can simply add some configuration to your paywall. Please refer to the [advanced paywall configuration page](https://docs.unlock-protocol.com/applications/paywall/advanced-paywall-configuration) for more details.
+Most events will need to gather some attendee information \(name, email address or tee-shirt size for example\). For this, you can simply add some configuration to your paywall. Please refer to the [advanced paywall configuration page](https://docs.unlock-protocol.com/developers/paywall/collecting-metadata) for more details.
 
 In a nutshell, you just need to add a field called `metadataInputs`to your configuration. This field contains an array of of values you want to collect. Here is for example how you would collect email addresses and names.
 
