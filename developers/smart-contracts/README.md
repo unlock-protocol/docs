@@ -35,7 +35,7 @@ This is the contract \(**PublicLock.sol**\) which users can configure and deploy
 
 There as well you can call the Lock contracts directly using the block explorers.
 
-Please, refer to the [Unlock contract documentation](https://github.com/unlock-protocol/docs/tree/87a735dc37ab260759a5d6b2b5a7bc073397aa76/developers/smart-contracts/developers/smart-contracts/lock-api.md) for more details.
+Please, refer to the [Unlock contract documentation](unlock-api.md) for more details.
 
 ## Upgradeability
 

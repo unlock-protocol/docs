@@ -6,13 +6,13 @@ description: >-
 
 # Configuring Checkout
 
-## Building a Purchase address 
+## Building a Purchase address
 
 If you are using the paywall application, you can skip this section and move to the next one \(the `paywallConfig` object\).
 
 All of the purchase URsL start with the following base
 
-```
+```text
 https://app.unlock-protocol.com/checkout?
 ```
 
@@ -29,7 +29,7 @@ These parameters are all separated by the `&` sign and you can use online tools 
 https://app.unlock-protocol.com/checkout?redirectUri=https://ouvre-boite.com&paywallConfig=%7B%22locks%22%3A%7B%220x15F67811Beb43aCE162693fe1415916F87B8C5C2%22%3A%7B%22network%22%3A137%7D%7D%2C%22persistentCheckout%22%3Atrue%2C%22icon%22%3A%22https%3A%2F%2Frinkeby.locksmith.unlock-protocol.com%2Flock%2F0x15F67811Beb43aCE162693fe1415916F87B8C5C2%2Ficon%22%7D
 ```
 
-This URL will redirect members to this page [`https://ouvre-boite.com/`](https://ouvre-boite.com/). 
+This URL will redirect members to this page [`https://ouvre-boite.com/`](https://ouvre-boite.com/).
 
 ## The paywallConfig object
 
@@ -39,7 +39,7 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 * `icon`: _optional string_, the URL for a icon to display in the top left corner of the modal.
 * `callToAction`: _optional object_, a list of messages shown based on the state of the checkout modal \(see below\).
 * `metadataInputs`:  _optional array_, a set of input fields [as explained there](collecting-metadata.md).
-* `persistentCheckout`: _optional boolean_: `true` __if the modal cannot be closed, defaults to `false` when embedded. When closed, the user will be redirected to the `redirect` query param when using a purchase address \(see above\).
+* `persistentCheckout`: _optional boolean_: `true` \_\_if the modal cannot be closed, defaults to `false` when embedded. When closed, the user will be redirected to the `redirect` query param when using a purchase address \(see above\).
 * `useDelegatedProvider`: _optional boolean._  To be announced.
 * `network`: _optional integer._ defaults to `1`.  See below.
 * `referrer`: _optional string_. The address which will [receive UDT tokens](../../governance/the-unlock-token/) \(if the transaction is applicable\)
@@ -63,7 +63,7 @@ The `callToAction` object lets you customize the messages displayed on the check
 
 #### Network values
 
-(Make sure you use a number and not a string!)
+\(Make sure you use a number and not a string!\)
 
 * `1`: mainnet, 
 * `4`: rinkeby, 
@@ -91,6 +91,4 @@ The `callToAction` object lets you customize the messages displayed on the check
     ]
 }
 ```
-
-
 
