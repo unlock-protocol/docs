@@ -76,7 +76,9 @@ The `callToAction` object lets you customize the messages displayed on the check
 {
     "pessimistic": true,
     "locks": {
-        "0x250a0153DfB52B44c560524283A6629C1d347545": {}
+        "0x250a0153DfB52B44c560524283A6629C1d347545": {
+           network: 1,
+        }
     },
     "icon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.10UUFNA8oLdFdDpzt-Em_QHaHa%26pid%3DApi&f=1",
     "callToAction": {
