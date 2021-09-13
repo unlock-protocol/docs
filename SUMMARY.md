@@ -47,6 +47,8 @@
   * [Metadata](developers/locksmith/metadata.md)
   * [Authorization Strategy](developers/locksmith/authorization-strategy.md)
   * [Token Metadata API](developers/locksmith/token-metadata-api.md)
+* [Tutorials](developers/tutorials/README.md)
+  * [Locking media content](developers/tutorials/locking-media-content.md)
 * [FAQ](developers/faq.md)
 
 ## Governance
