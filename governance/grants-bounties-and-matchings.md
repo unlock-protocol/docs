@@ -35,7 +35,7 @@ On-going grants or RFP:
 * Wordpress plugin improved
 * Twitch/Youtube/Vimeo thru [StreamLabs](https://streamlabs.com/)
 
-We will publish Requests for Proposals where we describe what we expect some specific integrations to be, as well as assess any proposal coming from the community.
+We created a [Requests for Grants document](https://www.notion.so/unlockprotocol/Request-for-Grants-9aac49be49124e70a88543bc79748555) where we explore the types of integrations we hope to implement through our grant program. Please review these integration needs and apply for a grant if you are able to tackle any of items on our list. Feel free to reach out to us on Discord if you would like to add an integration to our list as well. Most of the items on the Request for Grants were derived from our community requests.
 
 ## Bounties
 
