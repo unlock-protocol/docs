@@ -4,61 +4,55 @@ description: This document presents the Unlock roadmap.
 
 # Roadmap
 
-As of summer 2021, the Unlock ecosystem consists of the following:
+As of October 2021, the Unlock ecosystem consists of the following:
 
 * A set of smart contracts which let creators deploy their locks, as well as lets consumers unlock the locks
 * An [unlock-js](https://www.npmjs.com/package/@unlock-protocol/unlock-js) library that developers can use to interact with the contracts
 * A [paywall application](https://paywall.unlock-protocol.com/) that can be embedded on any website or application to limit access to members and then lets users purchase keys to unlock content
 * An [unlock-app ](https://app.unlock-protocol.com/dashboard)application that lets creators deploy their lock and view their members, as well as lets consumers view the keys they purchased and interact with them \(keychain\). The Unlock app also provides user accounts that enable people to create an account with their email and password and then purchase keys with their credit cards through Unlock Inc.
 * The [Unlock Tokens](https://github.com/unlock-protocol/unlock/wiki/The-Unlock-Tokens), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
+* The [Unlock DAO](https://unlock-protocol.com/blog/unlock-dao), a set of contracts that lets anyone who owns Unlock tokens submit proposals and vote on them in order to effectively govern the protocol and its treasury.
 
-## 1 Month Roadmap
-
-For June 2021, here are the goals:
+## June 2021
 
 * Enable UDT rewards on xDAI \([or any other side chain](the-unlock-token/side-chains-and-layer-2.md)\). State: shipped. Shipped. ✅
 * Enable credit card checkout for any lock \(if creator agrees to it!\). State: Shipped. ✅
 * Update home page design. State: Shipped. ✅
 * Addition of a `/developer`landing page. State: Shipped. ✅
-* Addition of a `/creator` landing page. State: delayed
+* Addition of a `/creator` landing page. State: delayed ⏰
 * Formal launch of grant program process \([see grants page](grants-bounties-and-matchings.md)\). State: shipped. ✅
 * Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.com/invite/Ah6ZEJyTDp) State: done. ✅
 * Developer forum launched on Discourse,  State: shipped. Waiting to be announced ✅
 
-## August 1st 2021
+## August 2021
 
-* Decentralized governance \(see below\). Delayed as we're waiting for OpenZeppelin to ship its contract.
+* Decentralized governance \(see below\). Delayed as we're waiting for OpenZeppelin to ship its contract. ✅
 * Launch Unlock on 2 more side-chains/network. State: Shipped. ✅
-* ApplePay or GooglePay or Paypal integration. Delayed
+* ApplePay or GooglePay or Paypal integration. delayed ⏰ 
 * Customizable NFT icon from the dashboard. State: Shipped. ✅
-* Lock configuration from dashboard \(metadata collection\). Delayed
+* Lock configuration from dashboard \(metadata collection\). delayed ⏰
 * Full "static" website relaunch. State: Shipped. ✅
 * First Hackathon \(remote\). ✅
 
 ## December 31st 2021
 
-To be announced.
+* Upgradable PublicLock contracts (by their lock managers)
+* New features in PublicLock:
+  * Non-expiring keys: ability to create locks without a duration
+  * Gas-refund: ability for lock manager to specify an amount refunded to the key purchase (or grants) transsactions
+  * 3rd party strategies: adding a `balanceOf` hook that lets other contracts determine if someone should get a membership based on arbitrary characteristics (users owns a balance of X tokens, another NFT... etc(
+  * Dynamic TokenURI: providing a mechanism for a lock owner to define a 3rd party contract for the logic to yield the tokenURI
+* Dev tools:
+  * OAuth/OIDC flow for 3rd party applications who do not want to handle wallets
+  * Webhooks ability to register hooks when a transaction gets executed on a lock
+* Creator tools:
+  * Multichain dashboard
+  * Persistent login
+  * Granting membership UI
+* Member tools:
+  * Manage memberships from keychain
 
-### Decentralization of governance \(Unlock DAO\)
-
-At this point, protocol upgrades are still performed via Unlock Inc's multi-sig wallet. Now that UDT is being minted and distributed on transactions will referrals, we need to live by our goal to provide a way to vote to all UDT holders. The process, to be confirmed would be like this:
-
-* anyone can deploy a new implementation of the Unlock contract, or the UDT contract, as both are upgradeable \(using OpenZepelin's libraries\). After doing so, they will create and submit a transaction to perform the upgrade.
-* This opens a voting period with a fixed duration \(it appears that 2 weeks is the standard\), during which all UDT holders are invited to vote.
-* At the end of the period, if the upgrade proposal has received a majority of approvals and if the number of votes has reached a threshold of participation \(we suggest 20%\), then, the upgrade will be submitted and made effective. Otherwise, it is discarded.
-
-There are several challenges to take into account: how can we guarantee that we have a 1 token/1 vote representation \(people should not be able to transfer their tokens once they have voted!\)? How are the upgrades to the governance mechanism \(vote thresholds...\) itself performed? etc. How are Unlocks' contract parameters changes \(developer reward address, base gas price used to compute UDT minted... etc\)?
-
-Our goal for this milestone is summer 2021. 
-
-#### Status
-
-* We have successfully upgraded the UDT tokens to support governance requirements \(vote delegation...\)
-* We are waiting for OpenZeppelin to formally launch their Governor Contracts
-* Of-chain voting is possible on Snapshots
-* We are waiting for Tally to support OpenZeppelin's contracts.
-
-More info: [https://unlock.community/t/introducing-the-dao/68/4](https://unlock.community/t/introducing-the-dao/68/4)
+Misc: more/better docs, more 3rd party integrations... etc
 
 ## Beyond
 
@@ -66,27 +60,21 @@ These are opportunities we will eventually work on, based on user demand or avai
 
 ### Smart contracts
 
-* Upgradable Locks by lock manager. Right now locks themselves are not upgradable. We could make them upgradable by their manager using OpenZeppelin.
-* Delegate basic ERC20/ERC721 `approve` for lock managers on behalf of locks \(removing the need for beneficiary!\).
+* Multichain governance: how can decisions approved by the DAO can "travel" to L2 and side-chains
 
 ### Locksmith
 
-* Mult-chain on each env. Currently, locksmith instances are 'chain specific'. We're making them agnostic. ✅
-
-### Paywall
-
-* Multi-chain on checkout \(locks can each be on different chains\) ✅
-* "stronger" security requirement \(ask the user to sign a message to verify they actually own the address\). In progress
+* Recurring key purchasers
+* Cross chain purchasers (allowing someone to purchase a membership from a network on another network)
 
 ### Unlock App
 
-* Wallet Connect ✅
-* Unlock account refactors ✅.
-* Grant memberships UI
+* Apple Pay/Google Pay support
 
 ### Tooling
 
 * Github actions to replace CircleCi
-* Better dependency management \(use of lerna and yarn workspaces\)
 * Better integration tests
+* refactored subrgaphs
+* IPFS front-end
 
