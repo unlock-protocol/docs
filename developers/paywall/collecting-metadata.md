@@ -63,14 +63,17 @@ The members of this array should have the following shape:
   name: string,
   type: 'text' | 'date' | 'color' | 'email' | 'url',
   required: boolean,
-  defaultValue?: 'string',
-  public?: true,
+  defaultValue?: string,
+  public?: boolean,
+  placeholder?: string,
 }
 ```
 
-All fields are required except for `public`, which defaults to `false` and `defaultValue`. Metadata is considered protected by default, so the only people who can view it are the lock owner and the user associated with the metadata. If any metadata should be visible to everyone, mark the `public` field as `true`.
+All fields are required except for `public`, which defaults to `false`, `placeholder` and `defaultValue`. Metadata is considered protected by default, so the only people who can view it are the lock owner and the user associated with the metadata. If any metadata should be visible to everyone, mark the `public` field as `true`.
 
 If any input has `required: true`, it will render on the form with a red asterisk next to it and the metadata form will not submit until it is filled appropriately.
+
+The `placeholder` maps to HTML's `placeholder` attribute on the `<input>`element.
 
 Name fields should be unique; if they are not then there may be collisions when storing the data.
 
