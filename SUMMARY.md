@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Our Code of Conduct](our-code-of-conduct.md)
 
-## For Creators <a id="creators"></a>
+## For Creators <a href="creators" id="creators"></a>
 
 * [Creating a Lock](creators/deploying-lock/README.md)
   * [Using a custom currency](creators/deploying-lock/using-a-custom-currency.md)
@@ -25,7 +25,7 @@
   * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
 * [FAQ](creators/faq.md)
 
-## For Developers <a id="developers"></a>
+## For Developers <a href="developers" id="developers"></a>
 
 * [Unlock Platform](developers/unlock-platform.md)
 * [Smart Contracts](developers/smart-contracts/README.md)
@@ -48,6 +48,7 @@
   * [Authorization Strategy](developers/locksmith/authorization-strategy.md)
   * [Token Metadata API](developers/locksmith/token-metadata-api.md)
 * [Tutorials](developers/tutorials/README.md)
+  * [Backend locking with Express.js](developers/tutorials/backend-locking-with-express.js.md)
   * [Locking media content](developers/tutorials/locking-media-content.md)
 * [FAQ](developers/faq.md)
 
@@ -69,10 +70,9 @@
 * [Discord](https://discord.com/invite/Ah6ZEJyTDp)
 * [Twitter](https://twitter.com/UnlockProtocol)
 * [LinkedIn](http://linkedin.com/company/unlock-protocol)
-* [Reddit](https://www.reddit.com/r/unlock_protocol/)
+* [Reddit](https://www.reddit.com/r/unlock\_protocol/)
 
 ## More
 
 * [Unlock Mentions](more/unlock-mentions.md)
 * [Unlock Brand Guidelines](more/unlock-brand-guidelines.md)
-
