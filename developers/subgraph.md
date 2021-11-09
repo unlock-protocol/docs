@@ -11,11 +11,13 @@ Unlock leverages the [Graph Protocol](https://thegraph.com/) to simplify the pro
 
 The Graph Protocol provides an accessible GraphQL service providing useful aggregate Unlock data from the Ethereum blockchain. The links below provide a rudimentary tool to build an test your queries.
 
-{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/unlock" caption="" %}
+{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/unlock" caption="mainnet subgraph" %}
 
-{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-rinkeby" caption="" %}
+{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-rinkeby" caption="rinkeby subgraph" %}
 
-{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/xdai" caption="" %}
+{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/xdai" caption="xdai subgraph" %}
 
-{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/polygon" caption="" %}
+{% embed url="https://thegraph.com/explorer/subgraph/unlock-protocol/polygon" caption="Polygon subgraph" %}
+
+{% embed url="https://thegraph.com/hosted-service/subgraph/unlock-protocol/bsc" caption="bsc subgraph" %}
 
