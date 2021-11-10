@@ -74,6 +74,14 @@ As a token holder, I can either delegate my votes to another member of the commu
 
 The easiest way is to go to the [Unlock governance page on Tally](https://www.withtally.com/governance/unlock/) and connect your wallet and then you will be able to delegate your vote.
 
+##  Is it possible to become a delegate and not currently hold any UDT
+
+No, delegation is the act of assiging the votes from address weighted by the number of tokens that this address owns. If you don't UDT, the weight would be 0 :)
+
+## Is there any minimum UDT holding threshold for delegate consideration
+
+No, even owning 0.000001 UDT is enough to delegate. 
+
 ## What can the DAO ask Unlock Inc. to do?
 
 Nothing :) Because Unlock Inc does not "exist" on-chain. Similarly, Unlock Inc. cannot ask other members of the community to do "things" through the DAO.
