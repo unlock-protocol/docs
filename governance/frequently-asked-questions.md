@@ -4,105 +4,93 @@ description: Frequently Asked Questions
 
 # FAQ
 
-## Why is Unlock better for publishers, and for users?
+## What is ɄDT?
 
-With Unlock, users and publishers don't go through a middleman. This means lower friction for the user, and both better conversions and prices for the publisher. It also means that anyone can run Unlock's code - you don't have to use our services.
+ɄDT (Unlock Discount Token) is the native governance token of the Unlock Protocol. It is an ERC20 deployed on the Ethereum main net, but also available on side chains and selected layer 2.
 
-## Who is Unlock for?
+## What is ɄDT used for?
 
-Our first version of Unlock is for technical publishers who also control their technology platform, and whose audience is technical early adopters who use a cryptocurrency wallet.
+ɄDT can be delegated to vote on proposals that govern the Unlock Protocol.
 
-## How does Unlock make money?
+## How do I get ɄDT?
+
+You can earn UDT today by using the protocol, or through [grants from the Unlock Treasury](https://docs.unlock-protocol.com/governance/grants-bounties-and-matchings).
+
+## What are the tokenomics of ɄDT?
+
+When Unlock Inc. created the [UDT tokens](https://docs.unlock-protocol.com/governance/the-unlock-token), a total of 1,000,000 tokens were premined. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 them to foster adoption of the protocol (the company will keep at least 200,000).
+
+As of November 1st 2021, the company has distributed about 120,000 tokens. By May 1st 2022, we want to have distributed another 200,000 tokens, totaling at least 300,000 tokens.
+
+For this, we are considering 3 mechanisms: grants, bounties, and matchings.
+
+Additionally, the protocol itself distributes new tokens using a logarithmic curve, based on the usage of the protocol. 
+
+## What is Unlock Inc?
+
+Unlock Inc is the company that wrote the first versions of the Unlock Protocol, with the intention of progressively decentralizing to give control of the protocol to the Unlock community. 
+
+## Who is on the Unlock Inc team?
+
+Unlock Inc is founded by CEO Julien Genestoux and includes Austin Robey (Head of Growth), Clément Renaud (Senior Software Engineer), Amber Case (Strategist), Crystal Street (Community Manager), and a few more contractors! We're _always_ hiring, so get in touch if you want to join us!
+
+## What is the Unlock DAO?
+
+The Unlock DAO is the decentralized organization of ɄDT token holders that govern and control the Unlock Protocol. Unlock Inc is _one_ of the stakeholders on the DAO, and we expect other organizations to emerge and eventually lead some efforts independenly of Unlock Inc.
+
+Governance happens through _proposals_.
+
+## What is a proposal?
+
+A proposal is a blockchain-executable transaction: **it is code**. This means that proposals can only trigger "on-chain" actions. For example, a proposal could be "The DAO pays X tokens to address.eth", or "Change parameter P of smart contract to be K", but it cannot be "The Unlock Inc. team needs to travel to conference Y", or "John Doe needs to purchase UDT tokens on the Coinbase exchange".
+
+## What is the lifecycle of a proposal
+
+Proposals start as discussions and conversations. We suggest using [Discourse](https://unlock.community/) but they can happen anywhere as long as they are _visible_ by all token holders. These conversations can be initiated by any community member. In the begining, proposals are discussed between community members with the intention of making voting easier and straightforward by increasing awareness.
+
+Once a relative consensus has been reached in the community, a community member will submit the proposal for votes, in the form of executable code.
+
+At that stage, every delegate can vote in favor or against the proposal for 8 days.
+
+If the proposal gets approved by a majority and if a quorum of at least 15,000 votes has been reached, then the proposal will get executed after a time lock of 3 hours.
+
+## Where do governance discussions take place?
+
+Governance discussions can take place on our [Discourse](https://unlock.community/) in the “Governance” section. Any community member can discuss the protocol and governance anywhere they want but we suggest having these discussions in the open to gather feedback and buy in. 
+
+## How do I vote on governance proposals?
+
+Voting for the Unlock DAO happens "on chain" thru the governor contract. To send their transactions, delegates can use any front-end application that supports the OpenZeppelin Governor contracts, like [Tally](https://www.withtally.com/governance/unlock/). Voting on a proposal is only available to delegates with the balance of tokens they had at the time of the proposals' submission.
+
+## How can I help the Unlock DAO?
+
+As a community member, I can help grow the adoption of the protocol, either by deploying a membership contract (a lock) and selling memberships or by purchasing other creators' memberships (keys). I can also reach out to my favorite creators and community and suggest that they use the protocol.
+
+If I am a developer I can write code and plugins for platforms and applications to integrate Unlock... etc.
+
+As a token holder, I can either delegate my votes to another member of the community or make sure I vote on proposals myself.
+
+## How do I delegate my tokens?
+
+The easiest way is to go to the [Unlock governance page on Tally](https://www.withtally.com/governance/unlock/) and connect your wallet and then you will be able to delegate your vote.
+
+## What can the DAO ask Unlock Inc. to do?
+
+Nothing :) Because Unlock Inc does not "exist" on-chain. Similarly, Unlock Inc. cannot ask other members of the community to do "things" through the DAO.
+
+## Why is Unlock Inc not doing marketing for the token?
+
+Unlock Inc. is not legally allowed to promote the token. Additionally, since this is a governance token, we do not recommend advertising it as an investment device.
+
+## Does the Unlock team promote its governance token?
+
+No, the Unlock Inc team is not allowed to promote its governance token or discuss its price. 
+
+## What is the path towards decentralization?
+
+As the usage and community of Unlock Protocol grow, UDT holders will gradually control more of the network. Eventually, they will fully govern the protocol and its treasury.
+
+## How does Unlock Inc. make money?
 
 As part of our roadmap, we plan on allowing users who do not know of cryptocurrencies or have a crypto wallet to pay us \(Unlock Inc\) with their credit card in order to perform the transaction on chain for them. In that context we will charge a convenience fee on top of the \(crypto\) price of the keys. This convenience fee will cover the gas price, the credit card transaction and a small margin for us.
-
-## What crypto wallet are supported?
-
-Unlock is powered by Ethereum, which means that you can use your own wallet to purchase memberships \(we call them keys\).
-
-We recommend the use of in-browser wallets such as [MetaMask](https://MetaMask.io/) \(for both Firefox and Chrome\), or browsers which include wallets directly, such as [Opera](https://www.opera.com/) or [Brave](https://brave.com/).
-
-We added support for [WalletConnect](https://walletconnect.org/), which means any wallet which supports it can be used with Unlock.
-
-If you do not have your own cryptocurrency wallet, you can create an account with Unlock and purchase memberships with your traditional payment \(credit or debit\) cards on _selected_ _locks_.
-
-## Can users bypass the paywall?
-
-Our goal is to optimize for convenience and remove as much friction as possible. We want to make it easy for most people to pay to access the content they care about. This means that yes, some users will find ways to abuse Unlock's paywall by tinkering through the JavaScript console in their web browsers.
-
-We are working to provide lower level integrations which will make it harder to bypass limitations set by creators, but as always these will come at the expense of some usability for creators and consumers.
-
-We strongly believe that, at this point, the biggest revenue loss for creators online is not because of fraud, but because of inconvenience.
-
-## What is Optimistic Unlocking?
-
-When you purchase a lock and you see a Confirming Purchase notification we're using Optimistic Unlocking to confirm your purchase.
-
-Usually a transaction needs to be confirmed on the Ethereum Blockchain before it is validated – this can take a few minutes, depending on how busy the network is. Optimistic Unlocking provides you access while the transactions is confirming rather than after. We do this to create a faster purchase and more seamless user experience. Read more about it in our release [blog post](https://medium.com/unlock-protocol/optimistic-unlocking-a539d08bf756).
-
-## Are the smart contract audited?
-
-No. We will hire an independent team to perform an audit of our smart contracts, but we have decided that it is too early for this. We decided to take a very incremental approach to implementing the full protocol and we believe that there will be a lot of changes which would make an audit irrelevant at this point.
-
-We strongly advise lock owners to frequently withdraw funds on their locks. Funds are safer when "owned" by an address than by a contract, even if audited. We will also make what it takes in case of fraud to help recover lost revenue until the contracts have been under audit.
-
-## Can Unlock be used for more than text?
-
-Yes! Even though our earliest iterations are around paywalls for text, we are designing and building the protocol so that it can be applied to any kind of media \(audio, video\) or even software. This will require more integration points \(not all content is just HTML in a web page\), and we're happy to take suggestions and contributions!
-
-## Do I need cryptocurrencies to access the content of my favorite sites with a Lock?
-
-Right now: yes.
-
-Eventually: no. Our roadmap is to start with the most "crypto-friendly" crowds because they know and understand some of the constraints that arise from using cryptocurrencies ... but it is our goal to make it trivial for anyone to use Unlock, whether they want, care or even know about cryptocurrencies.
-
-## Do I need a crypto-wallet to access the content of my favorite sites with a Lock?
-
-Right now: yes.
-
-Eventually: no. We plan on making it easy for people who do not have a crypto wallet to use an Unlock application which can help them manage their keys.
-
-## Does Unlock work on mobile devices?
-
-Yes - if you are using an Ethereum-enabled web browser such as Opera or Coinbase's Wallet.
-
-## What networks are supported?
-
-Unlock aims at supporting any EVM compatible blockchain and layer 2. Here is a list of networks and the addresses of the contracts on each of them. Please [open a governance proposal](https://snapshot.org/) if you want us to be deployed on more networks!
-
-Production networks:
-
-1. Ethereum mainnet: [`0x3d5409cce1d45233de1d4ebdee74b8e004abdd13`](https://etherscan.io/address/0x3d5409cce1d45233de1d4ebdee74b8e004abdd13)
-2. Xdai: [`0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863`](https://blockscout.com/xdai/mainnet/address/0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863) \(configure [MetaMask for xDAI](https://www.xdaichain.com/for-users/wallets/metamask)\)
-3. Polygon \(ex-Matic\): [`0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863`](https://polygonscan.com/address/0x14bb3586Ce2946E71B95Fe00Fc73dd30ed830863) 
-
-Test networks:
-
-* Rinkeby: [`0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b`](https://rinkeby.etherscan.io/address/0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b)
-* Kovan: [`0x0B9fe963b789151E53b8bd601590Ea32F9f2453D`](https://kovan.etherscan.io/address/0x0B9fe963b789151E53b8bd601590Ea32F9f2453D)
-
-## As a creator, can I set a recurring membership?
-
-Yes! The "lock" itself does not include the logic for recurring memberships, but we provide another contract, called the [KeyPurchaser](https://docs.unlock-protocol.com/developers/smart-contracts/key-purchaser), whose logic enables recurring membership. At a high level, this only works for ERC20 locks, and leverages the _allowance_ mechanism of the ERC20 specification. Instead of purchasing a key themselves, members have approve the `keyPurchaser` contract to spend some of the ERC20 tokens. They will approve a multiple of the key price, which will let the creator \(or a third party, like Unlock Inc\) call the `keyPurchaser` contract to purchase keys for them. The `keyPurchaser` contract guarantees that not all ERC20 tokens are withdrawn at once, by only performing successful key purchases when a an existing key is soon to be expired.
-
-## How much gas does it cost to purchase a key to a lock?
-
-When purchasing a key to a lock, the member has to also pay for gas to the Ethereum network in order to get the transaction mined. Here are rough indication of the gas amount to be paid to purchase a key a a lock when the purchases did not have a key previously \(this can vary base on some lock specific parameters, such as the lock version\):
-
-* ETH lock: 160,000 gas,
-* ERC20 lock: 175,000 gas, to which we should add 45,000 for the ERC20 approval
-
-  When performing renewals, the user should expect to spend 70,000 gas.
-
-Note for ERC20 locks, if your application uses the key purchaser pattern, then, the user only has to pay for the ERC20 approval, while the entity sending the transaction has to pay for the key purchase gas.
-
-We are well aware that the Ethereum mainnet may soon become impractical as gas fees are skyrocketing. Please use Unlock on other EVM chains, such as xdai \(just point your wallet to the xDAI chain\)
-
-## What are the Credit Card Fees?
-
-When you pay with credit card we charge fees to cover stripe credit card processing, the blockchain transaction fees and an Unlock Inc. fee.
-
-## Can I use a custom token instead of ETH or xDAI for my lock?
-
-Yes! You can use any ERC20 token. Check out the instructions [here](https://docs.unlock-protocol.com/creators/deploying-lock#creating-a-lock-for-a-custom-erc20-token).
 
