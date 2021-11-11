@@ -72,7 +72,7 @@ import { UnlockV0 } from '@unlock-protocol/contracts'
 **With Solidity**
 
 ```solidity
-import "@unlock-protocol/contracts/Unlock/UnlockV0.sol";
+import "@unlock-protocol/contracts/dist/Unlock/UnlockV0.sol";
 ```
 
 
