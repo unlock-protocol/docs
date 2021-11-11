@@ -48,17 +48,33 @@ Good question. **Deployed locks are immutable**. That is, while they can be re-c
 
 ### Npm Modules
 
-Every time we release a new version of the contracts, we publish a new npm module. Among other things, this module includes the compiled artifacts for both Unlock.sol and PublicLock.sol, as well as the interfaces for our contracts, a change log and the commit hash for this version. This allows us \(or anyone\) to support multiple versions when building on Unlock!
+Each version of the contracts is available via the `@unlock-protocol/contracts` module. Among other things, this module includes the compiled artifacts for both Unlock.sol and PublicLock.sol, as well as the interfaces for our contracts, a change log and the commit hash for this version. This allows us \(or anyone\) to support multiple versions when building on Unlock!
 
-* [unlock-abi-1](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-1)
-* [unlock-abi-2](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-2)
-* [unlock-abi-3](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-3)
-* [unlock-abi-4](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-4)
-* [unlock-abi-5](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-5)
-* [unlock-abi-6](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-6)
-* [unlock-abi-7](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-7)
-* [unlock-abi-8](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-8)
-* [unlock-abi-9](https://www.npmjs.com/package/@unlock-protocol/unlock-abi-9)
+
+#### How to use
+
+```shell
+yarn add @unlock-protocol/contracts
+```
+
+**With javascript**
+
+```js
+// get latest
+import unlock from '@unlock-protocol/contracts/abis/Unlock'
+
+// get previous versions
+import unlock from '@unlock-protocol/contracts/abis/UnlockV0'
+import { UnlockV0 } from '@unlock-protocol/contracts'
+```
+
+
+**With Solidity**
+
+```solidity
+import "@unlock-protocol/contracts/Unlock/UnlockV0.sol";
+```
+
 
 ## Standards
 
