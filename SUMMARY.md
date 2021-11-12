@@ -49,7 +49,7 @@
   * [Token Metadata API](developers/locksmith/token-metadata-api.md)
 * [Tutorials](developers/tutorials/README.md)
   * [Using Unlock in other contracts](developers/tutorials/using-unlock-in-other-contracts.md)
-  * [Ethers](developers/tutorials/ethers.md)
+  * [Using Unlock with Ethers](developers/tutorials/ethers.md)
   * [Backend locking with Express.js](developers/tutorials/backend-locking-with-express.js.md)
   * [Locking media content](developers/tutorials/locking-media-content.md)
 * [FAQ](developers/faq.md)
