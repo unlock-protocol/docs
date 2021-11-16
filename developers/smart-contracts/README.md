@@ -1,16 +1,14 @@
 # Smart Contracts
 
-The Unlock Protocol, at it's core, is enabled by 2 primary ethereum smart contracts, deployed on all networks supported by Unlock.
-
+The Unlock Protocol, at it's core, is enabled by 2 primary Ethereum smart contracts, deployed on all networks supported by Unlock: the Unlock and the PublicLock contracts. We have a few more contracts, such as the governance token contract and the actual governance contract but they are not actually required by the core protocol.
 ## **Unlock**
 
 This is our "factory" contract **\(Unlock.sol\)** and has several roles.
 
 * **Deploying Locks**: locks are deployed through the Unlock smart contract. This is important because the Locks will actually invoke the Unlock smart contract when keys are sold and the Unlock smart contract will check that the invoking lock has been deployed through it.
-* **Keeping Track of the Unlock Discount Tokens**. Unlock Discount Tokens are ERC20 tokens \(TODO\) which implement the Unlock network referral program. The Discount Tokens are granted when keys \(NFT\) are purchased.
+* **Keeping Track of the Unlock Discount Tokens**. UDT are ERC20 tokens which implement the Unlock network referral program to let users of the protocol govern it. The Discount Tokens are granted when keys \(NFT\) are purchased.
 
 You should **not need to deploy an Unlock contract yourself**. Here are the addresses of contracts deployed on respective networks and you can call them directly using the block explorer.
-
 ### Production networks:
 
 1. Ethereum mainnet: [`0x3d5409cce1d45233de1d4ebdee74b8e004abdd13`](https://etherscan.io/address/0x3d5409cce1d45233de1d4ebdee74b8e004abdd13)
@@ -25,18 +23,17 @@ You should **not need to deploy an Unlock contract yourself**. Here are the addr
 
 Please, refer to the [Unlock contract documentation](https://github.com/unlock-protocol/docs/tree/87a735dc37ab260759a5d6b2b5a7bc073397aa76/developers/smart-contracts/developers/smart-contracts/unlock-api.md) for more details.
 
+Please, refer to the [Unlock contract documentation](unlock-api.md) for more details.
 ## **Lock Contract**
 
 This is the contract \(**PublicLock.sol**\) which users can configure and deploy to restrict access to resources, such as a blog, a subset of software features, or an event.
 
 * Each lock contract is an [ERC-721](https://eips.ethereum.org/EIPS/eip-721) compliant contract capable of creating and managing NFT's \(non-fungible tokens we call "Keys"\), as well as restricting access based on the user's possession \(or lack of\) one of these keys.
-* We follow [erc-1167](https://eips.ethereum.org/EIPS/eip-1167) to deploy minimal proxies for each lock, rather than a complete PublicLock contract. This helps to keep deployment costs down, as well as minimizing blockchain bloat.
 * Keys for one lock are valid only for the lock which created them.
-* A given user may own only 1 key at a time
+* A given user may own only 1 key (NFT) at a time.
 
 There as well you can call the Lock contracts directly using the block explorers.
 
-Please, refer to the [Unlock contract documentation](unlock-api.md) for more details.
 
 ## Upgradeability
 
@@ -44,7 +41,9 @@ We're making use of upgradeable contracts via [openzeppelin](https://docs.openze
 
 #### What about Locks?
 
-Good question. **Deployed locks are immutable**. That is, while they can be re-configured, disabled or destroyed _by their owner_, they will otherwise remain unchanged on the ethereum network for as long as it persists. Nobody else can modify a lock you deployed but you, unless you choose to allow this. After an upgrade of Unlock, all new locks deployed moving forward will be of the new version, and may support new features and/or improved usability.
+Good question. Until version 10, **Deployed locks are immutable**. That is, while they can be re-configured, disabled or destroyed _by their owner_, they will otherwise remain unchanged on the ethereum network for as long as it persists. Nobody else can modify a lock you deployed but you, unless you choose to allow this. After an upgrade of Unlock, all new locks deployed moving forward will be of the new version, and may support new features and/or improved usability.
+
+Starting with version 10, we are introducing upgradable locks. These locks are still deployed and owned by their creator, but they can later be upgraded to support new features introduced by the protocol, by their lock mnanagers only. The upgrades are optional and can only be triggered by the lock managers themselves.
 
 ### Npm Modules
 
