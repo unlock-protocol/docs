@@ -6,46 +6,28 @@ description: >-
 
 # Token Metadata API
 
-{% api-method method="get" host="https://locksmith-host" path="/api/key/:lockAddress/:keyId" %}
-{% api-method-summary %}
-Get Key Metadata \(NFT Metadata\)
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://locksmith-host" path="/api/key/:lockAddress/:keyId" method="get" summary="Get Key Metadata (NFT Metadata)" %}
+{% swagger-description %}
 This endpoint returns metadata associated with an associated key.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="lockAddress" type="string" required=true %}
+{% swagger-parameter name="lockAddress" type="string" required="true" in="path" %}
 Lock contract address
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="keyId" type="string" required=true %}
+{% swagger-parameter name="keyId" type="string" required="true" in="path" %}
 ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=false %}
+{% swagger-parameter name="Authentication" type="string" required="false" in="header" %}
 Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="data" type="string" %}
+{% swagger-parameter name="data" type="string" in="query" %}
 Data associated with the provided signature
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns metadata associated with requested key \(NFT\)
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "name": "Blue Checkmark",
@@ -60,57 +42,32 @@ Returns metadata associated with requested key \(NFT\)
   ]
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Key does not exist
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://locksmith-host" path="/api/key/:address/keyHolderMetadata" %}
-{% api-method-summary %}
-Get Key Holder Metadata for a Key Holders
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://locksmith-host" path="/api/key/:address/keyHolderMetadata" method="get" summary="Get Key Holder Metadata for a Key Holders" %}
+{% swagger-description %}
 Provides lock owners with key holder provided metadata in bulk
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="address" type="string" required=true %}
+{% swagger-parameter name="address" type="string" required="true" in="path" %}
 Lock contract address
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="data" type="string" required=true %}
+{% swagger-parameter name="data" type="string" required="true" in="query" %}
 Data associated with the provided signature
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 [{
     tokenAddress: lockAddress,
@@ -125,208 +82,112 @@ Data associated with the provided signature
       },
 }]
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-If an authorization header is not provided, if the signee of the provided payload does not match the lock owner, the signature has expired or if a payload is not provided the request will be deemed unauthorized
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="put" host="https://locksmith-host" path="/api/key/:address" %}
-{% api-method-summary %}
-Update Lock's default Metadata
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://locksmith-host" path="/api/key/:address" method="put" summary="Update Lock's default Metadata" %}
+{% swagger-description %}
 Allows Lock owners with the ability to update default metadata to be shared with all keys of a given Lock.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="address" type="string" required=true %}
+{% swagger-parameter name="address" type="string" required="true" in="path" %}
 Lock's contract address
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="" type="object" required=true %}
+{% swagger-parameter name="" type="object" required="true" in="body" %}
 Structured data with update details
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=202 %}
-{% api-method-response-example-description %}
-The metadata has been update
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="202" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-An unknown issue occurs when attempting to persist the update
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-The request does not contain a valid signature or is missing a payload
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="put" host="https://locksmith-host" path="/api/key/:address/:keyId" %}
-{% api-method-summary %}
-Update a Key's Metadata
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://locksmith-host" path="/api/key/:address/:keyId" method="put" summary="Update a Key's Metadata" %}
+{% swagger-description %}
 Provides lock owners with the ability to update metadata associated with specific keys.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="address" type="string" required=true %}
+{% swagger-parameter name="address" type="string" required="true" in="path" %}
 Lock's contract address
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="keyId" type="string" required=true %}
+{% swagger-parameter name="keyId" type="string" required="true" in="path" %}
 Id of key to be updated
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="" type="object" required=true %}
+{% swagger-parameter name="" type="object" required="true" in="body" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=202 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="202" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="put" host="https://locksmith-host" path="/api/key/:address/user/:userAddress" %}
-{% api-method-summary %}
-Update a User's Metadata Associated with keys of a give Lock
-{% endapi-method-summary %}
+{% swagger baseUrl="https://locksmith-host" path="/api/key/:address/user/:userAddress" method="put" summary="Update a User's Metadata Associated with keys of a give Lock" %}
+{% swagger-description %}
+Key holders are allowed to update metadata associated with keys of a given lock in support of downstream use cases. Lock owners will have access to protected information provided by key holders.
+{% endswagger-description %}
 
-{% api-method-description %}
-Key holders are allowed  to update metadata associated with keys of a given lock in support of downstream use cases. Lock owners will have access to protected information provided by key holders.
-{% endapi-method-description %}
+{% swagger-parameter name="address" type="string" required="true" in="path" %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="address" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
+{% swagger-parameter name="userAddress" type="string" required="true" in="path" %}
 
-{% api-method-parameter name="userAddress" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter name="" type="object" required="true" in="body" %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="" type="object" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

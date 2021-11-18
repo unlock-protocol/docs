@@ -7,7 +7,7 @@ description: >-
 
 # Locking media content
 
-Unlock makes it easy for creators to monetize their work by only allowing their members to access some of their work. In this tutorial, we will see how to create a simple HTML and JavaScript page to lock media content \(audio or video\) so that only the creators' members can play it. Non-members will be able to see a small preview before being prompted to unlock the rest of the video.
+Unlock makes it easy for creators to monetize their work by only allowing their members to access some of their work. In this tutorial, we will see how to create a simple HTML and JavaScript page to lock media content (audio or video) so that only the creators' members can play it. Non-members will be able to see a small preview before being prompted to unlock the rest of the video.
 
 _Note_: in this tutorial we take a front-end locking approach, which is _not secure_. Someone could tinker with the JavaScript console of their web browser and inspect the code to find a workaround. It is absolutely possible to build something secure, but that requires a back-end integration, considered more advanced. Additionaly, we believe only advanceds web users on a desktop computer would be able to circumvent the lock. **Convenience trumps security**.
 
@@ -17,7 +17,7 @@ The first step is to create a lock. For this, refer [to that other article](../.
 
 ## Create the web document
 
-In this example, we want to lock up access to [this video](https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4).
+In this example, we want to lock up access to [this video](https://ia801602.us.archive.org/11/items/Rick\_Astley\_Never\_Gonna\_Give\_You\_Up/Rick\_Astley\_Never\_Gonna\_Give\_You\_Up.mp4).
 
 HTML5 actually makes it very easy to embed any video in a document. Here's what it takes:
 
@@ -54,7 +54,6 @@ For any web page which includes a lock, we use the same approach. First, we load
     pessimistic: true
   }
 </script>
-
 ```
 
 ## Locking the video
@@ -91,10 +90,6 @@ JavaScript provides us with an API to control the video. We can use that to lock
 })();
 </script>
 
-
 ```
 
-After this, you are all done! 
-
-
-
+After this, you are all done!
