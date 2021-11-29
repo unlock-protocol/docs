@@ -16,15 +16,15 @@ Using Unlock, you can build applications that have the ability to handle all asp
 
 Unlock has powerful capabilities that developers can build into native applications.
 
-**Time-based NFTs **
+**Time-based NFTs**&#x20;
 
 NFTs that have the ability to expire - useful for business models with recurring or subscription models.
 
-**Native-branded experiences **
+**Native-branded experiences**&#x20;
 
 Build Unlock directly into your website or application.
 
-**Contract ownership **
+**Contract ownership**&#x20;
 
 Smart contracts (locks) owned by the creator.
 
@@ -32,15 +32,15 @@ Smart contracts (locks) owned by the creator.
 
 Use Unlock with your brand’s style and aesthetic.
 
-**Platform-less passports **
+**Platform-less passports**&#x20;
 
 Create a unique membership that can be recognized across the web! With membership represented as an NFT, memberships can span communities and create unique partnership opportunities.
 
-**Recurring memberships **
+**Recurring memberships**&#x20;
 
 The ability to create recurring subscriptions as patronage or membership.
 
-**Credit card integration **
+**Credit card integration**&#x20;
 
 Accept credit card payments for NFT memberships. Even though we believe that most people should eventually own a wallet themselves, there is a strong need in today's market for a convenience layer that lets consumers interact with locks without having to know (or care) about their private keys, gas fees, or Ethereum as a currency. Our convenience is similar to an Ethereum wallet for the Unlock ecosystem. It lets users purchase keys using their credit or debit cards, only for applicable locks.
 

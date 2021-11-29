@@ -16,7 +16,7 @@ In this tutorial, we will write a function that uses Unlock's subgraphs to retri
 
 The first step is to build the request itself. For this, The Graph offers a convenient _Playground_ tool. Let's look at an example with our xDAI subgraph (all networks share the same schema).
 
-![](<../../.gitbook/assets/image (26).png>)
+![](<../../.gitbook/assets/image (26) (1).png>)
 
 In the left column, you can see a query builder that you can use to customize your queries. The right column provides a convenient way to inspect the schema and auto-complete your queries.
 
