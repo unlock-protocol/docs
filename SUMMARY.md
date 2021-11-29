@@ -16,6 +16,7 @@
   * [Discord with Collab.Land](creators/plugins-and-integrations/discord-with-collab.land.md)
   * [Drupal Plugin](creators/plugins-and-integrations/drupal-plugin.md)
   * [Mintgate](creators/plugins-and-integrations/mintgate.md)
+  * [Decentraland](creators/plugins-and-integrations/decentraland.md)
 * [Tutorials](creators/tutorials-1/README.md)
   * [Organizing a vote by members](creators/tutorials-1/organizing-a-vote-by-members.md)
   * [How to resell a membership](creators/tutorials-1/how-to-resell-a-lock.md)
@@ -27,7 +28,7 @@
 
 ## For Developers <a href="developers" id="developers"></a>
 
-* [Unlock Platform](developers/unlock-platform.md)
+* [Overview](developers/unlock-platform.md)
 * [Smart Contracts](developers/smart-contracts/README.md)
   * [Unlock Contract](developers/smart-contracts/unlock-api.md)
   * [Lock Contract](developers/smart-contracts/lock-api/README.md)
