@@ -29,8 +29,8 @@ To customize each memberships' icon, you must use an external URL. Indeed, the i
 For example: 
 
 * The lock at the address `0x979B341B7C8863A236702E577dc8286Ca66423c0` on [Rinkeby](https://rinkeby.etherscan.io/address/0x979B341B7C8863A236702E577dc8286Ca66423c0) has [this URL](https://locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon) :`https://locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`
-* The NFT with id `1` \(first membership\) has [this metadata URI](https://rinkeby.locksmith.unlock-protocol.com/api/key/0x979b341b7c8863a236702e577dc8286ca66423c0/1) :`https://rinkeby.locksmith.unlock-protocol.com/api/key/0x979b341b7c8863a236702e577dc8286ca66423c0/1`
-* And when inspecting its metadata, the image address is:`http://rinkeby.locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`**`?id=1`**
+* The NFT with id `1` \(first membership\) has [this metadata URI](https://rinkeby.locksmith.unlock-protocol.com/api/key/0x979b341b7c8863a236702e577dc8286ca66423c0/1) :`https://locksmith.unlock-protocol.com/api/key/4/0x979b341b7c8863a236702e577dc8286ca66423c0/1`
+* And when inspecting its metadata, the image address is:`http://locksmith.unlock-protocol.com/lock/4/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`**`?id=1`**
 
 ## Advanced metadata customization
 
@@ -42,7 +42,7 @@ By default, we provide the following metadata:
 {
   name: "Unlock Key",
   description: "A Key to an Unlock lock. Unlock is a protocol for memberships. https://unlock-protocol.com/",
-  image: "http://rinkeby.locksmith.unlock-protocol.com/lock/0xc540ced80Bea41E46280476FF8B99E4193cff754/icon?id=1",
+  image: "http://locksmith.unlock-protocol.com/lock/0xc540ced80Bea41E46280476FF8B99E4193cff754/icon?id=1",
   attributes: [
     {
       trait_type: "Expiration",

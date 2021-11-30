@@ -1,17 +1,22 @@
 ---
 description: >-
-  In this tutorial, we will see how to use the a subgraph in order to retrieve large amounts of data from the protocol.
+  In this tutorial, we will see how to use the a subgraph in order to retrieve
+  large amounts of data from the protocol.
 ---
+
+# Using Subgraphs
 
 RPC endpoints are only able to return a single piece of information at a time, such as the name of a single lock, or the expiration date of a single key... etc.
 
-Retrieving multiple attributes of an object or list of objects is generally costly and not recommended. For that, subgraphs are a better solution. The way to think about Subgraphs is as "views" of the data stored on chains that is organized and index using different dimensions. They use the popular [GraphQL](https://graphql.org/) API query language to make it trivial to quickly retrieve large amounts of data.
+Retrieving multiple attributes of an object or a list of objects is generally costly and not recommended. For that, subgraphs are a better solution. The way to think about Subgraphs is as "views" of the data stored on chains that is organized and indexed using different dimensions. They use the popular [GraphQL](https://graphql.org) API query language to make it trivial to quickly retrieve large amounts of data.
 
 In this tutorial, we will write a function that uses Unlock's subgraphs to retrieve a list of locks managed by a given address. We actually use a similar approach to load a user's lock on [our dashboard](https://app.unlock-protocol.com/dashboard).
 
-# Building the request
+## Building the request
 
-The first step is to build the request itself. For this, The Graph offers a convenient _Playgound_ tool. Let's look at an example with our xDAI subgraph (all networks share the same schema).
+The first step is to build the request itself. For this, The Graph offers a convenient _Playground_ tool. Let's look at an example with our xDAI subgraph (all networks share the same schema).
+
+![](<../../.gitbook/assets/image (26) (1).png>)
 
 In the left column, you can see a query builder that you can use to customize your queries. The right column provides a convenient way to inspect the schema and auto-complete your queries.
 
@@ -35,12 +40,11 @@ In order to get the locks managed by a given address, we build the following req
 
 We first get the `lockManager` whose address matches the one we're looking for, and then, retrieve the locks, sorted by the creation block in a descending order (first in the list is the most recent). For each lock, we get their address, name, price, token (if it is an ERC20 lock), duration, as well as total supply and maximum number of memberships.
 
-# Sending the request
+## Sending the request
 
 There are exists multiple GraphQL libraries in many languages. Here we will focus on the most basic approach: using JavaScript's fetch function that is available in any web browser environment, but also in node.js using [`node-fetch`](https://www.npmjs.com/package/node-fetch).
 
 ```javascript
-
 // We build the query, with a variable $owner
 const query = `query Locks($owner: String!) {
   lockManagers(where: { address: $owner }) {
@@ -107,6 +111,6 @@ The `result` variable will be populated with the result of the query. It will be
 }
 ```
 
-# Next steps
+## Next steps
 
-GraphQL lets developer build complex queries to retrieve data from the blockchain that can be used to populate fields in your web3 application!
+GraphQL lets developers build complex queries to retrieve data from the blockchain that can be used to populate fields in your web3 application!
