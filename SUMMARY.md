@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Our Code of Conduct](our-code-of-conduct.md)
 
-## For Creators <a href="creators" id="creators"></a>
+## For Creators <a href="#creators" id="creators"></a>
 
 * [Creating a Lock](creators/deploying-lock/README.md)
   * [Using a custom currency](creators/deploying-lock/using-a-custom-currency.md)
@@ -23,10 +23,12 @@
   * [Building an Ad Free Experience](creators/tutorials-1/ad-free-experience.md)
   * [Using Unlock for Newsletters](creators/tutorials-1/using-unlock-newsletter.md)
   * [Receiving donations on Github](creators/tutorials-1/receiving-donations-on-github.md)
+  * [How to airdrop memberships](creators/tutorials-1/how-to-airdrop-memberships.md)
+  * [How to make keys non-transferrable](creators/tutorials-1/how-to-make-keys-non-transferrable.md)
   * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
 * [FAQ](creators/faq.md)
 
-## For Developers <a href="developers" id="developers"></a>
+## For Developers <a href="#developers" id="developers"></a>
 
 * [Overview](developers/unlock-platform.md)
 * [Smart Contracts](developers/smart-contracts/README.md)

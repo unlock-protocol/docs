@@ -12,7 +12,7 @@ There are multiple ways to sell memberships, and some of the integrations built 
 
 Our dashboard offers a "purchase" URL that can easily be shared.
 
-![The Purchase URL is visible on the dashboard](../.gitbook/assets/image%20%2828%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
+![The Purchase URL is visible on the dashboard](<../.gitbook/assets/image (28) (2) (2) (2) (2) (2).png>)
 
 You can set a custom redirect URL to which the URL is redirected when they have unlocked the membership.
 
@@ -27,7 +27,10 @@ Once a lock gets sold, the balance will be initially held within the smart contr
 3. Once you click to withdraw funds, there will be a transaction that charges a gas fee. This will begin the transactions to move funds from the smart contract to ythe beneficiary.
 4. You will see pending transactions on the Creator Dashboard. Once these finish, your funds will be available!
 
-## Re\(selling\) memberships
+## Re(selling) memberships
 
-Unlock memberships \(called keys!\) are Non-Fungible Tokens \(using the ERC721 standard\), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
+Unlock memberships (called keys!) are Non-Fungible Tokens (using the ERC721 standard), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
 
+## Airdropping memberships
+
+The contract for any lock can be interfaced with directly using Etherscan. Using this method, it is easy for creators to grant keys (airdrop NFTs) to someone. [To learn more, check out this tutorial](https://app.gitbook.com/o/-LswCCTMX4iiZqKYxmbV/s/-LqrxNPR\_lYaebzG998t/c/uKDwbBrnIuq3fOTGwHPL/creators/tutorials-1/how-to-airdrop-memberships).
