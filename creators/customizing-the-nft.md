@@ -59,4 +59,4 @@ The expiration is the memberships' expiration date and the owner is the current 
 
 ## Make non-transferrable
 
-A "Key Manager" can make the keys to be non-transferrable by interacting with the contract via a block explorer. [Here's a tutorial on how that works](https://app.gitbook.com/o/-LswCCTMX4iiZqKYxmbV/s/-LqrxNPR\_lYaebzG998t/c/uKDwbBrnIuq3fOTGwHPL/creators/tutorials-1/how-to-make-keys-non-transferrable).
+A "Key Manager" can make the keys to be non-transferrable by interacting with the contract via a block explorer. [Here's a tutorial on how that works](customizing-the-nft.md#make-non-transferrable).
