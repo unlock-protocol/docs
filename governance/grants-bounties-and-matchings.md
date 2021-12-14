@@ -44,7 +44,7 @@ Congratulations🎉! You will receive an email from the grants commitee that det
 * Your grant starts vesting on the day it is approved, for 12 months
 * All members of your "class" are invited to post updates in [a thread on our Community website](https://unlock.community/c/grantees/13).
 * You will be asked to provide detailed quarterly updates to the Unlock team so we can track your progress and provide support
-* When you're ready, we'll help you formally launch your project: you will get access to our blog to publish a post, as well as provide a video demo that we can share on our social networks (Twitter, Reddit, Telegram, Discord, Discourse... etc)
+* When you're ready, emal us at grants@unlock-protocol.com and we'll help you formally launch your project: you will get access to our blog to publish a post, as well as provide a video demo that we can share on our social networks (Twitter, Reddit, Telegram, Discord, Discourse... etc). We may also invite you to present at our monthly contributor meetup!
 * Once your project has shipped, we will deliver the vested tokens to your Ethereum address on Ethereum's main net. We ask that you delegate these tokens as soon as possible in order to join our governance DAO (feel free to ask for help on how to do that!). The rest of the tokens will keep vesting until the 1st anniversary of your project's approval by the committee.
 
 ### Past grants:
