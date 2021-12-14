@@ -11,7 +11,7 @@
 * [Customizing the NFT](creators/customizing-the-nft.md)
 * [Selling Memberships](creators/selling-memberships.md)
 * [Plugins and Integrations](creators/plugins-and-integrations/README.md)
-  * [Wordpress Plugin](creators/plugins-and-integrations/wordpress-plugin.md)
+  * [WordPress Plugin](creators/plugins-and-integrations/wordpress-plugin.md)
   * [Discord with Swordy Bot](creators/plugins-and-integrations/discord.md)
   * [Discord with Collab.Land](creators/plugins-and-integrations/discord-with-collab.land.md)
   * [Drupal Plugin](creators/plugins-and-integrations/drupal-plugin.md)
