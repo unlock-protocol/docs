@@ -182,6 +182,26 @@ What exactly is output will depend on the theme in use, but it will usually incl
 
 ![](../../.gitbook/assets/excerpt.jpeg)
 
+### **Additional formatting via CSS**
+
+You may wish to apply additional formatting via CSS. The Login and Checkout buttons can be targeted by the `.login-button-container` and `.checkout-button-container` classes respectively.&#x20;
+
+For example, to change the alignment and center the buttons, add the following snippet to the `Customizer > Additional CSS`
+
+```css
+.login-button-container { 
+    text-align: center; 
+}
+
+.checkout-button-container {
+    text-align: center;
+}
+```
+
+Here's a screencast to show this process:
+
+[https://drive.google.com/file/d/1sG4IyZXhvMZ-vMhlEbcLvNo3MsM43wS0/view?usp=sharing ](https://drive.google.com/file/d/1sG4IyZXhvMZ-vMhlEbcLvNo3MsM43wS0/view?usp=sharing)
+
 ### **Hooks**
 
 Hooks are [the WordPress way](https://developer.wordpress.org/plugins/hooks/) of providing you with extensibility to build on top of the plugin. The plugin has several hooks built into its codebase that can be used to interact or modify its output at specific points in the runtime. Each of them are specified below.
