@@ -63,7 +63,7 @@
   * [The Path to UDT!](governance/the-unlock-token/the-path-to-udt.md)
   * [Side-chains and layer 2](governance/the-unlock-token/side-chains-and-layer-2.md)
 * [Unlock DAO](governance/unlock-dao.md)
-* [Grants, Bounties and Matchings](governance/grants-bounties-and-matchings.md)
+* [Unlock Grant Program](governance/grants-bounties-and-matchings.md)
 * [Roadmap](governance/roadmap.md)
 * [FAQ](governance/frequently-asked-questions.md)
 

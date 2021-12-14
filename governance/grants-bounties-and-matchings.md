@@ -1,18 +1,22 @@
-# Grants, Bounties and Matchings
+---
+description: >-
+  Unlock Inc. is offering a grants program for anyone building interesting and
+  useful integrations of the protocol.
+---
 
-When Unlock Inc. created the [UDT tokens](https://github.com/unlock-protocol/unlock/wiki/The-Unlock-Tokens), we premined a total of 1,000,000 tokens. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 them to foster adoption of the protocol \(the company will keep at least 200,000\).
+# Unlock Grant Program
 
-By November 1st 2021, we want to have distributed at least 100,000 tokens. By May 1st 2022, we want to have distributed another 200,000 tokens, totalling at least 300,000 tokens.
+When Unlock Inc. created the [UDT tokens](https://github.com/unlock-protocol/unlock/wiki/The-Unlock-Tokens), we pre-mined a total of 1,000,000 tokens. These tokens are kept in Unlock's multisig wallet and our goal is to use up to 800,000 them to foster adoption of the protocol (the company will keep at least 200,000).
 
-For this, we are considering 3 mechanisms: grants, bounties and matchings.
+By November 1st, 2021, we have distributed 100,000 tokens. By May 1st, 2022, we want to have distributed another 200,000 tokens, totalling at least 300,000 tokens.
 
 ## Grants
 
-In order to increase adoption of the protocol, we believe it is critical for the ecosystem to build Unlock integration in various projects and products. In order to incentivize adoption, Unlock Inc. will grant some tokens to interesting projects.
+In order to increase the adoption of the protocol, we believe it is critical for the ecosystem to build Unlock integrations in various projects and products. In order to incentivize adoption, Unlock Inc. will grant some tokens to interesting projects.
 
-These integrations can be in open source libraries or products \(see our [Wordpress](https://docs.unlock-protocol.com/plugins-and-integrations/wordpress-plugin) or [Drupal](https://docs.unlock-protocol.com/plugins-and-integrations/drupal-plugin) integrations\), or even in private installations, provided that they have a large user base and could create a large adoption of the protocol.
+These integrations can be in open source libraries or products (see our [Wordpress](https://docs.unlock-protocol.com/plugins-and-integrations/wordpress-plugin) or [Drupal](https://docs.unlock-protocol.com/plugins-and-integrations/drupal-plugin) integrations), or even in private installations, provided that they have a large user base and could create a large adoption of the protocol.
 
-For these, Unlock Inc. will **publicly** assign grants assigned to the teams in charge of building these integrations. The amount in the grants will generally be agreed to in DAI amount, but payed in tokens \(using the DAI value at the time of shipping/payment\).
+For these, Unlock Inc. will **publicly** assign grants assigned to the teams in charge of building these integrations. The grants are subject to vesting, starting on the day the grant is approved. Once shipped, the vested grant account will be delivered to the Ethereum address provided in the application, while the rest will keep vesting until 1 year from the date of original acceptance of the grant.
 
 ### Grant Application
 
@@ -20,30 +24,55 @@ For these, Unlock Inc. will **publicly** assign grants assigned to the teams in 
 Interested? [Please apply for a grant here](https://share.hsforms.com/1gAdLgNOESNCWJ9bJxCUAMwbvg22).
 {% endhint %}
 
-Additionally, these grants will all be subject to vesting using smart contracts such as [Trustswap's](https://trustswap.org/)
+Everyone is welcome to apply for a grant. [Our application form](https://share.hsforms.com/1gAdLgNOESNCWJ9bJxCUAMwbvg22) will ask you to provide details about your projects so that we can make an informed decision. Grants are evaluated monthly by a team of 5, lead by [Amber Case](https://twitter.com/caseorganic), Unlock Inc's strategic advisor.
 
-Past grants:
+### What are we looking for? <a href="#whatarewelookingfor" id="whatarewelookingfor"></a>
 
-* [SwordyBot](https://swordybot.com/) \(discord bot\)
+Our five criteria are as follows:
 
-On-going grants or RFP:
+* **Impact** - Could this impact a lot of users?
+* **Clarity** - Does the project include user experience, aesthetics, and anything else that makes the solution clear, accessible and easy to use once implemented?
+* **Feasibility** - Is this a reasonable implementation?
+* **Team** - Does the team have the skills to make this happen?
+* **Maturity** - Is this a brand new startup or a launched system with revenue?
 
-* Discourse integration
+### What if you get approved?
+
+Congratulations🎉! You will receive an email from the grants commitee that details the next steps but here is what you should expect:
+
+* You will be invited to a dedicated Discord channel with other grantees where you can ask questions and share your experience
+* Your grant starts vesting on the day it is approved, for 12 months
+* All members of your "class" are invited to post updates in [a thread on our Community website](https://unlock.community/c/grantees/13).
+* You will be asked to provide detailed quarterly updates to the Unlock team so we can track your progress and provide support
+* When you're ready, we'll help you formally launch your project: you will get access to our blog to publish a post, as well as provide a video demo that we can share on our social networks (Twitter, Reddit, Telegram, Discord, Discourse... etc)
+* Once your project has shipped, we will deliver the vested tokens to your Ethereum address on Ethereum's main net. We ask that you delegate these tokens as soon as possible in order to join our governance DAO (feel free to ask for help on how to do that!). The rest of the tokens will keep vesting until the 1st anniversary of your project's approval by the committee.
+
+### Past grants:
+
+* [SwordyBot](https://swordybot.com) (discord bot)
+* ContentRooms
+* Decentraland
+* StreamersUnleashed (Twitch/Youtube/Vimeo thru [StreamLabs](https://streamlabs.com))
+* UnlockShowCase
+* FireUnlock (Firebase integration)
+* Discourse plugin
+
+On-going grants:
+
 * Telegram bot
 * CollabLand integration
 * Shopify app
-* Wordpress plugin improved
-* Twitch/Youtube/Vimeo thru [StreamLabs](https://streamlabs.com/)
 
-We created a [Requests for Grants document](https://www.notion.so/unlockprotocol/Request-for-Grants-9aac49be49124e70a88543bc79748555) where we explore the types of integrations we hope to implement through our grant program. Please review these integration needs and apply for a grant if you are able to tackle any of items on our list. Feel free to reach out to us on Discord if you would like to add an integration to our list as well. Most of the items on the Request for Grants were derived from our community requests.
+We created a [Requests for Grants document](https://www.notion.so/unlockprotocol/Request-for-Grants-9aac49be49124e70a88543bc79748555) where we explore the types of integrations we hope to implement through our grant program. Please review these integration needs and apply for a grant if you are able to tackle any of the items on our list. Feel free to reach out to us on Discord if you would like to add an integration to our list as well. Most of the items on the Request for Grants were derived from our community requests.
 
-## Bounties
+#### Current members of the grants committee
 
-In some cases, people will perform single actions for the protocol which will have an outside impact on its adoption. It can be through submitting code fixes, new features, documentation, reporting bugs or even helping evangelizing the protocol. These people will be rewarded in the form of bounties. There again, we denominate these bounties in DAI amounts and pay them in UDT. There again, we will require vesting.
+* [Amber Case](https://twitter.com/caseorganic) (lead)
+* [Austin Robey](https://twitter.com/austinrobey\_?)
+* [Patrick Mayr](https://medium.com/@patrickmayr)
+* [Denise Xifara](https://www.gmgventures.co/team/denise-xifara/)
+* [Henry Hoffman](https://twitter.com/henryhoffman)
 
-## Matching
+Learn more: email us at [grants@unlock-protocol.com](mailto:grants@unlock-protocol.com)!
 
-As the protocol is gaining adoption, we want to offer disproportionate rewards to early adopters. The protocol itself has a minting curve which is logarithmic, which means early rewards will be larger than late rewards. However, we also want to allocate a non-trivial part of our treasury to "matchings". Our goal is to link rewards to performances. These matchings are limited in volume and time \(first of any limit reached\).
-
-
-
+##
