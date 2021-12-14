@@ -47,15 +47,15 @@ Congratulations🎉! You will receive an email from the grants commitee that det
 * When you're ready, emal us at grants@unlock-protocol.com and we'll help you formally launch your project: you will get access to our blog to publish a post, as well as provide a video demo that we can share on our social networks (Twitter, Reddit, Telegram, Discord, Discourse... etc). We may also invite you to present at our monthly contributor meetup!
 * Once your project has shipped, we will deliver the vested tokens to your Ethereum address on Ethereum's main net. We ask that you delegate these tokens as soon as possible in order to join our governance DAO (feel free to ask for help on how to do that!). The rest of the tokens will keep vesting until the 1st anniversary of your project's approval by the committee.
 
-### Past grants:
+### Past grants
 
 * [SwordyBot](https://swordybot.com) (discord bot)
-* ContentRooms
-* Decentraland
-* StreamersUnleashed (Twitch/Youtube/Vimeo thru [StreamLabs](https://streamlabs.com))
-* UnlockShowCase
-* FireUnlock (Firebase integration)
-* Discourse plugin
+* [ContentRooms](https://contentrooms.com)
+* [Decentraland](https://unlock-protocol.com/blog/decentraland)
+* [StreamersUnleashed](https://streamersunleashed.com) (Twitch/Youtube/Vimeo thru [StreamLabs](https://streamlabs.com))
+* [UnlockShowCase](https://www.unlockshowcase.com)
+* [FireUnlock](https://unlock-protocol.com/blog/firebase-integration) (Firebase integration)
+* [Discourse plugin](https://unlock-protocol.com/blog/discourse-plugin)
 
 On-going grants:
 
