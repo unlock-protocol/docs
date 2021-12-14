@@ -130,10 +130,10 @@ This tab is used to register new Ethereum networks. When the plugin is first act
 * Ropsten
 * Rinkeby
 * Kovan
-* Xdai
+* xDAI
 * Polygon
 * Arbitrum
-* Biance
+* Binance
 
 **Figure: Network settings**
 
@@ -182,155 +182,197 @@ What exactly is output will depend on the theme in use, but it will usually incl
 
 ![](../../.gitbook/assets/excerpt.jpeg)
 
-**Hooks**
+### **Hooks**
 
-Hooks are t[he WordPress way of p](https://developer.wordpress.org/plugins/hooks/)roviding you with extensibility to build on top of the plugin. The plugin has several hooks built into its codebase that can be used to interact or modify its output at specific points in the runtime. Each of them are specified below.
+Hooks are [the WordPress way](https://developer.wordpress.org/plugins/hooks/) of providing you with extensibility to build on top of the plugin. The plugin has several hooks built into its codebase that can be used to interact or modify its output at specific points in the runtime. Each of them are specified below.
 
-**Actions**
+#### **Actions**
 
 Actions allow you to add extra functionality at specific points. The actions should be added in the functions.php file or somewhere callable.
 
-* **do\_action( 'unlock\_protocol\_user\_created', $user\_id, $user );** Fires when a user is created by the plugin.
+****
 
-**Parameters:**
+**do\_action( 'unlock\_protocol\_user\_created', $user\_id, $user );**&#x20;
 
-$user\_id
+Fires when a user is created by the plugin.
 
-(int) ID of the user.
+&#x20; **Parameters:**
 
-$user
+&#x20;   $user\_id
 
-�Object) User data fields. **Source:** inc/classes/class-login.php
+&#x20;     (int) ID of the user.
 
-* **do\_action( 'unlock\_protocol\_network\_deleted', $removed\_network, $new\_updated\_networks );**
+&#x20;   $user
+
+&#x20;     (Object) User data fields.&#x20;
+
+**Source:** inc/classes/class-login.php
+
+****
+
+**do\_action( 'unlock\_protocol\_network\_deleted', $removed\_network, $new\_updated\_networks );**
 
 Fires when a network is deleted.
 
 **Parameters:**
 
-$removed\_network
+&#x20;   ****    $removed\_network
 
-(array) Contains the network ID, name and RPC endpoints. $new\_updated\_networks
+&#x20;     (array) Contains the network ID, name and RPC endpoints.&#x20;
 
-(array) Multidimensional array of existing networks. **Source:**
+&#x20;   $new\_updated\_networks
 
-inc/classes/rest-api/class-settings.php
+&#x20;     (array) Multidimensional array of existing networks.&#x20;
 
-* **do\_action( 'unlock\_protocol\_network\_updated', $new\_updated\_networks );**
+**Source:** inc/classes/rest-api/class-settings.php
+
+****
+
+**do\_action( 'unlock\_protocol\_network\_updated', $new\_updated\_networks );**
 
 Fires when a network is added.
 
 **Parameters:**
 
-$new\_updated\_networks
+&#x20;   ****    $new\_updated\_networks
 
-(array) Multidimensional array of existing networks. **Source:**
+&#x20;     (array) Multidimensional array of existing networks.&#x20;
 
-inc/classes/rest-api/class-settings.php
+**Source:** inc/classes/rest-api/class-settings.php
 
-* **do\_action( 'unlock\_before\_checkout\_button' );**
+****
 
-**Usage:**
+**do\_action( 'unlock\_before\_checkout\_button' );**
 
 Used to add content before the Checkout button.
 
 **Source:** templates/login/checkout-button.php
 
-* **do\_action( 'unlock\_after\_checkout\_button' );** Used to add content after the Checkout button. **Source:**
+****
 
-templates/login/checkout-button.php
+**do\_action( 'unlock\_after\_checkout\_button' );**&#x20;
 
-* **do\_action( 'unlock\_before\_login\_button' );** Used to add content before the Login button. **Source:**
+Used to add content after the Checkout button.&#x20;
 
-templates/login/button.php
+**Source:** templates/login/checkout-button.php
 
-* **do\_action( 'unlock\_after\_login\_button' );**
 
-Used to add content after the Login button. **Source:**
 
-templates/login/button.php
+**do\_action( 'unlock\_before\_login\_button' );**&#x20;
 
-**Filters**
+Used to add content before the Login button.&#x20;
+
+**Source:** templates/login/button.php
+
+****
+
+**do\_action( 'unlock\_after\_login\_button' );**
+
+Used to add content after the Login button.
+
+**Source:** templates/login/button.php
+
+
+
+#### **Filters**
 
 Filters are functions that are used to pass data through. Using filters, you can modify the content returned from WordPress. Filters should be added in the functions.php file or somewhere callable.
 
-* **apply\_filters( 'unlock\_protocol\_user\_validate\_params', $data );**
+****
+
+**apply\_filters( 'unlock\_protocol\_user\_validate\_params', $data );**
+
+Used to change the parameters of user validation.&#x20;
 
 **Parameters:**
 
-$data:
+&#x20;   ****    $data:
 
-(array): array of user params. **Usage:**
+&#x20;     (array): array of user params.&#x20;
 
-Used to change the parameters of user validation. **Source:** inc/classes/blocks/class-unlock-box-block.php
+**Source:** inc/classes/blocks/class-unlock-box-block.php
 
-* **apply\_filters( 'unlock\_protocol\_validate\_auth\_code\_params', $data ); Parameters:**
+****
 
-$data:
-
-(array): array of authentication code parms.
-
-**Usage:**
+**apply\_filters( 'unlock\_protocol\_validate\_auth\_code\_params', $data );**&#x20;
 
 Used to add or change the parameter while authentication of code validation.
 
+**Parameters:**
+
+&#x20;   ****    $data:
+
+&#x20;     (array): array of authentication code parms.
+
 **Source:** inc/classes/class-unlock.php
 
-* **apply\_filters( 'unlock\_protocol\_paywall\_config', $data ); Parameters:**
+****
 
-$data:
+**apply\_filters( 'unlock\_protocol\_paywall\_config', $data );**&#x20;
 
-(array): Paywall configuration.
+Used to modify the network ID or lock address.&#x20;
 
-**Usage:**
+**Parameters:**
 
-Used to modify the network ID or lock address. **Source:**
+&#x20;   $data:
 
-inc/classes/class-unlock.php
+&#x20;     (array): Paywall configuration.
 
-* **apply\_filters( 'unlock\_protocol\_get\_client\_id', $host ); Parameters:**
+**Source:** inc/classes/class-unlock.php
 
-$host:
+****
 
-�String): Domain name.
+**apply\_filters( 'unlock\_protocol\_get\_client\_id', $host );**&#x20;
 
-**Usage:**
+Used to modify the client for login URL or email address.&#x20;
 
-Used to modify the client for login URL or email address. **Source:**
+**Parameters:**
 
-inc/classes/class-unlock.php
+&#x20;   $host:
 
-* **apply\_filters( 'unlock\_protocol\_get\_redirect\_uri', $url ); Parameters:**
+&#x20;     (String): Domain name.
 
-$url:
+**Source:** inc/classes/class-unlock.php
 
-�String): Redirect URL.
 
-**Usage:**
 
-Used to modify the URL rendered after OAuth validation. **Source:**
+**apply\_filters( 'unlock\_protocol\_get\_redirect\_uri', $url );**&#x20;
 
-inc/classes/class-unlock.php
+Used to modify the URL rendered after OAuth validation.&#x20;
 
-* **apply\_filters( 'unlock\_protocol\_get\_login\_url', $url); Parameters:**
+**Parameters:**
 
-$url:
+&#x20;   $url:
 
-�String): Unlock Protocol login OAuth URL.
+&#x20;     (String): Redirect URL.
 
-**Usage:**
+**Source:** inc/classes/class-unlock.php
 
-Used to modify the login URL. **Source:** inc/classes/class-unlock.php
+****
 
-* **apply\_filters( 'unlock\_protocol\_register\_user', $ethereum\_address); Parameters:**
+**apply\_filters( 'unlock\_protocol\_get\_login\_url', $url);**&#x20;
 
-$ethereum\_address:
+Used to modify the login URL.&#x20;
 
-�String): Ethereum address of the user.
+**Parameters:**
 
-**Usage:**
+&#x20;   $url:
 
-Used when a new user needs to be registered. **Source:**
+&#x20;     (String): Unlock Protocol login OAuth URL.
 
-inc/classes/class-login.php
+**Source:** inc/classes/class-unlock.php
+
+
+
+**apply\_filters( 'unlock\_protocol\_register\_user', $ethereum\_address);**&#x20;
+
+Used when a new user needs to be registered.&#x20;
+
+**Parameters:**
+
+&#x20;   ****    $ethereum\_address:
+
+&#x20;     (String): Ethereum address of the user.
+
+**Source:** inc/classes/class-login.php
 
