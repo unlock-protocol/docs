@@ -162,7 +162,7 @@ Select the Ethereum network where you have deployed your lock from this dropdown
 
 * **Lock Address**
 
-Add your lock address into this field. Only Ethereum addresses are accepted, validated via the following regex: <mark style="color:blue;background-color:yellow;">/^0x\[a-fA-F0-9]{40}$/</mark>
+Add your lock address into this field. Only Ethereum addresses are accepted, validated via the following regex: `/^0x[a-fA-F0-9]{40}$/`
 
 **Note**: If an Unlock Protocol block is added to a post or page and left unconfigured, it will throw an error and block the page from being published or updated.
 
