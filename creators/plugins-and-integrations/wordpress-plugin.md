@@ -55,31 +55,32 @@ Once installed and configured, the Unlock Protocol plugin will provide a way to 
 
 This and other plugins can be managed from the Plugins tab in the left navigation menu. Read more about [managing plugins.](https://wordpress.org/support/article/plugins-screen/)
 
-**Special Notes**
+#### **Special Notes**
 
 1. For the plugin to work as expected, make sure that **Settings** > **General** > **Anyone can register** is enabled. On a fresh install of WordPress this option is disabled by default. The Unlock Protocol plugin will display a warning in the Dashboard if this is the case.
+2. If you are upgrading from an earlier version of the plugin (earlier than v3.0.0), briefly deactivate and re-activate the plugin in order for the default networks to show up in the Network Settings and in the **Ethereum Network** setting of the Gutenberg block **** as noted below.
 
 **Figure: Dashboard warning to the website admin if new user registration is blocked.**
 
-1. If you are upgrading from an earlier version of the plugin (earlier than v3.0.0), briefly deactivate and re-activate the plugin in order for the default networks to show up in the Network Settings and in the **Ethereum Network** setting of the Gutenberg block.
+![](../../.gitbook/assets/dashboard-warning.png)
 
-**Plugin Settings**
+### **Plugin Settings**
 
 Once installed and activated, no change will appear on the website from an end user’s perspective. The plugin activates with a reasonable set of presets so that it can even be used as-is.
 
-However, customization of the Unlock & Checkout buttons and addition of new Ethereum networks is also possible through the plugin’s settings. To access them, go to the **WordPress Dashboard** > **Settings** > **Unlock Protocol**. This will open up a page with two tabs at the top �� General & Networks.
+However, customization of the Unlock & Checkout buttons and addition of new Ethereum networks is also possible through the plugin’s settings. To access them, go to the **WordPress Dashboard** > **Settings** > **Unlock Protocol**. This will open up a page with two tabs at the top — General & Networks.
 
-**Figure: Plugin settings**
-
-**General Settings**
+#### **General Settings**
 
 Settings in this tab are related to customization of the Unlock and Checkout buttons.
 
 **Figure: General settings**
 
+![](../../.gitbook/assets/login-button-settings.jpeg)
+
 * **Login button text**
 
-Used to define text that will appear within the button that prompts your users to log into WordPress using their WordPress credentials or via Unlock Protocol OAuth. If left blank, the button will display “Login with Unlock”. **Note**� The button that appears on the login screen will always display the string “Connect Your Crypto Wallet”. This is hard coded into the plugin.
+Used to define text that will appear within the button that prompts your users to log into WordPress using their WordPress credentials or via Unlock Protocol OAuth. If left blank, the button will display “Login with Unlock”. **Note:** The button that appears on the login screen will always display the string “Connect Your Crypto Wallet”. This is hard coded into the plugin.
 
 * **Login button type**
 
@@ -93,7 +94,7 @@ Defines the string displayed above the Login button in the image block. Uses the
 
 * **Login button background color**
 
-Defines the background color of the Login button in hex, RGB or HSL formats. By default, the color is black (#000000�.
+Defines the background color of the Login button in hex, RGB or HSL formats. By default, the color is black (#000000).
 
 * **Login button text color**
 
@@ -115,13 +116,13 @@ Defines the string displayed above the Checkout button in the image block. Uses 
 
 * **Checkout button background color**
 
-Defines the background color of the Checkout button in hex, RGB or HSL formats. By default, the color is black (#000000�.
+Defines the background color of the Checkout button in hex, RGB or HSL formats. By default, the color is black (#000000).
 
 * **Login button text color**
 
 Defines the background color of the login button in hex, RGB or HSL formats. By default, the color is white (#ffffff).
 
-**Network Settings**
+#### **Network Settings**
 
 This tab is used to register new Ethereum networks. When the plugin is first activated, the following Ethereum networks are added by default:
 
@@ -136,9 +137,11 @@ This tab is used to register new Ethereum networks. When the plugin is first act
 
 **Figure: Network settings**
 
+![](../../.gitbook/assets/network-settings.jpeg)
+
 You can add more networks by providing a name, ID and RPC endpoint. The name and ID are arbitrary; however, the ID has to be unique.
 
-**Unlock Protocol Gutenberg Block**
+### **Unlock Protocol Gutenberg Block**
 
 On activation, the plugin will make a new Unlock Protocol block available that can be used via WordPress’Gu[tenberg editor. This](https://wordpress.org/support/article/wordpress-editor/) block acts as a “container” block for any content you want to put behind a lock. This means that by itself, it adds no content or markup on the page.
 
