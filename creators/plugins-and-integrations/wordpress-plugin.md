@@ -143,16 +143,16 @@ You can add more networks by providing a name, ID and RPC endpoint. The name and
 
 ### **Unlock Protocol Gutenberg Block**
 
-On activation, the plugin will make a new Unlock Protocol block available that can be used via WordPress’Gu[tenberg editor. This](https://wordpress.org/support/article/wordpress-editor/) block acts as a “container” block for any content you want to put behind a lock. This means that by itself, it adds no content or markup on the page.
+On activation, the plugin will make a new Unlock Protocol block available that can be used via WordPress’ [Gutenberg editor. ](https://wordpress.org/support/article/wordpress-editor/)This block acts as a “container” block for any content you want to put behind a lock. This means that by itself, it adds no content or markup on the page.
 
 The Unlock Protocol block pulls double duty, depending on your users’ login status:
 
 1. If NOT logged in, the block will obscure any content within the Unlock Protocol container block, instead prompting your users to log in to your website using either their WordPress credentials or via a one click login button linked to their Ethereum wallet.
 2. If logged in, the block will obscure any content within the Unlock Protocol container block, instead prompting your users to purchase a key to the lock that you have placed on the content.
 
-**Configuring an Unlock Block**
+#### **Configuring an Unlock Block**
 
-The Unlock Protocol block can be added like any other Gutenberg block to any post or page. See W[ordPress documentation for ins](https://wordpress.org/support/article/adding-a-new-block/)tructions.
+The Unlock Protocol block can be added like any other Gutenberg block to any post or page. See [WordPress documentation](https://wordpress.org/support/article/adding-a-new-block/) for instructions.
 
 The block has two settings that need to be configured in order for it to work:
 
@@ -162,25 +162,25 @@ Select the Ethereum network where you have deployed your lock from this dropdown
 
 * **Lock Address**
 
-Add your lock address into this field. Only Ethereum addresses are accepted, validated via the following regex:/^0x\[a-fA-F0-9]{40}$/
+Add your lock address into this field. Only Ethereum addresses are accepted, validated via the following regex: <mark style="color:blue;background-color:yellow;">/^0x\[a-fA-F0-9]{40}$/</mark>
 
-**Note**� If an Unlock Protocol block is added to a post or page and left unconfigured, it will throw an error and block the page from being published or updated.
+**Note**: If an Unlock Protocol block is added to a post or page and left unconfigured, it will throw an error and block the page from being published or updated.
 
-To avoid accidental access issues, Unlock Protocol blocks cannot be nested; ie., placing one block within another has been restricted. However, a workaround to this is to register an Unlock Protocol block as a reusa[ble block and add ](https://developer.wordpress.org/block-editor/explanations/architecture/key-concepts/#reusable-blocks)that into another block, effectively nesting them. This cannot be patched due to a limitation with how WordPress handles reusable blocks.
+To avoid accidental access issues, Unlock Protocol blocks cannot be nested; ie., placing one block within another has been restricted. However, a workaround to this is to register an Unlock Protocol block as a [reusable block ](https://developer.wordpress.org/block-editor/explanations/architecture/key-concepts/#reusable-blocks)and add that into another block, effectively nesting them. This cannot be patched due to a limitation with how WordPress handles reusable blocks.
 
 Multiple Unlock Protocol blocks (with the same or different locks) on a page or post are permissible and work as expected.
 
-**Figure: How add-Unlock Protocol block to Post**
-
-**Full Page Locked Content**
+#### **Full Page Locked Content**
 
 The Unlock Protocol block can contain all the content on any page post, or any subset. The title and footer components of a page cannot be locked.
 
-If all the content on any page or post is locked, archives containing that page or post will only display the exc[erpt content. If no ](https://wordpress.org/support/article/excerpt/)excerpt is set, the archive page will only display the other metadata associated with the post.
+If all the content on any page or post is locked, archives containing that page or post will only display the [excerpt content](https://wordpress.org/support/article/excerpt/). If no excerpt is set, the archive page will only display the other metadata associated with the post.
 
 What exactly is output will depend on the theme in use, but it will usually include the title, published data and taxonomy data of the post. The content on the archive page will be empty as in the screenshot below.
 
 **Figure: Archive pages display only excerpt content when all other content on a post is locked.**
+
+![](../../.gitbook/assets/excerpt.jpeg)
 
 **Hooks**
 
@@ -334,69 +334,3 @@ Used when a new user needs to be registered. **Source:**
 
 inc/classes/class-login.php
 
-
-
-\--
-
-Unlock provides a [WordPress Plugin](https://wordpress.org/plugins/unlock-protocol/) which integrates our [Paywall](../../developers/paywall/) application into any WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
-
-We maintain a WordPress.org site which lets you experience the membership experience from a visitor's point of view: [wordpress-demo.unlock-protocol.com](https://wordpress-demo.unlock-protocol.com).
-
-#### Pre-requisites
-
-1. You have deployed your own Lock [following the instructions on this page](https://docs.unlock-protocol.com/#create-a-lock).
-2. You are using wordpress.org to host a WordPress site yourself (wordpress.com website will not work as plugins are restricted on that platform.)
-
-### Install the Unlock plugin
-
-Inside the admin section of your WordPress site, click on Plugins > Add New
-
-![](<../../.gitbook/assets/image (3).png>)
-
-In the search bar on the plugins page, search for "Unlock Protocol"
-
-![Search for the plugin](<../../.gitbook/assets/image (6) (1) (1).png>)
-
-![Click on "Install Now", and then on "Activate".](<../../.gitbook/assets/image (10) (1) (1) (1) (1).png>)
-
-After this, you're all set and you can start locking content on your posts or pages!
-
-### Using the Unlock plugin
-
-You can easily add one or more lock to each page or post. Inside of the Editor, click on the Document settings:
-
-![Enter the configuration for this specific page or lock](<../../.gitbook/assets/image (16).png>)
-
-The configuration is very flexible and lets you customize the number of locks, the calls to actions, the images... and more! Please [read this section to get a list of options](https://docs.unlock-protocol.com/#configure-the-lock).
-
-### Locking content
-
-The plugin also adds 2 "blocks" to your Gutenberg Editor. The first block lets you hide/show content based on whether the current visitor owns a key to your lock. This block can include other blocks so you can easily lock images or any other content.
-
-The second block is actually a button to let your visitors purchase an access key to your lock.
-
-#### Showing content to members only (hiding it for non members)
-
-Like any other block, click on the ⊕ sign to add an "Unlock Protocol Block".
-
-![](<../../.gitbook/assets/image (18).png>)
-
-Once added to the page, the block contains a visual indication (only when editing the post!) to show the block's status: you can easily toggle between content that's only available for members and content that is not available for members.
-
-![](<../../.gitbook/assets/image (10) (1) (1) (1).png>)
-
-From there you can add more content which will only be visible by members. The Unlock Blocks can include their own nested blocks, making it easy to lock images, videos, or even attachments.
-
-![You can click on the Ʉ at any point to display the setting for this block.](<../../.gitbook/assets/image (11) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2).png>)
-
-#### Showing a button to let visitors become members
-
-The Editor also lets you chose a "Checkout Button" which users can click on to become members! You might want to add this button inside of a "non-members only" block!
-
-![](<../../.gitbook/assets/image (1).png>)
-
-Once added to the page you can customize its text. The button defaults to the template style.
-
-![](<../../.gitbook/assets/image (5) (1).png>)
-
-Make sure you save your post or page once it's been configured!
