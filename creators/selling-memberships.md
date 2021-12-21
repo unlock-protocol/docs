@@ -33,4 +33,4 @@ Unlock memberships (called keys!) are Non-Fungible Tokens (using the ERC721 stan
 
 ## Airdropping memberships
 
-The contract for any lock can be interfaced with directly using Etherscan. Using this method, it is easy for creators to grant keys (airdrop NFTs) to someone. [To learn more, check out this tutorial](https://app.gitbook.com/o/-LswCCTMX4iiZqKYxmbV/s/-LqrxNPR\_lYaebzG998t/c/uKDwbBrnIuq3fOTGwHPL/creators/tutorials-1/how-to-airdrop-memberships).
+The contract for any lock can be interfaced with directly using Etherscan. Using this method, it is easy for creators to grant keys (airdrop NFTs) to someone. [To learn more, check out this tutorial.](https://docs.unlock-protocol.com/creators/tutorials-1/how-to-airdrop-memberships)
