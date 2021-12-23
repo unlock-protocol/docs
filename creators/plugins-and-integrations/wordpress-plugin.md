@@ -70,6 +70,8 @@ Once installed and activated, no change will appear on the website from an end u
 
 However, customization of the Unlock & Checkout buttons and addition of new Ethereum networks is also possible through the plugin’s settings. To access them, go to the **WordPress Dashboard** > **Settings** > **Unlock Protocol**. This will open up a page with two tabs at the top — General & Networks.
 
+{% embed url="https://www.youtube.com/watch?v=9qNeoJeZ6I8" %}
+
 #### **General Settings**
 
 Settings in this tab are related to customization of the Unlock and Checkout buttons.
