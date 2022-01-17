@@ -156,7 +156,7 @@ The Unlock Protocol block pulls double duty, depending on your users’ login st
 
 The Unlock Protocol block can be added like any other Gutenberg block to any post or page. See [WordPress documentation](https://wordpress.org/support/article/adding-a-new-block/) for instructions.
 
-The block has two settings that need to be configured in order for it to work:
+The block can be configured with multiple locks. For each lock, there are 2 settings that you will need to set:
 
 * **Ethereum Network**
 
