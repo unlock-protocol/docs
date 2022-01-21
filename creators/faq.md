@@ -5,7 +5,7 @@ You have questions, we have answers! Here is an ever-increasing FAQ list of ques
 
 
 * [How do royalties work with Unlock Protocol?](faq.md#how-do-royalties-work-with-unlock-protocol)
-* [How do I set up recurring payments?](faq.md#how-do-i-set-up-recurring-payments)
+* [How do I set up recurring payments or automatic renewals?](faq.md#how-do-i-set-up-recurring-payments)
 * [How do I share ownerships of an Unlock lock?](faq.md#how-to-share-ownership-of-an-unlock-lock)
 *   [How do I keep my Unlock key price stable why crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
 
@@ -15,9 +15,11 @@ You have questions, we have answers! Here is an ever-increasing FAQ list of ques
 
 Resale royalties are usually specified at the collection level through the platforms like OpenSea where the resale might be done (e.g. [https://support.opensea.io/hc/en-us/articles/1500009575482-How-do-royalties-work-on-OpenSea-](https://support.opensea.io/hc/en-us/articles/1500009575482-How-do-royalties-work-on-OpenSea-)). Since the memberships are ERC721s, they automatically show up on OpenSea and other marketplace platforms pretty much as soon as they are minted (e.g. [https://opensea.io/collection/eth-portland-mintgate-x-unlock](https://opensea.io/collection/eth-portland-mintgate-x-unlock)).&#x20;
 
-### **How do I set up recurring payments?**
+### **How do I set up recurring payments or automatic renewals?**
 
-**aaa**
+Recurring payments and automatic renewals in the crypto space are a thorny challenge, as they imply the pre-approval of future transactions to a crypto wallet. At the current time, members will need to manually renew after their key expires.&#x20;
+
+That said, this is an area of significant interest to the Unlock development team and community and we are actively exploring options to handle the complexity of automatic renewals. We hope to implement this in the near future.
 
 ### How to share ownership of an Unlock lock?
 
