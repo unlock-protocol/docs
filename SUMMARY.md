@@ -28,7 +28,7 @@
   * [How to create temporary or trial memberships](creators/tutorials-1/how-to-create-temporary-or-trial-memberships.md)
   * [How to make keys non-transferrable](creators/tutorials-1/how-to-make-keys-non-transferrable.md)
   * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
-* [Developers FAQ](creators/faq.md)
+* [Creators FAQ](creators/faq.md)
 
 ## For Developers <a href="#developers" id="developers"></a>
 
