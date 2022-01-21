@@ -4,7 +4,9 @@ You have questions, we have answers! Here is an ever-increasing FAQ list of ques
 
 
 
-* [How do I keep my Unlock key price stable why crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
+**Frequently Asked Questions from Creators**
+
+* ****[How do I keep my Unlock key price stable why crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
 
 
 
