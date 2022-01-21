@@ -2,13 +2,9 @@
 
 You have questions, we have answers! Here is an ever-increasing FAQ list of questions we get from Unlock Protocol creators.
 
-* How do royalties work with Unlock Protocol?
-* How to share ownership of an Unlock lock?
-* How do I keep my membership price stable?
 
 
-
-\*\*\*
+* [How do I keep my Unlock key price stable why crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
 
 
 
