@@ -57,7 +57,7 @@
   * [Using Unlock with Ethers](developers/tutorials/ethers.md)
   * [Backend locking with Express.js](developers/tutorials/backend-locking-with-express.js.md)
   * [Locking media content](developers/tutorials/locking-media-content.md)
-* [FAQ](developers/faq.md)
+* [Developers FAQ](developers/faq.md)
 
 ## Governance
 
