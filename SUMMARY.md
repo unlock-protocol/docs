@@ -67,7 +67,7 @@
 * [Unlock DAO](governance/unlock-dao.md)
 * [Unlock Grant Program](governance/grants-bounties-and-matchings.md)
 * [Roadmap](governance/roadmap.md)
-* [FAQ](governance/frequently-asked-questions.md)
+* [Governance FAQ](governance/frequently-asked-questions.md)
 
 ## Connect
 
