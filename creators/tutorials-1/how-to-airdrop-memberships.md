@@ -12,15 +12,15 @@ The contract for any lock can be interfaced with directly using [Etherscan](http
 
 First, click on the block explorer link for your lock contract. If your lock is on Ethereum, this will take you to Etherscan. If your lock is on Polygon, this will take you to Polygonscan... etc
 
-![](<../.gitbook/assets/Screen Shot 2021-12-06 at 2.43.55 PM.png>)
+![](<../../.gitbook/assets/Screen Shot 2021-12-06 at 2.43.55 PM.png>)
 
 Once there, click on "Contract". Then, click on "Write Contract". After that, press the "Connect to Web3" button to connect your wallet. This interface allows any "Lock Manager" to update elements of the contract. If your wallet created the lock on the Unlock Creator Dashboard, this will be you.
 
-![](<../.gitbook/assets/Screen Shot 2021-12-06 at 2.43.01 PM (1).png>)
+![](<../../.gitbook/assets/Screen Shot 2021-12-06 at 2.43.01 PM (1).png>)
 
 In the block explorer, you'll find a "`grantKeys`" function. This allows the owner of the contract to give a key to a particular wallet address.&#x20;
 
-![](<../.gitbook/assets/Screen Shot 2021-12-07 at 10.07.14 AM.png>)
+![](<../../.gitbook/assets/Screen Shot 2021-12-07 at 10.07.14 AM.png>)
 
 To do this, enter the address (not the .ENS domain) of who you want to be the recipient in `"_recipients (address[])`"
 

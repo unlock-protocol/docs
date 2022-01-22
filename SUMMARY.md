@@ -18,6 +18,7 @@
   * [Mintgate](creators/plugins-and-integrations/mintgate.md)
   * [Decentraland](creators/plugins-and-integrations/decentraland.md)
 * [Tutorials](creators/tutorials-1/README.md)
+  * [Customizing Locks on OpenSea](creators/tutorials-1/customizing-locks-on-opensea.md)
   * [Organizing a vote by members](creators/tutorials-1/organizing-a-vote-by-members.md)
   * [How to resell a membership](creators/tutorials-1/how-to-resell-a-lock.md)
   * [Building an Ad Free Experience](creators/tutorials-1/ad-free-experience.md)
@@ -26,8 +27,8 @@
   * [How to cancel a membership](creators/tutorials-1/how-to-cancel-a-membership.md)
   * [How to create temporary or trial memberships](creators/tutorials-1/how-to-create-temporary-or-trial-memberships.md)
   * [How to make keys non-transferrable](creators/tutorials-1/how-to-make-keys-non-transferrable.md)
+  * [How to airdrop memberships](creators/tutorials-1/how-to-airdrop-memberships.md)
   * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
-* [How to airdrop memberships](creators/how-to-airdrop-memberships.md)
 * [Creators FAQ](creators/faq.md)
 
 ## For Developers <a href="#developers" id="developers"></a>
