@@ -19,6 +19,8 @@ You'll probably need to reach out to OpenSea to get royalty editing turned on fo
 
 _"By default, the storefront editor page (_[_`https://opensea.io/category/<CONTRACT_NAME>/edit`_](https://opensea.io/category/%3CCONTRACT\_NAME%3E/edit)_) is accessible to the contract’s_ [_`Ownable`_](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/0dded493a03623c93845c2d58634c229862ab54a/contracts/ownership/Ownable.sol#L22-L27) __ [_owner_](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/0dded493a03623c93845c2d58634c229862ab54a/contracts/ownership/Ownable.sol#L22-L27)_. If your contract doesn’t implement `Ownable`, or if it does but the owner address is not accessible, or if it’s just not working, \[OpenSea] can fix that manually. Send an email to_ [_support@opensea.io_](mailto:support@opensea.io) _introducing yourself, providing the contract address, and providing the address that you’d like authorized to edit the storefront. OpenSea will confirm your ownership, then make the authorization."_
 
+**Note:** There is a great conversation with Unlock community member @littlefortunes in the Unlock Discord where she shares her experiences with [setting up royalties and NFT collection information on OpenSea](https://discord.com/channels/462280183425138719/835883502297284628/934784500301451264).
+
 ### **How do I set up recurring payments or automatic renewals?** <a href="#how-do-i-set-up-recurring-payments-or-automatic-renewals" id="how-do-i-set-up-recurring-payments-or-automatic-renewals"></a>
 
 Recurring payments and automatic renewals in the crypto space are a thorny challenge, as they imply the pre-approval of future transactions to a crypto wallet. At the current time, members will need to manually renew after their key expires.&#x20;
