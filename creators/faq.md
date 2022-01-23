@@ -7,15 +7,13 @@ You have questions, we have answers! Here is an ever-increasing FAQ list of ques
 * [How do royalties work with Unlock Protocol?](faq.md#how-do-royalties-work-with-unlock-protocol)
 * [How do I set up recurring payments or automatic renewals?](faq.md#how-do-i-set-up-recurring-payments-or-automatic-renewals)
 * [How to customize the NFT image for keys?](faq.md#how-to-customize-the-nft-image-for-keys)
-* [How do I have unique images or unique rarity data for every individual key to a particular lock?](faq.md#how-do-i-make-the-image-for-every-key-to-a-particular-lock-unique)
+* a
 * [How do I share ownership of an Unlock lock?](faq.md#how-to-share-ownership-of-an-unlock-lock)
 *   [How do I keep my Unlock key price stable why crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
 
 
 
-[How to customize the NFT image for keys?](faq.md#how-to-customize-the-nft-image-for-keys)
-
-[How do I have unique images or unique rarity data for every individual key to a particular lock?](faq.md#how-do-i-make-the-image-for-every-key-to-a-particular-lock-unique)
+How do I have unique images or unique rarity data for every individual key to a particular lock?
 
 ### How do royalties work with Unlock Protocol?
 
