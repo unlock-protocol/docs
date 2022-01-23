@@ -11,9 +11,9 @@ You have questions, we have answers! Here is an ever-increasing FAQ list of ques
 
 
 
-How to customize the NFT image for keys
+[How to customize the NFT image for keys?](faq.md#how-to-customize-the-nft-image-for-keys)
 
-How do I have unique images or unique rarity data for every individual key to a particular lock?
+[How do I have unique images or unique rarity data for every individual key to a particular lock?](faq.md#how-do-i-make-the-image-for-every-key-to-a-particular-lock-unique)
 
 ### How do royalties work with Unlock Protocol?
 
