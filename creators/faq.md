@@ -11,6 +11,10 @@ You have questions, we have answers! Here is an ever-increasing FAQ list of ques
 
 
 
+How to customize the NFT image for keys
+
+How do I have unique images or unique rarity data for every individual key to a particular lock?
+
 ### How do royalties work with Unlock Protocol?
 
 Resale royalties are usually specified at the collection level through the platforms like OpenSea where the resale might be done (e.g. [https://support.opensea.io/hc/en-us/articles/1500009575482-How-do-royalties-work-on-OpenSea-](https://support.opensea.io/hc/en-us/articles/1500009575482-How-do-royalties-work-on-OpenSea-)). Since the memberships are ERC721s, they automatically show up on OpenSea and other marketplace platforms pretty much as soon as they are minted (e.g. [https://opensea.io/collection/eth-portland-mintgate-x-unlock](https://opensea.io/collection/eth-portland-mintgate-x-unlock)).&#x20;
@@ -26,6 +30,14 @@ _"By default, the storefront editor page (_[_`https://opensea.io/category/<CONTR
 Recurring payments and automatic renewals in the crypto space are a thorny challenge, as they imply the pre-approval of future transactions to a crypto wallet. At the current time, members will need to manually renew after their key expires.&#x20;
 
 That said, this is an area of significant interest to the Unlock development team and community and we are actively exploring options to handle the complexity of automatic renewals. We hope to implement this in the near future.
+
+### How to customize the NFT image for keys?
+
+If you want to customize the NFT image for the keys for a lock, it can be done right through the Unlock dashboard. Here is a tutorial on how to change the image for Unlock keys.
+
+### How do I have unique images or unique rarity data for every individual key to a particular lock?
+
+By default, all the keys to a particular lock have the same image. If you want to create unique metadata (including unique images) for keys for a particular lock, there is a great tutorial by community member Croissant on how to specify individual images and NFT metadata.
 
 ### How to share ownership of an Unlock lock?
 
