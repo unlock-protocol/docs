@@ -1,8 +1,6 @@
 # Creators FAQ
 
-You have questions, we have answers! Here is an ever-increasing FAQ list of questions we get from Unlock Protocol creators.
-
-
+You have questions, the Unlock community has answers! Here are answers to an ever-increasing list of FAQs seen from Unlock Protocol creators. Have a question about something that's not listed? Ask it [here](https://discord.gg/uEtjWAYJPj)!
 
 * [How do royalties work with Unlock Protocol?](faq.md#how-do-royalties-work-with-unlock-protocol)
 * [How do I set up recurring payments or automatic renewals?](faq.md#how-do-i-set-up-recurring-payments-or-automatic-renewals)
