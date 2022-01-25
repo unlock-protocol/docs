@@ -17,6 +17,7 @@ You should **not need to deploy an Unlock contract yourself**. Here are the addr
 2. Xdai: [`0x1bc53f4303c711cc693F6Ec3477B83703DcB317f`](https://blockscout.com/xdai/mainnet/address/0x1bc53f4303c711cc693F6Ec3477B83703DcB317f)
 3. Polygon (ex-Matic): [`0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f`](https://polygonscan.com/address/0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f)
 4. Binance Smart Chain: [`0xeC83410DbC48C7797D2f2AFe624881674c65c856`](https://bscscan.com/address/0xeC83410DbC48C7797D2f2AFe624881674c65c856)
+5. Optimistic Ethereum: [`0x99b1348a9129ac49c6de7F11245773dE2f51fB0c`](https://optimistic.etherscan.io/address/0x99b1348a9129ac49c6de7F11245773dE2f51fB0c)&#x20;
 
 ### Test networks:
 
