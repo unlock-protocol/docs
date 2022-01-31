@@ -18,6 +18,8 @@ Swordy Bot allows you to give access to Discord private channels by assigning a 
 !add-lock 100 0xef6389F33ac557405C961030Efcc3b1CE3e6bc17 1 "subscriber" https://unlock-integration.webflow.io/
 ```
 
+**Note:** You can find the possible values for `chainId` [here](../../developers/faq.md).
+
 ### Onboard Users
 
 Users can get access by using the `!unlock` command. They will receive a private message from Swordy Bot asking them to follow a unique link to a page where they can connect with either metamask or walletconnect. Once thats successful they will receive another message confirming their member ship and the member only channel will be visible.
