@@ -48,7 +48,7 @@ We're making use of upgradeable contracts via [openzeppelin](https://docs.openze
 
 Good question. Until version 10, **Deployed locks are immutable**. That is, while they can be re-configured, disabled or destroyed _by their owner_, they will otherwise remain unchanged on the ethereum network for as long as it persists. Nobody else can modify a lock you deployed but you, unless you choose to allow this. After an upgrade of Unlock, all new locks deployed moving forward will be of the new version, and may support new features and/or improved usability.
 
-Starting with version 10, we are introducing upgradable locks. These locks are still deployed and owned by their creator, but they can later be upgraded to support new features introduced by the protocol, by their lock managers only. The upgrades are optional and can only be triggered by the lock managers themselves.
+Starting with version 10, we are introducing upgradable locks. These locks are still deployed and owned by their creator (who is the sole lock manager initially), but they can later be upgraded to support new features introduced by the protocol, by their lock managers only. The upgrades are optional and can only be triggered by the lock managers themselves.
 
 ### Npm Modules
 
