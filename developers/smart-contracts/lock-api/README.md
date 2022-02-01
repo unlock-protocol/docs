@@ -226,6 +226,16 @@ function setKeyManagerOf(
 ) external;
 ```
 
+### `setMaxNumberOfKeys`
+
+This function allow any lock manager to change the maximum number of keys a lock can edit.
+
+```javascript
+function setMaxNumberOfKeys (
+  uint _maxNumberOfKeys
+) external;
+```
+
 ## ERC721 functions
 
 The lock implements the ERC721 specification as [described there](https://eips.ethereum.org/EIPS/eip-721).
