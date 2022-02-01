@@ -28,6 +28,8 @@ function initialize(
 ) external;
 ```
 
+NB: To create non-expiring memberships, just set the `_expirationDuration` to 0.
+
 Once minted, the address deploying it becomes its first Lock manaber. The Unlock contract also keeps track of each locks' address.
 
 ### `purchase`
