@@ -39,8 +39,6 @@
   * [Lock Contract](developers/smart-contracts/lock-api/README.md)
     * [Access Control](developers/smart-contracts/lock-api/access-control.md)
     * [Hooks](developers/smart-contracts/lock-api/hooks.md)
-  * [Key Purchaser](developers/smart-contracts/key-purchaser.md)
-  * [Swap and Call](developers/smart-contracts/swap-and-call.md)
 * [Unlock.js](developers/unlock.js.md)
 * [Subgraph](developers/subgraph.md)
 * [Paywall](developers/paywall/README.md)
