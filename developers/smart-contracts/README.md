@@ -30,6 +30,8 @@ Please, refer to the [Unlock contract documentation](unlock-api.md) for more det
 
 This is the contract (**PublicLock.sol**) which users can configure and deploy to restrict access to resources, such as a blog, a subset of software features, or an event.
 
+Each lock is a standalone contracts, with its own deployment, address and storage. As per v9, locks can be entirely untethered and still fully functional even without access to the main Unlock contract.
+
 * Each lock contract is an [ERC-721](https://eips.ethereum.org/EIPS/eip-721) compliant contract capable of creating and managing NFT's (non-fungible tokens we call "Keys"), as well as restricting access based on the user's possession (or lack of) one of these keys.
 * Keys for one lock are valid only for the lock which created them.
 * A given user may own only 1 key (NFT) at a time.
