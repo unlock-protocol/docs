@@ -1,22 +1,21 @@
-# Lock Contract
+# Lock Api
 
 ## Overview
 
 The Lock Smart Contract has multiple capabilities:
 
 * _Administrative_: these are the functions which change rights associated to the lock or individual parameters for the lock a such as its name or of course its price. Finally, there is a method to withdraw funds from the lock contract itself.
-* _Transferring key ownership_: keys can be purchased from the lock smart contract itself or from another user who purchased one previously. Another element is that keys can be purchased on behalf of somebody else (this is important because this lets somebody pay gas fees on behalf of somebody else)
-* _Changing key attributes_: the keys have an expiration date which can be changed (for an earlier date by the lock owner) as well as data attributes which can be changed to something else.
+* _Transferring key ownership_: keys can be purchased from the lock smart contract itself or from another user who purchased one previously. Another element is that keys can be purchased on behalf of somebody else \(this is important because this lets somebody pay gas fees on behalf of somebody else\)
+* _Changing key attributes_: the keys have an expiration date which can be changed \(for an earlier date by the lock owner\) as well as data attributes which can be changed to something else.
 
 ## Upgrades
 
-All locks deployed prior to version 10 (released in January 2022) are NOT upgradeable, which means their core logic will remain unchanged. Starting with version 10, locks are upgradable by their [lock manager](access-control.md#lockmanager), through the [Unlock contract.](../unlock-api.md)
+All locks deployed prior to version 10 (to be released by year end 2022) are NOT upgradable, which means their core logic will remain unchanged. Starting with version 10, locks are upgradable by their lock manager, through the Unlock contract.
 
 ## Functions
-
 ### `initialize`
 
-This function is the initializer and is called when the lock is deployed. You don't need to call this function (and calling it will fail).
+This function is the initializer and called when the lock is deployed. You don't need to call this function (and calling it will fail).
 
 ```javascript
 function initialize(
@@ -29,11 +28,15 @@ function initialize(
 ) external;
 ```
 
-Once minted, the address deploying it becomes its first Lock manager. The Unlock contract also keeps track of each locks' address.
+Once minted, the address deploying it becomes its first Lock manaber. The Unlock contract also keeps track of each locks' address.
 
 ### `purchase`
 
-This function can be invoked to purchase a key (NFT membership). To purchase a membership, the caller should pass the number of tokens to be transferred (an ERC20 approval should have been initiated earlier), and this amount can be larger than the actual `keyPrice`. It is possible to purchase a membership on behalf of another user by setting a different recipient address. The referrer address is the address that will receive some UDT governance tokens as part of this transaction (if applicable). Finally, an arbitrary data object can be passed and is propagated to hooks and/or emitted as part of events.
+This function can be invoked to purchase a key (NFT membership).
+To purchase a membership, the caller should pass the number of tokens to be transfered (an ERC20 approval should have been initiated earlier), and this amount can be larger than the actual `keyPrice`.
+It is possible to purchase a membership on behalf of another user by setting a different recipient address.
+The referrer address is the address that will receive some UDT governance tokens as part of this transaction (if applicable).
+Finally an arbitrary data object can be passed and is propagated to hooks and/or emitted as part of events.
 
 This function will throw when the lock has been disabled, or if it is sold out.
 
@@ -48,7 +51,8 @@ function purchase(
 
 ### `grantKeys`
 
-Allows a Lock manager to give a collection of users a key with no charge. This is the mechanism used to "airdrop" memberships. Each key may be assigned a different expiration date and a different key manager.
+Allows a Lock manager to give a collection of users a key with no charge. This is the mechanism used to "airdrop" memberships.
+Each key may be assigned a different expiration date and a different key manager.
 
 ```javascript
 function grantKeys(
@@ -69,7 +73,6 @@ function shareKey(
   uint _timeShared
 ) external;
 ```
-
 ### `transfer`
 
 We implemented an ERC20 style transfer so that keys can be sent directly from wallets that usually support ERC20 transfers but have lower coverage for ERC721 functions
@@ -117,7 +120,7 @@ function purchasePriceFor(
 
 ### `getTransferFee`
 
-Determines how much of a fee a key owner would need to pay in order to transfer the key to another account. This is pro-rated so the fee goes down overtime. It returns the transfer in seconds.
+ Determines how much of a fee a key owner would need to pay in order to transfer the key to another account. This is pro-rated so the fee goes down overtime. It returns the transfer in seconds.
 
 ```javascript
 function getTransferFee(
@@ -125,7 +128,6 @@ function getTransferFee(
   uint _time
 ) external view returns (uint);
 ```
-
 ### `expireAndRefundFor`
 
 A lock manager can invoke this function to expire a key and perform and refund based on the amount specified.
@@ -158,7 +160,8 @@ function updateRefundPenalty(
 
 ### `getCancelAndRefundValueFor`
 
-Determines how much of a refund a key owner would receive if they issued a `cancelAndRefund` transaction. Note that due to the time required to mine a tx, the actual refund amount will be lower than what the user reads from this call.
+Determines how much of a refund a key owner would receive if they issued a `cancelAndRefund` transaction.
+Note that due to the time required to mine a tx, the actual refund amount will be lower than what the user reads from this call.
 
 ```javascript
 function getCancelAndRefundValueFor(
@@ -181,10 +184,10 @@ This function can be called by any lock manager to change the pricing on the loc
 ```javascript
 function updateKeyPricing( uint _keyPrice, address _tokenAddress ) external;
 ```
-
 ### `withdraw`
 
-This function can be called by a lock manager or the `beneficiary` to transfer all or some of the funds on the lock to the `beneficiary` address. The `tokenAddress` can be specified to transfer funds from an ERC20 when the currency has been changed. Note: consider avoiding full withdrawals as it breaks the `cancelAndRefund` and `expireAndRefundFor` methods.
+This function can be called by a lock manager or the `beneficiary` to transfer all or some of the funds on the lock to the `beneficiary` address. The `tokenAddress` can be specified to transfer funds from an ERC20 when the currency has been changed.
+Note: consider avoiding full withdrawals as it breaks the `cancelAndRefund` and `expireAndRefundFor` methods.
 
 ```javascript
 function withdraw(
@@ -192,7 +195,6 @@ function withdraw(
   uint _amount
 ) external;
 ```
-
 ### `approveBeneficiary`
 
 This function can only be called by a lock manager to approve a 3rd party address to withdraw funds from the lock.
@@ -239,6 +241,7 @@ function balanceOf(address _owner) public view returns (uint256 balance);
 ### Other methods
 
 ```javascript
+
 function ownerOf(uint256 tokenId) public view returns (address _owner);
 
 function transferFrom(address from, address to, uint256 tokenId) public;
@@ -265,7 +268,6 @@ function tokenByIndex(uint256 index) public view returns (uint256);
 ### Setters
 
 Allows a Lock manager to assign a descriptive name for this Lock.
-
 ```javascript
 function updateLockName(
   string calldata _lockName
@@ -273,7 +275,6 @@ function updateLockName(
 ```
 
 Allows a Lock manager to assign a Symbol for this Lock.
-
 ```javascript
 function updateLockSymbol(
   string calldata _lockSymbol
@@ -281,7 +282,6 @@ function updateLockSymbol(
 ```
 
 Allows a Lock manager to update the baseTokenURI for this Lock.
-
 ```javascript
   function setBaseTokenURI(
     string calldata _baseTokenURI
@@ -289,7 +289,6 @@ Allows a Lock manager to update the baseTokenURI for this Lock.
 ```
 
 Lets a lock manager set event hooks to be triggered on key purchases and on cancellation.
-
 ```javascript
 function setEventHooks(
   address _onKeyPurchaseHook,
@@ -298,7 +297,6 @@ function setEventHooks(
 ```
 
 Allow a Lock manager to change the transfer fee. The transfer fee is expressed in basis-points. For example: 200bps = 2% and means that 2% of the time transfered is "burnt" during the transfer.
-
 ```javascript
 function updateTransferFee(
   uint _transferFeeBasisPoints
@@ -324,25 +322,21 @@ These functions are used to set, unset and check roles on the lock. Note that Lo
 ### Getters
 
 Returns the lock version number:
-
 ```javascript
 function publicLockVersion() public pure returns (uint);
 ```
 
 Returns the name of a lock:
-
 ```javascript
 function name() external view returns (string memory _name);
 ```
 
 Returns the current number of owners (including expired keys):
-
 ```javascript
 function numberOfOwners() external view returns (uint);
 ```
 
 Returns the token symbol
-
 ```javascript
 function symbol()
   external view
@@ -350,7 +344,6 @@ function symbol()
 ```
 
 Yields the tokenURI as a string for a specific tokenId. This is part of the ERC721 spec: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md
-
 ```javascript
 function tokenURI(
   uint256 _tokenId
@@ -358,79 +351,66 @@ function tokenURI(
 ```
 
 This yields the address of the `onKeyPurchaseHook`.
-
 ```javascript
 function onKeyPurchaseHook() external view returns(address);
 ```
 
 This yields the address of the `onKeyCancelHook`.
-
 ```javascript
 function onKeyCancelHook() external view returns(address);
 ```
 
 This yields the beneficiary who will receive the lock's funds.
-
 ```javascript
 function beneficiary() external view returns (address );
 ```
 
 This yields the duration of each key.
-
 ```javascript
 function expirationDuration() external view returns (uint256 );
 ```
 
 This yields the duration of the free trial during which keys can cancelled at no cost.
-
 ```javascript
 function freeTrialLength() external view returns (uint256 );
 ```
 
 This returns true if the lock is still alive.
-
 ```javascript
 function isAlive() external view returns (bool );
 ```
 
 This returns the currency used to charge for keys. If this is the Zero address, the lock uses the chains's native currency.
-
 ```javascript
 function tokenAddress() external view returns (address );
 ```
 
 This returns the price of keys.
-
 ```javascript
 function keyPrice() external view returns (uint256 );
 ```
 
 This returns the maximum number of keys that can be purchased on that lock.
-
 ```javascript
 function maxNumberOfKeys() external view returns (uint256 );
 ```
 
 This retrns the owner of a key (NFT) based on its id. This is an ERC721 method.
-
 ```javascript
 function ownerOf(uint256 tokenId) public view returns (address _owner);
 ```
 
 This returns the key manager of a key based on its id.
-
 ```javascript
 function keyManagerOf(uint) external view returns (address );
 ```
 
 This returns the refund penalty in basis points.
-
 ```javascript
 function refundPenaltyBasisPoints() external view returns (uint256 );
 ```
 
 This returns the transfer fee in basis points.
-
 ```javascript
 function transferFeeBasisPoints() external view returns (uint256 );
 ```
