@@ -36,6 +36,7 @@ This function can be invoked to purchase a key (NFT membership).
 To purchase a membership, the caller should pass the number of tokens to be transfered (an ERC20 approval should have been initiated earlier), and this amount can be larger than the actual `keyPrice`.
 It is possible to purchase a membership on behalf of another user by setting a different recipient address.
 The referrer address is the address that will receive some UDT governance tokens as part of this transaction (if applicable).
+A key manager can also be set directly during the purchase, allowing a different account to manage the key while the recipient still benefit from a full membership.
 Finally an arbitrary data object can be passed and is propagated to hooks and/or emitted as part of events.
 
 This function will throw when the lock has been disabled, or if it is sold out.
@@ -45,6 +46,7 @@ function purchase(
   uint256 _value,
   address _recipient,
   address _referrer,
+  address _keyManager,
   bytes calldata _data
 ) external payable;
 ```
