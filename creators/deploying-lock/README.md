@@ -11,7 +11,7 @@ _Prerequisite: this currently requires an_ [_Ethereum wallet_](https://ethereum.
 
 {% embed url="https://youtu.be/jKj3l4Ei-i4" %}
 
-Locks are smart contracts on an Ethereum-compatible blockchain. This provides creators with **unmediated control over who can access their work**, and how much they want to charge for this. Unlock Inc. provides a simple dashboard to create a lock at the following address.
+Locks are smart contracts on an Ethereum compatible blockchain. This provides creators with **unmediated control over who can access their work**, and how much they want to charge for this. Unlock Inc. provides a simple dashboard to create a lock at the following address.
 
 When creating a lock, the creator can select the following attributes:
 
@@ -20,7 +20,7 @@ When creating a lock, the creator can select the following attributes:
 * The price consumers need to pay to get a key, including its currency
 * How many keys at most can be sold
 
-Once deployed the lock will have its own address and is **fully owned** by the creator (no-one, including Unlock Inc. can change or remove it). The initial creator of the lock can also add other "lock managers" who are able to co-manage the lock.
+Once deployed the lock will have its own address and is **fully owned** by the creator (no one, including Unlock Inc. can change or remove it). The initial creator of the lock can also add other "lock managers" who are able to co-manage the lock.
 
 Once deployed, the dashboard will show you details about your lock:
 
@@ -37,6 +37,8 @@ You will see the name (_First Euro lock_ for this example), its address (_0x0915
 * [Easily integrate your lock in existing applications](../plugins-and-integrations/)
 * Inspect your lock using a _block explorer (see below)_
 
-The lock's behavior can also be customized even further. The smart contracts are _verified_, click on the explorer icon to inspect it or interact with it from the block explorer.
+The lock's behavior can also be customized even further. For example, you can easily [disable transfers](../tutorials-1/how-to-make-keys-non-transferrable.md), or [airdrop membership NFTs to anyone](../tutorials-1/how-to-airdrop-memberships.md).
+
+Finally, and this is critical, the smart contracts are _verified_, click on the explorer icon to inspect it or interact with it from the block explorer.
 
 ![](../../.gitbook/assets/image.png)

@@ -1,4 +1,10 @@
-# How to cancel a membership
+---
+description: >-
+  As a lock manager, you can always cancel someone else's membership (and
+  optionally refund them)
+---
+
+# How to cancel a user's membership
 
 The contract for any lock can be interfaced with directly using Etherscan (or similar block explorers). Using this method, it is easy for creators (lock managers) to cancel/ expire a membership. The way to do this is to update the "expireAndRefundFor" field. Here's how.
 
