@@ -11,7 +11,7 @@ We currently support 4 hooks:
 * `onKeyPurchaseHook`: called when a key purchase is triggered
 * `onKeyCancelHook`: called when a key is canceled
 * `onTokenUriHook`: called when the tokenURI is fetched
-* `onValidKeyHook`: called when checking if a user as a valid key
+* `onValidKeyHook`: called when checking if a user has a valid key
 
 ## OnKeyPurchase Hook
 
