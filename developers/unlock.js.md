@@ -32,6 +32,7 @@ const { Web3Service } = require("@unlock-protocol/unlock-js");
 
 const networks = {
   4: {
+    unlockAddress: "0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b", // Smart contracts docs include all addresses on all networks
     provider: "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
   },
 };
@@ -61,6 +62,54 @@ run();
 
 ```
 
+#### Using WalletService to deploy a lock:
+
+```javascript
+const ethers = require("ethers");
+const { WalletService } = require("@unlock-protocol/unlock-js");
+
+const networks = {
+  4: {
+    unlockAddress: "0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b", // Smart contracts docs include all addresses on all networks
+    provider: "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+  },
+};
+
+// Initializing RPC provider and connect it to Rinkeby
+const provider = new ethers.providers.JsonRpcProvider(networks[4].provider);
+
+// Create a wallet.
+// This one should have a little bit of rinkeby eth but please send more if you use it:
+// 0x42fb30ae9694c45f76d98d01adf4103fc7b636a6
+const wallet = new ethers.Wallet.fromMnemonic(
+  "solid entry walnut extend aisle skirt myth clog need analyst edit bench"
+).connect(provider);
+
+async function run() {
+  const walletService = new WalletService(networks);
+
+  // Connect to a provider with a wallet
+  await walletService.connect(provider, wallet);
+
+  // This only resolves when the transaction has been mined, but the callback returns the hash immediately
+  await walletService.createLock(
+    {
+      maxNumberOfKeys: 100,
+      name: "testing silver",
+      expirationDuration: 12121311,
+      keyPrice: "0.01", // Key price needs to be a string
+    },
+    (error, hash) => {
+      // This is the hash of the transaction!
+      console.log({ hash });
+    }
+  );
+}
+
+run();
+
+```
+
 #### Using WalletService to purchase a key:
 
 ```javascript
@@ -69,6 +118,7 @@ const { WalletService } = require("@unlock-protocol/unlock-js");
 
 const networks = {
   4: {
+    unlockAddress: "0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b", // Smart contracts docs include all addresses on all networks
     provider: "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
   },
 };
