@@ -9,11 +9,9 @@ description: >-
 
 Unlock makes it easy for creators to monetize their work by only allowing their members to access some of their work. In this tutorial, we will see how to create a simple HTML and JavaScript page to lock media content (audio or video) so that only the creators' members can play it. Non-members will be able to see a small preview before being prompted to unlock the rest of the video.
 
-_Note_: in this tutorial we take a front-end locking approach, which is _not secure_. Someone could tinker with the JavaScript console of their web browser and inspect the code to find a workaround. It is absolutely possible to build something secure, but that requires a back-end integration, considered more advanced. Additionaly, we believe only advanceds web users on a desktop computer would be able to circumvent the lock. **Convenience trumps security**.
-
 ## Create a lock
 
-The first step is to create a lock. For this, refer [to that other article](../../creators/deploying-lock/). Once the lock is deployed, keep track of its address and network as we'll use them next.
+The first step is to create a lock. For this, refer [to this article](../../creators/deploying-lock/). Once the lock is deployed, keep track of its address and [network](../faq.md#what-are-the-chainids-for-the-various-networks) as we'll use them next.
 
 ## Create the web document
 
@@ -58,7 +56,7 @@ For any web page which includes a lock, we use the same approach. First, we load
 
 ## Locking the video
 
-JavaScript provides us with an API to control the video. We can use that to lock its access. The following sample provides details of how this can work. Note there are multiple ways of doing this: feel free to tinker around!
+JavaScript provides us with an API to control the video. We can use that to lock its access. The following sample provides details of how this can work. Note there are multiple ways of doing this; feel free to tinker around!
 
 ```bash
 <script>
@@ -93,3 +91,7 @@ JavaScript provides us with an API to control the video. We can use that to lock
 ```
 
 After this, you are all done!
+
+
+
+_**Note:** This tutorial implements a front-end locking approach, which is possible to circumvent; a determined actor could tinker with the JavaScript console of their web browser and inspect the code to find a workaround. It is absolutely possible to address this using an approach that is more difficult to circumvent, but that requires a back-end integration, which is more advanced and is outside the scope of this tutorial._

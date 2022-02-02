@@ -35,6 +35,7 @@
 ## For Developers <a href="#developers" id="developers"></a>
 
 * [Overview](developers/unlock-platform.md)
+* [Building token gated applications](developers/building-token-gated-applications.md)
 * [Smart Contracts](developers/smart-contracts/README.md)
   * [Unlock Contract](developers/smart-contracts/unlock-api.md)
   * [Lock Contract](developers/smart-contracts/lock-api/README.md)

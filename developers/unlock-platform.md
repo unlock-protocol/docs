@@ -1,8 +1,13 @@
+---
+description: >-
+  Unlock is a web3 protocol for memberships as NFTs. It is an underlying
+  protocol-level set of web3 legos for building applications that can create
+  utility, access, permissions, and memberships using NF
+---
+
 # Overview
 
-Unlock is a protocol for memberships as NFTs. It is an underlying protocol-level set of web3 legos for building applications that can create utility, access, permissions, and memberships using NFTs.
-
-## Build dApps on top of Unlock Protocol
+## Build on top of Unlock Protocol
 
 Using Unlock, you can build applications that have the ability to handle all aspects of using NFTs for memberships and access.
 
@@ -46,7 +51,7 @@ Accept credit card payments for NFT memberships. Even though we believe that mos
 
 ## The protocol (smart contracts)
 
-The most central piece of what Unlock is building is the "protocol" for memberships. The protocol defines what locks and keys are, how to deploy the former or purchase the latter. A membership is represented by keys (NFT) to a given lock (smart contract). The protocol is implemented in the form of smart contracts. It is visible in our [open source code](https://github.com/unlock-protocol/unlock) under `/smart-contracts`.
+The most central piece of what Unlock is building is the "protocol" for memberships. The protocol defines what locks and keys are, how to deploy the former or purchase the latter. A membership is represented by keys (NFT) to a given lock (smart contract). The protocol is implemented in the form of smart contracts. It is visible in our [open-source code](https://github.com/unlock-protocol/unlock) under `/smart-contracts`.
 
 Applications can be built on top of Unlock with any custom front end to create utility, access, and memberships using NFTs.
 
@@ -56,15 +61,15 @@ Although, at its core, Unlock is an underlying protocol that any custom applicat
 
 ### The Dashboard
 
-The [dashboard](https://app.unlock-protocol.com) is to a tool for _creators and consumers_. For creators it provides a way to deploy or update locks, view key owners, as well as withdraw funds from the locks. For consumers, it provides a "keychain" which lets them view all of their keys, the related information, as well as sell or cancel them.
+The [dashboard](https://app.unlock-protocol.com) is to a tool for _creators and consumers_. For creators, it provides a way to deploy or update locks, view key owners, as well as withdraw funds from the locks. For consumers, it provides a "keychain" that lets them view all of their keys, the related information, as well as sell or cancel them.
+
+The dashboard also hosts the "checkout" UI ([more](paywall/configuring-checkout.md)) that one can use to easily purchase memberships to locks.
 
 ### The Paywall
 
 The "[paywall](https://paywall.unlock-protocol.com)" is an application that lets creators easily embed locks on their website via JavaScript APIs as well as provide a simple interface for consumers to purchase corresponding keys. Examples of integrations can be actual paywalls (similar to what many publisher websites currently provide), but also things like software licenses (where only certain features are available...) etc...
 
-### Tickets
 
-[Tickets](https://tickets.unlock-protocol.com) is an application that lets event organizers sell tickets to their event in the form of keys to a lock. Organizers can create an event, attendees can purchase keys and, the organizers can then check the validity of these keys at the event itself.
 
 ## A high level Ethereum architecture
 
@@ -94,8 +99,3 @@ Finally, wallets are "wrappers" around private keys that let user sign messages 
 
 Given the popularity of the Ethereum main-net, several side-chains and "layer 2" have emerged. They provide a very similar architecture and can be "connected" to the Ethereum mainnet through "gateways" whose role is to transfer tokens from a network to another.
 
-### Unlock.js
-
-As we've seen above RPC calls are ways to interact with smart contracts. Unlock-js is a wrapper around these RPC calls to provide specific ways to interact with the smart contracts. The code can be found in our code repository under `/unlock-js`.
-
-We also provide several products which are using the paywall infrastructure. For example, you could look at our "donations" product.
