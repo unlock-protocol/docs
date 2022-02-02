@@ -20,7 +20,7 @@ The `onKeyPurchaseHook` allows you to create custom purchase logic, for instance
 It contains 2 main functions 
 
 1. `keyPurchasePrice` which is used to determine the purchase price before issuing a transaction.
-2. `onKeyPurchase` which is called with every time a key is sold
+2. `onKeyPurchase` which is called every time a key is sold
 
 The `ILockKeyPurchaseHook` contract interface describes the parameters of each functions (from, recipient, original price, price paid, etc), so the hook can be properly implemented.
 
