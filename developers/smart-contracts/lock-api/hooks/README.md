@@ -4,7 +4,7 @@ description: The lock contract includes hooks that let developers customize thei
 
 # Hooks
 
-Hooks have been added to stategic places of the Lock contract to allow lock managers to modify behaviour by calling a 3rd party contract.
+Hooks have been added to strategic places of the Lock contract to allow lock managers to modify behaviour by calling a 3rd party contract.
 
 We currently support 4 hooks:
 
@@ -19,12 +19,12 @@ The `onKeyPurchaseHook` allows you to create custom purchase logic, for instance
 
 It contains 2 main functions 
 
-1. `keyPurchasePrice` which is used to determine the purchase price before issueing a transaction.
+1. `keyPurchasePrice` which is used to determine the purchase price before issuing a transaction.
 2. `onKeyPurchase` which is called with every time a key is sold
 
 The `ILockKeyPurchaseHook` contract interface describes the parameters of each functions (from, recipient, original price, price paid, etc), so the hook can be properly implemented.
 
-For instance, you can find out how to implement discount codes or an invite-only using contract extensions we developed in the [Key Purchase Hook doc](developers/smart-contracts/lock-api/hooks/the-key-purchase-hook.md).
+For instance, you can find out how to implement discount codes or invite-only using contract extensions we developed in the [Key Purchase Hook doc](developers/smart-contracts/lock-api/hooks/the-key-purchase-hook.md).
 
 ## OnKeyCancel Hook
 
@@ -63,7 +63,7 @@ interface ILockTokenURIHook
 
 ## OnValidKey Hook
 
-This hook is called every time the (erc721) `balanceOf` method is called. This allows you to override the balance of the actual contract and define if an account owns a valid key  not based using your own logic.
+This hook is called every time the (ERC721) `balanceOf` method is called. This allows you to override the balance of the actual contract and define if an account owns a valid key or not based using your own logic.
 
 That way you could whitelist your own NFT holders or DAO members, and provide them access without having them to register. Just use a connector contract compatible with `ILockValidKeyHook` that checks if the account is allowed or not, and register it as a hook.
 
@@ -98,7 +98,7 @@ function setEventHooks(
 
 Once a hook address is registered, the function at the address will be executed as an additional step to the original logic. 
 
-If you just want to set a single hook, just use the address zero for the others `0x0000000000000000000000000000000000000000`. Additionally, you can de-register any hook anytime by setting is back to 0.
+If you just want to set a single hook, just use the address zero for the others `0x0000000000000000000000000000000000000000`. Additionally, you can de-register any hook anytime by setting it back to 0.
 
 Note that you could create a single contract containing multiple hooks logic, but you will still have to pass the contract address for each hooks you want to register.
 
