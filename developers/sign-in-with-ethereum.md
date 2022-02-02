@@ -6,7 +6,7 @@ description: >-
 
 # Sign-in With Ethereum
 
-In many contexts, your application does not need a full "web3" provider, but just a way to identify the user's address. Unlock offers a flow that allows any application to easily identify the user by requiring them to sign a message. For this, we use a flow that's based on the [EIP 4361](https://eips.ethereum.org/EIPS/eip-4361) and that's inspired with the OpenId Connect and OAuth flows where the user is redirected back to the application once they have authenticated.
+In many contexts, your application does not need a full "web3" provider, but just a way to identify the user's address. Unlock offers a flow that allows any application to easily identify the user by requiring them to sign a message. For this, we use a flow that's based on the [EIP 4361](https://eips.ethereum.org/EIPS/eip-4361) and that's inspired by the OpenId Connect and OAuth flows where the user is redirected back to the application once they have authenticated.
 
 {% hint style="info" %}
 "_Ethereum_" here does not refer to any network in particular but to the type of wallet that can used. Since Polygon, Gnosis Chain or Optimism for example are all using the same wallet, you can (should!) absolutely use the same "Sign In with Ethereum".
