@@ -26,7 +26,7 @@ Once decrypted, the user is prompted to set a new password (and confirm it). We 
 
 ### Security considerations
 
-Unlock accounts should NOT be used for anything but Unlock memberships. We strongly discourage users to use them for anything that's not Unlock related. These accounts, and the associated wallets should only be considered as "identities" and not as ways to hold currencies. As a matter of facts, we never use them to send transactions or even send them funds.
+Unlock accounts should NOT be used for anything but Unlock memberships. We strongly discourage users from using them for anything that's not Unlock related. These accounts, and the associated wallets should only be considered as "identities" and not as ways to hold currencies. As a matter of fact, we never use them to send transactions or even send them funds.
 
 Since they are intended for people who do not have a crypto wallet, they will only ever be granted NFT memberships that were purchased through credit card transactions. It is important to note that in that case, the NFTs are not transferable or cancellable, which means that the accounts that "holds" them is not actually able to make transactions with them.
 
