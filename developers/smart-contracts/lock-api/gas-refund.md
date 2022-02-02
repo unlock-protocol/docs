@@ -2,7 +2,7 @@
 description: A mechanism to refund gas when a key is purchased
 ---
 
-When purchasing a membership, the high gas costs can quickly become prohibitive. In order to address these issues sadly to common on Ethereum mainnet and other chain, we have developed a mechanism for lock owners to refund gas to members purchasing a key.
+When purchasing a membership, the high gas costs can quickly become prohibitive. In order to address these issues that are sadly too common on Ethereum mainnet and other chains, we have developed a mechanism for lock owners to refund gas to members purchasing a key.
 
 ## How it works
 
