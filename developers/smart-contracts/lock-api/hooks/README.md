@@ -22,9 +22,9 @@ It contains 2 main functions
 1. `keyPurchasePrice` which is used to determine the purchase price before issuing a transaction.
 2. `onKeyPurchase` which is called every time a key is sold
 
-The `ILockKeyPurchaseHook` contract interface describes the parameters of each functions (from, recipient, original price, price paid, etc), so the hook can be properly implemented.
+The `ILockKeyPurchaseHook` contract interface describes the parameters of each function (from, recipient, original price, price paid, etc), so the hook can be properly implemented.
 
-For instance, you can find out how to implement discount codes or invite-only using contract extensions we developed in the [Key Purchase Hook doc](developers/smart-contracts/lock-api/hooks/the-key-purchase-hook.md).
+For instance, you can find out how to implement discount codes or invite-only purchases using contract extensions we developed in the [Key Purchase Hook doc](developers/smart-contracts/lock-api/hooks/the-key-purchase-hook.md).
 
 ## OnKeyCancel Hook
 
@@ -44,7 +44,7 @@ interface ILockKeyCancelHook
 
 ## OnTokenUri Hook
 
-This hook is called every time the `tokenURI()` is called. This allows to customize entirely the metadata for each token. 
+This hook is called every time the `tokenURI()` is called. This allows customizization of the metadata for each token. 
 
 Want each key owner to have his/her own profile pic? Change description based on your own NFT? Just hook a contract compatible with the `ILockTokenURIHook`  interface and return your own tokenURI.
 
@@ -100,5 +100,5 @@ Once a hook address is registered, the function at the address will be executed 
 
 If you just want to set a single hook, just use the address zero for the others `0x0000000000000000000000000000000000000000`. Additionally, you can de-register any hook anytime by setting it back to 0.
 
-Note that you could create a single contract containing multiple hooks logic, but you will still have to pass the contract address for each hooks you want to register.
+Note that you could create a single contract containing multiple hooks logic, but you will still have to pass the contract address for each hook you want to register.
 
