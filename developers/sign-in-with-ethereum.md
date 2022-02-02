@@ -12,7 +12,7 @@ In many contexts, your application does not need a full "web3" provider, but jus
 "_Ethereum_" here does not refer to any network in particular but to the type of wallet that can used. Since Polygon, Gnosis Chain or Optimism for example are all using the same wallet, you can (should!) absolutely use the same "Sign In with Ethereum".
 {% endhint %}
 
-By using Unlock's "Sign-In with Ethereum", users who do not have a crypto wallet can also easily create an Unlock Account, as well as sign in to their existing account with their email and passwords.
+By using Unlock's "Sign-In with Ethereum", users who do not have a crypto wallet can also easily create an [Unlock Account](../creators/unlock-accounts.md), as well as sign in to their existing account with their email and passwords.
 
 ### Building a "Sign-in With Ethereum" URL
 
