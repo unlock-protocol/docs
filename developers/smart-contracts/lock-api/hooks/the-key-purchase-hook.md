@@ -1,16 +1,20 @@
 ---
-description: The lock contract includes hooks that let developers customize their behavior.
+description: Examples of using hooks to customize purchasing workflow on your lock.
 ---
-# Hooks
 
-We currently support 2 hooks:
-* `onKeyPurchaseHook`: called when a key purchase is triggered
-* `onKeyCancelHook`: called when a key is canceled.
+# The Key Purchase Hook
 
-Here are 2 examples of usage for the hook: the abolity to require the purchasers of membership to provide a secret code to successfuly purchase memberships.
+The `onKeyPurchaseHook` is called when a purchase is triggered and can be used to customize your purchase workflow.  
+
+There are 2 already available contract extensions that allow to use the `onKeyPurchaseHook` hook, namely: 
+
+1. `CodeRequiredHook`: require a secret code to successfuly purchase memberships
+2. `DiscountCodeHook`: add discount codes to your lock
+
 ## Code Required Hook
 
-The CodeRequiredHook contract allows lock creators to restrict key purchases.
+The `CodeRequiredHook` contract allows lock creators to restrict key purchases.
+
 Simply put, with this feature we can require a secret is known in order to purchase keys. Here are a few use cases this enables:
 
 * Access code
@@ -28,6 +32,7 @@ Simply put, with this feature we can require a secret is known in order to purch
   A whitelist can be created with this feature as well. This allows a trusted operator to confirm which ETH accounts may purchase a key. e.g. maybe you need to check IDs first.
 
   Once approved, the operator shares the signature required to purchase. This allows only that account to purchase and the secret itself can remain secure \(with the operator\).
+
 ### How to
 
 The CodeRequiredHook requires knowing a secret. The secret can be anything \(most commonly a string\) but then it's converted to a private key \(and we have recommendations for that process\).
@@ -40,9 +45,9 @@ When issuing a transaction to purchase, the signature created by the `codeAccoun
 
 ## Discount Codes Hook
 
-We created a contract that allows you to add discount codes to your lock. For example, enter the code `discount50` for 50% off.
+We created the `DiscountCodeHook` contract that allows you to add discount codes to your lock. For example, enter the code `discount50` for 50% off.
 
-The contract is deployed here and may be leveraged by all v7 locks \(i.e. you do not need to deploy your own discount code contract\):
+The contract is deployed here and may be leveraged by all v7+ locks \(i.e. you do not need to deploy your own discount code contract\):
 
 * Mainnet address: [0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c](https://etherscan.io/address/0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c)
 * Rinkeby address: [0x13738ae895f1e35eedf7f3227109567a5ce40eab](https://rinkeby.etherscan.io/address/0x13738ae895f1e35eedf7f3227109567a5ce40eab)
@@ -57,6 +62,7 @@ In order to purchase with a discount applied, we generate a signature with `code
 
 When issuing the purchase transaction, the signature is included in the `bytes _data` field. The lock forwards this information to the discount code contract for confirmation. If the signature is missing or incorrect then the user is charged full price.
 
+
 ### Configuration
 
 There are a couple steps required in order to start offering discount codes on your lock.
@@ -69,14 +75,16 @@ To register, call the following function with the discount code address above:
 
 ```javascript
 function setEventHooks(
-  address _onKeyPurchaseHook,
-  address _onKeyCancelHook
-)
+  address _onKeyPurchaseHook, // the deployed DiscountCodeHook contract address
+  address _onKeyCancelHook, 
+  address _onValidKeyHook,
+  address _onTokenURIHook
+) external
 ```
 
-You can set the `_onKeyCancelHook` to `0x0000000000000000000000000000000000000000` if you don't have a use case for that. Additional you can de-register the hook anytime by setting both params to 0.
-
 The easiest way to do this today is on [Etherscan's Write Contract page](https://etherscan.io/address/0x6E4B1990EBc79040E369Df2Eb8BE16bBB709B0d0#writeContract) \(but replace the address with your lock's address - you can copy this from the [Unlock dashboard](https://app.unlock-protocol.com/dashboard/)\).
+
+You can set the others hooks to  to `0x0000000000000000000000000000000000000000` if you don't have a use case for that. Additional you can de-register the hook anytime by setting both params to 0.
 
 #### Add discount codes
 
@@ -187,7 +195,3 @@ Some of the process described above is our recommendations. The contract itself 
 * How the `codeAccount` itself is generated is flexible, for example including the lock's address in the private key prevents users from discovering that a discount code can also be used on another lock.
 
 If you have a requirement for discount codes which is not addressed here \(e.g. single use codes\), reach out and let's discuss.
-
-
-
-
