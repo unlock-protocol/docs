@@ -44,7 +44,7 @@ interface ILockKeyCancelHook
 
 ## OnTokenUri Hook
 
-This hook is called every time the `tokenURI()` is called. This allows customizization of the metadata for each token. 
+This hook is called every time the `tokenURI()` is called. This allows customization of the metadata for each token. 
 
 Want each key owner to have his/her own profile pic? Change description based on your own NFT? Just hook a contract compatible with the `ILockTokenURIHook`  interface and return your own tokenURI.
 
