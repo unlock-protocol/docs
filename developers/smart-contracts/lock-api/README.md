@@ -232,7 +232,7 @@ function setKeyManagerOf(
 
 ### `setMaxNumberOfKeys`
 
-This function allow any lock manager to change the maximum number of keys a lock can edit.
+This function allows any lock manager to change the maximum number of keys a lock can edit.
 
 ```javascript
 function setMaxNumberOfKeys (
