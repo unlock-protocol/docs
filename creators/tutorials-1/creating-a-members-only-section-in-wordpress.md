@@ -5,15 +5,13 @@ description: >-
   to doing so.
 ---
 
-# Creating a "members-only" section in WordPress
+# Creating a members-only section in WordPress
 
 You may want to have a "members-only" category on your WordPress site that is accessible only to NFT-holders who have an Unlock key. Below is one approach to doing so that was explored as an experiment for [TalesOfRonin.com.](https://ww.talesofronin.cm)
 
 Out of the box, the [Unlock Protocol WordPress plugin](../plugins-and-integrations/wordpress-plugin.md) creates a new type of Gutenberg block that token-gates the content nested inside of that block. These blocks can be used on pages and posts, and are great for applications where you want to lock a portion of the content on a page or post. But what if you want to lock an entire _section_ of a site? What do you do?
 
 In the prototype shown here, we have shown that it is possible to pair the Unlock plugin up with a "permissions" plugin (there are many in the WordPress plugin repository) to achieve this functionality.
-
-\<hr>
 
 On this demo site, notice there is NOT an `Elatora` menu item.
 
