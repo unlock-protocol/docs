@@ -21,7 +21,7 @@ A site visitor who is viewing that site can scroll down to the `JOIN THE CLUB` s
 
 ![Image](https://media.discordapp.net/attachments/925791695642177556/938653101580226630/Screen\_Shot\_2022-02-02\_at\_8.28.39\_PM.png?width=800\&height=401)
 
-Now that i have the NFT and have connected my wallet to the site, there is an `Elatora` menu item. Interesting! This menu item was not visible when I was simply an anonymous visitor to the site. However, now that I have the NFT and have connected my wallet to the site, it appears.
+Now that I have the NFT and have connected my wallet to the site, there is an `Elatora` menu item. Interesting! This menu item was not visible when I was simply an anonymous visitor to the site. However, now that I have the NFT and have connected my wallet to the site, it appears.
 
 ![Image](https://media.discordapp.net/attachments/925791695642177556/938653291158568980/Screen\_Shot\_2022-02-02\_at\_8.28.55\_PM.png?width=800\&height=291)
 
