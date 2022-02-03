@@ -52,49 +52,19 @@ You can call and inspect the Lock contracts directly using the block explorers a
   * v8 [`0x61dbbac624e5a27fb54c6fa1548d8531ef84eb18`](https://etherscan.io/address/0x61dbbac624e5a27fb54c6fa1548d8531ef84eb18#readContract)``
   * v9 [`0x443618dc1094b2a7bfbe768861a1e31ced5b39dc`](https://etherscan.io/address/0x443618dc1094b2a7bfbe768861a1e31ced5b39dc#readContract)``
 * Gnosis Chain (ex-xDAI):
-  * v0&#x20;
-  * v1
-  * v2
-  * v3
-  * v4
-  * v5
-  * v6
-  * v7
-  * v8
-  * v9
+  * v6 TK
+  * v7 TK
+  * v8 TK
+  * v9 TK
 * Polygon (ex-Matic)
-  * v0
-  * v1
-  * v2
-  * v3
-  * v4
-  * v5
-  * v6
-  * v7
-  * v8
-  * v9
+  * v8 [`0x39cdcae0a5ce740581330e689713df92da47e78a`](https://polygonscan.com/address/0x39cdcae0a5ce740581330e689713df92da47e78a#code)``
+  * v9 [`0xfc0FdB39aeA6B599990F050928e97903b10a550d`](https://polygonscan.com/address/0xfc0FdB39aeA6B599990F050928e97903b10a550d#readProxyContract)``
 * Binance Smart Chain:
-  * v0
-  * v1
-  * v2
-  * v3
-  * v4
-  * v5
-  * v6
-  * v7
-  * v8
-  * v9
+  * v8 TK
+  * v9 TK
 * Optimistic Ethereum:
-  * v0
-  * v1
-  * v2
-  * v3
-  * v4
-  * v5
-  * v6
-  * v7
-  * v8
-  * v9
+  * v8 TK
+  * v9 TK
 
 ### Test Networks
 
