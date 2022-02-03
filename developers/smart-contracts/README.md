@@ -52,16 +52,14 @@ You can call and inspect the Lock contracts directly using the block explorers a
   * v8 [`0x61dbbac624e5a27fb54c6fa1548d8531ef84eb18`](https://etherscan.io/address/0x61dbbac624e5a27fb54c6fa1548d8531ef84eb18#readContract)``
   * v9 [`0x443618dc1094b2a7bfbe768861a1e31ced5b39dc`](https://etherscan.io/address/0x443618dc1094b2a7bfbe768861a1e31ced5b39dc#readContract)``
 * Gnosis Chain (ex-xDAI):
-  * v6 TK
-  * v7 TK
-  * v8 TK
+  * v8 [`0xecA45DFEb9523B4ba883e46394b0fe0550869E9C`](https://blockscout.com/xdai/mainnet/address/0xecA45DFEb9523B4ba883e46394b0fe0550869E9C/contracts)``
   * v9 TK
 * Polygon (ex-Matic)
   * v8 [`0x39cdcae0a5ce740581330e689713df92da47e78a`](https://polygonscan.com/address/0x39cdcae0a5ce740581330e689713df92da47e78a#code)``
   * v9 [`0xfc0FdB39aeA6B599990F050928e97903b10a550d`](https://polygonscan.com/address/0xfc0FdB39aeA6B599990F050928e97903b10a550d#readProxyContract)``
 * Binance Smart Chain:
-  * v8 TK
-  * v9 TK
+  * v8 [`0x419195a71d6ae592bb4846266e907b5c1202f9ee`](https://bscscan.com/address/0x419195a71d6ae592bb4846266e907b5c1202f9ee#readContract)``
+  * v9 [`0xa9584e6cbaf88c09e5ede06865211ba28febd077`](https://bscscan.com/address/0xa9584e6cbaf88c09e5ede06865211ba28febd077#code)``
 * Optimistic Ethereum:
   * v8 TK
   * v9 TK
