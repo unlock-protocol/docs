@@ -24,10 +24,6 @@ description: Want to build more custom token-gated experiences? Check these tuto
 
 ### Integrating a lock in existing applications
 
-{% content-ref url="creating-a-members-only-section-in-wordpress.md" %}
-[creating-a-members-only-section-in-wordpress.md](creating-a-members-only-section-in-wordpress.md)
-{% endcontent-ref %}
-
 {% content-ref url="organizing-a-vote-by-members.md" %}
 [organizing-a-vote-by-members.md](organizing-a-vote-by-members.md)
 {% endcontent-ref %}

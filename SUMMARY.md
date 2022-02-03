@@ -25,7 +25,6 @@
   * [Building an Ad Free Experience](creators/tutorials-1/ad-free-experience.md)
   * [Using Unlock for Newsletters](creators/tutorials-1/using-unlock-newsletter.md)
   * [Receiving donations on Github](creators/tutorials-1/receiving-donations-on-github.md)
-  * [Creating a members-only section in WordPress](creators/tutorials-1/creating-a-members-only-section-in-wordpress.md)
   * [How to cancel a user's membership](creators/tutorials-1/how-to-cancel-a-membership.md)
   * [How to create temporary or trial memberships](creators/tutorials-1/how-to-create-temporary-or-trial-memberships.md)
   * [How to make keys non-transferrable](creators/tutorials-1/how-to-make-keys-non-transferrable.md)
