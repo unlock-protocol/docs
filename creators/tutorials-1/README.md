@@ -24,6 +24,10 @@ description: Want to build more custom token-gated experiences? Check these tuto
 
 ### Integrating a lock in existing applications
 
+{% content-ref url="using-an-existing-nft-contract.md" %}
+[using-an-existing-nft-contract.md](using-an-existing-nft-contract.md)
+{% endcontent-ref %}
+
 {% content-ref url="organizing-a-vote-by-members.md" %}
 [organizing-a-vote-by-members.md](organizing-a-vote-by-members.md)
 {% endcontent-ref %}

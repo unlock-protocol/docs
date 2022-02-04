@@ -54,3 +54,26 @@ const address = ethers.utils.verifyMessage(code.d, code.s)
 ```
 
 You can try the Sign-In-With Ethereum flow [on this site for example](https://ouvre-boite.com) (click Sign-In). It is also used in our [WordPress plugin](../creators/plugins-and-integrations/wordpress-plugin.md).
+
+Example of message signed:
+
+```
+ouvre-boite.com wants you to sign in with your Ethereum account:
+0xDD8e2548da5A992A63aE5520C6bC92c37a2Bcc44
+
+URI: https://app.unlock-protocol.com/login
+Version: 1
+Nonce: rokvh2jf
+Issued At: 2022-02-04T18:43:17.178Z
+```
+
+### Security considerations
+
+The signed message includes both a timestamp AND a random nonce that your application should leverage to increase the level of confidence that a user's authentication is both recent and "unique". By parsing the signed message your application can extract the following information:
+
+* `domain` of the application to which the user will be redirected. Your application should ignore any signed message where the host does not match your application.
+* `Nonce` this is a randomly generated sequence of 8 alphanumerical characters. The collision risk is extremely low, which means that your application should refuse any message with a nonce that's previously been recorded
+* `Issued At` : this includes a timestamp in the iso8601 format. Your application should ensure that this timestamps is very recent (within seconds in the vast majority of cases).
+
+Finally, your application may want to take into account the address signed in the message, rather than the actual signer of the message itself as the actual identifier for the account. This is especially useful in the context of smart contract wallets where the signer needs to be an "authorized" signer on the contract. ([See EIP 1271 for more details](https://eips.ethereum.org/EIPS/eip-1271))
+
