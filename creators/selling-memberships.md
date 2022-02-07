@@ -24,7 +24,7 @@ Once a lock gets sold, the balance will be initially held within the smart contr
 
 1. In the Creator Dashboard, if you see a positive balance for a Lock, you can click the circular button to withdraw funds.
 2. By default, the funds are sent to the "beneficiary", which is the address which created the lock, but the beneficiary can be changed to any address by a [lock manager](https://github.com/unlock-protocol/docs/tree/075aaf67dd7225103e8bcaa72856331fa0f43cd7/developers/smart-contracts/lock-api/access-control/README.md). The beneficiary can be a 3rd party address, or even a smart contract, which would then split them between multiple addresses...
-3. Once you click to withdraw funds, there will be a transaction that charges a gas fee. This will begin the transactions to move funds from the smart contract to ythe beneficiary.
+3. Once you click to withdraw funds, there will be a transaction that charges a gas fee. This will begin the transactions to move funds from the smart contract to the beneficiary.
 4. You will see pending transactions on the Creator Dashboard. Once these finish, your funds will be available!
 
 ## Re(selling) memberships
