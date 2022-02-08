@@ -7,7 +7,7 @@ You have questions, the Unlock community has answers! Here are answers to an eve
 * [How to customize the NFT image for keys?](faq.md#how-to-customize-the-nft-image-for-keys)
 * [How do I have unique images or unique rarity data for every individual key to a particular lock?](faq.md#how-do-i-have-unique-images-or-unique-rarity-data-for-every-individual-key-to-a-particular-lock)
 * [How do I share ownership of an Unlock lock?](faq.md#how-to-share-ownership-of-an-unlock-lock)
-*   [How do I keep my Unlock key price stable even though crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
+* [How do I keep my Unlock key price stable even though crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
 
 
 
@@ -46,4 +46,10 @@ Unlock lets you pick the price, but also the currency used by your membership. T
 Alternatively, you can change the price of your lock at any point if you need to maintain relative stability, but make sure you do not choose a highly volatile currency.
 
 Finally, you could also leverage your lock's "hook" capabilities to alter the price of the key, but that is generally considered a lot harder to implement (and would require the help of a developer).
+
+### Why is my lock contract not verified on the block explorer?
+
+All of Unlock's contract are open source and should be visible. Since version 9 (January 2022), the locks are upgradable (by any of their lock managers). Unfortunately that means that block explorers like Etherscan (or equivalent on the respective chains) are not showing them as _verified_ by default. However, verifying them is trivial. From the Dashboard, click on the block explorer icon, then click on the `Contract` tab, then look for the `More Options` button on the right of the screen and select `Is this a Proxy?`. Click `Verify` , `Save` and you should be good!
+
+![](<../.gitbook/assets/Screen Recording 2022-02-08 at 06.40.07 PM.gif>)
 
