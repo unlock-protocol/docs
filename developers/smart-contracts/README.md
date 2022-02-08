@@ -61,8 +61,8 @@ You can call and inspect the Lock contracts directly using the block explorers a
   * v8 [`0x419195a71d6ae592bb4846266e907b5c1202f9ee`](https://bscscan.com/address/0x419195a71d6ae592bb4846266e907b5c1202f9ee#readContract)``
   * v9 [`0xa9584e6cbaf88c09e5ede06865211ba28febd077`](https://bscscan.com/address/0xa9584e6cbaf88c09e5ede06865211ba28febd077#code)``
 * Optimistic Ethereum:
-  * v8 TK
-  * v9 TK
+  * v8 [`0x4064206b0a1f5ba603dd8016ee36141f54506051`](https://optimistic.etherscan.io/address/0x4064206b0a1f5ba603dd8016ee36141f54506051)``
+  * v9 [`0xa9584e6cbaf88c09e5ede06865211ba28febd077`](https://optimistic.etherscan.io/address/0xa9584e6cbaf88c09e5ede06865211ba28febd077#code)``
 
 ### Test Networks
 
