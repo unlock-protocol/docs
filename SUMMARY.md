@@ -5,6 +5,7 @@
 
 ## For Creators <a href="#creators" id="creators"></a>
 
+* [Creators FAQ](creators/faq.md)
 * [Creating a Lock](creators/deploying-lock/README.md)
   * [Using a custom currency](creators/deploying-lock/using-a-custom-currency.md)
 * [Enabling Credit Cards](creators/enabling-credit-cards.md)
@@ -31,7 +32,6 @@
   * [How to make keys non-transferrable](creators/tutorials-1/how-to-make-keys-non-transferrable.md)
   * [How to airdrop memberships](creators/tutorials-1/how-to-airdrop-memberships.md)
   * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
-* [Creators FAQ](creators/faq.md)
 
 ## For Developers <a href="#developers" id="developers"></a>
 
