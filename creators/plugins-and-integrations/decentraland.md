@@ -12,8 +12,6 @@ See example walkthrough here:
 
 {% embed url="https://www.youtube.com/watch?v=oVZi7m-UOtE" %}
 
-{% embed url="https://youtu.be/JC81c_Gvrjc" %}
-
 ## Applications
 
 * Virtual concerts
