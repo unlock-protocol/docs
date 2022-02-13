@@ -9,6 +9,7 @@ You have questions, the Unlock community has answers! Here are answers to an eve
 * [How do I share ownership of an Unlock lock?](faq.md#how-to-share-ownership-of-an-unlock-lock)
 * [How do I keep my Unlock key price stable even though crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
 * [Why is my contract not verified on the block explorer?](faq.md#why-is-my-lock-contract-not-verified-on-the-block-explorer)
+* [Can I use an existing NFT contract?](faq.md#can-i-use-an-existing-nft-contract)
 
 ### How do royalties work with Unlock Protocol?
 
@@ -51,4 +52,8 @@ Finally, you could also leverage your lock's "hook" capabilities to alter the pr
 All of Unlock's contract are open source and should be visible. Since version 9 (January 2022), the locks are upgradable (by any of their lock managers). Unfortunately that means that block explorers like Etherscan (or equivalent on the respective chains) are not showing them as _verified_ by default. However, verifying them is trivial. From the Dashboard, click on the block explorer icon, then click on the `Contract` tab, then look for the `More Options` button on the right of the screen and select `Is this a Proxy?`. Click `Verify` , `Save` and you should be good!
 
 ![](<../.gitbook/assets/Screen Recording 2022-02-08 at 06.40.07 PM.gif>)
+
+### Can I use an existing NFT contract?
+
+Absolutely! Unlock's PublicLock contract (the membership contract) includes a _delegation_ mechanism that would let you point to any other on-chain contract to determine if an address is considered to be a "valid" member. [Check this tutorial for more details](https://docs.unlock-protocol.com/unlock/creators/tutorials-1/using-an-existing-nft-contract).
 
