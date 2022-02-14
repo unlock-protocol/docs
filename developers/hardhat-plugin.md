@@ -90,8 +90,9 @@ yarn hardhat lock:info --lock-address 0xe7cb5e2e538fec1492b66f180fac6d4106991250
 LOCK
   - name: 'Raffle Ronin'
   - address: 0xe7cb5e2e538fec1492b66f180fac6d4106991250
-  - keys: 23 / 115792089237316195423570985008687907853269984665640564039457584007913129639935
-  - owners: 25
+  - price: 0.05 ETH
+  - duration: 82 years, 1 month, 2 weeks, 5 days, 1 hour, 30 minutes
+  - keys: 23 / ∞
   - currency: ETH
   - balance: 0.15
   - symbol: UDT
