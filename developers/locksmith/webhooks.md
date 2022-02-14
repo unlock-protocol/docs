@@ -49,7 +49,7 @@ Check out this example written in typescript for reference on how to handle call
 
 All our available hubs are described below. You can subscribe to any of them following the same steps above.
 
-{% swagger method="post" path="/" baseUrl="https://locksmith-host/api/hooks/4/locks" summary="" %}
+{% swagger method="post" path="/" baseUrl="https://locksmith-host/api/hooks/:network/locks" summary="" %}
 {% swagger-description %}
 `Subscribe to receive updates about newly created locks on the specified network.`
 
