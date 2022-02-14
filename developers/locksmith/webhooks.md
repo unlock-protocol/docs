@@ -74,7 +74,7 @@ Once you make a request here with callback URL specified in the websub w3c spec 
 
 Check out this example written in typescript for reference [https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts](https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts)
 
-Similarly, you can also receive updates keys and more. See all the available hubs below.
+Similarly, you can also receive updates on keys. See all the available hubs below.
 
 {% swagger method="post" path="/:lockAddress/keys" baseUrl="https://locksmith-host/api/hooks/4/locks" summary="" %}
 {% swagger-description %}
