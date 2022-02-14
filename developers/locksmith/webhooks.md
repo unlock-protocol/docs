@@ -51,13 +51,13 @@ All our available hubs are described below. You can subscribe to any of them fol
 
 {% swagger method="post" path="/" baseUrl="https://locksmith-host/api/hooks/:network/locks" summary="" %}
 {% swagger-description %}
-`Subscribe to receive updates about newly created locks on the specified network.`
+`Subscribe to new locks created on the specified network`
 
  
 {% endswagger-description %}
 
 {% swagger-parameter in="body" type="url" required="true" name="hub.topic" %}
-Same as the hub URL - https://locksmith-host/api/hooks/4/locks
+Same as the hub URL - https://locksmith-host/api/hooks/:network/locks
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="hub.callback" type="url" required="true" %}
@@ -109,13 +109,13 @@ Locksmith by default uses sha256 but you can get algorithm by parsing the value 
 
 {% swagger method="post" path="/:lockAddress/keys" baseUrl="https://locksmith-host/api/hooks/4/locks" summary="" %}
 {% swagger-description %}
-`Subscribe to receive updates about newly created locks on the specified network.`
+`Subscribe to new keys created on the specified network`
 
  
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="hub.topic" required="true" type="url" %}
-Same as the hub URL - https://locksmith-host/api/hooks/4/locks/0x24e54.../keys
+Same as the hub URL - https://locksmith-host/api/hooks/:network/locks/:lockAddress/keys
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="hub.callback" type="url" required="true" %}
