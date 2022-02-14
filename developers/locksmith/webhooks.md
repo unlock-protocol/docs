@@ -41,7 +41,7 @@ async function subscribe() {
 }
 ```
 
-Once you make a request here with callback URL specified in the websub w3c spec schema. You will receive an intent verification request on the callback URL. This is an async request which means even if you received a successful response for the subscription request, this doesn't mean you are fully subscribed yet. If the intent confirmation fails, you won't receive updates.&#x20;
+Once you make a request here with callback URL specified in the websub w3c spec schema. You will receive an intent verification request on the callback URL. This is an async request which means even if you received a successful response for the subscription request, you are not fully subscribed until intent confirmation. You won't receive updates if intent confirmation fails for any reason.
 
 The application located at the callback URL will need to echo the response to confirm their intent to subscribe to updates. This is done to prevent spam.
 
