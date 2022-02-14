@@ -54,6 +54,7 @@
   * [Metadata](developers/locksmith/metadata.md)
   * [Authorization Strategy](developers/locksmith/authorization-strategy.md)
   * [Token Metadata API](developers/locksmith/token-metadata-api.md)
+  * [Webhooks](developers/locksmith/webhooks.md)
 * [Tutorials](developers/tutorials/README.md)
   * [Using Subgraphs](developers/tutorials/using-subgraphs.md)
   * [Using Unlock in other contracts](developers/tutorials/using-unlock-in-other-contracts.md)
