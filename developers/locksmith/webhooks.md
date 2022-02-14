@@ -4,15 +4,52 @@ description: Unlock can send real time updates to endpoints.
 
 # Webhooks
 
-Locksmith implements [websub](https://www.w3.org/TR/websub/\)) which allows anyone to receive real time updates from unlock subgraph. It is similar to a webhook system which many developers will be familiar with but with intent verification built in.
+Locksmith implements [websub](https://www.w3.org/TR/websub) which allows anyone to receive real time updates from unlock subgraph. It is similar to a webhook system which many developers will be familiar with but with built-in intent verification.
 
-Currently, we support sending updates on newly created locks and keys to user endpoints. To subscribe, an application will need to send a post request to the hubs located at `/api/hooks/[topic]`. The body needs to match the schema specified in the [websub w3c spec](https://www.w3.org/TR/websub/#x5-1-subscriber-sends-subscription-request).
+Currently, locksmith support sending updates on new locks and keys. To subscribe, an application will need to send a post request to the hubs located at `/api/hooks/[topic]`. The body needs to match the schema specified in the [websub w3c spec](https://www.w3.org/TR/websub/#x5-1-subscriber-sends-subscription-request).
 
-As an example, let's send a subscribe request to receive updates on new locks.
+Let's send a subscribe request to receive updates on new locks.
 
-The endpoint for that would be `/api/hooks/:network/locks`  where network should be the ID of the network you want to receive updates on. That would be 1 for mainnet, 4 for rinkeby, 100 for xdai, and others. We are going to subscribe to new locks on rinkey network so our final endpoint would be `/api/hooks/4/locks`
+1. We need to send a subscribe request to the locks hub located at `/api/hooks/:network/locks`  where network param should be the ID. To receive updates on new locks created on rinkey network, our final endpoint would be `/api/hooks/4/locks`
+2. Make a subscribe request. Here's an example of it in javascript.
 
-{% swagger method="post" path="" baseUrl="https://locksmith-host/api/hooks/4/locks" summary="" %}
+```javascript
+// Subscribe request to receive updates on new Locks
+async function subscribe() {
+  const endpoint = "https://locksmith-host/api/hooks/4/locks"
+  const hubBody = JSON.stringify({
+    hub: {
+      topic: "https://locksmith-host/api/hooks/4/locks",
+      callback: "https://callback-url",
+      secret: "unlock-is-best",
+      mode: "subscribe"
+    }
+  })
+  const result = await fetch(endpoint, {
+    method: "POST",
+    body: hubBody,
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  
+  if(!result.ok) {
+    // Handle the error
+  }
+  const text = await result.text()
+  return text 
+}
+```
+
+Once you make a request here with callback URL specified in the websub w3c spec schema. You will receive an intent verification request on the callback URL. This is an async request which means even if you received a successful response for the subscription request, this doesn't mean you are fully subscribed yet. If the intent confirmation fails, you won't receive updates.&#x20;
+
+The application located at the callback URL will need to echo the response to confirm their intent to subscribe to updates. This is done to prevent spam.
+
+Check out this example written in typescript for reference on how to handle callback intent verification and receive updates [https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts](https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts)
+
+All our available hubs are described below. You can subscribe to any of them following the same steps above.
+
+{% swagger method="post" path="/" baseUrl="https://locksmith-host/api/hooks/4/locks" summary="" %}
 {% swagger-description %}
 `Subscribe to receive updates about newly created locks on the specified network.`
 
@@ -69,12 +106,6 @@ Locksmith by default uses sha256 but you can get algorithm by parsing the value 
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-Once you make a request here with callback URL specified in the websub w3c spec schema. You will receive an intent verification request on the callback url and you will need to echo the response to confirm the subscription. If the details are different from what you requested, please reject the request.&#x20;
-
-Check out this example written in typescript for reference [https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts](https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts)
-
-Similarly, you can also receive updates on keys. See all the available hubs below.
 
 {% swagger method="post" path="/:lockAddress/keys" baseUrl="https://locksmith-host/api/hooks/4/locks" summary="" %}
 {% swagger-description %}
