@@ -10,7 +10,7 @@ Swordy Bot allows you to give access to Discord private channels by assigning a 
 
 1. **Install Swordy Bot:** Add the bot to your server at [swordybot.com](http://swordybot.com)
 2. **Create and Add Role:** Next you need to create a role that Swordy Bot can assign to Lock Members and permission a channel by adding that role to it.
-3. **Add Lock to Server:** Add the lock and role parameters to your channel via the !add-lock command. Below the syntax (omit the <> brackets but ensure to use " " on the role name) and an example command.
+3. **Add Lock to Server:** Add the lock and role parameters to your channel via the !add-lock command. Below the syntax (omit the `<>` brackets but ensure to use " " on the role name) and an example command.
 
 ```
 !add-lock <chain ID> <contract address> <required balance> <"role name"> <purchase url (optional)>
