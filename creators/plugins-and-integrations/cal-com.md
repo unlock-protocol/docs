@@ -65,7 +65,7 @@ Other person has to hover the event for scheduling a call, need to click on veri
 
 ![](https://ipfs.io/ipfs/bafybeihlbtun2uhxoo7mflvwyj6feeb5onk3pie36arwwohgpdmty355ym)
 
-If they do not own the token , they got a notification popup
+If they do not own the token , they get a notification popup
 
 <br/>
 <br/>
