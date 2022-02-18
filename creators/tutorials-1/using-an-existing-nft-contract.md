@@ -10,12 +10,12 @@ Locks are membership contracts that can "mint" their own NFT (ERC721) as members
 
 We have deployed these hook contracts on each of the networks that we currently support:
 
-* Rinkeby: [`0x910F56Fb797D9c7a978a08e73D7280e67eb81372`](https://rinkeby.etherscan.io/address/0x910F56Fb797D9c7a978a08e73D7280e67eb81372)\`\`
-* Gnosis Chain: [`0xE4c2f9281ec03a1956c3756C66E73f22233323D3`](https://blockscout.com/xdai/mainnet/address/0xE4c2f9281ec03a1956c3756C66E73f22233323D3/contracts)\`\`
-* Polygon: [`0xf705b2dd649bbcb9418d08c1ff508a983f923516`](https://polygonscan.com/address/0xf705b2dd649bbcb9418d08c1ff508a983f923516)\`\`
-* Mainnet: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE#code)\`\`
-* Optimism: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://optimistic.etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE)\`\`
-* BSC: [`0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2`](https://bscscan.com/address/0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2)\`\`
+* Rinkeby: [`0x910F56Fb797D9c7a978a08e73D7280e67eb81372`](https://rinkeby.etherscan.io/address/0x910F56Fb797D9c7a978a08e73D7280e67eb81372)
+* Gnosis Chain: [`0xE4c2f9281ec03a1956c3756C66E73f22233323D3`](https://blockscout.com/xdai/mainnet/address/0xE4c2f9281ec03a1956c3756C66E73f22233323D3/contracts)
+* Polygon: [`0xf705b2dd649bbcb9418d08c1ff508a983f923516`](https://polygonscan.com/address/0xf705b2dd649bbcb9418d08c1ff508a983f923516)
+* Mainnet: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE#code)
+* Optimism: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://optimistic.etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE)
+* BSC: [`0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2`](https://bscscan.com/address/0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2)
 
 Note: the Lock contract and the pre-existing ERC721 contract _need_ to be on the same network...
 
