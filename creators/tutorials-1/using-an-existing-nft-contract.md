@@ -10,14 +10,14 @@ Locks are membership contracts that can "mint" their own NFT (ERC721) as members
 
 We have deployed these hook contracts on each of the networks that we currently support:
 
-* Rinkeby: [`0x910F56Fb797D9c7a978a08e73D7280e67eb81372`](https://rinkeby.etherscan.io/address/0x910F56Fb797D9c7a978a08e73D7280e67eb81372)``
-* Gnosis Chain: [`0xE4c2f9281ec03a1956c3756C66E73f22233323D3`](https://blockscout.com/xdai/mainnet/address/0xE4c2f9281ec03a1956c3756C66E73f22233323D3/contracts)``
-* Polygon: [`0xf705b2dd649bbcb9418d08c1ff508a983f923516`](https://polygonscan.com/address/0xf705b2dd649bbcb9418d08c1ff508a983f923516)``
-* Mainnet: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE#code)``
-* Optimism: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://optimistic.etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE)``
-* BSC: [`0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2`](https://bscscan.com/address/0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2)``
+* Rinkeby: [`0x910F56Fb797D9c7a978a08e73D7280e67eb81372`](https://rinkeby.etherscan.io/address/0x910F56Fb797D9c7a978a08e73D7280e67eb81372)\`\`
+* Gnosis Chain: [`0xE4c2f9281ec03a1956c3756C66E73f22233323D3`](https://blockscout.com/xdai/mainnet/address/0xE4c2f9281ec03a1956c3756C66E73f22233323D3/contracts)\`\`
+* Polygon: [`0xf705b2dd649bbcb9418d08c1ff508a983f923516`](https://polygonscan.com/address/0xf705b2dd649bbcb9418d08c1ff508a983f923516)\`\`
+* Mainnet: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE#code)\`\`
+* Optimism: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://optimistic.etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE)\`\`
+* BSC: [`0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2`](https://bscscan.com/address/0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2)\`\`
 
-Note: the Lock contract and the pre-existing ERC721 contract _need_ to be on the same network...&#x20;
+Note: the Lock contract and the pre-existing ERC721 contract _need_ to be on the same network...
 
 ### What happens exactly
 
@@ -29,7 +29,7 @@ However, we also added a _**hook**_ to that the `hasValidKey` method so that a 3
 
 The first step is to register your lock on the hook by mapping it to the existing NFT contract.
 
-Using the block explorer (linked from the contract addresses above) for the mapping contract, click on the `Contract` and then the `Write Contract`  buttons.
+Using the block explorer (linked from the contract addresses above) for the mapping contract, click on the `Contract` and then the `Write Contract` buttons.
 
 ![](<../../.gitbook/assets/image (30).png>)
 
@@ -48,17 +48,12 @@ Then, look for the `SetEvenHooks` function:
 
 ![](<../../.gitbook/assets/image (29).png>)
 
-Hooks are 3rd party contract that can be called when your lock itself is called. Here we are interested in changing the behavior of the `validKey` function, so you will enter the address of the hook contract for your network (see list above!) in the `_onValidKeyHook` field. Make sure you add `0x0000000000000000000000000000000000000000` in all the other fields to leave them unset.&#x20;
+Hooks are 3rd party contract that can be called when your lock itself is called. Here we are interested in changing the behavior of the `validKey` function, so you will enter the address of the hook contract for your network (see list above!) in the `_onValidKeyHook` field. Make sure you add `0x0000000000000000000000000000000000000000` in all the other fields to leave them unset.
 
 Click on `Write`, confirm the transaction in your wallet and you should be all set!
 
 ### Going further
 
-Here you are hooking a special "hook" contract that we created to match existing ERC721 contracts, but you could actually create your own custom hook for a dedicated contract! You could for example check that an URL owns a specific balance for an ERC20 token, or even create a hook where every address is considered to be a valid member on special days... etc.&#x20;
+Here you are hooking a special "hook" contract that we created to match existing ERC721 contracts, but you could actually create your own custom hook for a dedicated contract! You could for example check that an URL owns a specific balance for an ERC20 token, or even create a hook where every address is considered to be a valid member on special days... etc.
 
-Check our [Developer Docs on the hook for more details](../../developers/smart-contracts/lock-api/hooks.md)!&#x20;
-
-
-
-
-
+Check our Developer Docs on the hook for more details!
