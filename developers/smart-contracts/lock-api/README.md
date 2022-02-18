@@ -30,7 +30,7 @@ function initialize(
 
 NB: To create non-expiring memberships, just set the `_expirationDuration` to 0.
 
-Once minted, the address deploying it becomes its first Lock manaber. The Unlock contract also keeps track of each locks' address.
+Once minted, the address deploying it becomes its first Lock manager. The Unlock contract also keeps track of each locks' address.
 
 ### `purchase`
 
