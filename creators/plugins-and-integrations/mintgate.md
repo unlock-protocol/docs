@@ -44,9 +44,9 @@ Paste the Youtube link that you would like to gate and add a title.
 
 ![](../../.gitbook/assets/image9.png)
 
-Select the blockchain that your Unlock key was created on (MintGate currently supports redirects Unlock paywall links for locks on Ethereum, xDai, and Polygon), and choose **Unlock Protocol Lock**. Add the address associated with your Lock into the contract address field.&#x20;
+Select the blockchain that your Unlock key was created on (MintGate currently supports redirects Unlock paywall links for locks on Ethereum, xDai, and Polygon), and choose **Unlock Protocol Lock**. Add the address associated with your Lock into the contract address field.
 
-![](<../../.gitbook/assets/image (26).png>)
+![](../../.gitbook/assets/mintgate-token-details.png)
 
 If you’d like, you can also add other Unlock Keys or other non-Unlock Keys that can give access to this same link as well by pressing “add token”.
 
@@ -56,7 +56,7 @@ When users click on this link, they are asked to connect their wallet. If they h
 
 If they do not have the right key, they get this message:
 
-![](../../.gitbook/assets/image2.png)
+![](../../.gitbook/assets/mintgate-access-denied.png)
 
 If they decide to buy the key, they can click on the Buy Key on Unlock button where they will be redirected to the Unlock paywall.
 

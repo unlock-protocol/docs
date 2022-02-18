@@ -10,7 +10,7 @@ The contract for any lock can be interfaced with directly using Etherscan (or si
 
 First, click on the block explorer link for your lock contract. If your lock is on Ethereum, this will take you to Etherscan. If your lock is on Polygon, this will take you to Polygonscan... etc.
 
-![](<../../.gitbook/assets/Screen Shot 2021-12-06 at 2.43.55 PM (2).png>)
+![](../../.gitbook/assets/dashboard-etherscan-link.png)
 
 Once there, click on "Contract". Then, click on "Write Contract" as you will change its settings. After that, press the "Connect to Web3" button to connect your wallet. This interface allows any "Lock Manager" to update elements of the lock they manage. If your wallet created the lock on the Unlock Creator Dashboard, this will be you.
 
