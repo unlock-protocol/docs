@@ -14,11 +14,11 @@ First, click on the block explorer link for your lock contract. If your lock is 
 
 Once there, click on "Contract". Then, click on "Write Contract" as you will change its settings. After that, press the "Connect to Web3" button to connect your wallet. This interface allows any "Lock Manager" to update elements of the lock they manage. If your wallet created the lock on the Unlock Creator Dashboard, this will be you.
 
-![](<../../.gitbook/assets/Screen Shot 2021-12-06 at 2.43.01 PM (1).png>)
+![](<../../.gitbook/assets/etherscan-connect-wallet (1).png>)
 
 In the block explorer, you'll find "`expireAndRefundFor`". The "`_keyOwner (address)"` field is where you enter the wallet address of the person with the key/ membership you would like to make expire. The `amount` field is the amount of the refund, based on the currency it is priced in. By inputting 0, there will be no refund.
 
-![](<../../.gitbook/assets/Screen Shot 2021-12-17 at 10.54.01 AM.png>)
+![](../../.gitbook/assets/etherscan-expire-key.png)
 
 By updating this field, the key owner will still technically have the NFT, but it will be expired, thus ending the membership.
 

@@ -13,17 +13,17 @@ You have questions, the Unlock community has answers! Here are answers to an eve
 
 ### How do royalties work with Unlock Protocol?
 
-Resale royalties are usually specified at the collection level through the platforms like OpenSea where the resale might be done (e.g. [https://support.opensea.io/hc/en-us/articles/1500009575482-How-do-royalties-work-on-OpenSea-](https://support.opensea.io/hc/en-us/articles/1500009575482-How-do-royalties-work-on-OpenSea-)). Since the memberships are ERC721s, they automatically show up on OpenSea and other marketplace platforms pretty much as soon as they are minted (e.g. [https://opensea.io/collection/eth-portland-mintgate-x-unlock](https://opensea.io/collection/eth-portland-mintgate-x-unlock)).&#x20;
+Resale royalties are usually specified at the collection level through the platforms like OpenSea where the resale might be done (e.g. [https://support.opensea.io/hc/en-us/articles/1500009575482-How-do-royalties-work-on-OpenSea-](https://support.opensea.io/hc/en-us/articles/1500009575482-How-do-royalties-work-on-OpenSea-)). Since the memberships are ERC721s, they automatically show up on OpenSea and other marketplace platforms pretty much as soon as they are minted (e.g. [https://opensea.io/collection/eth-portland-mintgate-x-unlock](https://opensea.io/collection/eth-portland-mintgate-x-unlock)).
 
 You'll probably need to reach out to OpenSea to get royalty editing turned on for your collection, as noted in the [Handling Common Issues section of this article](https://medium.com/opensea/how-to-create-your-own-marketplace-on-opensea-in-three-minutes-or-less-12373ca5818a). The article notes:
 
-_"By default, the storefront editor page (_[_`https://opensea.io/category/<CONTRACT_NAME>/edit`_](https://opensea.io/category/%3CCONTRACT\_NAME%3E/edit)_) is accessible to the contract’s_ [_`Ownable`_](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/0dded493a03623c93845c2d58634c229862ab54a/contracts/ownership/Ownable.sol#L22-L27) __ [_owner_](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/0dded493a03623c93845c2d58634c229862ab54a/contracts/ownership/Ownable.sol#L22-L27)_. If your contract doesn’t implement `Ownable`, or if it does but the owner address is not accessible, or if it’s just not working, \[OpenSea] can fix that manually. Send an email to_ [_support@opensea.io_](mailto:support@opensea.io) _introducing yourself, providing the contract address, and providing the address that you’d like authorized to edit the storefront. OpenSea will confirm your ownership, then make the authorization."_
+_"By default, the storefront editor page (_[_`https://opensea.io/category/<CONTRACT_NAME>/edit`_](https://opensea.io/category/%3CCONTRACT\_NAME%3E/edit)_) is accessible to the contract’s_ [_`Ownable`_](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/0dded493a03623c93845c2d58634c229862ab54a/contracts/ownership/Ownable.sol#L22-L27) \_\_ [_owner_](https://github.com/OpenZeppelin/openzeppelin-solidity/blob/0dded493a03623c93845c2d58634c229862ab54a/contracts/ownership/Ownable.sol#L22-L27)_. If your contract doesn’t implement `Ownable`, or if it does but the owner address is not accessible, or if it’s just not working, \[OpenSea] can fix that manually. Send an email to_ [_support@opensea.io_](mailto:support@opensea.io) _introducing yourself, providing the contract address, and providing the address that you’d like authorized to edit the storefront. OpenSea will confirm your ownership, then make the authorization."_
 
 **Note:** There is a great conversation with Unlock community member @littlefortunes in the Unlock Discord where she shares her experiences with [setting up royalties and NFT collection information on OpenSea](https://discord.com/channels/462280183425138719/835883502297284628/934784500301451264).
 
 ### **How do I set up recurring payments or automatic renewals?** <a href="#how-do-i-set-up-recurring-payments-or-automatic-renewals" id="how-do-i-set-up-recurring-payments-or-automatic-renewals"></a>
 
-Recurring payments and automatic renewals in the crypto space are a thorny challenge, as they imply the pre-approval of future transactions to a crypto wallet. At the current time, members will need to manually renew after their key expires.&#x20;
+Recurring payments and automatic renewals in the crypto space are a thorny challenge, as they imply the pre-approval of future transactions to a crypto wallet. At the current time, members will need to manually renew after their key expires.
 
 That said, this is an area of significant interest to the Unlock development team and community and we are actively exploring options to handle the complexity of automatic renewals. We hope to implement this in the near future.
 
@@ -51,9 +51,8 @@ Finally, you could also leverage your lock's "hook" capabilities to alter the pr
 
 All of Unlock's contract are open source and should be visible. Since version 9 (January 2022), the locks are upgradable (by any of their lock managers). Unfortunately that means that block explorers like Etherscan (or equivalent on the respective chains) are not showing them as _verified_ by default. However, verifying them is trivial. From the Dashboard, click on the block explorer icon, then click on the `Contract` tab, then look for the `More Options` button on the right of the screen and select `Is this a Proxy?`. Click `Verify` , `Save` and you should be good!
 
-![](<../.gitbook/assets/Screen Recording 2022-02-08 at 06.40.07 PM.gif>)
+![](../.gitbook/assets/using-etherscan.gif)
 
 ### Can I use an existing NFT contract?
 
 Absolutely! Unlock's PublicLock contract (the membership contract) includes a _delegation_ mechanism that would let you point to any other on-chain contract to determine if an address is considered to be a "valid" member. [Check this tutorial for more details](https://docs.unlock-protocol.com/unlock/creators/tutorials-1/using-an-existing-nft-contract).
-

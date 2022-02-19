@@ -8,13 +8,13 @@ First, click on the block explorer link for your lock contract. If your lock is 
 
 Once there, click on "Contract". Then, click on "Write Contract" as you will change its settings. After that, press the "Connect to Web3" button to connect your wallet. This interface allows any "Lock Manager" to update elements of the lock they manage. If your wallet created the lock on the Unlock Creator Dashboard, this will be you.
 
-![](<../../.gitbook/assets/Screen Shot 2021-12-06 at 2.43.01 PM (1).png>)
+![](<../../.gitbook/assets/etherscan-connect-wallet (1).png>)
 
 In the block explorer, you'll find "`updateTransferFee`". The transfer fee is the amount of time taken from the membership when it gets transferred. If you set the transfer fee of 100%, this will make it so that keys can't be transferred because they would immediately expire.
 
 The inputs are in basis points, where each number = 1/100th of a percent. Therefore, to set the transfer fee at 100%, input 10000 into this field and click "Write".
 
-![](<../../.gitbook/assets/Screen Shot 2021-12-06 at 2.42.32 PM (1).png>)
+![](../../.gitbook/assets/etherscan-update-transfer-fee.png)
 
 By updating this field, all of the keys that are part of the lock contract will become non-transferrable. If you set a different value, for example, 5000 (or 50%), transfers will still be possible, but the recipient would only receive a membership valid for half of the time that it was before the transfer.
 

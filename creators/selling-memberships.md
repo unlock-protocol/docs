@@ -12,7 +12,7 @@ There are multiple ways to sell memberships, and some of the integrations built 
 
 Our dashboard offers a "purchase" URL that can easily be shared.
 
-![The Purchase URL is visible on the dashboard](<../.gitbook/assets/image (28) (2) (2) (2) (2) (2).png>)
+![The Purchase URL is visible on the dashboard](<../.gitbook/assets/purchase-url (2).png>)
 
 You can set a custom redirect URL to which the URL is redirected when they have unlocked the membership.
 
