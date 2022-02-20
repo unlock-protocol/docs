@@ -14,7 +14,7 @@ By default, Unlock provides a generated image for each lock, which looks like th
 
 However, with Unlock you can easily customize this image. For this, in the dashboard, just click on your lock's icon:
 
-![When hovered, you can click the camera to customize the image](<../.gitbook/assets/image (25).png>)
+![When hovered, you can click the camera to customize the image](../.gitbook/assets/image-lock-dashboard.png)
 
 From there, you can upload an image (1MB maximum), or select an external URL. We also recommend using a square of at least 300x300 pixels.
 
@@ -28,9 +28,9 @@ To customize each memberships' icon, you must use an external URL. Indeed, the i
 
 For example:
 
-* The lock at the address `0x979B341B7C8863A236702E577dc8286Ca66423c0` on [Rinkeby](https://rinkeby.etherscan.io/address/0x979B341B7C8863A236702E577dc8286Ca66423c0) has [this URL](https://locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon) :`https://locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`
-* The NFT with id `1` (first membership) has [this metadata URI](https://rinkeby.locksmith.unlock-protocol.com/api/key/0x979b341b7c8863a236702e577dc8286ca66423c0/1) :`https://locksmith.unlock-protocol.com/api/key/4/0x979b341b7c8863a236702e577dc8286ca66423c0/1`
-* And when inspecting its metadata, the image address is:`http://locksmith.unlock-protocol.com/lock/4/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`**`?id=1`**
+- The lock at the address `0x979B341B7C8863A236702E577dc8286Ca66423c0` on [Rinkeby](https://rinkeby.etherscan.io/address/0x979B341B7C8863A236702E577dc8286Ca66423c0) has [this URL](https://locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon) :`https://locksmith.unlock-protocol.com/lock/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`
+- The NFT with id `1` (first membership) has [this metadata URI](https://rinkeby.locksmith.unlock-protocol.com/api/key/0x979b341b7c8863a236702e577dc8286ca66423c0/1) :`https://locksmith.unlock-protocol.com/api/key/4/0x979b341b7c8863a236702e577dc8286ca66423c0/1`
+- And when inspecting its metadata, the image address is:`http://locksmith.unlock-protocol.com/lock/4/0x979B341B7C8863A236702E577dc8286Ca66423c0/icon`**`?id=1`**
 
 ## Advanced metadata customization
 
