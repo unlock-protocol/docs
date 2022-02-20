@@ -18,7 +18,7 @@ However, with Unlock you can easily customize this image. For this, in the dashb
 
 From there, you can upload an image (1MB maximum), or select an external URL. We also recommend using a square of at least 300x300 pixels.
 
-![](<../.gitbook/assets/image (23).png>)
+![](../.gitbook/assets/image23.png)
 
 If you select an external URL, we will hot-link to it, which means that you will need to make sure this image will remain available.
 

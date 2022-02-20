@@ -15,27 +15,27 @@ Locks are smart contracts on an Ethereum compatible blockchain. This provides cr
 
 When creating a lock, the creator can select the following attributes:
 
-* The name of the lock (easier to identify it than its Ethereum address)
-* The duration of each key (how long they are valid for)
-* The price consumers need to pay to get a key, including its currency
-* How many keys at most can be sold
+- The name of the lock (easier to identify it than its Ethereum address)
+- The duration of each key (how long they are valid for)
+- The price consumers need to pay to get a key, including its currency
+- How many keys at most can be sold
 
 Once deployed the lock will have its own address and is **fully owned** by the creator (no one, including Unlock Inc. can change or remove it). The initial creator of the lock can also add other "lock managers" who are able to co-manage the lock.
 
 Once deployed, the dashboard will show you details about your lock:
 
-![](<../../.gitbook/assets/image (11).png>)
+![](../../.gitbook/assets/image11.png)
 
 The logo of your lock can be customized. This logo is the one [used for the NFT](../customizing-the-nft.md) that your users will purchase when they get a membership.
 
 You will see the name (_First Euro lock_ for this example), its address (_0x09159A5..._ here), its duration (1 day), the number of existing memberships and the maximum amount that the lock can grant (_0/∞_), the price (_10 EURS_) and the current balance on the lock (_0 EURS_ since none has been sold). The icon bar lets you do the following:
 
-* [Enable credit card payments](../enabling-credit-cards.md)
-* Withdraw funds (once memberships have been sold!)
-* See a demo of your lock on a _fake_ paywall-ed site
-* View the list of members,
-* [Easily integrate your lock in existing applications](../plugins-and-integrations/)
-* Inspect your lock using a _block explorer (see below)_
+- [Enable credit card payments](../enabling-credit-cards.md)
+- Withdraw funds (once memberships have been sold!)
+- See a demo of your lock on a _fake_ paywall-ed site
+- View the list of members,
+- [Easily integrate your lock in existing applications](../plugins-and-integrations/)
+- Inspect your lock using a _block explorer (see below)_
 
 The lock's behavior can also be customized even further. For example, you can easily [disable transfers](../tutorials-1/how-to-make-keys-non-transferrable.md), or [airdrop membership NFTs to anyone](../tutorials-1/how-to-airdrop-memberships.md).
 
