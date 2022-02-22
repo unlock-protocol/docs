@@ -4,54 +4,17 @@ description: Unlock can send real time updates to endpoints.
 
 # Webhooks
 
-Locksmith implements [websub](https://www.w3.org/TR/websub) which allows anyone to receive real time updates from unlock subgraph. It is similar to a webhook system which many developers will be familiar with but with built-in intent verification.
+Locksmith implements [Websub](https://www.w3.org/TR/websub) which allows anyone to receive real time updates from the [Unlock subgraphs](../tutorials/using-subgraphs.md). It is a _webhook_ system which many developers will be familiar with with built-in intent verification.
 
-Currently, locksmith support sending updates on new locks and keys. To subscribe, an application will need to send a post request to the hubs located at `/api/hooks/[topic]`. The body needs to match the schema specified in the [websub w3c spec](https://www.w3.org/TR/websub/#x5-1-subscriber-sends-subscription-request).
+Currently, locksmith support sending updates on new locks and keys. To subscribe, an application will need to send a post request to the hubs located at `/api/hooks/[topic]`. The body needs to match the schema specified in the [Websub w3c spec](https://www.w3.org/TR/websub/#x5-1-subscriber-sends-subscription-request).
 
-Let's send a subscribe request to receive updates on new locks.
+### Topics
 
-1. We need to send a subscribe request to the locks hub located at `/api/hooks/:network/locks` where network param should be the ID. To receive updates on new locks created on rinkey network, our final endpoint would be `/api/hooks/4/locks`
-2. Make a subscribe request. Here's an example of it in javascript.
+Our implementation uses the same addresses for topics and their hub.
 
-```javascript
-// Subscribe request to receive updates on new Locks
-async function subscribe() {
-  const endpoint = "https://locksmith-host/api/hooks/4/locks"
-  const hubBody = JSON.stringify({
-    hub: {
-      topic: "https://locksmith-host/api/hooks/4/locks",
-      callback: "https://callback-url",
-      secret: "unlock-is-best",
-      mode: "subscribe"
-    }
-  })
-  const result = await fetch(endpoint, {
-    method: "POST",
-    body: hubBody,
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-  
-  if(!result.ok) {
-    // Handle the error
-  }
-  const text = await result.text()
-  return text 
-}
-```
-
-Once you make a request here with callback URL specified in the websub w3c spec schema. You will receive an intent verification request on the callback URL. This is an async request which means even if you received a successful response for the subscription request, you are not fully subscribed until intent confirmation. You won't receive updates if intent confirmation fails for any reason.
-
-The application located at the callback URL will need to echo the response to confirm their intent to subscribe to updates. This is done to prevent spam.
-
-Check out this example written in typescript for reference on how to handle callback intent verification and receive updates [https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts](https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts)
-
-All our available hubs are described below. You can subscribe to any of them following the same steps above.
-
-{% swagger method="post" path="/" baseUrl="https://locksmith-host/api/hooks/:network/locks" summary="" %}
+{% swagger method="post" path="/" baseUrl="https://locksmith.unlock-protocol.com/api/hooks/:network/locks" summary="" %}
 {% swagger-description %}
-`Subscribe to new locks created on the specified network`
+Subscribe to new locks created on the specified network
 {% endswagger-description %}
 
 {% swagger-parameter in="body" type="url" required="true" name="hub.topic" %}
@@ -72,6 +35,10 @@ This is used for adding signature in the header with response for verification.
 Locksmith by default uses sha256 but you can get algorithm by parsing the value from header x-hub-signature
 {% endswagger-parameter %}
 
+{% swagger-parameter in="path" name="network" type="number" required="true" %}
+Network id for which you want to receive notifications
+{% endswagger-parameter %}
+
 {% swagger-response status="202: Accepted" description="Accepted" %}
 ```javascript
 {
@@ -105,13 +72,17 @@ Locksmith by default uses sha256 but you can get algorithm by parsing the value 
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/:lockAddress/keys" baseUrl="https://locksmith-host/api/hooks/4/locks" summary="" %}
+{% swagger method="post" path="/:lockAddress/keys" baseUrl="https://locksmith.unlock-protocol.com/api/hooks" summary="New key purchased" %}
 {% swagger-description %}
-`Subscribe to new keys created on the specific lock address.`
+Subscribe to new keys created on the specific lock address.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="hub.topic" required="true" type="url" %}
-Same as the hub URL - https://locksmith-host/api/hooks/:network/locks/:lockAddress/keys
+Same as the hub URL: 
+
+[https://locksmith.unlock-protocol.com/api/hooks/:network/locks](https://locksmith.unlock-protocol.com/api/hooks/:network/locks)
+
+/:lockAddress/keys 
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="hub.callback" type="url" required="true" %}
@@ -128,7 +99,15 @@ This is used for adding signature in the header with response for verification.
 Locksmith by default uses sha256 but you can get algorithm by parsing the value from header x-hub-signature
 {% endswagger-parameter %}
 
-{% swagger-response status="202: Accepted" description="Accepted" %}
+{% swagger-parameter in="path" name="network" required="true" type="number" %}
+Network id for which you want to receive notifications
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="lockAddress" type="string" required="true" %}
+Address of the lock for which you want to receive notifications
+{% endswagger-parameter %}
+
+{% swagger-response status="202: Accepted" description="Accepted. Make sure your endpoint handles verification of intent." %}
 ```javascript
 {
     // Response
@@ -161,62 +140,43 @@ Locksmith by default uses sha256 but you can get algorithm by parsing the value 
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="" baseUrl="https://locksmith-host/api/hooks/:network/keys/" summary="" %}
-{% swagger-description %}
-`Subscribe to new keys created on the specified network`
-{% endswagger-description %}
+### Example
 
-{% swagger-parameter in="body" name="hub.topic" type="url" required="true" %}
-Same as the hub URL - 
+Let's send a subscribe request to receive updates on new locks.
 
-[https://locksmith-host/api/hooks/:network/keys/](https://locksmith-host/api/hooks/:network/keys/)
+1. We need to send a subscribe request to the hub located at `/api/hooks/:network/locks` where network param should be the ID. For example, to receive updates on new locks created on rinkeby network, the endpoint would be `/api/hooks/4/locks`
+2. Make a subscribe request. Here's an example of it in javascript.
 
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="hub.callback" type="url" required="true" %}
-The callback URL where you will receive the new keys data.
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" required="true" name="hub.mode" type="string" %}
-subscribe or unsubscribe
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="hub.secret" type="string" %}
-This is used for adding signature in the header with response for verification.
-
-Locksmith by default uses sha256 but you can get algorithm by parsing the value from header x-hub-signature
-{% endswagger-parameter %}
-
-{% swagger-response status="202: Accepted" description="" %}
 ```javascript
-{
-    // Response
+// Subscribe request to receive updates on new Locks
+async function subscribe() {
+  const endpoint = "https://locksmith.unlock-protocol.com/api/hooks/4/locks"
+  const hubBody = JSON.stringify({
+    hub: {
+      topic: "https://locksmith-host/api/hooks/4/locks",
+      callback: "https://your-webhook-url/",
+      secret: "unlock-is-best",
+      mode: "subscribe"
+    }
+  })
+  const result = await fetch(endpoint, {
+    method: "POST",
+    body: hubBody,
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  
+  if(!result.ok) {
+    // Handle the error
+  }
+  const text = await result.text()
+  return text 
 }
 ```
-{% endswagger-response %}
 
-{% swagger-response status="404: Not Found" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
+Once you make a request here with callback URL specified in the Websub W3C specification schema. You will receive an [_intent verification_ request](https://www.w3.org/TR/websub/#x5-3-hub-verifies-intent-of-the-subscriber) on the callback URL. This is an async request which means even if you received a successful response for the subscription request, you are not fully subscribed until your endpoint has confirmed the intent. You won't receive updates if intent confirmation fails for any reason.
 
-{% swagger-response status="400: Bad Request" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
+To confirm, your endpoint MUST return an HTTP 200 status code, with the `hub.challenge` value in the body. This value will be sent as a query string to your endpoint by the hub. This is done to prevent spam.
 
-{% swagger-response status="500: Internal Server Error" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-{% endswagger %}
+Check out this example written in typescript for reference on how to handle callback intent verification and receive updates [https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts](https://github.com/unlock-protocol/websub-discord/blob/main/src/middleware.ts)
