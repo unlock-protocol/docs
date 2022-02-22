@@ -10,7 +10,7 @@ Currently, locksmith support sending updates on new locks and keys. To subscribe
 
 Let's send a subscribe request to receive updates on new locks.
 
-1. We need to send a subscribe request to the locks hub located at `/api/hooks/:network/locks`  where network param should be the ID. To receive updates on new locks created on rinkey network, our final endpoint would be `/api/hooks/4/locks`
+1. We need to send a subscribe request to the locks hub located at `/api/hooks/:network/locks` where network param should be the ID. To receive updates on new locks created on rinkey network, our final endpoint would be `/api/hooks/4/locks`
 2. Make a subscribe request. Here's an example of it in javascript.
 
 ```javascript
@@ -52,8 +52,6 @@ All our available hubs are described below. You can subscribe to any of them fol
 {% swagger method="post" path="/" baseUrl="https://locksmith-host/api/hooks/:network/locks" summary="" %}
 {% swagger-description %}
 `Subscribe to new locks created on the specified network`
-
- 
 {% endswagger-description %}
 
 {% swagger-parameter in="body" type="url" required="true" name="hub.topic" %}
@@ -68,7 +66,7 @@ The callback URL where you will receive the new locks data.
 subscribe or unsubscribe
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="hub.secret" type="string" %}
+{% swagger-parameter in="body" name="hub.secret" type="string" required="false" %}
 This is used for adding signature in the header with response for verification.
 
 Locksmith by default uses sha256 but you can get algorithm by parsing the value from header x-hub-signature
@@ -109,9 +107,7 @@ Locksmith by default uses sha256 but you can get algorithm by parsing the value 
 
 {% swagger method="post" path="/:lockAddress/keys" baseUrl="https://locksmith-host/api/hooks/4/locks" summary="" %}
 {% swagger-description %}
-`Subscribe to new keys created on the specified network`
-
- 
+`Subscribe to new keys created on the specific lock address.`
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="hub.topic" required="true" type="url" %}
@@ -122,11 +118,11 @@ Same as the hub URL - https://locksmith-host/api/hooks/:network/locks/:lockAddre
 The callback URL where you will receive the new locks data.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="hub.mode" type="string" %}
+{% swagger-parameter in="body" name="hub.mode" type="string" required="false" %}
 subscribe or unsubscribe
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="hub.secret" type="string" %}
+{% swagger-parameter in="body" name="hub.secret" type="string" required="false" %}
 This is used for adding signature in the header with response for verification.
 
 Locksmith by default uses sha256 but you can get algorithm by parsing the value from header x-hub-signature
@@ -149,6 +145,66 @@ Locksmith by default uses sha256 but you can get algorithm by parsing the value 
 {% endswagger-response %}
 
 {% swagger-response status="404: Not Found" description="You may receive this if you are trying to subscribe to something on a unsupported network or hub endpoint." %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="500: Internal Server Error" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://locksmith-host/api/hooks/:network/keys/" summary="" %}
+{% swagger-description %}
+`Subscribe to new keys created on the specified network`
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="hub.topic" type="url" required="true" %}
+Same as the hub URL - 
+
+[https://locksmith-host/api/hooks/:network/keys/](https://locksmith-host/api/hooks/:network/keys/)
+
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="hub.callback" type="url" required="true" %}
+The callback URL where you will receive the new keys data.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="true" name="hub.mode" type="string" %}
+subscribe or unsubscribe
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="hub.secret" type="string" %}
+This is used for adding signature in the header with response for verification.
+
+Locksmith by default uses sha256 but you can get algorithm by parsing the value from header x-hub-signature
+{% endswagger-parameter %}
+
+{% swagger-response status="202: Accepted" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="" %}
 ```javascript
 {
     // Response
