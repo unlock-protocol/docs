@@ -12,7 +12,7 @@ Currently, locksmith support sending updates on new locks and keys. To subscribe
 
 Our implementation uses the same addresses for topics and their hub.
 
-{% swagger method="post" path="/" baseUrl="https://locksmith.unlock-protocol.com/api/hooks/:network/locks" summary="" %}
+{% swagger method="post" path="/" baseUrl="https://locksmith.unlock-protocol.com/api/hooks/:network/locks" summary="New locks created" %}
 {% swagger-description %}
 Subscribe to new locks created on the specified network
 {% endswagger-description %}
@@ -72,7 +72,7 @@ Network id for which you want to receive notifications
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/:lockAddress/keys" baseUrl="https://locksmith.unlock-protocol.com/api/hooks" summary="New key purchased" %}
+{% swagger method="post" path="/:lockAddress/keys" baseUrl="https://locksmith.unlock-protocol.com/api/hooks" summary="New key purchases" %}
 {% swagger-description %}
 Subscribe to new keys created on the specific lock address.
 {% endswagger-description %}
@@ -140,6 +140,70 @@ Address of the lock for which you want to receive notifications
 {% endswagger-response %}
 {% endswagger %}
 
+{% swagger method="post" path="" baseUrl="https://locksmith.unlock-protocol.com/api/hooks/:network/keys" summary="" %}
+{% swagger-description %}
+New keys purchased on the entire network
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name=":network" type="number" required="true" %}
+Network id for which you want to receive notifications
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="hub.topic" required="true" type="string" %}
+Same as the hub URL: 
+
+[https://locksmith.unlock-protocol.com/api/hooks/:network/](https://locksmith.unlock-protocol.com/api/hooks/:network/locks)
+
+keys
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="hub.callback" type="url" required="true" %}
+The callback URL where you will receive the new locks data.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="hub.mode" type="string" %}
+subscribe or unsubscribe
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="hub.secret" type="string" %}
+This is used for adding signature in the header with response for verification.
+
+Locksmith by default uses sha256 but you can get algorithm by parsing the value from header x-hub-signature
+{% endswagger-parameter %}
+
+{% swagger-response status="202: Accepted" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="500: Internal Server Error" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
 ### Example
 
 Let's send a subscribe request to receive updates on new locks.
@@ -151,19 +215,19 @@ Let's send a subscribe request to receive updates on new locks.
 // Subscribe request to receive updates on new Locks
 async function subscribe() {
   const endpoint = "https://locksmith.unlock-protocol.com/api/hooks/4/locks"
-  const hubBody = JSON.stringify({
-    hub: {
-      topic: "https://locksmith-host/api/hooks/4/locks",
-      callback: "https://your-webhook-url/",
-      secret: "unlock-is-best",
-      mode: "subscribe"
-    }
-  })
+  
+  const formData = new FormData()
+  
+  formData.set("hub.topic",   "https://locksmith-host/api/hooks/4/locks")
+  formData.set("hub.callback", "https://your-webhook-url/")
+  formData.set("hub.mode", "subscribe")
+  formData.set("hub.secret", "unlock-is-best")
+  
   const result = await fetch(endpoint, {
     method: "POST",
-    body: hubBody,
+    body: formData,
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/x-www-form-urlencoded"
     }
   })
   
