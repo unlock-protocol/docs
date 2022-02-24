@@ -27,8 +27,6 @@ Recurring payments and automatic renewals in the crypto space are a thorny chall
 
 That said, this is an area of significant interest to the Unlock development team and community and we are actively exploring options to handle the complexity of automatic renewals. We hope to implement this in the near future.
 
-I made an edit.
-
 ### How to customize the NFT image for keys?
 
 If you want to customize the NFT image for the keys for a lock, it can be done right through the Unlock dashboard. Here is a tutorial on [how to change the image for Unlock keys](customizing-the-nft.md#customize-each-memberships-icon).
