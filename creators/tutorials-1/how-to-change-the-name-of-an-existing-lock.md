@@ -23,7 +23,7 @@ _Time required: 3-5 minutes_
 
 #### 4) Click "**Write as Proxy"**  NOTE: If you don't see "Write as Proxy" in your block explorer, you may need to enable it. For example, on Polygonscan, you'll need to… 
 
-_Click "Is this a proxy"_
+_Click "Is this a proxy?"_
 
 ![](../../.gitbook/assets/is-this-a-proxy.png)
 
