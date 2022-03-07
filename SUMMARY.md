@@ -31,6 +31,7 @@
   * [How to cancel a user's membership](creators/tutorials-1/how-to-cancel-a-membership.md)
   * [How to create temporary or trial memberships](creators/tutorials-1/how-to-create-temporary-or-trial-memberships.md)
   * [How to make keys non-transferrable](creators/tutorials-1/how-to-make-keys-non-transferrable.md)
+  * [How to change the name of an existing lock](creators/tutorials-1/how-to-make-keys-non-transferrable-1.md)
   * [How to airdrop memberships](creators/tutorials-1/how-to-airdrop-memberships.md)
   * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
 
