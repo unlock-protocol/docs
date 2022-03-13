@@ -6,6 +6,7 @@
 ## For Creators <a href="#creators" id="creators"></a>
 
 * [Creators FAQ](creators/faq.md)
+* [Why memberships?](creators/why-memberships.md)
 * [Creating a Lock](creators/deploying-lock/README.md)
   * [Using a custom currency](creators/deploying-lock/using-a-custom-currency.md)
 * [Enabling Credit Cards](creators/enabling-credit-cards.md)
