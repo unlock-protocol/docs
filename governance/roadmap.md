@@ -15,8 +15,14 @@ As of December 2021, the Unlock ecosystem consists of the following:
 
 ## March 31st 2022
 
-To be announced soon.
-
+* PublicLock new features:
+  * Multiple memberships: the ability for an address to own multiple memberships
+  * Automatically recurring memberships: the contracts support the ability for users to subscribe and have their memberships be automatically renewed by network participants who are ecomomically incentivized to do so.
+  * Ownable: the PublicLock lock managers can set an "owner" on the contract
+* Unlock Contract's GDP updates triggers and event
+* Audits
+* Unlock DAO takes ownership of the UDT contract
+* New Static website
 ## December 31st 2021
 
 * Upgradable PublicLock contracts (by their lock managers)  ✅&#x20;
@@ -27,7 +33,7 @@ To be announced soon.
   * Dynamic TokenURI: providing a mechanism for a lock owner to define a 3rd party contract for the logic to yield the tokenURI  ✅&#x20;
 * Dev tools:
   * OAuth/OIDC flow for 3rd party applications who do not want to handle wallets  ✅&#x20;
-  * Webhooks ability to register hooks when a transaction gets executed on a lock  ⏰
+  * Webhooks ability to register hooks when a transaction gets executed on a lock  ✅&#x20;
 * Creator tools:
   * Multichain dashboard ⏰
   * Persistent login ✅&#x20;
@@ -35,26 +41,24 @@ To be announced soon.
 * Member tools:
   * Manage memberships from keychain ✅&#x20;
 
-
-
 ## August 2021
 
 * Decentralized governance (see below). Delayed as we're waiting for OpenZeppelin to ship its contract. ✅
-* Launch Unlock on 2 more side-chains/network. State: Shipped. ✅
-* ApplePay or GooglePay or Paypal integration. delayed ⏰
-* Customizable NFT icon from the dashboard. State: Shipped. ✅
+* Launch Unlock on 2 more side-chains/network. ✅
+* ApplePay or GooglePay or Paypal integration. Delayed ⏰
+* Customizable NFT icon from the dashboard. ✅
 * Lock configuration from dashboard (metadata collection). delayed ⏰
-* Full "static" website relaunch. State: Shipped. ✅
+* Full "static" website relaunch. ✅
 * First Hackathon (remote). ✅
 
 ## June 2021
 
-* Enable UDT rewards on xDAI ([or any other side chain](the-unlock-token/side-chains-and-layer-2.md)). State: shipped. Shipped. ✅
-* Enable credit card checkout for any lock (if creator agrees to it!). State: Shipped. ✅
-* Update home page design. State: Shipped. ✅
-* Addition of a `/developer`landing page. State: Shipped. ✅
-* Addition of a `/creator` landing page. State: delayed ⏰
-* Formal launch of grant program process ([see grants page](grants-bounties-and-matchings.md)). State: shipped. ✅
+* Enable UDT rewards on xDAI ([or any other side chain](the-unlock-token/side-chains-and-layer-2.md)). ✅
+* Enable credit card checkout for any lock (if creator agrees to it!). ✅
+* Update home page design. ✅
+* Addition of a `/developer`landing page. ✅
+* Addition of a `/creator` landing page. ⏰
+* Formal launch of grant program process ([see grants page](grants-bounties-and-matchings.md)). ✅
 * Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.com/invite/Ah6ZEJyTDp) State: done. ✅
 * Developer forum launched on Discourse, State: shipped. Waiting to be announced ✅
 

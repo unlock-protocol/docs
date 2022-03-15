@@ -4,12 +4,11 @@ description: UDT and its Tokenomics
 
 # The Unlock Token
 
-* **Status**: [partially implemented](https://github.com/unlock-protocol/unlock/wiki/The-Path-to-UDT!). You can earn UDT today by using the protocol, or through [grants from the Unlock Treasury](https://github.com/unlock-protocol/unlock/wiki/Unlock-Inc's-Treasury:-Grants,-bounties-and-matchings).
 * [Address](https://etherscan.io/token/0x90de74265a416e1393a450752175aed98fe11517)
 
 ### Definitions
 
-#### Lock
+#### Lock (PublicLock.sol)
 
 A Lock is a smart contract deployed on the Ethereum chain. It is managed by the person who deployed it but can be transferred to anyone \(including a 3rd party smart contract\). Any manager can also add more managers who can then update certain parameters of the lock. The lock acts as an "access control list" and keeps track of users who own a key \(see below\). Keys can be purchased from the lock and the lock defines their characteristics:
 
@@ -28,29 +27,28 @@ A Key is a non-fungible token represented by an entry inside of a lock. A key ha
 
 Keys can be purchased by sending the required price to the corresponding lock \(the person purchasing the key does not have to be the owner of the key, which means someone can purchase the key for someone else\).
 
-#### Unlock smart contract
+#### Unlock smart contract (Unlock.sol)
 
 This is the "factory" from which all locks are created. This contract keeps track of all locks created. It also keeps track of several other network-wide metrics \(see below\), as well as the ability to mine Unlock Discount Tokens upon key purchases.
 
-#### Unlock Tokens \(UDT\)
-
-These are Unlock native ERC20 tokens. They are minted progressively as the network grows \(see below\), and can be used for governance of the protocol or, possibly, to claim discounts when purchasing keys. These tokens can be transferred like other ERC20 tokens, provided that they are not "frozen" \(details below\).
-
 #### Unlock maintainer
 
-The Unlock smart contract is upgradable in order to ensure that it can be improved as the network grows and our understanding of it increases. It should, however, tend toward being less and less changeable. Upgrades \(or other changes in parameters\) can initially only be performed by a single address called the Unlock maintainer. Eventually, the Unlock maintainer designation process should be decentralization through voting \(by both lock and UDT owners\). In the beginning, the Unlock Inc organization is the single maintainer of the Unlock smart contract via a multisig.
+The Unlock smart contract is upgradable in order to ensure that it can be improved as the network grows and our understanding of it increases. It should, however, tend toward being less and less changeable. Upgrades \(or other changes in parameters\) can be performed by a single address called the Unlock maintainer. 
+Eventually, the Unlock maintainer designation process should be decentralization through voting \(by both lock and UDT owners\). In the beginning, the Unlock Inc. organization is the maintainer of the Unlock smart contract via a multisig but we expect this responsibility to be transfered to the DAO eventually.
+#### Unlock Tokens \(UDT\)
 
+These are Unlock native ERC20 tokens. They are minted progressively as the network grows \(see below\), and can be used for governance of the protocol. These tokens can be transferred like other ERC20 tokens. These tokens can be bridged to other chains or L2.
 #### GDP
 
-Sum of all transactions happening through all locks across the network. It is computed in Eth, based on exchange rates from [Uniswap](https://uniswap.exchange/). Keys whose currency does not have an Ethereum exchange pair are not taken into account in the GDP calculation and cannot grant Unlock tokens. Note: the GDP can only grow \(or stay stable if no one is purchasing keys anymore\).
+Sum of all transactions happening through all locks across the network. It is computed in Eth, based on exchange rates from [Uniswap](https://uniswap.exchange/) for keys sold in ERC20 currencies. Keys whose currency does not have an Ethereum exchange pair are not taken into account in the GDP calculation and cannot grant Unlock tokens. Note: the GDP can only grow \(or stay stable if no one is purchasing keys anymore\).
 
 ### Introduction
 
-The Unlock Discount Token \(UDT\) is an _optional_ token that exists to add incentives to actors who are willing to grow and use the Unlock protocol and network. Unlock Discount Tokens are granted as rewards upon key purchases to an address designated in the key purchase call. UDT can then be used for various purposes, such as governance \(voting on protocol upgrades\) or to claim discounts when purchasing keys. The Unlock Tokens are never burnt and, even though there are more tokens printed as the network grows in %, their supply will grow less and less as the network reaches a large size.
+The Unlock Discount Token \(UDT\) is an _optional_ token that exists to add incentives to actors who are willing to grow and use the Unlock protocol and network. Unlock Discount Tokens are granted as rewards upon key purchases to an address designated in the key purchase call. UDT can then be used for various purposes, such as governance \(voting on protocol upgrades\). The Unlock Tokens supply is inflationary as more tokens are minted with the networks's growth, but the supply growth decelarates (following a log curve) as the network size increases.
 
 ### Earning UDT
 
-There is a single mechanism that creates new UDT: key purchases. When making a key purchase, the person sending the transaction \(who pays for the key\) can optionally add a `referrer` address. This address will receive UDT, if applicable
+There is a **single mechanism** that creates new UDT: key purchases. When making a key purchase, the person sending the transaction \(who pays for the key\) can optionally set a `referrer` address. This address will receive UDT, if applicable.
 
 Example: Alice owns a key to a specific lock. Bob wants to purchase a key to the same lock. When Bob sends his transaction to the lock smart contract, Bob submits Alice's address as the person who made a referral. Since Bob supplied the required price, a new key is granted to him. Additionally, the Lock will "call back" to the Unlock smart contract in order to grant some Unlock Discount Tokens to Alice.
 
@@ -62,7 +60,7 @@ Additionally, the reward is capped so that the growth of supply cannot be bigger
 
 ### Premine
 
-When UDT are released for the first time, there is a 1,000,000 UDT pre-mine. There are multiple goal to the premine:
+When UDT are released for the first time, there was a 1,000,000 UDT pre-mine. There are multiple goal to the premine:
 
 1. create a Uniswap pool to set an early price on UDT,
 2. ensure that the Unlock team initially retains control of the protocol,
@@ -82,11 +80,5 @@ We expect the community to eventually control the protocol and its upgrades. The
 
 ### Multi-chain support
 
-We believe the Unlock Protocol can \(and will\) be deployed on any EVM-compatible chain or environment. As such, each of these deployment will have its own version of UDT. However, the canonical instance of UDT will be deployed on the Ethereum main-net and our goal is to build mechanisms to peg the side-chains UDT to the UDT on the mainnet. Details of the mechanism to enable side chains to also reward adoption with UDT [can be found on this page](https://github.com/unlock-protocol/unlock/wiki/UDT-on-side-chains-and-L2).
-
-### Economic incentives
-
-#### Growth of supply
-
-The supply of UDT is expected to grow as long as the network grows since each new referral will mint new tokens. However, the growth of supply is capped by the growth of GDP. As GDP grows faster than the supply, each UDT becomes more valuable.
+We believe the Unlock Protocol can \(and will\) be deployed on any EVM-compatible chain or environment. As such, each of these deployment will have its own "bridged" version of the UDT token from Ethereum's mainnet. Details of the mechanism to enable side chains to also reward adoption with UDT [can be found on this page](https://github.com/unlock-protocol/unlock/wiki/UDT-on-side-chains-and-L2).
 
