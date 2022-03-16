@@ -46,7 +46,7 @@ Every token holder is invited to delegate their tokens. This process is required
 
 Delegation is done _by address_, which means that there is no need to delegate again when the balance of tokens of an address changes. 
 
-When a delegation was submitted the "weight" of each address's vote is based on how many tokens have been delegated to them, at the time of the proposal submission.
+When a delegation was submitted, the "weight" of each address's vote is based on how many tokens have been delegated to them, at the time of the proposal submission.
 
 #### Unlock Inc. Delegation
 
