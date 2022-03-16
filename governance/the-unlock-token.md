@@ -34,7 +34,7 @@ This is the "factory" from which all locks are created. This contract keeps trac
 #### Unlock maintainer
 
 The Unlock smart contract is upgradable in order to ensure that it can be improved as the network grows and our understanding of it increases. It should, however, tend toward being less and less changeable. Upgrades \(or other changes in parameters\) can be performed by a single address called the Unlock maintainer. 
-Eventually, the Unlock maintainer designation process should be decentralization through voting \(by both lock and UDT owners\). In the beginning, the Unlock Inc. organization is the maintainer of the Unlock smart contract via a multisig but we expect this responsibility to be transfered to the DAO eventually.
+Eventually, the Unlock maintainer designation process should be decentralized through voting \(by both lock and UDT owners\). In the beginning, the Unlock Inc. organization is the maintainer of the Unlock smart contract via a multisig but we expect this responsibility to be transfered to the DAO eventually.
 #### Unlock Tokens \(UDT\)
 
 These are Unlock native ERC20 tokens. They are minted progressively as the network grows \(see below\), and can be used for governance of the protocol. These tokens can be transferred like other ERC20 tokens. These tokens can be bridged to other chains or L2.
