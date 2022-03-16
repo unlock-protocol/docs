@@ -44,7 +44,7 @@ Sum of all transactions happening through all locks across the network. It is co
 
 ### Introduction
 
-The Unlock Discount Token \(UDT\) is an _optional_ token that exists to add incentives to actors who are willing to grow and use the Unlock protocol and network. Unlock Discount Tokens are granted as rewards upon key purchases to an address designated in the key purchase call. UDT can then be used for various purposes, such as governance \(voting on protocol upgrades\). The Unlock Tokens supply is inflationary as more tokens are minted with the networks's growth, but the supply growth decelarates (following a log curve) as the network size increases.
+The Unlock Discount Token \(UDT\) is an _optional_ token that exists to add incentives to actors who are willing to grow and use the Unlock protocol and network. Unlock Discount Tokens are granted as rewards upon key purchases to an address designated in the key purchase call. UDT can then be used for various purposes, such as governance \(voting on protocol upgrades\). The Unlock Tokens supply is inflationary as more tokens are minted with the networks's growth, but the supply growth decelerates (following a log curve) as the network size increases.
 
 ### Earning UDT
 
