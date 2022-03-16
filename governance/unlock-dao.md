@@ -50,7 +50,7 @@ When a delegation was submitted, the "weight" of each address's vote is based on
 
 #### Unlock Inc. Delegation
 
-Unlock Inc. has indicated that we will never use the company's owned tokens to vote on proposals for as long as we own a majority of the governance tokens. However, in order to facilitate governance, we have delegated some of the tokens we own to multiple entities, including some of our investors, some projects that we're partnering with as well as other DAOs and community that the Unlock Inc. team could bring valuable diversity of opinion, culture and help promote adoption of the protocol.
+Unlock Inc. has indicated that we will never use the company's owned tokens to vote on proposals for as long as we own a majority of the governance tokens. However, in order to facilitate governance, we have delegated some of the tokens we own to multiple entities, including some of our investors, some projects that we're partnering with, as well as other DAOs and community that the Unlock Inc. team could bring valuable diversity of opinion, culture and help promote adoption of the protocol.
 
 If you or your team is interested in becoming a delegate, please reach out.
 ### Making a proposal
