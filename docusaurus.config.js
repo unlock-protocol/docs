@@ -44,20 +44,19 @@ const config = {
     /** @type {import('docusaurus-preset-openapi').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "Unlock Protocol",
         logo: {
-          alt: "My Site Logo",
+          alt: "Unlock Protocol",
           src: "img/logo.svg",
         },
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "introduction",
             position: "left",
-            label: "Tutorial",
+            label: "Start here",
           },
           { to: "/api", label: "API", position: "left" },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
@@ -72,8 +71,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Start here",
+                to: "/docs/introduction",
               },
             ],
           },
