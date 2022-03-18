@@ -37,7 +37,7 @@ You will see the name (_First Euro lock_ for this example), its address (_0x0915
 - [Easily integrate your lock in existing applications](../plugins-and-integrations/)
 - Inspect your lock using a _block explorer (see below)_
 
-The lock's behavior can also be customized even further. For example, you can easily [disable transfers](../tutorials-1/how-to-make-keys-non-transferrable.md), or [airdrop membership NFTs to anyone](../tutorials-1/how-to-airdrop-memberships.md).
+The lock's behavior can also be customized even further. For example, you can easily [disable transfers](../tutorials/how-to-make-keys-non-transferrable.md), or [airdrop membership NFTs to anyone](../tutorials/how-to-airdrop-memberships.md).
 
 Finally, and this is critical, the smart contracts are _verified_, click on the explorer icon to inspect it or interact with it from the block explorer.
 

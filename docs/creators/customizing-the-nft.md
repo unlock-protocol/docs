@@ -59,4 +59,4 @@ The expiration is the memberships' expiration date and the owner is the current 
 
 ## Make non-transferrable
 
-A "Key Manager" can make the keys to be non-transferrable by interacting with the contract via a block explorer. [Here's a tutorial on how that works](https://docs.unlock-protocol.com/creators/tutorials-1/how-to-make-keys-non-transferrable).
+A "Key Manager" can make the keys to be non-transferrable by interacting with the contract via a block explorer. [Here's a tutorial on how that works](https://docs.unlock-protocol.com/creators/tutorialshow-to-make-keys-non-transferrable).

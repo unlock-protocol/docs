@@ -29,8 +29,8 @@ Once a lock gets sold, the balance will be initially held within the smart contr
 
 ## Re(selling) memberships
 
-Unlock memberships (called keys!) are Non-Fungible Tokens (using the ERC721 standard), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
+Unlock memberships (called keys!) are Non-Fungible Tokens (using the ERC721 standard), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorialshow-to-resell-a-lock.md).
 
 ## Airdropping memberships
 
-The contract for any lock can be interfaced with directly using Etherscan. Using this method, it is easy for creators to grant keys (airdrop NFTs) to someone. [To learn more, check out this tutorial.](https://docs.unlock-protocol.com/creators/tutorials-1/how-to-airdrop-memberships)
+The contract for any lock can be interfaced with directly using Etherscan. Using this method, it is easy for creators to grant keys (airdrop NFTs) to someone. [To learn more, check out this tutorial.](https://docs.unlock-protocol.com/creators/tutorialshow-to-airdrop-memberships)
