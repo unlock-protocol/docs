@@ -22,6 +22,10 @@ const config = {
       "docusaurus-preset-openapi",
       /** @type {import('docusaurus-preset-openapi').Options} */
       ({
+        api: {
+          path: "./openapi.yml",
+          routeBasePath: "api",
+        },
         googleAnalytics: {
           trackingID: "UA-142114767-4",
           anonymizeIP: true,
