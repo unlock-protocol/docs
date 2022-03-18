@@ -6,14 +6,23 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #603deb;
+  --ifm-color-primary-dark: #4a22e8;
+  --ifm-color-primary-darker: #4118e4;
+  --ifm-color-primary-darkest: #3513bc;
+  --ifm-color-primary-light: #6948ec;
+  --ifm-color-primary-lighter: #7252ed;
+  --ifm-color-primary-lightest: #7a5dee;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #fff7e8;
+  --ifm-color-primary-dark: #ffdfa4;
+  --ifm-color-primary-darker: #ffde9f;
+  --ifm-color-primary-darkest: #ffc456;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
 }
 
 .docusaurus-highlight-code-line {
@@ -23,6 +32,6 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme="dark"] .docusaurus-highlight-code-line {
+[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }

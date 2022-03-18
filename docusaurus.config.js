@@ -6,15 +6,16 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Unlock Protocol",
+  tagline:
+    "Unlock is a membership protocol, built on a blockchain. It enables creators to monetize their content or software without relying on a middleman. It lets consumers manage all of their subscriptions in a consistent way, as well as earn discounts when they share the best content and applications they use.",
+  url: "https://docs.unlock-protocol.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "unlock-protocol", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
 
   presets: [
     [
@@ -22,16 +23,9 @@ const config = {
       /** @type {import('docusaurus-preset-openapi').Options} */
       ({
         docs: {
+          showLastUpdateTime: true,
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/unlock-protocol/docs/docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -54,11 +48,11 @@ const config = {
             type: "doc",
             docId: "introduction",
             position: "left",
-            label: "Start here",
+            label: "Get Started",
           },
           { to: "/api", label: "API", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/unlock-protocol/unlock",
             label: "GitHub",
             position: "right",
           },
@@ -80,16 +74,12 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.com/invite/Ah6ZEJyTDp",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/UnlockProtocol",
               },
             ],
           },
@@ -97,17 +87,21 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Website",
+                to: "https://unlock-protocol.com",
+              },
+              {
+                label: "Unlock App",
+                to: "https://app.unlock-protocol.com",
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/unlock-protocol/unlock",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Unlock, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
