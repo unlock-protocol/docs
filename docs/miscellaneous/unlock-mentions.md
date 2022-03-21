@@ -14,6 +14,3 @@ Jan 2, 2019
 
 July 24, 2018  
 [Unlock wants to rebuild your feed through a decentralized paywall](https://techcrunch.com/2018/07/24/unlock-wants-to-rebuild-the-feed-through-a-decentralized-paywall/)
-
-
-
