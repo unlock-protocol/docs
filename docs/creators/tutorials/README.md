@@ -4,54 +4,32 @@ description: Want to build more custom token-gated experiences? Check these tuto
 
 # Tutorials
 
-### Customizing your locks
+## Customizing your locks
 
-{% content-ref url="customizing-locks-on-opensea.md" %}
-[customizing-locks-on-opensea.md](customizing-locks-on-opensea.md)
-{% endcontent-ref %}
+- [How to customize locks on Opensea](./customizing-locks-on-opensea.md)
 
-{% content-ref url="how-to-cancel-a-membership.md" %}
-[how-to-cancel-a-membership.md](how-to-cancel-a-membership.md)
-{% endcontent-ref %}
+- [How to cancel a membership](./how-to-cancel-a-membership.md)
 
-{% content-ref url="how-to-create-temporary-or-trial-memberships.md" %}
-[how-to-create-temporary-or-trial-memberships.md](how-to-create-temporary-or-trial-memberships.md)
-{% endcontent-ref %}
+- [How to create a temporary or trial membership](./how-to-create-temporary-or-trial-memberships.md)
 
-{% content-ref url="how-to-make-keys-non-transferrable.md" %}
-[how-to-make-keys-non-transferrable.md](how-to-make-keys-non-transferrable.md)
-{% endcontent-ref %}
+- [How to make keys non-transferrable](./how-to-make-keys-non-transferrable.md)
 
-### Integrating a lock in existing applications
+## Integrating a lock in existing applications
 
-{% content-ref url="using-an-existing-nft-contract.md" %}
-[using-an-existing-nft-contract.md](using-an-existing-nft-contract.md)
-{% endcontent-ref %}
+- [How to use an existing NFT contract](./using-an-existing-nft-contract.md)
 
-{% content-ref url="organizing-a-vote-by-members.md" %}
-[organizing-a-vote-by-members.md](organizing-a-vote-by-members.md)
-{% endcontent-ref %}
+- [How to organize a vote by members](./organizing-a-vote-by-members.md)
 
-### Building more custom experience
+## Building more custom experience
 
-{% content-ref url="ad-free-experience.md" %}
-[ad-free-experience.md](ad-free-experience.md)
-{% endcontent-ref %}
+- [How to build an ad-free experience](./ad-free-experience.md)
 
-{% content-ref url="using-unlock-newsletter.md" %}
-[using-unlock-newsletter.md](using-unlock-newsletter.md)
-{% endcontent-ref %}
+- [How to use Unlock for newsletters](./using-unlock-newsletter.md)
 
-{% content-ref url="receiving-donations-on-github.md" %}
-[receiving-donations-on-github.md](receiving-donations-on-github.md)
-{% endcontent-ref %}
+- [How to receive donations on Github](./receiving-donations-on-github.md)
 
-{% content-ref url="selling-tickets-for-an-event.md" %}
-[selling-tickets-for-an-event.md](selling-tickets-for-an-event.md)
-{% endcontent-ref %}
+- [How to sell tickets for an event](./selling-tickets-for-an-event.md)
 
-### As a member
+## As a member
 
-{% content-ref url="how-to-resell-a-lock.md" %}
-[how-to-resell-a-lock.md](how-to-resell-a-lock.md)
-{% endcontent-ref %}
+- [How to resell a lock](./how-to-resell-a-lock.md)
