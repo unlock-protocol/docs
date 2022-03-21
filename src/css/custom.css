@@ -1,0 +1,42 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #603deb;
+  --ifm-color-primary-dark: #4a22e8;
+  --ifm-color-primary-darker: #4118e4;
+  --ifm-color-primary-darkest: #3513bc;
+  --ifm-color-primary-light: #6948ec;
+  --ifm-color-primary-lighter: #7252ed;
+  --ifm-color-primary-lightest: #7a5dee;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #fff7e8;
+  --ifm-color-primary-dark: #ffdfa4;
+  --ifm-color-primary-darker: #ffde9f;
+  --ifm-color-primary-darkest: #ffc456;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] img[src$="#gh-dark-mode-only"],
+[data-theme="dark"] img[src$="#gh-light-mode-only"] {
+  display: none;
+}

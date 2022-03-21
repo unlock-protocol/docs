@@ -1,0 +1,61 @@
+openapi: "3.1.0"
+info:
+  title: Unlock Locksmith
+  version: "1"
+  description: Locksmith is unlock service which provides functionality such as storing metadata or webhooks.
+  license:
+    identifier: MIT
+    name: MIT
+
+servers:
+  - url: https://locksmith.unlock-protocol.com
+    description: Production Server
+  - url: https://staging-locksmith.unlock-protocol.com
+    description: Staging Server
+paths:
+  /api/key/:lockAddress/:keyID:
+    get:
+      summary: Get Key Metadata
+      description: Return metadata for Key (NFT)
+      parameters:
+        - lockAddress:
+          name: lockAddress
+          in: path
+          description: Address of the Lock
+          required: true
+          schema:
+            type: string
+        - keyID:
+          name: keyID
+          in: path
+          required: true
+          description: ID of the crossiant to get, for free of course.
+          schema:
+            type: string
+        - Authentication:
+          name: Authentication
+          in: header
+          required: true
+          description: Authentication token to track down who is emptying our stock.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Key metadata
+          content:
+            application/json:
+              {
+                "name": "Blue Checkmark",
+                "description": "A blue checkmark for all of your social web accounts! Unlock is a protocol for memberships. https://unlock-protocol.com/",
+                "image": "https://assets.unlock-protocol.com/nft-images/blue-checkmark.png",
+                "attributes":
+                  [
+                    {
+                      "trait_type": "Expiration",
+                      "value": 4720101493,
+                      "display_type": "date",
+                    },
+                  ],
+              }
+      NotFound:
+        description: Key Metadata not found.
