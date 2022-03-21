@@ -33,7 +33,7 @@ If you want to customize the NFT image for the keys for a lock, it can be done r
 
 ## How do I have unique images or unique rarity data for every individual key to a particular lock?
 
-By default, all the keys to a particular lock have the same image. If you want to create unique metadata (including unique images) for keys for a particular lock, there is a great tutorial by community member Croissant on [how to specify individual images and NFT metadata](tutorials//customizing-locks-on-opensea.md).
+By default, all the keys to a particular lock have the same image. If you want to create unique metadata (including unique images) for keys for a particular lock, there is a great tutorial by community member Croissant on [how to specify individual images and NFT metadata](tutorials/customizing-locks-on-opensea.md).
 
 ## How to share ownership of an Unlock lock?
 
@@ -55,4 +55,4 @@ All of Unlock's contract are open source and should be visible. Since version 9 
 
 ## Can I use an existing NFT contract?
 
-Absolutely! Unlock's PublicLock contract (the membership contract) includes a _delegation_ mechanism that would let you point to any other on-chain contract to determine if an address is considered to be a "valid" member. [Check this tutorial for more details](tutorials//using-an-existing-nft-contract).
+Absolutely! Unlock's PublicLock contract (the membership contract) includes a _delegation_ mechanism that would let you point to any other on-chain contract to determine if an address is considered to be a "valid" member. [Check this tutorial for more details](tutorials/using-an-existing-nft-contract).
