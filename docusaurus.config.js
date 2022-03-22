@@ -32,6 +32,7 @@ const config = {
         },
         docs: {
           showLastUpdateTime: true,
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/unlock-protocol/docs/docs",
         },
@@ -74,7 +75,7 @@ const config = {
             items: [
               {
                 label: "Start here",
-                to: "/docs",
+                to: "/",
               },
             ],
           },
