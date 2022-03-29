@@ -16,8 +16,8 @@ For this, we rely [Stripe Connect](https://stripe.com/connect), which means that
 
 #### Prerequisites
 
-- Your lock needs to be priced in a currency for which [Coinbase has a conversion price](https://developers.coinbase.com/api/v2#show-a-payment-method) in USD.
-- Your lock's price in USD needs to be at least $0.50.
+* Your lock needs to be priced in a currency for which [Coinbase has a conversion price](https://developers.coinbase.com/api/v2#show-a-payment-method) in USD.
+* Your lock's price in USD needs to be at least $0.50.
 
 ### Connecting a Stripe Account
 
@@ -31,7 +31,7 @@ Once the Credit Card pane is displayed, click on the "Connect Stripe" button. Wh
 
 Once your application is completed, Stripe will redirect you back to the Unlock Dashboard. It may take a few days for Stripe to approve your application. Until then your lock won't be able to receive card payments.
 
-![Stripe has been connected, but the application has not been fully approved.](../.gitbook/assets/image19.png)
+![Stripe has been connected, but the application has not been fully approved.](<../.gitbook/assets/image (19).png>)
 
 ### Allow Key Granting
 

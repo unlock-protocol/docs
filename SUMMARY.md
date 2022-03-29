@@ -44,6 +44,7 @@
   * [Unlock Contract](developers/smart-contracts/unlock-api.md)
   * [Lock Contract](developers/smart-contracts/lock-api/README.md)
     * [Access Control](developers/smart-contracts/lock-api/access-control.md)
+  * [Audits](developers/smart-contracts/audits.md)
 * [Sign-in With Ethereum](developers/sign-in-with-ethereum.md)
 * [Unlock.js](developers/unlock.js.md)
 * [Subgraph](developers/subgraph.md)

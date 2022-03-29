@@ -4,24 +4,24 @@ The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Lo
 
 On Ethereum's main network:
 
-- [Create a DAI Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x6b175474e89094c44da98b954eedeac495271d0f&ticker=DAI)
-- [Create a USDC Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&ticker=USDC)
-- [Create a BAT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x0d8775f648430679a709e98d2b0cb6250d2887ef&ticker=BAT)
-- [Create a UDT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x90de74265a416e1393a450752175aed98fe11517&ticker=UDT) - UDT is our governance token.
+* [Create a DAI Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x6b175474e89094c44da98b954eedeac495271d0f\&ticker=DAI)
+* [Create a USDC Backed Lock](https://app.unlock-protocol.com/dashboard/?erc20=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\&ticker=USDC)
+* [Create a BAT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x0d8775f648430679a709e98d2b0cb6250d2887ef\&ticker=BAT)
+* [Create a UDT Lock](https://app.unlock-protocol.com/dashboard/?erc20=0x90de74265a416e1393a450752175aed98fe11517\&ticker=UDT) - UDT is our governance token.
 
 #### Building your own URL example:
 
-The parameters for [BAT](https://basicattentiontoken.org/) are as follows:
+The parameters for [BAT](https://basicattentiontoken.org) are as follows:
 
-- erc20: `0x0d8775f648430679a709e98d2b0cb6250d2887ef`
-- ticker: `BAT`
+* erc20: `0x0d8775f648430679a709e98d2b0cb6250d2887ef`
+* ticker: `BAT`
 
 Once you have the correct details you add them to the URL in the following way:
 
-```text
+```
 https://app.unlock-protocol.com/dashboard?erc20=0x0d8775f648430679a709e98d2b0cb6250d2887ef&ticker=BAT
 ```
 
 This will enable an option on the dashboard to switch to your desired token.
 
-![](../../.gitbook/assets/image7.png)
+![](<../../.gitbook/assets/image (7).png>)
