@@ -7,8 +7,8 @@ You have questions, the Unlock community has answers! Here are answers to an eve
 * [How to customize the NFT image for keys?](faq.md#how-to-customize-the-nft-image-for-keys)
 * [How do I have unique images or unique rarity data for every individual key to a particular lock?](faq.md#how-do-i-have-unique-images-or-unique-rarity-data-for-every-individual-key-to-a-particular-lock)
 * [How do I share ownership of an Unlock lock?](faq.md#how-to-share-ownership-of-an-unlock-lock)
-* [How do I keep my Unlock key price stable even though crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
-* What are the credit card fees?
+* [How do I keep my Unlock key price-stable even though crypto prices are volatile?](faq.md#i-want-my-membership-price-to-remain-stable.-how-can-i-do-it)
+* [What are credit card fees?](faq.md#what-are-the-credit-card-fees)
 * [Why is my contract not verified on the block explorer?](faq.md#why-is-my-lock-contract-not-verified-on-the-block-explorer)
 * [Can I use an existing NFT contract?](faq.md#can-i-use-an-existing-nft-contract)
 
