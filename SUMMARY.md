@@ -16,6 +16,7 @@
 * [Plugins and Integrations](creators/plugins-and-integrations/README.md)
   * [Discord](creators/plugins-and-integrations/discord/README.md)
     * [Swordy Bot](creators/plugins-and-integrations/discord/swordybot.md)
+    * [Guild.xyz](creators/plugins-and-integrations/discord/guild.xyz.md)
     * [Collab.Land](creators/plugins-and-integrations/discord/collab-land.md)
   * [WordPress Plugin](creators/plugins-and-integrations/wordpress-plugin.md)
   * [Drupal Plugin](creators/plugins-and-integrations/drupal-plugin.md)
