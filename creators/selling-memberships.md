@@ -29,7 +29,7 @@ Once a lock gets sold, the balance will be initially held within the smart contr
 
 ## Re(selling) memberships
 
-Unlock memberships (called keys!) are Non-Fungible Tokens (using the ERC721 standard), which means the owner of a membership NFP can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
+Unlock memberships (called keys!) are Non-Fungible Tokens (using the ERC721 standard), which means the owner of a membership NFT can list it on marketplaces such as OpenSea and others! Learn more [here](tutorials-1/how-to-resell-a-lock.md).
 
 ## Airdropping memberships
 
