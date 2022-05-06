@@ -1,6 +1,6 @@
 # Unlock Accounts
 
-We recognize that not every web user currently owns a crypto wallet. For that reason, our locks [can be connected to a Credit Card processor](enabling-credit-cards.md). In that situation, Unlock also offers "Unlock Accounts" to users who do not own their own wallet.
+We recognize that not every web user currently owns a crypto wallet. For that reason, our locks [can be connected to a Credit Card processor](./). In that situation, Unlock also offers "Unlock Accounts" to users who do not own their own wallet.
 
 ### How do they work?
 
@@ -14,7 +14,7 @@ Upon creation, our back-end also creates a unique recovery phrase that's stored 
 
 #### Authenticating
 
-When the user authenticates with an Unlock account, they are prompted for their email and passwords. Once the email is known, we use it to retrieve the password encrypted private key (the password is _never_ sent to our backend).&#x20;
+When the user authenticates with an Unlock account, they are prompted for their email and passwords. Once the email is known, we use it to retrieve the password encrypted private key (the password is _never_ sent to our backend).
 
 Once the encrypted private key has been served to the frontend, our application tries to decrypt it with the user's password. If the decryption works, then the user is authenticated. If it fails, then we know this is not the right password.
 

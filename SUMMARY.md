@@ -5,13 +5,13 @@
 
 ## For Creators <a href="#creators" id="creators"></a>
 
-* [Creators FAQ](creators/faq.md)
+* [Page 1](creators/page-1.md)
 * [Creating a Lock](creators/deploying-lock/README.md)
   * [Using a custom currency](creators/deploying-lock/using-a-custom-currency.md)
-* [Enabling Credit Cards](creators/enabling-credit-cards.md)
+* [Enabling Credit Cards](creators/enabling-credit-cards/README.md)
+  * [Unlock Accounts](creators/enabling-credit-cards/unlock-accounts.md)
 * [Customizing the NFT](creators/customizing-the-nft.md)
 * [Selling Memberships](creators/selling-memberships.md)
-* [Unlock Accounts](creators/unlock-accounts.md)
 * [Plugins and Integrations](creators/plugins-and-integrations/README.md)
   * [Discord](creators/plugins-and-integrations/discord/README.md)
     * [Swordy Bot](creators/plugins-and-integrations/discord/swordybot.md)
@@ -35,6 +35,7 @@
   * [How to change the name of an existing lock](creators/tutorials-1/how-to-change-the-name-of-an-existing-lock.md)
   * [How to airdrop memberships](creators/tutorials-1/how-to-airdrop-memberships.md)
   * [Selling tickets for an event](creators/tutorials-1/selling-tickets-for-an-event.md)
+* [Creators FAQ](creators/faq.md)
 
 ## For Developers <a href="#developers" id="developers"></a>
 
