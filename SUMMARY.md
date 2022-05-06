@@ -5,11 +5,10 @@
 
 ## For Creators <a href="#creators" id="creators"></a>
 
-* [Page 1](creators/page-1.md)
 * [Creating a Lock](creators/deploying-lock/README.md)
   * [Using a custom currency](creators/deploying-lock/using-a-custom-currency.md)
-* [Enabling Credit Cards](creators/enabling-credit-cards/README.md)
-  * [Unlock Accounts](creators/enabling-credit-cards/unlock-accounts.md)
+* [Enabling Credit Cards](creators/enabling-credit-cards.md)
+  * [Unlock Accounts](creators/unlock-accounts.md)
 * [Customizing the NFT](creators/customizing-the-nft.md)
 * [Selling Memberships](creators/selling-memberships.md)
 * [Plugins and Integrations](creators/plugins-and-integrations/README.md)

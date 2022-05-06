@@ -23,37 +23,37 @@ For this, we rely [Stripe Connect](https://stripe.com/connect), which means that
 
 The first step, if your lock is eligible, is to connect your lock to a Stripe account. For this, connect to the Unlock Dashboard. Then, click on the Credit Card button on your lock's toolbar.
 
-![Click on the Credit Card button in your lock's toolbar](<../../.gitbook/assets/image (14).png>)
+![Click on the Credit Card button in your lock's toolbar](<../.gitbook/assets/image (14).png>)
 
 Once the Credit Card pane is displayed, click on the "Connect Stripe" button. When clicking you will first be prompted to **sign** a message confirming that you own that lock (any lock manager can do that) and that you want to enable credit card payments for it. Once confirmed, you will be redirected to the Stripe Website, where you need to follow multiple steps, including connecting a bank account and providing information about your identity.
 
-![Follow Stripe's required steps](<../../.gitbook/assets/image (21).png>)
+![Follow Stripe's required steps](<../.gitbook/assets/image (21).png>)
 
 Once your application is completed, Stripe will redirect you back to the Unlock Dashboard. It may take a few days for Stripe to approve your application. Until then your lock won't be able to receive card payments.
 
-![Stripe has been connected, but the application has not been fully approved.](<../../.gitbook/assets/image (19).png>)
+![Stripe has been connected, but the application has not been fully approved.](<../.gitbook/assets/image (19).png>)
 
 ### Allow Key Granting
 
 While you are waiting for Stripe's final approval, you can perform the last step: giving Unlock Inc. the ability to grant keys to users whose credit card payment has been successfully processed (see [roles](https://docs.unlock-protocol.com/developers/smart-contracts/lock-api/access-control)). Once Unlock Inc. has charged your member's card, we will then send them the NFT so that they can use it to prove their membership. In order to do this, we need a lock manager to grant us the role of "key granting". This role can be revoked at any point (but this will disable credit card payments) and we do not receive any permission or capability on your lock.
 
-![Once both steps are completed, your lock can now receive credit card payments.](<../../.gitbook/assets/image (17).png>)
+![Once both steps are completed, your lock can now receive credit card payments.](<../.gitbook/assets/image (17).png>)
 
 ## Credit card Purchase flow
 
 If you use Unlock's paywall application, the credit card flow is directly integrated in the checkout experience. The following screenshots illustrate the user flow.
 
-![In this example, there is a single lock, whose price is 0.01Eth (or about $24.50 at time of writing).](<../../.gitbook/assets/image (10).png>)
+![In this example, there is a single lock, whose price is 0.01Eth (or about $24.50 at time of writing).](<../.gitbook/assets/image (10).png>)
 
-![The user is prompted to select their payment method.](<../../.gitbook/assets/image (22).png>)
+![The user is prompted to select their payment method.](<../.gitbook/assets/image (22).png>)
 
-![If they select Credit card, they need to complete this information.](<../../.gitbook/assets/image (12).png>)
+![If they select Credit card, they need to complete this information.](<../.gitbook/assets/image (12).png>)
 
 In order to allow them to re-identify themselves, this flow creates an account for them using their email and a password of their choice that they can use to log in if they want to. Unlock Inc. does not store credit card numbers.
 
-![Once their information was saved, they are prompted once last time to confirm the transaction.](<../../.gitbook/assets/image (20).png>)
+![Once their information was saved, they are prompted once last time to confirm the transaction.](<../.gitbook/assets/image (20).png>)
 
-![After this, they are all set and their wallet has received the NFT from your lock.](<../../.gitbook/assets/image (8).png>)
+![After this, they are all set and their wallet has received the NFT from your lock.](<../.gitbook/assets/image (8).png>)
 
 ## Frequently Asked Questions
 

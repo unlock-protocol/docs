@@ -30,7 +30,7 @@ The logo of your lock can be customized. This logo is the one [used for the NFT]
 
 You will see the name (_First Euro lock_ for this example), its address (_0x09159A5..._ here), its duration (1 day), the number of existing memberships and the maximum amount that the lock can grant (_0/∞_), the price (_10 EURS_) and the current balance on the lock (_0 EURS_ since none has been sold). The icon bar lets you do the following:
 
-* [Enable credit card payments](../enabling-credit-cards/)
+* [Enable credit card payments](../enabling-credit-cards.md)
 * Withdraw funds (once memberships have been sold!)
 * See a demo of your lock on a _fake_ paywall-ed site
 * View the list of members,
