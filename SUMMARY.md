@@ -59,6 +59,7 @@
   * [Token Metadata API](developers/locksmith/token-metadata-api.md)
   * [Webhooks](developers/locksmith/webhooks.md)
 * [Tutorials](developers/tutorials/README.md)
+  * [What is a crypto wallet? (a guide for developers)](developers/tutorials/what-is-a-crypto-wallet-a-guide-for-developers.md)
   * [Using Subgraphs](developers/tutorials/using-subgraphs.md)
   * [Using Unlock in other contracts](developers/tutorials/using-unlock-in-other-contracts.md)
   * [Using Unlock with Ethers](developers/tutorials/ethers.md)

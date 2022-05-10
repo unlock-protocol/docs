@@ -18,7 +18,7 @@ By using Unlock's "Sign-In with Ethereum", users who do not have a crypto wallet
 
 Your application just needs to build these URLs using the following:
 
-Endpoint: [`https://app.unlock-protocol.com/checkout?`](https://app.unlock-protocol.com/checkout?client\_id=ouvre-boite.com\&redirect\_uri=https://ouvre-boite.com/)\`\`
+Endpoint: [`https://app.unlock-protocol.com/checkout?`](https://app.unlock-protocol.com/checkout?client\_id=ouvre-boite.com\&redirect\_uri=https://ouvre-boite.com/)``
 
 Required query parameters:
 
@@ -33,7 +33,7 @@ Optional query parameters:
 
 If the user refuses to connect and/or sign a message in their wallet, they will be redirected back to the `redirect_uri` and a new query string parameter will be attached `?error=access-denied`.
 
-If the user connected their wallet and signed the messages, they will also be redirected to your application, this time with a `code` extra query parameter. The value of this parameter is base64 encoded and can be decoded by your application in order to retrieve the signature message along with the message that was signed. Using these 2 values, you can "recover" the address of the signer.
+If the user connected their wallet and signed the messages, they will also be redirected to your application, this time with a `code` extra query parameter. The value of this parameter is base64 encoded and can be decoded by your application in order to retrieve the signature message along with the message that was signed. Using these 2 values, you can "recover" the address of the signer.&#x20;
 
 Most Ethereum libraries include a function to compute the signer's address from a message and the corresponding signature:
 
@@ -76,3 +76,4 @@ The signed message includes both a timestamp AND a random nonce that your applic
 * `Issued At` : this includes a timestamp in the iso8601 format. Your application should ensure that this timestamps is very recent (within seconds in the vast majority of cases).
 
 Finally, your application may want to take into account the address signed in the message, rather than the actual signer of the message itself as the actual identifier for the account. This is especially useful in the context of smart contract wallets where the signer needs to be an "authorized" signer on the contract. ([See EIP 1271 for more details](https://eips.ethereum.org/EIPS/eip-1271))
+
