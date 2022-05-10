@@ -12,13 +12,13 @@ In many contexts, your application does not need a full "web3" provider, but jus
 "_Ethereum_" here does not refer to any network in particular but to the type of wallet that can used. Since Polygon, Gnosis Chain or Optimism for example are all using the same wallet, you can (should!) absolutely use the same "Sign In with Ethereum".
 {% endhint %}
 
-By using Unlock's "Sign-In with Ethereum", users who do not have a crypto wallet can also easily create an [Unlock Account](../creators/unlock-accounts.md), as well as sign in to their existing account with their email and passwords.
+By using Unlock's "Sign-In with Ethereum", users who do not have a crypto wallet can also easily create an [Unlock Account](../../creators/unlock-accounts.md), as well as sign in to their existing account with their email and passwords.
 
 ### Building a "Sign-in With Ethereum" URL
 
 Your application just needs to build these URLs using the following:
 
-Endpoint: [`https://app.unlock-protocol.com/checkout?`](https://app.unlock-protocol.com/checkout?client\_id=ouvre-boite.com\&redirect\_uri=https://ouvre-boite.com/)``
+Endpoint: [`https://app.unlock-protocol.com/checkout?`](https://app.unlock-protocol.com/checkout?client\_id=ouvre-boite.com\&redirect\_uri=https://ouvre-boite.com/)\`\`
 
 Required query parameters:
 
@@ -33,7 +33,7 @@ Optional query parameters:
 
 If the user refuses to connect and/or sign a message in their wallet, they will be redirected back to the `redirect_uri` and a new query string parameter will be attached `?error=access-denied`.
 
-If the user connected their wallet and signed the messages, they will also be redirected to your application, this time with a `code` extra query parameter. The value of this parameter is base64 encoded and can be decoded by your application in order to retrieve the signature message along with the message that was signed. Using these 2 values, you can "recover" the address of the signer.&#x20;
+If the user connected their wallet and signed the messages, they will also be redirected to your application, this time with a `code` extra query parameter. The value of this parameter is base64 encoded and can be decoded by your application in order to retrieve the signature message along with the message that was signed. Using these 2 values, you can "recover" the address of the signer.
 
 Most Ethereum libraries include a function to compute the signer's address from a message and the corresponding signature:
 
@@ -53,7 +53,7 @@ const code = JSON.parse(atob(params.code));
 const address = ethers.utils.verifyMessage(code.d, code.s)
 ```
 
-You can try the Sign-In-With Ethereum flow [on this site for example](https://ouvre-boite.com) (click Sign-In). It is also used in our [WordPress plugin](../creators/plugins-and-integrations/wordpress-plugin.md).
+You can try the Sign-In-With Ethereum flow [on this site for example](https://ouvre-boite.com) (click Sign-In). It is also used in our [WordPress plugin](../../creators/plugins-and-integrations/wordpress-plugin.md).
 
 Example of message signed:
 
@@ -76,4 +76,3 @@ The signed message includes both a timestamp AND a random nonce that your applic
 * `Issued At` : this includes a timestamp in the iso8601 format. Your application should ensure that this timestamps is very recent (within seconds in the vast majority of cases).
 
 Finally, your application may want to take into account the address signed in the message, rather than the actual signer of the message itself as the actual identifier for the account. This is especially useful in the context of smart contract wallets where the signer needs to be an "authorized" signer on the contract. ([See EIP 1271 for more details](https://eips.ethereum.org/EIPS/eip-1271))
-

@@ -11,41 +11,41 @@ description: >-
 
 Using Unlock, you can build applications that have the ability to handle all aspects of using NFTs for memberships and access.
 
-* Minting&#x20;
-* Selling&#x20;
-* Authenticating&#x20;
-* Analytics&#x20;
+* Minting
+* Selling
+* Authenticating
+* Analytics
 * Integration
 
 ## Unlock capabilities
 
 Unlock has powerful capabilities that developers can build into native applications.
 
-**Time-based NFTs**&#x20;
+**Time-based NFTs**
 
 NFTs that have the ability to expire - useful for business models with recurring or subscription models.
 
-**Native-branded experiences**&#x20;
+**Native-branded experiences**
 
 Build Unlock directly into your website or application.
 
-**Contract ownership**&#x20;
+**Contract ownership**
 
 Smart contracts (locks) owned by the creator.
 
-**Customizable Interface**&#x20;
+**Customizable Interface**
 
 Use Unlock with your brand’s style and aesthetic.
 
-**Platform-less passports**&#x20;
+**Platform-less passports**
 
 Create a unique membership that can be recognized across the web! With membership represented as an NFT, memberships can span communities and create unique partnership opportunities.
 
-**Recurring memberships**&#x20;
+**Recurring memberships**
 
 The ability to create recurring subscriptions as patronage or membership.
 
-**Credit card integration**&#x20;
+**Credit card integration**
 
 Accept credit card payments for NFT memberships. Even though we believe that most people should eventually own a wallet themselves, there is a strong need in today's market for a convenience layer that lets consumers interact with locks without having to know (or care) about their private keys, gas fees, or Ethereum as a currency. Our convenience is similar to an Ethereum wallet for the Unlock ecosystem. It lets users purchase keys using their credit or debit cards, only for applicable locks.
 
@@ -63,13 +63,11 @@ Although, at its core, Unlock is an underlying protocol that any custom applicat
 
 The [dashboard](https://app.unlock-protocol.com) is to a tool for _creators and consumers_. For creators, it provides a way to deploy or update locks, view key owners, as well as withdraw funds from the locks. For consumers, it provides a "keychain" that lets them view all of their keys, the related information, as well as sell or cancel them.
 
-The dashboard also hosts the "checkout" UI ([more](paywall/configuring-checkout.md)) that one can use to easily purchase memberships to locks.
+The dashboard also hosts the "checkout" UI ([more](tools/paywall/configuring-checkout.md)) that one can use to easily purchase memberships to locks.
 
 ### The Paywall
 
 The "[paywall](https://paywall.unlock-protocol.com)" is an application that lets creators easily embed locks on their website via JavaScript APIs as well as provide a simple interface for consumers to purchase corresponding keys. Examples of integrations can be actual paywalls (similar to what many publisher websites currently provide), but also things like software licenses (where only certain features are available...) etc...
-
-
 
 ## A high level Ethereum architecture
 
@@ -98,4 +96,3 @@ To make it easy to interface with smart contracts, developers are building "dapp
 Finally, wallets are "wrappers" around private keys that let user sign messages and transactions sent through Dapps and RPC to distributed computer. These wallet can also store valuable state for users such as their balance of Ether, or even data from some specific smart contracts, such as their balances of certain tokens.
 
 Given the popularity of the Ethereum main-net, several side-chains and "layer 2" have emerged. They provide a very similar architecture and can be "connected" to the Ethereum mainnet through "gateways" whose role is to transfer tokens from a network to another.
-

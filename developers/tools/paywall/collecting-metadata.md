@@ -40,7 +40,7 @@ Name fields should be unique; if they are not then there may be collisions when 
 
 The `type` field maps to a certain subset of HTML `<input>` types, which influences how the form renders (see image).
 
-![In this example, first and last names are required and all other fields are optional.](../../.gitbook/assets/metadataformexample.png)
+![In this example, first and last names are required and all other fields are optional.](../../../.gitbook/assets/metadataformexample.png)
 
 After the user fills out the form and clicks the Continue button, they will be prompted to sign a message so the data can be verified as coming from then. After they sign, the key purchase will initiate.
 

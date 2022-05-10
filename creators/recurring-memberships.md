@@ -6,7 +6,7 @@ description: >-
 
 # Recurring Memberships
 
-When you [create your lock](deploying-lock/), you will be prompted for a base duration for each membership. When your members purchase their memberships, their "keys" will be set to expire based on that duration. After that, depending on how you setup your [checkout URL](../developers/paywall/configuring-checkout.md) and depending on how you configure your lock, these memberships could be automatically recurring!
+When you [create your lock](deploying-lock/), you will be prompted for a base duration for each membership. When your members purchase their memberships, their "keys" will be set to expire based on that duration. After that, depending on how you setup your [checkout URL](../developers/tools/paywall/configuring-checkout.md) and depending on how you configure your lock, these memberships could be automatically recurring!
 
 ### Requirements
 
@@ -36,7 +36,7 @@ Importantly, the user does _not_ need to have the full balance of ERC20 availabl
 
 If your lock follows the pre-requisites stated above, it can be enabled with recurring memberships. The dashboard includes a link to enable recurring transactions.&#x20;
 
-Once enabled, you can easily build checkout urls that include the attribute `recurringPayments` inside of a lock's configuration (see [Configuring Checkout](../developers/paywall/configuring-checkout.md)). This value is the number of times you want the membership to be renewed and the users will approve the lock to spend a total of `recurringPayments` multiplied by the current key price.
+Once enabled, you can easily build checkout urls that include the attribute `recurringPayments` inside of a lock's configuration (see [Configuring Checkout](../developers/tools/paywall/configuring-checkout.md)). This value is the number of times you want the membership to be renewed and the users will approve the lock to spend a total of `recurringPayments` multiplied by the current key price.
 
 Any user who goes through that process will be then prompted to approve the total amount. After that, you are all set.&#x20;
 
