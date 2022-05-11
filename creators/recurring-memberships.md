@@ -18,7 +18,7 @@ First, the lock needs to be an [ERC20 lock](deploying-lock/using-a-custom-curren
 
 For example, let's consider a lock uses USDC as its currency and the keys are sold for 5 USDC for 30 days. As a lock manager, you can ask users to approve a total of 60 USDC if you want the memberships to be automatically renewed for 1 year (5 x 12 = 60).
 
-Additionally, the lock _should_ include a gas refund. When configuring a lock, a lock manager can set an amount of tokens that should be paid pack to the sender of a transaction. This creates an economic incentive for miners to execute the renewal transaction, as long as the gas refund itself exceeds in value the amount of gas paid.
+Additionally, the lock _should_ include a gas refund. When configuring a lock, a lock manager can set an amount of tokens that should be paid back to the sender of a transaction. This creates an economic incentive for miners to execute the renewal transaction, as long as the gas refund itself exceeds in value the amount of gas paid.
 
 It is also important to note that the price AND duration of the memberships on a lock need to be _stable_. If the price or duration are changed, all the existing memberships that would have succeeded will fail.
 
