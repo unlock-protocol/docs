@@ -4,7 +4,7 @@ description: This document presents the Unlock roadmap.
 
 # Roadmap
 
-As of December 2021, the Unlock ecosystem consists of the following:
+As of Spring 2022, the Unlock ecosystem consists of the following:
 
 * A set of smart contracts which let creators deploy their locks, as well as lets consumers unlock the locks
 * An [unlock-js](https://www.npmjs.com/package/@unlock-protocol/unlock-js) library that developers can use to interact with the contracts
@@ -13,33 +13,52 @@ As of December 2021, the Unlock ecosystem consists of the following:
 * The [Unlock Tokens](https://github.com/unlock-protocol/unlock/wiki/The-Unlock-Tokens), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
 * The [Unlock DAO](https://unlock-protocol.com/blog/unlock-dao), a set of contracts that lets anyone who owns Unlock tokens submit proposals and vote on them in order to effectively govern the protocol and its treasury.
 
+
+
+## June 30st 2022
+
+* Recurring memberships support in UI (dashboard, keychain)
+* Refactored and redesigned checkout that supports the following
+  * Recurring
+  * Multiple memberships
+  * Metadata
+  * Credit card purchases...
+* Refactored Dashboard including:
+  * Better features to configure locks
+  * Advanced configuration of purchase URL
+* Ticket Verifiers
+* New Docs websites
+* New Guides website
+* Automatically recurring credit card based memberships
+* New networks + L2
+
 ## March 31st 2022
 
 * PublicLock new features:
-  * Multiple memberships: the ability for an address to own multiple memberships
-  * Automatically recurring memberships: the contracts support the ability for users to subscribe and have their memberships be automatically renewed by network participants who are ecomomically incentivized to do so.
-  * Ownable: the PublicLock lock managers can set an "owner" on the contract
-* Unlock Contract's GDP updates triggers and event
-* Audits
-* Unlock DAO takes ownership of the UDT contract
-* New Static website
+  * Multiple memberships: the ability for an address to own multiple memberships  ✅
+  * Automatically recurring memberships: the contracts support the ability for users to subscribe and have their memberships be automatically renewed by network participants who are economically incentivized to do so. ⏰
+  * Ownable: the PublicLock lock managers can set an "owner" on the contract ✅
+* Unlock Contract's GDP updates triggers and events ✅
+* Audits ✅
+* New Static website ✅
+
 ## December 31st 2021
 
-* Upgradable PublicLock contracts (by their lock managers)  ✅&#x20;
+* Upgradable PublicLock contracts (by their lock managers) ✅
 * New features in PublicLock:
-  * Non-expiring keys: ability to create locks without a duration  ✅&#x20;
-  * Gas-refund: ability for lock manager to specify an amount refunded to the key purchase (or grants) transactions  ✅&#x20;
-  * 3rd party strategies: adding a `balanceOf` hook that lets other contracts determine if someone should get a membership based on arbitrary characteristics (users owns a balance of X tokens, another NFT... etc)  ✅&#x20;
-  * Dynamic TokenURI: providing a mechanism for a lock owner to define a 3rd party contract for the logic to yield the tokenURI  ✅&#x20;
+  * Non-expiring keys: ability to create locks without a duration ✅
+  * Gas-refund: ability for lock manager to specify an amount refunded to the key purchase (or grants) transactions ✅
+  * 3rd party strategies: adding a `balanceOf` hook that lets other contracts determine if someone should get a membership based on arbitrary characteristics (users owns a balance of X tokens, another NFT... etc) ✅
+  * Dynamic TokenURI: providing a mechanism for a lock owner to define a 3rd party contract for the logic to yield the tokenURI ✅
 * Dev tools:
-  * OAuth/OIDC flow for 3rd party applications who do not want to handle wallets  ✅&#x20;
-  * Webhooks ability to register hooks when a transaction gets executed on a lock  ✅&#x20;
+  * OAuth/OIDC flow for 3rd party applications who do not want to handle wallets ✅
+  * Webhooks ability to register hooks when a transaction gets executed on a lock ✅
 * Creator tools:
   * Multichain dashboard ⏰
-  * Persistent login ✅&#x20;
-  * Granting membership UI ✅&#x20;
+  * Persistent login ✅
+  * Granting membership UI ✅
 * Member tools:
-  * Manage memberships from keychain ✅&#x20;
+  * Manage memberships from keychain ✅
 
 ## August 2021
 
@@ -74,7 +93,6 @@ These are opportunities we will eventually work on, based on user demand or avai
 
 ### Locksmith
 
-* Recurring key purchasers
 * Cross chain purchasers (allowing someone to purchase a membership from a network on another network)
 
 ### Unlock App
@@ -83,7 +101,6 @@ These are opportunities we will eventually work on, based on user demand or avai
 
 ### Tooling
 
-* Github actions to replace CircleCi (partial ✅)
 * Better integration tests
 * refactored subgraphs
 * IPFS front-end (partial ✅)
