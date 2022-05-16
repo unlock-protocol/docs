@@ -21,7 +21,7 @@ After this, you will need to include the following parameters:
 * `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object.
 * `redirectUri=...` where `...` is replaced with the URL-encodded address of a webpage where the user will be redirected when their membership is valid.
 
-These parameters are all separated by the `&` sign and you can use online tools such as [https://www.urlencoder.io/](https://www.urlencoder.io) to build the encoded version of the parameters.
+These parameters are all separated by the `&` sign and you can use online tools such as [https://www.urlencoder.io/](https://www.urlencoder.io/) to build the encoded version of the parameters.
 
 #### Example
 
@@ -29,7 +29,7 @@ These parameters are all separated by the `&` sign and you can use online tools 
 https://app.unlock-protocol.com/checkout?redirectUri=https://ouvre-boite.com&paywallConfig=%7B%22locks%22%3A%7B%220x15F67811Beb43aCE162693fe1415916F87B8C5C2%22%3A%7B%22network%22%3A137%7D%7D%2C%22persistentCheckout%22%3Atrue%2C%22icon%22%3A%22https%3A%2F%2Frinkeby.locksmith.unlock-protocol.com%2Flock%2F0x15F67811Beb43aCE162693fe1415916F87B8C5C2%2Ficon%22%7D
 ```
 
-This URL will redirect members to this page [`https://ouvre-boite.com/`](https://ouvre-boite.com).
+This URL will redirect members to this page [`https://ouvre-boite.com/`](https://ouvre-boite.com/).
 
 ## The paywallConfig object
 

@@ -23,7 +23,7 @@ The core values and objectives for decentralised applications are:
 
 Other common features of decentralised applications include:
 
-* Public / private key based identity / [Decentralised Identifiers](https://www.w3.org/TR/did-core/#:\~:text=Abstract,the%20controller%20of%20the%20DID.\)) (DIDs), **not** username/password
+* Public / private key based identity / [Decentralised Identifiers](https://www.w3.org/TR/did-core/) (DIDs), **not** username/password
 * Hash-based addressing using [Distributed Hash Tables](https://www.ietf.org/proceedings/65/slides/plenaryt-2.pdf) (DHT) rather than filesystem location-based Uniform Resource Locators (URLs)
 * Alignment of incentives / incentive mechanisms / “[tokenomics](https://coinmarketcap.com/alexandria/article/what-is-tokenomics)”
 
@@ -43,7 +43,7 @@ In practice, this means that rather than each integration requiring special atte
 
 In this system, applications are incentivised to be as open and accessible as possible to become useful components in the global toolset and increase their usage and relevance. It’s similar to the way each LEGO brick in a set fits together in many combinations with no special consideration beyond what the piece is for. Users gain more control over the components they use, perhaps swapping one brick out for another, or combining bricks in ways that create unique outcomes that weren’t conceived by the creators of those pieces.&#x20;
 
-Competing user interfaces can provide different perspectives on the same data and events. Users can bring their assets, data and social graph with them when they begin using an application. If one application begins displaying excessive advertising, the users can switch to another with continuity of their data and social connections. Today, you can’t quit Twitter because you disagree with their moderation policies and take your tweets and existing followers with you to a network that does it the way you prefer. If Twitter were built on a decentralised protocol (such as [Lens](https://lens.dev) or Twitter’s own [Bluesky](https://blueskyweb.org) initiative), this would become possible.
+Competing user interfaces can provide different perspectives on the same data and events. Users can bring their assets, data and social graph with them when they begin using an application. If one application begins displaying excessive advertising, the users can switch to another with continuity of their data and social connections. Today, you can’t quit Twitter because you disagree with their moderation policies and take your tweets and existing followers with you to a network that does it the way you prefer. If Twitter were built on a decentralised protocol (such as [Lens](https://lens.dev/) or Twitter’s own [Bluesky](https://blueskyweb.org/) initiative), this would become possible.
 
 In recent decades, we've seen the technology giants gather power to moderate and mediate our networks, relationships, and access to information. By building decentralised networks and applications, we build for the long-term public good on infrastructure that remains neutral and gives users the power to choose their own adventure.
 
@@ -51,7 +51,7 @@ In recent decades, we've seen the technology giants gather power to moderate and
 
 Bitcoin is one of the earliest Dapps. It's the "decentralised money app". Dapps build on top of that core example of an immutable ledger, and add more complex functionality.
 
-Dapps typically use [public and private key cryptography](https://en.wikipedia.org/wiki/Public-key\_cryptography) to manage user identity and credentials instead of usernames and passwords, rely on public blockchains to control value transfer and important persistent application state, and offload high volume data storage to other networks such as the [Interplanetary File System](https://ipfs.io) (IPFS) where possible. You can read more about IPFS in the technology introduction below.
+Dapps typically use [public and private key cryptography](https://en.wikipedia.org/wiki/Public-key\_cryptography) to manage user identity and credentials instead of usernames and passwords, rely on public blockchains to control value transfer and important persistent application state, and offload high volume data storage to other networks such as the [Interplanetary File System](https://ipfs.io/) (IPFS) where possible. You can read more about IPFS in the technology introduction below.
 
 Dapps often make use of public “smart contract” blockchain networks like Ethereum, but this is not the only tool in the box.
 
@@ -67,21 +67,21 @@ This is achieved by removing the requirement of every node on the network to sto
 
 _An example of this concept in practice within the Unlock Protocol ecosystem:_&#x20;
 
-When you create a Lock, you also create Keys (NFTs). Each NFT Key can have an image (.jpeg, .png, .gif etc.) attached to it, which can be shown to represent the NFT on websites or marketplaces. High-resolution, custom images tend to be large files that are too expensive to store on a blockchain. To work around this, Unlock Keys allow you to define a reference to where the file is stored in the NFT metadata. When you point this reference to a file hash stored on IPFS, the image can be retrieved from that network and rendered where the NFT is viewed. The only requirement is that someone, somewhere is running an IPFS node that hosts the file. There are a number of services that run IPFS nodes that guarantee someone hosts your files, such as [nft.storage](http://nft.storage) or [pinata.cloud](https://www.pinata.cloud).
+When you create a Lock, you also create Keys (NFTs). Each NFT Key can have an image (.jpeg, .png, .gif etc.) attached to it, which can be shown to represent the NFT on websites or marketplaces. High-resolution, custom images tend to be large files that are too expensive to store on a blockchain. To work around this, Unlock Keys allow you to define a reference to where the file is stored in the NFT metadata. When you point this reference to a file hash stored on IPFS, the image can be retrieved from that network and rendered where the NFT is viewed. The only requirement is that someone, somewhere is running an IPFS node that hosts the file. There are a number of services that run IPFS nodes that guarantee someone hosts your files, such as [nft.storage](http://nft.storage) or [pinata.cloud](https://www.pinata.cloud/).
 
 #### **Data networks (Ceramic, Gun, The Graph)**
 
 Many applications require unique data structures that don’t fit into the paradigm of smart contracts on a blockchain and aren’t static files that never change. This could be a blog post, or a tweet, or the notion of one user following another user. Some data queries can be difficult to run on blockchains due to the use of data structures optimised for efficiently storing and writing data rather than reading it. **Data networks exist to solve this problem.**
 
-[Ceramic](https://ceramic.network) and [Gun](https://gun.eco) allow peer-to-peer data storage and syncing without any financial implications or transaction fees, operating more like IPFS than Ethereum. Nodes opt-in to hosting the data they care about; they don’t attempt to store everything.
+[Ceramic](https://ceramic.network/) and [Gun](https://gun.eco/) allow peer-to-peer data storage and syncing without any financial implications or transaction fees, operating more like IPFS than Ethereum. Nodes opt-in to hosting the data they care about; they don’t attempt to store everything.
 
 Ceramic is also a marketplace for these data models, providing common formats and interfaces for sharing data between applications in a decentralised way.
 
-[The Graph](https://thegraph.com) is a network of nodes indexing blockchains and storing the data in a way that’s more convenient for running complex queries. It provides a unified GraphQL API to fulfill these requests and creates a marketplace to incentivise nodes to host and serve this data.
+[The Graph](https://thegraph.com/) is a network of nodes indexing blockchains and storing the data in a way that’s more convenient for running complex queries. It provides a unified GraphQL API to fulfill these requests and creates a marketplace to incentivise nodes to host and serve this data.
 
 #### **Node and data access solutions (Infura, Alchemy)**
 
-While running your own node is similar to running any other kind of server, it's often difficult to do at scale. There are a number of providers that make it easy to access blockchain data at scale without having to run your own complex infrastructure. This leads to the criticism that many self-described decentralised applications rely on these centralised services, making them centralised in practice. While this is partly true, being able to move to a different provider or to operate your own node infrastructure when viable while retaining your data and relationships still honours the spirit of decentralisation. You don’t have to ask anyone to export your data, you already have full control. Some examples of this type of service are [Infura](https://infura.io), [Alchemy](https://www.alchemy.com), and [Moralis](https://moralis.io).
+While running your own node is similar to running any other kind of server, it's often difficult to do at scale. There are a number of providers that make it easy to access blockchain data at scale without having to run your own complex infrastructure. This leads to the criticism that many self-described decentralised applications rely on these centralised services, making them centralised in practice. While this is partly true, being able to move to a different provider or to operate your own node infrastructure when viable while retaining your data and relationships still honours the spirit of decentralisation. You don’t have to ask anyone to export your data, you already have full control. Some examples of this type of service are [Infura](https://infura.io/), [Alchemy](https://www.alchemy.com/), and [Moralis](https://moralis.io/).
 
 ## C**onclusion**
 

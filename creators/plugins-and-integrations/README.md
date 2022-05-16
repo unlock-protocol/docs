@@ -25,7 +25,7 @@ Our community has deployed integrations using many different existing platforms 
 * [Instructions & Documentation](discord/swordybot.md)
 * [Swordy Bot Website](https://swordybot.com)
 * [Blog Post](https://unlock-protocol.com/blog/swordy-bot-intro)
-* Created by [Patrick Gallagher](https://patrickgallagher.dev)
+* Created by [Patrick Gallagher](https://patrickgallagher.dev/)
 
 #### Collab.Land
 
@@ -91,15 +91,15 @@ Firebase is a platform developed by Google for creating mobile and web applicati
 A Wordpress Plugin that integrates the Unlock [Paywall Application](../../developers/tools/paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
 
 * [Integration Details](wordpress-plugin.md)
-* [Demo](https://wordpress-demo.unlock-protocol.com)
+* [Demo](https://wordpress-demo.unlock-protocol.com/)
 * [WordPress.org Plugin Page](https://wordpress.org/plugins/unlock-protocol/)
 * [GitHub Repo](https://github.com/unlock-protocol/unlock-wordpress-plugin)
 * Created by [Unlock](https://github.com/unlock-protocol)
 
 ## Webflow
 
-* [Demo & Integration Details](https://unlock-integration.webflow.io)
-* [Clone Project](https://preview.webflow.com/preview/unlock-integration?preview=d2b65d0b804e0767c26e883d94d9ebbb)
+* [Demo & Integration Details](https://unlock-integration.webflow.io/)
+* [Clone Project](https://preview.webflow.com/preview/unlock-integration?utm\_medium=preview\_link\&utm\_source=showcase\&utm\_content=unlock-integration\&preview=d2b65d0b804e0767c26e883d94d9ebbb)
 * [Webflow Showcase](https://webflow.com/website/Integrating-Unlock)
 * [Blog Post](https://unlock-protocol.com/blog/webflow-integration)
 * Created by [Sascha Mombartz](https://twitter.com/supermombartz)

@@ -24,7 +24,7 @@ Once deployed the lock will have its own address and is **fully owned** by the c
 
 Once deployed, the dashboard will show you details about your lock:
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (11) (1).png>)
 
 The logo of your lock can be customized. This logo is the one [used for the NFT](../customizing-the-nft.md) that your users will purchase when they get a membership.
 

@@ -85,7 +85,7 @@ Hot wallets can take different forms. You may access one through the crypto exch
 
 **A) Custodial Hot Wallets: storing your keys on the exchange**
 
-The easiest way to store cryptocurrency is to do so on the exchange where you purchase the currency. Many crypto exchanges like [Coinbase](https://www.coinbase.com), [Gemini](https://www.gemini.com), [Binance](https://www.binance.com), [Kraken](https://www.kraken.com) allow you to store your cryptocurrency on their exchange itself. However, to buy (or otherwise hold) NFTs, you’ll often use a non-custodial wallet, like MetaMask. With these types of wallets, you always retain ownership and control of your private keys. More on this later.
+The easiest way to store cryptocurrency is to do so on the exchange where you purchase the currency. Many crypto exchanges like [Coinbase](https://www.coinbase.com/), [Gemini](https://www.gemini.com/), [Binance](https://www.binance.com/), [Kraken](https://www.kraken.com/) allow you to store your cryptocurrency on their exchange itself. However, to buy (or otherwise hold) NFTs, you’ll often use a non-custodial wallet, like MetaMask. With these types of wallets, you always retain ownership and control of your private keys. More on this later.
 
 The terms "Hosted or Custodial Wallet" are used because in these cases the exchange holds on to your private key for you. As a user you do not have access to your private key, or in some cases you're never even assigned a private key, because the exchange keeps track of its own internal ledger. This means you need to trust the company to keep it safe, just like you would need to trust any online company with your data. This is something to consider when deciding what and how much you store on the exchange itself.
 
@@ -113,7 +113,7 @@ When creating a non-custodial wallet, like MetaMask, you will be asked to write 
    4. Select “Create a Wallet.”
    5. Create a password for MetaMask.
    6. Write down your seed phrase and store it somewhere secure.
-2. \[Optional] You can also access your wallet from a mobile device using the MetaMask mobile app or another mobile wallet app (eg, [Rainbow](https://rainbow.me) is another popular mobile wallet).
+2. \[Optional] You can also access your wallet from a mobile device using the MetaMask mobile app or another mobile wallet app (eg, [Rainbow](https://rainbow.me/) is another popular mobile wallet).
    1. MetaMask has apps for both iOS and Android mobile platforms
    2. Download the MetaMask app from the [Apple App Store](https://apps.apple.com/us/app/metamask/id1438144202) or the [Google Play Store](https://play.google.com/store/apps/details?id=io.metamask)
    3. Open the MetaMask mobile app and select 'Sync or Import' > 'Scan QR code'.
@@ -133,7 +133,7 @@ For small amounts of crypto, a cold wallet isn't necessary. For example, spendin
 
 As a rule of thumb, you should use a cold wallet when you have more crypto than you'd be comfortable losing.
 
-The most popular hardware wallets are [Ledger](https://www.ledger.com) and [Trezor](https://trezor.io) — each of which have their strengths and limitations relative to one another. When choosing a hardware wallet, it’s important to make sure the wallet supports the blockchain (and its tokens) that you plan to secure with it.
+The most popular hardware wallets are [Ledger](https://www.ledger.com/) and [Trezor](https://trezor.io/) — each of which have their strengths and limitations relative to one another. When choosing a hardware wallet, it’s important to make sure the wallet supports the blockchain (and its tokens) that you plan to secure with it.
 
 **Buying Hardware wallets**
 

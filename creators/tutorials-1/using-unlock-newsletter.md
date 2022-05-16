@@ -15,7 +15,7 @@ Start by creating your own lock. It's a smart contract deployed on the Ethereum 
 
 Unlock Inc. has built a custom web page where you can easily collect email addresses from members.
 
-You can find the application at this URL: [`https://newsletter.unlock-protocol.com/?`](https://newsletter.unlock-protocol.com)
+You can find the application at this URL: [`https://newsletter.unlock-protocol.com/?`](https://newsletter.unlock-protocol.com/)
 
 You can customize it by adding the following parameters in the URL:
 
@@ -47,7 +47,7 @@ The list of members includes the lock name, the address of the member (key holde
 
 ![](../../.gitbook/assets/newsletter-members.png)
 
-You can export that list as CSV and import it into your email sending tool, such as [Substack](https://substack.com), [Mailchimp](https://mailchimp.com), and more. You can also send the emails directly from your own email client.
+You can export that list as CSV and import it into your email sending tool, such as [Substack](https://substack.com/), [Mailchimp](https://mailchimp.com/), and more. You can also send the emails directly from your own email client.
 
 **Important Note**: our tool does not currently provide the ability to send emails. We recommend that you use other tools for this
 

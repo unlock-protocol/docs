@@ -11,7 +11,7 @@ On Ethereum's main network:
 
 #### Building your own URL example:
 
-The parameters for [BAT](https://basicattentiontoken.org) are as follows:
+The parameters for [BAT](https://basicattentiontoken.org/) are as follows:
 
 * erc20: `0x0d8775f648430679a709e98d2b0cb6250d2887ef`
 * ticker: `BAT`
