@@ -38,13 +38,13 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 * `locks` : _required object_, a list of lock objects (see below).
 * `icon`: _optional string_, the URL for a icon to display in the top left corner of the modal.
 * `callToAction`: _optional object_, a list of messages shown based on the state of the checkout modal (see below).
-* `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
 * `persistentCheckout`: _optional boolean_: `true` \_\_if the modal cannot be closed, defaults to `false` when embedded. When closed, the user will be redirected to the `redirect` query param when using a purchase address (see above).
 * `useDelegatedProvider`: _optional boolean._ To be announced.
 * `network`: _optional integer._ defaults to `1`. See below.
 * `referrer`: _optional string_. The address which will [receive UDT tokens](../../../governance/the-unlock-token/) (if the transaction is applicable)
 * `messageToSign`: _optional string_. If supplied, the user is prompted to sign this message using their wallet. If using a checkout URL, a `signature` query param is then appended to the `redirectUri` (see above). If using the embedded paywall, the `unlockProtocol.authenticated` includes the `signature` attribute.
 * `pessimistic`: _optional boolean._ defaults to `false`_._ By default, to reduce friction, we do not require users to wait for the transaction to be mined before offering them to be redirected. By setting this to `true`, users will need to wait for the transaction to have been mined in order to proceed to the next step.
+* `captcha`: _optional boolean._ defaults to `false`_._ If set `true`, the users will be prompted to go through a captcha during the checkout process. This is better used in conjunction with a purchase hook that verifies that captcha is valid.
 
 #### Locks
 
@@ -52,6 +52,9 @@ The locks object is a list of objects indexed by the lock address, where each ob
 
 * `network`: _recommended integer_. See below.
 * `name`: _optional string_. name of the lock to display.
+* `recurringPayments`: optional number. The number of time a membership should be renewed automatically. This only applies to ERC20 locks. [Read more about recurring memberships](../../../creators/recurring-memberships.md).\`
+* `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
+* ``
 
 #### Calls to action
 
