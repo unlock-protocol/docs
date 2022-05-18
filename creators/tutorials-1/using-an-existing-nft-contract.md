@@ -1,23 +1,37 @@
 ---
 description: >-
-  Your lock is an NFT contract, but you can also plug-in an existing ERC721
-  contract easily to make sure any of the holder is treated as a valid member
+  Your lock is an NFT contract, but you can also plug-in an existing ERC721 or
+  ERC1155 contract easily to make sure any of the holder is treated as a valid
+  member
 ---
 
 # Using an existing NFT contract
 
-Locks are membership contracts that can "mint" their own NFT (ERC721) as membership cards. However in some cases, you may want to consider other users as "members" even though they might not have one of the actual membership cards from the lock itself (we call them keys). In that case, you would hook your lock to an external contract that would itself provide its own membership cards.
+Locks are membership contracts that can "mint" their own NFT (ERC721 or ERC1155) as membership cards. However in some cases, you may want to consider other users as "members" even though they might not have one of the actual membership cards from the lock itself (we call them keys). In that case, you would hook your lock to an external contract that would itself provide its own membership cards.
+
+Note: the Lock contract and the pre-existing NFT contract (ERC721 or ERC1155) _need_ to be on the same network...
+
+### The hook contracts
 
 We have deployed these hook contracts on each of the networks that we currently support:
 
+**Using an ERC721**
+
+* Mainnet: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE#code)
 * Rinkeby: [`0x910F56Fb797D9c7a978a08e73D7280e67eb81372`](https://rinkeby.etherscan.io/address/0x910F56Fb797D9c7a978a08e73D7280e67eb81372)
 * Gnosis Chain: [`0xE4c2f9281ec03a1956c3756C66E73f22233323D3`](https://blockscout.com/xdai/mainnet/address/0xE4c2f9281ec03a1956c3756C66E73f22233323D3/contracts)
 * Polygon: [`0xf705b2dd649bbcb9418d08c1ff508a983f923516`](https://polygonscan.com/address/0xf705b2dd649bbcb9418d08c1ff508a983f923516)
-* Mainnet: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE#code)
 * Optimism: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://optimistic.etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE)
 * BSC: [`0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2`](https://bscscan.com/address/0xAC82F15D80b8D98E3fBb7707C9736EEbE1F655F2)
 
-Note: the Lock contract and the pre-existing ERC721 contract _need_ to be on the same network...
+**Using an ERC1155**
+
+* Mainnet: [`0x8ec9FB8FCC5ab6E0bD04EfD9e42A8f6Be45eaeC2`](https://etherscan.io/address/0x8ec9FB8FCC5ab6E0bD04EfD9e42A8f6Be45eaeC2)``
+* Rinkeby : [`0xD7477B7c0CdA4204Cf860e4c27486061b15a5AC3`](https://rinkeby.etherscan.io/address/0xD7477B7c0CdA4204Cf860e4c27486061b15a5AC3)``
+* Gnosis Chain: [`0x4F44e968961f5ff818b788E626564BBAF2c96bAC`](https://blockscout.com/xdai/mainnet/address/0x4F44e968961f5ff818b788E626564BBAF2c96bAC)``
+* Polygon: [`0x0C0cEEcF5C14EBF1Fcf6779F92766128eeE7098C`](https://polygonscan.com/address/0x0C0cEEcF5C14EBF1Fcf6779F92766128eeE7098C)``
+* Optimism: [`0xF867712b963F00BF30D372b857Ae7524305A0CE7`](https://optimistic.etherscan.io/address/0xF867712b963F00BF30D372b857Ae7524305A0CE7)``
+* BSC: [`0x3952787d8Ec653E9179a3Fa5D8c018d7bD8e94c7`](https://bscscan.com/address/0x3952787d8Ec653E9179a3Fa5D8c018d7bD8e94c7)``
 
 ### What happens exactly
 
@@ -38,7 +52,8 @@ Now, connect your wallet by clicking on the `Connect to Web3` button in the bloc
 Then, in the `createMapping` form, enter the following values:
 
 * `_lockAddress`: this is the address for your lock (you can get it from your Unlock Dashboard)
-* `_nftAddress`: that is the address for your pre-existing NFT contract (ERC721)
+* `_nftAddress`: that is the address for your pre-existing NFT contract (ERC721 or ERC1155)
+* `__tokenTypeId`: (only for ERC1155) the id of the type of token
 
 Then click on `Write`. You will be prompted to send a transaction by your wallet. Validate and wait for this to have been executed.
 
@@ -46,7 +61,7 @@ Once done, head to your lock in the block explorer. You can click on the ![](<..
 
 Then, look for the `SetEvenHooks` function:
 
-![](<../../.gitbook/assets/image (28) (1).png>)
+![](<../../.gitbook/assets/image (28) (1) (1).png>)
 
 Hooks are 3rd party contract that can be called when your lock itself is called. Here we are interested in changing the behavior of the `validKey` function, so you will enter the address of the hook contract for your network (see list above!) in the `_onValidKeyHook` field. Make sure you add `0x0000000000000000000000000000000000000000` in all the other fields to leave them unset.
 
