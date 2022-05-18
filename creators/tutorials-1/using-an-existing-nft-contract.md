@@ -7,7 +7,7 @@ description: >-
 
 # Using an existing NFT contract
 
-Locks are membership contracts that can "mint" their own NFT (ERC721 or ERC1155) as membership cards. However in some cases, you may want to consider other users as "members" even though they might not have one of the actual membership cards from the lock itself (we call them keys). In that case, you would hook your lock to an external contract that would itself provide its own membership cards.
+Locks are membership contracts that can "mint" their own NFT (ERC721) as membership cards. However in some cases, you may want to consider other users as "members" even though they might not have one of the actual membership cards from the lock itself (we call them keys). In that case, you would hook your lock to an external contract that would itself provide its own membership cards.
 
 Note: the Lock contract and the pre-existing NFT contract (ERC721 or ERC1155) _need_ to be on the same network...
 
@@ -53,7 +53,7 @@ Then, in the `createMapping` form, enter the following values:
 
 * `_lockAddress`: this is the address for your lock (you can get it from your Unlock Dashboard)
 * `_nftAddress`: that is the address for your pre-existing NFT contract (ERC721 or ERC1155)
-* `__tokenTypeId`: (only for ERC1155) the id of the type of token
+* `_tokenTypeId`: (only for ERC1155) the id of the type of token
 
 Then click on `Write`. You will be prompted to send a transaction by your wallet. Validate and wait for this to have been executed.
 
