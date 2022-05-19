@@ -1,8 +1,8 @@
 ---
 description: >-
   Your lock is an NFT contract, but you can also plug-in an existing contract
-  (ERC721, ERC1155 or ERC20) easily to make sure any of the holder is treated as
-  a valid member
+  (ERC721, ERC1155 or ERC20) to make sure any visitor is treated as a valid
+  member
 ---
 
 # Using an existing contract
@@ -73,7 +73,7 @@ Then, look for the `SetEvenHooks` function:
 
 ![](<../../.gitbook/assets/image (28) (1) (1).png>)
 
-Hooks are 3rd party contract that can be called when your lock itself is called. Here we are interested in changing the behavior of the `validKey` function, so you will enter the address of the hook contract for your network (see list above!) in the `_onValidKeyHook` field. Make sure you add `0x0000000000000000000000000000000000000000` in all the other fields to leave them unset.
+Hooks are 3rd party contracts that can be called when your lock itself is called. Here we are interested in changing the behavior of the `validKey` function, so you will enter the address of the hook contract for your network (see list above!) in the `_onValidKeyHook` field. Make sure you add `0x0000000000000000000000000000000000000000` in all the other fields to leave them unset.
 
 Click on `Write`, confirm the transaction in your wallet and you should be all set!
 
