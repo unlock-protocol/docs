@@ -84,6 +84,12 @@ window.addEventListener('unlockProtocol.status', function(e) {
 
 _Note_: the callback can be invoked several times. For example, a visitor might purchase a key while they are on the page, going from the `locked` to the `unlocked` state. Similarly, the key that the visitor owns may expire during a visit which would result in the state going from `unlocked` to `locked`.
 
+### Modal Closing
+
+* Event Name: `unlockProtocol.closeModal`
+
+This event gets triggered when the modal is closed by the user. It does not give any information about the status of the user specifically. For that you would need to use the `unlockProtocol.status` highlighted above.
+
 ## Initiate Checkout
 
 In order to purchase keys, Unlock provides a modal that lets the user pick the lock of their choice (based on [the configuration](configuring-checkout.md)). The modal can be loaded by invoking the following:
