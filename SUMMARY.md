@@ -22,7 +22,7 @@
   * [Mintgate](creators/plugins-and-integrations/mintgate.md)
   * [Decentraland](creators/plugins-and-integrations/decentraland.md)
 * [Tutorials](creators/tutorials-1/README.md)
-  * [Using an existing NFT contract or token](creators/tutorials-1/using-an-existing-nft-contract.md)
+  * [Using an existing contract](creators/tutorials-1/using-an-existing-nft-contract.md)
   * [Customizing Locks on OpenSea](creators/tutorials-1/customizing-locks-on-opensea.md)
   * [Organizing a vote by members](creators/tutorials-1/organizing-a-vote-by-members.md)
   * [How to resell a membership](creators/tutorials-1/how-to-resell-a-lock.md)
