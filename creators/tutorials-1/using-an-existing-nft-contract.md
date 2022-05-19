@@ -1,11 +1,10 @@
 ---
 description: >-
-  Your lock is an NFT contract, but you can also plug-in an existing ERC721 or
-  ERC1155 contract easily to make sure any of the holder is treated as a valid
-  member
+  Your lock is an NFT contract, but you can also plug-in an existing ERC721,
+  ERC1155, or ERC20 contract to make sure a visitor is treated as a valid member
 ---
 
-# Using an existing NFT contract
+# Using an existing NFT contract or token
 
 Locks are membership contracts that can "mint" their own NFT (ERC721) as membership cards. However in some cases, you may want to consider other users as "members" even though they might not have one of the actual membership cards from the lock itself (we call them keys). In that case, you would hook your lock to an external contract that would itself provide its own membership cards.
 
