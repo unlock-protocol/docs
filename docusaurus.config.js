@@ -56,10 +56,13 @@ const config = {
           {
             type: "doc",
             docId: "introduction",
-            position: "left",
-            label: "Get Started",
+            position: "right",
+            label: "Documentation",
           },
-          { to: "/api", label: "API", position: "left" },
+          { to: "/api", label: "Tools", position: "right" },
+          { to: "/api", label: "Tutorials", position: "right" },
+          { to: "/api", label: "Governance", position: "right" },
+          { to: "/api", label: "API-to be delete", position: "right" },
           {
             href: "https://github.com/unlock-protocol/unlock",
             label: "GitHub",
