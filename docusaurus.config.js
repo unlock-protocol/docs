@@ -77,14 +77,31 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Start here",
+                label: "Introduction",
                 to: "/",
+              },
+              {
+                label: "Tools",
+                to: "/",
+              },
+              {
+                label: "Tutorials",
+                to: "/",
+              },
+              {
+                label: "Goverance",
+                to: "/",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/unlock-protocol/unlock",
               },
             ],
           },
           {
             title: "Community",
             items: [
+              
               {
                 label: "Discord",
                 href: "https://discord.com/invite/Ah6ZEJyTDp",
@@ -93,23 +110,45 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/UnlockProtocol",
               },
+              {
+                label: "Forum",
+                href: "https://unlock.community/",
+              },
+            
             ],
           },
           {
-            title: "More",
+            title: "About Unlock",
             items: [
+            
               {
-                label: "Website",
+                label: "About Unlock",
                 to: "https://unlock-protocol.com",
               },
               {
-                label: "Unlock App",
+                label: "Blog",
                 to: "https://app.unlock-protocol.com",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/unlock-protocol/unlock",
+                label: "Guides",
+                to: "https://unlock-protocol.com/guides",
               },
+            
+            
+            ],
+          },
+          {
+            title: "Unlock apps",
+            items: [
+              {
+                label: "Launch dashboard",
+                to: "https://app.unlock-protocol.com",
+              },
+              {
+                label: "Grants for developer",
+                to: "https://unlock-protocol.com/grants",
+              },
+            
             ],
           },
         ],
