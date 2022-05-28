@@ -11,7 +11,7 @@ _Prerequisite: this currently requires an_ [_Ethereum wallet_](https://ethereum.
 
 {% embed url="https://youtu.be/jKj3l4Ei-i4" %}
 
-Locks are smart contracts on an Ethereum compatible blockchain. This provides creators with **unmediated control over who can access their work**, and how much they want to charge for this. Unlock Inc. provides a simple dashboard to create a lock at the following address.
+Locks are smart contracts on an Ethereum compatible blockchain. This provides creators with **unmediated control over who can access their work**, and how much they want to charge for this. Unlock Labs provides a simple dashboard to create a lock [here](https://app.unlock-protocol.com/dashboard).&#x20;
 
 When creating a lock, the creator can select the following attributes:
 
