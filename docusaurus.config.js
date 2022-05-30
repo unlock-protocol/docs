@@ -53,16 +53,17 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "doc",
-            docId: "introduction",
-            position: "right",
-            label: "Documentation",
-          },
-          { to: "/api", label: "Tools", position: "right" },
-          { to: "/api", label: "Tutorials", position: "right" },
-          { to: "/api", label: "Governance", position: "right" },
-          { to: "/api", label: "API-to be delete", position: "right" },
+          // {
+          //   type: "doc",
+          //   docId: "Introduction",
+          //   position: "right",
+          //   label: "Overview",
+          // },
+          { to: "/Basics", label: "Basics", position: "right" },
+          { to: "/core-protocol", label: "Core", position: "right" },
+          { to: "/Tools", label: "Tools", position: "right" },
+          { to: "/tutorials", label: "Tutorials", position: "right" },
+          { to: "/governance", label: "Governance", position: "right" },
           {
             href: "https://github.com/unlock-protocol/unlock",
             label: "GitHub",
@@ -77,7 +78,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Introduction",
+                label: "Overview",
                 to: "/",
               },
               {
@@ -132,6 +133,10 @@ const config = {
               {
                 label: "Guides",
                 to: "https://unlock-protocol.com/guides",
+              },
+              {
+                label: "Brand kit",
+                to: "https://unlock-protocol.com/guides/#",
               },
             
             
