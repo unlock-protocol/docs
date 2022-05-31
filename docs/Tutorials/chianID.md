@@ -1,5 +1,3 @@
-# Developers FAQ
-
 ## What are the chainIDs for the various networks?
 
 - **mainnet:** chainId: 1
