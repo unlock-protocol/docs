@@ -14,11 +14,11 @@ By default, Unlock provides a generated image for each lock, which looks like th
 
 However, with Unlock you can easily customize this image. For this, in the dashboard, just click on your lock's icon:
 
-![When hovered, you can click the camera to customize the image](<../.gitbook/assets/image (25).png>)
+![When hovered, you can click the camera to customize the image](../.gitbook/assets/image-lock-dashboard.png)
 
 From there, you can upload an image (1MB maximum), or select an external URL. We also recommend using a square of at least 300x300 pixels.
 
-![](<../.gitbook/assets/image (23).png>)
+![](../.gitbook/assets/image23.png)
 
 If you select an external URL, we will hot-link to it, which means that you will need to make sure this image will remain available.
 

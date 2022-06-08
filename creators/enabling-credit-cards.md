@@ -31,7 +31,7 @@ Once the Credit Card pane is displayed, click on the "Connect Stripe" button. Wh
 
 Once your application is completed, Stripe will redirect you back to the Unlock Dashboard. It may take a few days for Stripe to approve your application. Until then your lock won't be able to receive card payments.
 
-![Stripe has been connected, but the application has not been fully approved.](<../.gitbook/assets/image (19).png>)
+![Stripe has been connected, but the application has not been fully approved.](../.gitbook/assets/image19.png)
 
 ### Allow Key Granting
 

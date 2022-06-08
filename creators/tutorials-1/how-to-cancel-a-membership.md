@@ -10,11 +10,11 @@ The contract for any lock can be interfaced with directly using Etherscan (or si
 
 First, click on the block explorer link for your lock contract. If your lock is on Ethereum, this will take you to Etherscan. If your lock is on Polygon, this will take you to Polygonscan... etc.
 
-![](../../.gitbook/assets/etherscan-button.png)
+![](../../.gitbook/assets/dashboard-etherscan-link.png)
 
 Once there, click on "Contract". Then, click on "Write Contract" as you will change its settings. After that, press the "Connect to Web3" button to connect your wallet. This interface allows any "Lock Manager" to update elements of the lock they manage. If your wallet created the lock on the Unlock Creator Dashboard, this will be you.
 
-![](../../.gitbook/assets/etherscan-connect-wallet.png)
+![](<../../.gitbook/assets/etherscan-connect-wallet (1).png>)
 
 In the block explorer, you'll find "`expireAndRefundFor`". The "`_keyOwner (address)"` field is where you enter the wallet address of the person with the key/ membership you would like to make expire. The `amount` field is the amount of the refund, based on the currency it is priced in. By inputting 0, there will be no refund.
 

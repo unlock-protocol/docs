@@ -24,4 +24,4 @@ https://app.unlock-protocol.com/dashboard?erc20=0x0d8775f648430679a709e98d2b0cb6
 
 This will enable an option on the dashboard to switch to your desired token.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](../../.gitbook/assets/image7.png)
