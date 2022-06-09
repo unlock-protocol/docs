@@ -181,7 +181,7 @@ main{
   max-width: 900px;
 }
 .footer--dark {
-  background: black !important;
+  background: black;
   padding-top:2rem;
 
 }
