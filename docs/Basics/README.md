@@ -1,11 +1,4 @@
-<!-- ---
-description: >-
-  Unlock is a web3 protocol for memberships as NFTs. It is an underlying
-  protocol-level set of web3 legos for building applications that can create
-  utility, access, permissions, and memberships using NF
---- -->
-
-# Overview
+# Overview of Unlock
 
 ## Build on top of Unlock Protocol
 
