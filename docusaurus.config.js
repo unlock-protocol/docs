@@ -53,12 +53,6 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          // {
-          //   type: "doc",
-          //   docId: "Introduction",
-          //   position: "right",
-          //   label: "Overview",
-          // },
           { to: "/Basics", label: "Basics", position: "right" },
           { to: "/core-protocol", label: "Core", position: "right" },
           { to: "/Tools", label: "Tools", position: "right" },
