@@ -202,11 +202,15 @@ main{
 
 /* snippet */
 
-.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module{
+code[class^="codeBlockLines"] {
   background-color: var(--ifm-code-background-color);
   color: var(--text-500);
   border-radius: 24px;
   padding:1.5rem;
+}
+
+code[class^="codeBlockLines"] span {
+  color: #fff;
 }
 pre{
   padding:1.5rem;
