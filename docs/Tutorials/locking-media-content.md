@@ -11,7 +11,7 @@ Unlock makes it easy for creators to monetize their work by only allowing their 
 
 ## Create a lock
 
-The first step is to create a lock. For this, refer [to this article](../../creators/deploying-lock/). Once the lock is deployed, keep track of its address and [network](../faq.md#what-are-the-chainids-for-the-various-networks) as we'll use them next.
+The first step is to create a lock. For this, refer [to this article](/creators/deploying-lock/). Once the lock is deployed, keep track of its address and [network](/faq.md#what-are-the-chainids-for-the-various-networks) as we'll use them next.
 
 ## Create the web document
 

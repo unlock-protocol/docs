@@ -7,7 +7,7 @@ description: >-
 
 # Adding a Lock to Web Page
 
-Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications \(such as chat messaging applications, e-commerce stores or, even gaming engines!\). See the [_Plugins and Integrations_](../../creators/plugins-and-integrations/) section.
+Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications (such as chat messaging applications, e-commerce stores or, even gaming engines!). See the [_Plugins and Integrations_](../../../creators/plugins-and-integrations/) section.
 
 ## Embedding the paywall
 
@@ -40,7 +40,7 @@ Please see this section on [how to build the configuration](configuring-checkout
 </script>
 ```
 
-Important: `​unlockProtocolConfig​` is a global object \(it should be defined on the `window` object\).
+Important: `​unlockProtocolConfig​` is a global object (it should be defined on the `window` object).
 
 ## Handle Events
 
@@ -85,9 +85,15 @@ window.addEventListener("unlockProtocol.status", function (e) {
 
 _Note_: the callback can be invoked several times. For example, a visitor might purchase a key while they are on the page, going from the `locked` to the `unlocked` state. Similarly, the key that the visitor owns may expire during a visit which would result in the state going from `unlocked` to `locked`.
 
+### Modal Closing
+
+* Event Name: `unlockProtocol.closeModal`
+
+This event gets triggered when the modal is closed by the user. It does not give any information about the status of the user specifically. For that you would need to use the `unlockProtocol.status` highlighted above.
+
 ## Initiate Checkout
 
-In order to purchase keys, Unlock provides a modal that lets the user pick the lock of their choice \(based on [the configuration](configuring-checkout.md)\). The modal can be loaded by invoking the following:
+In order to purchase keys, Unlock provides a modal that lets the user pick the lock of their choice (based on [the configuration](configuring-checkout.md)). The modal can be loaded by invoking the following:
 
 ```javascript
 window.unlockProtocol &&

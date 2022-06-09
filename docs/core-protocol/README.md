@@ -2,12 +2,19 @@
 
 The Unlock Protocol, at its core, is enabled by 2 primary Ethereum smart contracts, deployed on all networks supported by Unlock: the Unlock and the PublicLock contracts. We have a few more contracts, such as the governance token contract and the actual governance contract, but they are not actually required by the core protocol.
 
+Our contracts have [been audited](audits.md) by 3 different teams.
+
 ## **Unlock**
 
 This is our "factory" contract **(Unlock.sol)** and has several roles.
 
+<<<<<<< HEAD:docs/core-protocol/README.md
 - **Deploying Locks**: Locks are deployed through the Unlock smart contract. This is important because the Locks will actually invoke the Unlock smart contract when keys are sold and the Unlock smart contract will check that the invoking lock has been deployed through it.
 - **Keeping Track of the Unlock Discount Tokens**. Unlock Discount Tokens are ERC20 tokens which implement the Unlock network referral program to let users of the protocol govern it. The Discount Tokens are granted when keys (NFTs) are purchased.
+=======
+* **Deploying Locks**: Locks are deployed through the Unlock smart contract. This is important because the Locks will actually invoke the Unlock smart contract when keys are sold and the Unlock smart contract will check that the invoking lock has been deployed through it.
+* **Keeping Track of the Unlock Discount Tokens**. Unlock Discount Tokens are ERC20 tokens that implement the Unlock network referral program to let users of the protocol govern it. The Discount Tokens are granted when keys (NFTs) are purchased.
+>>>>>>> 10c3efe6e24bbe45dd21784e682067419bc73d40:developers/smart-contracts/README.md
 
 You should **not need to deploy an Unlock contract yourself**. Here are the addresses of contracts deployed on respective networks and you can call them directly using the block explorer.
 

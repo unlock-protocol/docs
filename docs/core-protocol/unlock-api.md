@@ -1,10 +1,10 @@
-# Unlock Contract
+# About the Unlock Smart Contract
 
 The Unlock contract is a **factory contract**. Its main purpose is to create new locks based on a template. Additionally, it keeps track of locks after they have been created and grants [Unlock tokens](../../governance/the-unlock-token/) when new memberships have been purchased.
 
-As of summer 2021, the unlock contract is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transferring ownership of the Unlock contact to [the Unlock DAO](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/unlock-dao/README.md).
+As of summer 2021, the unlock contract is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transferring ownership of the Unlock contact to [the Unlock DAO](../../governance/unlock-dao.md).
 
-This contract is upgradable using OpenZeppelin's upgradability framework. As of now, the ProxyAdmin is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transferring ownership of the Unlock contact to [the Unlock DAO](https://github.com/unlock-protocol/docs/tree/7ac44788cf8e3e48d03d421a4b65d6762c39409f/governance/unlock-dao/README.md). Each implementation is versioned. The method `unlockVersion()` will yield the current version.
+This contract is upgradable using OpenZeppelin's upgradability framework. As of now, the ProxyAdmin is **owned** by a multi-sig wallet managed by Unlock Inc. Our goal is to move toward decentralization by transferring ownership of the Unlock contact to the [Unlock DAO](../../governance/unlock-dao.md). Each implementation is versioned. The method `unlockVersion()` will yield the current version.
 
 Some functions that are deprecated or not implemented yet (no-op) have been omitted.
 
