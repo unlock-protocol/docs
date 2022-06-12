@@ -24,9 +24,7 @@ _"By default, the storefront editor page (_[_`https://opensea.io/category/<CONTR
 
 ### **How do I set up recurring payments or automatic renewals?** <a href="#how-do-i-set-up-recurring-payments-or-automatic-renewals" id="how-do-i-set-up-recurring-payments-or-automatic-renewals"></a>
 
-Recurring payments and automatic renewals in the crypto space are a thorny challenge, as they imply the pre-approval of future transactions to a crypto wallet. At the current time, members will need to manually renew after their key expires.
-
-That said, this is an area of significant interest to the Unlock development team and community and we are actively exploring options to handle the complexity of automatic renewals. We hope to implement this in the near future.
+Unlock supports automatic renewals & subscriptions. You can learn more here on [how to implement recurring memberships and subscriptions using Unlock](https://docs.unlock-protocol.com/unlock/creators/recurring-memberships).
 
 ### How to customize the NFT image for keys?
 
