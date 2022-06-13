@@ -22,7 +22,6 @@
   --text-800: #373A3E;
   --text-500:#75797E;
   --ifm-navbar-item-padding-horizontal: 1.2rem;
-  --ifm-menu-link-padding-horizontal: 0;
   --ifm-font-family-base: 'Inter', sans-serif;
   --ifm-heading-font-weight: 800;
   --ifm-h1-font-size: 2.5rem;
@@ -135,8 +134,8 @@ p{
   width: calc(100% + 16px);
 }
 
-side panel menu*/
-/* .menu{
+/* side panel menu*/
+.menu{
   padding:1.1em !important;
   margin-top: 1rem;
 }
@@ -148,11 +147,11 @@ side panel menu*/
   margin-top:0.25rem;
 }
 .theme-doc-sidebar-item-link-level-2{
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 .theme-doc-sidebar-item-link-level-3{
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .menu__link{
