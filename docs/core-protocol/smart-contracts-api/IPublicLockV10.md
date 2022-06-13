@@ -1,5 +1,5 @@
 ---
-label: PublicLock
+title: PublicLock
 ---
 
 # IPublicLockV10
