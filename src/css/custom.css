@@ -135,13 +135,13 @@ p{
   width: calc(100% + 16px);
 }
 
-/*side panel menu*/
-.menu{
+side panel menu*/
+/* .menu{
   padding:1.1em !important;
   margin-top: 1rem;
 }
 .menu__list .theme-doc-sidebar-item-link .menu__list, .theme-doc-sidebar-item-link-level-1, .menu__list-item-collapsible  {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 .menu__list .menu__list{
@@ -149,6 +149,10 @@ p{
 }
 .theme-doc-sidebar-item-link-level-2{
   font-size: 0.9rem;
+  font-weight: 400;
+}
+.theme-doc-sidebar-item-link-level-3{
+  font-size: 0.7rem;
   font-weight: 400;
 }
 .menu__link{
