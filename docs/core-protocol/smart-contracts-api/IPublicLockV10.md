@@ -1,3 +1,7 @@
+---
+label: PublicLock
+---
+
 # IPublicLockV10
 
 *Nick Furfaro (unlock-protocol.com)*
