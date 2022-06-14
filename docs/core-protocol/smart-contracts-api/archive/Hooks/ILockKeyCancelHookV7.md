@@ -1,9 +1,5 @@
 # ILockKeyCancelHookV7
 
-
-
-
-
 Functions to be implemented by a keyCancelHook.
 
 *Lock hooks are configured by calling `setEventHooks` on the lock.*
