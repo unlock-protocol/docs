@@ -53,16 +53,11 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "doc",
-            docId: "introduction",
-            position: "right",
-            label: "Documentation",
-          },
-          { to: "/api", label: "Tools", position: "right" },
-          { to: "/api", label: "Tutorials", position: "right" },
-          { to: "/api", label: "Governance", position: "right" },
-          { to: "/api", label: "API-to be delete", position: "right" },
+          { to: "/Basics", label: "Basics", position: "right" },
+          { to: "/core-protocol", label: "Core", position: "right" },
+          { to: "/Tools", label: "Tools", position: "right" },
+          { to: "/tutorials", label: "Tutorials", position: "right" },
+          { to: "/governance", label: "Governance", position: "right" },
           {
             href: "https://github.com/unlock-protocol/unlock",
             label: "GitHub",
@@ -77,14 +72,31 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Start here",
+                label: "Overview",
                 to: "/",
+              },
+              {
+                label: "Tools",
+                to: "/",
+              },
+              {
+                label: "Tutorials",
+                to: "/",
+              },
+              {
+                label: "Goverance",
+                to: "/",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/unlock-protocol/unlock",
               },
             ],
           },
           {
             title: "Community",
             items: [
+              
               {
                 label: "Discord",
                 href: "https://discord.com/invite/Ah6ZEJyTDp",
@@ -93,23 +105,49 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/UnlockProtocol",
               },
+              {
+                label: "Forum",
+                href: "https://unlock.community/",
+              },
+            
             ],
           },
           {
-            title: "More",
+            title: "About Unlock",
             items: [
+            
               {
-                label: "Website",
+                label: "About Unlock",
                 to: "https://unlock-protocol.com",
               },
               {
-                label: "Unlock App",
+                label: "Blog",
                 to: "https://app.unlock-protocol.com",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/unlock-protocol/unlock",
+                label: "Guides",
+                to: "https://unlock-protocol.com/guides",
               },
+              {
+                label: "Brand kit",
+                to: "https://unlock-protocol.com/guides/#",
+              },
+            
+            
+            ],
+          },
+          {
+            title: "Unlock apps",
+            items: [
+              {
+                label: "Launch dashboard",
+                to: "https://app.unlock-protocol.com",
+              },
+              {
+                label: "Grants for developer",
+                to: "https://unlock-protocol.com/grants",
+              },
+            
             ],
           },
         ],

@@ -14,7 +14,7 @@ description: Frequently Asked Questions
 
 ## How do I get ɄDT?
 
-You can earn UDT today by using the protocol, or through [grants from the Unlock Treasury](https://docs.unlock-protocol.com/governance/grants-bounties-and-matchings).
+You can [earn UDT today by using the protocol](https://docs.unlock-protocol.com/unlock/governance/the-unlock-token#earning-udt), or through [grants from the Unlock Treasury](https://docs.unlock-protocol.com/governance/grants-bounties-and-matchings).
 
 ## What are the tokenomics of ɄDT?
 
