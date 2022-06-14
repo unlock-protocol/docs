@@ -1,9 +1,10 @@
 ---
+title: Using Unlock Protocol's contract with Ethers
 description: >-
   In this tutorial, we will see how to use Unlock's contract with the popular Ethers library.
 ---
 
-# Ethers
+# Using Unlock Protocol's contract with Ethers
 
 [Ethers](https://docs.ethers.io/) is a populer Ethereum library written in Javascript. It lets developers easily integrate Ethereum smart contracts in their applications.
 

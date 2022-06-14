@@ -6,6 +6,7 @@ description: >-
 ---
 
 # Introduction
+
 ## From the attention economy to the membership economy
 
 We believe the web is [moving away from attention](https://medium.com/unlock-protocol/the-end-of-the-ad-supported-web-d4d093fb462f) as its business model toward memberships as a way for creators to charge for access to their community, their content or the applications they provide.
@@ -36,7 +37,7 @@ The lock itself does not _know_ about the content or features which it locks. Th
 
 Read more about:
 
-- [The smart contracts](developers/smart-contracts/)
+- [The smart contracts](core-protocol/)
 - [How to deploy your first lock](creators/deploying-lock/)
 
 Memberships as NFTs can create benefits and opportunities for many different categories of creators and organizations:
@@ -53,4 +54,4 @@ Memberships as NFTs can create benefits and opportunities for many different cat
 
 As consumers, you want to easily unlock access to your favorite websites, or be part of communities. Unlock represents these memberships as [Non Fungible Tokens](https://en.wikipedia.org/wiki/Non-fungible_token). These tokens are directly linked to your Ethereum wallet. If you do not have a wallet, or do not care about owning one, you should consider our Unlock User accounts which make it trivial for anyone to unlock content with their credit cards.
 
-We also built a [_keychain_](https://app.unlock-protocol.com/keychain/) for consumers to easily view all of their memberships and use them. This involves cancelling them, transferring them or printing codes to assert ownership (very useful for tickets!)
+We also built a [_keychain_](https://app.unlock-protocol.com/keychain/) for consumers to easily view all of their memberships and use them. This involves canceling them, transferring them or printing codes to assert ownership (very useful for tickets!)

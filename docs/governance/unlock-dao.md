@@ -12,9 +12,7 @@ The Unlock DAO uses OpenZeppelin's [governance contracts](https://blog.openzeppe
 - [Governor Contract](https://etherscan.io/address/0x7757f7f21f5fa9b1fd168642b79416051cd0bb94) \(`0x7757f7f21f5fa9b1fd168642b79416051cd0bb94`\): where proposals and votes are handled
 - [TimeLock Contract](https://etherscan.io/address/0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b) \(`0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b`\): where proposals are executed and funds are managed.
 
-{% hint style="info" %}
-We recommend the use of [Tally's front-end application](https://www.withtally.com/governance/unlock) to delegate votes, submit proposals as well as vote on the proposals previously submitted.
-{% endhint %}
+> We recommend the use of [Tally's front-end application](https://www.withtally.com/governance/unlock) to delegate votes, submit proposals as well as vote on the proposals previously submitted.
 
 ## Initial settings
 
