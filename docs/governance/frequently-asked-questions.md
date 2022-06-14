@@ -14,11 +14,11 @@ description: Frequently Asked Questions
 
 ## How do I get ɄDT?
 
-You can [earn UDT today by using the protocol](https://docs.unlock-protocol.com/unlock/governance/the-unlock-token#earning-udt), or through [grants from the Unlock Treasury](https://docs.unlock-protocol.com/governance/grants-bounties-and-matchings).
+You can [earn UDT today by using the protocol](/governance/the-unlock-token), or through [grants from the Unlock Treasury](/governance/grants-bounties-and-matchings).
 
 ## What are the tokenomics of ɄDT?
 
-When Unlock Inc. created the [UDT tokens](https://docs.unlock-protocol.com/governance/the-unlock-token), a total of 1,000,000 tokens were premined. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 them to foster adoption of the protocol (the company will keep at least 200,000).
+When Unlock Inc. created the [UDT tokens](/governance/the-unlock-token), a total of 1,000,000 tokens were premined. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 them to foster adoption of the protocol (the company will keep at least 200,000).
 
 As of November 1st 2021, the company has distributed about 120,000 tokens. By May 1st 2022, we want to have distributed another 200,000 tokens, totaling at least 300,000 tokens.
 
@@ -66,9 +66,9 @@ Voting for the Unlock DAO happens "on chain" thru the governor contract. To send
 
 As a community member, I can help grow the adoption of the protocol, either by deploying a membership contract (a lock) and selling memberships or by purchasing other creators' memberships (keys). I can also reach out to my favorite creators and community and suggest that they use the protocol.
 
-If I am a developer I can write code and plugins for platforms and applications to integrate Unlock... etc.
+If I am a **developer** I can write code and plugins for platforms and applications to integrate Unlock... etc.
 
-As a token holder, I can either delegate my votes to another member of the community or make sure I vote on proposals myself.
+As a **token holder**, I can either delegate my votes to another member of the community or make sure I vote on proposals myself.
 
 ## How do I delegate my tokens?
 
