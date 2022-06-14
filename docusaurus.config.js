@@ -1,10 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const UnlockPrismTheme = require("./unlock-prism-theme");
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/core').Config} */
 const config = {
   title: "Unlock Protocol",
   tagline:
@@ -96,7 +95,6 @@ const config = {
           {
             title: "Community",
             items: [
-              
               {
                 label: "Discord",
                 href: "https://discord.com/invite/Ah6ZEJyTDp",
@@ -109,13 +107,11 @@ const config = {
                 label: "Forum",
                 href: "https://unlock.community/",
               },
-            
             ],
           },
           {
             title: "About Unlock",
             items: [
-            
               {
                 label: "About Unlock",
                 to: "https://unlock-protocol.com",
@@ -132,8 +128,6 @@ const config = {
                 label: "Brand kit",
                 to: "https://unlock-protocol.com/guides/#",
               },
-            
-            
             ],
           },
           {
@@ -147,15 +141,13 @@ const config = {
                 label: "Grants for developer",
                 to: "https://unlock-protocol.com/grants",
               },
-            
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Unlock, Inc.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: UnlockPrismTheme,
       },
     }),
 };
