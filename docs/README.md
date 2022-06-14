@@ -15,7 +15,7 @@ Yet, most websites are moving to memberships with their own system which creates
 
 With Unlock, we believe there is a better way, which reduces friction, increases conversion rate and reduces prices while aligning interests between creators and consumers!
 
-{% embed url="https://www.youtube.com/watch?v=tBuMj0eRrYQ" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tBuMj0eRrYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## The future of memberships
 
@@ -37,7 +37,7 @@ The lock itself does not _know_ about the content or features which it locks. Th
 
 Read more about:
 
-- [The smart contracts](https://docs.unlock-protocol.com/developers/smart-contracts-architecture)
+- [The smart contracts](developers/smart-contracts/)
 - [How to deploy your first lock](creators/deploying-lock/)
 
 Memberships as NFTs can create benefits and opportunities for many different categories of creators and organizations:
