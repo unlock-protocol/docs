@@ -1,10 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const UnlockPrismTheme = require("./unlock-prism-theme");
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/core').Config} */
 const config = {
   title: "Unlock Protocol",
   tagline:
@@ -16,7 +15,7 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "unlock-protocol", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
-
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
   presets: [
     [
       "docusaurus-preset-openapi",
@@ -53,16 +52,11 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "doc",
-            docId: "introduction",
-            position: "right",
-            label: "Documentation",
-          },
-          { to: "/api", label: "Tools", position: "right" },
-          { to: "/api", label: "Tutorials", position: "right" },
-          { to: "/api", label: "Governance", position: "right" },
-          { to: "/api", label: "API-to be delete", position: "right" },
+          { to: "/Basics", label: "Basics", position: "right" },
+          { to: "/core-protocol", label: "Core", position: "right" },
+          { to: "/Tools", label: "Tools", position: "right" },
+          { to: "/tutorials", label: "Tutorials", position: "right" },
+          { to: "/governance", label: "Governance", position: "right" },
           {
             href: "https://github.com/unlock-protocol/unlock",
             label: "GitHub",
@@ -77,8 +71,24 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Start here",
+                label: "Overview",
                 to: "/",
+              },
+              {
+                label: "Tools",
+                to: "/",
+              },
+              {
+                label: "Tutorials",
+                to: "/",
+              },
+              {
+                label: "Goverance",
+                to: "/",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/unlock-protocol/unlock",
               },
             ],
           },
@@ -93,22 +103,43 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/UnlockProtocol",
               },
+              {
+                label: "Forum",
+                href: "https://unlock.community/",
+              },
             ],
           },
           {
-            title: "More",
+            title: "About Unlock",
             items: [
               {
-                label: "Website",
+                label: "About Unlock",
                 to: "https://unlock-protocol.com",
               },
               {
-                label: "Unlock App",
+                label: "Blog",
                 to: "https://app.unlock-protocol.com",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/unlock-protocol/unlock",
+                label: "Guides",
+                to: "https://unlock-protocol.com/guides",
+              },
+              {
+                label: "Brand kit",
+                to: "https://unlock-protocol.com/guides/#",
+              },
+            ],
+          },
+          {
+            title: "Unlock apps",
+            items: [
+              {
+                label: "Launch dashboard",
+                to: "https://app.unlock-protocol.com",
+              },
+              {
+                label: "Grants for developer",
+                to: "https://unlock-protocol.com/grants",
               },
             ],
           },
@@ -116,8 +147,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Unlock, Inc.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: UnlockPrismTheme,
       },
     }),
 };

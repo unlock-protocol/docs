@@ -1,12 +1,11 @@
 ---
 sidebar_position: 1
-id: introduction
+id: Introduction
 description: >-
   Unlock is a protocol for memberships as NFTs which allows creators and communities to monetize their work, on their own terms, without having to rely on 3rd party applications or platform.
 ---
 
 # Introduction
-
 ## From the attention economy to the membership economy
 
 We believe the web is [moving away from attention](https://medium.com/unlock-protocol/the-end-of-the-ad-supported-web-d4d093fb462f) as its business model toward memberships as a way for creators to charge for access to their community, their content or the applications they provide.
@@ -15,7 +14,12 @@ Yet, most websites are moving to memberships with their own system which creates
 
 With Unlock, we believe there is a better way, which reduces friction, increases conversion rate and reduces prices while aligning interests between creators and consumers!
 
+<<<<<<< HEAD
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tBuMj0eRrYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+=======
+
+{% embed url="https://www.youtube.com/watch?v=tBuMj0eRrYQ" %}
+>>>>>>> 9717a4eef2d9e25e2b0dab7d86605ef693d5a14c
 
 ## The future of memberships
 
