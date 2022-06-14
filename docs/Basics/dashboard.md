@@ -1,6 +1,6 @@
 # Dashboard
 
-The [dashboard](https://app.unlock-protocol.com/) is to a tool for creators and consumers.
+The [dashboard](https://app.unlock-protocol.com/dashboard) is to a tool for creators and consumers.
 
 For creators it provides a way to deploy or update locks, view key owners, as well as withdraw funds from the locks.
 
