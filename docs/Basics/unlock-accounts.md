@@ -1,6 +1,6 @@
 # Unlock Accounts
 
-We recognize that not every web user currently owns a crypto wallet. For that reason, our locks [can be connected to a Credit Card processor](/Basics/enabling-credit-cards.md). In that situation, Unlock also offers "Unlock Accounts" to users who do not own their own wallet.
+We recognize that not every web user currently owns a crypto wallet. For that reason, our locks [can be connected to a Credit Card processor](https://unlock-protocol.com/guides/enabling-credit-cards/). In that situation, Unlock also offers "Unlock Accounts" to users who do not own their own wallet.
 
 ### How do they work?
 
