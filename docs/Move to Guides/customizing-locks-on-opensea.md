@@ -6,9 +6,7 @@ description: >-
 
 # Customizing Locks on OpenSea
 
-{% hint style="info" %}
-This guide was contributed by Unlock's community member Croissant! Please make sure to follow [them on Twitter](https://twitter.com/croissanteth)!
-{% endhint %}
+> This guide was contributed by Unlock's community member Croissant! Please make sure to follow [them on Twitter](https://twitter.com/croissanteth)!
 
 In order to customize the appearance of a lock on [OpenSea](https://opensea.io), you will have to make some changes to the token’s metadata. By default, Unlock Protocol provides a generated image for each lock, with a basic description.&#x20;
 
@@ -20,13 +18,13 @@ There are tons of tools that make this process simple with a drag and drop inter
 
 For my project and the purposes of this tutorial, I’ll be taking the [hashlips](https://github.com/HashLips) repo for reference on customizing the NFTs to fully customize the appearance of the locks.
 
-1. [Click this link](https://github.com/HashLips/hashlips\_art\_engine)
+1. [Click this link](https://github.com/HashLips/hashlips_art_engine)
 2. Then, click the big green download button on GitHub. After downloading, extract the zip folder to reveal its contents.
 3. Next, you’ll have to navigate over to a text editor of your choice (I highly recommend [Visual Studio Code](https://code.visualstudio.com/download))
 4. Open the app, then click “file,” and open the folder we just extracted containing the hash lips repo.
 5. From here, you’ll see folders containing the code we will work with to generate our own metadata.
 
-The [hashlips read me](https://github.com/HashLips/hashlips\_art\_engine/blob/main/README.md) additionally has great documentation on how the code works and all of its features.
+The [hashlips read me](https://github.com/HashLips/hashlips_art_engine/blob/main/README.md) additionally has great documentation on how the code works and all of its features.
 
 In the “layers” folder, you’ll see the template components of NFTs left for us by the creators of this repo. Inside of these folders, are images created by the project owner to form some sort of NFT.
 
@@ -42,18 +40,18 @@ Next, delete the layers you are no longer using, or rename them accordingly. Fro
 
 ```javascript
 const layerConfigurations = [
-    { 
-        growEditionSizeTo: 5, 
-        layersOrder: [
-            { 
-                name: "bakerynft" 
-            }, 
-            { 
-                name: "bread type" 
-            },
-        ], 
-    },
-]
+  {
+    growEditionSizeTo: 5,
+    layersOrder: [
+      {
+        name: "bakerynft",
+      },
+      {
+        name: "bread type",
+      },
+    ],
+  },
+];
 ```
 
 The `growEditionSizeTo` can be adjusted to how many NFTs you want in your collection.
@@ -81,16 +79,16 @@ To avoid regenerating images, but still be able to update this crucial data, we�
 In the config.js file, take our copied CID from piñata for our images folder, and paste it where it says `baseUri.`
 
 ```javascript
-// General metadata for Ethereum 
-const namePrefix = "Your Collection"; 
-const description = "Remember to replace this description"; 
-const baseUri = "ipfs://NewUriToReplace"
+// General metadata for Ethereum
+const namePrefix = "Your Collection";
+const description = "Remember to replace this description";
+const baseUri = "ipfs://NewUriToReplace";
 ```
 
 Mine looked something like this:
 
 ```javascript
-const baseURI = "ipfs://QmZo9NZqQbEafu4KPofLhRiPW2wFtQduYHrvrcDkQcDpjM/"
+const baseURI = "ipfs://QmZo9NZqQbEafu4KPofLhRiPW2wFtQduYHrvrcDkQcDpjM/";
 ```
 
 **Note:** the ending “/“ is crucial.
@@ -99,13 +97,13 @@ After saving the changes made in the `config.js`, head on back to the terminal t
 
 There are also other things you can add for full optimization of appearance on OpenSea such as
 
-* `external_url`: This is the URL that will appear below the asset's image on OpenSea and will allow users to leave OpenSea and view the item on your site
-* `description` A human readable description of the item. Markdown is supported.&#x20;
-* `name` Name of the item.&#x20;
-* `attributes` These are the attributes for the item, which will show up on the OpenSea page for the item. (see below)&#x20;
-* `background_color` Background color of the item on OpenSea. Must be a six-character hexadecimal without a pre-pended #.&#x20;
-* `animation_url` A URL to a multi-media attachment for the item. The file extensions GLTF, GLB, WEBM, MP4, M4V, OGV, and OGG are supported, along with the audio-only extensions MP3, WAV, and OGA. Animation\_url also supports HTML pages, allowing you to build rich experiences and interactive NFTs using JavaScript canvas, WebGL, and more. Scripts and relative paths within the HTML page are now supported. However, access to browser extensions is not supported.&#x20;
-* `youtube_url` A URL to a YouTube video&#x20;
+- `external_url`: This is the URL that will appear below the asset's image on OpenSea and will allow users to leave OpenSea and view the item on your site
+- `description` A human readable description of the item. Markdown is supported.&#x20;
+- `name` Name of the item.&#x20;
+- `attributes` These are the attributes for the item, which will show up on the OpenSea page for the item. (see below)&#x20;
+- `background_color` Background color of the item on OpenSea. Must be a six-character hexadecimal without a pre-pended #.&#x20;
+- `animation_url` A URL to a multi-media attachment for the item. The file extensions GLTF, GLB, WEBM, MP4, M4V, OGV, and OGG are supported, along with the audio-only extensions MP3, WAV, and OGA. Animation_url also supports HTML pages, allowing you to build rich experiences and interactive NFTs using JavaScript canvas, WebGL, and more. Scripts and relative paths within the HTML page are now supported. However, access to browser extensions is not supported.&#x20;
+- `youtube_url` A URL to a YouTube video&#x20;
 
 Now is where the magic happens. We’re going to take our new metadata in the build folder, which has been updated to include the images `baseUri` generated that we uploaded to IPFS and use this to see it all work.
 

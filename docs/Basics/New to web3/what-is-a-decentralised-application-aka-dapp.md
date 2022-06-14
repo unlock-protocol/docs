@@ -16,16 +16,16 @@ A "decentralised" application is an app that runs on or stores its data on peer-
 
 The core values and objectives for decentralised applications are:
 
-* Openness (typically open-source code) and transparency over secrecy and obfuscation&#x20;
-* Interchangeable frontend applications / bring your own data
-* Auditable history of interactions / reputation
-* No central authority or ownership over software and data access
+- Openness (typically open-source code) and transparency over secrecy and obfuscation&#x20;
+- Interchangeable frontend applications / bring your own data
+- Auditable history of interactions / reputation
+- No central authority or ownership over software and data access
 
 Other common features of decentralised applications include:
 
-* Public / private key based identity / [Decentralised Identifiers](https://www.w3.org/TR/did-core/) (DIDs), **not** username/password
-* Hash-based addressing using [Distributed Hash Tables](https://www.ietf.org/proceedings/65/slides/plenaryt-2.pdf) (DHT) rather than filesystem location-based Uniform Resource Locators (URLs)
-* Alignment of incentives / incentive mechanisms / “[tokenomics](https://coinmarketcap.com/alexandria/article/what-is-tokenomics)”
+- Public / private key based identity / [Decentralised Identifiers](https://www.w3.org/TR/did-core/) (DIDs), **not** username/password
+- Hash-based addressing using [Distributed Hash Tables](https://www.ietf.org/proceedings/65/slides/plenaryt-2.pdf) (DHT) rather than filesystem location-based Uniform Resource Locators (URLs)
+- Alignment of incentives / incentive mechanisms / “[tokenomics](https://coinmarketcap.com/alexandria/article/what-is-tokenomics)”
 
 ### **What does a “Dapp” look like in practice?**
 
@@ -51,7 +51,7 @@ In recent decades, we've seen the technology giants gather power to moderate and
 
 Bitcoin is one of the earliest Dapps. It's the "decentralised money app". Dapps build on top of that core example of an immutable ledger, and add more complex functionality.
 
-Dapps typically use [public and private key cryptography](https://en.wikipedia.org/wiki/Public-key\_cryptography) to manage user identity and credentials instead of usernames and passwords, rely on public blockchains to control value transfer and important persistent application state, and offload high volume data storage to other networks such as the [Interplanetary File System](https://ipfs.io/) (IPFS) where possible. You can read more about IPFS in the technology introduction below.
+Dapps typically use [public and private key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) to manage user identity and credentials instead of usernames and passwords, rely on public blockchains to control value transfer and important persistent application state, and offload high volume data storage to other networks such as the [Interplanetary File System](https://ipfs.io/) (IPFS) where possible. You can read more about IPFS in the technology introduction below.
 
 Dapps often make use of public “smart contract” blockchain networks like Ethereum, but this is not the only tool in the box.
 
@@ -91,10 +91,10 @@ For example, selling tickets with Unlock Protocol is compatible with any website
 
 **To recap:** The most important features that differentiate a more decentralised “web3 Dapp” from an ordinary app deal with how users authenticate and how their data is stored. Each of these improves portability of data between applications, removes restrictions and reliance on one central authority, and gives users more freedom and control:
 
-* Users authenticate themselves with a cryptographic public/private key signature, not a username and password validated by a centralised server.
-* Important application state (like Keys for an Unlock Lock) and user data (like a post or tweet) is stored on a public blockchain like Ethereum and/or a peer-to-peer data network like Ceramic.
-* Files and media are stored on peer-to-peer storage networks like IPFS or Arweave.
-* Code is open source and available to be run anywhere, whether on a standard server, IPFS or your laptop, and is able to access and manipulate the same data from anywhere without asking for special permission beyond a cryptographic proof of identity.
+- Users authenticate themselves with a cryptographic public/private key signature, not a username and password validated by a centralised server.
+- Important application state (like Keys for an Unlock Lock) and user data (like a post or tweet) is stored on a public blockchain like Ethereum and/or a peer-to-peer data network like Ceramic.
+- Files and media are stored on peer-to-peer storage networks like IPFS or Arweave.
+- Code is open source and available to be run anywhere, whether on a standard server, IPFS or your laptop, and is able to access and manipulate the same data from anywhere without asking for special permission beyond a cryptographic proof of identity.
 
 ## Continue Learning
 

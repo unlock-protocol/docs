@@ -6,8 +6,7 @@ In the Unlock Creator Dashboard, create a Lock. After naming the Lock, and filli
 
 ![](https://lh3.googleusercontent.com/OHPNAe3h5Si9xGO3MLyFEYR6kRaqSiloTUsbQsW7wRtC7o2V9odknf8RtAKIv_yxy-NgY3SHbB_-VacASkltpyuXqRwNjSKrIeJpCKB3Qb8gx8htH3zdZhrvGH8Vg1ZTdulZeZbr)
 
-Once confirmed, you should find the address for the lock underneath the title. The address will start with “0x…” and be a string of letters and numbers.  
-
+Once confirmed, you should find the address for the lock underneath the title. The address will start with “0x…” and be a string of letters and numbers.
 
 This is the unique identifying address for your lock. Keep this tab open so you can have this address on hand when you set up Collab.Land.
 
@@ -19,7 +18,7 @@ In Discord, go to Server Settings &gt; Roles &gt; Create Role
 
 Create a role that you would like the Collab.Land bot to assign to anyone holding the new Lock you have made. When creating roles, place Collab.Land above any roles the bot is assigning.
 
-Add a private channel and give select roles access \(always give Collab.Land access\). 
+Add a private channel and give select roles access \(always give Collab.Land access\).
 
 Users of certain token holdings will be granted roles with this specific access through the token permissioned roles configuration.
 
@@ -41,10 +40,6 @@ Then, copy the lock address that you generated in your Unlock dashboard and past
 
 Once successful, confirm by pressing the emoji reaction for “Add Role”.
 
-Now your Discord and Unlock membership lock should work together to allow members to gain private access to a new Discord channel.  
+Now your Discord and Unlock membership lock should work together to allow members to gain private access to a new Discord channel.
 
-
-{% hint style="info" %}
-Written by Community Member [Austin Robey](https://twitter.com/austinrobey_)
-{% endhint %}
-
+> Written by Community Member [Austin Robey](https://twitter.com/austinrobey_)
