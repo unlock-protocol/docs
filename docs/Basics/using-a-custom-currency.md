@@ -1,6 +1,6 @@
 # Using a custom currency
 
-The UI only offers to chose between DAI and Ether, but any ERC20 can be used. Locks can be configured to be backed by any token that conforms to the [ERC20](https://eips.ethereum.org/EIPS/eip-20) specification. Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and `ticker` query parameters.
+The UI only offers the choice between DAI and Ether, but any ERC20 can be used. Locks can be configured to be backed by any token that conforms to the [ERC20](https://eips.ethereum.org/EIPS/eip-20) specification. Currently, the fastest way to achieve this is by visiting the creator dashboard with the address and ticker of your backing token appended via the `erc20` and `ticker` query parameters.
 
 On Ethereum's main network:
 
