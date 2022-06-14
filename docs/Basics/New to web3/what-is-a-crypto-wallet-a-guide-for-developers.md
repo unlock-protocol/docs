@@ -5,7 +5,7 @@ description: >-
   Contracts.
 ---
 
-# What is a crypto wallet? (a guide for developers)
+# What is a crypto wallet?
 
 ## Introduction
 
@@ -34,8 +34,6 @@ Upon hearing the word “wallet”, we may think of the pocket or purse accessor
 
 To summarize, a crypto wallet is a tool for storing various digital assets like cryptocurrencies and NFTs. Your wallet is a tool for connecting to web3, authenticating yourself, and authorizing transactions on the blockchain.
 
-
-
 > **Fungible vs. Non-Fungible**\
 > The word “fungible” is used to refer to things that can be exchanged for other things of exactly the same kind. \
 > For example, the U.S. dollar is fungible. You can exchange a $100 bill with a friend, and each of you will still have the exact same spending power. Most cryptocurrencies are fungible, too — a bitcoin is a bitcoin, and it generally\* doesn’t really matter which bitcoin you have. (\*in some cases, such as stolen coins, identification of a specific bitcoin can be relevant when trying to trace the path of a stolen asset).
@@ -58,8 +56,8 @@ A smart contract is code that lives on the blockchain and provides a set of rule
 
 Prefer listening and watching over reading? → Here are a few explainer videos from Whiteboard Crypto that we’ve found to be great resources:
 
-* [**What are dApps**](https://www.youtube.com/watch?v=oPIupbsVimc\&t=186s)**?**
-* [**What are Smart Contracts in Crypto**](https://www.youtube.com/watch?v=pyaIppMhuic)**?**
+- [**What are dApps**](https://www.youtube.com/watch?v=oPIupbsVimc&t=186s)**?**
+- [**What are Smart Contracts in Crypto**](https://www.youtube.com/watch?v=pyaIppMhuic)**?**
 
 **Now that we have a basic understanding of smart contracts and Dapps, let’s see how they enable crypto wallets to work...**
 
@@ -69,10 +67,10 @@ As the name suggests, cryptocurrency is based upon encryption technologies, whic
 
 Unlike traditional wallets though, crypto wallets don’t actually store funds. Instead, they store two keys: a public one to identify the block of tokens, and a private one to access them.
 
-* **Public Key**: A Public Key links to an address that lets you send and receive transactions. You can think of the public key as your email address or your bank account number.
-* **Private Key**: A private key proves that you own the tokens associated with your public address. You can think of the private key as your email password or the password you use to login to your banking account. **You must keep your Private Key **_**private**_** — do not share it with anyone.** Since a private key is hard to remember (it’s a very long string of random numbers), a crypto wallet comes with a 12-24 word "secret phrase" or "seed phrase", which functions as a backup password. It’s important to hide these in a safe, secure place, ideally by holding parts of the phrase in different locations.
+- **Public Key**: A Public Key links to an address that lets you send and receive transactions. You can think of the public key as your email address or your bank account number.
+- **Private Key**: A private key proves that you own the tokens associated with your public address. You can think of the private key as your email password or the password you use to login to your banking account. **You must keep your Private Key **_**private**_** — do not share it with anyone.** Since a private key is hard to remember (it’s a very long string of random numbers), a crypto wallet comes with a 12-24 word "secret phrase" or "seed phrase", which functions as a backup password. It’s important to hide these in a safe, secure place, ideally by holding parts of the phrase in different locations.
 
-**Remember, you **_**can share your public key**_** with others to send and receive transactions, but you must **_**never**_**  **_**share**_**  **_**your private key or seed phrase**_** with anyone.** If you share your private key, you are essentially handing over control of your wallet and all of its assets. Also, no company or individual should ever ask for your seed phrase — anyone who does is very likely a scammer attempting to steal your funds.
+**Remember, you **_**can share your public key**_** with others to send and receive transactions, but you must **_**never**_\*\* **\_**share**\_** **\_**your private key or seed phrase**\_** with anyone.\*\* If you share your private key, you are essentially handing over control of your wallet and all of its assets. Also, no company or individual should ever ask for your seed phrase — anyone who does is very likely a scammer attempting to steal your funds.
 
 ## Types of crypto wallets: hot and cold
 
@@ -137,7 +135,7 @@ The most popular hardware wallets are [Ledger](https://www.ledger.com/) and [Tre
 
 **Buying Hardware wallets**
 
-You should always buy hardware wallets new and directly from the manufacturer or a licensed distributor. There are fake hardware wallets in circulation which may steal your crypto, so be aware and shop cautiously.  **Never buy a **_**used**_** hardware wallet** — there's no telling what a previous owner could've done to a device or whether the product is actually genuine.
+You should always buy hardware wallets new and directly from the manufacturer or a licensed distributor. There are fake hardware wallets in circulation which may steal your crypto, so be aware and shop cautiously. **Never buy a **_**used**_** hardware wallet** — there's no telling what a previous owner could've done to a device or whether the product is actually genuine.
 
 In some contexts, "hardware wallet" may also refer to paper wallets — wherein you print information about your public and private keys onto a sheet of paper.
 
@@ -145,5 +143,5 @@ In some contexts, "hardware wallet" may also refer to paper wallets — wherein 
 
 Hopefully this was a helpful introduction to crypto wallets and how they allow you to store and access cryptocurrencies, NFTs, and Dapps. We’ll leave you with a few additional resources that you can use to continue learning and exploring the world of web3.
 
-* [Using Unlock Protocol for memberships as NFTs](https://docs.unlock-protocol.com/unlock/)
-* [Introduction to Dapps](https://ethereum.org/en/developers/docs/dapps/) ([ethereum.org](http://ethereum.org))
+- [Using Unlock Protocol for memberships as NFTs](https://docs.unlock-protocol.com/unlock/)
+- [Introduction to Dapps](https://ethereum.org/en/developers/docs/dapps/) ([ethereum.org](http://ethereum.org))
