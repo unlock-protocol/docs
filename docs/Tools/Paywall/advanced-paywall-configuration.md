@@ -10,4 +10,4 @@ One of the features of the paywall application is that it [optimistically unlock
 
 In some cases, your application may want to _not_ unlock until the transaction is fully confirmed. For this you should add `pessimistic: true` to the paywall configuration.
 
-When doing this, you should ensure that your application handles the events such as `unlockProtocol.authenticated` and `unlockProtocol.transactionSent` to show valuable feedback to the user. See the [Handle Event](https://docs.unlock-protocol.com/getting-started/locking-page#handle-events) section on this page.
+When doing this, you should ensure that your application handles the events such as `unlockProtocol.authenticated` and `unlockProtocol.transactionSent` to show valuable feedback to the user. See the [Handle Event](locking-page#handle-events) section on this page.
