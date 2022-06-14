@@ -16,7 +16,7 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "unlock-protocol", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
-
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
   presets: [
     [
       "docusaurus-preset-openapi",
@@ -96,7 +96,6 @@ const config = {
           {
             title: "Community",
             items: [
-              
               {
                 label: "Discord",
                 href: "https://discord.com/invite/Ah6ZEJyTDp",
@@ -109,13 +108,11 @@ const config = {
                 label: "Forum",
                 href: "https://unlock.community/",
               },
-            
             ],
           },
           {
             title: "About Unlock",
             items: [
-            
               {
                 label: "About Unlock",
                 to: "https://unlock-protocol.com",
@@ -132,8 +129,6 @@ const config = {
                 label: "Brand kit",
                 to: "https://unlock-protocol.com/guides/#",
               },
-            
-            
             ],
           },
           {
@@ -147,7 +142,6 @@ const config = {
                 label: "Grants for developer",
                 to: "https://unlock-protocol.com/grants",
               },
-            
             ],
           },
         ],
