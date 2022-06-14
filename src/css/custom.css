@@ -50,16 +50,6 @@
   background-color: #282a2d;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.8);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
-}
-
-[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
 [data-theme="light"] img[src$="#gh-dark-mode-only"],
 [data-theme="dark"] img[src$="#gh-light-mode-only"] {
@@ -204,21 +194,6 @@ main {
 }
 
 /* snippet */
-
-code[class^="codeBlockLines"] {
-  background-color: var(--ifm-code-background-color);
-  color: var(--text-500);
-  border-radius: 24px;
-  padding: 1.5rem;
-}
-
-code[class^="codeBlockLines"] span {
-  color: #fff;
-}
-pre {
-  padding: 1.5rem;
-}
-
 .main-wrapper img {
   padding: 2rem;
   background-color: var(--text-800);
@@ -237,3 +212,4 @@ pre {
 [data-theme="dark"] .aa-DetachedSearchButton {
   background: #282a2d !important;
 }
+
