@@ -4,7 +4,7 @@ We are documenting our process to organize and prioritize our work using GitHub'
 
 ## Projects and Milestones
 
-Our code is organized into [projects](https://github.com/unlock-protocol/unlock/projects) which are roughly mapped by directories inside our mono-repo. Projects do not have end dates but they have [milestones](https://github.com/unlock-protocol/unlock/milestones), which are ways to determine progress on our goals. The milestones are units \(and sub-units\) of our [roadmap](https://github.com/unlock-protocol/unlock/wiki/Roadmap). For example, [version 1 is a milestone](https://github.com/unlock-protocol/unlock/milestone/2).
+Our code is organized into [projects](https://github.com/unlock-protocol/unlock/projects) which are roughly mapped by directories inside our mono-repo. Projects do not have end dates but they have [milestones](https://github.com/unlock-protocol/unlock/milestones), which are ways to determine progress on our goals. The milestones are units \(and sub-units\) of our [roadmap](../governance/roadmap).
 
 We use 2 weeks sprints to work on "Epics". A Epic is a group of related tasks, such as "User Accounts" or "Integration Tests". The Epics are defined based on user stories for the milestone. A cycle is a set of 3 consecutive 2 weeks sprints. The first 2 sprints are dedicated to implementing features toward a release, while the 3rd sprint is dedicated to backlogs and scheduling \(post-mortem for the cycle and planification of the next cycle\).
 
