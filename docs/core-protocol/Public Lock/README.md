@@ -1,4 +1,6 @@
-## **Lock Contract**
+# Public Lock
+
+## Lock Contract
 
 This is the contract (**PublicLock.sol**) which users can configure and deploy to restrict access to resources, such as a blog, a subset of software features, or an event.
 
@@ -50,13 +52,13 @@ You can call and inspect the Lock contracts directly using the block explorers a
   - v8 [`0x90de74265a416e1393a450752175aed98fe11517`](https://rinkeby.etherscan.io/address/0x90de74265a416e1393a450752175aed98fe11517#code)
   - v9 [`0xa55f8ba16c5bb580967f7dd94f927b21d0acf86c`](https://rinkeby.etherscan.io/address/0xa55f8ba16c5bb580967f7dd94f927b21d0acf86c#code)
 
-Please, refer to the [Lock contract documentation](lock-api/) for more details.
+Please, refer to the [Lock contract documentation](smart-contracts-api/) for more details.
 
 ## Overview
 
 The Lock Smart Contract has multiple capabilities:
 
-- _Administrative_: these are the functions which change rights (see[ access control](access-control.md)) associated to the lock or individual parameters for the lock a such as its name or of course its price. Finally, there is a method to withdraw funds from the lock contract itself.
+- _Administrative_: these are the functions which change rights (see[ access control](./access-control/)) associated to the lock or individual parameters for the lock a such as its name or of course its price. Finally, there is a method to withdraw funds from the lock contract itself.
 - _Transferring key ownership_: keys can be purchased from the lock smart contract itself or from another user who purchased one previously. Another element is that keys can be purchased on behalf of somebody else \(this is important because this lets somebody pay gas fees on behalf of somebody else\)
 - _Changing key attributes_: the keys have an expiration date which can be changed \(for an earlier date by the lock owner\) as well as data attributes which can be changed to something else.
 
@@ -64,4 +66,4 @@ The Lock Smart Contract has multiple capabilities:
 
 All locks deployed prior to version 10 (to be released by year end 2022) are NOT upgradable, which means their core logic will remain unchanged. Starting with version 10, locks are upgradable by their lock manager, through the Unlock contract.
 
-Lock managers can also alter the behavior of their locks thru the use of [hooks](hooks.md).
+Lock managers can also alter the behavior of their locks thru the use of [hooks](./hooks/).
