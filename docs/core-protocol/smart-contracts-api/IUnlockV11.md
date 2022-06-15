@@ -4,13 +4,7 @@ title: Unlock
 
 # IUnlockV11
 
-*Nick Furfaro (unlock-protocol.com)**
-
 > The Unlock Interface
-
-
-
-
 
 ## Methods
 
@@ -19,10 +13,6 @@ title: Unlock
 ```solidity
 function __initializeOwnable(address sender) external nonpayable
 ```
-
-
-
-
 
 #### Parameters
 
@@ -679,7 +669,3 @@ function weth() external view returns (address)
 | Name | Type | Description |
 |---|---|---|
 | _0 | address | undefined |
-
-
-
-

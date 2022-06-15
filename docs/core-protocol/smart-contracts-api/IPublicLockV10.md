@@ -4,12 +4,7 @@ title: PublicLock
 
 # IPublicLockV10
 
-*Nick Furfaro (unlock-protocol.com)*
-
 > The PublicLock Interface
-
-
-
 
 
 ## Methods
@@ -889,7 +884,7 @@ The version number of the current implementation on this network.
 function purchase(uint256[] _values, address[] _recipients, address[] _referrers, address[] _keyManagers, bytes[] _data) external payable
 ```
 
-when called for an existing and non-expired key, the `_keyManager` param will be ignored 
+when called for an existing and non-expired key, the `_keyManager` param will be ignored
 
 *Purchase functionSetting _value to keyPrice exactly doubles as a security feature. That way if the lock owner increases the price while my transaction is pending I can&#39;t be charged more than I expected (only applicable to ERC-20 when more than keyPrice is approved for spending).*
 
@@ -1583,7 +1578,3 @@ function withdraw(address _tokenAddress, uint256 _amount) external nonpayable
 |---|---|---|
 | _tokenAddress | address | specifies the token address to withdraw or 0 for ETH. This is usually the same as `tokenAddress` in MixinFunds. |
 | _amount | uint256 | specifies the max amount to withdraw, which may be reduced when considering the available balance. Set to 0 or MAX_UINT to withdraw everything.  -- however be wary of draining funds as it breaks the `cancelAndRefund` and `expireAndRefundFor` use cases. |
-
-
-
-
