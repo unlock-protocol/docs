@@ -1,4 +1,9 @@
-# The Unlock Hardhat Plugin
+---
+description: A deploying the whole Unlock protocol set of contracts locally
+---
+# Deploying Locally
+
+## The Unlock Hardhat Plugin
 
 To simplifiy the development of applications based on Unlock Protocol, we created a simple library for [Hardhat](https://hardhat.org/). It allows to easily deploy the protocol locally to test things, or manipulate existing locks and contracts from scripts and the command line.
 
