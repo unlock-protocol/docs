@@ -87,7 +87,7 @@ While running your own node is similar to running any other kind of server, it's
 
 We've talked a little about what a decentralised app is, why it might be desirable to build one, and some of the large number of tools and technologies available to help you do it. We can see that decentralised applications can be a little more complicated than their traditional counterparts, but it doesn't have to be all or nothing — you can opt-in to the parts that make sense for your needs.
 
-For example, selling tickets with Unlock Protocol is compatible with any website, so offering [NFT event tickets](https://docs.unlock-protocol.com/unlock/creators/tutorials-1/selling-tickets-for-an-event) and making them on-chain collectables after the event could be an optional addition to any ticketing platform or event website. You don't have to run the whole site on decentralised tech to become part of the ecosystem and receive some of the benefits.
+For example, selling tickets with Unlock Protocol is compatible with any website, so offering [NFT event tickets](https://unlock-protocol.com/guides/how-to-sell-nft-tickets-for-an-event/) and making them on-chain collectables after the event could be an optional addition to any ticketing platform or event website. You don't have to run the whole site on decentralised tech to become part of the ecosystem and receive some of the benefits.
 
 **To recap:** The most important features that differentiate a more decentralised “web3 Dapp” from an ordinary app deal with how users authenticate and how their data is stored. Each of these improves portability of data between applications, removes restrictions and reliance on one central authority, and gives users more freedom and control:
 
@@ -95,7 +95,3 @@ For example, selling tickets with Unlock Protocol is compatible with any website
 - Important application state (like Keys for an Unlock Lock) and user data (like a post or tweet) is stored on a public blockchain like Ethereum and/or a peer-to-peer data network like Ceramic.
 - Files and media are stored on peer-to-peer storage networks like IPFS or Arweave.
 - Code is open source and available to be run anywhere, whether on a standard server, IPFS or your laptop, and is able to access and manipulate the same data from anywhere without asking for special permission beyond a cryptographic proof of identity.
-
-## Continue Learning
-
-Next, you might like to continue reading more about the concepts related to decentralised applications, like our tutorial, “[What is a crypto wallet?](what-is-a-crypto-wallet-a-guide-for-developers.md)”
