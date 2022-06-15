@@ -52,7 +52,7 @@ You can call and inspect the Lock contracts directly using the block explorers a
   - v8 [`0x90de74265a416e1393a450752175aed98fe11517`](https://rinkeby.etherscan.io/address/0x90de74265a416e1393a450752175aed98fe11517#code)
   - v9 [`0xa55f8ba16c5bb580967f7dd94f927b21d0acf86c`](https://rinkeby.etherscan.io/address/0xa55f8ba16c5bb580967f7dd94f927b21d0acf86c#code)
 
-Please, refer to the [Lock contract documentation](smart-contracts-api/) for more details.
+Please, refer to the [Lock contract documentation](../smart-contracts-api/) for more details.
 
 ## Overview
 
