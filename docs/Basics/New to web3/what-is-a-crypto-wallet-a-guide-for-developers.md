@@ -30,7 +30,7 @@ Upon hearing the word “wallet”, we may think of the pocket or purse accessor
 >
 > The Ethereum blockchain was created in 2015 by Vitalik Buterin to let anyone “write smart contracts and decentralized applications (Dapps)” that run on a single supercomputer made up of thousands of decentralized computers.&#x20;
 >
-> Learn more about [Smart Contracts](../smart-contracts/).
+> Learn more about [Smart Contracts](../../core-protocol/).
 
 To summarize, a crypto wallet is a tool for storing various digital assets like cryptocurrencies and NFTs. Your wallet is a tool for connecting to web3, authenticating yourself, and authorizing transactions on the blockchain.
 
