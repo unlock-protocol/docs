@@ -24,7 +24,7 @@ It contains 2 main functions
 
 The `ILockKeyPurchaseHook` contract interface describes the parameters of each function (from, recipient, original price, price paid, etc), so the hook can be properly implemented.
 
-For instance, you can find out how to implement discount codes or invite-only purchases using contract extensions we developed in the [Key Purchase Hook doc](developers/smart-contracts/lock-api/hooks/the-key-purchase-hook.md).
+For instance, you can find out how to implement discount codes or invite-only purchases using contract extensions we developed in the [Key Purchase Hook doc](../../Tutorials/the-key-purchase-hook/).
 
 ## OnKeyCancel Hook
 
