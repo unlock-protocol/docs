@@ -55,7 +55,7 @@ The locks object is a list of objects indexed by the lock address, where each ob
 
 * `network`: _recommended integer_. See below.
 * `name`: _optional string_. name of the lock to display.
-* `recurringPayments`: optional number. The number of time a membership should be renewed automatically. This only applies to ERC20 locks. [Read more about recurring memberships](../recurring-memberships.md).\`
+* `recurringPayments`: optional number. The number of time a membership should be renewed automatically. This only applies to ERC20 locks.
 * `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
 * ``
 
