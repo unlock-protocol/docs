@@ -10,17 +10,11 @@ As of March 2022, our smart contracts have been audited by 3 different teams.
 
 Here are the results:
 
-{% file src="../../.gitbook/assets/Unlock Protocol contest — Code 423n4.pdf" %}
-Code4rena Report
-{% endfile %}
+<a target="\_blank" href={require('/img/audits/code4rena.pdf').default}>Code4rena Report</a>
 
-{% file src="../../.gitbook/assets/byterocket.pdf" %}
-ByteRocket Report
-{% endfile %}
+<a target="\_blank" href={require('/img/audits/byterocket.pdf').default}>ByteRocket Report</a>
 
-{% file src="../../.gitbook/assets/akira.pdf" %}
-Akira Report
-{% endfile %}
+<a target="\_blank" href={require('/img/audits/code4rena.pdf').default}>Akira Tech Report</a>
 
 We are pleased with the results of these audits as they have identified **no issue that would jeopardize creators or members' funds systemically**. The audits did identify improvements that we have (or will) implement to simplify flows, make risky behaviors less error-prone, and optimize for reduced gas consumption.
 
