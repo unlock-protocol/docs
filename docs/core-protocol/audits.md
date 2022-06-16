@@ -10,6 +10,10 @@ As of March 2022, our smart contracts have been audited by 3 different teams.
 
 Here are the results:
 
+| Akira Tech                             | ByteRocket                            | Code4rena                                  |
+| -------------------------------------- | ------------------------------------- | ------------------------------------------ |
+| ![](../../static/img/audits/Akira.png) | ![](../../static/img/audits/Byte.png) | ![](../../static/img/audits/code4rena.png) |
+
 <a target="\_blank" href={require('/img/audits/code4rena.pdf').default}>Code4rena Report</a>
 
 <a target="\_blank" href={require('/img/audits/byterocket.pdf').default}>ByteRocket Report</a>
