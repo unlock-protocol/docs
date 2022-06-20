@@ -22,14 +22,14 @@ Our community has deployed integrations using many different existing platforms 
 
 ### Swordy Bot
 
-- [Instructions & Documentation](discord/swordybot.md)
+- [Instructions & Documentation](swordybot.md)
 - [Swordy Bot Website](https://swordybot.com)
 - [Blog Post](https://unlock-protocol.com/blog/swordy-bot-intro)
 - Created by [Patrick Gallagher](https://patrickgallagher.dev)
 
 ### Collab.Land
 
-- [Instructions & Documentation](discord/collab-land.md)
+- [Instructions & Documentation](collab-land.md)
 
 ## Discourse
 
@@ -88,7 +88,7 @@ Firebase is a platform developed by Google for creating mobile and web applicati
 
 ## WordPress
 
-A Wordpress Plugin that integrates the Unlock [Paywall Application](/developers/paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
+A Wordpress Plugin that integrates the Unlock [Paywall Application](../../Tools/Paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
 
 - [Integration Details](wordpress-plugin.md)
 - [Demo](https://wordpress-demo.unlock-protocol.com)

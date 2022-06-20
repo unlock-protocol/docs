@@ -6,7 +6,7 @@ description: >-
 
 # Recurring Memberships
 
-When you [create your lock](deploying-lock/), you will be prompted for a base duration for each membership. When your members purchase their memberships, their "keys" will be set to expire based on that duration. After that, depending on how you setup your [checkout URL](../developers/tools/paywall/configuring-checkout.md) and depending on how you configure your lock, these memberships could be automatically recurring!
+When you [create your lock](https://unlock-protocol.com/guides/how-to-create-a-lock/), you will be prompted for a base duration for each membership. When your members purchase their memberships, their "keys" will be set to expire based on that duration. After that, depending on how you setup your checkout URL and depending on how you configure your lock, these memberships could be automatically recurring!
 
 ### Requirements
 
@@ -14,7 +14,7 @@ Not all locks are eligible for recurring memberships and not all memberships can
 
 #### Locks
 
-First, the lock needs to be an [ERC20 lock](deploying-lock/using-a-custom-currency.md). This means that the lock needs to be "priced" in a token that supports the _approval_ mechanism. In order to be renewed, the member will explicitly approve the lock contract to spend their ERC20 tokens for an amount that correspond to the _total_ amount to be spent for all the renewal. If you want to create recurring memberships in any chain's native currency, you will need to use the "wrapper" version of that token, like [WETH](https://weth.io/), or [`WXDAI`](https://www.xdaichain.com/for-developers/developer-resources/wrapped-xdai) or [WMATIC](https://polygonscan.com/token/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270).
+First, the lock needs to be an ERC20 lock. This means that the lock needs to be "priced" in a token that supports the _approval_ mechanism. In order to be renewed, the member will explicitly approve the lock contract to spend their ERC20 tokens for an amount that correspond to the _total_ amount to be spent for all the renewal. If you want to create recurring memberships in any chain's native currency, you will need to use the "wrapper" version of that token, like [WETH](https://weth.io/), or [`WXDAI`](https://www.xdaichain.com/for-developers/developer-resources/wrapped-xdai) or [WMATIC](https://polygonscan.com/token/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270).
 
 For example, let's consider a lock uses USDC as its currency and the keys are sold for 5 USDC for 30 days. As a lock manager, you can ask users to approve a total of 60 USDC if you want the memberships to be automatically renewed for 1 year (5 x 12 = 60).
 
@@ -38,7 +38,7 @@ If your lock follows the pre-requisites stated above, it can be enabled with rec
 
 ![Keys on this lock cost 1 USDC per day. Clicking on the "Enable Recurring" will enable recurring memberships.](/img/developers/recurring-membership-screen.png)
 
-Once enabled, you can easily build checkout urls that include the attribute `recurringPayments` inside of a lock's configuration (see [Configuring Checkout](../developers/tools/paywall/configuring-checkout.md)). This value is the number of times you want the membership to be renewed and the users will approve the lock to spend a total of `recurringPayments` multiplied by the current key price.
+Once enabled, you can easily build checkout urls that include the attribute `recurringPayments` inside of a lock's configuration (see [Configuring Checkout](../Tools/Paywall/configuring-checkout.md)). This value is the number of times you want the membership to be renewed and the users will approve the lock to spend a total of `recurringPayments` multiplied by the current key price.
 
 > Example: [this checkout URL](https://app.unlock-protocol.com/checkout?redirectUri=https%3A%2F%2Fapp.unlock-protocol.com%2Fdashboard&paywallConfig=%7B%22locks%22%3A%7B%220x17172Be00C2143Ce8c4e84d19413EeBCAbb81C77%22%3A%7B%22network%22%3A4%2C%22recurringPayments%22%3A365%7D%7D%2C%22pessimistic%22%3Atrue%2C%22persistentCheckout%22%3Atrue%2C%22icon%22%3A%22https%3A%2F%2Flocksmith.unlock-protocol.com%2Flock%2F0x17172Be00C2143Ce8c4e84d19413EeBCAbb81C77%2Ficon%22%7D) lets use purchase a recurring membership for [this lock on the Rinkeby network](https://rinkeby.etherscan.io/address/0x17172Be00C2143Ce8c4e84d19413EeBCAbb81C77). For this you will need some Rinkeby Ether to pay for gas on the first transaction, as well as some Rinkeby USDc (a total of 365 since it will renew every day for 1 year). [You can get both of this faucet](https://faucet.paradigm.xyz/).&#x20;
 

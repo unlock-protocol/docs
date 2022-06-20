@@ -7,7 +7,7 @@ description: >-
 
 # Adding a Lock to Web Page
 
-Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications (such as chat messaging applications, e-commerce stores or, even gaming engines!). See the [_Plugins and Integrations_](../../../creators/plugins-and-integrations/) section.
+Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications (such as chat messaging applications, e-commerce stores or, even gaming engines!). See the [_Plugins and Integrations_](../../Move%20to%20Guides/plugins-and-integrations/) section.
 
 ## Embedding the paywall
 
@@ -87,7 +87,7 @@ _Note_: the callback can be invoked several times. For example, a visitor might 
 
 ### Modal Closing
 
-* Event Name: `unlockProtocol.closeModal`
+- Event Name: `unlockProtocol.closeModal`
 
 This event gets triggered when the modal is closed by the user. It does not give any information about the status of the user specifically. For that you would need to use the `unlockProtocol.status` highlighted above.
 

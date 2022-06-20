@@ -11,11 +11,11 @@ Unlock makes it easy for creators to monetize their work by only allowing their 
 
 ## Create a lock
 
-The first step is to create a lock. For this, refer [to this article](/creators/deploying-lock/). Once the lock is deployed, keep track of its address and [network](/faq.md#what-are-the-chainids-for-the-various-networks) as we'll use them next.
+The first step is to create a lock. For this, refer [to this article](/Basics/deploying-a-lock#deploying-a-lock). Once the lock is deployed, keep track of its address and network as we'll use them next.
 
 ## Create the web document
 
-In this example, we want to lock up access to [this video](https://ia801602.us.archive.org/11/items/Rick\_Astley\_Never\_Gonna\_Give\_You\_Up/Rick\_Astley\_Never\_Gonna\_Give\_You\_Up.mp4).
+In this example, we want to lock up access to [this video](https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4).
 
 HTML5 actually makes it very easy to embed any video in a document. Here's what it takes:
 
@@ -91,7 +91,5 @@ JavaScript provides us with an API to control the video. We can use that to lock
 ```
 
 After this, you are all done!
-
-
 
 _**Note:** This tutorial implements a front-end locking approach, which is possible to circumvent; a determined actor could tinker with the JavaScript console of their web browser and inspect the code to find a workaround. It is absolutely possible to address this using an approach that is more difficult to circumvent, but that requires a back-end integration, which is more advanced and is outside the scope of this tutorial._

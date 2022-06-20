@@ -18,7 +18,7 @@ Swordy Bot allows you to give access to Discord private channels by assigning a 
 !add-lock 100 0xef6389F33ac557405C961030Efcc3b1CE3e6bc17 1 "subscriber" https://unlock-integration.webflow.io/
 ```
 
-**Note:** You can find the possible values for `chainId` [here](../../../developers/faq.md).
+**Note:** You can find the possible values for `chainId` [here](../../core-protocol/).
 
 ### Onboard Users
 

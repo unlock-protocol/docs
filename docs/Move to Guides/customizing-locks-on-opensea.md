@@ -10,7 +10,7 @@ description: >-
 
 In order to customize the appearance of a lock on [OpenSea](https://opensea.io), you will have to make some changes to the token’s metadata. By default, Unlock Protocol provides a generated image for each lock, with a basic description.&#x20;
 
-But you can even host your own image and paste the link into the unlock dashboard (see this guide on how to [Customize the NFT Image](../customizing-the-nft.md)). Do note that this image has to be self-hosted, for it to always remain available. Going this route will make the images across all of the locks the image that was provided.
+But you can even host your own image and paste the link into the unlock dashboard (see this guide on how to [Customize the NFT Image](https://unlock-protocol.com/guides/customize-nft-image/)). Do note that this image has to be self-hosted, for it to always remain available. Going this route will make the images across all of the locks the image that was provided.
 
 However, if you wanted to get really fancy with it, you’ll have to get your hands in some of the code. But don’t worry, this is standard practice for the thousands of NFT projects out there today and just requires a bit more work.
 

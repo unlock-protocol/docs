@@ -38,7 +38,7 @@ As part of the launch of the DAO, Unlock Inc. has allocated the following to the
 
 Unlock Inc. will allocate more funds to the DAO as well as transfer ownership of some of its processes, including our [grants program](grants-bounties-and-matchings.md)!
 
-We will also eventually move ownership of the [Unlock contracts](core-protocol/lock-api.md) and its upgrade admin contract.
+We will also eventually move ownership of the [Unlock contracts](../core-protocol/Unlock/) and its upgrade admin contract.
 
 ## Delegating
 

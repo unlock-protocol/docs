@@ -38,7 +38,7 @@ The lock itself does not _know_ about the content or features which it locks. Th
 Read more about:
 
 - [The smart contracts](core-protocol/)
-- [How to deploy your first lock](creators/deploying-lock/)
+- [How to deploy your first lock](Basics/deploying-a-lock.md)
 
 Memberships as NFTs can create benefits and opportunities for many different categories of creators and organizations:
 
