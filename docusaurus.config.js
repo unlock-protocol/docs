@@ -59,15 +59,14 @@ const config = {
         },
         items: [
           { to: "/Basics", label: "Basics", position: "right" },
-          { to: "/core-protocol", label: "Core", position: "right" },
-          { to: "/Tools", label: "Tools", position: "right" },
-          { to: "/tutorials", label: "Tutorials", position: "right" },
+          { to: "/core-protocol", label: "Core Protocol", position: "right" },
           { to: "/governance", label: "Governance", position: "right" },
           {
             href: "https://github.com/unlock-protocol/unlock",
             label: "GitHub",
             position: "right",
           },
+          { to: 'https://unlock-protocol.gitbook.io/', label: "Older Docs", position: "right", rel: "nofollow,noindex" }
         ],
       },
       footer: {
