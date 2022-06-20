@@ -33,7 +33,7 @@ const config = {
           showLastUpdateTime: true,
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/unlock-protocol/docs/docs",
+          // editUrl: "https://github.com/unlock-protocol/docs/docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
