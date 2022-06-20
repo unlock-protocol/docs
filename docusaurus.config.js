@@ -36,7 +36,7 @@ const config = {
           anonymizeIP: true,
         },
         docs: {
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           // editUrl: "https://github.com/unlock-protocol/docs/docs",
