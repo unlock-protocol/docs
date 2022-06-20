@@ -15,7 +15,13 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "unlock-protocol", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local"),
+  [
+    require.resolve('docusaurus-gtm-plugin'),
+    {
+      id: 'GTM-XXXXXXX', // GTM Container ID
+    }
+  ]],
   presets: [
     [
       "docusaurus-preset-openapi",
