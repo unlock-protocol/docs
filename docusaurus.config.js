@@ -19,7 +19,7 @@ const config = {
   [
     require.resolve('docusaurus-gtm-plugin'),
     {
-      id: 'GTM-XXXXXXX', // GTM Container ID
+      id: 'GTM-PRCCFV9', // GTM Container ID
     }
   ]],
   presets: [
@@ -30,10 +30,6 @@ const config = {
         api: {
           path: "./openapi.yml",
           routeBasePath: "api",
-        },
-        googleAnalytics: {
-          trackingID: "UA-142114767-4",
-          anonymizeIP: true,
         },
         docs: {
           showLastUpdateTime: false,
