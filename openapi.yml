@@ -1,0 +1,140 @@
+openapi: "3.1.0"
+info:
+  title: Unlock Locksmith
+  version: "1"
+  description: Locksmith is unlock service which provides functionality such as storing metadata or webhooks.
+  license:
+    identifier: MIT
+    name: MIT
+
+servers:
+  - url: https://locksmith.unlock-protocol.com
+    description: Production Server
+  - url: https://staging-locksmith.unlock-protocol.com
+    description: Staging Server
+
+components:
+  schemas:
+    HubSubscription:
+      description: J
+paths:
+  /api/key/:lockAddress/:keyID:
+    get:
+      summary: Get Key Metadata
+      description: Return metadata for Key (NFT)
+      parameters:
+        - lockAddress:
+          name: lockAddress
+          in: path
+          description: Address of the Lock
+          required: true
+          schema:
+            type: string
+        - keyID:
+          name: keyID
+          in: path
+          required: true
+          description: ID of the crossiant to get, for free of course.
+          schema:
+            type: string
+        - data:
+          name: Data
+          required: true
+          in: query
+          description: Data associated with the provided signature
+          schema:
+            type: string
+
+        - Authentication:
+          name: Authentication
+          in: header
+          required: true
+          description: Authentication token to track down who is emptying our stock.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Key metadata
+          content:
+            application/json:
+              {
+                "name": "Blue Checkmark",
+                "description": "A blue checkmark for all of your social web accounts! Unlock is a protocol for memberships. https://unlock-protocol.com/",
+                "image": "https://assets.unlock-protocol.com/nft-images/blue-checkmark.png",
+                "attributes":
+                  [
+                    {
+                      "trait_type": "Expiration",
+                      "value": 4720101493,
+                      "display_type": "date",
+                    },
+                  ],
+              }
+      NotFound:
+        description: Key Metadata not found.
+
+  /api/key/:lockAddress/keyHolderMetadata:
+    get:
+      summary: Get Key Holder Metadata for a Key Holders
+      description: Return lock owners with key holder provided metadata in bulk
+      parameters:
+        - lockAddress:
+          name: lockAddress
+          in: path
+          description: Address of the Lock
+          required: true
+          schema:
+            type: string
+        - keyID:
+          name: keyID
+          in: path
+          required: true
+          description: ID of the crossiant to get, for free of course.
+          schema:
+            type: string
+        - Authentication:
+          name: Authentication
+          in: header
+          required: true
+          description: Authentication token to track down who is emptying our stock.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Key metadata
+          content:
+            application/json:
+              {
+                "name": "Blue Checkmark",
+                "description": "A blue checkmark for all of your social web accounts! Unlock is a protocol for memberships. https://unlock-protocol.com/",
+                "image": "https://assets.unlock-protocol.com/nft-images/blue-checkmark.png",
+                "attributes":
+                  [
+                    {
+                      "trait_type": "Expiration",
+                      "value": 4720101493,
+                      "display_type": "date",
+                    },
+                  ],
+              }
+      NotFound:
+        description: Key Metadata not found.
+
+  /api/hooks/:network/locks:
+    post:
+      summary: Receive new locks created on unlock
+      description: Subscribe to new locks created on the specified network
+      parameters:
+        - network:
+          name: Network
+          in: path
+          description: Network id for which you want to receive notifications
+          schema:
+            type: number
+      # requestBody:
+      #   description: Hub Request
+      #   required: true
+      #   content:
+      #     application/x-www-form-urlencoded:
+      #       schema:
+      #         $ref:
