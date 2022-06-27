@@ -56,7 +56,7 @@ Although, at its core, Unlock is an underlying protocol that any custom applicat
 
 The [dashboard](https://app.unlock-protocol.com) is to a tool for _creators and consumers_. For creators, it provides a way to deploy or update locks, view key owners, as well as withdraw funds from the locks. For consumers, it provides a "keychain" that lets them view all of their keys, the related information, as well as sell or cancel them.
 
-The dashboard also hosts the "checkout" UI ([more](../Tools/Paywall/configuring-checkout.md)) that one can use to easily purchase memberships to locks.
+The dashboard also hosts the "checkout" UI ([more](../tools/paywall/configuring-checkout.md)) that one can use to easily purchase memberships to locks.
 
 ### The Paywall
 

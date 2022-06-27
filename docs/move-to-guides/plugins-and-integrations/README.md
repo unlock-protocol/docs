@@ -88,7 +88,7 @@ Firebase is a platform developed by Google for creating mobile and web applicati
 
 ## WordPress
 
-A Wordpress Plugin that integrates the Unlock [Paywall Application](../../Tools/Paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
+A Wordpress Plugin that integrates the Unlock [Paywall Application](../../tools/paywall/) into any self-hosted WordPress.org site. This is the easiest way to lock content inside of pages and posts so that only your members can access them.
 
 - [Integration Details](wordpress-plugin.md)
 - [Demo](https://wordpress-demo.unlock-protocol.com)
