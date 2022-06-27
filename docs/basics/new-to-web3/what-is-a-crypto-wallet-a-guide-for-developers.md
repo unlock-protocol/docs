@@ -29,8 +29,6 @@ Upon hearing the word “wallet”, we may think of the pocket or purse accessor
 > Most crypto tokens utilize Blockchain technology. Bitcoin was the first application of the blockchain. It mainly used blockchain technology for payments and transfers of a single digital currency: bitcoin (note the lowercase b, used to designate the currency, and uppercase for the network), and wasn’t made for running code applications (Smart Contracts or Dapps, as they are also called).
 >
 > The Ethereum blockchain was created in 2015 by Vitalik Buterin to let anyone “write smart contracts and decentralized applications (Dapps)” that run on a single supercomputer made up of thousands of decentralized computers.&#x20;
->
-> Learn more about [Smart Contracts](../../core-protocol/).
 
 To summarize, a crypto wallet is a tool for storing various digital assets like cryptocurrencies and NFTs. Your wallet is a tool for connecting to web3, authenticating yourself, and authorizing transactions on the blockchain.
 
