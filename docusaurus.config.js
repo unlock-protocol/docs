@@ -11,7 +11,7 @@ const config = {
   url: "https://docs.unlock-protocol.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenMarkdownLinks: "throw",
   favicon: "img/favicon.ico",
   organizationName: "unlock-protocol", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
