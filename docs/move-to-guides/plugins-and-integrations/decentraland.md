@@ -10,7 +10,7 @@ You can charge for access by requiring non-members to purchase memberships in or
 
 See example walkthrough here:
 
-{% embed url="https://www.youtube.com/watch?v=oVZi7m-UOtE" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oVZi7m-UOtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Applications
 
