@@ -7,7 +7,7 @@ description: >-
 
 # Adding a Lock to Web Page
 
-Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications (such as chat messaging applications, e-commerce stores or, even gaming engines!). See the [_Plugins and Integrations_](../../Move%20to%20Guides/plugins-and-integrations/) section.
+Adding a lock to any webpage is simple, using [Unlock's Paywall application](https://paywall.unlock-protocol.com/). Note that the Unlock Community has built integrations for Content Management Systems or other applications (such as chat messaging applications, e-commerce stores or, even gaming engines!). See the [_Plugins and Integrations_](../../move-to-guides/plugins-and-integrations/) section.
 
 ## Embedding the paywall
 

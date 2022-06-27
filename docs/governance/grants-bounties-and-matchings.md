@@ -14,7 +14,7 @@ By November 1st, 2021, we have distributed 100,000 tokens. By May 1st, 2022, we 
 
 In order to increase the adoption of the protocol, we believe it is critical for the ecosystem to build Unlock integrations in various projects and products. In order to incentivize adoption, Unlock Inc. will grant some tokens to interesting projects.
 
-These integrations can be in open source libraries or products (see our [Wordpress](https://unlock-protocol.com/guides/guide-to-the-unlock-protocol-wordpress-plugin/) or [Drupal](../Move%20to%20Guides/plugins-and-integrations/drupal-plugin.md) integrations), or even in private installations, provided that they have a large user base and could create a large adoption of the protocol.
+These integrations can be in open source libraries or products (see our [Wordpress](https://unlock-protocol.com/guides/guide-to-the-unlock-protocol-wordpress-plugin/) or [Drupal](../move-to-guides/plugins-and-integrations/drupal-plugin.md) integrations), or even in private installations, provided that they have a large user base and could create a large adoption of the protocol.
 
 For these, Unlock Inc. will **publicly** assign grants assigned to the teams in charge of building these integrations. The grants are subject to vesting, starting on the day the grant is approved. Once shipped, the vested grant account will be delivered to the Ethereum address provided in the application, while the rest will keep vesting until 1 year from the date of original acceptance of the grant.
 

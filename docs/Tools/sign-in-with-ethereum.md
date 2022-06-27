@@ -12,7 +12,7 @@ In many contexts, your application does not need a full "web3" provider, but jus
 "_Ethereum_" here does not refer to any network in particular but to the type of wallet that can used. Since Polygon, Gnosis Chain or Optimism for example are all using the same wallet, you can (should!) absolutely use the same "Sign In with Ethereum".
 {% endhint %}
 
-By using Unlock's "Sign-In with Ethereum", users who do not have a crypto wallet can also easily create an [Unlock Account](../../creators/unlock-accounts.md), as well as sign in to their existing account with their email and passwords.
+By using Unlock's "Sign-In with Ethereum", users who do not have a crypto wallet can also easily create an [Unlock Account](../Basics/unlock-accounts.md), as well as sign in to their existing account with their email and passwords.
 
 ### Building a "Sign-in With Ethereum" URL
 
@@ -53,7 +53,7 @@ const code = JSON.parse(atob(params.code));
 const address = ethers.utils.verifyMessage(code.d, code.s);
 ```
 
-You can try the Sign-In-With Ethereum flow [on this site for example](https://ouvre-boite.com) (click Sign-In). It is also used in our [WordPress plugin](../../creators/plugins-and-integrations/wordpress-plugin.md).
+You can try the Sign-In-With Ethereum flow [on this site for example](https://ouvre-boite.com) (click Sign-In). It is also used in our [WordPress plugin](../move-to-guides/plugins-and-integrations/wordpress-plugin.md).
 
 Example of message signed:
 
