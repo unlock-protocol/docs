@@ -34,7 +34,7 @@ We implement a preventative measure by not using the gas price submitted by the 
 
 ### Key transfers are unsafe when a key has a manager
 
-Once a key has a manager (see [roles](./Public%20Lock/access-control.md)), if it is transferred, the key manager is not reset. This creates a risk where a malicious user could sell keys for which they retain the key manager role and transfer back the key to themself after the sale.
+Once a key has a manager (see [roles](./public-lock/access-control.md)), if it is transferred, the key manager is not reset. This creates a risk where a malicious user could sell keys for which they retain the key manager role and transfer back the key to themself after the sale.
 
 This risk is real on the secondary markets. We’re currently evaluating possible mitigation steps. At this point, we believe the best way to mitigate this is by revealing the key manager on the front-end, to indicate to a user that a key they are purchasing on a secondary market could indeed be recaptured.
 

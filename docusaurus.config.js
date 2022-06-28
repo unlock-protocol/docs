@@ -29,7 +29,7 @@ const config = {
       ({
         api: {
           path: "./openapi.yml",
-          routeBasePath: "api",
+          routeBasePath: "/tools/locksmith/api",
         },
         docs: {
           showLastUpdateTime: false,
@@ -54,7 +54,7 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          { to: "/Basics", label: "Basics", position: "right" },
+          { to: "/basics", label: "Basics", position: "right" },
           { to: "/core-protocol", label: "Core Protocol", position: "right" },
           { to: "/governance", label: "Governance", position: "right" },
           {
