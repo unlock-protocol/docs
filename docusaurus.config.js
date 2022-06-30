@@ -21,7 +21,13 @@ const config = {
     {
       id: 'GTM-PRCCFV9', // GTM Container ID
     }
-  ]],
+  ],
+  ['@docusaurus/plugin-client-redirects', {
+    redirects: [{
+      from: '/unlock',
+      to: '/',
+    }]
+  }]],
   presets: [
     [
       "docusaurus-preset-openapi",

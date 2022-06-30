@@ -1338,7 +1338,7 @@
     "@docsearch/css" "3.0.0"
     algoliasearch "^4.0.0"
 
-"@docusaurus/core@2.0.0-beta.14":
+"@docusaurus/core@2.0.0-beta.14", "@docusaurus/core@2.0.0-beta.21":
   version "2.0.0-beta.14"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-2.0.0-beta.14.tgz#9baf8fbfe29f444f985616013b5d80435ea5f29e"
   integrity sha512-dW95WbD+WE+35Ee1RYIS1QDcBhvUxUWuDmrWr1X0uH5ZHIeOmOnsGVjjn4FA8VN2MkF0uuWknmRakQmJk0KMZw==
@@ -1436,6 +1436,14 @@
     chalk "^4.1.2"
     tslib "^2.3.1"
 
+"@docusaurus/logger@2.0.0-beta.21":
+  version "2.0.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@docusaurus/logger/-/logger-2.0.0-beta.21.tgz#f6ab4133917965349ae03fd9111a940b24d4fd12"
+  integrity sha512-HTFp8FsSMrAj7Uxl5p72U+P7rjYU/LRRBazEoJbs9RaqoKEdtZuhv8MYPOCh46K9TekaoquRYqag2o23Qt4ggA==
+  dependencies:
+    chalk "^4.1.2"
+    tslib "^2.4.0"
+
 "@docusaurus/mdx-loader@2.0.0-beta.14", "@docusaurus/mdx-loader@^2.0.0-beta.14":
   version "2.0.0-beta.14"
   resolved "https://registry.yarnpkg.com/@docusaurus/mdx-loader/-/mdx-loader-2.0.0-beta.14.tgz#f4750a02a8d178c843bc50f29f5a92d6cd0692cd"
@@ -1458,6 +1466,21 @@
     unist-util-visit "^2.0.2"
     url-loader "^4.1.1"
     webpack "^5.61.0"
+
+"@docusaurus/plugin-client-redirects@^2.0.0-beta.21":
+  version "2.0.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-client-redirects/-/plugin-client-redirects-2.0.0-beta.21.tgz#bf0c3e94d89c7bd15933dacdfefc17fec22c5d76"
+  integrity sha512-4xzrti0au7SaQT/cxr+FM9b+R5gfOSFODwQJ2QeTXbkdiz1+9DV3bp8nB/2CmzZ9ApY5lsueXNpa4n7+UAngrA==
+  dependencies:
+    "@docusaurus/core" "2.0.0-beta.21"
+    "@docusaurus/logger" "2.0.0-beta.21"
+    "@docusaurus/utils" "2.0.0-beta.21"
+    "@docusaurus/utils-common" "2.0.0-beta.21"
+    "@docusaurus/utils-validation" "2.0.0-beta.21"
+    eta "^1.12.3"
+    fs-extra "^10.1.0"
+    lodash "^4.17.21"
+    tslib "^2.4.0"
 
 "@docusaurus/plugin-content-blog@2.0.0-beta.14":
   version "2.0.0-beta.14"
@@ -1672,7 +1695,14 @@
   dependencies:
     tslib "^2.3.1"
 
-"@docusaurus/utils-validation@2.0.0-beta.14", "@docusaurus/utils-validation@^2.0.0-beta.14":
+"@docusaurus/utils-common@2.0.0-beta.21":
+  version "2.0.0-beta.21"
+  resolved "https://registry.yarnpkg.com/@docusaurus/utils-common/-/utils-common-2.0.0-beta.21.tgz#81e86ed04ad62b75e9ba6a5e7689dc23d5f36a0a"
+  integrity sha512-5w+6KQuJb6pUR2M8xyVuTMvO5NFQm/p8TOTDFTx60wt3p0P1rRX00v6FYsD4PK6pgmuoKjt2+Ls8dtSXc4qFpQ==
+  dependencies:
+    tslib "^2.4.0"
+
+"@docusaurus/utils-validation@2.0.0-beta.14", "@docusaurus/utils-validation@2.0.0-beta.21", "@docusaurus/utils-validation@^2.0.0-beta.14":
   version "2.0.0-beta.14"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils-validation/-/utils-validation-2.0.0-beta.14.tgz#c5e54adbe6dd4b3d6f5525ae5138c0214e75a6c2"
   integrity sha512-ttDp/fXjbM6rTfP8XCmBKtNygfPg8cncp+rPsWHdSFjGmE7HkinilFTtaw0Zos/096TtxsQx3DgGQyPOl6prnA==
@@ -1682,7 +1712,7 @@
     joi "^17.4.2"
     tslib "^2.3.1"
 
-"@docusaurus/utils@2.0.0-beta.14", "@docusaurus/utils@^2.0.0-beta.14":
+"@docusaurus/utils@2.0.0-beta.14", "@docusaurus/utils@2.0.0-beta.21", "@docusaurus/utils@^2.0.0-beta.14":
   version "2.0.0-beta.14"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.0-beta.14.tgz#494d2181cc0fd264ebe12f2a08c6ae04878e5f90"
   integrity sha512-7V+X70a+7UJHS7PeXS/BO2jz+zXaKhRlT7MUe5khu6i6n1oQA3Jqx1sfu78slemqEWe8u337jxal6uILcB0IWQ==
@@ -4276,6 +4306,15 @@ fs-extra@^10.0.0:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.0.1.tgz#27de43b4320e833f6867cc044bfce29fdf0ef3b8"
   integrity sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
+fs-extra@^10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
+  integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
