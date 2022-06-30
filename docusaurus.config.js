@@ -54,7 +54,8 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          { to: "/basics", label: "Basics", position: "right" },
+          { to: "https://unlock-protocol.com/", label: "Home", position: "right" },
+          { to: "https://app.unlock-protocol.com/dashboard", label: "Dashboard", position: "right" },
           { to: "/core-protocol", label: "Core Protocol", position: "right" },
           { to: "/governance", label: "Governance", position: "right" },
           {
