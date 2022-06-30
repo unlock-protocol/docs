@@ -4,7 +4,7 @@ title: Roadmap
 
 # Roadmap
 
-As of December 2021, the Unlock ecosystem consists of the following:
+As of Spring 2022, the Unlock ecosystem consists of the following:
 
 - A set of smart contracts which let creators deploy their locks, as well as lets consumers unlock the locks
 - An [unlock-js](https://www.npmjs.com/package/@unlock-protocol/unlock-js) library that developers can use to interact with the contracts
@@ -13,16 +13,33 @@ As of December 2021, the Unlock ecosystem consists of the following:
 - The [Unlock Tokens](/governance/the-unlock-token/), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
 - The [Unlock DAO](https://unlock-protocol.com/blog/unlock-dao), a set of contracts that lets anyone who owns Unlock tokens submit proposals and vote on them in order to effectively govern the protocol and its treasury.
 
+# June 30th 2022
+
+- Recurring memberships support in UI (dashboard, keychain)
+- Refactored and redesigned checkout that supports the following
+  - Recurring
+  - Multiple memberships
+  - Metadata
+  - Credit card purchases...
+- Refactored Dashboard including:
+- Better features to configure locks
+- Advanced configuration of purchase URL
+- Ticket Verifiers
+- New Docs websites
+- New Guides website
+- Automatically recurring credit card based memberships
+- New networks + L2
+
 ## March 31st 2022
 
 - PublicLock new features:
-  - Multiple memberships: the ability for an address to own multiple memberships
+  - Multiple memberships: the ability for an address to own multiple memberships  ✅
   - Automatically recurring memberships: the contracts support the ability for users to subscribe and have their memberships be automatically renewed by network participants who are ecomomically incentivized to do so.
-  - Ownable: the PublicLock lock managers can set an "owner" on the contract
-- Unlock Contract's GDP updates triggers and event
-- Audits
-- Unlock DAO takes ownership of the UDT contract
-- New Static website
+  - Ownable: the PublicLock lock managers can set an "owner" on the contract  ✅
+- Unlock Contract's GDP updates triggers and event  ✅
+- Audits  ✅
+- Unlock DAO takes ownership of the UDT contract  ✅
+- New Static website  ✅
 
 ## December 31st 2021
 
