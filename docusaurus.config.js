@@ -78,7 +78,7 @@ const config = {
     /** @type {import('docusaurus-preset-openapi').ThemeConfig} */
     ({
       navbar: {
-        title: "Unlock Protocol",
+        title: "Unlock",
         logo: {
           alt: "Unlock Protocol",
           src: "img/logo.svg",
@@ -87,6 +87,7 @@ const config = {
         items: [
           { to: "/", label: "Docs", position: "right" },
           { to: "https://app.unlock-protocol.com/dashboard", label: "Dashboard", position: "right" },
+          { to: "/core-protocol", label: "Core Protocol", position: "right" },
           { to: "/governance", label: "Governance", position: "right" },
           {
             href: "https://github.com/unlock-protocol/unlock",
