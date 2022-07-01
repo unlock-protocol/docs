@@ -27,6 +27,9 @@ const config = {
       from: '/unlock',
       to: '/',
     }, {
+      from: '/creators/deploying-lock',
+      to: 'https://unlock-protocol.com/guides/how-to-create-a-lock/'
+    }, {
       from: '/tools/sign-in-with-ethereum',
       to: '/',
     }, {
@@ -82,8 +85,8 @@ const config = {
           href: "https://unlock-protocol.com/"
         },
         items: [
+          { to: "/", label: "Docs", position: "right" },
           { to: "https://app.unlock-protocol.com/dashboard", label: "Dashboard", position: "right" },
-          { to: "/core-protocol", label: "Core Protocol", position: "right" },
           { to: "/governance", label: "Governance", position: "right" },
           {
             href: "https://github.com/unlock-protocol/unlock",
