@@ -29,7 +29,7 @@ const config = {
       to: '/',
     }, {
       from: '/creators/deploying-lock',
-      to: 'https://unlock-protocol.com/guides/how-to-create-a-lock/'
+      to: '/basics/deploying-a-lock#deploying-a-lock'
     }, {
       from: '/tools/sign-in-with-ethereum',
       to: '/',
@@ -187,14 +187,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-      },
-    }
+    locales: ['en'],
   }
 };
 
