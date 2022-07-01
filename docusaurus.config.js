@@ -12,6 +12,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
+  onDuplicateRoutes: "throw",
   favicon: "img/favicon.ico",
   organizationName: "unlock-protocol", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
@@ -183,6 +184,18 @@ const config = {
         theme: UnlockPrismTheme,
       },
     }),
+
+  i18n: {
+    defaultLocale: 'en',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+      },
+    }
+  }
 };
 
 module.exports = config;
