@@ -57,7 +57,7 @@ ERC-20, ERC-721, and ERC-1155 are token standards used when deploying smart cont
 
 **ERC20**
 
-ERC-20 is a fungible token standard used for identical entities. It was the first and the most widely used token standard approved by the Ethereum blockchain network.  It lays out a set of guidelines that all Ethereum-based ERC-20 tokens must adhere to. 
+ERC-20 is a fungible token standard used for identical entities. It was the first token standard on Ethereum.  It lays out a set of guidelines that all Ethereum-based ERC-20 tokens must adhere to. 
 
 > 💡 **Fungible vs. Non-Fungible**
 > 
