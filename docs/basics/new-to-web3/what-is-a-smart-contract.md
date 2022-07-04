@@ -30,25 +30,25 @@ These actions could include releasing funds to the appropriate parties, creating
 
 ## **The benefits of a smart contract**
 
-Smart contract blockchains provide various benefits, including speed, efficiency, accuracy, trust, transparency, security, savings, as discussed in the sections below.
+Smart contract blockchains provide various benefits, including speed, efficiency, accuracy, trust, transparency, and security, as discussed in the sections below.
 
 **Speed, efficiency and accuracy**
 
-Once a condition is met, a smart contract transaction is executed immediately. This speeds up the execution process, which saves time and speeds decision making. Also, since there are no manual processes, smart contracts ensure consistency as well.
+Once a condition is met, a smart contract transaction is immediately queued for execution. Also, since there are no manual processes, smart contracts ensure consistency as well.
 
-**Trust, Security and Privacy**
+**Security and data integrity**
 
-As smart contracts are stored on blockchains, they inherit their security mechanisms. Since there is no way to delete or alter information from smart contracts transactions once finalized, it fosters transparency between the concerned parties.
+As smart contracts are stored on blockchains, they inherit the security mechanisms of the underlying blockchain. 
 
 Also, smart contracts offer a high level of data integrity. This offers protection from the threat of after-the-fact data manipulation. Since each record is connected to the previous and subsequent records on a distributed ledger, hackers would have to alter the entire chain to change a single record, which makes it nearly impossible to hack in this manner. Moreover, all documents kept on the blockchain are duplicated many times across a peer-to-peer network.
 
-**Transparency & Clear Communication**
+**Transparency & clear communication**
 
-Smart contract creators need to be specific and detailed while establishing terms and conditions. All relevant parties have complete visibility and access to the code enshrined in the smart contract. Furthermore, there is also transparency and easy access to all transactions at all times, as they are stored on a distributed ledger.
+Smart contract creators need to be specific and detailed while establishing terms and conditions. All relevant parties have complete visibility and access to the code enshrined in the smart contract. Furthermore, there is also transparency and easy access to all transactions at all times, as they are stored on a distributed public ledger.
 
-**Savings**
+**Peer-to-peer interactions**
 
-Smart contracts remove the need for intermediaries to handle transactions. Without the need to involve any third-party, middlemen or intermediary, individuals and business organizations have the opportunity to reduce operational and transactional costs.
+Smart contracts remove the need for intermediaries to handle transactions. Without the need to involve any third-party, middlemen or intermediary, individuals and business organizations have the opportunity to reduce operational and transactional costs that typically would flow to middlemen.
 
 
 ### Different token standards for smart contracts
