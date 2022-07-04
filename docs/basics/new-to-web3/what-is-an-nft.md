@@ -4,7 +4,7 @@ description: An informational tutorial covering tyhe basics of NFTs from develop
 
 # What is a Non-Fungible Token (NFT)?
 
-In this guide, we'll answer the question "What is an NFT (Non-Fungible Token)?". We'll start with a simple explanation of what a token looks like on the blockchain and give some examples of how these are in use in the wild today. We'll mention some of the new ideas recently emerging and we'll briefly introduce some popular products and recent trends.
+In this document, we'll answer the question "What is an NFT (Non-Fungible Token)?". We'll start with a simple explanation of what a token looks like on the blockchain and give some examples of how these are in use in the wild today. We'll mention some of the new ideas recently emerging and we'll briefly introduce some popular products and recent trends.
 
 When you've finished this guide you'll have an understanding of what an NFT is in practical terms and perhaps why you might want one (beyond just having a cool profile picture!).
 
