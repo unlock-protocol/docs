@@ -13,7 +13,6 @@ Simply put, smart contracts are **computer programs** stored on a blockchain a
 
 Smart contracts are typically used to automate the execution of an agreement so that all participants can be immediately certain of the outcome, without any involvement of intermediaries. For example, smart contracts can transfer digital assets between parties when certain conditions are met.
 
----
 
 ## **How smart contracts work**
 
@@ -61,7 +60,9 @@ ERC-20, ERC-721, and ERC-1155 are token standards used for deploying smart contr
 ERC-20 is a fungible token standard used for identical entities. It was the first and the most widely used token standard approved by the Ethereum blockchain network.  It lays out a set of guidelines that all Ethereum-based ERC-20 tokens must adhere to. 
 
 > 💡 **Fungible vs. Non-Fungible**
+> 
 > The word “fungible” is used to refer to things that can be exchanged for other things of exactly the same kind. For example, the U.S. dollar is fungible. You can exchange a $100 bill with a friend's $100 bill, and each of you will still have the exact same spending power after the exchange. Most cryptocurrencies are fungible, too — a bitcoin is a bitcoin, and it generally* doesn’t really matter which bitcoin you have. (*in some cases, such as stolen coins, identification of a specific bitcoin can be relevant when trying to trace the path of a stolen asset).
+> 
 > NFTs — non-fungible tokens — on the other hand, like many things in the physical world such as cars and houses, are considered non-fungible. They have unique qualities, and you can’t just exchange them for others of the same type. All NFTs are uniquely identifiable.
 
 **ERC-721**
