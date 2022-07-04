@@ -69,6 +69,7 @@ Online and IRL event ticketing are a natural use cases for NFTs. The verifiable 
 NFTs can act like membership cards that provide access to online space (e.g. media paywalls), online and office communities (e.g. membership cards), or mebers-only benefits. Unlock extends this core function in an important way, enabling NFT-based membershps to be time-bound (e.g. for a day, month, year, or any other lenght of time).
 
 > Related: https://unlock-protocol.com/guides/guide-to-the-unlock-protocol-wordpress-plugin/
+> 
 > Related: https://unlock-protocol.com/guides/how-to-token-gate-telegram-with-unlock-protocol-and-guild-xyz/
 
 ### Online credentials and Proof Of Attendance Protocol (POAP) records
