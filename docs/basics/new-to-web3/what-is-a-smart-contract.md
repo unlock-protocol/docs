@@ -16,7 +16,7 @@ Smart contracts are typically used to automate the execution of an agreement so 
 
 ## **How smart contracts work**
 
-Smart contracts work by following statements that are written into code on a blockchain. A network of computers then executes the actions when predetermined conditions have been met and verified. 
+Smart contracts work by executing statements that are written into code on a blockchain. A network of computers then executes the actions when predetermined conditions have been met and verified. 
 
 These actions could include releasing funds to the appropriate parties, creating a membership to access an online resource, sending a notification, or issuing an event ticket. The blockchain is then updated when the transaction is completed. That means the transaction cannot be changed once it has been verified.
 
