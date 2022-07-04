@@ -79,7 +79,9 @@ Unlike ERC-20, ERC-721 specifies a standard for non-fungible tokens. NFTs cannot
 
 **ERC-1155**
 
-Introduced in 2019,  ERC-1155 is in some ways possesses traits of both ERC-20 and ERC-721 token types. This is different from ERC-721 and ERC-20, where a separate contract gets deployed for each non-fungible or fungible token. You can learn more about these different standards [here](https://www.web3.university/article/comparing-erc-721-to-erc-1155).
+Introduced in 2019,  ERC-1155 is in some ways possesses traits of both ERC-20 and ERC-721 token types. This is different from ERC-721 and ERC-20, enables multiples token transfers in a single transaction, in addition to other features. 
+
+You can learn more about these different standards [here](https://www.web3.university/article/comparing-erc-721-to-erc-1155).
 
 ---
 
