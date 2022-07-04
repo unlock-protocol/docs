@@ -80,7 +80,7 @@ You can learn more about these different standards [here](https://www.web3.unive
 
 Like any other kind of programming, the creation of a smart contract typically starts off with specifying requirements. Once these specifications have been created, the smart contract can be programmed by a developer. This can either be done from scratch, although increasingly, organizations that use blockchain for business provide templates, web interfaces, and other online tools to simplify structuring smart contracts.
 
-Decentralized Applications ("[Dapps](https://docs.unlock-protocol.com/basics/new-to-web3/what-is-a-decentralised-application-aka-dapp)") are applications built on the open-source, peer-to-peer networks of Ethereum-compatible blockchains. Dapps use smart contracts and front-end user interfaces to create decentralized platforms. Developing a Dapp, like any other app, requires programming and executing code on the system. Solidity is the most popular language for writing Ethereum smart contracts. 
+Decentralized Applications ("[Dapps](https://docs.unlock-protocol.com/basics/new-to-web3/what-is-a-decentralised-application-aka-dapp)") are applications built on the open-source, peer-to-peer networks of Ethereum-compatible blockchains. Dapps use smart contracts and front-end user interfaces to create decentralized platforms. Developing a Dapp, like any other app, requires programming and executing code on the system. Solidity is currently the most common language for writing Ethereum smart contracts. 
 
 **What is Solidity?**
 
