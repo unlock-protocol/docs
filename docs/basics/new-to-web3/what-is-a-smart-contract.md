@@ -38,21 +38,21 @@ Smart contract blockchains provide various benefits, including speed, efficiency
 
 **Speed, efficiency and accuracy**
 
-Smart contracts eliminate the need to manually process each transaction. Once a condition is met, the contract is executed immediately. This speeds up the execution process, which not only helps save time but also results in quicker decision making. Also, since there’s no manual process, it improves the accuracy as well.
+Once a condition is met, a smart contract transaction is executed immediately. This speeds up the execution process, which saves time and speeds decision making. Also, since there’s never any manual processes, it improves consistency as well.
 
 **Trust, Security and Privacy**
 
-Since smart contracts are stored on blockchains, they inherit their security mechanisms. Since there is no way to delete or alter information in smart contracts once it’s finalized, it fosters a higher level of trust between the concerned parties.
+As smart contracts are stored on blockchains, they inherit their security mechanisms. Since there is no way to delete or alter information from smart contracts transactions once finalized, it fosters transparency between the concerned parties.
 
 Also, smart contracts offer a high level of data integrity. This offers protection from the threat of after-the-fact data manipulation. Since each record is connected to the previous and subsequent records on a distributed ledger, hackers would have to alter the entire chain to change a single record, which makes it nearly impossible to hack in this manner. Moreover, all documents kept on the blockchain are duplicated many times across a peer-to-peer network.
 
 **Transparency & Clear Communication**
 
-With smart contracts, you need to be specific and detailed while establishing terms and conditions. This leaves little room for misinterpretation at a later stage. Thus, helping you forge an agreement based on a clear and direct communication.All relevant parties have complete visibility and access to the terms and conditions of the smart contract. Furthermore, there is also transparency and easy access to all records at all times as it is stored on a distributed ledger, which helps to further encourage confidence between all.
+Smart contract creators need to be specific and detailed while establishing terms and conditions. All relevant parties have complete visibility and access to the code enshrined in the smart contract. Furthermore, there is also transparency and easy access to all transactions at all times, as they are stored on a distributed ledger.
 
 **Savings**
 
-Smart contracts remove the need for intermediaries to handle transactions. Without the need to involve any third-party, middlemen or intermediary, individuals and business organizations would be able to significantly reduce operational and transactional costs. Thus, saving a lot of money in return.
+Smart contracts remove the need for intermediaries to handle transactions. Without the need to involve any third-party, middlemen or intermediary, individuals and business organizations have the opportunity to reduce operational and transactional costs.
 
 ---
 
@@ -62,14 +62,14 @@ ERC-20, ERC-721, and ERC-1155 are token standards used for deploying smart contr
 
 **ERC20**
 
-ERC-20 is a fungible token used for identical entities. It was the first and the most widely used token standard approved by the Ethereum blockchain network.  It lays out a set of guidelines that all Ethereum-based tokens must adhere to. 
+ERC-20 is a fungible token used for identical entities. It was the first and the most widely used token standard approved by the Ethereum blockchain network.  It lays out a set of guidelines that all Ethereum-based ERC-20 tokens must adhere to. 
 
 <aside>
 💡 **Fungible vs. Non-Fungible**
 
-The word “fungible” is used to refer to things that can be exchanged for other things of exactly the same kind. For example, the U.S. dollar is fungible. You can exchange a $100 bill with a friend, and each of you will still have the exact same spending power. Most cryptocurrencies are fungible, too — a bitcoin is a bitcoin, and it generally* doesn’t really matter which bitcoin you have. (*in some cases, such as stolen coins, identification of a specific bitcoin can be relevant when trying to trace the path of a stolen asset).
+The word “fungible” is used to refer to things that can be exchanged for other things of exactly the same kind. For example, the U.S. dollar is fungible. You can exchange a $100 bill with a friend's $100 bill, and each of you will still have the exact same spending power after the exchange. Most cryptocurrencies are fungible, too — a bitcoin is a bitcoin, and it generally* doesn’t really matter which bitcoin you have. (*in some cases, such as stolen coins, identification of a specific bitcoin can be relevant when trying to trace the path of a stolen asset).
 
-NFTs on the other hand, like most things in the physical world, such as cars and houses, are considered non-fungible. They have unique qualities, and you can’t just exchange them for others of the same type. You can swap your 2022 Tesla with your friend’s 2022 Tesla, but the cars wouldn’t exactly be the same.
+NFTs — non-fungible tokens — on the other hand, like many things in the physical world such as cars and houses, are considered non-fungible. They have unique qualities, and you can’t just exchange them for others of the same type. All NFTs are uniquely identifiable.
 
 </aside>
 
