@@ -23,10 +23,11 @@ These actions could include releasing funds to the appropriate parties, creating
 
 
 > 💡 **A vending machine is an analogy for a “smart contract”**
+> 
 > The term “smart contract” was first introduced by computer scientist and cryptographer Nick Szabo some 20 years ago as a graduate student at University of Washington.
+> 
 > A classic example of a smart contract offered by Szabo is that of a vending machine. It’s the simplest transaction you can make. You decide what you want and insert money into the machine. Once you click on the button or insert the code for the item of the same value, the machine automatically releases it. Smart contracts essentially work in the same way - automatically executing themselves once pre-determined conditions have been satisfied.
 
----
 
 ## **The benefits of a smart contract**
 
@@ -50,7 +51,6 @@ Smart contract creators need to be specific and detailed while establishing term
 
 Smart contracts remove the need for intermediaries to handle transactions. Without the need to involve any third-party, middlemen or intermediary, individuals and business organizations have the opportunity to reduce operational and transactional costs.
 
----
 
 ### Different token standards for smart contracts
 
@@ -60,14 +60,9 @@ ERC-20, ERC-721, and ERC-1155 are token standards used for deploying smart contr
 
 ERC-20 is a fungible token standard used for identical entities. It was the first and the most widely used token standard approved by the Ethereum blockchain network.  It lays out a set of guidelines that all Ethereum-based ERC-20 tokens must adhere to. 
 
-<aside>
-💡 **Fungible vs. Non-Fungible**
-
-The word “fungible” is used to refer to things that can be exchanged for other things of exactly the same kind. For example, the U.S. dollar is fungible. You can exchange a $100 bill with a friend's $100 bill, and each of you will still have the exact same spending power after the exchange. Most cryptocurrencies are fungible, too — a bitcoin is a bitcoin, and it generally* doesn’t really matter which bitcoin you have. (*in some cases, such as stolen coins, identification of a specific bitcoin can be relevant when trying to trace the path of a stolen asset).
-
-NFTs — non-fungible tokens — on the other hand, like many things in the physical world such as cars and houses, are considered non-fungible. They have unique qualities, and you can’t just exchange them for others of the same type. All NFTs are uniquely identifiable.
-
-</aside>
+> 💡 **Fungible vs. Non-Fungible**
+> The word “fungible” is used to refer to things that can be exchanged for other things of exactly the same kind. For example, the U.S. dollar is fungible. You can exchange a $100 bill with a friend's $100 bill, and each of you will still have the exact same spending power after the exchange. Most cryptocurrencies are fungible, too — a bitcoin is a bitcoin, and it generally* doesn’t really matter which bitcoin you have. (*in some cases, such as stolen coins, identification of a specific bitcoin can be relevant when trying to trace the path of a stolen asset).
+> NFTs — non-fungible tokens — on the other hand, like many things in the physical world such as cars and houses, are considered non-fungible. They have unique qualities, and you can’t just exchange them for others of the same type. All NFTs are uniquely identifiable.
 
 **ERC-721**
 
@@ -79,7 +74,6 @@ Introduced in 2019,  ERC-1155 is in some ways possesses traits of both ERC-20 an
 
 You can learn more about these different standards [here](https://www.web3.university/article/comparing-erc-721-to-erc-1155).
 
----
 
 ### Creating **a smart contract**
 
@@ -97,7 +91,6 @@ It's used to create smart contracts that implements business logic and generates
 - It also has a lot of similarities with C and C++. For example, a “main” in C is equivalent to a “contract” in Solidity.
 - Like other programming languages, Solidity programming also has variables, functions, classes, arithmetic operations, string manipulation, and many other concepts.
 
----
 
 ### **Deploying a smart contract**
 
