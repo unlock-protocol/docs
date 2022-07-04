@@ -55,7 +55,7 @@ Smart contracts remove the need for intermediaries to handle transactions. Witho
 
 ERC-20, ERC-721, and ERC-1155 are token standards used when deploying smart contracts on Ethereum and related blockchains that implement the Ethereum Virtual Machine (EVM). 
 
-**ERC20**
+**ERC-20**
 
 ERC-20 is a fungible token standard used for identical tokens. It was the first token standard on Ethereum.  It lays out a set of guidelines that all Ethereum-based ERC-20 tokens must adhere to. 
 
