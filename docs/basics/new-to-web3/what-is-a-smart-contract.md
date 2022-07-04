@@ -11,7 +11,7 @@ Simply put, smart contracts are **computer programs** stored on a blockchain a
 - a specific event (“if X happens, then do action Y”)
 - a specific date or at the expiration of a period of time (“at X date, do action Y”)
 
-Smart contracts are typically used to automate the execution of an agreement so that all participants can be immediately certain of the outcome, without any involvement of intermediaries. For example, they can transfer digital assets between parties when certain conditions are met.
+Smart contracts are typically used to automate the execution of an agreement so that all participants can be immediately certain of the outcome, without any involvement of intermediaries. For example, smart contracts can transfer digital assets between parties when certain conditions are met.
 
 ---
 
