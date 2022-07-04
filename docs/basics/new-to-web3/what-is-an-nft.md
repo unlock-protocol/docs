@@ -62,20 +62,30 @@ Here's a quick overview of how tokens help achieve these outcomes and an introdu
 
 Online and IRL event ticketing are a natural use cases for NFTs. The verifiable uniqueness and authenticity of an NFT ensures that a ticket presented for an online or IRL event is authentic. Mechanisms like non-transferrable NFTs also act as a deterrent to ticket scalping.
 
+> Related: https://unlock-protocol.com/guides/how-to-sell-nft-tickets-for-an-event/
 
 ### Media and DAO memberships
 
 NFTs can act like membership cards that provide access to online space (e.g. media paywalls), online and office communities (e.g. membership cards), or mebers-only benefits. Unlock extends this core function in an important way, enabling NFT-based membershps to be time-bound (e.g. for a day, month, year, or any other lenght of time).
 
+> Related: https://unlock-protocol.com/guides/guide-to-the-unlock-protocol-wordpress-plugin/
+> Related: https://unlock-protocol.com/guides/how-to-token-gate-telegram-with-unlock-protocol-and-guild-xyz/
+
 ### Online credentials and Proof Of Attendance Protocol (POAP) records
 
 Since NFTs can be set to be non-transferrable and can be granted to particular individuals, using NFTs for online credentialing and certification is a natural use case as well. Once someone shows mastery of a topic be completing an exam or exhibiting skills using another mechanism, a time-based NFT can be issued to verify that skill on-chain.
 
+> Related: https://unlock-protocol.com/blog/cdaa-unlock-case-study
+
 POAP stands for "Proof Of Attendance Protocol". POAPs are NFTs that are granted to people in attendance at events, whether virtual or in the real world. The POAP smart contract restricts the tokens from being transferred, and the tokens can only be claimed during an event. The tokens then act like an old paper ticket stub, a way to remember and prove you were in attendance at an event and can be used to provide special memberships or benefits only to those early supporters.
+
+> Related: https://unlock-protocol.com/guides/how-to-do-poaps-with-unlock/
 
 ### Art projects and profile pictures
 
 "Profile picture collection" NFT projects became very popular in 2021. The NFT contract for these tokens references a metadata file for each token identifier which in turn points to an image file of the picture in question. Exchanging these tokens means you own a pointer to an image file, not the image file itself. It's important to make sure the image is saved somewhere it can't be removed, to maintain the correctness of the immutable blockchain reference.
+
+> Related: https://docs.unlock-protocol.com/move-to-guides/customizing-locks-on-opensea
 
 ## New ideas for Non-Fungible Tokens
 
