@@ -76,7 +76,7 @@ NFTs can act like membership cards that provide access to content websites (e.g.
 
 Since NFTs can be set to be non-transferrable and can be granted to particular individuals, using NFTs for online credentialing and certification is a natural use case as well. Once someone shows mastery of a topic by completing an exam or exhibiting skills using another mechanism, a time-based NFT can be issued to verify that skill on-chain.
 
-> Related: [How CDAA implemented online creditials using NFTs](https://unlock-protocol.com/blog/cdaa-unlock-case-study)
+> Related: [How CDAA implemented online credentials using NFTs](https://unlock-protocol.com/blog/cdaa-unlock-case-study)
 
 POAP stands for "Proof Of Attendance Protocol". POAPs are NFTs that are granted to people in attendance at events, whether virtual or in the real world. The POAP smart contract restricts the tokens from being transferred, and the tokens can only be claimed during an event. The tokens then act like an old paper ticket stub, a way to remember and prove you were in attendance at an event and can be used to provide special memberships or benefits only to those early supporters.
 
