@@ -46,7 +46,7 @@ const config = {
           },
           {
             from: "/unlock/creators/plugins-and-integrations",
-            to: "/move-to-guides/plugins-and-integrations",
+            to: "/move-to-guides/plugins-and-integrations/",
           },
           {
             from: "/unlock/creators/plugins-and-integrations/discord",
