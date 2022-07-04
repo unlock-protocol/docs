@@ -44,7 +44,7 @@ The main difference between the two standards is that all ERC721 tokens in a con
 
 These specifications define how to manage ownership of the tokens - the mapping of token id to owner address - and the information associated with the token. This often includes a URL or IPFS hash for retrieving metadata about the token from another service.
 
-As long as they adhere to the basic spec for compatibility tokens are free to include additional functionality to support their product or utility.
+As long as they adhere to the basic spec for compatibility, tokens are free to include additional functionality to support their product or utility.
 
 ## Tokens are a new digital primitive
 
