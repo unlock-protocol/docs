@@ -58,7 +58,7 @@ Smart contracts remove the need for intermediaries to handle transactions. Witho
 
 ### Different token standards for smart contracts
 
-ERC-20, ERC-721, and ERC-1155 are token standards used for deploying smart contracts on a blockchain. These standards include rules or criteria that are needed to be fulfilled for a transaction to occur. These token standards, along with the blockchain, help remove the need for intermediaries and also allow the blockchain to keep track of all the transactions.
+ERC-20, ERC-721, and ERC-1155 are token standards used for deploying smart contracts on a blockchain. These standards include rules or criteria that need to be fulfilled for a transaction to occur. These token standards, along with the blockchain, help remove the need for intermediaries and also allow the blockchain to keep track of all the transactions.
 
 **ERC20**
 
