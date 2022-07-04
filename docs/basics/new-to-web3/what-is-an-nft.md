@@ -54,29 +54,36 @@ Tokens are a new digital primitive. Like websites began as simple text documents
 
 What are some common use cases for NFTs right now, other than trading expensive pictures of monkeys?
 
-Most notable are event ticketing (Unlock does this!), proof of attendance records, and website and Discord community paywalls (also Unlock's area) are all being done today.
+Most notable are NFT-based event ticketing, media memberships, DAO memberships, online credentials and proof of attendance records, and digital colectibles. All are being done today.
 
 Here's a quick overview of how tokens help achieve these outcomes and an introduction to some of the companies working on ideas in the space.
+
+### NFT Ticketing 
+
+Online and IRL event ticketing are a natural use cases for NFTs. The verifiable uniqueness and authenticity of an NFT ensures that a ticket presented for an online or IRL event is authentic. Mechanisms like non-transferrable NFTs also act as a deterrent to ticket scalping.
+
+
+### Media and DAO memberships
+
+NFTs can act like membership cards that provide access to online space (e.g. media paywalls), online and office communities (e.g. membership cards), or mebers-only benefits. Unlock extends this core function in an important way, enabling NFT-based membershps to be time-bound (e.g. for a day, month, year, or any other lenght of time).
+
+### Online credentials and Proof Of Attendance Protocol (POAP) records
+
+Since NFTs can be set to be non-transferrable and can be granted to particular individuals, using NFTs for online credentialing and certification is a natural use case as well. Once someone shows mastery of a topic be completing an exam or exhibiting skills using another mechanism, a time-based NFT can be issued to verify that skill on-chain.
+
+POAP stands for "Proof Of Attendance Protocol". POAPs are NFTs that are granted to people in attendance at events, whether virtual or in the real world. The POAP smart contract restricts the tokens from being transferred, and the tokens can only be claimed during an event. The tokens then act like an old paper ticket stub, a way to remember and prove you were in attendance at an event and can be used to provide special memberships or benefits only to those early supporters.
 
 ### Art projects and profile pictures
 
 "Profile picture collection" NFT projects became very popular in 2021. The NFT contract for these tokens references a metadata file for each token identifier which in turn points to an image file of the picture in question. Exchanging these tokens means you own a pointer to an image file, not the image file itself. It's important to make sure the image is saved somewhere it can't be removed, to maintain the correctness of the immutable blockchain reference.
 
-### Ticketing and Paywalls
-
-Unlock Protocol issues NFT keys on multiple blockchain networks. The smart contract adds capabilities on top of the common standards that enable new functionality. An example of this is being able to delegate one of your tokens to another user to use, while retaining ownership and control over the token yourself.
-
-### Proof Of Attendance Protocol (POAP)
-
-POAP stands for "Proof Of Attendance Protocol". POAP issues NFTs to people in attendance at events, whether virtual or in the real world. The POAP smart contract restricts the tokens from being transferred, and the tokens can only be claimed during an event. The tokens then act like an old paper ticket stub, a way to remember and prove you were in attendance at an event and can be used to provide special memberships or benefits only to those early supporters.
-
 ## New ideas for Non-Fungible Tokens
 
-New ideas for how NFTs can be used appear often. Two of the most interesting recent developments are 'dynamic NFTs' and 'Soulbound NFTs'.
+New ideas for how NFTs can be used appear often. Two of the most interesting recent developments are "dynamic NFTs" and "Soulbound NFTs."
 
 ### Dynamic NFTs
 
-Dynamic NFTs were recently announced by Chainlink. They allow for the metadata the token references to update and change based on certain criteria in a trustless or predictable way while keeping the ownership of the token unaffected. This has interesting use cases for games, where items might change or mutate according to other items used, spells cast or achievements completed. Learn more about them on the Chainlink blog. https://blog.chain.link/what-is-a-dynamic-nft/
+Dynamic NFTs allow for the metadata the token references to update and change based on certain criteria in a trustless or predictable way while keeping the ownership of the token unaffected. This has interesting use cases for games, where items might change or mutate according to other items used, spells cast or achievements completed. Hhere is an example of how dynamic NFTs can be used: https://unlock-protocol.com/blog/dynamic-nft
 
 ### Soulbound NFTs
 
