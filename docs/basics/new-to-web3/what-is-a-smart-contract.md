@@ -34,7 +34,7 @@ Smart contract blockchains provide various benefits, including speed, efficiency
 
 **Speed, efficiency and accuracy**
 
-Once a condition is met, a smart contract transaction is executed immediately. This speeds up the execution process, which saves time and speeds decision making. Also, since there’s never any manual processes, it improves consistency as well.
+Once a condition is met, a smart contract transaction is executed immediately. This speeds up the execution process, which saves time and speeds decision making. Also, since there are no manual processes, smart contracts ensure consistency as well.
 
 **Trust, Security and Privacy**
 
