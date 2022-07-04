@@ -51,7 +51,7 @@ Smart contract creators need to be specific and detailed while establishing term
 Smart contracts remove the need for intermediaries to handle transactions. Without the need to involve any third-party, middlemen or intermediary, individuals and business organizations have the opportunity to reduce operational and transactional costs that typically would flow to middlemen.
 
 
-### Different token standards for smart contracts
+## There are multiple token standards for smart contracts
 
 ERC-20, ERC-721, and ERC-1155 are token standards used for deploying smart contracts on a blockchain. These standards include rules or criteria that need to be fulfilled for a transaction to occur. These token standards, along with the blockchain, help remove the need for intermediaries and also allow the blockchain to keep track of all the transactions.
 
