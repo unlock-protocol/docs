@@ -53,7 +53,7 @@ Smart contracts remove the need for intermediaries to handle transactions. Witho
 
 ## There are multiple token standards for smart contracts
 
-ERC-20, ERC-721, and ERC-1155 are token standards used for deploying smart contracts on Ethereum and related blockchains that implement the Ethereum Virtual Machine (EVM). These token standards include rules or criteria that need to be fulfilled for a transaction to occur. 
+ERC-20, ERC-721, and ERC-1155 are token standards used when deploying smart contracts on Ethereum and related blockchains that implement the Ethereum Virtual Machine (EVM). 
 
 **ERC20**
 
