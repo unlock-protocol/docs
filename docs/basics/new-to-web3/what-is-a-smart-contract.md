@@ -6,7 +6,7 @@ description: An overview of the basics of smart contracts.
 
 Smart contracts are a critical component of protocols, platforms and applications built using blockchain or similar distributed ledger technologies. 
 
-Simply put, smart contracts are computer programs stored on a blockchain. They can automatically execute a transaction when predetermined conditions are met. For example, a transaction could be triggered by:
+Simply put, smart contracts are computer programs stored on a blockchain. They can automatically execute transactions when predetermined conditions are met. For example, a transaction could be triggered by:
 
 - a specific event (“if X happens, then do action Y”)
 - a specific date or at the expiration of a period of time (“at X date, do action Y”)
