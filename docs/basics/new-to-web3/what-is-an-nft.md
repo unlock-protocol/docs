@@ -74,7 +74,7 @@ NFTs can act like membership cards that provide access to content websites (e.g.
 
 ### Online credentials and Proof Of Attendance Protocol (POAP) records
 
-Since NFTs can be set to be non-transferrable and can be granted to particular individuals, using NFTs for online credentialing and certification is a natural use case as well. Once someone shows mastery of a topic be completing an exam or exhibiting skills using another mechanism, a time-based NFT can be issued to verify that skill on-chain.
+Since NFTs can be set to be non-transferrable and can be granted to particular individuals, using NFTs for online credentialing and certification is a natural use case as well. Once someone shows mastery of a topic by completing an exam or exhibiting skills using another mechanism, a time-based NFT can be issued to verify that skill on-chain.
 
 > Related: [How CDAA implemented online creditials using NFTs](https://unlock-protocol.com/blog/cdaa-unlock-case-study)
 
