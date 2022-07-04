@@ -62,7 +62,7 @@ ERC-20, ERC-721, and ERC-1155 are token standards used for deploying smart contr
 
 **ERC20**
 
-ERC-20 is a fungible token used for identical entities. It was the first and the most widely used token standard approved by the Ethereum blockchain network.  It lays out a set of guidelines that all Ethereum-based ERC-20 tokens must adhere to. 
+ERC-20 is a fungible token standard used for identical entities. It was the first and the most widely used token standard approved by the Ethereum blockchain network.  It lays out a set of guidelines that all Ethereum-based ERC-20 tokens must adhere to. 
 
 <aside>
 💡 **Fungible vs. Non-Fungible**
@@ -75,11 +75,11 @@ NFTs — non-fungible tokens — on the other hand, like many things in the phys
 
 **ERC-721**
 
-Unlike ERC-20, ERC-721 is specialized in non-fungible tokens. The recent NFTs hype is often credited to the emergence of ERC-721, which is the essential set of rules for NFTs. NFTs are unique tokens that cannot be replaced and have a different value from other tokens that are part of the same smart contract.
+Unlike ERC-20, ERC-721 specifies a standard for non-fungible tokens. NFTs cannot be replaced with an identical token, since all ERC-721 tokens are provably unique.
 
 **ERC-1155**
 
-Introduced in 2019,  ERC-1155 is the next generation of token standards that allows the simultaneous transfer of multiple token types. It is the hybrid between ERC-20 and ERC-721. This is different from ERC-721 and ERC-20, where a separate contract gets deployed for each Non-fungible or fungible token. You can learn more about these different standards [here](https://www.infostor.com/nft-guide/erc-721vs-erc-1155-benefits-difference-from-erc-721-standard/).
+Introduced in 2019,  ERC-1155 is in some ways possesses traits of both ERC-20 and ERC-721 token types. This is different from ERC-721 and ERC-20, where a separate contract gets deployed for each non-fungible or fungible token. You can learn more about these different standards [here](https://www.web3.university/article/comparing-erc-721-to-erc-1155).
 
 ---
 
