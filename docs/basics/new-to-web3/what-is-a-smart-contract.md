@@ -61,7 +61,7 @@ ERC-20 is a fungible token standard used for identical entities. It was the firs
 
 > 💡 **Fungible vs. Non-Fungible**
 > 
-> The word “fungible” is used to refer to things that can be exchanged for other things of exactly the same kind. For example, a dollar bill is fungible. You can exchange a $100 bill with a friend's $100 bill, and each of you will still have the exact same spending power after the exchange. Most cryptocurrencies are fungible, too — a bitcoin is a bitcoin, and it generally* doesn’t really matter which bitcoin you have. (*in some cases, such as stolen coins, identification of a specific bitcoin can be relevant when trying to trace the path of a stolen asset).
+> The word “fungible” is used to refer to things that can be exchanged for other things of exactly the same kind. For example, a dollar bill is fungible. You can exchange a $1 bill with a friend's $1 bill, and each of you will still have the exact same spending power after the exchange. Most cryptocurrencies are fungible, too — a bitcoin is a bitcoin, and it generally* doesn’t really matter which bitcoin you have. (*in some cases, such as stolen coins, identification of a specific bitcoin can be relevant when trying to trace the path of a stolen asset).
 > 
 > NFTs — non-fungible tokens — on the other hand, like many things in the physical world such as cars and houses, are considered non-fungible. They have unique qualities, and you can’t just exchange them for others of the same type. All NFTs are uniquely identifiable.
 
