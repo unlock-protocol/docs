@@ -76,7 +76,7 @@ Introduced in 2019,  ERC-1155 is in some ways possesses traits of both ERC-20 an
 You can learn more about these different standards [here](https://www.web3.university/article/comparing-erc-721-to-erc-1155).
 
 
-### Creating **a smart contract**
+## Creating **a smart contract**
 
 Like any other kind of programming, the creation of a smart contract typically starts off with specifying requirements. Once these specifications have been created, the smart contract can be programmed by a developer. This can either be done from scratch, although increasingly, organizations that use blockchain for business provide templates, web interfaces, and other online tools to simplify structuring smart contracts.
 
@@ -93,7 +93,7 @@ It's used to create smart contracts that implements business logic and generates
 - Like other programming languages, Solidity programming also has variables, functions, classes, arithmetic operations, string manipulation, and many other concepts.
 
 
-### **Deploying a smart contract**
+## **Deploying a smart contract**
 
 Ethereum development environments like Truffle and Hardhat make it easier to work with smart contracts and Ethereum nodes. They provide a set of tools to seamlessly write, test, and deploy smart contracts.
 
