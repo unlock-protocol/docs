@@ -29,16 +29,16 @@ const config = {
       to: '/',
     }, {
       from: '/creators/deploying-lock',
-      to: '/basics/deploying-a-lock#deploying-a-lock'
+      to: '/basics/deploying-a-lock'
     }, {
-      from: '/tools/sign-in-with-ethereum',
-      to: '/',
+      from: '/unlock/developers/tools/sign-in-with-ethereum',
+      to: '/tools/sign-in-with-ethereum',
     }, {
       from: '/unlock/developers/locksmith/webhooks',
       to: '/tools/locksmith/webhooks'
     }, {
       from: '/unlock/creators/plugins-and-integrations',
-      to: '/move-to-guides/plugins-and-integrations'
+      to: '/move-to-guides/plugins-and-integrations/'
     }, {
       from: '/unlock/creators/plugins-and-integrations/discord',
       to: '/move-to-guides/plugins-and-integrations/discord'
