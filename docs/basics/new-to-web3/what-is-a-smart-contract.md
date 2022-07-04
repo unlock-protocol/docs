@@ -92,11 +92,8 @@ It's used to create smart contracts that implements business logic and generates
 - Like other programming languages, Solidity programming also has variables, functions, classes, arithmetic operations, string manipulation, and many other concepts.
 
 
-## **Deploying a smart contract**
+## **Tools for creating a smart contract**
 
-Ethereum development environments like Truffle and Hardhat make it easier to work with smart contracts and Ethereum nodes. They provide a set of tools to seamlessly write, test, and deploy smart contracts.
+Ethereum development environments like [Hardhat](https://hardhat.org/tutorial) and Truffle make it easier to work with smart contracts and Ethereum nodes. They provide a set of tools to seamlessly write, test, and deploy smart contracts. Hardhat is a development environment that helps developers compile, deploy, test, and debug their Ethereum applications. It also provides functionality for debugging, similar to JavaScript. Hardhat also has many plugins, which further increases its functionality.
 
-**What is Hardhat?**
-Hardhat is a development environment that helps developers compile, deploy, test, and debug their Ethereum applications. Hardhat also provides console.log() functionality, similar to JavaScript for debugging purposes. Hardhat also has many plugins, which further increases its functionality. 
-
-Here's a guide you can follow to deploy your smart contract using Hardhat - [https://hardhat.org/guides/deploying](https://hardhat.org/guides/deploying)
+[Unlock Protocol has created a Hardhat library](https://docs.unlock-protocol.com/core-protocol/deploying-locally/) to speed development using the protocol.
