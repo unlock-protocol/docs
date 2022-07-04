@@ -19,16 +19,12 @@ Smart contracts are typically used to automate the execution of an agreement so 
 
 Smart contracts work by following statements that are written into code on a blockchain. A network of computers then execute the actions when predetermined conditions have been met and verified. 
 
-These actions could include releasing funds to the appropriate parties, registering a vehicle, sending notifications, or issuing a ticket. The blockchain is then updated when the transaction is completed. That means the transaction cannot be changed once it has been verified.
+These actions could include releasing funds to the appropriate parties, creating a membership to access an online resource, sending a notification, or issuing an event ticket. The blockchain is then updated when the transaction is completed. That means the transaction cannot be changed once it has been verified.
 
-<aside>
-💡 **A vending machine is a “smart contract”**
 
-The term “smart contract” was first introduced by computer scientist and cryptographer Nick Szabo some 20 years ago as a graduate student at University of Washington.
-
-A classic example of a smart contract offered by Szabo is that of a vending machine. It’s the simplest transaction you can make. You decide what you want and insert money into the machine. Once you click on the button or insert the code for the item of the same value, the machine automatically releases it. Smart contracts essentially work in the same way - automatically executing themselves once pre-determined conditions have been satisfied.
-
-</aside>
+> 💡 **A vending machine is an analogy for a “smart contract”**
+> The term “smart contract” was first introduced by computer scientist and cryptographer Nick Szabo some 20 years ago as a graduate student at University of Washington.
+> A classic example of a smart contract offered by Szabo is that of a vending machine. It’s the simplest transaction you can make. You decide what you want and insert money into the machine. Once you click on the button or insert the code for the item of the same value, the machine automatically releases it. Smart contracts essentially work in the same way - automatically executing themselves once pre-determined conditions have been satisfied.
 
 ---
 
