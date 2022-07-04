@@ -66,7 +66,7 @@ Online and IRL event ticketing are a natural use cases for NFTs. The verifiable 
 
 ### Media and DAO memberships
 
-NFTs can act like membership cards that provide access to online space (e.g. media paywalls), online and office communities (e.g. membership cards), or mebers-only benefits. Unlock extends this core function in an important way, enabling NFT-based membershps to be time-bound (e.g. for a day, month, year, or any other lenght of time).
+NFTs can act like membership cards that provide access to content websites (e.g. media paywalls), online and offline communities (e.g. membership cards), or members-only benefits. Unlock extends this core function in an important way, enabling NFT-based membershps to be time-bound (e.g. for a day, month, year, or any other lenght of time).
 
 > Related: [Creating a media membership paywall with Unlock and WordPress](https://unlock-protocol.com/guides/guide-to-the-unlock-protocol-wordpress-plugin/)
 > 
