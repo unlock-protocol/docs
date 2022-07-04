@@ -94,6 +94,6 @@ It's used to create smart contracts that implement business logic and generate a
 
 ## **Tools for creating a smart contract**
 
-Ethereum development environments like [Hardhat](https://hardhat.org/tutorial) make it easier to work with smart contracts and Ethereum nodes. Hardhat is a development environment that helps developers compile, deploy, and test their Ethereum applications. It also provides functionality for debugging, similar to JavaScript. Hardhat also has many plugins, which further increases its functionality.
+Ethereum development environments like [Hardhat](https://hardhat.org/tutorial) make it easier to work with smart contracts and Ethereum nodes. Hardhat is a development environment that helps developers compile, deploy, debug, and test their Ethereum applications. Hardhat also has many plugins, which further increases its functionality.
 
 [Unlock Protocol has created a Hardhat library](https://docs.unlock-protocol.com/core-protocol/deploying-locally/) to speed development using the protocol.
