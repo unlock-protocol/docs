@@ -30,7 +30,7 @@ These actions could include transferring funds to the digital wallets, creating 
 
 ## **The benefits of a smart contract**
 
-Smart contract blockchains provide various benefits, including speed, efficiency, accuracy, trust, transparency, and security, as discussed in the sections below.
+Smart contract running on blockchains provide various benefits, including speed, efficiency, accuracy, trust, transparency, and security, as discussed in the sections below.
 
 **Speed, efficiency and accuracy**
 
