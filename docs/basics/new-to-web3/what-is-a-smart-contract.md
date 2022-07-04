@@ -87,15 +87,15 @@ You can learn more about these different standards [here](https://www.web3.unive
 
 ### Creating **a smart contract**
 
-The creation of a smart contract typically starts off with the involved parties agreeing to the rules governing the transaction. Once these “if then” rules have been determined, the smart contract can be programmed by a developer. This can either be done from scratch, although increasingly, organizations that use blockchain for business provide templates, web interfaces, and other online tools to simplify structuring smart contracts.
+Like any other kind of programming, the creation of a smart contract typically starts off with specifying requirements. Once these specifications have been created, the smart contract can be programmed by a developer. This can either be done from scratch, although increasingly, organizations that use blockchain for business provide templates, web interfaces, and other online tools to simplify structuring smart contracts.
 
-Dapps otherwise referred to as Decentralized Applications are applications built on the open-source, peer-to-peer network of Ethereum Blockchain which uses smart contracts and front-end user interfaces to create decentralized platforms. Developing a Dapp, like any other app, requires programming and executing code on the system. Solidity is the most popular language for writing Ethereum smart contracts. 
+Decentralized Applications ("Dapps") are applications built on the open-source, peer-to-peer network of Ethereum Blockchain which uses smart contracts and front-end user interfaces to create decentralized platforms. Developing a Dapp, like any other app, requires programming and executing code on the system. Solidity is the most popular language for writing Ethereum smart contracts. 
 
 **What is Solidity?**
 
 Solidity is an object-oriented programming language created specifically by the Ethereum Network team for constructing and designing smart contracts on Blockchain platforms.
 
-It's used to create smart contracts that implements the “if this/then that” business logic and generates a chain of transaction records in the blockchain system. It acts as a tool for creating machine-level code and compiling it on the Ethereum Virtual Machine (EVM - which provides a runtime environment for Ethereum smart contracts.). 
+It's used to create smart contracts that implements business logic and generates a chain of transaction records in the blockchain system. It acts as a tool for creating machine-level code and compiling it on the Ethereum Virtual Machine (EVM - which provides a runtime environment for Ethereum smart contracts). 
 
 - Solidity is similar to one of the most common programming languages - JavaScript. So, if you understand JavaScript, it can be relatively easy to learn Solidity.
 - It also has a lot of similarities with C and C++. For example, a “main” in C is equivalent to a “contract” in Solidity.
@@ -103,11 +103,11 @@ It's used to create smart contracts that implements the “if this/then that” 
 
 ---
 
-### Deploying **a smart contract**
+### **Deploying a smart contract**
 
 Ethereum development environments like Truffle and Hardhat make it easier to work with smart contracts and Ethereum nodes. They provide a set of tools to seamlessly write, test, and deploy smart contracts.
 
 **What is Hardhat?**
-Hardhat is a development environment that helps developers compile, deploy, test, and debug their Ethereum applications. It has some of the cleanest, most detailed documentation. Hardhat also provides console.log() functionality, similar to javascript for debugging purposes. Hardhat also has many plugins, which further increases its functionality. 
+Hardhat is a development environment that helps developers compile, deploy, test, and debug their Ethereum applications. Hardhat also provides console.log() functionality, similar to JavaScript for debugging purposes. Hardhat also has many plugins, which further increases its functionality. 
 
 Here's a guide you can follow to deploy your smart contract using Hardhat - [https://hardhat.org/guides/deploying](https://hardhat.org/guides/deploying)
