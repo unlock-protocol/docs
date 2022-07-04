@@ -84,7 +84,7 @@ Decentralized Applications ("[Dapps](https://docs.unlock-protocol.com/basics/new
 
 **What is Solidity?**
 
-Solidity is an object-oriented programming language created specifically by the Ethereum Network team for constructing and designing smart contracts on Blockchain platforms.
+Solidity is an object-oriented programming language for constructing and designing smart contracts on blockchain platforms.
 
 It's used to create smart contracts that implements business logic and generates a chain of transaction records in the blockchain system. It acts as a tool for creating machine-level code and compiling it on the Ethereum Virtual Machine (EVM - which provides a runtime environment for Ethereum smart contracts). 
 
