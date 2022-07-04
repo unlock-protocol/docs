@@ -89,7 +89,6 @@ Solidity is an object-oriented programming language created specifically by th
 It's used to create smart contracts that implements business logic and generates a chain of transaction records in the blockchain system. It acts as a tool for creating machine-level code and compiling it on the Ethereum Virtual Machine (EVM - which provides a runtime environment for Ethereum smart contracts). 
 
 - Solidity is similar to one of the most common programming languages - JavaScript. So, if you understand JavaScript, it can be relatively easy to learn Solidity.
-- It also has a lot of similarities with C and C++. For example, a “main” in C is equivalent to a “contract” in Solidity.
 - Like other programming languages, Solidity programming also has variables, functions, classes, arithmetic operations, string manipulation, and many other concepts.
 
 
