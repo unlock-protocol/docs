@@ -50,7 +50,6 @@
   background-color: #282a2d;
 }
 
-
 [data-theme="light"] img[src$="#gh-dark-mode-only"],
 [data-theme="dark"] img[src$="#gh-light-mode-only"] {
   display: none;
@@ -213,3 +212,11 @@ main {
   background: #282a2d !important;
 }
 
+.redocusaurus .menu-content {
+  background: inherit;
+}
+
+[data-theme="dark"] table {
+  display: flex;
+  width: 100%;
+}

@@ -14,9 +14,7 @@ This metadata belongs to a specific key, and it persists no matter who owns it. 
 
 This information should stick around forever. You don't want someone to transfer the key to another person who will try to check in with it!
 
-
 > Key-specific metadata is about the key itself, not the key holder.
-
 
 ### User-Specific Metadata
 
@@ -24,9 +22,7 @@ This metadata relates to a key holder for a lock, no matter which key they have.
 
 Email addresses are quasi-private information, however. If a key gets transferred, we don't want to transfer the email address (or anything else specific to a user) along with it. User-specific metadata doesn't transfer with a key.
 
-
 > User-specific metadata is about the key holder, not about the specific instance of a key.
-
 
 ## Accessing Metadata
 
@@ -37,13 +33,9 @@ Some information is meant to be shared, but much information should be kept priv
 1. Public - visible to anyone who requests it
 2. Protected - visible only to the user and the lock owner, this access is enforced by signature verification.
 
-
 > Only authenticated lock owners can write key-specific metadata. Only authenticated users can write their own user-specific metadata.
 
-
-
 > Only authenticated lock owners and authenticated users can read protected user-specific metadata.
-
 
 ### The Members Page
 
