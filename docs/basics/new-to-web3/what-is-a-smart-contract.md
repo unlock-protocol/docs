@@ -21,7 +21,7 @@ Smart contracts work by executing statements that are written into code on a blo
 These actions could include transferring funds between digital wallets, creating a membership to access an online resource, sending a notification, or issuing an event ticket. The blockchain is then updated when the transaction is completed. That means the transaction cannot be changed once it has been verified.
 
 
-> 💡 **A vending machine is an analogy for a “smart contract”**
+> 💡 **A vending machine is an analogy for a smart contract**
 > 
 > The term “smart contract” was first introduced by computer scientist and cryptographer Nick Szabo some 20 years ago as a graduate student at University of Washington.
 > 
