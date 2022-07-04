@@ -36,7 +36,7 @@ This blockchain record shows which address owns which token id number. It's the 
 
 Alongside this mapping in the contract is a set of functions to manage the exchange of these token identifiers and find out more information about them. How these functions behave is part of a series of NFT standard specifications which originated as Ethereum Request for Comment (ERC) proposals.
 
-## NFT Smart Contract Standards
+## NFT smart contract standards
 
 ERC721 and ERC1155 are the most common NFT standards on Ethereum, although there are new proposals to further advance these.
 
