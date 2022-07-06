@@ -18,11 +18,8 @@ https://app.unlock-protocol.com/checkout?
 
 After this, you will need to include the following parameters:
 
-
-* `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object.
-* `redirectUri=...` where `...` is replaced with the URL-encodded address of a webpage where the user will be redirected when their membership is valid.
-* `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object.
-* `redirectUri=...` where `...` is replaced with the URL-encodded address of a webpage where the user will be redirected when their membership is valid.
+- `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object.
+- `redirectUri=...` where `...` is replaced with the URL-encodded address of a webpage where the user will be redirected when their membership is valid.
 
 These parameters are all separated by the `&` sign and you can use online tools such as [https://www.urlencoder.io/](https://www.urlencoder.io/) to build the encoded version of the parameters.
 
@@ -39,6 +36,7 @@ This URL will redirect members to this page [`https://ouvre-boite.com/`](https:/
 The `paywallConfig` is a JSON object which includes a set of customizations for your experience. It includes the following elements:
 
 - `locks` : _required object_, a list of lock objects \(see below\).
+- `title`: _optional string_, a title for your checkout. This will show up on the head.
 - `icon`: _optional string_, the URL for a icon to display in the top left corner of the modal.
 - `callToAction`: _optional object_, a list of messages shown based on the state of the checkout modal \(see below\).
 - `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
@@ -53,11 +51,11 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 
 The locks object is a list of objects indexed by the lock address, where each object can include the following:
 
-* `network`: _recommended integer_. See below.
-* `name`: _optional string_. name of the lock to display.
-* `recurringPayments`: optional number. The number of time a membership should be renewed automatically. This only applies to ERC20 locks.
-* `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
-* ``
+- `network`: _recommended integer_. See below.
+- `name`: _optional string_. name of the lock to display.
+- `recurringPayments`: optional number. The number of time a membership should be renewed automatically. This only applies to ERC20 locks.
+- `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
+- ``
 
 ### Calls to action
 
@@ -66,15 +64,22 @@ The `callToAction` object lets you customize the messages displayed on the check
 - `default` : displayed by default
 - `expired` : displayed when the user had a membership previously that expired
 - `metadata`: displayed when the user is prompted for metadata
+- `quantity`: displayed when user needs to select the quantity for the membership
+- `messageToSign`: displayed when user needs to sign a message provided by you
+- `captcha`: displayed if captcha is enabled and user needs to solve it.
+- `card`: displayed on the card payment selection screen
+- `returning`: displayed if user already has a membership
+- `confirmed`: displayed when user need to confirm their purchase
+- `minting`: displayed at the end when NFT is being minted
 
 ### Network values
 
 (Make sure you use a number and not a string!)
 
-* `1`: mainnet,
-* `4`: rinkeby,
-* `100`: xdai,
-* `137`: polygon.
+- `1`: mainnet,
+- `4`: rinkeby,
+- `100`: xdai,
+- `137`: polygon.
 
 ### Full example
 
