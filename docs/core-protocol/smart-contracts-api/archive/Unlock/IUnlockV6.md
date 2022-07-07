@@ -1,8 +1,8 @@
 # IUnlockV6
 
-*Nick Furfaro (unlock-protocol.com)**
 
-> The Unlock Interface
+
+> The Unlock Interface*
 
 
 

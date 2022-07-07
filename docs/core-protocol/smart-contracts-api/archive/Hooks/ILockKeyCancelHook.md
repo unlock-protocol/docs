@@ -1,4 +1,8 @@
-# ILockKeyCancelHookV7
+# ILockKeyCancelHook
+
+
+
+
 
 Functions to be implemented by a keyCancelHook.
 

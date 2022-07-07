@@ -1,10 +1,12 @@
----
-title: Unlock
----
+# Unlock (v11)
 
-# IUnlockV11
 
-> The Unlock Interface
+
+> The Unlock Interface*
+
+
+
+
 
 ## Methods
 
@@ -13,6 +15,10 @@ title: Unlock
 ```solidity
 function __initializeOwnable(address sender) external nonpayable
 ```
+
+Initialize the Ownable contract, granting contract ownership to the specified sender 
+
+
 
 #### Parameters
 
@@ -315,7 +321,7 @@ function isOwner() external view returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bool | undefined |
+| _0 | bool | bool True of the caller is the owner |
 
 ### locks
 
@@ -669,3 +675,7 @@ function weth() external view returns (address)
 | Name | Type | Description |
 |---|---|---|
 | _0 | address | undefined |
+
+
+
+
