@@ -1,6 +1,6 @@
-# Website
+# Unlock docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website (https://docs.unlock-protocol.com/) is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
@@ -26,16 +26,17 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Using SSH:
+Deployments are performed automatically by Github.
 
-```
-$ USE_SSH=true yarn deploy
-```
 
-Not using SSH:
+## Updating docs
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+The docs are using markdown and can be [updated in the repo](https://github.com/unlock-protocol/docs/tree/master/docs).
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Generated docs
+
+Some of the docs are automatically generated.
+
+* Smart contracts: [please see instructions there](https://github.com/unlock-protocol/unlock/blob/master/scripts/docs-contracts-pr.sh).
+* Locksmith: TK
+* UnlockJs: TK
