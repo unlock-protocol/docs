@@ -33,7 +33,7 @@ Deployments are performed automatically by Github.
 
 The docs are using markdown and can be [updated in the repo](https://github.com/unlock-protocol/docs/tree/master/docs).
 
-## Generated docs
+### Auto-generated docs
 
 Some of the docs are automatically generated.
 
