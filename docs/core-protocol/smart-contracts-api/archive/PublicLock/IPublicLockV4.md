@@ -1,6 +1,6 @@
 # IPublicLockV4
 
-*Nick Furfaro (unlock-protocol.com)*
+
 
 > The PublicLock Interface
 
