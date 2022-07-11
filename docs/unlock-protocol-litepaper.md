@@ -9,6 +9,8 @@ description: >-
 
 ## Introduction
 
+*[Click here to download the Unlock Protocol Litepaper (PDF)](https://www.unlock-protocol.com)*
+
 The internet has evolved to be the operating system for humanity, providing the underlying architecture upon which we communicate, travel, collaborate, teach, learn, transact and even have feelings. 
 
 Until now, the internet has been mostly monetized through attention; advertisers pay to be featured “next to” the content that attracts viewer and reader eyeballs. In the last few years, it became clear this model has a number of unintended consequences including erosion of privacy, low-quality information diets, increased distrust in institutions, concentration of power, and other externalities.
