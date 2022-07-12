@@ -92,7 +92,7 @@ Unlock is a protocol for *memberships*. Our goal is for Unlock to support multi
 
 At its core, Unlock Protocol supports three main functions: minting, gating, and earning.
 
-### Mint: creating a membership NFT
+### Mint: Creating a membership NFT
 
 Memberships can be created via the minting process into two ways:
 
@@ -101,7 +101,7 @@ Memberships can be created via the minting process into two ways:
 
 Once minted, members and managers can extend, cancel, terminate, or even "destroy" a membership.
 
-Since these memberships are represented as NFTs, managers and members can define the metadata of the NFT itself. An NFT’s public metadata — for instance, the image associated with a particular token or collection — can be updated, changing the NFT’s associated artwork or visual representation. Similarly, an NFT’s private metadata (e.g member information, Dapp data, or references to associated assets) can also be updated after minting.
+Since these memberships are represented as NFTs, managers and members can define the metadata of the NFT itself. An NFT’s public metadata — for instance, the image associated with a particular token or collection — can be updated, changing the NFT’s associated artwork or visual representation. Similarly, an NFT’s private metadata (e.g. member information, Dapp data, or references to associated assets) can also be updated after minting.
 
 ### Gate: Members-only access to perks, benefits, and resources
 
