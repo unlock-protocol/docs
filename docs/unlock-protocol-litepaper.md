@@ -7,9 +7,9 @@ description: >-
 
 # Unlock Protocol Litepaper
 
-## Introduction
-
 *(Prefer to read this offline? [Click here to download.](https://www.unlock-protocol.com))*
+
+## Introduction
 
 The internet has evolved to be the operating system for humanity, providing the underlying architecture upon which we communicate, travel, collaborate, teach, learn, transact and even have feelings. 
 
