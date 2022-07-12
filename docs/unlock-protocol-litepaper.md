@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-*(Prefer to read this offline? [Click here to download the Unlock Protocol Litepaper (PDF)](https://www.unlock-protocol.com))*
+*(Prefer to read this offline? [Click here to download the Unlock Protocol Litepaper.](https://www.unlock-protocol.com))*
 
 The internet has evolved to be the operating system for humanity, providing the underlying architecture upon which we communicate, travel, collaborate, teach, learn, transact and even have feelings. 
 
