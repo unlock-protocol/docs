@@ -375,7 +375,7 @@ Current convenience applications include the Creator Dashboard, the Member Keych
 
 - [**Creator Dashboard**](https://app.unlock-protocol.com/dashboard) — The Creator Dashboard is a no-code application through which anyone can deploy or update locks, view key owners, and withdraw funds generated from keys sold from locks. The Creator Dashboard is free to use.
 - [**Member Keychain**](https://app.unlock-protocol.com/keychain) — The Member Keychain allows members to view all of their keys and use them. With the Member Keychain, members can cancel or transfer memberships, or generate QR codes to assert ownership. Like the Creator Dashboard, the Member Keychain is free-to-use.
-- **[Unlock Accounts**](https://docs.unlock-protocol.com/basics/unlock-accounts) — Unlock Accounts enable consumers without a cryptographic wallet to purchase keys with a credit card. Ownership of keys is verified by using an email address and a password. A 10% fee is paid by the key purchaser to Unlock Labs to cover Stripe transaction fees, gas costs, and other costs associated with creating and maintaining wallets on behalf of consumers.
+- [**Unlock Accounts**](https://docs.unlock-protocol.com/basics/unlock-accounts) — Unlock Accounts enable consumers without a cryptographic wallet to purchase keys with a credit card. Ownership of keys is verified by using an email address and a password. A 10% fee is paid by the key purchaser to Unlock Labs to cover Stripe transaction fees, gas costs, and other costs associated with creating and maintaining wallets on behalf of consumers.
 
 ## Glossary
 
