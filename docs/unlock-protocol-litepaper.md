@@ -365,7 +365,7 @@ A proposal will be executed if a quorum of at least 12,500 votes has been reache
 
 The execution of an approved proposal occurs after a three day time lock, during which token holders who disagree with the change have the opportunity to sell their stake.
 
-# Appendix: Convenience layer applications
+## Appendix: Convenience layer applications
 
 Unlock Labs creates and maintains a number of front-end applications that simplify usage of Unlock Protocol, especially for new and non-technical users of the protocol. These applications are provided as a convenience, and their usage is optional.
 
