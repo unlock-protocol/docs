@@ -92,7 +92,7 @@ Unlock is a protocol for *memberships*. Our goal is for Unlock to support multi
 
 At its core, Unlock Protocol supports three main functions: minting, gating, and earning.
 
-### Mint: Creating a membership NFT
+### Mint: Create a membership NFT
 
 Memberships can be created via the minting process into two ways:
 
