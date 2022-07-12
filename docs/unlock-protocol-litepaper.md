@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-id: Litepaper
+id: litepaper
 description: >-
   Unlocking the web’s new business model.
 ---
