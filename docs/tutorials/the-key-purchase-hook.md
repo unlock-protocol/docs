@@ -72,7 +72,7 @@ The discount code contract is written as a `keyPurchaseHook`. The lock manager n
 
 To register, call the following function with the discount code address above:
 
-```javascript
+```solidity
 function setEventHooks(
   address _onKeyPurchaseHook, // the deployed DiscountCodeHook contract address
   address _onKeyCancelHook,
@@ -91,9 +91,9 @@ Once the discount code contract has been registered you can start adding codes.
 
 First we need to generate the `codeAddress`. This step is required so that we don't publish the code directly as all information on Ethereum is public and we don't want users to simply look at the transaction history in order to discover a discount that anyone could use.
 
-To generate the `codeAddress` the following steps are recommended. This process is not yet integrated onto our dashboard so they will need to be performed manually.
+To generate the `codeAddress` the following steps are recommended. This process is not yet integrated onto our dashboard so they will need to be performed manually. Examples below are in javascipt using web3.js.
 
-1. Sanitize the input for ease of use. For example, if the code is "discount50" we want to be flexible on how that is written by the end user: "discount50" and "joerogan" should also be accepted. We recommend you remove whitespace \(and maybe underscores as well\) and lower case the input before proceeding to the next step.
+1. Sanitize the input for ease of use. For example, if the code is "discount50" we want to be flexible on how that is written by the end user: "discount50" and "Discount50" should also be accepted. We recommend you remove whitespace \(and maybe underscores as well\) and lower case the input before proceeding to the next step.
 2. Generate the private key from the sanitized input. Include your lock's address so that the same discount code may be used by multiple different locks without making it easy for people to discover that the same code works elsewhere. For this we recommend the following:
 
    ```javascript
