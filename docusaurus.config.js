@@ -181,6 +181,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Unlock, Inc.`,
       },
       prism: {
+        additionalLanguages: ['solidity'],
         theme: UnlockPrismTheme,
       },
     }),
