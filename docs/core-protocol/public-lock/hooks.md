@@ -32,7 +32,7 @@ Called when a key is cancelled, it can be useful to use with `onKeyPurchaseHook`
 
 The `ILockKeyCancelHook` interface is quite straightforward:
 
-```js
+```solidity
 interface ILockKeyCancelHook
 {
   function onKeyCancel(
@@ -48,7 +48,7 @@ This hook is called every time the `tokenURI()` is called. This allows customiza
 
 Want each key owner to have his/her own profile pic? Change description based on your own NFT? Just hook a contract compatible with the `ILockTokenURIHook` interface and return your own tokenURI.
 
-```js
+```solidity
 interface ILockTokenURIHook
 {
   function tokenURI(
@@ -67,7 +67,7 @@ This hook is called every time the (ERC721) `balanceOf` method is called. This a
 
 That way you could whitelist your own NFT holders or DAO members, and provide them access without having them to register. Just use a connector contract compatible with `ILockValidKeyHook` that checks if the account is allowed or not, and register it as a hook.
 
-```js
+```solidity
 interface ILockValidKeyHook
 {
   function hasValidKey(
@@ -87,7 +87,7 @@ interface ILockValidKeyHook
 
 To register a hook, call the `setEventHooks` method with the contract address(es) containing the hook logic :
 
-```javascript
+```solidity
 function setEventHooks(
   address _onKeyPurchaseHook,
   address _onKeyCancelHook,

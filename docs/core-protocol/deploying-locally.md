@@ -39,7 +39,7 @@ Info about already deployed Unlock contracts (on mainnet, rinkeby, optimism, bsc
 
 #### Config example
 
-```js
+```solidity
 import "@unlock-protocol/hardhat-plugin";
 
 const config: HardhatUserConfig = {
@@ -55,10 +55,10 @@ const config: HardhatUserConfig = {
 
 ## Use in script
 
-Once installed, you can access the Unlock plugin diirectly from the Hardhat Runtime Environment
+Once installed, you can access the Unlock plugin directly from the Hardhat Runtime Environment
 anywhere you need it (tasks, scripts, tests, etc).
 
-```js
+```solidity
 import { unlock } from "hardhat";
 
 // deploy the Unlock contract
@@ -85,11 +85,18 @@ await unlock.createLock(lockArgs);
 
 The plugin also come with a few CLI commands to help you get things started.
 
-```sh
-# deploy and configure the Unlock contracts
-yarn hardhat unlock:deploy --network localhost
+To get the complete list of available commands
+```shell
+ yarn hardhat
+```
 
-# display info about an existing lock
+Deploy and configure the Unlock contracts
+```shell
+yarn hardhat unlock:deploy --network localhost
+```
+
+Display info about an existing lock
+```shell
 yarn hardhat lock:info --lock-address 0xe7cb5e2e538fec1492b66f180fac6d4106991250 --network mainnet
 
 LOCK
@@ -105,8 +112,6 @@ LOCK
 ✨  Done in 11.75s.
 
 ```
-
-To get the complete list of available commands use `yarn hardhat` in yout shell prompt.
 
 ## Other Links
 
