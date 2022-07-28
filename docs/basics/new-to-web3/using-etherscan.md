@@ -8,14 +8,12 @@ description:
 Etherscan is a block explorer that allows users to search the Ethereum blockchain for wallet addresses, transactions, smart contracts and tokens. It also provides an API for developers to interact with the Ethereum blockchain. This guide will show you how to use Etherscan to view information about your Ethereum wallet address, transactions, smart contracts and tokens.
 
 ## Find Your Wallet
-
 To get started, go to etherscan.io and enter your Ethereum address in the search bar bringing up your account page, which contains information about your balance, transaction history, and tokens. 
 
 ![searchbar](/img/basics/etherscan-searchbar-screenshot.png 'searchbar screenshot')
 
 ## Viewing Transactions
-
-To get started, go to etherscan.io and enter your Ethereum address in the search bar bringing up your account page, which contains information about your balance, transaction history, and tokens. You can also view your transaction history on the blockchain by clicking on the "Transactions" tab.
+You can also view your transaction history on the blockchain by clicking on the "Transactions" tab.
 
 ![transactions tab](/img/basics/etherscan-transaction-tab-screenshot.png 'transactions tab screenshot')
 
