@@ -9,13 +9,13 @@ Etherscan is a block explorer that allows users to search the Ethereum blockchai
 
 ## Find Your Wallet
 
-To get started, go to etherscan.io and enter your Ethereum address in the search bar bringing up your account page, which contains information about your balance, transaction history, and tokens. 
+To get started, go to [etherscan.io](https://etherscan.io) and enter your Ethereum address in the search bar bringing up your account page, which contains information about your balance, transaction history, and tokens. 
 
 ![searchbar](/img/basics/etherscan-searchbar-screenshot.png 'searchbar screenshot')
 
 ## Viewing Transactions
 
-To get started, go to etherscan.io and enter your Ethereum address in the search bar bringing up your account page, which contains information about your balance, transaction history, and tokens. You can also view your transaction history on the blockchain by clicking on the "Transactions" tab.
+To get started, go to [etherscan.io](https://etherscan.io) and enter your Ethereum address in the search bar bringing up your account page, which contains information about your balance, transaction history, and tokens. You can also view your transaction history on the blockchain by clicking on the "Transactions" tab.
 
 ![transactions tab](/img/basics/etherscan-transaction-tab-screenshot.png 'transactions tab screenshot')
 
@@ -40,7 +40,7 @@ Source code of smart contracts is only viewable here if it's been verified. Veri
 ![contract page source code screenshot](/img/basics/etherscan-contract-page-source-code.png 'contract page source code screenshot')
 
 ### Reading Contracts
-Despite the name the "Read Contract" tab is not synonymous with viewing the source code. Instead this is the place you can view real-time information about a contract. What shows up here will be entirely dependant on the contract itself. Some common things you'll see might be members or balances.
+Despite the name the "Read Contract" tab is not synonymous with viewing the source code. Instead this is the place you can view real-time information about a contract. What shows up here will be entirely dependent on the contract itself. Some common things you'll see might be members or balances.
 
 
 ### Interacting with Smart Contracts
@@ -48,7 +48,7 @@ In order to actually interact with the contract you'll need to be logged in with
 
 ![contract page write contract screenshot](/img/basics/etherscan-contract-page-write.png 'contract page write contract')
 
-The functions that are available to you will be dependant on the contract itself and the permissions your wallet address has for executing those functions. Expand the function you're interested in and you'll see the available inputs and a "write" button to execute it.
+The functions that are available to you will be dependent on the contract itself and the permissions your wallet address has for executing those functions. Expand the function you're interested in and you'll see the available inputs and a "write" button to execute it.
 
 ![contract page write contract functions screenshot](/img/basics/etherscan-write-contract-functions.png 'contract page write contract functions screenshot')
 
