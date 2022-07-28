@@ -13,7 +13,7 @@
 ### DEFAULT_ADMIN_ROLE
 
 ```solidity
-function DEFAULT_ADMIN_ROLE() external pure returns (bytes32)
+function DEFAULT_ADMIN_ROLE() external pure returns (bytes32 role)
 ```
 
 Allow the contract to accept tips in ETH sent directly to the contract.
@@ -25,12 +25,12 @@ Allow the contract to accept tips in ETH sent directly to the contract.
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bytes32 | undefined |
+| role | bytes32 | undefined |
 
 ### KEY_GRANTER_ROLE
 
 ```solidity
-function KEY_GRANTER_ROLE() external pure returns (bytes32)
+function KEY_GRANTER_ROLE() external pure returns (bytes32 role)
 ```
 
 
@@ -42,12 +42,12 @@ function KEY_GRANTER_ROLE() external pure returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bytes32 | undefined |
+| role | bytes32 | undefined |
 
 ### LOCK_MANAGER_ROLE
 
 ```solidity
-function LOCK_MANAGER_ROLE() external pure returns (bytes32)
+function LOCK_MANAGER_ROLE() external pure returns (bytes32 role)
 ```
 
 
@@ -59,7 +59,7 @@ function LOCK_MANAGER_ROLE() external pure returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bytes32 | undefined |
+| role | bytes32 | undefined |
 
 ### addKeyGranter
 
