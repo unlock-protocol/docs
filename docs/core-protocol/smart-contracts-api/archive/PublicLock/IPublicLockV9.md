@@ -124,8 +124,8 @@ An ERC-20 style approval, allowing the spender to transfer funds directly from t
 
 | Name | Type | Description |
 |---|---|---|
-| _spender | address | undefined |
-| _amount | uint256 | undefined |
+| _spender | address | address that can spend tokens belonging to the lock |
+| _amount | uint256 | amount of tokens that can be spent by the spender |
 
 #### Returns
 
