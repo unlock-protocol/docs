@@ -37,6 +37,12 @@ The docs are using markdown and can be [updated in the repo](https://github.com/
 
 Some of the docs are automatically generated.
 
-* Smart contracts: [please see instructions there](https://github.com/unlock-protocol/unlock/blob/master/scripts/docs-contracts-pr.sh).
+#### Smart contracts
+
+The docs are generated from the `@unlock-protocol.com/contracts` package.
+You can modify any `.sol` file in the package following the [`hardhat-dodoc`](https://www.npmjs.com/package/@primitivefi/hardhat-dodoc) format.
+Once ready, you can easily open a pull request on the docs repo (make sure you also generate a PR for the mono repo or your changes will be overwritten by the next doc update) by using the following script: `scripts/docs-contracts-pr.sh` executed at the root of the monorepo.
+
+
 * Locksmith: TK
 * UnlockJs: TK
