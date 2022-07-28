@@ -13,24 +13,24 @@
 ### DEFAULT_ADMIN_ROLE
 
 ```solidity
-function DEFAULT_ADMIN_ROLE() external pure returns (bytes32 role)
+function DEFAULT_ADMIN_ROLE() external pure returns (bytes32)
 ```
 
+Allow the contract to accept tips in ETH sent directly to the contract.
 
-
-
+*This is okay to use even if the lock is priced in ERC-20 tokens*
 
 
 #### Returns
 
 | Name | Type | Description |
 |---|---|---|
-| role | bytes32 | undefined |
+| _0 | bytes32 | undefined |
 
 ### KEY_GRANTER_ROLE
 
 ```solidity
-function KEY_GRANTER_ROLE() external pure returns (bytes32 role)
+function KEY_GRANTER_ROLE() external pure returns (bytes32)
 ```
 
 
@@ -42,12 +42,12 @@ function KEY_GRANTER_ROLE() external pure returns (bytes32 role)
 
 | Name | Type | Description |
 |---|---|---|
-| role | bytes32 | undefined |
+| _0 | bytes32 | undefined |
 
 ### LOCK_MANAGER_ROLE
 
 ```solidity
-function LOCK_MANAGER_ROLE() external pure returns (bytes32 role)
+function LOCK_MANAGER_ROLE() external pure returns (bytes32)
 ```
 
 
@@ -59,7 +59,7 @@ function LOCK_MANAGER_ROLE() external pure returns (bytes32 role)
 
 | Name | Type | Description |
 |---|---|---|
-| role | bytes32 | undefined |
+| _0 | bytes32 | undefined |
 
 ### addKeyGranter
 
