@@ -14,13 +14,13 @@ Request must include an `Authorization` header
 
 Signing using 'Typed data'  the header should conform to the following:
 
-```text
+```solidity
 Bearer Base64 Encoded(Typed data signature of payload)
 ```
 
 When signing using a simple signature, the header should conform to the following: 
 
-```text
+```solidity
 Bearer-Simple Base 64 Encoded(Simple signature of stringified payload)
 ```
 

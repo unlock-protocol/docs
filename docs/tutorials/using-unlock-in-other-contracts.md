@@ -9,7 +9,7 @@ The lock contract has multiple functions you could use to assess the membership 
 
 Here is an example on how to easily create a contract that has a "members only" feature:
 
-```javascript
+```solidity
 pragma solidity ^0.5.0;
 
 import 'contracts/interfaces/IPublicLock.sol';
