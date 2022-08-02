@@ -61,6 +61,14 @@ Popular side chain network. Cheaper transaction cost.
 - native currency: Matic (MATIC)
 - unlockAddress: [`0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f`](https://polygonscan.com/address/0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f)
 
+## Celo
+
+Celo is a EVM compatible proof-of-stake blockchain designed for mobile with the ability to pay gas with tokens or stablecoins.
+
+- chainId: 42220
+- native currency: CELO (CELO)
+- unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://celoscan.io/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
+
 ## Mumbai (Polygon)
 
 Polygon test network. Do not use for production
