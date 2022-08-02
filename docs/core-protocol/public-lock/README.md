@@ -64,6 +64,21 @@ The Lock Smart Contract has multiple capabilities:
 
 ## Upgrades and customization
 
-All locks deployed prior to version 10 (to be released by year end 2022) are NOT upgradable, which means their core logic will remain unchanged. Starting with version 10, locks are upgradable by their lock manager, through the Unlock contract.
+All locks deployed prior to version 10 are NOT upgradable, which means their core logic will remain unchanged. Starting with version 10, locks are upgradable by their lock manager, through the Unlock contract.
 
 Lock managers can also alter the behavior of their locks thru the use of [hooks](./hooks/).
+
+## Changelog
+
+### Version 11
+
+**Released**: August 2022
+
+This new version brings several bug fixes and gas improvements, as well as a few new features.
+
+- **Use of the `Error` type to save gas**: Instead of using `string` for revert messages, the contract now uses Error, as detailed [in this article](https://blog.soliditylang.org/2021/04/21/custom-errors/). We estimate that this brought a 15% reduction in space needed to deploy the contract.
+- `grantKeyExtension` : this new function is to `grantKeys` what the function `extend` is to the `purchase` function. It enables a key granter (or a lock manager) to extend an existing key at no cost.
+- `lendKey` (and `unlendKey`):
+- `setReferrerFee` (and `referrerFees`)
+- `totalKeys`
+- `onKeyTransferHook`
