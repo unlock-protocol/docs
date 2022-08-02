@@ -49,6 +49,12 @@ As of Summer 2022, the Unlock ecosystem consists of the following:
 - New Guides website ✅
 - Automatically recurring credit card based memberships (smart contract support) ✅
 - New networks + L2 (deployed, to be announced) ✅
+- New Members page: ✅
+  - Filtering by owner, token id ✅
+  - send QR code by email ✅
+  - Update metadata ✅
+  - Airdrop + email ✅
+  - Filtering by checked-in ⏰
 
 ## March 31st 2022
 
@@ -83,7 +89,7 @@ As of Summer 2022, the Unlock ecosystem consists of the following:
 
 - Decentralized governance (see below). Delayed as we're waiting for OpenZeppelin to ship its contract. ✅
 - Launch Unlock on 2 more side-chains/network. ✅
-- ApplePay or GooglePay or Paypal integration. Delayed ⏰
+- Apple Pay or Google Pay or Paypal integration. Delayed ⏰
 - Customizable NFT icon from the dashboard. ✅
 - Lock configuration from dashboard (metadata collection). delayed ⏰
 - Full "static" website relaunch. ✅
@@ -106,21 +112,11 @@ Misc: more/better docs, more 3rd party integrations... etc
 
 These are opportunities we will eventually work on, based on user demand or available bandwidth.
 
-### Smart contracts
-
-- Multichain governance: how can decisions approved by the DAO can "travel" to L2 and side-chains
-
-### Locksmith
-
-- Cross chain purchasers (allowing someone to purchase a membership from a network on another network)
-
 ### Unlock App
 
 - Apple Pay/Google Pay support
 
 ### Tooling
 
-- Github actions to replace CircleCi (partial ✅)
 - Better integration tests
-- refactored subgraphs
 - IPFS front-end (partial ✅)
