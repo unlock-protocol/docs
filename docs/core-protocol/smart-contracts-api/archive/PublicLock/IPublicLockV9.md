@@ -990,8 +990,8 @@ Allows a Lock manager to add or remove an event hook
 |---|---|---|
 | _onKeyPurchaseHook | address | Hook called when the `purchase` function is called |
 | _onKeyCancelHook | address | Hook called when the internal `_cancelAndRefund` function is called |
-| _onValidKeyHook | address | undefined |
-| _onTokenURIHook | address | undefined |
+| _onValidKeyHook | address | Hook called to determine if the contract should overide the status for a given address |
+| _onTokenURIHook | address | Hook called to generate a data URI used for NFT metadata |
 
 ### setExpirationDuration
 
