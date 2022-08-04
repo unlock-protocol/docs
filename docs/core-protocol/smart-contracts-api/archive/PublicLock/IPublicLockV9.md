@@ -13,24 +13,24 @@
 ### DEFAULT_ADMIN_ROLE
 
 ```solidity
-function DEFAULT_ADMIN_ROLE() external pure returns (bytes32)
+function DEFAULT_ADMIN_ROLE() external pure returns (bytes32 role)
 ```
 
-Allow the contract to accept tips in ETH sent directly to the contract.
 
-*This is okay to use even if the lock is priced in ERC-20 tokens*
+
+
 
 
 #### Returns
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bytes32 | undefined |
+| role | bytes32 | undefined |
 
 ### KEY_GRANTER_ROLE
 
 ```solidity
-function KEY_GRANTER_ROLE() external pure returns (bytes32)
+function KEY_GRANTER_ROLE() external pure returns (bytes32 role)
 ```
 
 
@@ -42,12 +42,12 @@ function KEY_GRANTER_ROLE() external pure returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bytes32 | undefined |
+| role | bytes32 | undefined |
 
 ### LOCK_MANAGER_ROLE
 
 ```solidity
-function LOCK_MANAGER_ROLE() external pure returns (bytes32)
+function LOCK_MANAGER_ROLE() external pure returns (bytes32 role)
 ```
 
 
@@ -59,7 +59,7 @@ function LOCK_MANAGER_ROLE() external pure returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bytes32 | undefined |
+| role | bytes32 | undefined |
 
 ### addKeyGranter
 
@@ -124,8 +124,8 @@ An ERC-20 style approval, allowing the spender to transfer funds directly from t
 
 | Name | Type | Description |
 |---|---|---|
-| _spender | address | undefined |
-| _amount | uint256 | undefined |
+| _spender | address | address that can spend tokens belonging to the lock |
+| _amount | uint256 | amount of tokens that can be spent by the spender |
 
 #### Returns
 
@@ -988,8 +988,8 @@ Allows a Lock manager to add or remove an event hook
 
 | Name | Type | Description |
 |---|---|---|
-| _onKeyPurchaseHook | address | undefined |
-| _onKeyCancelHook | address | undefined |
+| _onKeyPurchaseHook | address | Hook called when the `purchase` function is called |
+| _onKeyCancelHook | address | Hook called when the internal `_cancelAndRefund` function is called |
 | _onValidKeyHook | address | undefined |
 | _onTokenURIHook | address | undefined |
 
