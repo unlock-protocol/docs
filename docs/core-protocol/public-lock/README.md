@@ -70,15 +70,6 @@ Lock managers can also alter the behavior of their locks thru the use of [hooks]
 
 ## Changelog
 
-### Version 11
+### Version 10
 
-**Released**: August 2022
-
-This new version brings several bug fixes and gas improvements, as well as a few new features.
-
-- **Use of the `Error` type to save gas**: Instead of using `string` for revert messages, the contract now uses Error, as detailed [in this article](https://blog.soliditylang.org/2021/04/21/custom-errors/). We estimate that this brought a 15% reduction in space needed to deploy the contract.
-- `grantKeyExtension` : this new function is to `grantKeys` what the function `extend` is to the `purchase` function. It enables a key granter (or a lock manager) to extend an existing key at no cost.
-- `lendKey` (and `unlendKey`):
-- `setReferrerFee` (and `referrerFees`)
-- `totalKeys`
-- `onKeyTransferHook`
+**Released**: April 2022
