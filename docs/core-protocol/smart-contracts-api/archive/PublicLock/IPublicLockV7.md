@@ -949,8 +949,8 @@ Allows a Lock manager to add or remove an event hook
 
 | Name | Type | Description |
 |---|---|---|
-| _onKeyPurchaseHook | address | undefined |
-| _onKeyCancelHook | address | undefined |
+| _onKeyPurchaseHook | address | Hook called when the `purchase` function is called |
+| _onKeyCancelHook | address | Hook called when the internal `_cancelAndRefund` function is called |
 
 ### setKeyManagerOf
 
