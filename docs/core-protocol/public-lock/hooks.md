@@ -6,12 +6,13 @@ description: The lock contract includes hooks that let developers customize thei
 
 Hooks have been added to strategic places of the Lock contract to allow lock managers to modify behaviour by calling a 3rd party contract.
 
-We currently support 4 hooks:
+We currently (version 11) support 5 hooks:
 
 - `onKeyPurchaseHook`: called when a key purchase is triggered
 - `onKeyCancelHook`: called when a key is canceled
 - `onTokenUriHook`: called when the tokenURI is fetched
 - `onValidKeyHook`: called when checking if a user has a valid key
+- `onKeyTransferHook`: called when a key is transfered from an address to another.
 
 ## OnKeyPurchase Hook
 
@@ -81,6 +82,39 @@ interface ILockValidKeyHook
 }
 ```
 
+## onKeyTransferHook Hook
+
+Called when a key is transfered, it can be useful to use with `onKeyPurchaseHook` to track key ownership on a 3rd party contract.
+
+The `ILockKeyTransferHook` interface is quite straightforward:
+
+```solidity
+
+interface ILockKeyTransferHook
+{
+
+  /**
+   * @notice If the lock owner has registered an implementer then this hook
+   * is called every time balanceOf is called
+   * @param lockAddress the address of the current lock
+   * @param tokenId the Id of the transferred key
+   * @param operator who initiated the transfer
+   * @param from the previous owner of transferred key
+   * @param from the previous owner of transferred key
+   * @param to the new owner of the key
+   * @param expirationTimestamp the key expiration timestamp (after transfer)
+   */
+  function onKeyTransfer(
+    address lockAddress,
+    uint tokenId,
+    address operator,
+    address from,
+    address to,
+    uint expirationTimestamp
+  ) external;
+}
+```
+
 ## Configuration
 
 ### Register a hook
@@ -92,7 +126,8 @@ function setEventHooks(
   address _onKeyPurchaseHook,
   address _onKeyCancelHook,
   address _onValidKeyHook,
-  address _onTokenURIHook
+  address _onTokenURIHook,
+  address _onKeyTransferHook
 ) external
 ```
 
