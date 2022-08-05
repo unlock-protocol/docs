@@ -408,7 +408,7 @@ Determines how much of a fee would need to be paid in order to transfer to anoth
 function grantKeyExtension(uint256 _tokenId, uint256 _duration) external nonpayable
 ```
 
-Allows the Lock owner to extend an existin keys with no charge.
+Allows the Lock owner to extend an existing keys with no charge.
 
 *set `_duration` to 0 to use the default duration of the lock*
 
@@ -676,7 +676,7 @@ function keyPrice() external view returns (uint256)
 function lendKey(address from, address to, uint256 tokenId) external nonpayable
 ```
 
-Lending a key allows you to transfer the token while retaining the  ownerships right by setting yourself as a key manager firstThis function can only called by 1) the key owner when no key manager is set or 2) the key manager. After calling the function, the `_recipent` will be the new owner, and the sender of the tx will become the key manager.
+Lending a key allows you to transfer the token while retaining the  ownerships right by setting yourself as a key manager first. This function can only called by 1) the key owner when no key manager is set or 2) the key manager. After calling the function, the `_recipent` will be the new owner, and the sender of the tx will become the key manager.
 
 
 
@@ -793,7 +793,7 @@ Public function which returns the total number of unique owners (both expired an
 ### onKeyCancelHook
 
 ```solidity
-function onKeyCancelHook() external view returns (address)
+function onKeyCancelHook() external view returns (address hookAddress)
 ```
 
 
@@ -805,12 +805,12 @@ function onKeyCancelHook() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | address | undefined |
+| hookAddress | address | undefined |
 
 ### onKeyPurchaseHook
 
 ```solidity
-function onKeyPurchaseHook() external view returns (address)
+function onKeyPurchaseHook() external view returns (address hookAddress)
 ```
 
 
@@ -822,12 +822,12 @@ function onKeyPurchaseHook() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | address | undefined |
+| hookAddress | address | undefined |
 
 ### onKeyTransferHook
 
 ```solidity
-function onKeyTransferHook() external view returns (string)
+function onKeyTransferHook() external view returns (address hookAddress)
 ```
 
 
@@ -839,12 +839,12 @@ function onKeyTransferHook() external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | string | undefined |
+| hookAddress | address | undefined |
 
 ### onTokenURIHook
 
 ```solidity
-function onTokenURIHook() external view returns (string)
+function onTokenURIHook() external view returns (address hookAddress)
 ```
 
 
@@ -856,12 +856,12 @@ function onTokenURIHook() external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | string | undefined |
+| hookAddress | address | undefined |
 
 ### onValidKeyHook
 
 ```solidity
-function onValidKeyHook() external view returns (bool)
+function onValidKeyHook() external view returns (address hookAddress)
 ```
 
 
@@ -873,7 +873,7 @@ function onValidKeyHook() external view returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bool | undefined |
+| hookAddress | address | undefined |
 
 ### owner
 
