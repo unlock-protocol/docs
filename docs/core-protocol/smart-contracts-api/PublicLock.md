@@ -796,7 +796,7 @@ Public function which returns the total number of unique owners (both expired an
 function onKeyCancelHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onKeyCancelHook` hook.
 
 
 
@@ -805,7 +805,7 @@ function onKeyCancelHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### onKeyPurchaseHook
 
@@ -813,7 +813,7 @@ function onKeyCancelHook() external view returns (address hookAddress)
 function onKeyPurchaseHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onKeyPurchaseHook` hook.
 
 
 
@@ -822,7 +822,7 @@ function onKeyPurchaseHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### onKeyTransferHook
 
@@ -830,7 +830,7 @@ function onKeyPurchaseHook() external view returns (address hookAddress)
 function onKeyTransferHook() external view returns (address hookAddress)
 ```
 
-Returns the address of the hook.
+Returns the address of the `onKeyTransferHook` hook.
 
 
 
@@ -839,7 +839,7 @@ Returns the address of the hook.
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | address onKeyTransferHook |
+| hookAddress | address | address of the hook |
 
 ### onTokenURIHook
 
@@ -847,7 +847,7 @@ Returns the address of the hook.
 function onTokenURIHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onTokenURIHook` hook.
 
 
 
@@ -856,7 +856,7 @@ function onTokenURIHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### onValidKeyHook
 
@@ -864,7 +864,7 @@ function onTokenURIHook() external view returns (address hookAddress)
 function onValidKeyHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onValidKeyHook` hook.
 
 
 
@@ -873,7 +873,7 @@ function onValidKeyHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### owner
 
@@ -1468,7 +1468,7 @@ Returns the number of keys owned by `_keyOwner` (expired or not)
 
 | Name | Type | Description |
 |---|---|---|
-| numberOfKeys | uint256 | total number of keys owned by the user |
+| numberOfKeys | uint256 | total number of keys owned by the address |
 
 ### totalSupply
 
