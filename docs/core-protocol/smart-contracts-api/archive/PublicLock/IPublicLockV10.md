@@ -1,4 +1,4 @@
-# IPublicLock
+# IPublicLockV10
 
 
 
@@ -16,9 +16,9 @@
 function DEFAULT_ADMIN_ROLE() external pure returns (bytes32 role)
 ```
 
-Allow the contract to accept tips in ETH sent directly to the contract.
 
-*This is okay to use even if the lock is priced in ERC-20 tokens*
+
+
 
 
 #### Returns
@@ -139,9 +139,9 @@ An ERC-20 style approval, allowing the spender to transfer funds directly from t
 function balanceOf(address _owner) external view returns (uint256 balance)
 ```
 
-In the specific case of a Lock, `balanceOf` returns only the tokens with a valid expiration timerange
 
 
+*Returns the number of NFTs in `owner`&#39;s account.*
 
 #### Parameters
 
@@ -153,7 +153,7 @@ In the specific case of a Lock, `balanceOf` returns only the tokens with a valid
 
 | Name | Type | Description |
 |---|---|---|
-| balance | uint256 | The number of valid keys owned by `_keyOwner` |
+| balance | uint256 | undefined |
 
 ### beneficiary
 
@@ -401,23 +401,6 @@ Determines how much of a fee would need to be paid in order to transfer to anoth
 | Name | Type | Description |
 |---|---|---|
 | _0 | uint256 | The transfer fee in seconds. |
-
-### grantKeyExtension
-
-```solidity
-function grantKeyExtension(uint256 _tokenId, uint256 _duration) external nonpayable
-```
-
-Allows the Lock owner to extend an existin keys with no charge.
-
-*set `_duration` to 0 to use the default duration of the lock*
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| _tokenId | uint256 | The id of the token to extend |
-| _duration | uint256 | The duration in secondes to add ot the key |
 
 ### grantKeys
 
@@ -670,24 +653,6 @@ function keyPrice() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | undefined |
 
-### lendKey
-
-```solidity
-function lendKey(address from, address to, uint256 tokenId) external nonpayable
-```
-
-Lending a key allows you to transfer the token while retaining the  ownerships right by setting yourself as a key manager firstThis function can only called by 1) the key owner when no key manager is set or 2) the key manager. After calling the function, the `_recipent` will be the new owner, and the sender of the tx will become the key manager.
-
-
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| from | address | the owner of token to transfer |
-| to | address | the address that will receive the token |
-| tokenId | uint256 | the id of the token |
-
 ### maxKeysPerAddress
 
 ```solidity
@@ -824,23 +789,6 @@ function onKeyPurchaseHook() external view returns (address)
 |---|---|---|
 | _0 | address | undefined |
 
-### onKeyTransferHook
-
-```solidity
-function onKeyTransferHook() external view returns (string)
-```
-
-
-
-
-
-
-#### Returns
-
-| Name | Type | Description |
-|---|---|---|
-| _0 | string | undefined |
-
 ### onTokenURIHook
 
 ```solidity
@@ -974,22 +922,6 @@ returns the minimum price paid for a purchase with these params.
 | Name | Type | Description |
 |---|---|---|
 | _0 | uint256 | undefined |
-
-### referrerFees
-
-```solidity
-function referrerFees(address _referrer) external view
-```
-
-Returns the percentage of the keyPrice to be sent to the referrer (in basic points)
-
-
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| _referrer | address | the address of the referrer |
 
 ### refundPenaltyBasisPoints
 
@@ -1176,7 +1108,7 @@ Allows a Lock manager to update the baseTokenURI for this Lock.
 ### setEventHooks
 
 ```solidity
-function setEventHooks(address _onKeyPurchaseHook, address _onKeyCancelHook, address _onValidKeyHook, address _onTokenURIHook, address _onKeyTransferHook) external nonpayable
+function setEventHooks(address _onKeyPurchaseHook, address _onKeyCancelHook, address _onValidKeyHook, address _onTokenURIHook) external nonpayable
 ```
 
 Allows a Lock manager to add or remove an event hook
@@ -1189,9 +1121,8 @@ Allows a Lock manager to add or remove an event hook
 |---|---|---|
 | _onKeyPurchaseHook | address | Hook called when the `purchase` function is called |
 | _onKeyCancelHook | address | Hook called when the internal `_cancelAndRefund` function is called |
-| _onValidKeyHook | address | Hook called to determine if the contract should overide the status for a given address |
-| _onTokenURIHook | address | Hook called to generate a data URI used for NFT metadata |
-| _onKeyTransferHook | address | Hook called when a key is transfered |
+| _onValidKeyHook | address | undefined |
+| _onTokenURIHook | address | undefined |
 
 ### setExpirationDuration
 
@@ -1289,23 +1220,6 @@ function setOwner(address account) external nonpayable
 | Name | Type | Description |
 |---|---|---|
 | account | address | undefined |
-
-### setReferrerFee
-
-```solidity
-function setReferrerFee(address _referrer, uint256 _feeBasisPoint) external nonpayable
-```
-
-Set a specific percentage of the keyPrice to be sent to the referrer while purchasing,  extending or renewing a keyto send a fixed percentage of the key price to all referrers, sett a percentage to `address(0)`
-
-
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| _referrer | address | the address of the referrer |
-| _feeBasisPoint | uint256 | the percentage of the price to be used for this  specific referrer (in basic points) |
 
 ### shareKey
 
@@ -1448,28 +1362,6 @@ A distinct Uniform Resource Identifier (URI) for a given asset.
 |---|---|---|
 | _0 | string | String representing the URI for the requested token |
 
-### totalKeys
-
-```solidity
-function totalKeys(address _keyOwner) external view returns (uint256)
-```
-
-
-
-
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| _keyOwner | address | undefined |
-
-#### Returns
-
-| Name | Type | Description |
-|---|---|---|
-| _0 | uint256 | The number of keys owned by `_keyOwner` (expired or not) |
-
 ### totalSupply
 
 ```solidity
@@ -1533,34 +1425,17 @@ function transferFeeBasisPoints() external view returns (uint256)
 function transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
-an ERC721-like function to transfer a token from one account to anotherrequirements: if the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.  The key manager will be reset to address zero after the transfer
 
 
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| from | address | the owner of token to transfer |
-| to | address | the address that will receive the token |
-| tokenId | uint256 | the id of the token |
-
-### unlendKey
-
-```solidity
-function unlendKey(address _recipient, uint256 _tokenId) external nonpayable
-```
-
-Unlend is called when you have lent a key and want to claim its full ownership backOnly the key manager of the token can call this function
-
-
+*Transfers a specific NFT (`tokenId`) from one account (`from`) to another (`to`). Requirements: - If the caller is not `from`, it must be approved to move this NFT by either {approve} or {setApprovalForAll}.*
 
 #### Parameters
 
 | Name | Type | Description |
 |---|---|---|
-| _recipient | address | the address that will receive the token ownership |
-| _tokenId | uint256 | the id of the token |
+| from | address | undefined |
+| to | address | undefined |
+| tokenId | uint256 | undefined |
 
 ### unlockProtocol
 
