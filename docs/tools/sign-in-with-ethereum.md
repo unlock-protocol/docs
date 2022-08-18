@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 description: >-
   In most applications, the first step is to identify users, Unlock provides an
   easy way to identify users.
