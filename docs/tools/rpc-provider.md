@@ -1,7 +1,8 @@
 ---
 sidebar_position: 3
+title: Unlock Labs Development RPC Provider
 description: >-
-  Unlock Labs offers RPC providerd for development purposes.
+  Unlock Labs offers RPC provider for development purposes.
 ---
 
 # Unlock RPC Provider
