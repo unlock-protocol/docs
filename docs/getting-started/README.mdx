@@ -2,7 +2,6 @@
 sidebar_position: 1
 id: Getting Started
 slug: /
-image: /img/more/litepaper-share.jpg
 description: >-
   Getting started with Unlock Protocol for developers.
 ---
@@ -11,64 +10,135 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Admonition from '@theme/Admonition';
 
-- [Paywall](../tools/paywall/)
-- [Smart Contracts](../core-protocol/)
-- [Examples & Templates](https://github.com/unlock-protocol/awesome-unlock)
-- [Core Concepts](../basics/)
-- [No Code Guides](https://unlock-protocol.com/guides/)
-
-- Networks
-
-<Admonition type="info" icon="" title="Info">
-  <p>
-    Info
-  </p>
-</Admonition>
-<Admonition type="tip" icon="" title="Tip">
-  <p>
-    Tip
-  </p>
-</Admonition>
-<Admonition type="note" icon="" title="Note">
-  <p>
-    Note
-  </p>
-</Admonition>
-<Admonition type="caution" icon="" title="Caution">
-  <p>
-    Caution
-  </p>
-</Admonition>
-<Admonition type="danger" icon="" title="Danger">
-  <p>
-    Danger
-  </p>
-</Admonition>
-
-
-
-- [EthOnline](https://online.ethglobal.com/)
-- [EthSanFrancisco](https://sf.ethglobal.com/)
-
-
-## Inspiration
-### ticketing
-- web3 Bizzabo events platform (unlock + darkblock)
-
-### subscriptions
-- web3 OnlyFans (unlock + lens + darkblock)
-
-### membership
-
-### credentials
-
-### Plugins & Integrations
-- A web3 notion competitor
-
-
-
--
-
-## Grants
-- Link to Gitcoin Grants guides
-- [Unlock Grants](../governance/grants-bounties-and-matchings.md)
+<div class="container getting-started">
+  <div class="row">
+    <div class="col col--12"></div>
+  </div>
+  <div class="row">
+    <div class="col col--4">
+      <a href="../tools/paywall/"><h3>Paywall</h3></a>
+      <p><strong>JavaScript drop-in</strong></p>
+      <p>Easy to use library that allows you to token gate any website.</p>
+    </div>
+    <div class="col col--4">
+      <a href="../basics/new-to-unlock"><h3>Core Concepts</h3></a>
+      <p><strong>New to Unlock Protocol?</strong></p>
+      <p>Get familiar with some of our core concepts.</p>
+    </div>
+    <div class="col col--4">
+      <a href="../tutorials/"><h3>Examples & Templates</h3></a>
+      <p>Learn how to interact with the smart contracts or use our template repos.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col--12">
+      <h2>Upcoming Hackathons!</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col--6">
+      <div class="container">
+        <div class="row">
+          <div class="col col--12">
+            <img class="hackathon" src="../img/getting-started/hackathons/ethonline-logo.svg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col--2"></div>
+          <div class="col col--10">
+            <p>ETHGlobal's Flagship Hackathon is back!</p>
+            <p>September 2nd - 28th, 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col--6">
+      <div class="container">
+        <div class="row">
+          <div class="col col--12">
+            <img class="hackathon" src="../img/getting-started/hackathons/ethsanfrancisco-logomark.png" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col--2"></div>
+          <div class="col col--10">
+            <p>ETHGlobal's largest in-person hackathon</p>
+            <p>NOVEMBER 4-6, 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col--12">
+      <Admonition type="info" icon="💸" title="Grants">
+          <ul>
+            <li>
+              <a href="https://unlock-protocol.com/guides/gitcoin-grants/">Gitcoin Grants</a>
+            </li>
+            <li>
+              <a href="../governance/grants-bounties-and-matchings/">Unlock Grants</a>
+            </li>
+          </ul>
+      </Admonition>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col--12">
+      <h2>What's your use case?</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col--12">
+        <Tabs>
+          <TabItem value="ticketing" label="Ticketing" default>
+            <h4>Guides</h4>
+            <ul>
+              <li>
+                <a href="https://unlock-protocol.com/guides/how-to-sell-nft-tickets-for-an-event/">
+                A comprehensive guide to event ticketing on Unlock Protocol</a>
+              </li>
+              <li>
+                <a href="https://unlock-protocol.com/blog/ethcc5-2022-ticketing">EthCC a success story</a>
+              </li>
+            </ul>
+            <h4>Tools</h4>
+            <ul>
+              <li><a href="https://app.unlock-protocol.com/members">
+              Airdrop tickets</a> from the members page inside the Unlock Dashboard.</li>
+              <li>We built a tool for scanning QR codes to <a href="https:/app.unlock-protocol.com/verification">
+              verifying</a> NFT tickets.</li>
+            </ul>
+          </TabItem>
+          <TabItem value="memberships" label="Memberships & Subscriptions">
+            <ul>
+              <li>
+                <a href="https://unlock-protocol.com/guides/how-to-resell-a-membership/">
+                How to resell a membership</a>
+              </li>
+              <li>
+                <a href="https://unlock-protocol.com/guides/how-to-cancel-a-users-membership/">
+                How to cancel a user's membership</a>
+              </li>
+              <li>
+                <a href="https://unlock-protocol.com/guides/how-to-airdrop-memberships/">
+                How to airdrop memberships</a>
+              </li>
+              <li>
+                <a href="https://unlock-protocol.com/guides/how-to-sell-membership-nfts/">
+                How to sell membership NFT's
+                </a>
+              </li>
+              <li>
+                <a href="../move-to-guides/recurring-memberships/">
+                How to set up recurring memberships</a>
+              </li>
+            </ul>
+          </TabItem>
+          <TabItem value="credentials" label="Credentials">
+            Credentialing stuff
+          </TabItem>
+        </Tabs>
+    </div>
+  </div>
+</div>
