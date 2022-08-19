@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 description: >-
   Querying smart contracts directly from your application is always an option,
   but, when your application needs to retrieve large collections or multiple
