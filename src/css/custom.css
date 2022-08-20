@@ -29,6 +29,11 @@
   --ifm-code-background-color: #373a3e;
   --ifm-global-radius: 1.5rem;
   --ifm-pre-padding: 1.5rem;
+  --ifm-color-secondary: #ffffff;
+  --ifm-color-success: #faffe7;
+  --ifm-color-info: #ffffff;
+  --ifm-color-warning: #fffbe3;
+  --ifm-color-danger: #fff0f1;
 }
 [data-theme="light"] {
   background-color: #fff9ef;
@@ -213,3 +218,61 @@ main {
   background: #282a2d !important;
 }
 
+/* Admonition / Alerts */
+/* ::info */
+.alert--info{
+  background: #FFFFFF;
+  border-left: 8px solid #BFB1F7;
+}
+[data-theme="dark"] .alert--info{
+  background: #020207;
+}
+/* ::tip */
+.alert--success{
+  background: #FAFFE7;
+  border-left: 8px solid #BDE422;
+}
+[data-theme="dark"] .alert--success{
+  background: #3A4803;
+}
+/* ::note */
+.alert--secondary{
+  background: #FFFFFF;
+  border-left: 8px solid #9EA3A7;
+}
+[data-theme="dark"] .alert--note{
+        background: #373A3E;
+}
+/* ::caution */
+.alert--warning{
+  background: #FFFBE3;
+  border-left: 8px solid #FADA33;
+}
+[data-theme="dark"] .alert--warning{
+  background: #60520B;
+}
+/* ::danger */
+.alert--danger{
+  background: #FFF0F1;
+  border-left: 8px solid #B23E45;
+}
+[data-theme="dark"] .alert--danger{
+  background: #8B2930;
+}
+
+/* Cards */
+.card-getting-started .card__header {
+  font-size: .6em;
+}
+.card-getting-started .card__body {
+  font-size: .5em;
+}
+/* Getting Started Layout */
+
+.row .col.col--4{
+  padding: .5rem;
+}
+
+img.hackathon{
+  background-color: var(--ifm-background-color);
+}
