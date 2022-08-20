@@ -1,5 +1,4 @@
 ---
-sidebar_position: 4
 description: An NPM module providing a wrapper around the Unlock smart contract ABI.
 ---
 
