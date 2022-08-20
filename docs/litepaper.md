@@ -1,6 +1,7 @@
 ---
 id: litepaper
 image: /img/more/litepaper-share.jpg
+sidebar_position: 1
 description: >-
   Unlocking the web’s new business model.
 ---
