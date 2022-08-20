@@ -28,12 +28,6 @@ const config = {
       from: '/unlock',
       to: '/',
     }, {
-      from: '/creators/deploying-lock',
-      to: '/basics/deploying-a-lock'
-    }, {
-      from: '/unlock/developers/tools/sign-in-with-ethereum',
-      to: '/tools/sign-in-with-ethereum',
-    }, {
       from: '/unlock/developers/locksmith/webhooks',
       to: '/tools/locksmith/webhooks'
     }, {
@@ -45,9 +39,6 @@ const config = {
     }, {
       from: '/unlock/creators/plugins-and-integrations/wordpress-plugin',
       to: '/move-to-guides/plugins-and-integrations/wordpress-plugin'
-    }, {
-      from: '/unlock/developers/unlock-platform',
-      to: '/basics/'
     }, {
       from: '/unlock/governance/roadmap',
       to: '/governance/roadmap'
