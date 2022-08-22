@@ -47,7 +47,7 @@ A Lock Manager should test that they can perform the following actions for their
 
 ## Using the Verifiers page in production
 
-- Connect your wallet at [https://app.unlock-protocol.com/dashboard]([https://app.unlock-protocol.com/dashboard])
+- Connect your wallet at [https://app.unlock-protocol.com/dashboard](https://app.unlock-protocol.com/dashboard)
 - Go to the Verifiers page at [https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID](https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID)
 - Add and manage verifiers as needed for your event
 
