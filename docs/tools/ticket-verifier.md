@@ -19,28 +19,28 @@ When a Verifier's mobile wallet is connected and the Verifier scans a ticket's Q
 
 The Lock Manager can perform the following actions on the Verifiers page: 
 
-- See list of all the verifiers
-- Add new verifiers
-- Delete an existing verifier
+- See list of all the Verifiers
+- Add new Verifiers
+- Delete an existing Verifier
 
-## Testing the Verifier Dapp
+## Testing the Verifiers Dapp
 
 - Go to the Verifiers page
     - [https://staging-app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID](https://staging-app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID)
     - Replace `LOCK_ADDRESS` with the address of the lock for the NFT tickets
     - Replace `NETWORK_ID` with the correct network ID ([list](https://docs.unlock-protocol.com/core-protocol/unlock/networks/))
-- Try to add/remove/show list of verifiers
+- Try to add/remove/show list of Verifiers
 
-### Lock manager tests
+### Lock Manager tests
 
 A Lock Manager should test that they can perform the following actions for their ticketing lock:
-- Add new verifiers from Verifiers page
-- Remove verifiers from Verifiers page
-- View the list of verifiers from Verifiers page
+- Add new Verifiers from Verifiers page
+- Remove Verifiers from Verifiers page
+- View the list of Verifiers from Verifiers page
 - Mark a ticket as checked-in
 - View metadata for a scanned ticket
 
-**Note:** If a large number of individuals will act as verifiers for a particular event, the Lock Manager may choose to set up a single [Unlock Account](https://docs.unlock-protocol.com/basics/new-to-unlock/unlock-accounts) with an email and password, and have all the verifiers sign into the verification system using that shared account. This reduces complexity through having a single shared verifier account, instead of managing a large number of verifier wallet addresses in the verification system (one of each verifier).
+**Note:** If a large number of individuals will act as Verifiers for a particular event, the Lock Manager may choose to set up a single [Unlock Account](https://docs.unlock-protocol.com/basics/new-to-unlock/unlock-accounts) with an email and password, and have all the Verifiers sign into the verification system using that shared account. This reduces complexity through having a single shared verifier account, instead of managing a large number of verifier wallet addresses in the verification system (one of each verifier).
 
 ### Verifiers tests
 
@@ -51,6 +51,6 @@ A Lock Manager should test that they can perform the following actions for their
 
 - Connect your wallet at [https://app.unlock-protocol.com/dashboard](https://app.unlock-protocol.com/dashboard)
 - Go to the Verifiers page at [https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID](https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID)
-- Add and manage verifiers as needed for your event
+- Add and manage Verifiers as needed for your event
 
-Please also check the *[How to Sell NFT Tickets for an Event](https://unlock-protocol.com/guides/how-to-sell-nft-tickets-for-an-event/)* guide for on-site check-in details and a training guide for verifiers.
+Please also check the *[How to Sell NFT Tickets for an Event](https://unlock-protocol.com/guides/how-to-sell-nft-tickets-for-an-event/)* guide for on-site check-in details and a training guide for Verifiers.
