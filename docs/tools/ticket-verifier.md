@@ -10,33 +10,31 @@ While anyone can use a smartphone camera to scan a ticket for validity, *only wa
 
 ![verifier-screen.png](/img/more/verifier-screen.png)
 
-## Verifiers page
-
-In this page, the Lock Manager can perform the folowwing actions: 
-
-- See list of all the verifiers
-- Add new verifiers
-- Delete an existing verifiers
-
-## Scanning actions
-
-When a Verifier's mobile wallet is connected and the Verifier scans a ticket's QR code with their smart phone, the Verifier can additionally:
+When a Verifier's mobile wallet is connected and the Verifier scans a ticket's QR code with their smart phone, the Verifier can:
 
 - Mark a ticket as checked-in
 - See the ticket's metadata
 
-With this intro we can split things we need to check to make sure that everything is in place:
+## Verifiers page and Lock Managers
+
+The Lock Manager can perform the folowwing actions on the Verifiers page: 
+
+- See list of all the verifiers
+- Add new verifiers
+- Delete an existing verifier
 
 ## Testing the Verifier Dapp
 
 - Go to the Verifiers page
     - `https://staging-app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID
+    - Replace `LOCK_ADDRESS` with the address of the lock for the NFT tickets
+    - Replace NEWORK_ID with the correct network ID ([list](https://docs.unlock-protocol.com/core-protocol/unlock/networks/))
 - Try to add/remove/show list of verifiers
 - With a verifier role, try to mark a ticket as checked-in
 
 ### Lock manager tests
 
-A Lock Manager should test that they can perform the following actions for their ticketing lock
+A Lock Manager should test that they can perform the following actions for their ticketing lock:
 - Add new verifiers from verifiers page
 - Remove verifiers from verifiers page
 - View the list of verifiers from Verifiers page
@@ -50,3 +48,9 @@ A Lock Manager should test that they can perform the following actions for their
 
 The Verifier page and Dapp can be accessed in production at:
 [https://app.unlock-protocol.com/verifiers](https://app.unlock-protocol.com/verifiers)
+
+## Using the Verifier Dapp in production
+
+- Use a mobile crypto browser such as Metamask Mobile to perform the next steps
+- Connect your wallet at [https://app.unlock-protocol.com/dashboard]([https://app.unlock-protocol.com/dashboard])
+- Go to the Verifiers page at [https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID](https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID)
