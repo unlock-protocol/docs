@@ -45,9 +45,6 @@ A Lock Manager should test that they can perform the following actions for their
 - Mark a ticket as checked-in
 - View metadata for the scanned ticket
 
-The Verifiers page and Dapp can be accessed in production at:
-[https://app.unlock-protocol.com/verifiers](https://app.unlock-protocol.com/verifiers)
-
 ## Using the Verifiers page in production
 
 - Connect your wallet at [https://app.unlock-protocol.com/dashboard]([https://app.unlock-protocol.com/dashboard])
