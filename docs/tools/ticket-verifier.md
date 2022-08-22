@@ -40,7 +40,7 @@ A Lock Manager should test that they can perform the following actions for their
 - Mark a ticket as checked-in
 - View metadata for a scanned ticket
 
-**Note:** If a large number of individuals will act as verifiers for a particular event, the Lock Manager may choose to set up a single [Unlock Account](https://docs.unlock-protocol.com/basics/new-to-unlock/unlock-accounts) with an email and password, and have all the verifiers sign into the verification system using that shared account. This reduces the complexity, having a single shared verifier account, instead of managing a large number of verifier wallet addresses in the verification system (one of each verifier).
+**Note:** If a large number of individuals will act as verifiers for a particular event, the Lock Manager may choose to set up a single [Unlock Account](https://docs.unlock-protocol.com/basics/new-to-unlock/unlock-accounts) with an email and password, and have all the verifiers sign into the verification system using that shared account. This reduces complexity through having a single shared verifier account, instead of managing a large number of verifier wallet addresses in the verification system (one of each verifier).
 
 ### Verifiers tests
 
