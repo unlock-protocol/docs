@@ -26,17 +26,17 @@ The Lock Manager can perform the folowwing actions on the Verifiers page:
 ## Testing the Verifier Dapp
 
 - Go to the Verifiers page
-    - `https://staging-app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID
+    - [https://staging-app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID](https://staging-app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID)
     - Replace `LOCK_ADDRESS` with the address of the lock for the NFT tickets
-    - Replace NEWORK_ID with the correct network ID ([list](https://docs.unlock-protocol.com/core-protocol/unlock/networks/))
+    - Replace `NETWORK_ID` with the correct network ID ([list](https://docs.unlock-protocol.com/core-protocol/unlock/networks/))
 - Try to add/remove/show list of verifiers
 - With a verifier role, try to mark a ticket as checked-in
 
 ### Lock manager tests
 
 A Lock Manager should test that they can perform the following actions for their ticketing lock:
-- Add new verifiers from verifiers page
-- Remove verifiers from verifiers page
+- Add new verifiers from Verifiers page
+- Remove verifiers from Verifiers page
 - View the list of verifiers from Verifiers page
 - Mark a ticket as checked-in
 - View metadata for a scanned ticket
@@ -46,11 +46,13 @@ A Lock Manager should test that they can perform the following actions for their
 - Mark a ticket as checked-in
 - View metadata for the scanned ticket
 
-The Verifier page and Dapp can be accessed in production at:
+The Verifiers page and Dapp can be accessed in production at:
 [https://app.unlock-protocol.com/verifiers](https://app.unlock-protocol.com/verifiers)
 
-## Using the Verifier Dapp in production
+## Using the Verifiers page in production
 
-- Use a mobile crypto browser such as Metamask Mobile to perform the next steps
 - Connect your wallet at [https://app.unlock-protocol.com/dashboard]([https://app.unlock-protocol.com/dashboard])
 - Go to the Verifiers page at [https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID](https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID)
+- Add and manage verifiers as needed for your event
+
+Please also check the *Verifiers Guide* for on-site check-in details for verifiers.
