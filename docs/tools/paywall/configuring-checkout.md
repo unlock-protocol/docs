@@ -61,7 +61,8 @@ The locks object is a list of objects indexed by the lock address, where each ob
 - `name`: _optional string_. name of the lock to display.
 - `recurringPayments`: optional number. The number of time a membership should be renewed automatically. This only applies to ERC20 locks.
 - `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
-- ``
+- `minRecipients`: \_optional number, set the minimum number of memberships a user needs to purchase.
+- `maxRecipients`: \_optional number, set the max number of memberships a user can purchase. Note: By default, checkout doesn't allow fiddling with quantity. You have to set maxRecipients to allow for changing to quantity.
 
 ### Calls to action (Legacy)
 
