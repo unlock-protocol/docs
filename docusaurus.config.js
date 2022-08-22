@@ -28,6 +28,9 @@ const config = {
       from: '/unlock',
       to: '/',
     }, {
+      from: '/basics',
+      to: '/'
+    }, {
       from: '/unlock/developers/locksmith/webhooks',
       to: '/tools/locksmith/webhooks'
     }, {
