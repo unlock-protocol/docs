@@ -17,7 +17,7 @@ When a Verifier's mobile wallet is connected and the Verifier scans a ticket's Q
 
 ## Verifiers page and Lock Managers
 
-The Lock Manager can perform the folowwing actions on the Verifiers page: 
+The Lock Manager can perform the following actions on the Verifiers page: 
 
 - See list of all the verifiers
 - Add new verifiers
