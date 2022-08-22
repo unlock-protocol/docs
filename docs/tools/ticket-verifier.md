@@ -30,7 +30,6 @@ The Lock Manager can perform the following actions on the Verifiers page:
     - Replace `LOCK_ADDRESS` with the address of the lock for the NFT tickets
     - Replace `NETWORK_ID` with the correct network ID ([list](https://docs.unlock-protocol.com/core-protocol/unlock/networks/))
 - Try to add/remove/show list of verifiers
-- With a verifier role, try to mark a ticket as checked-in
 
 ### Lock manager tests
 
