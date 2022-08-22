@@ -13,6 +13,12 @@ Adding a lock to any webpage is simple, using [Unlock's Paywall application](htt
 
 The first part of this requires embedding a script on the web page where the lock should be installed. You need to achieve this in the `​<head>` section of the HTML body. The script to be loaded is located at the following address: `https://paywall.unlock-protocol.com/static/unlock.latest.min.js`
 
+:::caution
+
+If you are looking for a way to use the legacy unlock checkout, append `legacy=true` as query in the paywall script src url.
+
+:::
+
 We recommend loading the script using the following approach:
 
 ```javascript

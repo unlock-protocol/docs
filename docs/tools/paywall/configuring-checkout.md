@@ -12,6 +12,12 @@ If you are using the paywall application, you can skip this section and move to 
 
 All of the purchase URsL start with the following base
 
+:::caution
+
+If you are looking for a way to use the legacy unlock checkout, use `/legacy/checkout?` as path.
+
+:::
+
 ```
 https://app.unlock-protocol.com/checkout?
 ```
@@ -57,7 +63,13 @@ The locks object is a list of objects indexed by the lock address, where each ob
 - `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
 - ``
 
-### Calls to action
+### Calls to action (Legacy)
+
+:::caution
+
+Call to action options are not available in the redesigned checkout. They will however continue to work in the legacy checkout if you want to use them.
+
+:::
 
 The `callToAction` object lets you customize the messages displayed on the checkout UI. They are all optional strings:
 
