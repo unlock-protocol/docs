@@ -4,7 +4,7 @@ description: An NFT ticketing Dapp for checking ticketholders into a venue at an
 
 # NFT Ticket Verifier
 
-The [Verifiers](app.unlock-protocol.com/verifiers) page is a new page added to the Unlock [Dashboard](/basics/new-to-unlock/deploying-a-lock) that enables a Lock Manager to note one or more wallet addresses as *verifiers*. Verifiers can use a smart phone camera to scan a ticket QR code at the check-in to a venue and mark a ticket as checked-in, to prevent double-use of NFT tickets. Once a ticket has been checked in, it is marked as such. Only wallets that have been set up as verifiers can check-in tickets.
+The [Verifiers](app.unlock-protocol.com/verifiers) page is a new page added to the Unlock [Dashboard](/basics/new-to-unlock/deploying-a-lock) that enables a Lock Manager to set one or more wallet addresses as *verifiers*. Verifiers can use a smart phone camera to scan a ticket QR code at the check-in to a venue and mark a ticket as checked-in, to prevent double-use of NFT tickets. Once a ticket has been checked in, it is marked as such. While anyone can use a smartphone camera to scan a ticket, *only wallets that have been set up as verifiers can check-in tickets*.
 
 **Page example**
 
