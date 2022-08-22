@@ -30,7 +30,7 @@ With this intro we can split things we need to check to make sure that everythin
 ## Testing the Verifier Dapp
 
 - Go to the Verifiers page
-    - `https://staging-app.unlock-protocol.com/verifiers?lock=${LOCK_ADDRESS}&network=${NETWORK_ID}
+    - `https://staging-app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID
 - Try to add/remove/show list of verifiers
 - With a verifier role, try to mark a ticket as checked-in
 
