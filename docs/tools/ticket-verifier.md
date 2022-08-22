@@ -51,4 +51,4 @@ A Lock Manager should test that they can perform the following actions for their
 - Go to the Verifiers page at [https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID](https://app.unlock-protocol.com/verifiers?lock=LOCK_ADDRESS&network=NETWORK_ID)
 - Add and manage verifiers as needed for your event
 
-Please also check the *Verifiers Guide* for on-site check-in details for verifiers.
+Please also check the *Verifiers Guide* for on-site check-in details and a training guide for verifiers.
