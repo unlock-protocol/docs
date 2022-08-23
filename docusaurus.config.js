@@ -224,7 +224,7 @@ const config = {
         additionalLanguages: ['solidity'],
         theme: UnlockPrismTheme,
       },
-    }),
+    },
 
   i18n: {
     defaultLocale: 'en',
