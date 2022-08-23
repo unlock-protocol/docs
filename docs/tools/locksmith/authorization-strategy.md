@@ -1,5 +1,5 @@
 ---
-title: Locksmith Authorization Strategy
+title: Authorization Strategy
 description: >-
   Understanding the authorization strategy of Locksmith, also known
   as the authorized request approach.
@@ -15,7 +15,7 @@ Using standard signing methods provided with most Ethereum libraries, Locksmith 
 
 Request must include an `Authorization` header
 
-Signing using 'Typed data'  the header should conform to the following:
+Signing using 'Typed data' the header should conform to the following:
 
 ```solidity
 Bearer Base64 Encoded(Typed data signature of payload)
@@ -29,4 +29,4 @@ Bearer-Simple Base 64 Encoded(Simple signature of stringified payload)
 
 ### Constructing a payload
 
-Locksmith generally expects the payloads signed to conform to the[ EIP712 specification](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md). In noted scenarios the "stringified" JSON version of the payload may be accepted.   
+Locksmith generally expects the payloads signed to conform to the[ EIP712 specification](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md). In noted scenarios the "stringified" JSON version of the payload may be accepted.
