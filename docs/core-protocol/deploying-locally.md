@@ -1,5 +1,6 @@
 ---
-description: A deploying the whole Unlock protocol set of contracts locally
+title: Deploying Locally
+description: A deploying the Unlock Protocol set of contracts locally.
 ---
 # Deploying Locally
 

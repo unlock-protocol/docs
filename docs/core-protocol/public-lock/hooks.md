@@ -1,5 +1,7 @@
 ---
-description: The lock contract includes hooks that let developers customize their behavior.
+title: Hooks
+description: >-
+  The "Lock" contract includes hooks that let developers customize their behavior.
 ---
 
 # Hooks

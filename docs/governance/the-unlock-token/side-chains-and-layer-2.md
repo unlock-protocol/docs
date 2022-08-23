@@ -1,4 +1,9 @@
-# Side-chains and layer 2
+---
+title: UDT Side-chains and Layer 2
+description: The Unlock Token (UDT) and its tokenomics.
+---
+
+# Side-chains & Layer 2
 
 Unlock tokens are deployed on the main Ethereum network. We consider them to be the "main" UDT. Due to very high gas prices, purchasing Unlock memberships on the Ethereum mainnet is often not economically viable. For this reason, we have deployed the Unlock protocol on the multiple side chain and we will soon deploy it on several more layer 2 and side chains. However, in the current state of the EVM, users of Unlock on a side chain cannot earn UDT from the main chain.
 
@@ -19,4 +24,3 @@ Sidechains/L2 on which UDT have been deployed \(bridged from mainnet\):
 * xDAI: [0x8C84142c4a716a16a89d0e61707164d6107A9811](https://blockscout.com/xdai/mainnet/tokens/0x8C84142c4a716a16a89d0e61707164d6107A9811). The unlock contract is not currently distributing tokens.
 * Polygon: [0xf7e78d9c4c74df889a83c8c8d6d05bf70ff75876](https://polygonscan.com/address/0xf7e78d9c4c74df889a83c8c8d6d05bf70ff75876). The unlock contract is not currently distributing tokens.
 * Binance Smart Chain: [0xd547446b5bb3f118826b3030f213a11f4aaf81ef](https://bscscan.com/address/0xeC83410DbC48C7797D2f2AFe624881674c65c856#readProxyContract). The unlock contract is not currently distributing tokens.
-

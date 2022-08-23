@@ -1,4 +1,5 @@
 ---
+title: Locksmith Token Metadata API
 description: >-
   Locksmith provides facilities to host and retrieve token metadata associated
   with Locks and its key holders.

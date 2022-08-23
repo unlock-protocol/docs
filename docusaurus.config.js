@@ -69,11 +69,10 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('docusaurus-preset-openapi').ThemeConfig} */
-    { metadata: [
+  themeConfig:{
+    metadata: [
         { name: "keywords",
-          content: "unlock protocol, blockchain, nft, token gate, nft membership, nft subscription"
+          content: "unlock, blockchain, nft, token-gate, memberships, subscriptions"
         },
         { property: "og:locale",
            content: "og:en_US"
@@ -117,7 +116,7 @@ const config = {
         { name: "twitter:image:alt",
           content: "Unlock logo with the word docs next to it"
         }
-        ],
+      ],
       navbar: {
         title: "Unlock",
         logo: {

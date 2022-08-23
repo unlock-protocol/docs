@@ -1,10 +1,9 @@
 ---
-description: >-
-  Unlock is a protocol for memberships that lets you easily build token gating
-  with recurring revenues in any application!
+title: Token-gated Application Architecture
+description: Overview of what a token gated web3 application architecture might look like.
 ---
 
-# Building token gated applications
+# Token-gated Application Architecture
 
 This guide provides a high-level overview of the steps involved in building a typical **web3** application flow with **token-gating**. This flow is not specific to Unlock and could actually be applied to other NFT (ERC721) or even currency contracts (ERC20). It can also be changed and customized to fit your application's needs.
 

@@ -1,5 +1,6 @@
 ---
-description: Unlock's governance
+title: Governance
+description: Introduction to Unlock DAO governance.
 ---
 
 # Governance
