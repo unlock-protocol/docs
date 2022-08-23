@@ -71,7 +71,53 @@ const config = {
 
   themeConfig:
     /** @type {import('docusaurus-preset-openapi').ThemeConfig} */
-    ({
+    { metadata: [
+        { name: "keywords",
+          content: "unlock protocol, blockchain, nft, token gate, nft membership, nft subscription"
+        },
+        { property: "og:locale",
+           content: "og:en_US"
+        },
+        { poperty: "og:type",
+          content: "website"
+        },
+        { property: "og:description",
+          content: "Unlock Protocol technical documentation for developers with a complete protocol reference, tutorials and code examples."
+        },
+        { property: "og:title",
+          content: "Unlock Protocol Technical Docs"
+        },
+        { property: "og:url",
+          content: "https://docs.unlock-protocol.com/"
+        },
+        { property: "og:image",
+          content:"/img/dev-docs-share-img.png"
+        },
+        { property: "og:image:width",
+          content: "1200"
+        },
+        { property: "og:image:height",
+          content: "627"
+        },
+        { property: "og:image:type",
+          content: "image/png"
+        },
+        { name: "twitter:card",
+          content: "summary_large_image"
+        },
+        { name: "twitter:title",
+          content: "Unlock Protocol Technical Docs"
+        },
+        { name: "twitter:description",
+          content: "Unlock Protocol technical documentation for developers with a complete protocol reference, tutorials and code examples."
+        },
+        { name: "twitter:image",
+          content: "/img/dev-docs-share-img.png"
+        },
+        { name: "twitter:image:alt",
+          content: "Unlock logo with the word docs next to it"
+        }
+        ],
       navbar: {
         title: "Unlock",
         logo: {
