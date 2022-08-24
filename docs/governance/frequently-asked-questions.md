@@ -1,5 +1,6 @@
 ---
-description: Frequently Asked Questions
+title: Unlock DAO - Frequently Asked Questions
+description: Answering all of your faqs about Unlock DAO, UDT and governance.
 ---
 
 # Governance FAQ

@@ -1,3 +1,8 @@
+---
+title: Public Lock
+description: >-
+  Explanation of the Unlock Protocol "Lock" contract PublicLock.sol.
+---
 # Public Lock
 
 ## Lock Contract

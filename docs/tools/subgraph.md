@@ -1,4 +1,5 @@
 ---
+title: The Graph | Subgraphs
 description: >-
   Querying smart contracts directly from your application is always an option,
   but, when your application needs to retrieve large collections or multiple
@@ -13,11 +14,19 @@ The Graph Protocol provides an accessible GraphQL service providing useful aggre
 
 [Ethereum Mainnet](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock)
 
-[Rinkeby](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-rinkeby)
+[Rinkeby (Ethereum testnet)](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-rinkeby)
+
+[Goerli (Ethereum testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/goerli)
+
+[Arbitrum](https://thegraph.com/hosted-service/subgraph/unlock-protocol/arbitrum)
+
+[Celo](https://thegraph.com/hosted-service/subgraph/unlock-protocol/celo)
 
 [Gnosis Chain (xDAI)](https://thegraph.com/explorer/subgraph/unlock-protocol/xdai)
 
 [Polygon (ex-Matic)](https://thegraph.com/explorer/subgraph/unlock-protocol/polygon)
+
+[Mumbai (Polygon testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/mumbai)
 
 [Binance Smart Chain](https://thegraph.com/hosted-service/subgraph/unlock-protocol/bsc)
 

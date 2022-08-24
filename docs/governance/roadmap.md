@@ -1,5 +1,8 @@
 ---
 title: Roadmap
+description: >-
+  Regularly updated roadmap of the bigger picture goals being worked
+  on for Unlock Protocol.
 ---
 
 # Roadmap

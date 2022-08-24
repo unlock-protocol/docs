@@ -1,6 +1,6 @@
 ---
 title: Unlock DAO
-description:
+description: >-
   The Unlock Protocol is a public good aimed at being governed by a DAO of its
   users and developers.
 ---

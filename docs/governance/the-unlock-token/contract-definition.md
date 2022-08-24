@@ -1,5 +1,7 @@
 ---
 title: Contract definitions
+description: Unlock governance token (UDT) set of definitions from the UDT
+  smart contracts.
 ---
 
 - **Status**: [partially implemented](the-path-to-udt.md). You can earn UDT today by using the protocol, or through [grants from the Unlock Treasury](../grants-bounties-and-matchings.md).

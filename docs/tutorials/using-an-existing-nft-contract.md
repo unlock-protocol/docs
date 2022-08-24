@@ -1,11 +1,12 @@
 ---
+title: Using an Existing Contract
 description: >-
   Your lock is an NFT contract, but you can also plug-in an existing contract
   (ERC721, ERC1155 or ERC20) to make sure any visitor is treated as a valid
-  member
+  member.
 ---
 
-# Using an existing contract
+# Using an Existing Contract
 
 Locks are membership contracts that can "mint" their own NFT (ERC721) as membership cards. However in some cases, you may want to consider other users as "members" even though they might not have one of the actual membership cards from the lock itself (we call them keys). In that case, you would hook your lock to an external contract that would itself provide its own membership cards.
 

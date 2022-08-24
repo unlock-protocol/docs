@@ -1,6 +1,8 @@
 ---
 title: Grants, Bounties & Matchings
-description: Unlock Inc. is offering a grants program for anyone building interesting and useful integrations of the protocol
+description:  >-
+  Explaination of the Unlock Inc. grants program for anyone building
+  interesting and useful integrations of the protocol.
 hide_table_of_contents: false
 ---
 

@@ -1,5 +1,6 @@
 ---
-description: Utilizing Unlock Protocol to Provide an Ad Free Experience to Members
+title: Building an Ad Free Experience
+description: Utilizing Unlock Protocol to provide an ad free experience to members.
 ---
 
 # Building an Ad Free Experience
@@ -23,13 +24,13 @@ sc.parentNode.insertBefore(js, sc); }(document, "script"));
 1. Configure the display of the paywall component:
 
 ```javascript
-var unlockProtocolConfig = { 
+var unlockProtocolConfig = {
   locks: {
     '0xabc': { // 0xabc is the address of a lock.
       name: 'Ad Free Experience'
     }
   },
-  icon: 'https://staging-app.unlock-protocol.com/static/images/svg/default.svg', 
+  icon: 'https://staging-app.unlock-protocol.com/static/images/svg/default.svg',
   callToAction: {
     default: 'Remove the ads from this page with a Key'
   }
@@ -53,4 +54,3 @@ window.addEventListener('unlockProtocol', function(e) {
 ```
 
 While some tailoring may be required for your specific use case, this should provide a starting point towards utilizing the Unlock Protocol to provide your members with an Ad Free experience.
-
