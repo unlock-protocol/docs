@@ -51,7 +51,7 @@ const code = JSON.parse(atob(params.code));
 const address = ethers.utils.verifyMessage(code.d, code.s);
 ```
 
-You can try the Sign-In-With Ethereum flow [on this site for example](https://ouvre-boite.com) (click Sign-In). It is also used in our [WordPress plugin](../../move-to-guides/plugins-and-integrations/wordpress-plugin.md).
+You can try the Sign-In-With Ethereum flow [on this site for example](https://ouvre-boite.com) (click Sign-In). It is also used in our [WordPress plugin](https://unlock-protocol.com/guides/guide-to-the-unlock-protocol-wordpress-plugin/).
 
 Example of message signed:
 
