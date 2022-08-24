@@ -45,6 +45,9 @@ const config = {
     }, {
       from: '/unlock/governance/roadmap',
       to: '/governance/roadmap'
+    }, {
+      from: '/basics/unlock-accounts',
+      to: '/basics/new-to-unlock/unlock-accounts'
     }]
   }]],
   presets: [
