@@ -1,5 +1,8 @@
 ---
-description: Unlock can send real time updates to endpoints.
+title: Locksmith Webhooks
+description:
+  Locksmith implements websub for Unlock Protocol and allows you to send real
+  time updates to registered endpoints.
 ---
 
 # Webhooks

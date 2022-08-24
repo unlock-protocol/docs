@@ -1,3 +1,8 @@
+---
+title: Deploying a Lock
+description: How to use the Unlock Dashboard for deploying a lock, your custom smart contract.
+---
+
 # Unlock Dashboard
 
 The [Unlock Dashboard](https://app.unlock-protocol.com/dashboard) is a fully optional UI that developers and creators can use to deploy their locks and manage them. The dashboard interracts with the smart contracts and other tools like our subgrapgs to retrieve data and let lock manager change their state. It is perfectly possible to reproduce the experience into other applications, or even use the command-line to perform any of the operations that the dashboard offers!

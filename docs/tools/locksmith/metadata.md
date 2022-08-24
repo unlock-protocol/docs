@@ -1,5 +1,6 @@
 ---
-description: Unlock can keep track of metadata related to a key purchase in several ways
+title: Using Metadata with Unlock Protocol
+description: A guide to using metadata with Unlock Protocol.
 ---
 
 # Metadata

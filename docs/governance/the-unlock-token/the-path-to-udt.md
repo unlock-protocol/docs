@@ -1,8 +1,10 @@
 ---
+title: The Path to UDT
 description: >-
   Our Unlock Discount Tokens will ensure the self-sustainability and full
-  decentralization of the Unlock Protocol. This doc explains the steps to reach
-  a point where UDT are live on mainnet.
+  decentralization of the Unlock Protocol. This doc explains the steps to taken
+  to get UDT are live on mainnet and the steps being taken to fully
+  decentralize the protocol.
 ---
 
 # The Path to UDT!

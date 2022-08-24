@@ -1,5 +1,8 @@
 ---
-description: Understanding Locksmith's Authorized Request Approach
+title: Authorization Strategy
+description: >-
+  Understanding the authorization strategy of Locksmith, also known
+  as the authorized request approach.
 ---
 
 # Authorization Strategy
