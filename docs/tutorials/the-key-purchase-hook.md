@@ -1,4 +1,5 @@
 ---
+title: The Key Purchase Hook
 description: Examples of using hooks to customize purchasing workflow on your lock.
 ---
 

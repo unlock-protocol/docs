@@ -1,4 +1,5 @@
 ---
+title: What is a decentralised application, aka "Dapp"?
 description: An informational tutorial about Dapps from a developer’s perspective.
 ---
 

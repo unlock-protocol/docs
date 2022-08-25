@@ -1,3 +1,9 @@
+---
+title: Unlock Smart Contracts
+description: >-
+  Guide to Unlock Protocol smart contracts including where to find them and how
+  they can be used.
+---
 # Unlock Smart Contracts
 
 The Unlock Protocol, at its core, is enabled by 2 primary Ethereum smart contracts, deployed on all networks supported by Unlock: [the Unlock](Unlock/) and the [PublicLock contracts](public-lock/) . We have a few more contracts, such as the governance token contract and the actual governance contract, but they are not actually required by the core protocol.

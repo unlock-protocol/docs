@@ -1,4 +1,5 @@
 ---
+title: What is a crypto wallet?
 description: >-
   An overview for developers to understand crypto wallets (aka, web3 wallets)
   and how they’re connected to cryptocurrencies, NFTs, Dapps, and Smart

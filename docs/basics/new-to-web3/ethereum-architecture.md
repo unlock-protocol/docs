@@ -1,4 +1,11 @@
-## A high level Ethereum architecture
+---
+title: Ethereum Architecture
+description: A high level overview of what Ethereum application architecture looks like.
+---
+
+# Ethereum Architecture
+
+### A high level Ethereum application architecture
 
 ```text
 ----------------------------------

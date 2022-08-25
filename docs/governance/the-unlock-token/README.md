@@ -1,6 +1,6 @@
 ---
-title: THe Unlock Token
-description: UDT and its Tokenomics
+title: The Unlock Token
+description: The Unlock Token (UDT) and its tokenomics.
 ---
 
 # The Unlock Token

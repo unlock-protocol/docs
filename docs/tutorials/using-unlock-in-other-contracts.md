@@ -1,3 +1,10 @@
+---
+title: Unlocking Smart Contracts
+description: >-
+  Token-gating a smart contract is possible with Unlock Protocol and this
+  tutorial goes over how that is done.
+---
+
 # Unlocking Smart Contracts
 
 Smart contract developers can easily integrate with Unlock Protocol on-chain, allowing them to limit access to certain features or change the behavior of functions based on membership status!

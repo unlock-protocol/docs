@@ -1,5 +1,6 @@
 ---
 id: litepaper
+title: Unlock Protocol Litepaper
 image: /img/more/litepaper-share.jpg
 sidebar_position: 1
 description: >-

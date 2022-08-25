@@ -1,5 +1,6 @@
 ---
-description: Using Unlock Protocol in a React.js app
+title: React + Unlock Protocol
+description: How to use Unlock Protocol in a React.js app.
 ---
 
 # React + Unlock Protocol

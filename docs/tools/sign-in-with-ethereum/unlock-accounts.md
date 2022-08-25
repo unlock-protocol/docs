@@ -1,6 +1,6 @@
 ---
-description: >-
-  Unlock accounts are optional user accounts for people who don't have a crypto wallet.
+title: Unlock Accounts
+description: A guide to what are Unlock Accounts and how do they work.
 ---
 
 # Unlock Accounts

@@ -1,4 +1,5 @@
 ---
+title: Using Subgraphs
 description: >-
   In this tutorial, we will see how to use the a subgraph in order to retrieve
   large amounts of data from the protocol.
