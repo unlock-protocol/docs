@@ -1,5 +1,6 @@
 ---
 description: An NPM module providing a wrapper around the Unlock smart contract ABI.
+sidebar_position: 3
 ---
 
 # Unlock.js

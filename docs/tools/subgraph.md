@@ -3,6 +3,7 @@ description: >-
   Querying smart contracts directly from your application is always an option,
   but, when your application needs to retrieve large collections or multiple
   elements from a contract, use our subgraph!
+sidebar_position: 6
 ---
 
 # Subgraph
