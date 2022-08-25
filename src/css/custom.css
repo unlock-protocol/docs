@@ -276,3 +276,7 @@ main {
 img.hackathon{
   background-color: var(--ifm-background-color);
 }
+
+[data-theme="dark"] img.hackathon{
+  background-color: var(--ifm-color-gray-200)
+}
