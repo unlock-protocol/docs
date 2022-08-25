@@ -48,6 +48,9 @@ const config = {
     }, {
       from: '/basics/unlock-accounts',
       to: '/basics/new-to-unlock/unlock-accounts'
+    }, {
+      from: '/tools/paywall/sign-in-with-ethereum',
+      to: '/tools/sign-in-with-ethereum'
     }]
   }]],
   presets: [
