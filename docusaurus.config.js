@@ -46,8 +46,14 @@ const config = {
       from: '/unlock/governance/roadmap',
       to: '/governance/roadmap'
     }, {
+      from: '/basics/new-to-unlock/unlock-accounts',
+      to: '/tools/sign-in-with-ethereum/unlock-accounts'
+    }, {
       from: '/basics/unlock-accounts',
-      to: '/basics/new-to-unlock/unlock-accounts'
+      to: '/tools/sign-in-with-ethereum/unlock-accounts'
+    }, {
+      from: '/tools/paywall/sign-in-with-ethereum',
+      to: '/tools/sign-in-with-ethereum/'
     }]
   }]],
   presets: [
