@@ -280,3 +280,9 @@ img.hackathon{
 [data-theme="dark"] img.hackathon{
   background-color: var(--ifm-color-gray-200)
 }
+
+img.banner-display{
+  padding:0;
+  /* border: solid 1px;
+  border-color: var(--ifm-color-primary); */
+}
