@@ -22,7 +22,6 @@ If you are looking for a way to use the legacy unlock checkout, use `https://app
 
 :::
 
-<p></p>
 
 After this, you will need to include the following parameters:
 
