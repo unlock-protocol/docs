@@ -40,8 +40,6 @@ The `type` field maps to a certain subset of HTML `<input>` types, which influen
 
 After the user fills out the form and clicks the "Continue" button, they will be prompted to sign a message so the data can be verified as coming from them. After they sign, the key purchase will initiate.
 
-Note: you can customize the `callToAction` value for the metadata form by adding a `metadata` value to this `callToAction` object.
-
 :::warning
 If the user already has an active membership, they will not be prompted to
 complete the metadata form!
