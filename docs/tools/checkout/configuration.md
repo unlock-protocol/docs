@@ -126,7 +126,7 @@ Always check our [networks](../../core-protocol/unlock/networks) page for the mo
 }
 ```
 :::info
-[Kalidou](https://twitter.com/Muhamma77595982) from our team built a [tool](https://unlocktool.d2qjhh2wsxjcef.amplifyapp.com/) for generating these urls and although
+[Kalidou](https://twitter.com/kld_diagne) from our team built a [tool](https://unlocktool.d2qjhh2wsxjcef.amplifyapp.com/) for generating these urls and although
 it's not officially supported yet it certainly is handy! You can use it here until
 we make it to the point in our roadmap where we integrate a similar feature into
 the dashboard.
