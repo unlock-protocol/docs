@@ -54,6 +54,12 @@ const config = {
     }, {
       from: '/tools/paywall/sign-in-with-ethereum',
       to: '/tools/sign-in-with-ethereum/'
+    },{
+      from: '/tools/paywall/collecting-metadata',
+      to: '/tools/checkout/collecting-metadata'
+    },{
+      from: '/tools/paywall/configuring-checkout',
+      to: '/tools/checkout/configuration'
     }]
   }]],
   presets: [
