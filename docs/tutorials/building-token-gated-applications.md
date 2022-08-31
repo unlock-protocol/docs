@@ -1,5 +1,6 @@
 ---
 title: Token-gated Application Architecture
+sidebar_position: 1
 description: Overview of what a token gated web3 application architecture might look like.
 ---
 
