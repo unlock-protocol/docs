@@ -1,8 +1,10 @@
 ---
+
 description: >-
   Learn how to configure the checkout process in order to collect members
   information.
 ---
+import CodeBlock from '@theme/CodeBlock';
 
 # Collecting Metadata
 
@@ -28,15 +30,75 @@ The members of this array should have the following shape:
 }
 ```
 
-All fields are required except for `public`, which defaults to `false` and `defaultValue`. Metadata is considered protected by default, so the only people who can view it are the lock owner and the user associated with the metadata. If any metadata should be visible to everyone, mark the `public` field as `true`.
+All fields are required except for `public`, which defaults to `false` and
+`defaultValue`. Metadata is considered protected by default, so the only people
+who can view it are the lock owner and the user associated with the metadata. If
+any metadata should be visible to everyone, mark the `public` field as `true`.
 
-If any input has `required: true`, it will render on the form with a red asterisk next to it and the metadata form will not submit until it is filled appropriately.
+If any input has `required: true`, it will render on the form with a red asterisk
+next to it and the metadata form will not submit until it is filled appropriately.
 
-Name fields should be unique; if they are not then there may be collisions when storing the data.
+Field names should be unique; if they are not then there may be collisions when
+storing the data.
 
-The `type` field maps to a certain subset of HTML `<input>` types, which influences how the form renders \(see image\).
+The `type` field maps to a certain subset of HTML `<input>` types, which
+influences how the form renders. The following configuration results in a
+checkout that looks like image below it.
 
-<img alt="In this example, first and last names are required and all other fields are optional." class="half-width" src="/img/tools/checkout/checkout-metadata.png" />
+```json
+
+    "metadataInputs":[
+       {
+          "name":"First Name",
+          "defaultValue":"",
+          "type":"text",
+          "required":false,
+          "placeholder":"John Doe",
+          "public":false
+       },
+       {
+          "name":"Last Name",
+          "defaultValue":"",
+          "type":"text",
+          "required":false,
+          "placeholder":"Doe",
+          "public":false
+       },
+       {
+          "name":"Email",
+          "defaultValue":"",
+          "type":"email",
+          "required":true,
+          "placeholder":"john@doecorp.xyz",
+          "public":false
+       },
+       {
+          "name":"DOB",
+          "defaultValue":"",
+          "type":"date",
+          "required":false,
+          "placeholder":"",
+          "public":false
+       },
+       {
+          "name":"Favorite Color",
+          "defaultValue":"",
+          "type":"color",
+          "required":false,
+          "placeholder":"",
+          "public":false
+       },
+       {
+          "name":"Website",
+          "defaultValue":"",
+          "type":"url",
+          "required":false,
+          "placeholder":"https://example-url.com",
+          "public":false
+       }
+    ]
+  ```
+<img alt="In this example, first and last names are required and all other fields are optional." class="half-width" src="/img/tools/checkout/collecting-metadata.gif" />
 
 After the user fills out the form and clicks the "Continue" button, they will be prompted to sign a message so the data can be verified as coming from them. After they sign, the key purchase will initiate.
 
