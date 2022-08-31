@@ -73,7 +73,7 @@ There are types of events being triggered:
 - Event Name: `unlockProtocol.authenticated`
 - Values
   - `event.detail.address`: the Ethereum address of the connected user.
-  - `event.detail.signedMessage`: the signature perform by the user if your configuration includes a `messageToSign`option \([more info](./configuring-checkout#the-paywallconfig-object)\)
+  - `event.detail.signedMessage`: the signature perform by the user if your configuration includes a `messageToSign`option \([more info](../checkout/configuration#the-paywallconfig-object)\)
 
 _Note:_ if the even is triggered without any payload, please consider that the user has "logged out".
 
