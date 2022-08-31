@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 description: >-
   Once created, you need to embed your lock(s) in your web page or application.
   There are many ways to do this, but the easiest way is to use our Paywall
@@ -33,9 +34,16 @@ We recommend loading the script using the following approach:
 
 ## Configure the Paywall
 
-The second step required is to configure the paywall so that it uses your lock. There again, you will need to use a `<script>`element added to your page's HTML. Ideally, it should also be placed in the ​`<head>`​ section and will let you configure the behavior of the paywall.
+The second step required is to configure the paywall so that it uses your lock.
+There again, you will need to use a `<script>`element added to your page's HTML.
+Ideally, it should also be placed in the ​`<head>`​ section and will let you
+configure the behavior of the paywall.
 
-Please see this section on [how to build the configuration](configuring-checkout.md).
+The Paywall actually invokes one of our other tools ["Checkout"](../checkout)
+and the configuration you build here is the same JSON object you build for
+configuring the Checkout.
+
+Please see this section on [how to build the configuration](../checkout/configuration.md).
 
 ```javascript
 <script>
