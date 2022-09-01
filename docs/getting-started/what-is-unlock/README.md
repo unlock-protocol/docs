@@ -34,7 +34,7 @@ costs, and evolves the web from a business model built on attention toward one
 based on membership.
 
 Unlock Protocol belongs to the Unlock Ecosystem, not Unlock Labs, and is governed
-by the [Unlock DAO](../governance/unlock-dao/).
+by the [Unlock DAO](../../governance/unlock-dao/).
 
 We aim for Unlock Protocol to be the primitive for every membership, both online
 and offline, around the globe. Together, we will create an internet owned and
