@@ -64,7 +64,7 @@ const config = {
       from: '/new-to-web3/using-etherscan',
       to: '/getting-started/new-to-web3/using-etherscan'
     },{
-      from: '/new-to-web3/what-is-a-crypto-wallet',
+      from: '/new-to-web3/what-is-a-crypto-wallet-a-guide-for-developers',
       to: '/getting-started/new-to-web3/what-is-a-crypto-wallet'
     },{
       from: '/new-to-web3/what-is-a-decentralised-application-aka-dapp',
@@ -73,8 +73,8 @@ const config = {
       from: '/new-to-web3/what-is-a-smart-contract',
       to: '/getting-started/new-to-web3/what-is-a-smart-contract'
     },{
-      from: '/new-to-web3/what-is-a-nft',
-      to: '/getting-started/new-to-web3/what-is-a-nft'
+      from: '/new-to-web3/what-is-an-nft',
+      to: '/getting-started/new-to-web3/what-is-an-nft'
     },{
       from: '/our-code-of-conduct',
       to: '/getting-started/our-code-of-conduct'
