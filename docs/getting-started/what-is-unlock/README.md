@@ -23,7 +23,7 @@ memberships as NFTs.
 - **The Unlock Ecosystem:** A community of creators, distributors, and consumers
 who share ownership of Unlock Protocol through their contributions using the
 protocol.
-- **[Unlock DAO](../governance/unlock-dao/)**: A decentralized organization of
+- **[Unlock DAO](../../governance/unlock-dao/)**: A decentralized organization of
 token holders who govern and control Unlock Protocol.
 - **Unlock Tools**: Front-end convenience applications built by Unlock Labs to
 further sustainable innovation on Unlock Protocol.
@@ -41,4 +41,4 @@ and offline, around the globe. Together, we will create an internet owned and
 monetized by creators and their supporters.
 
 If you'd like to read more on the entirety of our vision continue on to our
-Litepaper where we dig into the details. 
+Litepaper where we dig into the details.

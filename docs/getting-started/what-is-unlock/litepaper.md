@@ -32,12 +32,12 @@ There are a number of interdependent components of Unlock. These are:
 - **Unlock Labs:** The core team that created and currently maintains Unlock Protocol.
 - **Unlock Protocol:** A suite of upgradable smart contracts that create memberships as NFTs.
 - **The Unlock Ecosystem:** A community of creators, distributors, and consumers who share ownership of Unlock Protocol through their contributions using the protocol.
-- **[Unlock DAO](../governance/unlock-dao/)**: A decentralized organization of token holders who govern and control Unlock Protocol.
+- **[Unlock DAO](../../governance/unlock-dao/)**: A decentralized organization of token holders who govern and control Unlock Protocol.
 - **Unlock Tools**: Front-end convenience applications built by Unlock Labs to further sustainable innovation on Unlock Protocol.
 
 Unlock Labs created Unlock Protocol to provide an open, shared infrastructure for memberships that removes friction, increases conversion, enables scale, reduces costs, and evolves the web from a business model built on attention toward one based on membership.
 
-Unlock Protocol belongs to the Unlock Ecosystem, not Unlock Labs, and is governed by the [Unlock DAO](../governance/unlock-dao/).
+Unlock Protocol belongs to the Unlock Ecosystem, not Unlock Labs, and is governed by the [Unlock DAO](../../governance/unlock-dao/).
 
 We aim for Unlock Protocol to be the primitive for every membership, both online and offline, around the globe. Together, we will create an internet owned and monetized by creators and their supporters.
 
@@ -55,7 +55,7 @@ We think the membership primitive needs a standard of its own so that membership
 
 ## How does Unlock work?
 
-Since it is a true protocol, Unlock is built on blockchains. This makes Unlock-based memberships permissionless and decentralized. The blockchains provide built-in identities (via [wallets](../basics/new-to-web3/what-is-a-crypto-wallet-a-guide-for-developers/)), currencies, and payments, as well a way to represent the individual memberships as non-fungible tokens ([NFTs](../basics/new-to-web3/what-is-an-nft/)).
+Since it is a true protocol, Unlock is built on blockchains. This makes Unlock-based memberships permissionless and decentralized. The blockchains provide built-in identities (via [wallets](../new-to-web3/what-is-a-crypto-wallet-a-guide-for-developers/)), currencies, and payments, as well a way to represent the individual memberships as non-fungible tokens ([NFTs](../new-to-web3/what-is-an-nft/)).
 
 With Unlock Protocol, each creator deploys their own membership contract from a common template. Unlock Labs built a frontend application that provides an interface for this, but other platforms and applications can also implement their versions of the user interfaces as well.
 
@@ -65,7 +65,7 @@ Each membership created using Unlock Protocol is a non-fungible token. This NFT 
 
 ## Unlock’s business model
 
-Unlock makes money in two ways: through convenience fees and through value accrual to the [Unlock Discount Token (UDT)](../governance/the-unlock-token/).
+Unlock makes money in two ways: through convenience fees and through value accrual to the [Unlock Discount Token (UDT)](../../governance/the-unlock-token/).
 
 ### Convenience fees
 
@@ -86,7 +86,7 @@ UDT rewards are granted upon each key purchase transaction. The rewards are base
 - The gas consumed by the key purchase transaction.
 - The actual value added to the protocol’s Gross Network Product (total value exchanged in the network).
 
-To sustain the work creating and maintaining Unlock Protocol, each reward is split between the creator (80%) and Unlock Labs (20%). This feature is optional and may be adjusted by the [Unlock DAO](../governance/unlock-dao/).
+To sustain the work creating and maintaining Unlock Protocol, each reward is split between the creator (80%) and Unlock Labs (20%). This feature is optional and may be adjusted by the [Unlock DAO](../../governance/unlock-dao/).
 
 ## What can you do with Unlock Protocol?
 
@@ -109,15 +109,15 @@ Since these memberships are represented as NFTs, managers and members can define
 
 The core protocol includes functions to quickly identify a user's membership status. These functions can immediately determine if someone's membership is currently valid or if it has expired. This makes it trivial for an application to alter behavior (for example, token gating content or features) based on membership level or status.
 
-Additionally, the protocol implements ["hooks,"](../core-protocol/public-lock/hooks/) enabling the option to delegate these membership checks to third-party contracts. This supports use cases of checking for membership based on a wallet holding arbitrary ERC-721, ERC-1155, or ERC-20 tokens from third-party collections.
+Additionally, the protocol implements ["hooks,"](../../core-protocol/public-lock/hooks/) enabling the option to delegate these membership checks to third-party contracts. This supports use cases of checking for membership based on a wallet holding arbitrary ERC-721, ERC-1155, or ERC-20 tokens from third-party collections.
 
 ### Earn: Unlock Protocol is collectively owned by its members
 
 The core protocol aims to be collectively owned and managed by its adopters, embracing a core web3 ethos.
 
-Anyone who implements the protocol in their application can earn UDT governance tokens to join the [Unlock DAO](../governance/unlock-dao/), or may elect to pass those earned governance tokens onto their community members as additional rewards.
+Anyone who implements the protocol in their application can earn UDT governance tokens to join the [Unlock DAO](../../governance/unlock-dao/), or may elect to pass those earned governance tokens onto their community members as additional rewards.
 
-[UDT](../governance/the-unlock-token/) owners can submit and vote on protocol upgrades and the allocation of the treasury's funds.
+[UDT](../../governance/the-unlock-token/) owners can submit and vote on protocol upgrades and the allocation of the treasury's funds.
 
 Additionally, the protocol includes a mechanism for lock managers to optionally collect fees on purchases or payments made by members. This fee mechanism is optional and must be approved by individual lock managers.
 
@@ -135,25 +135,25 @@ Since Unlock is a protocol, a particular membership contract can only be altered
 
 What this means in practice is the users of the protocol control how the protocol works for them. It’s not — and can’t be — controlled by Unlock Labs, or any other entity.
 
-The Unlock smart contract, through which the locks are deployed, is collectively governed, and Unlock Labs does not have the ability to remove it. Although the contract is currently “owned” by a multi-sig wallet belonging to the Unlock Labs core team, our goal is to transfer its ownership to the [[Unlock DAO](../governance/unlock-dao/) contract. The DAO contract is collectively governed by the [UDT](../governance/the-unlock-token/) token holders.
+The Unlock smart contract, through which the locks are deployed, is collectively governed, and Unlock Labs does not have the ability to remove it. Although the contract is currently “owned” by a multi-sig wallet belonging to the Unlock Labs core team, our goal is to transfer its ownership to the [[Unlock DAO](../../governance/unlock-dao/) contract. The DAO contract is collectively governed by the [UDT](../../governance/the-unlock-token/) token holders.
 
 The core Unlock Protocol source code — in fact, all of the code ever written by the Unlock Labs team — is open-source code using the MIT license. As such, anyone can transparently assess, review or contribute to the code that makes up the protocol.
 
 ## Unlock for developers
 
-The technical [core of Unlock Protocol](../core-protocol/) consists of two Solidity smart contracts. As of this writing, Unlock has had three independent, external teams perform audits of these smart contracts.
+The technical [core of Unlock Protocol](../../core-protocol/) consists of two Solidity smart contracts. As of this writing, Unlock has had three independent, external teams perform audits of these smart contracts.
 
-The [“Unlock contract"](../core-protocol/unlock/) is a factory contract that generates all locks, while instances of the ["PublicLock contract"](../core-protocol/public-lock/) are owned and configurable by individual developers and creators building on the protocol.
+The [“Unlock contract"](../../core-protocol/unlock/) is a factory contract that generates all locks, while instances of the ["PublicLock contract"](../../core-protocol/public-lock/) are owned and configurable by individual developers and creators building on the protocol.
 
 ### The Unlock contract
 
-This factory contract **[(Unlock.sol)](../core-protocol/smart-contracts-api/Unlock)** has two roles: deploying locks and accounting for Unlock Discount Token ([UDT](../governance/the-unlock-token/)) rewards. The contract is upgradable using OpenZeppelin's upgradability framework. Each implementation is versioned.
+This factory contract **[(Unlock.sol)](../../core-protocol/smart-contracts-api/Unlock)** has two roles: deploying locks and accounting for Unlock Discount Token ([UDT](../../governance/the-unlock-token/)) rewards. The contract is upgradable using OpenZeppelin's upgradability framework. Each implementation is versioned.
 
-Currently, Unlock Labs manages a multi-sig wallet with control of the Unlock contract. However, we aim to move toward decentralization by transferring ownership to the [Unlock DAO](../governance/unlock-dao/).
+Currently, Unlock Labs manages a multi-sig wallet with control of the Unlock contract. However, we aim to move toward decentralization by transferring ownership to the [Unlock DAO](../../governance/unlock-dao/).
 
 ### The PublicLock contract
 
-Users can configure, deploy and update this contract (**[PublicLock.sol](../core-protocol/smart-contracts-api/PublicLock)**). Instances of PublicLock are ERC-721 compliant contracts.
+Users can configure, deploy and update this contract (**[PublicLock.sol](../../core-protocol/smart-contracts-api/PublicLock)**). Instances of PublicLock are ERC-721 compliant contracts.
 
 PublicLock contracts mint and manage membership NFT keys. Keys for one lock are valid only for the lock that created them.
 
@@ -165,7 +165,7 @@ Each PublicLock is a standalone contract. Once created, each instance of the con
 
 There are a number of aspects of Unlock Protocol’s design, governance approach, and technical architecture that make it unique.
 
-### Unlock Protocol’s memberships are time-based and can [expire](../core-protocol/smart-contracts-api/PublicLock#expirationduration)
+### Unlock Protocol’s memberships are time-based and can [expire](../../core-protocol/smart-contracts-api/PublicLock#expirationduration)
 
 Most memberships in the real-world have a time-based component to them. You are a member of your gym for a year, your warehouse club membership has an expiration date, and your online streaming service only grants mobile and commercial-free access to members in good standing.
 
@@ -183,7 +183,7 @@ Unlock-based memberships can be extended at any point before or after expiration
 
 ### Subscription and recurring revenue support
 
-In addition to being time-based, Unlock memberships can also be [recurring](../move-to-guides/recurring-memberships/). Recurrence turns a one-time membership into a recurring revenue “subscription.”
+In addition to being time-based, Unlock memberships can also be [recurring](https://unlock-protocol.com/guides/recurring-memberships/). Recurrence turns a one-time membership into a recurring revenue “subscription.”
 
 The Unlock smart contracts leverage the ability for users to pre-approve amounts to be spent in the future. This means a membership can automatically be renewed multiple times up to that spending approval limit.
 
@@ -209,11 +209,11 @@ As an open-source protocol, anyone can use Unlock. This stands in stark contrast
 
 Moving beyond who can “use” Unlock (i.e. anyone), Unlock Protocol has another important difference from traditional platforms: _anyone can own a stake in how the protocol itself is governed_.
 
-For this, Unlock Protocol has its own Decentralized Autonomous Organization (DAO). As of this writing, the [Unlock DAO](../governance/unlock-dao/) holds about 10% of the supply of [UDT](../governance/the-unlock-token/) in its treasury and can use these tokens to fund initiatives on its own.
+For this, Unlock Protocol has its own Decentralized Autonomous Organization (DAO). As of this writing, the [Unlock DAO](../../governance/unlock-dao/) holds about 10% of the supply of [UDT](../../governance/the-unlock-token/) in its treasury and can use these tokens to fund initiatives on its own.
 
-Additionally, the [Unlock DAO](../governance/unlock-dao/) will eventually own administrative rights on the Unlock contract, and any changes to the contract will need to be approved by a majority of token holders.
+Additionally, the [Unlock DAO](../../governance/unlock-dao/) will eventually own administrative rights on the Unlock contract, and any changes to the contract will need to be approved by a majority of token holders.
 
-On a regular basis, Unlock Labs distributes [UDT](../governance/the-unlock-token/) governance tokens to the Unlock Ecosystem. This happens through a variety of mechanisms including grants, retro-active funding, airdrops, and other methods.
+On a regular basis, Unlock Labs distributes [UDT](../../governance/the-unlock-token/) governance tokens to the Unlock Ecosystem. This happens through a variety of mechanisms including grants, retro-active funding, airdrops, and other methods.
 
 ### Unlock implements flexible and extensible smart contracts
 
@@ -221,8 +221,8 @@ Unlock’s smart contracts are based on the ERC-721 standard, with important enh
 
 - **Flexible templates:** Unlock membership contracts are based on the same “template,” guaranteeing consistency across memberships and simplifying integration into third party applications. These contracts are open-source and verified.
 - **Support for a wide range of currencies:** When creating a membership contract, the lock manager can choose the price and currency for the membership NFTs (”keys”) minted by that lock. The currency can be the blockchain’s native currency, or can be any ERC-20 contract deployed on the same blockchain. This includes stablecoins like USDC or community and social tokens such as $FWB.
-- **[Extensible:](../core-protocol/public-lock/hooks/)** Even though the lock contracts are standard, they can be extended by way of “hooks.” These hooks are configurable by a lock manager in order to alter the behavior of the contract on specific state changes such as purchases and transfers. Hooks can also be used when reading the status of a specific membership or when retrieving a token’s metadata.
-- **[Role-based:](../core-protocol/public-lock/access-control/)** The lock contracts include several roles in order to granularly configure the contract or specific memberships. For example, the lock manager role is considered to be the administrator of the smart contract and has all administrative roles, including upgrading the contract to a newer version of the protocol.
+- **[Extensible:](../../core-protocol/public-lock/hooks/)** Even though the lock contracts are standard, they can be extended by way of “hooks.” These hooks are configurable by a lock manager in order to alter the behavior of the contract on specific state changes such as purchases and transfers. Hooks can also be used when reading the status of a specific membership or when retrieving a token’s metadata.
+- **[Role-based:](../../core-protocol/public-lock/access-control/)** The lock contracts include several roles in order to granularly configure the contract or specific memberships. For example, the lock manager role is considered to be the administrator of the smart contract and has all administrative roles, including upgrading the contract to a newer version of the protocol.
 
   A lock can have multiple managers and the manager itself can also be a multi-sig wallet or a DAO to enable collective management and collective ownership of the contract. Other roles include:
 
@@ -301,11 +301,11 @@ Unlock Protocol and its community provide a wide variety of resources for develo
 
 Unlock Protocol’s documentation is organized into the following categories.
 
-- **[The Basics:](https://docs.unlock-protocol.com/basics/)** An overview of web3 and Unlock Protocol core concepts.
+- **[The Getting Started:](https://docs.unlock-protocol.com/getting-started/)** An overview of web3 and Unlock Protocol core concepts.
 - **[Core Protocol:](https://docs.unlock-protocol.com/core-protocol/)** An overview of the two smart contracts that make up the protocol and a complete interface reference generated from the smart contracts themselves.
 - **[Tools:](https://docs.unlock-protocol.com/tools/)** All the information you need about the tooling provided by Unlock Labs for protocol implementation.
 - **[Tutorials:](https://docs.unlock-protocol.com/tutorials/)** In-depth articles on specific use cases and implementations.
-- **[Governance:](https://docs.unlock-protocol.com/governance/)** Everything you need to know about becoming a DAO member, [UDT](../governance/the-unlock-token/) governance tokens, and voting.
+- **[Governance:](https://docs.unlock-protocol.com/governance/)** Everything you need to know about becoming a DAO member, [UDT](../../governance/the-unlock-token/) governance tokens, and voting.
 
 The Unlock Protocol developer docs can be found at [https://docs.unlock-protocol.com](https://docs.unlock-protocol.com).
 
@@ -325,27 +325,27 @@ The Unlock Protocol Discord server can be found via a link at [https://www.unloc
 
 ## Unlock Protocol governance
 
-The [Unlock DAO](../governance/unlock-dao/) is the community of [Unlock Discount Token (UDT)](../governance/the-unlock-token/) holders governing Unlock Protocol.
+The [Unlock DAO](../../governance/unlock-dao/) is the community of [Unlock Discount Token (UDT)](../../governance/the-unlock-token/) holders governing Unlock Protocol.
 
-Governance happens at multiple levels, and the [Unlock DAO](../governance/unlock-dao/) is encouraged to create their own decision-making processes. Currently, both on-chain governance through the DAO contract and non-binding off-chain governance through Snapshots are being used.
+Governance happens at multiple levels, and the [Unlock DAO](../../governance/unlock-dao/) is encouraged to create their own decision-making processes. Currently, both on-chain governance through the DAO contract and non-binding off-chain governance through Snapshots are being used.
 
-Unlock Labs [allocated 95,000 UDT to the DAO contract on September 23, 2021.](https://etherscan.io/tx/0x139aee8e28a2bbcbb9507bffd47d7c61c5422e94fcd9badd36edeee755725210) The [Unlock DAO](../governance/unlock-dao/) has full control over these tokens, and Unlock Labs does not have a mechanism to bypass the governance process.
+Unlock Labs [allocated 95,000 UDT to the DAO contract on September 23, 2021.](https://etherscan.io/tx/0x139aee8e28a2bbcbb9507bffd47d7c61c5422e94fcd9badd36edeee755725210) The [Unlock DAO](../../governance/unlock-dao/) has full control over these tokens, and Unlock Labs does not have a mechanism to bypass the governance process.
 
-Unlock Labs, despite being the creators and maintainers of the protocol, does not have more "power" than the [Unlock DAO](../governance/unlock-dao/) to control the protocol and its smart contracts. Unlock Labs reserves the right to act in alignment with its goal of Unlock Protocol being decentralized to remain compliant with regulations.
+Unlock Labs, despite being the creators and maintainers of the protocol, does not have more "power" than the [Unlock DAO](../../governance/unlock-dao/) to control the protocol and its smart contracts. Unlock Labs reserves the right to act in alignment with its goal of Unlock Protocol being decentralized to remain compliant with regulations.
 
 ### Overview and tokenomics
 
-As noted above, [UDT](../governance/the-unlock-token/) is the native governance token of Unlock Protocol. [UDT](../governance/the-unlock-token/) is deployed on Ethereum mainnet and bridged to Polygon and Gnosis Chain. It can be bridged by anyone to all EVM-compatible blockchains.
+As noted above, [UDT](../../governance/the-unlock-token/) is the native governance token of Unlock Protocol. [UDT](../../governance/the-unlock-token/) is deployed on Ethereum mainnet and bridged to Polygon and Gnosis Chain. It can be bridged by anyone to all EVM-compatible blockchains.
 
-[UDT](../governance/the-unlock-token/) is earned through contributions to Unlock Protocol and grants from the Unlock Labs treasury. [UDT](../governance/the-unlock-token/) can be delegated to vote on proposals governing the Unlock Protocol.
+[UDT](../../governance/the-unlock-token/) is earned through contributions to Unlock Protocol and grants from the Unlock Labs treasury. [UDT](../../governance/the-unlock-token/) can be delegated to vote on proposals governing the Unlock Protocol.
 
-A single mechanism — key purchases — creates new [UDT](../governance/the-unlock-token/). Developer rewards are calculated using a logarithmic curve based on the gas consumed by a purchase transaction and the actual value added to the protocol’s Gross Network Product (GNP) during each key purchase.
+A single mechanism — key purchases — creates new [UDT](../../governance/the-unlock-token/). Developer rewards are calculated using a logarithmic curve based on the gas consumed by a purchase transaction and the actual value added to the protocol’s Gross Network Product (GNP) during each key purchase.
 
 Unlock Labs [created UDT](https://etherscan.io/tx/0xfacea4358297b0a9f8536b8dd25dd29b412deb9f8737b43c0ddaaf89b9f525d2) and pre-mined a total of 1,000,000 UDT tokens. These tokens are held in [Unlock Labs's multi-sig wallet](https://etherscan.io/address/0xa39b44c4affbb56b76a1bf1d19eb93a5dfc2eba9). Our goal is to allocate 800,000 tokens to foster the adoption of the protocol. Unlock Labs plans to keep 200,000 tokens to sustain the work of the team creating and maintaining Unlock Protocol. As of this writing, [Unlock Labs has distributed over 300,000 UDT](https://etherscan.io/token/0x90de74265a416e1393a450752175aed98fe11517#balances) as rewards to contributors of the Unlock Protocol.
 
 ### Proposals
 
-Proposals are blockchain-executable transactions**.** As code**,** a proposal can only trigger on-chain actions. For example, a proposal could be _"The [Unlock DAO](../governance/unlock-dao/) pays x tokens to example.eth"_ or _"Change parameter p of this smart contract to be k."_
+Proposals are blockchain-executable transactions**.** As code**,** a proposal can only trigger on-chain actions. For example, a proposal could be _"The [Unlock DAO](../../governance/unlock-dao/) pays x tokens to example.eth"_ or _"Change parameter p of this smart contract to be k."_
 
 A proposal cannot be _"The Unlock Labs team needs to travel to conference y,"_ or _"John Doe needs to purchase UDT tokens on the Coinbase exchange,”_ since these proposals would require off-chain actions that are not governable or executable by code.
 
@@ -353,7 +353,7 @@ Proposals start as discussions and conversations. These conversations can be ini
 
 ### Voting
 
-Voting for the [Unlock DAO](../governance/unlock-dao/) happens on-chain through the governor contract. To send transactions, delegates can use any front-end application that supports the OpenZeppelin Governor contracts, such as [Tally](https://www.withtally.com/governance/unlock/).
+Voting for the [Unlock DAO](../../governance/unlock-dao/) happens on-chain through the governor contract. To send transactions, delegates can use any front-end application that supports the OpenZeppelin Governor contracts, such as [Tally](https://www.withtally.com/governance/unlock/).
 
 Voting on a proposal is only available to delegates with the balance of tokens they held at the time of the proposal’s submission.
 
@@ -409,9 +409,9 @@ Definitions of terms used in this document.
 
 - **Unlock (smart contract):** An Unlock Protocol factory contract (**Unlock.sol**) that deploys locks and accounts for Unlock Discount Token (UDT) rewards
 
-- **[Unlock DAO:](../governance/unlock-dao/)** A decentralized organization of token holders who govern and control Unlock Protocol
+- **[Unlock DAO:](../../governance/unlock-dao/)** A decentralized organization of token holders who govern and control Unlock Protocol
 
-- **[Unlock Discount Token:](../governance/the-unlock-token/)** Unlock Protocol’s governance token, also referred to as UDT
+- **[Unlock Discount Token:](../../governance/the-unlock-token/)** Unlock Protocol’s governance token, also referred to as UDT
 
 - **Unlock Ecosystem:** A community of creators, distributors, and consumers who share ownership of Unlock Protocol through their contributions using the protocol
 
