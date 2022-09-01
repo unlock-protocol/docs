@@ -1,5 +1,5 @@
 ---
-
+sidebar_position: 2
 description: >-
   Learn how to configure the checkout process in order to collect members
   information.
