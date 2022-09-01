@@ -28,11 +28,8 @@ const config = {
       from: '/unlock',
       to: '/',
     }, {
-      from: '/creators/deploying-lock',
-      to: '/basics/deploying-a-lock'
-    }, {
-      from: '/unlock/developers/tools/sign-in-with-ethereum',
-      to: '/tools/sign-in-with-ethereum',
+      from: '/basics',
+      to: '/'
     }, {
       from: '/unlock/developers/locksmith/webhooks',
       to: '/tools/locksmith/webhooks'
@@ -46,11 +43,17 @@ const config = {
       from: '/unlock/creators/plugins-and-integrations/wordpress-plugin',
       to: '/move-to-guides/plugins-and-integrations/wordpress-plugin'
     }, {
-      from: '/unlock/developers/unlock-platform',
-      to: '/basics/'
-    }, {
       from: '/unlock/governance/roadmap',
       to: '/governance/roadmap'
+    }, {
+      from: '/basics/new-to-unlock/unlock-accounts',
+      to: '/tools/sign-in-with-ethereum/unlock-accounts'
+    }, {
+      from: '/basics/unlock-accounts',
+      to: '/tools/sign-in-with-ethereum/unlock-accounts'
+    }, {
+      from: '/tools/paywall/sign-in-with-ethereum',
+      to: '/tools/sign-in-with-ethereum/'
     }]
   }]],
   presets: [
@@ -75,9 +78,54 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('docusaurus-preset-openapi').ThemeConfig} */
-    ({
+  themeConfig:{
+    metadata: [
+        { name: "keywords",
+          content: "unlock, blockchain, nft, token-gate, memberships, subscriptions"
+        },
+        { property: "og:locale",
+           content: "og:en_US"
+        },
+        { poperty: "og:type",
+          content: "website"
+        },
+        { property: "og:description",
+          content: "Unlock Protocol technical documentation for developers with a complete protocol reference, tutorials and code examples."
+        },
+        { property: "og:title",
+          content: "Unlock Protocol Technical Docs"
+        },
+        { property: "og:url",
+          content: "https://docs.unlock-protocol.com/"
+        },
+        { property: "og:image",
+          content:"/img/dev-docs-share-img.png"
+        },
+        { property: "og:image:width",
+          content: "1200"
+        },
+        { property: "og:image:height",
+          content: "627"
+        },
+        { property: "og:image:type",
+          content: "image/png"
+        },
+        { name: "twitter:card",
+          content: "summary_large_image"
+        },
+        { name: "twitter:title",
+          content: "Unlock Protocol Technical Docs"
+        },
+        { name: "twitter:description",
+          content: "Unlock Protocol technical documentation for developers with a complete protocol reference, tutorials and code examples."
+        },
+        { name: "twitter:image",
+          content: "/img/dev-docs-share-img.png"
+        },
+        { name: "twitter:image:alt",
+          content: "Unlock logo with the word docs next to it"
+        }
+      ],
       navbar: {
         title: "Unlock",
         logo: {
@@ -184,7 +232,7 @@ const config = {
         additionalLanguages: ['solidity'],
         theme: UnlockPrismTheme,
       },
-    }),
+    },
 
   i18n: {
     defaultLocale: 'en',

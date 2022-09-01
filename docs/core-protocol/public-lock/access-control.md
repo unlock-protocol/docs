@@ -1,5 +1,8 @@
 ---
-description: A description of the updated access control system for Lock contracts
+title: Access Control
+description: >-
+  A description of the updated access control system for Unlock Protocol "Lock"
+  contracts.
 ---
 
 # Access Control

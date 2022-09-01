@@ -6,7 +6,7 @@ description: >-
 
 # Recurring Memberships
 
-When you [create your lock](/basics/deploying-a-lock#deploying-a-lock), you will be prompted for a base duration for each membership. When your members purchase their memberships, their "keys" will be set to expire based on that duration. After that, depending on how you setup your checkout URL and depending on how you configure your lock, these memberships could be automatically recurring!
+When you [create your lock](/basics/new-to-unlock/deploying-a-lock#deploying-a-lock), you will be prompted for a base duration for each membership. When your members purchase their memberships, their "keys" will be set to expire based on that duration. After that, depending on how you setup your checkout URL and depending on how you configure your lock, these memberships could be automatically recurring!
 
 ### Requirements
 

@@ -1,17 +1,18 @@
 ---
+title: Locking Media Content
 description: >-
   In this tutorial, we will see how to create a simple HTML and JavaScript page
   to lock media content (audio or video) so that only the creators' members can
   play it.
 ---
 
-# Locking media content
+# Locking Media Content
 
 Unlock makes it easy for creators to monetize their work by only allowing their members to access some of their work. In this tutorial, we will see how to create a simple HTML and JavaScript page to lock media content (audio or video) so that only the creators' members can play it. Non-members will be able to see a small preview before being prompted to unlock the rest of the video.
 
 ## Create a lock
 
-The first step is to create a lock. For this, refer [to this article](/basics/deploying-a-lock#deploying-a-lock). Once the lock is deployed, keep track of its address and network as we'll use them next.
+The first step is to create a lock. For this, refer [to this article](/basics/new-to-unlock/deploying-a-lock#deploying-a-lock). Once the lock is deployed, keep track of its address and network as we'll use them next.
 
 ## Create the web document
 

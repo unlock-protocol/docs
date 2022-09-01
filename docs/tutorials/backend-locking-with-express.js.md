@@ -1,11 +1,12 @@
 ---
+title: Token-gating Express.js
 description: >-
   Express.js is a popular HTTP server framework for Node.js. In this tutorial,
   we will see to use the unlock-express plugin for Express.js in order to add
-  locked routes in an Express application
+  locked routes in an Express application.
 ---
 
-# Backend locking with Express.js
+# Token-gating Express.js
 
 The first step is to install the `@unlock-protocol/unlock-express`, either with `npm i @unlock-protocol/unlock-express` or `yarn add @unlock-protocol/unlock-express`.
 

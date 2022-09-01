@@ -1,4 +1,5 @@
 ---
+title: What is an NFT?
 description: An informational tutorial covering tyhe basics of NFTs from developer’s perspective.
 ---
 
@@ -12,9 +13,9 @@ First, we better discuss the acronym NFT itself.
 
 **What do "fungible" and "non-fungible" mean?**
 
-Fungible means interchangeable. If I take one Bitcoin and replace it with another one, it makes no difference. The coins are fungible. But if you choose a unique piece of art and I replace that with a random Rothko you're not going to be happy. Your artwork is non-fungible, a bitcoin is fungible. 
+Fungible means interchangeable. If I take one Bitcoin and replace it with another one, it makes no difference. The coins are fungible. But if you choose a unique piece of art and I replace that with a random Rothko you're not going to be happy. Your artwork is non-fungible, a bitcoin is fungible.
 
-Non-Fungible Tokens (NFTs) are different from fungible tokens because they are uniquely distinct from each other. 
+Non-Fungible Tokens (NFTs) are different from fungible tokens because they are uniquely distinct from each other.
 
 What is it that makes a token non-fungible like that? That's where the smart contract comes in.
 
@@ -58,7 +59,7 @@ Most notable are NFT-based event ticketing, media memberships, DAO memberships, 
 
 Here's a quick overview of how tokens help achieve these outcomes and an introduction to some of the companies working on ideas in the space.
 
-### NFT Ticketing 
+### NFT Ticketing
 
 Online and IRL event ticketing are a natural use cases for NFTs. The verifiable uniqueness and authenticity of an NFT ensures that a ticket presented for an online or IRL event is authentic. Mechanisms like non-transferrable NFTs also act as a deterrent to ticket scalping.
 
@@ -69,7 +70,7 @@ Online and IRL event ticketing are a natural use cases for NFTs. The verifiable 
 NFTs can act like membership cards that provide access to content websites (e.g. media paywalls), online and offline communities (e.g. membership cards), or members-only benefits. Unlock extends this core function in an important way, enabling NFT-based membershps to be time-bound (e.g. for a day, month, year, or any other lenght of time).
 
 > Related: [Creating a media membership paywall with Unlock and WordPress](https://unlock-protocol.com/guides/guide-to-the-unlock-protocol-wordpress-plugin/)
-> 
+>
 > Related: [How to token-gate a Telegram DAO channel](https://unlock-protocol.com/guides/how-to-token-gate-telegram-with-unlock-protocol-and-guild-xyz/)
 
 ### Online credentials and Proof Of Attendance Protocol (POAP) records

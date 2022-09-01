@@ -1,8 +1,9 @@
 ---
-description: Our community and contributor covenant code of conduct
+title: Code of Conduct
+description: Our community and contributor covenant code of conduct explained.
 ---
 
-# Our Code of Conduct
+# Code of Conduct
 
 ### Our Pledge
 

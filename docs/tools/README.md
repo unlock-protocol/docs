@@ -1,14 +1,14 @@
+---
+title: Development Tools
+description: Summary of tools built for development on Unlock Protocol.
+---
 # Tools
 
 These are tools built by developers and for developers, to support developers who are building with Unlock Protocol and beyond.
 
-## Dashboard
+These tools are not part of the core protocol and are completely optional. You are also welcome to build your own version of these tools in the applications you build.
 
-The [dashboard](https://app.unlock-protocol.com/dashboard) is to a tool for creators and consumers.
-
-For creators it provides a way to deploy or update locks, view key owners, as well as withdraw funds from the locks.
-
-For consumers, it provides a "keychain" which lets them view all of their keys, the related information, as well as sell or cancel them.
+Also, you should consider _external_ tools that are not specific to Unlock.
 
 ## Block Explorers
 
