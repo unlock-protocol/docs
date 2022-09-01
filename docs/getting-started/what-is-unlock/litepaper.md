@@ -55,7 +55,7 @@ We think the membership primitive needs a standard of its own so that membership
 
 ## How does Unlock work?
 
-Since it is a true protocol, Unlock is built on blockchains. This makes Unlock-based memberships permissionless and decentralized. The blockchains provide built-in identities (via [wallets](../new-to-web3/what-is-a-crypto-wallet-a-guide-for-developers/)), currencies, and payments, as well a way to represent the individual memberships as non-fungible tokens ([NFTs](../new-to-web3/what-is-an-nft/)).
+Since it is a true protocol, Unlock is built on blockchains. This makes Unlock-based memberships permissionless and decentralized. The blockchains provide built-in identities (via [wallets](../new-to-web3/what-is-a-crypto-wallet/)), currencies, and payments, as well a way to represent the individual memberships as non-fungible tokens ([NFTs](../new-to-web3/what-is-an-nft/)).
 
 With Unlock Protocol, each creator deploys their own membership contract from a common template. Unlock Labs built a frontend application that provides an interface for this, but other platforms and applications can also implement their versions of the user interfaces as well.
 
