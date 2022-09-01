@@ -14,7 +14,6 @@ a configuration object as params and returns a custom configured checkout experi
 
 ## The experience
 This experience can also be used in a few different ways:
-1. To implement an Unlock enabled sign-in with Ethereum ([SIWE](../sign-in-with-ethereum/))
 1. Stand-alone as a link you distribute to your members via email, Discord, etc.
    for minting your membership/ticket/credential NFT
 1. Embedded in your website directly
