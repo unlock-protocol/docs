@@ -88,18 +88,8 @@ The `callToAction` object lets you customize the messages displayed on the check
 
 ### Network values
 
-(Make sure you use a number and not a string!)
-
-- `1`: mainnet
-- `4`: rinkeby
-- `5`: goerli
-- `10`: optimism
-- `56`: binance
-- `100`: xdai
-- `137`: polygon
-- `42220`: celo
-
-Always check our [networks](../../core-protocol/unlock/networks) page for the most up to date list of supported networks.
+Make sure you use a number and not a string! For the complete list check our
+[networks](../../core-protocol/unlock/networks) page.
 
 ### Full example
 
