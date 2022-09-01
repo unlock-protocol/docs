@@ -1,10 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 description: >-
   Unlock Labs offers RPC providerd for development purposes.
 ---
 
-# Unlock RPC Provider
+# RPC Providers
 
 For development purposes, Unlock Labs offers a set of RPC providers that you can use, for each of the networks that we support.
 These RPC providers are all using the same syntax: `https://rpc.unlock-protocol.com/<chainId>` where `chainId` is the id of the network you want to use (`1` is for Ethereum mainnet... etc).

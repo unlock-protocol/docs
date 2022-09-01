@@ -1,6 +1,6 @@
 ---
+sidebar_position: 3
 title: Unlock.js
-sidebar_position: 4
 description: Guide to Unlock.js, an NPM module providing a wrapper around the Unlock Protocol smart contract ABI.
 ---
 
