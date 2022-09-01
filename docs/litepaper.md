@@ -9,7 +9,7 @@ description: >-
 
 # Unlock Protocol Litepaper
 
-*(Prefer to read this offline? [Click here to download.](https://19942922.fs1.hubspotusercontent-na1.net/hubfs/19942922/Unlock%20Protocol%20Litepaper%20rev07112022.pdf))*
+_(Prefer to read this offline? [Click here to download.](https://19942922.fs1.hubspotusercontent-na1.net/hubfs/19942922/Unlock%20Protocol%20Litepaper%20rev07112022.pdf))_
 
 ## Introduction
 
@@ -21,7 +21,7 @@ In contrast to the attention-based business model for the web, a membership-base
 
 Organizations including The New York Times, Netflix, Patreon, and others have successfully embraced membership-based business models. Unfortunately, the historic infrastructure to implement memberships has been ad hoc and has been implemented across the web by way of a series of silos, most of which are incompatible with each other.
 
-**We believe there is a way to make memberships better and, as a result, we believe there is a way to make *the web* better.**
+**We believe there is a way to make memberships better and, as a result, we believe there is a way to make _the web_ better.**
 
 Unlock is a protocol developers, creators, and platforms can use to create memberships. Unlock’s goal is to ease implementation and increase conversion from “users” to “members,” creating a much healthier monetization environment for the web.
 
@@ -37,7 +37,7 @@ There are a number of interdependent components of Unlock. These are:
 
 Unlock Labs created Unlock Protocol to provide an open, shared infrastructure for memberships that removes friction, increases conversion, enables scale, reduces costs, and evolves the web from a business model built on attention toward one based on membership.
 
-Unlock Protocol belongs to the Unlock Ecosystem, not Unlock Labs, and is governed by the [Unlock DAO](../governance/unlock-dao/).  
+Unlock Protocol belongs to the Unlock Ecosystem, not Unlock Labs, and is governed by the [Unlock DAO](../governance/unlock-dao/).
 
 We aim for Unlock Protocol to be the primitive for every membership, both online and offline, around the globe. Together, we will create an internet owned and monetized by creators and their supporters.
 
@@ -71,7 +71,7 @@ Unlock makes money in two ways: through convenience fees and through value accru
 
 Unlock Labs creates convenience layer applications to create network effects while collecting fees to maintain the applications. This is not a means of draining profits and position from potential competitors, but is a practical means of furthering sustainable innovation.
 
-Unlock Labs charges users without a cryptographic wallet a 10% convenience fee to perform on-chain transactions with their credit card, creating an [“Unlock Account”](../basics/new-to-unlock/unlock-accounts/) on their behalf. These proceeds cover credit card transaction fees, blockchain transaction fees, and Unlock Labs’s costs to maintain Unlock Protocol.
+Unlock Labs charges users without a cryptographic wallet a 10% convenience fee to perform on-chain transactions with their credit card, creating an [“Unlock Account”](/tools/sign-in-with-ethereum/unlock-accounts) on their behalf. These proceeds cover credit card transaction fees, blockchain transaction fees, and Unlock Labs’s costs to maintain Unlock Protocol.
 
 ### Protocol value accrual
 
@@ -171,7 +171,7 @@ Most memberships in the real-world have a time-based component to them. You are 
 
 While there have been a number prior NFT projects that confer “membership” based on the possession of a token, those memberships are binary. If you have the token you’re in, and if you don’t, you’re not.
 
-More troublesome is the fact that those first-generation memberships are also *perpetual*. Once someone has a token, they are a “member” for as long as they hold that token, which could be years or decades. A “perpetual” membership approach means creators have no way to capture the ongoing value their experiences provide to fans or community members, since once a fan possesses a token that grants them access, that fan effectively has “tenure” and has access to benefits in perpetuity.
+More troublesome is the fact that those first-generation memberships are also _perpetual_. Once someone has a token, they are a “member” for as long as they hold that token, which could be years or decades. A “perpetual” membership approach means creators have no way to capture the ongoing value their experiences provide to fans or community members, since once a fan possesses a token that grants them access, that fan effectively has “tenure” and has access to benefits in perpetuity.
 
 These legacy “perpetual” membership approaches are especially ill-suited for situations where the membership requires an explicit expiration date (e.g. in the case of professional credentials that expire after a period of time).
 
@@ -207,7 +207,7 @@ For example, the lock manager can disable transfers, rendering their particular 
 
 As an open-source protocol, anyone can use Unlock. This stands in stark contrast to most existing internet platforms, which are closed-source and opaque.
 
-Moving beyond who can “use” Unlock (i.e. anyone), Unlock Protocol has another important difference from traditional platforms: *anyone can own a stake in how the protocol itself is governed*.
+Moving beyond who can “use” Unlock (i.e. anyone), Unlock Protocol has another important difference from traditional platforms: _anyone can own a stake in how the protocol itself is governed_.
 
 For this, Unlock Protocol has its own Decentralized Autonomous Organization (DAO). As of this writing, the [Unlock DAO](../governance/unlock-dao/) holds about 10% of the supply of [UDT](../governance/the-unlock-token/) in its treasury and can use these tokens to fund initiatives on its own.
 
@@ -224,12 +224,12 @@ Unlock’s smart contracts are based on the ERC-721 standard, with important enh
 - **[Extensible:](../core-protocol/public-lock/hooks/)** Even though the lock contracts are standard, they can be extended by way of “hooks.” These hooks are configurable by a lock manager in order to alter the behavior of the contract on specific state changes such as purchases and transfers. Hooks can also be used when reading the status of a specific membership or when retrieving a token’s metadata.
 - **[Role-based:](../core-protocol/public-lock/access-control/)** The lock contracts include several roles in order to granularly configure the contract or specific memberships. For example, the lock manager role is considered to be the administrator of the smart contract and has all administrative roles, including upgrading the contract to a newer version of the protocol.
 
-    A lock can have multiple managers and the manager itself can also be a multi-sig wallet or a DAO to enable collective management and collective ownership of the contract. Other roles include:
+  A lock can have multiple managers and the manager itself can also be a multi-sig wallet or a DAO to enable collective management and collective ownership of the contract. Other roles include:
 
-    - **Key granter:** This role can “grant” (airdrop) membership NFTs.
-    - **Beneficiary:** This role can receive funds when they are withdrawn from the lock.
-    - **Key owner:** The “member” who has a membership.
-    - **Key manager:** The address that can transfer or cancel a specific membership. By default, it is the key owner, however, this role can be decoupled, especially in the context of airdrops.
+  - **Key granter:** This role can “grant” (airdrop) membership NFTs.
+  - **Beneficiary:** This role can receive funds when they are withdrawn from the lock.
+  - **Key owner:** The “member” who has a membership.
+  - **Key manager:** The address that can transfer or cancel a specific membership. By default, it is the key owner, however, this role can be decoupled, especially in the context of airdrops.
 
 ## Key use cases for Unlock Protocol
 
@@ -341,13 +341,13 @@ As noted above, [UDT](../governance/the-unlock-token/) is the native governance 
 
 A single mechanism — key purchases — creates new [UDT](../governance/the-unlock-token/). Developer rewards are calculated using a logarithmic curve based on the gas consumed by a purchase transaction and the actual value added to the protocol’s Gross Network Product (GNP) during each key purchase.
 
-Unlock Labs [created UDT](https://etherscan.io/tx/0xfacea4358297b0a9f8536b8dd25dd29b412deb9f8737b43c0ddaaf89b9f525d2) and pre-mined a total of 1,000,000 UDT tokens. These tokens are held in [Unlock Labs's multi-sig wallet](https://etherscan.io/address/0xa39b44c4affbb56b76a1bf1d19eb93a5dfc2eba9). Our goal is to allocate 800,000 tokens to foster the adoption of the protocol. Unlock Labs plans to keep 200,000 tokens to sustain the work of the team creating and maintaining Unlock Protocol. As of this writing, [Unlock Labs has distributed over 300,000 UDT](https://etherscan.io/token/0x90de74265a416e1393a450752175aed98fe11517#balances) as rewards to contributors of the Unlock Protocol.  
+Unlock Labs [created UDT](https://etherscan.io/tx/0xfacea4358297b0a9f8536b8dd25dd29b412deb9f8737b43c0ddaaf89b9f525d2) and pre-mined a total of 1,000,000 UDT tokens. These tokens are held in [Unlock Labs's multi-sig wallet](https://etherscan.io/address/0xa39b44c4affbb56b76a1bf1d19eb93a5dfc2eba9). Our goal is to allocate 800,000 tokens to foster the adoption of the protocol. Unlock Labs plans to keep 200,000 tokens to sustain the work of the team creating and maintaining Unlock Protocol. As of this writing, [Unlock Labs has distributed over 300,000 UDT](https://etherscan.io/token/0x90de74265a416e1393a450752175aed98fe11517#balances) as rewards to contributors of the Unlock Protocol.
 
 ### Proposals
 
-Proposals are blockchain-executable transactions**.** As code**,** a proposal can only trigger on-chain actions. For example, a proposal could be *"The [Unlock DAO](../governance/unlock-dao/) pays x tokens to example.eth"* or *"Change parameter p of this smart contract to be k."*
+Proposals are blockchain-executable transactions**.** As code**,** a proposal can only trigger on-chain actions. For example, a proposal could be _"The [Unlock DAO](../governance/unlock-dao/) pays x tokens to example.eth"_ or _"Change parameter p of this smart contract to be k."_
 
-A proposal cannot be *"The Unlock Labs team needs to travel to conference y,"* or *"John Doe needs to purchase UDT tokens on the Coinbase exchange,”* since these proposals would require off-chain actions that are not governable or executable by code.
+A proposal cannot be _"The Unlock Labs team needs to travel to conference y,"_ or _"John Doe needs to purchase UDT tokens on the Coinbase exchange,”_ since these proposals would require off-chain actions that are not governable or executable by code.
 
 Proposals start as discussions and conversations. These conversations can be initiated by any community member through [Discourse](https://unlock.community/) or other public forums visible by all token holders.
 
@@ -377,7 +377,7 @@ Current convenience applications include the Creator Dashboard, the Member Keych
 
 - [**Creator Dashboard**](https://app.unlock-protocol.com/dashboard) — The Creator Dashboard is a no-code application through which anyone can deploy or update locks, view key owners, and withdraw funds generated from keys sold from locks. The Creator Dashboard is free to use.
 - [**Member Keychain**](https://app.unlock-protocol.com/keychain) — The Member Keychain allows members to view all of their keys and use them. With the Member Keychain, members can cancel or transfer memberships, or generate QR codes to assert ownership. Like the Creator Dashboard, the Member Keychain is free-to-use.
-- [**Unlock Accounts**](https://docs.unlock-protocol.com/basics/unlock-accounts) — Unlock Accounts enable consumers without a cryptographic wallet to purchase keys with a credit card. Ownership of keys is verified by using an email address and a password. A 10% fee is paid by the key purchaser to Unlock Labs to cover Stripe transaction fees, gas costs, and other costs associated with creating and maintaining wallets on behalf of consumers.
+- [**Unlock Accounts**](/tools/sign-in-with-ethereum/unlock-accounts) — Unlock Accounts enable consumers without a cryptographic wallet to purchase keys with a credit card. Ownership of keys is verified by using an email address and a password. A 10% fee is paid by the key purchaser to Unlock Labs to cover Stripe transaction fees, gas costs, and other costs associated with creating and maintaining wallets on behalf of consumers.
 
 ## Glossary
 
@@ -405,7 +405,7 @@ Definitions of terms used in this document.
 
 - **PublicLock:** An Unlock Protocol smart contract (**PublicLock.sol)** that mints and manages membership NFT keys and can restrict access to resources based on the user's possession (or lack of possession) of a specific membership NFT key
 
-- **UDT:** See *Unlock Discount Token*
+- **UDT:** See _Unlock Discount Token_
 
 - **Unlock (smart contract):** An Unlock Protocol factory contract (**Unlock.sol**) that deploys locks and accounts for Unlock Discount Token (UDT) rewards
 
