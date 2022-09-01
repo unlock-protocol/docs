@@ -108,7 +108,7 @@ const config = {
     },{
       from: '/tutorials/using-unlock-in-other-contracts',
       to: '/tutorials/smart-contracts/using-unlock-in-other-contracts'
-    },]
+    }]
   }]],
   presets: [
     [
