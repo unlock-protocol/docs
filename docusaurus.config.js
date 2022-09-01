@@ -33,16 +33,7 @@ const config = {
     }, {
       from: '/unlock/developers/locksmith/webhooks',
       to: '/tools/locksmith/webhooks'
-    }, {
-      from: '/unlock/creators/plugins-and-integrations',
-      to: '/move-to-guides/plugins-and-integrations/'
-    }, {
-      from: '/unlock/creators/plugins-and-integrations/discord',
-      to: '/move-to-guides/plugins-and-integrations/discord'
-    }, {
-      from: '/unlock/creators/plugins-and-integrations/wordpress-plugin',
-      to: '/move-to-guides/plugins-and-integrations/wordpress-plugin'
-    }, {
+    },{
       from: '/unlock/governance/roadmap',
       to: '/governance/roadmap'
     }, {
@@ -56,7 +47,7 @@ const config = {
       to: '/tools/sign-in-with-ethereum/'
     },{
       from: '/litepaper',
-      to: '/getting-started/what-is-unlock/'  
+      to: '/getting-started/what-is-unlock/'
     }]
   }]],
   presets: [
