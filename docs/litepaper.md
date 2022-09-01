@@ -183,7 +183,7 @@ Unlock-based memberships can be extended at any point before or after expiration
 
 ### Subscription and recurring revenue support
 
-In addition to being time-based, Unlock memberships can also be [recurring](../move-to-guides/recurring-memberships/). Recurrence turns a one-time membership into a recurring revenue “subscription.”
+In addition to being time-based, Unlock memberships can also be [recurring](https://unlock-protocol.com/guides/recurring-memberships/). Recurrence turns a one-time membership into a recurring revenue “subscription.”
 
 The Unlock smart contracts leverage the ability for users to pre-approve amounts to be spent in the future. This means a membership can automatically be renewed multiple times up to that spending approval limit.
 
