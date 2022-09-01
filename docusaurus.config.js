@@ -56,7 +56,7 @@ const config = {
       to: '/tools/sign-in-with-ethereum/'
     },{
       from: '/litepaper',
-      to: '/getting-started/what-is-unlock'  
+      to: '/getting-started/what-is-unlock/'  
     }]
   }]],
   presets: [
