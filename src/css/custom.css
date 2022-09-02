@@ -280,3 +280,12 @@ img.hackathon{
 [data-theme="dark"] img.hackathon{
   background-color: var(--ifm-color-gray-200)
 }
+
+.half-width{
+  width: 50%;
+}
+@media screen and (max-width: 996px) {
+  .half-width{
+    width: 100%;
+  }
+}

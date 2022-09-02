@@ -28,7 +28,7 @@ The plugin works by adding a middleware that can be used to ensure that the curr
 
 The configuration step is required but has many good defaults. The `configureUnlock` has 3 arguments.
 
-The first one is the `paywallConfiguration`. It is a JSON object that will be used to customize which contracts the user should have a membership to, as well as the checkout experience. For more details about its syntax, [check this section](../../tools/paywall/configuring-checkout.md).&#x20;
+The first one is the `paywallConfiguration`. It is a JSON object that will be used to customize which contracts the user should have a membership to, as well as the checkout experience. For more details about its syntax, [check this section](./../tools/checkout/configuration/).&#x20;
 
 The second one is the `passport` instance for your application.&#x20;
 
