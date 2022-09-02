@@ -1,26 +1,27 @@
 ---
+title: Configuration
 description: >-
   When building a checkout URL or configuring the paywall, you can customize
   things. Here are docs on how to achieve this.
+sidebar_position: 1
 ---
 
 # Configuring Checkout
 
-## Building a Purchase address
-
-If you are using the paywall application, you can skip this section and move to the next one (the `paywallConfig` object).
+## Building your URL
 
 All of the purchase URsL start with the following base
-
-:::caution
-
-If you are looking for a way to use the legacy unlock checkout, use `/legacy/checkout?` as path.
-
-:::
 
 ```
 https://app.unlock-protocol.com/checkout?
 ```
+
+:::caution
+
+If you are looking for a way to use the legacy unlock checkout, use `https://app.unlock-protocol.com/legacy/checkout?` as path.
+
+:::
+
 
 After this, you will need to include the following parameters:
 
@@ -45,7 +46,7 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 - `title`: _optional string_, a title for your checkout. This will show up on the head.
 - `icon`: _optional string_, the URL for a icon to display in the top left corner of the modal.
 - `callToAction`: _optional object_, a list of messages shown based on the state of the checkout modal \(see below\).
-- `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
+- `metadataInputs`: _optional array_, a set of input fields [as explained there](./collecting-metadata.md).
 - `persistentCheckout`: _optional boolean_: `true` \_\_if the modal cannot be closed, defaults to `false` when embedded. When closed, the user will be redirected to the `redirect` query param when using a purchase address \(see above\).
 - `useDelegatedProvider`: _optional boolean._ To be announced.
 - `network`: _optional integer._ defaults to `1`. See below.
@@ -60,7 +61,7 @@ The locks object is a list of objects indexed by the lock address, where each ob
 - `network`: _recommended integer_. See below.
 - `name`: _optional string_. name of the lock to display.
 - `recurringPayments`: optional number. The number of time a membership should be renewed automatically. This only applies to ERC20 locks.
-- `metadataInputs`: _optional array_, a set of input fields [as explained there](collecting-metadata.md).
+- `metadataInputs`: _optional array_, a set of input fields [as explained there](./collecting-metadata.md).
 - `minRecipients`: \_optional number, set the minimum number of memberships a user needs to purchase.
 - `maxRecipients`: \_optional number, set the max number of memberships a user can purchase. Note: By default, checkout doesn't allow fiddling with quantity. You have to set maxRecipients to allow for changing to quantity.
 
@@ -68,7 +69,7 @@ The locks object is a list of objects indexed by the lock address, where each ob
 
 :::caution
 
-Call to action options are not available in the redesigned checkout. They will however continue to work in the legacy checkout if you want to use them.
+Call to action options are not available in the current checkout version. They will however continue to work in the legacy checkout if you want to use them.
 
 :::
 
@@ -87,12 +88,8 @@ The `callToAction` object lets you customize the messages displayed on the check
 
 ### Network values
 
-(Make sure you use a number and not a string!)
-
-- `1`: mainnet,
-- `4`: rinkeby,
-- `100`: xdai,
-- `137`: polygon.
+Make sure you use a number and not a string! For the complete list check our
+[networks](../../core-protocol/unlock/networks) page.
 
 ### Full example
 
@@ -118,3 +115,9 @@ The `callToAction` object lets you customize the messages displayed on the check
     ]
 }
 ```
+:::info
+[Kalidou](https://twitter.com/kld_diagne) from our team built a [tool](https://unlocktool.d2qjhh2wsxjcef.amplifyapp.com/) for generating these urls and although
+it's not officially supported yet it certainly is handy! You can use it here until
+we make it to the point in our roadmap where we integrate a similar feature into
+the dashboard.
+:::
