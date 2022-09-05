@@ -17,33 +17,39 @@ The address will start with “0x…” and be a string of letters and numbers. 
 
 ## Huddle01: Create a Meeting
 
-Head over to [Huddle01 Dashboad](dashboard.huddle01.com) and login
+Step 1: Head over to [Huddle01 Dashboard](https://bit.ly/huddle01dashboard) and login
+<br/>
 
 ![](https://ipfs.io/ipfs/bafybeiaxspkrp6i4jwtgr72x45lvbf2cedrpnj2p3bxqs7emyh2gwnzh2u)
 
 <br/>
-Select the Meetings from the left side of the Menu 
+Step 2: Select the Meetings from the left side of the Menu 
+<br/> 
+<br/> 
 
 ![](https://ipfs.io/ipfs/bafybeigvpo3jrzb6nkkus2dc2damozkmg2x3xehasfqqgghcnned7lfshe)
+
 <br/>
-Select create a new meeting from the top right side. 
+Step 3: Select create a new meeting from the top right side.
+
+<br/> 
+<br/> 
 
 ![](https://ipfs.io/ipfs/bafybeiafk5wswiwiborg2zuidoblbzdxxx4iwyy74zvlvug7nlxhxw3twi)
 
 <br/>
 
-<ol>
-Let’s break down this step into smaller steps.
-<li>Schedule the basic steps as you’d normally do in any application by choosing the date and time with the Name of the meeting.</li>
-<!---
-to add a image
---> 
-<li>Select Token gated meeting and select the chain on which you deployed your lock.</li>
-<li>Remember you copied an address from a lock in step 2, now paste it in the token address section. </li>
-<li>Click on Submit and you good to go. </li>
-</ol>
 
-Meeting has been successfully created
+Step 4: Let’s break down this step into smaller steps.
+
+ - Schedule the basic steps as you’d normally do in any application by choosing the date and time with the Name of the meeting.
+   ![](https://ipfs.io/ipfs/bafybeiepbn7ds3u6fnvq3b3kdfm3g6thmb5gzuyryfaraazoieta5dxdhy)
+ - Select Token gated meeting and select the chain on which you deployed your lock.</li>
+ - Remember you copied address of the lock, now paste it in the token address section. </li>
+ - Click on Submit and you good to go. </li>
+
+
+Step 5: Meeting has been successfully created, copy the meeting link
  ![](https://ipfs.io/ipfs/bafybeic5sxueeiv4no3qsqozjolz4sewctsje5tvctbe74yneuaclptasy)
       
 
@@ -59,5 +65,7 @@ If you have the token and you join in the party!
 ![](https://ipfs.io/ipfs/bafybeidxzwhresgxhglqdwybobqepuabellomv5bwkog5u2dt33zikozom)
 
 <br/>
-That’s it, folks, with this you are set to have your token gated meetings. 
-If you have any questions or doubts, reach out Huddle01 team on [Twitter](https://twitter.com/huddle01com) or  [Discord!](https://discord.gg/grVTHbvKFF)
+
+That’s it, folks, with this you are set to have your token gated meetings on [Huddle01](https://huddle01.com/). 
+If you have any questions or doubts, reach out to team Huddle01  on [Twitter](https://twitter.com/huddle01com) or
+[Discord](https://discord.gg/grVTHbvKFF)
