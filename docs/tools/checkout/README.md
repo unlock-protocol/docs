@@ -33,7 +33,7 @@ server.
 </p>
 
 From the Unlock [Dashboard](https://app.unlock-protocol.com/dashboard).
-After you [deploy your first "Lock"](../../basics/new-to-unlock/deploying-a-lock) and
+After you [deploy your first "Lock"](https://unlock-protocol.com/guides/how-to-create-a-lock/) and
 the transaction has been confirmed then you can click on the "demo" button and
 that will pull up an example webpage with the checkout embedded based on the default
 configuration and using the information from your lock.
