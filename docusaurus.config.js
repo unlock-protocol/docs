@@ -54,6 +54,60 @@ const config = {
     }, {
       from: '/tools/paywall/sign-in-with-ethereum',
       to: '/tools/sign-in-with-ethereum/'
+    },{
+      from: '/new-to-web3/ethereum-architecture',
+      to: '/getting-started/new-to-web3/ethereum-architecture'
+    },{
+      from: '/new-to-web3/',
+      to: '/getting-started/new-to-web3/'
+    },{
+      from: '/new-to-web3/using-etherscan',
+      to: '/getting-started/new-to-web3/using-etherscan'
+    },{
+      from: '/new-to-web3/what-is-a-crypto-wallet-a-guide-for-developers',
+      to: '/getting-started/new-to-web3/what-is-a-crypto-wallet'
+    },{
+      from: '/new-to-web3/what-is-a-decentralised-application-aka-dapp',
+      to: '/getting-started/new-to-web3/what-is-a-decentralised-application-aka-dapp'
+    },{
+      from: '/new-to-web3/what-is-a-smart-contract',
+      to: '/getting-started/new-to-web3/what-is-a-smart-contract'
+    },{
+      from: '/new-to-web3/what-is-an-nft',
+      to: '/getting-started/new-to-web3/what-is-an-nft'
+    },{
+      from: '/our-code-of-conduct',
+      to: '/getting-started/our-code-of-conduct'
+    },{
+      from: '/litepaper',
+      to: '/getting-started/what-is-unlock/litepaper'
+    },{
+      from: '/tutorials/backend-locking-with-express.js',
+      to: '/tutorials/back-end/backend-locking-with-express.js'
+    },{
+      from: '/tutorials/ad-free-experience',
+      to: '/tutorials/front-end/ad-free-experience'
+    },{
+      from: '/tutorials/locking-media-content',
+      to: '/tutorials/front-end/locking-media-content'
+    },{
+      from: '/tutorials/react-example',
+      to: '/tutorials/front-end/react-example'
+    },{
+      from: '/tutorials/using-subgraphs',
+      to: '/tutorials/misc/using-subgraphs'
+    },{
+      from: '/tutorials/ethers',
+      to: '/tutorials/smart-contracts/ethers'
+    },{
+      from: '/tutorials/the-key-purchase-hook',
+      to: '/tutorials/smart-contracts/the-key-purchase-hook'
+    },{
+      from: '/tutorials/using-an-existing-nft-contract',
+      to: '/tutorials/smart-contracts/using-an-existing-nft-contract'
+    },{
+      from: '/tutorials/using-unlock-in-other-contracts',
+      to: '/tutorials/smart-contracts/using-unlock-in-other-contracts'
     }]
   }]],
   presets: [

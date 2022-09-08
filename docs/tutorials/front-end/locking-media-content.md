@@ -12,7 +12,7 @@ Unlock makes it easy for creators to monetize their work by only allowing their 
 
 ## Create a lock
 
-The first step is to create a lock. For this, refer [to this article](/basics/new-to-unlock/deploying-a-lock#deploying-a-lock). Once the lock is deployed, keep track of its address and network as we'll use them next.
+The first step is to create a lock. For this, refer [to this article](https://unlock-protocol.com/guides/how-to-create-a-lock/). Once the lock is deployed, keep track of its address and network as we'll use them next.
 
 ## Create the web document
 

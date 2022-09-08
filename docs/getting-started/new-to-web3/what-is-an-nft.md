@@ -1,5 +1,6 @@
 ---
 title: What is an NFT?
+sidebar_position: 5
 description: An informational tutorial covering tyhe basics of NFTs from developer’s perspective.
 ---
 
@@ -87,7 +88,7 @@ POAP stands for "Proof Of Attendance Protocol". POAPs are NFTs that are granted 
 
 "Profile picture collection" NFT projects became very popular in 2021. The NFT contract for these tokens references a metadata file for each token identifier which in turn points to an image file of the picture in question. Exchanging these tokens means you own a pointer to an image file, not the image file itself. It's important to make sure the image is saved somewhere it can't be removed, to maintain the correctness of the immutable blockchain reference.
 
-> Related: [How to customize a PFP collection on OpenSea](https://docs.unlock-protocol.com/move-to-guides/customizing-locks-on-opensea)
+> Related: [How to customize a PFP collection on OpenSea](https://unlock-protocol.com/guides/customizing-locks-on-opensea)
 
 ## New ideas for Non-Fungible Tokens
 
