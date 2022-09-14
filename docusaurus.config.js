@@ -99,6 +99,9 @@ const config = {
     },{
       from: '/tutorials/using-unlock-in-other-contracts',
       to: '/tutorials/smart-contracts/using-unlock-in-other-contracts'
+    },{
+      from: '/core-protocol/deploying-locally/',
+      to: '/tutorials/smart-contracts/deploying-locally'
     }]
   }]],
   presets: [

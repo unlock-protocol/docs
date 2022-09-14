@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 8
 description: >-
   Unlock Labs offers RPC providerd for development purposes.
 ---
