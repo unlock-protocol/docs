@@ -386,7 +386,7 @@ describe("PurchaseHook", function () {
 });
 ```
 
-When running tests we should see them passing!
+Make sure you run the tests again and they should pass!
 
 ## Deploying
 

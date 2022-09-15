@@ -29,7 +29,7 @@ If either of these fail, then the whole purchase will revert.
 
 The `ILockKeyPurchaseHook` contract interface describes the parameters of each function (from, recipient, original price, price paid, etc), so the hook can be properly implemented.
 
-For instance, you can find out how to implement discount codes or invite-only purchases using contract extensions we developed in the [Key Purchase Hook doc](../../tutorials/smart-contracts/the-key-purchase-hook/).
+For instance, you can find out how to implement discount codes or invite-only purchases using contract extensions we developed in the [Key Purchase Hook doc](../../tutorials/smart-contracts/hooks/the-key-purchase-hook/).
 
 ## OnKeyCancel Hook
 
