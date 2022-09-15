@@ -99,9 +99,6 @@ const config = {
     },{
       from: '/tutorials/using-unlock-in-other-contracts',
       to: '/tutorials/smart-contracts/using-unlock-in-other-contracts'
-    },{
-      from: '/developers/smart-contracts/unlock-api#createlock',
-      to: '/tutorials/smart-contracts/deploying-locks/'
     }]
   }]],
   presets: [
