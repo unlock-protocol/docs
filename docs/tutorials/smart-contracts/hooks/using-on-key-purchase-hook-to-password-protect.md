@@ -388,6 +388,8 @@ describe("PurchaseHook", function () {
 
 Make sure you run the tests again and they should pass!
 
+Please [check this repo](https://github.com/unlock-protocol/password-required-hook) for a fully implemented hook that supports multiple locks (in other words it is directly usable for your application).
+
 ## Deploying
 
 Hardhat currently relies on writing scripts to deploy contracts. Since this is not specific to Unlock or this project, we invite you to [check out the Hardhat docs](https://hardhat.org/hardhat-runner/docs/guides/deploying).
