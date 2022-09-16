@@ -22,7 +22,6 @@ If you are looking for a way to use the legacy unlock checkout, use `https://app
 
 :::
 
-
 After this, you will need to include the following parameters:
 
 - `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object.
@@ -53,6 +52,7 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 - `referrer`: _optional string_. The address which will [receive UDT tokens](../../governance/the-unlock-token/) \(if the transaction is applicable\)
 - `messageToSign`: _optional string_. If supplied, the user is prompted to sign this message using their wallet. If using a checkout URL, a `signature` query param is then appended to the `redirectUri` \(see above\). If using the embedded paywall, the `unlockProtocol.authenticated` includes the `signature` attribute.
 - `pessimistic`: _optional boolean._ defaults to `false`_._ By default, to reduce friction, we do not require users to wait for the transaction to be mined before offering them to be redirected. By setting this to `true`, users will need to wait for the transaction to have been mined in order to proceed to the next step.
+- `emailRequired`: Enable email collection on the checkout
 
 ### Locks
 
@@ -115,6 +115,7 @@ Make sure you use a number and not a string! For the complete list check our
     ]
 }
 ```
+
 :::info
 [Kalidou](https://twitter.com/kld_diagne) from our team built a [tool](https://unlocktool.d2qjhh2wsxjcef.amplifyapp.com/) for generating these urls and although
 it's not officially supported yet it certainly is handy! You can use it here until
