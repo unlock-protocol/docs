@@ -21,14 +21,16 @@ We currently (version 11) support 5 hooks:
 
 The `onKeyPurchaseHook` allows you to create custom purchase logic, for instance dynamic pricing, etc.
 
-It contains 2 main functions
+It contains 2 main functions:
 
-1. `keyPurchasePrice` which is used to determine the purchase price before issuing a transaction.
-2. `onKeyPurchase` which is called every time a key is sold
+1. `keyPurchasePrice` which is used to determine the purchase price before issuing a transaction,
+2. `onKeyPurchase` which is called every time a key is sold.
+
+If either of these fail, then the whole purchase will revert.
 
 The `ILockKeyPurchaseHook` contract interface describes the parameters of each function (from, recipient, original price, price paid, etc), so the hook can be properly implemented.
 
-For instance, you can find out how to implement discount codes or invite-only purchases using contract extensions we developed in the [Key Purchase Hook doc](../../tutorials/smart-contracts/the-key-purchase-hook/).
+For instance, you can find out how to implement discount codes or invite-only purchases using contract extensions we developed in the [Key Purchase Hook doc](../../tutorials/smart-contracts/hooks/the-key-purchase-hook/).
 
 ## OnKeyCancel Hook
 
