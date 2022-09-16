@@ -4,12 +4,16 @@ description: Summary of tools built for development on Unlock Protocol.
 ---
 # Tools
 
-These are tools built by developers and for developers, to support developers who are building with Unlock Protocol and beyond.
+Unlock Labs maintains a set of development tools to interact with Unlock Protocol.
+They range from code libraries and plugins to data indexes and user interfaces.
+The following section is a list of those tools and the documentation on how to
+use them.  
 
-These tools are not part of the core protocol and are completely optional. You are also welcome to build your own version of these tools in the applications you build.
-
-Also, you should consider _external_ tools that are not specific to Unlock.
-
-## Block Explorers
-
-You can also interact with the deployed Unlock contract for a given network via block explorer's like etherscan. This can be useful as the current dashboard UI only exposes a small portion of the full functionality available on deployed locks.
+# Open Source
+All of them are open sourced like the protocol itself and all can be
+found inside of our [monorepo](https://github.com/unlock-protocol/unlock).
+This means if you feel like we're missing a feature, you can ask
+for one, or better yet, you can contribute one, we have retroactive funding to
+reward you for your efforts. We built them for convenience but also as a roadmap
+for building on Unlock Protocol and to spark the imagination of builders in our
+community.
