@@ -1,13 +1,17 @@
 ---
-title: Creating a hook to password-protect purchases
+title: Password Protect Key (NFT) Purchases
 description: In this tutorial we follow the steps to create a hook that create a password protected flow for purchases on a hook.
 ---
 
-# Creating a hook to password-protect purchases
+# Password Protect Key (NFT) Purchases
 
-Our goal here is to create a system where purchases on a lock are restricted to people who know a specific password.
+Let's take a look at how restrict purchases (minting) of our key NFTs to
+people who know a secret password.
 
-There is obviously a front-end element, where purchases would have to enter the password as they go through the checkout (we implemented this flow in our [Checkout UI](../../../tools/checkout/README.md)). However, if we only implemented this protection on the front-end, people could bypass this protection by calling the `purchase` function of the contract directly: we also need to add a mechanism to the smart contract.
+Purchasers would have to enter the password as they go through the checkout (we implemented this flow in our [Checkout UI](../../../tools/checkout/README.md)).
+
+If we only implement this protection on the front-end, people could bypass it by calling the `purchase` function of the contract directly. Adding the password
+check to the smart contract ensures it can't be circumvented.
 
 When the lock contract itself does not have a feature that we want, we can use hooks. Since our goal is to limit the "purchases" to people who know the password, then we need to use the `onKeyPurchaseHook`. Additionally the `purchase` function includes an extra `data` argument which is passed to the hook!
 
@@ -15,11 +19,11 @@ The first obvious approach would be to pass the password as `data`, and then hav
 
 So, rather than pass it in clear, we would need to pass a blob that _only_ someone who knows the password can compute! We would also need for that blob to be different for everyone, so that someone who observes the chain cannot just simply re-use someone else's blob!
 
-Here is the approach we're taking:
+**Here is the approach we're taking:**
 
-1. From the password, we generate/derive a private key,
-1. With store in the hook the corresponding public key,
-1. With the private key, we sign the purchaser's address,
+1. From the password, we generate/derive a private key
+1. We store in the hook the corresponding public key
+1. With the private key we sign the purchaser's address
 1. We pass the signature as a blob in the purchase function
 1. The hook "recovers" the signer of the message and verifies that it matches the stored public key!
 

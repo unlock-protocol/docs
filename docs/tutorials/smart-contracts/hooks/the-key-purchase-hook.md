@@ -5,36 +5,37 @@ description: Examples of using hooks to customize purchasing workflow on your lo
 
 # The Key Purchase Hook
 
-The `onKeyPurchaseHook` is called when a purchase is triggered and can be used to customize your purchase workflow.
+The `onKeyPurchaseHook` is called when a purchase is triggered and can be used to customize how a purchase is executed.
 
-There are 2 already available contract extensions that allow to use the `onKeyPurchaseHook` hook, namely:
+We've created 2 options for you and have already deployed them:
 
-1. `CodeRequiredHook`: require a secret code to successfuly purchase memberships
-2. `DiscountCodeHook`: add discount codes to your lock
+1. [`CodeRequiredHook`](https://github.com/unlock-protocol/unlock/blob/acdd7b3ec4f8165b2798955d59274cd53ad71c50/smart-contract-extensions/contracts/hooks/CodeRequiredHook.sol): require a secret code to successfuly purchase memberships
+2. [`DiscountCodeHook`](https://github.com/unlock-protocol/unlock/blob/acdd7b3ec4f8165b2798955d59274cd53ad71c50/smart-contract-extensions/contracts/hooks/DiscountCodeHook.sol): add discount codes to your lock
 
 ## Code Required Hook
 
-The `CodeRequiredHook` contract allows lock creators to restrict key purchases.
+`CodeRequiredHook` makes purchases of key NFTs restricted to people who have
+a secret code.
 
-Simply put, with this feature we can require a secret is known in order to purchase keys. Here are a few use cases this enables:
+Here are a few use cases this enables:
 
-- Access code
+- **Access code**
 
-  Example: `Enter 'this is a beta' to gain access`
+  *Example*: `Enter 'this is a beta' to gain access`
 
   You might want to limit access to a smaller group, e.g. maybe you are beta testing a new feature and want to invite everyone from your Telegram channel. You could offer a key for free, but require they explicitly acknowledge the risks by entering this code.
 
   Obviously someone could Tweet the code, spreading it future than intended. However it still effectively limits access to "insiders".
 
-- Whitelist
+- **Whitelist**
 
-  Example: `KYC required`
+  *Example*: `KYC required`
 
   A whitelist can be created with this feature as well. This allows a trusted operator to confirm which ETH accounts may purchase a key. e.g. maybe you need to check IDs first.
 
   Once approved, the operator shares the signature required to purchase. This allows only that account to purchase and the secret itself can remain secure \(with the operator\).
 
-### How to
+### How it works
 
 The CodeRequiredHook requires knowing a secret. The secret can be anything \(most commonly a string\) but then it's converted to a private key \(and we have recommendations for that process\).
 
@@ -125,9 +126,9 @@ To generate the `codeAddress` the following steps are recommended. This process 
 
 To remove a code in the future, just call `addCodes` again and set the discount for that `codeAddress` to 0.
 
-### Frontend Integration
+### Front-end Integration
 
-Discount codes have not yet been integrated into the frontend provided by Unlock-Protocol. However anyone can make their own frontend experience.
+Discount codes have not yet been integrated into any of our front-end libraries. However anyone can make their own frontend experience.
 
 In order to add support for discount codes, there are a few steps required:
 
@@ -194,4 +195,4 @@ Some of the process described above is our recommendations. The contract itself 
 - Sanitizing the input reduces entropy but makes for a better user experience.
 - How the `codeAccount` itself is generated is flexible, for example including the lock's address in the private key prevents users from discovering that a discount code can also be used on another lock.
 
-If you have a requirement for discount codes which is not addressed here \(e.g. single use codes\), reach out and let's discuss.
+If you have a requirement for discount codes which is not addressed here \(e.g. single use codes\), reach out and let's discuss!
