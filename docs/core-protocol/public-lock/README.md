@@ -3,7 +3,12 @@ title: Public Lock
 description: >-
   Explanation of the Unlock Protocol "Lock" contract PublicLock.sol.
 ---
+
 # Public Lock
+
+A "Lock" is a customized smart contract for minting (creating) ERC-721 NFT's. They are the Unlock Protocol version of a "minting contract". They are created with the [Unlock](../../core-protocol/unlock/) smart contract, which is a "factory" contract. That factory contract uses the [Public Lock](../../core-protocol/public-lock/) template contact along with
+with the configuration options you choose to record a new customized
+smart contract to the blockchain [network](../../core-protocol/unlock/networks) of your choice.
 
 ## Lock Contract
 
