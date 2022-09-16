@@ -44,8 +44,8 @@ Contract upgrades can only be made using new versions that are supported by the 
 
 ## Interacting with Protocol Contracts
 
-Popular JavaScript libaries that can be used to interact with blockchain smart
-contracts uncluding [Unlock.sol](../../core-protocol/unlock/). 
+Here are some popular JavaScript libaries that can be used to interact with blockchain smart
+contracts uncluding [Unlock.sol](../../core-protocol/unlock/).
 
 - [web3.js](https://web3js.readthedocs.io/)
 - [Ethers](https://docs.ethers.io/)
