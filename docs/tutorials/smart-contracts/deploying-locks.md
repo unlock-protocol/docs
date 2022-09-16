@@ -41,3 +41,20 @@ Kept for legacy support it deploys blobs, but the blobs have to be built for the
 Don't let the names fool you! All locks are upgradable!
 
 Contract upgrades can only be made using new versions that are supported by the protocol (ie. approved by the DAO).
+
+## Interacting with Protocol Contracts
+
+Popular JavaScript libaries that can be used to interact with blockchain smart
+contracts uncluding [Unlock.sol](../../core-protocol/unlock/). 
+
+- [web3.js](https://web3js.readthedocs.io/)
+- [Ethers](https://docs.ethers.io/)
+
+Tools we've built and maintain can be found in the ["Tools"](../../tools/) section of the docs. The following tools can be used for deploying locks.
+
+- [Unlock.js](../../tools/unlock.js) is our JavaScript library for interacting
+   with the protocol. It can be used with node.js on the back-end or on the
+   front-end in the browser.
+
+- [Unlock Hardhat Plugin](../../tutorials/smart-contracts/deploying-locally) can
+  be used to deploy locally. The plugin includes both tasks that can be added to your own hardhat script, or a cli.
