@@ -3,7 +3,7 @@ title: Deploying Locally
 description: A deploying the Unlock Protocol set of contracts locally.
 ---
 
-For this you need to use our [Hardhat plugin](../tools/hardhat-plugin.md).
+For this you need to use our [Hardhat plugin](../../tools/hardhat-plugin.md).
 
 Once installed, you can access the Unlock plugin directly from the Hardhat Runtime Environment
 anywhere you need it (tasks, scripts, tests, etc).
