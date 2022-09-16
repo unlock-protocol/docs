@@ -3,6 +3,7 @@ title: Access Control
 description: >-
   A description of the updated access control system for Unlock Protocol "Lock"
   contracts.
+sidebar_position: 2
 ---
 
 # Access Control

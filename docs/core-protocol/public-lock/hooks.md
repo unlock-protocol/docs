@@ -2,6 +2,7 @@
 title: Hooks
 description: >-
   The "Lock" contract includes hooks that let developers customize their behavior.
+sidebar_position: 3
 ---
 
 # Hooks
