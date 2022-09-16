@@ -34,7 +34,7 @@ import "@unlock-protocol/hardhat-plugin";
 
 ### Networks
 
-Info about already deployed Unlock contracts (on mainnet, rinkeby, optimism, bsc,xdai/gnosis, etc.) are added to the `unlock` param of the hardhat config. You can pass custom info about your own Unlock deployments directly in `hardhat.config.js`.
+Info about already deployed Unlock contracts (on mainnet, rinkeby, optimism, bsc, xdai/gnosis, etc.) are added to the `unlock` param of the hardhat config. You can pass custom info about your own Unlock deployments directly in `hardhat.config.js`.
 
 #### Config example
 
@@ -54,4 +54,4 @@ const config: HardhatUserConfig = {
 
 ## Other Links
 
-For more, check the [plugin page](https://github.com/unlock-protocol/hardhat-plugin-example) or the [example repo](https://github.com/unlock-protocol/hardhat-plugin-example).
+For more check the [plugin page](https://github.com/unlock-protocol/hardhat-plugin-example) or the [example repo](https://github.com/unlock-protocol/hardhat-plugin-example).
