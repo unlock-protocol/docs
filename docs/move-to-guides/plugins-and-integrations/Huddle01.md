@@ -44,9 +44,9 @@ Step 4: Let’s break down this step into smaller steps.
 
  - Schedule the basic steps as you’d normally do in any application by choosing the date and time with the Name of the meeting.
    ![](https://ipfs.io/ipfs/bafybeiepbn7ds3u6fnvq3b3kdfm3g6thmb5gzuyryfaraazoieta5dxdhy)
- - Select Token gated meeting and select the chain on which you deployed your lock.</li>
- - Remember you copied address of the lock, now paste it in the token address section. </li>
- - Click on Submit and you good to go. </li>
+ - Select Token gated meeting and select the chain on which you deployed your lock.
+ - Remember you copied address of the lock, now paste it in the token address section. 
+ - Click on Submit and you good to go. 
 
 
 Step 5: Meeting has been successfully created, copy the meeting link
