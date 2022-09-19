@@ -66,6 +66,6 @@ If you have the token and you join in the party!
 
 <br/>
 
-That’s it, folks, with this you are set to have your token gated meetings on [Huddle01](https://huddle01.com/). 
+
 If you have any questions or doubts, reach out to team Huddle01  on [Twitter](https://twitter.com/huddle01com) or
 [Discord](https://discord.gg/grVTHbvKFF)
