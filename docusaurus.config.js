@@ -108,6 +108,9 @@ const config = {
     },{
       from: '/core-protocol/deploying-locally/',
       to: '/tutorials/smart-contracts/deploying-locally'
+    },{
+      from: '/developers/unlock.js',
+      to: '/tools/unlock.js'
     }]
   }]],
   presets: [
