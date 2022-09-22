@@ -72,7 +72,7 @@ Once done, head to your lock in the block explorer. You can click on the ethersc
 
 ![Etherscan Button](/img/creators/etherscan-button.png)
 
-Then, look for the `SetEvenHooks` function:
+Then, look for the `SetEventHooks` function:
 
 ![Set Events Hook Etherscan Dashboard](/img/creators/set-events-hook-etherscan.png)
 
