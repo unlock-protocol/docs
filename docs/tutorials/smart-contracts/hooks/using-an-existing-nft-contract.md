@@ -18,12 +18,12 @@ We have deployed these hook contracts on each of the networks that we currently 
 
 **Using an ERC20**
 
-- Rinkeby : [`0xA316437719A1595659237c86FeCB93f20c689209`](https://rinkeby.etherscan.io/address/0xA316437719A1595659237c86FeCB93f20c689209)``
-- Polygon: [`0xd4C62b84eb42c03A118639c39dF1Fb680FF9E776`](https://polygonscan.com/address/0xd4C62b84eb42c03A118639c39dF1Fb680FF9E776#code)``
-- xdai: [`0xd10DF26AEaE179521D6195Cf6f3b2701B5089Fb6`](https://blockscout.com/xdai/mainnet/address/0xd10DF26AEaE179521D6195Cf6f3b2701B5089Fb6#code)``
-- mainnet: [`0x807D3E3564f25b43eDd8Fb8300BCb17b415d9Ee8`](https://etherscan.io/address/0x807D3E3564f25b43eDd8Fb8300BCb17b415d9Ee8#code)``
-- bsc: [`0x972987a2a7cFb3Ea162Eee91d2C637790d18638d`](https://bscscan.com/address/0x972987a2a7cFb3Ea162Eee91d2C637790d18638d#code)``
-- optmism: [`0x4C223b83c480371795aD4f456206472E199d28d3`](https://optimistic.etherscan.io/address/0x4C223b83c480371795aD4f456206472E199d28d3#code)``
+- Rinkeby : [`0xA316437719A1595659237c86FeCB93f20c689209`](https://rinkeby.etherscan.io/address/0xA316437719A1595659237c86FeCB93f20c689209)
+- Polygon: [`0xd4C62b84eb42c03A118639c39dF1Fb680FF9E776`](https://polygonscan.com/address/0xd4C62b84eb42c03A118639c39dF1Fb680FF9E776#code)
+- xdai: [`0xd10DF26AEaE179521D6195Cf6f3b2701B5089Fb6`](https://blockscout.com/xdai/mainnet/address/0xd10DF26AEaE179521D6195Cf6f3b2701B5089Fb6#code)
+- mainnet: [`0x807D3E3564f25b43eDd8Fb8300BCb17b415d9Ee8`](https://etherscan.io/address/0x807D3E3564f25b43eDd8Fb8300BCb17b415d9Ee8#code)
+- bsc: [`0x972987a2a7cFb3Ea162Eee91d2C637790d18638d`](https://bscscan.com/address/0x972987a2a7cFb3Ea162Eee91d2C637790d18638d#code)
+- optmism: [`0x4C223b83c480371795aD4f456206472E199d28d3`](https://optimistic.etherscan.io/address/0x4C223b83c480371795aD4f456206472E199d28d3#code)
 
 **Using an ERC721**
 
@@ -36,12 +36,12 @@ We have deployed these hook contracts on each of the networks that we currently 
 
 **Using an ERC1155**
 
-- Mainnet: [`0x8ec9FB8FCC5ab6E0bD04EfD9e42A8f6Be45eaeC2`](https://etherscan.io/address/0x8ec9FB8FCC5ab6E0bD04EfD9e42A8f6Be45eaeC2)``
-- Rinkeby : [`0xD7477B7c0CdA4204Cf860e4c27486061b15a5AC3`](https://rinkeby.etherscan.io/address/0xD7477B7c0CdA4204Cf860e4c27486061b15a5AC3)``
-- Gnosis Chain: [`0x4F44e968961f5ff818b788E626564BBAF2c96bAC`](https://blockscout.com/xdai/mainnet/address/0x4F44e968961f5ff818b788E626564BBAF2c96bAC)``
-- Polygon: [`0x0C0cEEcF5C14EBF1Fcf6779F92766128eeE7098C`](https://polygonscan.com/address/0x0C0cEEcF5C14EBF1Fcf6779F92766128eeE7098C)``
-- Optimism: [`0xF867712b963F00BF30D372b857Ae7524305A0CE7`](https://optimistic.etherscan.io/address/0xF867712b963F00BF30D372b857Ae7524305A0CE7)``
-- BSC: [`0x3952787d8Ec653E9179a3Fa5D8c018d7bD8e94c7`](https://bscscan.com/address/0x3952787d8Ec653E9179a3Fa5D8c018d7bD8e94c7)``
+- Mainnet: [`0x8ec9FB8FCC5ab6E0bD04EfD9e42A8f6Be45eaeC2`](https://etherscan.io/address/0x8ec9FB8FCC5ab6E0bD04EfD9e42A8f6Be45eaeC2)
+- Rinkeby : [`0xD7477B7c0CdA4204Cf860e4c27486061b15a5AC3`](https://rinkeby.etherscan.io/address/0xD7477B7c0CdA4204Cf860e4c27486061b15a5AC3)
+- Gnosis Chain: [`0x4F44e968961f5ff818b788E626564BBAF2c96bAC`](https://blockscout.com/xdai/mainnet/address/0x4F44e968961f5ff818b788E626564BBAF2c96bAC)
+- Polygon: [`0x0C0cEEcF5C14EBF1Fcf6779F92766128eeE7098C`](https://polygonscan.com/address/0x0C0cEEcF5C14EBF1Fcf6779F92766128eeE7098C)
+- Optimism: [`0xF867712b963F00BF30D372b857Ae7524305A0CE7`](https://optimistic.etherscan.io/address/0xF867712b963F00BF30D372b857Ae7524305A0CE7)
+- BSC: [`0x3952787d8Ec653E9179a3Fa5D8c018d7bD8e94c7`](https://bscscan.com/address/0x3952787d8Ec653E9179a3Fa5D8c018d7bD8e94c7)
 
 ## What happens exactly
 
@@ -72,7 +72,7 @@ Once done, head to your lock in the block explorer. You can click on the ethersc
 
 ![Etherscan Button](/img/creators/etherscan-button.png)
 
-Then, look for the `SetEvenHooks` function:
+Then, look for the `SetEventHooks` function:
 
 ![Set Events Hook Etherscan Dashboard](/img/creators/set-events-hook-etherscan.png)
 
