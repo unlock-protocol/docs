@@ -174,7 +174,6 @@ const config = {
       appId: "J4FN2FD27Q",
       apiKey: "9bcefa2858ec26676689edd55f03fd26",
       indexName: "unlock-protocol",
-      contextualSearch: true,
     },
     metadata: [
       {
