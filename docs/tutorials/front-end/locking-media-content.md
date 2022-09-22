@@ -22,7 +22,7 @@ HTML5 actually makes it very easy to embed any video in a document. Here's what 
 
 ```markup
 <video controls>
-  <source src="https://ia801602.us.archive.org/11/items/Rick_Astley_Neve  r_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4 type="video/mp4">
+  <source src="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4" type="video/mp4">
 </video>
 ```
 

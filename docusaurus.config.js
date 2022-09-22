@@ -16,7 +16,6 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "unlock-protocol", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
-
   plugins: [
     [
       require.resolve("docusaurus-gtm-plugin"),
@@ -117,16 +116,32 @@ const config = {
             to: "/tutorials/smart-contracts/ethers",
           },
           {
+            from: "/tutorials/smart-contracts/the-key-purchase-hook",
+            to: "/tutorials/smart-contracts/hooks/the-key-purchase-hook",
+          },
+          {
+            from: "/tutorials/smart-contracts/using-an-existing-nft-contract",
+            to: "/tutorials/smart-contracts/hooks/using-an-existing-nft-contract",
+          },
+          {
             from: "/tutorials/the-key-purchase-hook",
-            to: "/tutorials/smart-contracts/the-key-purchase-hook",
+            to: "/tutorials/smart-contracts/hooks/the-key-purchase-hook",
           },
           {
             from: "/tutorials/using-an-existing-nft-contract",
-            to: "/tutorials/smart-contracts/using-an-existing-nft-contract",
+            to: "/tutorials/smart-contracts/hooks/using-an-existing-nft-contract",
           },
           {
             from: "/tutorials/using-unlock-in-other-contracts",
             to: "/tutorials/smart-contracts/using-unlock-in-other-contracts",
+          },
+          {
+            from: "/core-protocol/deploying-locally/",
+            to: "/tutorials/smart-contracts/deploying-locally",
+          },
+          {
+            from: "/developers/unlock.js",
+            to: "/tools/unlock.js",
           },
         ],
       },
@@ -155,44 +170,77 @@ const config = {
   ],
 
   themeConfig: {
-    metadata: [
-      {
-        name: "keywords",
-        content:
-          "unlock, blockchain, nft, token-gate, memberships, subscriptions",
-      },
-      { property: "og:locale", content: "og:en_US" },
-      { poperty: "og:type", content: "website" },
-      {
-        property: "og:description",
-        content:
-          "Unlock Protocol technical documentation for developers with a complete protocol reference, tutorials and code examples.",
-      },
-      { property: "og:title", content: "Unlock Protocol Technical Docs" },
-      { property: "og:url", content: "https://docs.unlock-protocol.com/" },
-      { property: "og:image", content: "/img/dev-docs-share-img.png" },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "627" },
-      { property: "og:image:type", content: "image/png" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Unlock Protocol Technical Docs" },
-      {
-        name: "twitter:description",
-        content:
-          "Unlock Protocol technical documentation for developers with a complete protocol reference, tutorials and code examples.",
-      },
-      { name: "twitter:image", content: "/img/dev-docs-share-img.png" },
-      {
-        name: "twitter:image:alt",
-        content: "Unlock logo with the word docs next to it",
-      },
-    ],
     algolia: {
       appId: "J4FN2FD27Q",
       apiKey: "9bcefa2858ec26676689edd55f03fd26",
       indexName: "unlock-protocol",
       contextualSearch: true,
     },
+    metadata: [
+      {
+        name: "keywords",
+        content:
+          "unlock, blockchain, nft, token-gate, memberships, subscriptions",
+      },
+      {
+        property: "og:locale",
+        content: "og:en_US",
+      },
+      {
+        poperty: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:description",
+        content:
+          "Unlock Protocol technical documentation for developers with a complete protocol reference, tutorials and code examples.",
+      },
+      {
+        property: "og:title",
+        content: "Unlock Protocol Technical Docs",
+      },
+      {
+        property: "og:url",
+        content: "https://docs.unlock-protocol.com/",
+      },
+      {
+        property: "og:image",
+        content: "/img/dev-docs-share-img.png",
+      },
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+      {
+        property: "og:image:height",
+        content: "627",
+      },
+      {
+        property: "og:image:type",
+        content: "image/png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Unlock Protocol Technical Docs",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Unlock Protocol technical documentation for developers with a complete protocol reference, tutorials and code examples.",
+      },
+      {
+        name: "twitter:image",
+        content: "/img/dev-docs-share-img.png",
+      },
+      {
+        name: "twitter:image:alt",
+        content: "Unlock logo with the word docs next to it",
+      },
+    ],
     navbar: {
       title: "Unlock",
       logo: {
