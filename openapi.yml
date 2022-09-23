@@ -1,10 +1,9 @@
-openapi: "3.1.0"
+openapi: '3.0.0'
 info:
   title: Unlock Locksmith
-  version: "1"
-  description: Locksmith is unlock service which provides functionality such as storing metadata or webhooks.
+  version: '2'
+  description: Locksmith provides backend functionality for enabling ticketing, metadata storage, and notification hooks.
   license:
-    identifier: MIT
     name: MIT
 
 servers:
@@ -14,127 +13,77 @@ servers:
     description: Staging Server
 
 components:
-  schemas:
-    HubSubscription:
-      description: J
+  securitySchemes:
+    User:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    Application:
+      type: apiKey
+      name: api-key
+      in: query
+
 paths:
-  /api/key/:lockAddress/:keyID:
+  /v2/auth/nonce:
     get:
-      summary: Get Key Metadata
-      description: Return metadata for Key (NFT)
-      parameters:
-        - lockAddress:
-          name: lockAddress
-          in: path
-          description: Address of the Lock
-          required: true
-          schema:
-            type: string
-        - keyID:
-          name: keyID
-          in: path
-          required: true
-          description: ID of the crossiant to get, for free of course.
-          schema:
-            type: string
-        - data:
-          name: Data
-          required: true
-          in: query
-          description: Data associated with the provided signature
-          schema:
-            type: string
-
-        - Authentication:
-          name: Authentication
-          in: header
-          required: true
-          description: Authentication token to track down who is emptying our stock.
-          schema:
-            type: string
+      description: 'Provide a unique nounce for using in sign in with ethereum'
+      parameters: []
       responses:
-        "200":
-          description: Key metadata
-          content:
-            application/json:
-              {
-                "name": "Blue Checkmark",
-                "description": "A blue checkmark for all of your social web accounts! Unlock is a protocol for memberships. https://unlock-protocol.com/",
-                "image": "https://assets.unlock-protocol.com/nft-images/blue-checkmark.png",
-                "attributes":
-                  [
-                    {
-                      "trait_type": "Expiration",
-                      "value": 4720101493,
-                      "display_type": "date",
-                    },
-                  ],
-              }
-      NotFound:
-        description: Key Metadata not found.
-
-  /api/key/:lockAddress/keyHolderMetadata:
-    get:
-      summary: Get Key Holder Metadata for a Key Holders
-      description: Return lock owners with key holder provided metadata in bulk
-      parameters:
-        - lockAddress:
-          name: lockAddress
-          in: path
-          description: Address of the Lock
-          required: true
-          schema:
-            type: string
-        - keyID:
-          name: keyID
-          in: path
-          required: true
-          description: ID of the crossiant to get, for free of course.
-          schema:
-            type: string
-        - Authentication:
-          name: Authentication
-          in: header
-          required: true
-          description: Authentication token to track down who is emptying our stock.
-          schema:
-            type: string
-      responses:
-        "200":
-          description: Key metadata
-          content:
-            application/json:
-              {
-                "name": "Blue Checkmark",
-                "description": "A blue checkmark for all of your social web accounts! Unlock is a protocol for memberships. https://unlock-protocol.com/",
-                "image": "https://assets.unlock-protocol.com/nft-images/blue-checkmark.png",
-                "attributes":
-                  [
-                    {
-                      "trait_type": "Expiration",
-                      "value": 4720101493,
-                      "display_type": "date",
-                    },
-                  ],
-              }
-      NotFound:
-        description: Key Metadata not found.
-
-  /api/hooks/:network/locks:
+        '200':
+          description: OK
+  /v2/auth/login:
     post:
-      summary: Receive new locks created on unlock
-      description: Subscribe to new locks created on the specified network
+      description: 'Login as a user using Sign in with Ethereum message signed by the wallet address.'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                message:
+                  type: string
+                signature:
+                  type: string
+      responses:
+        '200':
+          description: OK
+  /v2/api/{network}/locks/{lockAddress}/keys:
+    get:
+      description: List of lock keys by network with additional metadata if the caller is the lockManager
       parameters:
-        - network:
-          name: Network
-          in: path
-          description: Network id for which you want to receive notifications
+        - in: path
+          name: network
+          required: true
           schema:
-            type: number
-      # requestBody:
-      #   description: Hub Request
-      #   required: true
-      #   content:
-      #     application/x-www-form-urlencoded:
-      #       schema:
-      #         $ref:
+            type: integer
+          description: Network id
+        - in: path
+          name: lockAddress
+          required: true
+          schema:
+            type: string
+          description: Lock address
+        - in: query
+          name: query
+          required: false
+          schema:
+            type: string
+          description: Query you want to search for.
+        - in: query
+          name: filterKey
+          required: false
+          schema:
+            type: string
+          description: The key you want to search on.
+        - in: query
+          name: expiration
+          schema:
+            type: string
+          description: Expiration time
+        - in: query
+          name: page
+          schema:
+            type: integer
+          description: Pagination
+      responses:
+        '200':
+          description: List of keys matching the query
