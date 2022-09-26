@@ -3,25 +3,27 @@ title: Getting Help
 description: >-
   A guide to how to get the help you need when you need it from the Unlock
   Protocol community.
+sidebar_position: 4
 ---
 
 # Getting Help
 
 ## Documentation
+
 Unlock Protocol’s documentation is organized into the following categories.
 
 - **[Getting Started:](https://docs.unlock-protocol.com/basics/)** An overview
-of web3 and Unlock Protocol core concepts (you are here).
+  of web3 and Unlock Protocol core concepts (you are here).
 - **[Core Protocol:](https://docs.unlock-protocol.com/core-protocol/)** An
-overview of the two smart contracts that make up the protocol and a complete
-interface reference generated from the smart contracts themselves.
+  overview of the two smart contracts that make up the protocol and a complete
+  interface reference generated from the smart contracts themselves.
 - **[Tools:](https://docs.unlock-protocol.com/tools/)** All the information you
-need about the tooling provided by Unlock Labs for protocol implementation.
+  need about the tooling provided by Unlock Labs for protocol implementation.
 - **[Tutorials:](https://docs.unlock-protocol.com/tutorials/)** In-depth articles
-on specific use cases and implementations.
+  on specific use cases and implementations.
 - **[Governance:](https://docs.unlock-protocol.com/governance/)** Everything you
-need to know about becoming a DAO member, [UDT](../governance/the-unlock-token/)
-governance tokens, and voting.
+  need to know about becoming a DAO member, [UDT](../governance/the-unlock-token/)
+  governance tokens, and voting.
 
 We also have [Creator Guides](https://unlock-protocol.com/guides/) geared towards
 people using the convenience applications we've built, step-by-step tutorials on
