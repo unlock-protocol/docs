@@ -6,22 +6,21 @@ description: >-
 
 # Using Unlock Protocol's contract with Ethers
 
-[Ethers](https://docs.ethers.io/) is a populer Ethereum library written in Javascript. It lets developers easily integrate Ethereum smart contracts in their applications.
+[Ethers](https://docs.ethers.io/) is a popular Ethereum library written in JavaScript. It lets developers easily integrate Ethereum smart contracts in their applications.
 
-In order to "read" state from the blockchain, Ethers requires the use of a provider. Based on the network that the contracts you are trying to interface with are deployed, you will have to use a different provider.
+In order to "read" state from the blockchain, Ethers requires the use of a provider. Different providers are required for different networks that a contract might be deployed to.
 
 Similarly, if you are trying to modify the state of a contract, you will need to use a "signer", connected to a provider.
 
 ## Accessing the contracts ABI
 
-The ABI is a description of all functions supported by a smart contract. Ethers uses ABI to "construct" JavaScript objects that map with the smart contracts.
-All of the Unlock contracts are not only open source, but also verified on Etherscan. This means you can easily retrieve their ABI from there. (You can also use our `@unlock-protocol/contracts` package).
+The ABI is a description of all functions supported by a smart contract. Ethers uses an ABI to "construct" JavaScript objects that map to the smart contracts. All of the Unlock contracts are not only open source but also verified on Etherscan. This means you can easily retrieve their ABI from there. (You can also use our `@unlock-protocol/contracts` package).
 
-It is also possible to use JSON files to provide the ABI.
+It is also possible to use JSON files to provide an ABI.
 
 ## Basic Example
 
-In this first example, we want to read state from a specific lock deployed on Goerli.
+In this first example, we want to read state from a specific lock deployed on Goerli. We're using a provider that allows you to easily create connections to many different blockchains [Infura](https://infura.io/) but you could just as easily use [Ankr](https://www.ankr.com/) or [Tatum](https://tatum.io/).
 
 ```javascript
 const ethers = require("ethers");
@@ -49,7 +48,7 @@ run();
 
 ## Finding the lock version
 
-Even though the ABI differs between every version, some functions are shared between _all lock_ versions in order to simplify compatinility. One of them is `publicLockVersion`. You can then easily retrieve the version of a lock with the following.
+Even though the ABI differs between every version, some functions are shared between _all lock_ versions in order to simplify compatibility. One of them is `publicLockVersion`. You can then easily retrieve the version of a lock with the following.
 
 ```javascript
 const ethers = require("ethers");
@@ -90,7 +89,7 @@ Note in the example above that `await lock.publicLockVersion()` returns a `BigNu
 
 ## Purchasing a membership NFT
 
-When writing an application, you may want to modify the state of Lock. The simplest and most commone state modification is to purchase a membership. Here is a detailed example.
+When writing an application, you may want to modify the state of a Lock. The simplest and most common state modification is to purchase a membership. Here is a detailed example.
 
 ```javascript
 const ethers = require("ethers");
