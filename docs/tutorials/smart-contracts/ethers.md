@@ -17,9 +17,11 @@ Similarly, if you are trying to modify the state of a contract, you will need to
 The ABI is a description of all functions supported by a smart contract. Ethers uses ABI to "construct" JavaScript objects that map with the smart contracts.
 All of the Unlock contracts are not only open source, but also verified on Etherscan. This means you can easily retrieve their ABI from there. (You can also use our `@unlock-protocol/contracts` package).
 
+It is also possible to use JSON files to provide the ABI.
+
 ## Basic Example
 
-In this first example, we want to read state from a specific lock deployed on Rinkeby
+In this first example, we want to read state from a specific lock deployed on Goerli.
 
 ```javascript
 const ethers = require("ethers");
@@ -27,20 +29,20 @@ const abis = require("@unlock-protocol/contracts");
 
 // Wrapping all calls in an async block
 const run = async () => {
-  // Here we use a Rinkeby provider. We will be able to read the state, but not send transactions.
+  // Here we use a Goerli provider. We will be able to read the state, but not send transactions.
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
   );
 
-  // We will interact with a lock deployed on rinkeby at this address 0xafa8fE6D93174D17D98E7A539A90a2EFBC0c0Fc1
+  // We will interact with a lock deployed on Goerli at this address 0x09A8F16Ed16C28f4774aBF73eCc071cfB423Ac24
   // Using Etherscan, we know that this is a lock of version 8, so we will load the corresponding ABI.
-  const address = "0xafa8fE6D93174D17D98E7A539A90a2EFBC0c0Fc1";
+  const address = "0x09A8F16Ed16C28f4774aBF73eCc071cfB423Ac24";
 
-  const lock = new ethers.Contract(address, abis.PublicLockV8.abi, provider);
+  const lock = new ethers.Contract(address, abis.PublicLockV11.abi, provider);
 
   // After that we can read the state of the lock, using methods from its ABI:
   console.log(await lock.symbol()); // => "KEY"
-  console.log(await lock.name()); // => "Test Oct 20"
+  console.log(await lock.name()); // => "Unlock Times"
 };
 run();
 ```
@@ -74,19 +76,19 @@ const PublicLockAbi = [
 // Wrapping all calls in an async block
 const run = async () => {
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
   );
-  const address = "0xafa8fE6D93174D17D98E7A539A90a2EFBC0c0Fc1";
+  const address = "0x09A8F16Ed16C28f4774aBF73eCc071cfB423Ac24";
   const lock = new ethers.Contract(address, PublicLockAbi, provider);
 
-  console.log((await lock.publicLockVersion()).toString()); // => 8
+  console.log((await lock.publicLockVersion()).toString()); // => 11
 };
 run();
 ```
 
 Note in the example above that `await lock.publicLockVersion()` returns a `BigNumber` which we convert to a string using [Ethers' helper](https://docs.ethers.io/v5/api/utils/bignumber/) `toString().
 
-## Modifying the state
+## Purchasing a membership NFT
 
 When writing an application, you may want to modify the state of Lock. The simplest and most commone state modification is to purchase a membership. Here is a detailed example.
 
@@ -96,9 +98,9 @@ const abis = require("@unlock-protocol/contracts");
 
 // Wrapping all calls in an async block
 const run = async () => {
-  // Here we use a Rinkeby provider. We will be able to read the state, but not send transactions.
+  // Here we use a Goerli provider. We will be able to read the state, but not send transactions.
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
   );
 
   // This time, we also need a signer.
@@ -106,13 +108,14 @@ const run = async () => {
   const wallet = ethers.Wallet.fromMnemonic(
     "seed cube fiction obvious cover riot edge beauty pelican radio useful strong"
   );
+
   const signer = wallet.connect(provider);
 
-  // We will interact with a lock deployed on rinkeby at this address 0xafa8fE6D93174D17D98E7A539A90a2EFBC0c0Fc1
-  const address = "0xafa8fE6D93174D17D98E7A539A90a2EFBC0c0Fc1";
+  // We will interact with a lock deployed on goerli at this address 0x09A8F16Ed16C28f4774aBF73eCc071cfB423Ac24
+  const address = "0x09A8F16Ed16C28f4774aBF73eCc071cfB423Ac24";
 
   // Let's go purchase the membership for this lock
-  const lock = new ethers.Contract(address, abis.PublicLockV8.abi, signer);
+  const lock = new ethers.Contract(address, abis.PublicLockV11.abi, signer);
 
   // If the lock was using an ERC20 as currency, we would need to send an approval transaction on the ERC20 contract first...
 
@@ -120,32 +123,80 @@ const run = async () => {
   const amount = await lock.keyPrice();
 
   // Purchase params:
+  // The purchase function in v11 supports making multiple purchases... here we just pass a single one.
   const purchaseParams = [
-    amount,
-    wallet.address, // This is the recipient of the membership (us!)
-    wallet.address, // The is the referrer who will earn UDT tokens (we'd like this to be us!)
-    [], // empty data object (not used here)
+    [amount],
+    [wallet.address], // This is the recipient of the membership (us!)
+    [wallet.address], // The is the referrer who will earn UDT tokens (we'd like this to be us!)
+    [ethers.constants.AddressZero], // The key manager. if 0x0, then it is the recipient by default
+    [[]], // empty data object (not used here)
   ];
 
-  const gasPrice = await provider.getGasPrice(); // Let's get the current gas price
   const options = {
-    gasPrice,
     value: amount, // This is a lock that uses Ether, so it means we need send value. If it was an ERC20 we could set this to 0 and just use the amount on purchase's first argument
   };
 
-  // Important: we need to compute the gasLimit ourselves because it is a funcion of gasPrice
-  // For safety we could also bump it (the user is refunded the difference anyway)
-  const gasEstimate = await lock.estimateGas.purchase(
-    ...purchaseParams,
-    options
-  );
-  options.gasLimit = gasEstimate;
-
   // We can now send transactions to modify the state of the lock, like purchase a key!
   const transaction = await lock.purchase(...purchaseParams, options);
+  console.log(transaction.hash);
   const receipt = await transaction.wait();
+  console.log(receipt);
 };
 run();
 ```
 
 All in all, if you are already using Ethers, all of this should be pretty familiar!
+
+## Deploying new Membership contract
+
+New Locks are deployed using the Unlock contract (it is a factory contract). For this, it is recommend to use the `createUpgradeableLockAtVersion` function. This function deploys a lock at a specific version and takes 2 arguments: a blob of all the arguments and the version number.
+
+Here we deploy locks in version 11:
+
+```javascript
+const ethers = require("ethers");
+const abis = require("@unlock-protocol/contracts");
+
+// Wrapping all calls in an async block
+const run = async () => {
+  // Here we use a Rinkeby provider. We will be able to read the state, but not send transactions.
+  const provider = new ethers.providers.JsonRpcProvider(
+    "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+  );
+
+  // This time, we also need a signer.
+  // Note: we sent some fake Eth to this address, but please replace with your own!
+  const wallet = ethers.Wallet.fromMnemonic(
+    "seed cube fiction obvious cover riot edge beauty pelican radio useful strong"
+  );
+
+  const signer = wallet.connect(provider);
+
+  // On goerli Unlock is at
+  const address = "0x627118a4fB747016911e5cDA82e2E77C531e8206";
+
+  // Instantiate the Unlock contract
+  const unlock = new ethers.Contract(address, abis.UnlockV11.abi, signer);
+
+  // Lock params:
+  const lockInterface = new ethers.utils.Interface(abis.PublicLockV11.abi);
+  const params = lockInterface.encodeFunctionData(
+    "initialize(address,uint256,address,uint256,uint256,string)",
+    [
+      signer.address,
+      31 * 60 * 60 * 24, // 30 days in seconds
+      ethers.constants.AddressZero, // We use the base chain currency
+      ethers.utils.parseUnits("0.01", 18), // 0.01 Eth
+      1000,
+      "New Membership",
+    ]
+  );
+
+  const transaction = await unlock.createUpgradeableLockAtVersion(params, 11);
+  console.log(transaction.hash);
+  const receipt = await transaction.wait();
+  const lockAddress = receipt.logs[0].address;
+  console.log(lockAddress);
+};
+run();
+```
