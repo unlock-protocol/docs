@@ -5,9 +5,9 @@ description: >-
 sidebar_position: 3
 ---
 
-Unlock is a on-chain protocol: the smart contracts are collectively governed and amy application can interract with them.
+Unlock is a on-chain protocol: the smart contracts are collectively governed and any application can interract with them.
 
-The Unlock Labs team, as promoters of the protocol have built multiple [tools](../tools/) and applications to simplify interractions with the smart contracts, including [subgraphs](../tools/subgraph.md), a [checkout UI](../tools/checkout/), or the [credit card gateway](https://unlock-protocol.com/guides/enabling-credit-cards/). However, **these are completely optional**, and can very well skipped entirely when building applications that integrate Unlock.
+The Unlock Labs team, as promoters of the protocol, have built multiple [tools](../tools/) and applications to simplify interractions with the smart contracts, including [subgraphs](../tools/subgraph.md), a [checkout UI](../tools/checkout/), or the [credit card gateway](https://unlock-protocol.com/guides/enabling-credit-cards/). However, **these are completely optional**, and can very well skipped entirely when building applications that integrate Unlock.
 
 For example, [this application](https://examples-wagmi.vercel.app/) uses the [Wagmi](https://wagmi.sh/) framework to let users deploy new lock contracts, or purchase memberships from existing contracts without using any of the Unlock tools.
 
