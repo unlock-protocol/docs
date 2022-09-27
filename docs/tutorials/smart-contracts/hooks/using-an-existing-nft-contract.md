@@ -18,7 +18,7 @@ We have deployed these hook contracts on each of the networks that we currently 
 
 **Using an ERC20**
 
-- Rinkeby : [`0xA316437719A1595659237c86FeCB93f20c689209`](https://rinkeby.etherscan.io/address/0xA316437719A1595659237c86FeCB93f20c689209)
+- Goerli: [`0x9211c8E7032fd8294523F7Ab66F1a8DF99bE7D24`](https://goerli.etherscan.io/address/0x9211c8E7032fd8294523F7Ab66F1a8DF99bE7D24)
 - Polygon: [`0xd4C62b84eb42c03A118639c39dF1Fb680FF9E776`](https://polygonscan.com/address/0xd4C62b84eb42c03A118639c39dF1Fb680FF9E776#code)
 - xdai: [`0xd10DF26AEaE179521D6195Cf6f3b2701B5089Fb6`](https://blockscout.com/xdai/mainnet/address/0xd10DF26AEaE179521D6195Cf6f3b2701B5089Fb6#code)
 - mainnet: [`0x807D3E3564f25b43eDd8Fb8300BCb17b415d9Ee8`](https://etherscan.io/address/0x807D3E3564f25b43eDd8Fb8300BCb17b415d9Ee8#code)
@@ -27,8 +27,8 @@ We have deployed these hook contracts on each of the networks that we currently 
 
 **Using an ERC721**
 
+- Goerli: [`0xc6894007A98e9fe0c8c2b5Dc30Df5b76d11650CC`](https://goerli.etherscan.io/address/0xc6894007A98e9fe0c8c2b5Dc30Df5b76d11650CC)
 - Mainnet: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE#code)
-- Rinkeby: [`0x910F56Fb797D9c7a978a08e73D7280e67eb81372`](https://rinkeby.etherscan.io/address/0x910F56Fb797D9c7a978a08e73D7280e67eb81372)
 - Gnosis Chain: [`0xE4c2f9281ec03a1956c3756C66E73f22233323D3`](https://blockscout.com/xdai/mainnet/address/0xE4c2f9281ec03a1956c3756C66E73f22233323D3/contracts)
 - Polygon: [`0xf705b2dd649bbcb9418d08c1ff508a983f923516`](https://polygonscan.com/address/0xf705b2dd649bbcb9418d08c1ff508a983f923516)
 - Optimism: [`0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE`](https://optimistic.etherscan.io/address/0xFcD6f91e144F2F4B219a760F3Bf0D235DE37d1FE)
@@ -36,8 +36,8 @@ We have deployed these hook contracts on each of the networks that we currently 
 
 **Using an ERC1155**
 
+- Goerli: [`0xC17F0858240Eca0Fdf935C3D7Eba2d39c35ac8F1`](https://goerli.etherscan.io/address/0xC17F0858240Eca0Fdf935C3D7Eba2d39c35ac8F1)
 - Mainnet: [`0x8ec9FB8FCC5ab6E0bD04EfD9e42A8f6Be45eaeC2`](https://etherscan.io/address/0x8ec9FB8FCC5ab6E0bD04EfD9e42A8f6Be45eaeC2)
-- Rinkeby : [`0xD7477B7c0CdA4204Cf860e4c27486061b15a5AC3`](https://rinkeby.etherscan.io/address/0xD7477B7c0CdA4204Cf860e4c27486061b15a5AC3)
 - Gnosis Chain: [`0x4F44e968961f5ff818b788E626564BBAF2c96bAC`](https://blockscout.com/xdai/mainnet/address/0x4F44e968961f5ff818b788E626564BBAF2c96bAC)
 - Polygon: [`0x0C0cEEcF5C14EBF1Fcf6779F92766128eeE7098C`](https://polygonscan.com/address/0x0C0cEEcF5C14EBF1Fcf6779F92766128eeE7098C)
 - Optimism: [`0xF867712b963F00BF30D372b857Ae7524305A0CE7`](https://optimistic.etherscan.io/address/0xF867712b963F00BF30D372b857Ae7524305A0CE7)
