@@ -1,5 +1,4 @@
 ---
-id: Checkout
 title: Checkout
 description: >-
   Explainer on the what the checkout endpoint is which exists as part of
@@ -13,14 +12,17 @@ and Keychain portions, but that app has an endpoint called checkout which accept
 a configuration object as params and returns a custom configured checkout experience.
 
 ## The experience
+
 This experience can also be used in a few different ways:
+
 1. Stand-alone as a link you distribute to your members via email, Discord, etc.
    for minting your membership/ticket/credential NFT
 1. Embedded in your website directly
 1. In combination with the Paywall our javascript library which is a thin
-    wrapper around the checkout and Unlock APIs
+   wrapper around the checkout and Unlock APIs
 
 ## Examples
+
 There are two places you can experience what that looks like without
 having to write any code or configure your own URL.
 

@@ -153,8 +153,9 @@ const config = {
       /** @type {import('docusaurus-preset-openapi').Options} */
       ({
         api: {
+          sidebarCollapsed: false,
           path: "./openapi.yml",
-          routeBasePath: "/tools/locksmith/api",
+          routeBasePath: "/api/locksmith",
         },
         docs: {
           showLastUpdateTime: false,
@@ -248,7 +249,7 @@ const config = {
         href: "https://unlock-protocol.com/",
       },
       items: [
-        { to: "/", label: "Docs", position: "right" },
+        { to: "/", label: "Home", position: "right" },
         {
           to: "https://app.unlock-protocol.com/dashboard",
           label: "Dashboard",
@@ -281,15 +282,15 @@ const config = {
             },
             {
               label: "Tools",
-              to: "/",
+              to: "/tools",
             },
             {
               label: "Tutorials",
-              to: "/",
+              to: "/tutorials",
             },
             {
               label: "Goverance",
-              to: "/",
+              to: "/governance",
             },
             {
               label: "GitHub",
