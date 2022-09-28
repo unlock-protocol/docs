@@ -63,10 +63,6 @@ const sidebars = {
       type: "category",
       items: [
         "tools/dashboard",
-        "tools/hardhat-plugin",
-        "tools/rpc-provider",
-        "tools/subgraph",
-        "tools/unlock.js",
         {
           type: "category",
           label: "Sign in with ethereum",
@@ -96,6 +92,7 @@ const sidebars = {
             },
           ],
         },
+        "tools/unlock.js",
         {
           type: "category",
           label: "Paywall",
@@ -129,6 +126,9 @@ const sidebars = {
             "tools/locksmith/webhooks",
           ],
         },
+        "tools/subgraph",
+        "tools/hardhat-plugin",
+        "tools/rpc-provider",
       ],
     },
     {

@@ -1,6 +1,6 @@
 ---
 title: Roadmap
-sidebar_position: 1
+sidebar_position: 2
 description: >-
   Regularly updated roadmap of the bigger picture goals being worked
   on for Unlock Protocol.
@@ -18,7 +18,6 @@ As of Summer 2022, the Unlock ecosystem consists of the following:
 - The [Unlock DAO](https://unlock-protocol.com/blog/unlock-dao), a set of contracts that lets anyone who owns Unlock tokens submit proposals and vote on them in order to effectively govern the protocol and its treasury
 
 # December 31th 2022
-
 
 - Fully refactored Dashboard:
   - "action" driven lock deployment
