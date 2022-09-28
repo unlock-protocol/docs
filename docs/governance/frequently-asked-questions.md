@@ -1,6 +1,6 @@
 ---
 title: Unlock DAO - Frequently Asked Questions
-sidebar_position: 3
+sidebar_position: 4
 description: Answering all of your faqs about Unlock DAO, UDT and governance.
 ---
 

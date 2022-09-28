@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 title: Governance
 description: Introduction to Unlock DAO governance.
 ---
