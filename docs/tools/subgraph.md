@@ -13,22 +13,22 @@ Unlock leverages the [Graph Protocol](https://thegraph.com) to simplify the proc
 
 The Graph Protocol provides an accessible GraphQL service providing useful aggregate Unlock data from the Ethereum blockchain. The links below provide a rudimentary tool to build and test your queries.
 
-[Ethereum Mainnet](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock)
+[Ethereum Mainnet](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-v2)
 
-[Rinkeby (Ethereum testnet)](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-rinkeby)
+[Rinkeby (Ethereum testnet)](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-rinkeby-v2)
 
-[Goerli (Ethereum testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/goerli)
+[Goerli (Ethereum testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/goerli-v2)
 
-[Arbitrum](https://thegraph.com/hosted-service/subgraph/unlock-protocol/arbitrum)
+[Arbitrum](https://thegraph.com/hosted-service/subgraph/unlock-protocol/arbitrum-v2)
 
-[Celo](https://thegraph.com/hosted-service/subgraph/unlock-protocol/celo)
+[Celo](https://thegraph.com/hosted-service/subgraph/unlock-protocol/celo-v2)
 
-[Gnosis Chain (xDAI)](https://thegraph.com/explorer/subgraph/unlock-protocol/xdai)
+[Gnosis Chain (xDAI)](https://thegraph.com/explorer/subgraph/unlock-protocol/xdai-v2)
 
-[Polygon (ex-Matic)](https://thegraph.com/explorer/subgraph/unlock-protocol/polygon)
+[Polygon (ex-Matic)](https://thegraph.com/explorer/subgraph/unlock-protocol/polygon-v2)
 
-[Mumbai (Polygon testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/mumbai)
+[Mumbai (Polygon testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/mumbai-v2)
 
-[Binance Smart Chain](https://thegraph.com/hosted-service/subgraph/unlock-protocol/bsc)
+[Binance Smart Chain](https://thegraph.com/hosted-service/subgraph/unlock-protocol/bsc-v2)
 
-[Optimism](https://thegraph.com/hosted-service/subgraph/unlock-protocol/optimism)
+[Optimism](https://thegraph.com/hosted-service/subgraph/unlock-protocol/optimism-v2)
