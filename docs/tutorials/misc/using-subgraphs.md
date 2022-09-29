@@ -25,16 +25,20 @@ In order to get the locks managed by a given address, we build the following req
 
 ```javascript
 {
-  lockManagers(where: { address: "0xDD8e2548da5A992A63aE5520C6bC92c37a2Bcc44" }) {
-    lock(orderBy: creationBlock, orderDirection: desc) {
-      address
-      name
-      price
-      tokenAddress
-      expirationDuration
-      totalSupply
-      maxNumberOfKeys
-    }
+  locks(orderBy: createdAtBlock, orderDirection: desc, where:{
+    lockManagers_contains: 
+    [ "0xDD8e2548da5A992A63aE5520C6bC92c37a2Bcc44" ]
+  }) {
+    id
+    address
+    name
+    lockManagers
+    price 
+    tokenAddress
+    totalSupply
+    expirationDuration
+    maxNumberOfKeys
+    version
   }
 }
 ```
@@ -48,15 +52,20 @@ There are exists multiple GraphQL libraries in many languages. Here we will focu
 ```javascript
 // We build the query, with a variable $owner
 const query = `query Locks($owner: String!) {
-  lockManagers(where: { address: $owner }) {
-    lock(orderBy: creationBlock, orderDirection: desc) {
+    lock(orderBy: createdAtBlock, orderDirection: desc, 
+    where:{
+      lockManagers_contains: 
+      [ $owner ]
+    })
+     {
+      id
       address
       name
-      price
+      lockManagers
+      price 
       tokenAddress
-      expirationDuration
-      totalSupply
-      maxNumberOfKeys
+      expirationDuration    
+      version
     }
   }
 }`;
@@ -87,28 +96,30 @@ The `result` variable will be populated with the result of the query. It will be
 ```json
 {
   "data": {
-    "lockManagers": [
+    "locks": [
       {
-        "lock": {
-          "address": "0x0dbcdfef8f5b0f8bb3de068cdc56d4c6b6d68914",
-          "expirationDuration": "864000",
-          "maxNumberOfKeys": null,
-          "name": "xDAI Lock",
-          "price": "100000000000000000",
-          "tokenAddress": "0x0000000000000000000000000000000000000000",
-          "totalSupply": "0"
-        }
+        "id": "0x3ba39a6185ac5d35927e6166255bebee9f61112d",
+        "address": "0x3ba39a6185ac5d35927e6166255bebee9f61112d",
+        "name": "First Goerli Lock",
+        "lockManagers": [
+          "0xdd8e2548da5a992a63ae5520c6bc92c37a2bcc44"
+        ],
+        "price": "70000000000000000",
+        "tokenAddress": "0x0000000000000000000000000000000000000000",
+        "expirationDuration": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "version": "10"
       },
       {
-        "lock": {
-          "address": "0x18c39c5ed5c28681a1b44e31488a5639439419a1",
-          "expirationDuration": "31536000",
-          "maxNumberOfKeys": null,
-          "name": "Ouvre-Boite",
-          "price": "5000000000000000000",
-          "tokenAddress": "0x0000000000000000000000000000000000000000",
-          "totalSupply": "0"
-        }
+        "id": "0x874161a65ab3341b958c815cc933b9868ac4790e",
+        "address": "0x874161a65ab3341b958c815cc933b9868ac4790e",
+        "name": "Second Goerli lock",
+        "lockManagers": [
+          "0xdd8e2548da5a992a63ae5520c6bc92c37a2bcc44"
+        ],
+        "price": "10000000000000000",
+        "tokenAddress": "0x0000000000000000000000000000000000000000",
+        "expirationDuration": "2592000",
+        "version": "10"
       }
     ]
   }
