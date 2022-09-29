@@ -43,7 +43,7 @@ In order to get the locks managed by a given address, we build the following req
 }
 ```
 
-We first get the `lockManager` whose address matches the one we're looking for, and then, retrieve the locks, sorted by the creation block in a descending order (first in the list is the most recent). For each lock, we get their address, name, price, token (if it is an ERC20 lock), duration, as well as total supply and maximum number of memberships.
+We retrieve  the locks sorted by the creation block in a descending order (first in the list is the most recent) where the `lockManagers` field contains our given address. For each lock, we get their address, name, price, token (if it is an ERC20 lock), duration, as well as total supply and maximum number of memberships.
 
 ## Sending the request
 
