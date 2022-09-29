@@ -15,7 +15,6 @@ The Graph Protocol provides an accessible GraphQL service providing useful aggre
 
 [Ethereum Mainnet](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-v2)
 
-[Rinkeby (Ethereum testnet)](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-rinkeby-v2)
 
 [Goerli (Ethereum testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/goerli-v2)
 
