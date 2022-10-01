@@ -143,6 +143,14 @@ const config = {
             from: "/developers/unlock.js",
             to: "/tools/unlock.js",
           },
+          {
+            from: "/basics/deploying-a-lock",
+            to: "/core-protocol/public-lock/deploying-locks/"
+          },
+          {
+            from: "/tools/paywall/configuring-checkout",
+            to: "/tools/checkout/configuration/"
+          }
         ],
       },
     ],
