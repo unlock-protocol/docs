@@ -145,11 +145,11 @@ const config = {
           },
           {
             from: "/basics/deploying-a-lock",
-            to: "/core-protocol/public-lock/deploying-locks/"
+            to: "/core-protocol/public-lock/deploying-locks"
           },
           {
             from: "/tools/paywall/configuring-checkout",
-            to: "/tools/checkout/configuration/"
+            to: "/tools/checkout/configuration"
           }
         ],
       },
