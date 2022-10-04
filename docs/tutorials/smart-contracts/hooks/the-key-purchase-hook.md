@@ -21,7 +21,7 @@ Here are a few use cases this enables:
 
 - **Access code**
 
-  *Example*: `Enter 'this is a beta' to gain access`
+  _Example_: `Enter 'this is a beta' to gain access`
 
   You might want to limit access to a smaller group, e.g. maybe you are beta testing a new feature and want to invite everyone from your Telegram channel. You could offer a key for free, but require they explicitly acknowledge the risks by entering this code.
 
@@ -29,7 +29,7 @@ Here are a few use cases this enables:
 
 - **Whitelist**
 
-  *Example*: `KYC required`
+  _Example_: `KYC required`
 
   A whitelist can be created with this feature as well. This allows a trusted operator to confirm which ETH accounts may purchase a key. e.g. maybe you need to check IDs first.
 
@@ -52,7 +52,6 @@ We created the `DiscountCodeHook` contract that allows you to add discount codes
 The contract is deployed here and may be leveraged by all v7+ locks \(i.e. you do not need to deploy your own discount code contract\):
 
 - Mainnet address: [0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c](https://etherscan.io/address/0x3c895c794be4dc403f8802ef6d95aa1de3cbb04c)
-- Rinkeby address: [0x13738ae895f1e35eedf7f3227109567a5ce40eab](https://rinkeby.etherscan.io/address/0x13738ae895f1e35eedf7f3227109567a5ce40eab)
 
 ### How it works
 

@@ -33,9 +33,9 @@ const ethers = require("ethers");
 const { Web3Service } = require("@unlock-protocol/unlock-js");
 
 const networks = {
-  4: {
-    unlockAddress: "0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b", // Smart contracts docs include all addresses on all networks
-    provider: "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+  5: {
+    unlockAddress: "0x627118a4fB747016911e5cDA82e2E77C531e8206", // Smart contracts docs include all addresses on all networks
+    provider: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
   },
 };
 
@@ -71,16 +71,16 @@ const { WalletService } = require("@unlock-protocol/unlock-js");
 
 const networks = {
   4: {
-    unlockAddress: "0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b", // Smart contracts docs include all addresses on all networks
-    provider: "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    unlockAddress: "0x627118a4fB747016911e5cDA82e2E77C531e8206", // Smart contracts docs include all addresses on all networks
+    provider: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
   },
 };
 
-// Initializing RPC provider and connect it to Rinkeby
-const provider = new ethers.providers.JsonRpcProvider(networks[4].provider);
+// Initializing RPC provider and connect it to Goerli
+const provider = new ethers.providers.JsonRpcProvider(networks[5].provider);
 
 // Create a wallet.
-// This one should have a little bit of rinkeby eth but please send more if you use it:
+// This one should have a little bit of fake eth but please send more if you use it:
 // 0x42fb30ae9694c45f76d98d01adf4103fc7b636a6
 const wallet = new ethers.Wallet.fromMnemonic(
   "solid entry walnut extend aisle skirt myth clog need analyst edit bench"
@@ -118,16 +118,16 @@ const { WalletService } = require("@unlock-protocol/unlock-js");
 
 const networks = {
   4: {
-    unlockAddress: "0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b", // Smart contracts docs include all addresses on all networks
-    provider: "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    unlockAddress: "0x627118a4fB747016911e5cDA82e2E77C531e8206", // Smart contracts docs include all addresses on all networks
+    provider: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
   },
 };
 
-// Initializing RPC provider and connect it to Rinkeby
-const provider = new ethers.providers.JsonRpcProvider(networks[4].provider);
+// Initializing RPC provider and connect it to Goerli
+const provider = new ethers.providers.JsonRpcProvider(networks[5].provider);
 
 // Create a wallet.
-// This one should have a little bit of rinkeby eth but please send more if you use it:
+// This one should have a little bit of eth but please send more if you use it:
 // 0x42fb30ae9694c45f76d98d01adf4103fc7b636a6
 const wallet = new ethers.Wallet.fromMnemonic(
   "solid entry walnut extend aisle skirt myth clog need analyst edit bench"
