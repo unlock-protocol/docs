@@ -15,13 +15,13 @@ Currently, locksmith support sending updates on new locks and keys. To subscribe
 
 Let's send a subscribe request to receive updates on new locks.
 
-1. We need to send a subscribe request to the hub located at `/api/hooks/:network/locks` where network param should be the ID. For example, to receive updates on new locks created on rinkeby network, the endpoint would be `/api/hooks/4/locks`
+1. We need to send a subscribe request to the hub located at `/api/hooks/:network/locks` where network param should be the ID. For example, to receive updates on new locks created on polygon network (chain id 137), the endpoint would be `/api/hooks/137/locks`
 2. Make a subscribe request. Here's an example of it in javascript.
 
 ```javascript
 // Subscribe request to receive updates on new Locks
 async function subscribe() {
-  const endpoint = "https://locksmith.unlock-protocol.com/api/hooks/4/locks";
+  const endpoint = "https://locksmith.unlock-protocol.com/api/hooks/137/locks";
 
   const formData = new FormData();
 

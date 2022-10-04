@@ -1,9 +1,7 @@
-
 # Networks
 
-You should **not need to deploy an Unlock contract yourself**. Here are the addresses of contracts 
+You should **not need to deploy an Unlock contract yourself**. Here are the addresses of contracts
 deployed on respective networks and you can call them directly using the block explorer.
-
 
 ## Ethereum
 
@@ -12,14 +10,6 @@ The most popular network
 - chainId: 1
 - native currency: Ether (Eth)
 - unlockAddress: [`0x3d5409CcE1d45233dE1D4eBDEe74b8E004abDD13`](https://etherscan.io/address/0x3d5409CcE1d45233dE1D4eBDEe74b8E004abDD13)
-
-## Rinkeby
-
-Ethereum test network. Do not use for production
-
-- chainId: 4
-- native currency: Rinkeby Eth (Eth)
-- unlockAddress: [`0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b`](https://rinkeby.etherscan.io/address/0xd8c88be5e8eb88e38e6ff5ce186d764676012b0b)
 
 ## Goerli (Testnet)
 
@@ -76,5 +66,3 @@ Polygon test network. Do not use for production
 - chainId: 80001
 - native currency: MATIC (MATIC)
 - unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://mumbai.polygonscan.com/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
-
-
