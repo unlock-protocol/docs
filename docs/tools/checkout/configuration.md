@@ -16,12 +16,6 @@ All of the purchase URsL start with the following base
 https://app.unlock-protocol.com/checkout?
 ```
 
-:::caution
-
-If you are looking for a way to use the legacy unlock checkout, use `https://app.unlock-protocol.com/legacy/checkout?` as path.
-
-:::
-
 After this, you will need to include the following parameters:
 
 - `paywallConfig=...` where `...` is replaced with the URL-encoded version of a JSON `paywallConfig` object. The next section will show you how to build this object.
@@ -52,7 +46,10 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 - `referrer`: _optional string_. The address which will [receive UDT tokens](../../governance/the-unlock-token/) \(if the transaction is applicable\)
 - `messageToSign`: _optional string_. If supplied, the user is prompted to sign this message using their wallet. If using a checkout URL, a `signature` query param is then appended to the `redirectUri` \(see above\). If using the embedded paywall, the `unlockProtocol.authenticated` includes the `signature` attribute.
 - `pessimistic`: _optional boolean_ defaults to `false`_._ By default, to reduce friction, we do not require users to wait for the transaction to be mined before offering them to be redirected. By setting this to `true`, users will need to wait for the transaction to have been mined in order to proceed to the next step.
+- `captcha`: _optional boolean_. defaults to `false`. If set `true`, the users will be prompted to go through a captcha during the checkout process. This is better used in conjunction with a purchase hook that verifies that captcha is valid.
 - `password`: _optional boolean_. Defaults to `false`. If set to `true`, the user will be prompted to enter a password in order to complete their purchases. This will only be useful if the lock is connected to a hook that will handle the [password verification](../../tutorials/smart-contracts/hooks/using-on-key-purchase-hook-to-password-protect.md).
+- `emailRequired`: _optional boolean_. Defaults to `false`. If set to `true`, the user will be prompted to enter an email which will be stored as metadata and be visible to any lock manager.
+- `dataBuilder`: _optional url_. If set to a url, checkout will call the URL through a proxy with `recipient`, `lockAddress`, and `network` field for a json response containing data _string_ field. This will be passed to the purchase function when user is claiming or buying the key as is. Make sure the returned data is valid bytes.
 
 ### Locks
 
@@ -64,27 +61,10 @@ The locks object is a list of objects indexed by the lock address, where each ob
 - `metadataInputs`: _optional array_, a set of input fields [as explained there](./collecting-metadata.md).
 - `minRecipients`: \_optional number, set the minimum number of memberships a user needs to purchase.
 - `maxRecipients`: \_optional number, set the max number of memberships a user can purchase. Note: By default, checkout doesn't allow fiddling with quantity. You have to set maxRecipients to allow for changing to quantity.
-
-### Calls to action (Legacy)
-
-:::caution
-
-Call to action options are not available in the current checkout version. They will however continue to work in the legacy checkout if you want to use them.
-
-:::
-
-The `callToAction` object lets you customize the messages displayed on the checkout UI. They are all optional strings:
-
-- `default` : displayed by default
-- `expired` : displayed when the user had a membership previously that expired
-- `metadata`: displayed when the user is prompted for metadata
-- `quantity`: displayed when user needs to select the quantity for the membership
-- `messageToSign`: displayed when user needs to sign a message provided by you
-- `captcha`: displayed if captcha is enabled and user needs to solve it.
-- `card`: displayed on the card payment selection screen
-- `returning`: displayed if user already has a membership
-- `confirmed`: displayed when user need to confirm their purchase
-- `minting`: displayed at the end when NFT is being minted
+- `emailRequired`: _optional boolean_. Defaults to `false`. If set to `true`, the user will be prompted to enter an email which will be stored as metadata and be visible to any lock manager.
+- `captcha`: _optional boolean_. defaults to `false`. If set `true`, the users will be prompted to go through a captcha during the checkout process. This is better used in conjunction with a purchase hook that verifies that captcha is valid.
+- `password`: _optional boolean_. Defaults to `false`. If set to `true`, the user will be prompted to enter a password in order to complete their purchases. This will only be useful if the lock is connected to a hook that will handle the [password verification](../../tutorials/smart-contracts/hooks/using-on-key-purchase-hook-to-password-protect.md).
+- `dataBuilder`: _optional url_. If set to a url, checkout will call the URL through a proxy with `recipient`, `lockAddress`, and `network` field for a json response containing data _string_ field. This will be passed to the purchase function when user is claiming or buying the key as is. Make sure the returned data is valid bytes.
 
 ### Network values
 
