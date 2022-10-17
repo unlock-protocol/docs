@@ -34,7 +34,7 @@ Don't let the names fool you! All locks (after version 9) are upgradable!
 
 Contract upgrades can only be made using new versions that are supported by the protocol (ie. approved by the DAO) and can only be triggered by a lock manager on _their_ lock(s). The core team, the DAO, or anyone else **not** able to upgrade locks.
 
-See ["Access Control"](../../core-protocol/public-lock/access-control/) for mpre details on the roles and permissions.
+See ["Contract Management"](../../core-protocol/public-lock/access-control/) for more details on the roles and permissions.
 
 :::caution
 If a Lock manager renounces their role, leaving no lock manager, then a Lock can no longer be upgraded.
