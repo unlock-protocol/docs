@@ -1,16 +1,16 @@
 ---
-title: Access Control
+title: Contract Management
 description: >-
   A description of the updated access control system for Unlock Protocol "Lock"
   contracts.
 sidebar_position: 2
 ---
 
-# Access Control
+# Contract Management
 
 ## Definitions
 
-First, let's define the elements of our Access control system for the purposes of this document.
+First, let's define the elements of our Contract Management system for the purposes of this document.
 
 ### Roles
 
