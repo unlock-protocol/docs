@@ -15,7 +15,6 @@ The Graph Protocol provides an accessible GraphQL service providing useful aggre
 
 [Ethereum Mainnet](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-v2)
 
-
 [Goerli (Ethereum testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/goerli-v2)
 
 [Arbitrum](https://thegraph.com/hosted-service/subgraph/unlock-protocol/arbitrum-v2)
@@ -32,6 +31,6 @@ The Graph Protocol provides an accessible GraphQL service providing useful aggre
 
 [Optimism](https://thegraph.com/hosted-service/subgraph/unlock-protocol/optimism-v2)
 
-[Optimism](https://thegraph.com/hosted-service/subgraph/unlock-protocol/avalanche-v2)
+[Avalanche](https://thegraph.com/hosted-service/subgraph/unlock-protocol/avalanche-v2)
 
 NB: As of 2022, September 29 a new version of the subgraph containing breaking changes has been deployed for all existing chains. Subsequently the subgraph URL has been updated with a `-v2` suffix pointing to the new version, as previous URLs will be shut down.
