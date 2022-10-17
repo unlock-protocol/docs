@@ -1,7 +1,7 @@
 ---
 title: Contract Management
 description: >-
-  A description of the updated access control system for Unlock Protocol "Lock"
+  A description of the updated contract management system for Unlock Protocol "Lock"
   contracts.
 sidebar_position: 2
 ---

@@ -13,7 +13,7 @@ Unlock leverages the [Graph Protocol](https://thegraph.com) to simplify the proc
 
 The Graph Protocol provides an accessible GraphQL service providing useful aggregate Unlock data from the Ethereum blockchain. The links below provide a rudimentary tool to build and test your queries.
 
-[Ethereum Mainnet](https://thegraph.com/explorer/subgraph/unlock-protocol/unlock-v2)
+[Ethereum Mainnet](https://thegraph.com/explorer/subgraph/unlock-protocol/mainnet-v2)
 
 [Goerli (Ethereum testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/goerli-v2)
 
@@ -21,7 +21,7 @@ The Graph Protocol provides an accessible GraphQL service providing useful aggre
 
 [Celo](https://thegraph.com/hosted-service/subgraph/unlock-protocol/celo-v2)
 
-[Gnosis Chain (xDAI)](https://thegraph.com/explorer/subgraph/unlock-protocol/xdai-v2)
+[Gnosis Chain (xDAI)](https://thegraph.com/explorer/subgraph/unlock-protocol/gnosis-v2)
 
 [Polygon (ex-Matic)](https://thegraph.com/explorer/subgraph/unlock-protocol/polygon-v2)
 
