@@ -25,5 +25,5 @@
 /unlock/creators/faq                                                      https://unlock-protocol.com/guides/
 /basics/deploying-a-lock                                                  https://docs.unlock-protocol.com/core-protocol/public-lock/deploying-locks/
 /tools/paywall/configuring-checkout                                       https://docs.unlock-protocol.com/tools/checkout/configuration/
-/unlock/developers/smart-contracts#production-networks                    /core-protocol/unlock/networks
-/unlock/developers/paywall/configuring-checkout#the-paywallconfig-object  /tools/checkout/configuration#the-paywallconfig-object
+/unlock/developers/smart-contracts#production-networks                    https://docs.unlock-protocol.com/core-protocol/unlock/networks
+/unlock/developers/paywall/configuring-checkout#the-paywallconfig-object  https://docs.unlock-protocol.com/tools/checkout/configuration#the-paywallconfig-object
