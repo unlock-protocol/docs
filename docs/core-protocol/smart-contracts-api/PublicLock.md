@@ -170,7 +170,7 @@ function cancelAndRefund(uint256 _tokenId) external nonpayable
 function expirationDuration() external view returns (uint256)
 ```
 
-=================================================================== Auto-generated getter functions from public state variables
+
 
 
 
@@ -279,7 +279,7 @@ Get the approved address for a single NFT
 function getCancelAndRefundValue(uint256 _tokenId) external view returns (uint256 refund)
 ```
 
-due to the time required to mine a tx, the actual refund amount will be lower than what the user reads from this call.
+Due to the time required to mine a tx, the actual refund amount will be lower than what the user reads from this call.
 
 *Determines how much of a refund a key owner would receive if they issued*
 
@@ -642,7 +642,7 @@ function keyPrice() external view returns (uint256)
 function lendKey(address from, address to, uint256 tokenId) external nonpayable
 ```
 
-Lending a key allows you to transfer the token while retaining the  ownerships right by setting yourself as a key manager first. This function can only called by 1) the key owner when no key manager is set or 2) the key manager. After calling the function, the `_recipent` will be the new owner, and the sender of the tx will become the key manager.
+Lending a key allows you to transfer the token while retaining the ownerships right by setting yourself as a key manager first. This function can only be called by 1) the key owner when no key manager is set or 2) the key manager. After calling the function, the `_recipent` will be the new owner, and the sender of the tx will become the key manager.
 
 
 
@@ -762,7 +762,7 @@ Public function which returns the total number of unique owners (both expired an
 function onKeyCancelHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onKeyCancelHook` hook.
 
 
 
@@ -771,7 +771,7 @@ function onKeyCancelHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### onKeyExtendHook
 
@@ -779,7 +779,7 @@ function onKeyCancelHook() external view returns (address hookAddress)
 function onKeyExtendHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onKeyExtendHook` hook.
 
 
 
@@ -788,7 +788,7 @@ function onKeyExtendHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | the address ok the hook |
 
 ### onKeyGrantHook
 
@@ -796,7 +796,7 @@ function onKeyExtendHook() external view returns (address hookAddress)
 function onKeyGrantHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onKeyGrantHook` hook.
 
 
 
@@ -805,7 +805,7 @@ function onKeyGrantHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | the address ok the hook |
 
 ### onKeyPurchaseHook
 
@@ -813,7 +813,7 @@ function onKeyGrantHook() external view returns (address hookAddress)
 function onKeyPurchaseHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onKeyPurchaseHook` hook.
 
 
 
@@ -822,7 +822,7 @@ function onKeyPurchaseHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### onKeyTransferHook
 
@@ -830,7 +830,7 @@ function onKeyPurchaseHook() external view returns (address hookAddress)
 function onKeyTransferHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onKeyTransferHook` hook.
 
 
 
@@ -839,7 +839,7 @@ function onKeyTransferHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### onTokenURIHook
 
@@ -847,7 +847,7 @@ function onKeyTransferHook() external view returns (address hookAddress)
 function onTokenURIHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onTokenURIHook` hook.
 
 
 
@@ -856,7 +856,7 @@ function onTokenURIHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### onValidKeyHook
 
@@ -864,7 +864,7 @@ function onTokenURIHook() external view returns (address hookAddress)
 function onValidKeyHook() external view returns (address hookAddress)
 ```
 
-
+Returns the address of the `onValidKeyHook` hook.
 
 
 
@@ -873,7 +873,7 @@ function onValidKeyHook() external view returns (address hookAddress)
 
 | Name | Type | Description |
 |---|---|---|
-| hookAddress | address | undefined |
+| hookAddress | address | address of the hook |
 
 ### owner
 
@@ -984,7 +984,7 @@ returns the minimum price paid for a purchase with these params.
 ### referrerFees
 
 ```solidity
-function referrerFees(address _referrer) external view returns (uint256)
+function referrerFees(address _referrer) external view returns (uint256 referrerFee)
 ```
 
 Returns the percentage of the keyPrice to be sent to the referrer (in basis points)
@@ -1001,7 +1001,7 @@ Returns the percentage of the keyPrice to be sent to the referrer (in basis poin
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | uint256 | undefined |
+| referrerFee | uint256 | the percentage of the keyPrice to be sent to the referrer (in basis points) |
 
 ### refundPenaltyBasisPoints
 
@@ -1422,7 +1422,7 @@ A distinct Uniform Resource Identifier (URI) for a given asset.
 function totalKeys(address _keyOwner) external view returns (uint256 numberOfKeys)
 ```
 
-
+Returns the number of keys owned by `_keyOwner` (expired or not)
 
 
 
@@ -1430,13 +1430,13 @@ function totalKeys(address _keyOwner) external view returns (uint256 numberOfKey
 
 | Name | Type | Description |
 |---|---|---|
-| _keyOwner | address | undefined |
+| _keyOwner | address | address for which we are retrieving the total number of keys |
 
 #### Returns
 
 | Name | Type | Description |
 |---|---|---|
-| numberOfKeys | uint256 | The number of keys owned by `_keyOwner` (expired or not) |
+| numberOfKeys | uint256 | total number of keys owned by the address |
 
 ### totalSupply
 
@@ -1571,7 +1571,7 @@ A function which lets a Lock manager of the lock to change the price for future 
 function updateLockConfig(uint256 _newExpirationDuration, uint256 _maxNumberOfKeys, uint256 _maxKeysPerAcccount) external nonpayable
 ```
 
-Update the main key properties for the entire lock:  - default duration of each key - the maximum number of keys the lock can edit - the maximum number of keys a single address can holdkeys previously bought are unaffected by this changes in expiration duration (i.e. existing keys timestamps are not recalculated/updated)
+Update the main key properties for the entire lock:   - default duration of each key - the maximum number of keys the lock can edit - the maximum number of keys a single address can holdkeys previously bought are unaffected by this changes in expiration duration (i.e. existing keys timestamps are not recalculated/updated)
 
 *_maxNumberOfKeys Can&#39;t be smaller than the existing supply *
 
@@ -1635,7 +1635,7 @@ function withdraw(address _tokenAddress, address payable _recipient, uint256 _am
 
 
 
-*Called by owner to withdraw all funds from the lock*
+*Called by lock manager to withdraw all funds from the lock*
 
 #### Parameters
 
@@ -1643,7 +1643,7 @@ function withdraw(address _tokenAddress, address payable _recipient, uint256 _am
 |---|---|---|
 | _tokenAddress | address | specifies the token address to withdraw or 0 for ETH. This is usually the same as `tokenAddress` in MixinFunds. |
 | _recipient | address payable | specifies the address that will receive the tokens |
-| _amount | uint256 | specifies the max amount to withdraw, which may be reduced when considering the available balance. Set to 0 or MAX_UINT to withdraw everything. |
+| _amount | uint256 | specifies the max amount to withdraw, which may be reduced when considering the available balance. Set to 0 or MAX_UINT to withdraw everything.  -- however be wary of draining funds as it breaks the `cancelAndRefund` and `expireAndRefundFor` use cases. |
 
 
 
