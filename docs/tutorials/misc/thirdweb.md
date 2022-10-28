@@ -20,7 +20,7 @@ You will also be prompted to chose a network on which to deploy the contract. We
 
 Once deployed, your public lock is now usable through ThirdWeb's explorer. The interface is fairly similar to what block explorers like Etherscan offer and you can use it to read state from the contract, or change the contract's properties and state.
 
-<iframe width="560" height="315" src="ttps://www.youtube.com/embed/02spfu9Xsg0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/02spfu9Xsg0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The UI also provides a way to list all events triggered on the contract, or even list NFTs minted by the contract.
 
