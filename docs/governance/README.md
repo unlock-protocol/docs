@@ -18,6 +18,6 @@ Unlock Labs, despite being the original builders of the protocol, are just like 
 
 Governance can happen at multiple levels, and we encourage the community to create their own decision making processes. As of now, we use both on-chain governance through the DAO contract, and off-chain governance through Snapshots.
 
-Unlock Labs has already allocated a significant amount of the pre-mined governance tokens to the DAO contract. At this point, the community has full control over these tokens and Unlock Inc. does not have a mechanism to bypass the governance process.
+Unlock Labs has already allocated a significant amount of the pre-mined governance tokens to the DAO contract. At this point, the community has full control over these tokens and Unlock Labs does not have a mechanism to bypass the governance process.
 
-Off-chain governance is non-binding. As part of our effort to decentralize further, Unlock Inc. will allocate tokens as grants, via retro-active funding and other mechanisms. We reserve the right to do any of these things in alignment with our goal to remain compliant with regulations.
+Off-chain governance is non-binding. As part of our effort to decentralize further, Unlock Labs will allocate tokens as grants, via retro-active funding and other mechanisms. We reserve the right to do any of these things in alignment with our goal to remain compliant with regulations.
