@@ -1,7 +1,7 @@
 ---
 title: Grants & Bounties
 description:  >-
-  Explaination of the Unlock Inc. grants, participation in Gitcoin grants and 
+  Explaination of the Unlock Labs grants, participation in Gitcoin grants and 
   bounties program.
 hide_table_of_contents: false
 ---
