@@ -153,7 +153,7 @@ const config = {
           },
           {
             from: "/governance/grants-bounties-and-matchings",
-            to: "/governance/grants-bounties"
+            to: "/governance/grants-bounties/"
           }
         ],
       },
