@@ -32,7 +32,7 @@ In addition to grant reviews, you will also be asked to attend a quarterly grant
 
 ## Joining the Grant Committee
 
-Each committee member will fill out a [Grant Committee Application](/governance/grants/grant-committee-applicant-guide). That application will be voted on by the DAO for approval. Minimum requirements to serve on the committee are included in the application so please read through those carefully before filling it out.
+Each committee member will fill out a [Grant Committee Application](/governance/grants-bounties/grant-committee-applicant-guide). That application will be voted on by the DAO for approval. Minimum requirements to serve on the committee are included in the application so please read through those carefully before filling it out.
 
 ## Promotion & Marketing
 

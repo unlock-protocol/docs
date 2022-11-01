@@ -16,7 +16,7 @@ description: Answering all of your faqs about Unlock DAO, UDT and governance.
 
 ## How do I get ɄDT?
 
-You can [earn UDT today by using the protocol](/governance/the-unlock-token), or through [grants from the Unlock Treasury](/governance/grants-bounties-and-matchings).
+You can [earn UDT today by using the protocol](/governance/the-unlock-token), or through [grants from the Unlock Treasury](/governance/grants-bounties).
 
 ## What are the tokenomics of ɄDT?
 

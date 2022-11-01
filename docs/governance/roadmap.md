@@ -104,7 +104,7 @@ As of Summer 2022, the Unlock ecosystem consists of the following:
 - Update home page design. ✅
 - Addition of a `/developer`landing page. ✅
 - Addition of a `/creator` landing page. ⏰
-- Formal launch of grant program process ([see grants page](../grants-bounties)). ✅
+- Formal launch of grant program process ([see grants page](/governance/grants-bounties)). ✅
 - Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.com/invite/Ah6ZEJyTDp) State: done. ✅
 - Developer forum launched on Discourse, State: shipped. ✅
 
