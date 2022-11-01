@@ -5,7 +5,7 @@ description: The Unlock Token (UDT) and its tokenomics.
 
 # The Unlock Token
 
-- **Status**: [partially implemented](the-path-to-udt.md). You can earn UDT today by using the protocol, or through [grants from the Unlock Treasury](../grants-bounties-and-matchings.md).
+- **Status**: [partially implemented](the-path-to-udt.md). You can earn UDT today by using the protocol, or through [grants from the Unlock Treasury](../grants).
 - UDT on Ethereum mainnet [`0x90de74265a416e1393a450752175aed98fe11517`](https://etherscan.io/token/0x90de74265a416e1393a450752175aed98fe11517)
 - UDT pool on Uniswap v2: [`0x9ca8aef2372c705d6848fdda3c1267a7f51267c1`](https://v2.info.uniswap.org/pair/0x9ca8aef2372c705d6848fdda3c1267a7f51267c1)
 - Oracle: [`0xE118d797E1c44F2e2A2823191a51D8b46a4A1D51`](https://etherscan.io/address/0xE118d797E1c44F2e2A2823191a51D8b46a4A1D51)

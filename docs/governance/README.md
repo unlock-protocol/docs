@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
-title: Governance
+title: Introduction
 description: Introduction to Unlock DAO governance.
+sidebar_position: 1
 ---
 
-# Governance
+# Introduction
 
 Unlock is a decentralized protocol for memberships. We believe that an open protocol for memberships is itself very valuable for the internet as it removes friction and enables memberships _at scale_. The model here is a protocol like HTTP that has democratized publishing for everyone. Our goal is to make Unlock the _default_ membership primitive for each and every membership, both online and offline, from small indie creators publishing content to large corporations broadcasting videos for hundreds of milions of viewers to local stores wanting to offer unique benefits to their communities.
 

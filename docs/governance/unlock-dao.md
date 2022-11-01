@@ -3,6 +3,7 @@ title: Unlock DAO
 description: >-
   The Unlock Protocol is a public good aimed at being governed by a DAO of its
   users and developers.
+sidebar_position: 2
 ---
 
 # Unlock DAO Contract
@@ -36,7 +37,7 @@ As part of the launch of the DAO, Unlock Inc. has allocated the following to the
 
 ## Next steps
 
-Unlock Inc. will allocate more funds to the DAO as well as transfer ownership of some of its processes, including our [grants program](grants-bounties-and-matchings.md)!
+Unlock Inc. will allocate more funds to the DAO as well as transfer ownership of some of its processes, including our [grants program](../grants-bounties)!
 
 We will also eventually move ownership of the [Unlock contracts](../core-protocol/Unlock/) and its upgrade admin contract.
 
