@@ -1,8 +1,7 @@
 ---
 title: Using Subgraphs
 description: >-
-  In this tutorial, we will see how to use the a subgraph in order to retrieve
-  large amounts of data from the protocol.
+  In this tutorial, we will see how to use the a subgraph in order to retrieve large amounts of data from smart contracts.
 ---
 
 # Using Subgraphs
@@ -26,14 +25,14 @@ In order to get the locks managed by a given address, we build the following req
 ```javascript
 {
   locks(orderBy: createdAtBlock, orderDirection: desc, where:{
-    lockManagers_contains: 
+    lockManagers_contains:
     [ "0xDD8e2548da5A992A63aE5520C6bC92c37a2Bcc44" ]
   }) {
     id
     address
     name
     lockManagers
-    price 
+    price
     tokenAddress
     totalSupply
     expirationDuration
@@ -43,7 +42,7 @@ In order to get the locks managed by a given address, we build the following req
 }
 ```
 
-We retrieve  the locks sorted by the creation block in a descending order (first in the list is the most recent) where the `lockManagers` field contains our given address. For each lock, we get their address, name, price, token (if it is an ERC20 lock), duration, as well as total supply and maximum number of memberships.
+We retrieve the locks sorted by the creation block in a descending order (first in the list is the most recent) where the `lockManagers` field contains our given address. For each lock, we get their address, name, price, token (if it is an ERC20 lock), duration, as well as total supply and maximum number of memberships.
 
 ## Sending the request
 
@@ -101,9 +100,7 @@ The `result` variable will be populated with the result of the query. It will be
         "id": "0x3ba39a6185ac5d35927e6166255bebee9f61112d",
         "address": "0x3ba39a6185ac5d35927e6166255bebee9f61112d",
         "name": "First Goerli Lock",
-        "lockManagers": [
-          "0xdd8e2548da5a992a63ae5520c6bc92c37a2bcc44"
-        ],
+        "lockManagers": ["0xdd8e2548da5a992a63ae5520c6bc92c37a2bcc44"],
         "price": "70000000000000000",
         "tokenAddress": "0x0000000000000000000000000000000000000000",
         "expirationDuration": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
@@ -113,9 +110,7 @@ The `result` variable will be populated with the result of the query. It will be
         "id": "0x874161a65ab3341b958c815cc933b9868ac4790e",
         "address": "0x874161a65ab3341b958c815cc933b9868ac4790e",
         "name": "Second Goerli lock",
-        "lockManagers": [
-          "0xdd8e2548da5a992a63ae5520c6bc92c37a2bcc44"
-        ],
+        "lockManagers": ["0xdd8e2548da5a992a63ae5520c6bc92c37a2bcc44"],
         "price": "10000000000000000",
         "tokenAddress": "0x0000000000000000000000000000000000000000",
         "expirationDuration": "2592000",
