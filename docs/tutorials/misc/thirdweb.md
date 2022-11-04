@@ -6,11 +6,11 @@ description: >-
 
 [Thirdweb](https://thirdweb.com/) provides a powerful SDKs and intuitive tools for developers to build and ship applications faster.
 
-We released the [Public Lock contrat to ThirdWeb's registry](https://thirdweb.com/unlock-protocol.eth).
+We released the [Public Lock contract to ThirdWeb's registry](https://thirdweb.com/unlock-protocol.eth).
 
 ## Deploying a Public Lock
 
-You can deploy membership contracts using Thirdweb's interface. On the [Public Lock](https://thirdweb.com/unlock-protocol.eth/PublicLock) page, click the `Deploy Now` button. This will open a form where you can complete the required configuration for the deployment of your lock. These value depend on what version of the [Public Lock](../../core-protocol/public-lock/) you want to deploy but will likely include the address of the first [lock manager](../../core-protocol/public-lock/access-control.md), the duration, the number of memberships, or the price and currency contract address.
+You can deploy membership contracts using Thirdweb's interface. On the [Public Lock](https://thirdweb.com/unlock-protocol.eth/PublicLock) page, click the `Deploy Now` button. This will open a form where you can complete the required configuration for the deployment of your lock. These values depend on what version of the [Public Lock](../../core-protocol/public-lock/) you want to deploy but will likely include the address of the first [lock manager](../../core-protocol/public-lock/access-control.md), the duration, the number of memberships, or the price and currency contract address.
 
 You will also be prompted to chose a network on which to deploy the contract. We recommend using a test network in order to build applications. You will be able to swap addresses for a production network when you are ready to ship your application!
 
