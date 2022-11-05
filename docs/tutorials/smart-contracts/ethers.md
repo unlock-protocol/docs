@@ -30,7 +30,7 @@ const abis = require("@unlock-protocol/contracts");
 const run = async () => {
   // Here we use a Goerli provider. We will be able to read the state, but not send transactions.
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    "https://rpc.unlock-protocol.com/5"
   );
 
   // We will interact with a lock deployed on Goerli at this address 0x09A8F16Ed16C28f4774aBF73eCc071cfB423Ac24
@@ -75,7 +75,7 @@ const PublicLockAbi = [
 // Wrapping all calls in an async block
 const run = async () => {
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    "https://rpc.unlock-protocol.com/5"
   );
   const address = "0x09A8F16Ed16C28f4774aBF73eCc071cfB423Ac24";
   const lock = new ethers.Contract(address, PublicLockAbi, provider);
@@ -99,7 +99,7 @@ const abis = require("@unlock-protocol/contracts");
 const run = async () => {
   // Here we use a Goerli provider. We will be able to read the state, but not send transactions.
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    "https://rpc.unlock-protocol.com/5"
   );
 
   // This time, we also need a signer.
@@ -160,7 +160,7 @@ const abis = require("@unlock-protocol/contracts");
 const run = async () => {
   // Here we use a Rinkeby provider. We will be able to read the state, but not send transactions.
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"
+    "https://rpc.unlock-protocol.com/5"
   );
 
   // This time, we also need a signer.

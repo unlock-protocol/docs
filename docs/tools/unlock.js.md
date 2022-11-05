@@ -35,7 +35,7 @@ const { Web3Service } = require("@unlock-protocol/unlock-js");
 const networks = {
   5: {
     unlockAddress: "0x627118a4fB747016911e5cDA82e2E77C531e8206", // Smart contracts docs include all addresses on all networks
-    provider: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    provider: "https://rpc.unlock-protocol.com/5",
   },
 };
 
@@ -72,7 +72,7 @@ const { WalletService } = require("@unlock-protocol/unlock-js");
 const networks = {
   4: {
     unlockAddress: "0x627118a4fB747016911e5cDA82e2E77C531e8206", // Smart contracts docs include all addresses on all networks
-    provider: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    provider: "https://rpc.unlock-protocol.com/5",
   },
 };
 
@@ -119,7 +119,7 @@ const { WalletService } = require("@unlock-protocol/unlock-js");
 const networks = {
   4: {
     unlockAddress: "0x627118a4fB747016911e5cDA82e2E77C531e8206", // Smart contracts docs include all addresses on all networks
-    provider: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    provider: "https://rpc.unlock-protocol.com/5",
   },
 };
 

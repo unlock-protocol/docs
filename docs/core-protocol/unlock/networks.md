@@ -1,8 +1,8 @@
-
 # Networks
 
 You should **not need to deploy an Unlock contract yourself**. Here are the addresses of contracts deployed on respective networks and you can call them directly using the block explorer.
 
+The core team has built a `networks` [npm module](https://www.npmjs.com/package/@unlock-protocol/networks) that includes all the networks' addresses as well as [rpc endpoints](../../tools/rpc-provider.md) that you can use for debugging purposes: `@unlock-protocol/networks`.
 
 ## Ethereum
 
@@ -83,5 +83,3 @@ Polygon test network. Do not use for production
 - chainId: 80001
 - native currency: MATIC (MATIC)
 - unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://mumbai.polygonscan.com/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
-
-
