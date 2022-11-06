@@ -1,6 +1,7 @@
 ---
-title: Unlock Smart Contracts
 sidebar_position: 1
+title: Unlock Smart Contracts
+pagination_next: core-protocol/unlock/README
 description: >-
   Guide to Unlock Protocol smart contracts including where to find them and how
   they can be used.
