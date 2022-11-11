@@ -81,7 +81,7 @@ Ceramic is also a marketplace for these data models, providing common formats an
 
 [The Graph](https://thegraph.com/) is a network of nodes indexing blockchains and storing the data in a way that’s more convenient for running complex queries. It provides a unified GraphQL API to fulfill these requests and creates a marketplace to incentivise nodes to host and serve this data.
 
-#### **Node and data access solutions (Infura, Alchemy)**
+#### **Node and data access solutions (Infura, Alchemy...)**
 
 While running your own node is similar to running any other kind of server, it's often difficult to do at scale. There are a number of providers that make it easy to access blockchain data at scale without having to run your own complex infrastructure. This leads to the criticism that many self-described decentralised applications rely on these centralised services, making them centralised in practice. While this is partly true, being able to move to a different provider or to operate your own node infrastructure when viable while retaining your data and relationships still honours the spirit of decentralisation. You don’t have to ask anyone to export your data, you already have full control. Some examples of this type of service are [Infura](https://infura.io/), [Alchemy](https://www.alchemy.com/), and [Moralis](https://moralis.io/).
 

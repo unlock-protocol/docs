@@ -87,8 +87,5 @@ Make sure you use a number and not a string! For the complete list check our
 ```
 
 :::info
-[Kalidou](https://twitter.com/kld_diagne) from our team built a [tool](https://unlocktool.d2qjhh2wsxjcef.amplifyapp.com/) for generating these urls and although
-it's not officially supported yet it certainly is handy! You can use it here until
-we make it to the point in our roadmap where we integrate a similar feature into
-the dashboard.
+[Kalidou](https://twitter.com/kld_diagne) from our team built a [tool](https://app.unlock-protocol.com/locks/checkout-url) for generating these json configuration files and encoded urls.
 :::

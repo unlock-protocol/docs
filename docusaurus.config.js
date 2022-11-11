@@ -150,6 +150,10 @@ const config = {
           {
             from: "/tools/paywall/configuring-checkout",
             to: "/tools/checkout/configuration"
+          },
+          {
+            from: "/governance/grants-bounties-and-matchings",
+            to: "/governance/grants-bounties/"
           }
         ],
       },

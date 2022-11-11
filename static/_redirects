@@ -27,3 +27,5 @@
 /tools/paywall/configuring-checkout                                       https://docs.unlock-protocol.com/tools/checkout/configuration/
 /unlock/developers/smart-contracts#production-networks                    https://docs.unlock-protocol.com/core-protocol/unlock/networks
 /unlock/developers/paywall/configuring-checkout#the-paywallconfig-object  https://docs.unlock-protocol.com/tools/checkout/configuration#the-paywallconfig-object
+/governance/grants-bounties-and-matchings                                 /governance/grants-bounties
+/basics/deploying-a-lock                                                  https://unlock-protocol.com/guides/how-to-create-a-lock/
