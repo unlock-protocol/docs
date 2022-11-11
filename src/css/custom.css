@@ -185,6 +185,14 @@ main {
 .markdown h1:first-child{
   font-size: 2.2rem;
 }
+
+dt{
+  font-weight: bold;
+  padding-top: 15px;
+}
+dd {
+  margin-left: 15px;
+}
 /*footer*/
 .footer .container {
   max-width: 900px;

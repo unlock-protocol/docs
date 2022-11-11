@@ -1,7 +1,7 @@
 ---
 title: Code of Conduct
 description: Our community and contributor covenant code of conduct explained.
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Code of Conduct
