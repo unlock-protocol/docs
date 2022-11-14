@@ -34,18 +34,6 @@ Welcome, Locksmith! Let’s start with getting the lay of the land with a few co
   <dt>Factory Contract</dt>
     <dd>A factory contract is a particular type of smart contract that creates other smart contracts.</dd>
 
-  <dt>Fren</dt>
-    <dd>Short for friend.</dd>
-
-  <dt>GM</dt>
-    <dd>Good morning, but can also mean good day, good night, good evening</dd>
-
-  <dt>GN</dt>
-    <dd>Good night.</dd>
-
-  <dt>Hodl</dt>
-    <dd>To hold but specifically a token asset, to not panic sell.</dd>
-  
   <dt>Key</dt>
     <dd>In the Unlock ecosystem, a “Key” is an NFT (minted by a Lock) that has 
     additional features added to it to facilitate the management of memberships, 
