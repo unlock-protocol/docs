@@ -285,6 +285,8 @@ dd {
   margin-bottom: 20px;
   border-radius: 20px;
   background-color: rgb(255, 255, 255, .8);
+  width: 100%;
+  height: 97%;
 }
 
 [data-theme="dark"] .card {
@@ -295,6 +297,7 @@ dd {
   text-align: center;
 }
 .card__body {
+  text-align: justify;
   font-size: .9em;
 }
 .card__body dl{
@@ -305,7 +308,7 @@ dd {
   padding-top: 15px;
 }
 .card__body dd{
-  margin-inline-start: 20px;
+  margin: 0px 20px;
 }
 
 /* Getting Started Layout */
