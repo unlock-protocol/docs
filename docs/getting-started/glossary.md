@@ -55,7 +55,7 @@ Welcome, Locksmith! Let’s start with getting the lay of the land with a few co
     wallet address set to that role.</dd>
   
   <dt>Locksmith</dt>
-    <dd>A community member or builder in the Unlock ecosystem.</dd>
+    <dd>The name of the API backend service built by the Unlock Labs team and which offers optional features such as metadata-hosting, credit card payments...  It is also how we sometimes call community member or builder in the Unlock ecosystem. </dd>
 
   <dt>Membership</dt>
     <dd>A membership is a connection between a creator, brand or project and a 
