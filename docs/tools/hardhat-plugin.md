@@ -15,7 +15,7 @@ npm i @unlock-protocol/hardhat-plugin
 or
 
 ```shell
-yarn install @unlock-protocol/hardhat-plugin
+yarn add @unlock-protocol/hardhat-plugin
 ```
 
 Import the plugin in your `hardhat.config.js`:
