@@ -86,6 +86,10 @@ p {
   color: #ffffff;
 }
 
+.button.button--secondary a:visited {
+  color: #bfb1f7;
+}
+
 /**Nav bar **/
 .navbar .navbar__inner {
   margin: 0 auto;
