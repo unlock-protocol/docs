@@ -21,7 +21,7 @@
   --menu-background: #e6ded1;
   --text-800: #373a3e;
   --text-500: #75797e;
-  --ifm-navbar-item-padding-horizontal: 1.2rem;
+  --ifm-navbar-item-padding-horizontal: 1.0rem;
   --ifm-font-family-base: "Inter", sans-serif;
   --ifm-heading-font-weight: 800;
   --ifm-h1-font-size: 2.5rem;
@@ -29,11 +29,12 @@
   --ifm-code-background-color: #373a3e;
   --ifm-global-radius: 1.5rem;
   --ifm-pre-padding: 1.5rem;
-  --ifm-color-secondary: #ffffff;
+  --ifm-color-secondary: #603DEB;
   --ifm-color-success: #faffe7;
   --ifm-color-info: #ffffff;
   --ifm-color-warning: #fffbe3;
   --ifm-color-danger: #fff0f1;
+  --ifm-button-background-color: #603DEB;
 }
 [data-theme="light"] {
   background-color: #fff9ef;
@@ -79,6 +80,14 @@ p {
     max-width: 100%;
     width: 100%;
   }
+}
+
+.button.button--secondary {
+  color: #ffffff;
+}
+
+.button.button--secondary a:visited {
+  color: #bfb1f7;
 }
 
 /**Nav bar **/
@@ -176,7 +185,18 @@ p {
 main {
   padding: 1.1rem;
 }
+/*page body*/
+.markdown h1:first-child{
+  font-size: 2.2rem;
+}
 
+dt{
+  font-weight: bold;
+  padding-top: 14px;
+}
+dd {
+  margin-left: 15px;
+}
 /*footer*/
 .footer .container {
   max-width: 900px;
@@ -261,29 +281,46 @@ main {
 }
 
 /* Cards */
-.card-getting-started .card__header {
-  font-size: .6em;
+.card {
+  margin: 0px 10px 20px 10px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255, .8);
+  width: 100%;
+  height: 97%;
 }
-.card-getting-started .card__body {
-  font-size: .5em;
+
+[data-theme="dark"] .card {
+  color: #373a3e;
 }
+.card__header h3{
+  font-size: 1.3em;
+  text-align: center;
+}
+.card__body {
+  text-align: left;
+  font-size: .9em;
+}
+.card__body dl{
+  margin-block-start: 0px;
+}
+.card__body dt{
+  font-weight: bold;
+  padding-top: 15px;
+}
+.card__body dd{
+  margin: 0px 20px;
+}
+
 /* Getting Started Layout */
 
 .row .col.col--4{
   padding: .5rem;
 }
 
-img.hackathon{
-  background-color: var(--ifm-background-color);
-}
-
-[data-theme="dark"] img.hackathon{
-  background-color: var(--ifm-color-gray-200)
-}
-
 .half-width{
   width: 50%;
 }
+
 @media screen and (max-width: 996px) {
   .half-width{
     width: 100%;
