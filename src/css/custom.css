@@ -282,7 +282,7 @@ dd {
 
 /* Cards */
 .card {
-  margin-bottom: 20px;
+  margin: 0px 10px 20px 10px;
   border-radius: 20px;
   background-color: rgb(255, 255, 255, .8);
   width: 100%;
@@ -297,7 +297,7 @@ dd {
   text-align: center;
 }
 .card__body {
-  text-align: justify;
+  text-align: left;
   font-size: .9em;
 }
 .card__body dl{
@@ -315,10 +315,6 @@ dd {
 
 .row .col.col--4{
   padding: .5rem;
-}
-
-.row .second-column-intro{
-  margin-right: 5px;
 }
 
 .half-width{
