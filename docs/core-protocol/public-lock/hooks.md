@@ -9,14 +9,66 @@ sidebar_position: 3
 
 Hooks have been added to strategic places of the Lock contract to allow lock managers to modify behaviour by calling a 3rd party contract.
 
-We currently (version 11) support 5 hooks:
+We currently support 7 hooks (as of v12):
 
+- `onGrantKeyHook`: called when a key is granted
+- `onKeyExtendHook`: called when a key is extended or renewed
 - `onKeyPurchaseHook`: called when a key purchase is triggered
 - `onKeyCancelHook`: called when a key is canceled
 - `onTokenUriHook`: called when the tokenURI is fetched
 - `onValidKeyHook`: called when checking if a user has a valid key
 - `onKeyTransferHook`: called when a key is transfered from an address to another.
 
+## onGrantKey
+The `onGrantKeyHook` allows you to create custom logic that is called each time a key is granted. This could enable use cases to create custom logic when keys are granted outside of a purchase flow.
+
+A KeyGrantedHook should implement the following interface.
+
+```solidity
+interface ILockKeyGrantHook
+{
+  /**
+   * @notice If the lock owner has registered an implementer then this hook
+   * is called with every key granted.
+   * @param tokenId the id of the granted key
+   * @param from the msg.sender granting the key
+   * @param recipient the account which will be granted a key
+   * @param keyManager an additional keyManager for the key
+   * @param expiration the expiration timestamp of the key
+   * @dev the lock's address is the `msg.sender` when this function is called
+   */
+  function onKeyGranted(
+    uint tokenId,
+    address from,
+    address recipient,
+    address keyManager,
+    uint expiration
+  ) external;
+}
+```
+## onKeyExtendHook
+The `onKeyExtendHook` allows you create custom logic when a key is extended or renewed. This could enable use cases where for instance key metadata is updated, maybe you want to update the image when renewals happen. It could enable rewards programs where you increment a reward point total everytime a membership is renewed.
+
+A KeyExtendHook should implement the following interface.
+
+```solidity
+interface ILockKeyExtendHook
+{
+  /**
+   * @notice This hook every time a key is extended.
+   * @param tokenId tje id of the key
+   * @param from the msg.sender making the purchase
+   * @param newTimestamp the new expiration timestamp after the key extension
+   * @param prevTimestamp the expiration timestamp of the key before being extended
+   */
+  function onKeyExtend(
+    uint tokenId,
+    address from,
+    uint newTimestamp,
+    uint prevTimestamp
+  ) external;
+}
+```
 ## OnKeyPurchase Hook
 
 The `onKeyPurchaseHook` allows you to create custom purchase logic, for instance dynamic pricing, etc.
