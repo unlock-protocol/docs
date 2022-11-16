@@ -1,7 +1,12 @@
 ---
+sidebar_position: 1
 title: Development Tools
-description: Summary of tools built for development on Unlock Protocol.
+pagination_next: tools/dashboard
+description: >-
+  Summary of tools built for development on Unlock Protocol.
 ---
+<!-- added pagination to footer -->
+
 # Tools
 
 Unlock Labs maintains a set of development tools to interact with Unlock Protocol.
