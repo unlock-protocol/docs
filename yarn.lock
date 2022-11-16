@@ -1567,6 +1567,11 @@
     tslib "^2.3.1"
     url-loader "^4.1.1"
 
+"@flockler/react-flockler-embed@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@flockler/react-flockler-embed/-/react-flockler-embed-1.0.3.tgz#c2c9a6a872031933f91e24e1add5ec2c1bf8bca5"
+  integrity sha512-QHPnfF22ytYfvxUeRuWl2z4sZpXGSrsWnExXAdMziM8sYULuR2xa2cox47ownkUlbELEpYkV8s2jU1TKDtHZ3Q==
+
 "@hapi/hoek@^9.0.0":
   version "9.2.1"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
