@@ -18,7 +18,7 @@ Each lock is a standalone contract with its own deployment, address, and storage
 
 - Each lock contract is an [ERC-721](https://eips.ethereum.org/EIPS/eip-721) compliant contract capable of creating and managing NFTs (non-fungible tokens we call "Keys"), as well as restricting access based on the user's possession (or lack of) one of these keys.
 - Keys for one lock are valid only for the lock which created them.
-- A given user may own only 1 key (NFT) at a time.
+- A given user may own only 1 key (NFT) at a time as a default, but that can be changed using the `setMaxKeysPerAddress` function.
 
 You can call and inspect the Lock contracts directly using the block explorers as well.
 
@@ -38,13 +38,40 @@ Lock managers can also alter the behavior of their locks thru the use of [hooks]
 
 ## Changelog
 
+Changelogs can be found here for the last two versions.
+
+### Version 12
+
+**Released**: October 2022
+
+The following are the signifigant changes and a full list of commits including bug fixes can be found [here](https://github.com/unlock-protocol/unlock/issues?q=+label%3A%22publicLock+v12%22+).
+
+#### `onGrantKeyHook` and `onKeyExtendHook`
+
+This allows for registration of custom functionality when keys are granted and when keys are renewed or extended.
+
+#### `setLockMetadata`
+The various features to set metadata (name, symbol and tokenURIs) have been regrouped into this single function.
+
+#### `updateLockConfig`
+The configuration for a key’s default duration and available quantity (both per user and in aggregate) have also been grouped into this single function.
+
+#### `expirationTimestamp`
+This adds the expiration timestamp on ExpirationDuration event emitted by the time machine when time gets added or substracted to/from a key.
+
+#### Subgraph events and schema changes
+Added a new event `LockConfig`
+Added `maxNumberOfKeys` and `maxKeysPerAddress` to the lock schema
+Added `expirationTimestamp` to `ExpirationChanged` event
+
+
 ### Version 11
 
 **Released**: August 2022
 
 This new version brings a lot of gas savings as well as a few minor bug fixes. It also introduces the following features:
 
-### `referrerFees` and `setReferrerFee`
+#### `referrerFees` and `setReferrerFee`
 
 This is the most important addition to the protocol in this version. `referrerFees` are ways for a lock manager to share their income with the `referrer` when a purchase is made (when calling `purchase`, `renewMembershipFor`, or `extend`). The fee is set as a percentage in basis points (`1000` is 10%).
 
@@ -78,7 +105,7 @@ The hook is the final step in the transfer function.
 This function returns the total number of keys on the lock for a specific address.
 Note: `balanceOf` will return only the number of _valid_ (non-expired) in order to stay compatible with token gating tools.
 
-### Commits:
+#### Commits:
 
 ```sh
 14a3eaf29 updated docs for setEventHooks
@@ -111,6 +138,3 @@ a617fdac8 dedupe zero address check (#8964)
 266e183d3 feat(smart-contracts): bump version for Publiclock v11 (#8864)
 ```
 
-### Version 10
-
-**Released**: April 2022
