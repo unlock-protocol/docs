@@ -9,7 +9,7 @@ sidebar_position: 3
 
 Hooks have been added to strategic places of the Lock contract to allow lock managers to modify behaviour by calling a 3rd party contract.
 
-We currently support 7 hooks (as of v12):
+We currently support 7 hooks (as of v12). If your lock uses a previous version, it may have a smaller number of hooks, but you can upgrade it to v12:
 
 - <a href="#ongrantkey-hook">onGrantKeyHook</a>: called when a key is granted
 - <a href="#onkeyextend-hook">onKeyExtendHook</a>: called when a key is extended or renewed
