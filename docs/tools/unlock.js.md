@@ -63,7 +63,7 @@ async function run() {
 run();
 ```
 
-#### Using WalletService to deploy a lock
+### Using WalletService to deploy a lock
 
 ```javascript
 const ethers = require("ethers");
@@ -110,7 +110,7 @@ async function run() {
 run();
 ```
 
-#### Using WalletService to purchase a key:
+### Using WalletService to purchase a key:
 
 ```javascript
 const ethers = require("ethers");
@@ -164,3 +164,36 @@ The [Integration test suite](https://github.com/unlock-protocol/unlock/blob/mast
 - Changing the locks params
 - Withdrawing from the lock
 - ... etc
+
+### Using the SubgraphService to query locks:
+
+```javascript
+const { SubgraphService } = require('..')
+
+async function main() {
+  const service = new SubgraphService()
+  const locks = await service.locks(
+    {
+      first: 100,
+      skip: 100,
+    },
+    {
+      networks: [1, 5],
+    }
+  )
+  console.log(locks)
+
+  const keys = await service.locks(
+    {
+      first: 100,
+      skip: 100,
+    },
+    {
+      networks: [1, 5],
+    }
+  )
+  console.log(keys)
+}
+
+main().catch(console.error)
+```
