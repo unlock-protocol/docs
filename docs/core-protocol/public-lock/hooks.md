@@ -11,15 +11,15 @@ Hooks have been added to strategic places of the Lock contract to allow lock man
 
 We currently support 7 hooks (as of v12):
 
-- `onGrantKeyHook`: called when a key is granted
-- `onKeyExtendHook`: called when a key is extended or renewed
-- `onKeyPurchaseHook`: called when a key purchase is triggered
-- `onKeyCancelHook`: called when a key is canceled
-- `onTokenUriHook`: called when the tokenURI is fetched
-- `onValidKeyHook`: called when checking if a user has a valid key
-- `onKeyTransferHook`: called when a key is transfered from an address to another.
+- <a href="#ongrantkey-hook">onGrantKeyHook</a>: called when a key is granted
+- <a href="#onkeyextend-hook">onKeyExtendHook</a>: called when a key is extended or renewed
+- <a href="#onkeypurchase-hook">onKeyPurchaseHook</a>: called when a key purchase is triggered
+- <a href="#onkeycancel-hook">onKeyCancelHook</a>: called when a key is canceled
+- <a href="#ontokenuri-hook">onTokenUriHook</a>: called when the tokenURI is fetched
+- <a href="#onvalidkey-hook">onValidKeyHook</a>: called when checking if a user has a valid key
+- <a href="#onkeytransferhook-hook">onKeyTransferHook</a>: called when a key is transfered from an address to another.
 
-## onGrantKey
+## onGrantKey Hook
 The `onGrantKeyHook` allows you to create custom logic that is called each time a key is granted. This could enable use cases to create custom logic when keys are granted outside of a purchase flow.
 
 A KeyGrantedHook should implement the following interface.
@@ -46,7 +46,7 @@ interface ILockKeyGrantHook
   ) external;
 }
 ```
-## onKeyExtendHook
+## onKeyExtend Hook
 The `onKeyExtendHook` allows you create custom logic when a key is extended or renewed. This could enable use cases where for instance key metadata is updated, maybe you want to update the image when renewals happen. It could enable rewards programs where you increment a reward point total everytime a membership is renewed.
 
 A KeyExtendHook should implement the following interface.
