@@ -28,6 +28,10 @@ const config = {
       {
         redirects: [
           {
+            from: "/unlock/developers/sign-in-with-ethereum", //redirect sign in with ethereum
+            to: "/tools/sign-in-with-ethereum/",
+          },
+          {
             from: "/unlock",
             to: "/",
           },
