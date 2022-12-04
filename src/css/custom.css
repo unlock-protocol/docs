@@ -329,6 +329,11 @@ dd {
 
 /* Icons */
 
+.react-icons{
+  vertical-align: text-bottom;
+}
+
+/* Icon that is a round button */
 .icon-button {
   width: 1.6rem;
   height: 1.6rem;
