@@ -1,6 +1,6 @@
 # Entities
 
-- [`Entity`](#entity)
+- [`Lock`](#lock)
 - [`Key`](#key)
 - [`UnlockDailyData`](#unlockdailydata)
 - [`LockStats`](#lockstats)
