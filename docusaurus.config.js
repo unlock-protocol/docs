@@ -156,16 +156,16 @@ const config = {
             to: "/tools/checkout/configuration"
           },
           {
-            from: "/docs/subgraph",
-            to: "/docs/tools/subgraph/subgraph"
+            from: "/tools/subgraph",
+            to: "/tools/subgraph/subgraph"
           },
           {
-            from: "/docs/subgraph",
-            to: "/docs/tools/subgraph/entities"
+            from: "/tools/subgraph",
+            to: "/tools/subgraph/entities"
           },
           {
-            from: "/docs/queries",
-            to: "/docs/tools/subgraph/queries"
+            from: "/tools/queries",
+            to: "/tools/subgraph/queries"
           },
           {
             from: "/governance/grants-bounties-and-matchings",
