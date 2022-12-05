@@ -117,7 +117,7 @@ const sidebars = {
           ],
         },
         {
-          type: "Subgraphs",
+          type: "Subgraph",
           label: "category",
           link: {
             type: "doc",
