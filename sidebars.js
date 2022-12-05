@@ -125,7 +125,7 @@ const sidebars = {
           },
           items: [
             {
-              "docs/tools/entities.md",
+              "docs/tools/entities.md":
               "docs/tools/queries.md",
             },
           ],
