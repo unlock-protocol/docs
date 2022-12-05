@@ -118,7 +118,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Subgraph",
+          label: "subgraph",
           link: {
             type: "doc",
             id: "tools/subgraph/subgraph",
