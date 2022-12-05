@@ -148,14 +148,6 @@ const config = {
             to: "/tools/unlock.js",
           },
           {
-            from: "/basics/deploying-a-lock",
-            to: "/core-protocol/public-lock/deploying-locks"
-          },
-          {
-            from: "/tools/paywall/configuring-checkout",
-            to: "/tools/checkout/configuration"
-          },
-          {
             from: "/tools/subgraph",
             to: "/tools/subgraph/subgraph",
           },
@@ -166,6 +158,14 @@ const config = {
           {
             from: "/tools/queries",
             to: "/tools/subgraph/queries",
+          },
+          {
+            from: "/basics/deploying-a-lock",
+            to: "/core-protocol/public-lock/deploying-locks"
+          },
+          {
+            from: "/tools/paywall/configuring-checkout",
+            to: "/tools/checkout/configuration"
           },
           {
             from: "/governance/grants-bounties-and-matchings",
