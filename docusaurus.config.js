@@ -160,7 +160,7 @@ const config = {
             to: "/tools/subgraph/subgraph",
           },
           {
-            from: "/tools/subgraph",
+            from: "/tools/entities",
             to: "/tools/subgraph/entities",
           },
           {
