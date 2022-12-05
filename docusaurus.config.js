@@ -149,27 +149,27 @@ const config = {
           },
           {
             from: "/basics/deploying-a-lock",
-            to: "/core-protocol/public-lock/deploying-locks"
+            to: "/core-protocol/public-lock/deploying-locks",
           },
           {
             from: "/tools/paywall/configuring-checkout",
-            to: "/tools/checkout/configuration"
+            to: "/tools/checkout/configuration",
           },
           {
             from: "/tools/subgraph",
-            to: "/tools/subgraph/subgraph"
+            to: "/tools/subgraph/subgraph",
           },
           {
             from: "/tools/subgraph",
-            to: "/tools/subgraph/entities"
+            to: "/tools/subgraph/entities",
           },
           {
             from: "/tools/queries",
-            to: "/tools/subgraph/queries"
+            to: "/tools/subgraph/queries",
           },
           {
             from: "/governance/grants-bounties-and-matchings",
-            to: "/governance/grants-bounties/"
+            to: "/governance/grants-bounties/",
           }
         ],
       },
