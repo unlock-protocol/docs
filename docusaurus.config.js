@@ -156,15 +156,15 @@ const config = {
             to: "/tools/checkout/configuration"
           },
           {
-            from: "/tools/subgraph",
+            from: "/unlock/tools/subgraph",
             to: "/tools/subgraph/subgraph"
           },
           {
-            from: "/tools/entities",
+            from: "/unlock/tools/entities",
             to: "/tools/subgraph/entities"
           },
           {
-            from: "/tools/queries",
+            from: "/unlock/tools/queries",
             to: "/tools/subgraph/queries"
           },
           {
