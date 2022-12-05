@@ -47,4 +47,4 @@ Other standards which Unlock adheres to are:
 
 ## Supported networks
 
-You can find the [list of networks on this page](unlock/networks.md).
+You can find the [list of networks on this page](unlock/networks).
