@@ -7,13 +7,15 @@ description: >-
 sidebar_position: 7
 ---
 
-# Subgraph
+# Unlock Subgraph Introduction
+
+Unlock has a GraphQL API Endpoint hosted by [The Graph](https://thegraph.com/docs/about/introduction#what-the-graph-is) called a subgraph for indexing and organizing data from the Unlock smart contracts.
 
 Unlock leverages the [Graph Protocol](https://thegraph.com) to simplify the process of making meaningful applications leveraging the Unlock Smart Contracts and associated data.
 
 The Graph Protocol provides an accessible GraphQL service providing useful aggregate Unlock data from the Ethereum blockchain. The links below provide a rudimentary tool to build and test your queries.
 
-[Ethereum Mainnet](https://thegraph.com/explorer/subgraph/unlock-protocol/mainnet-v2)
+[Ethereum Mainnet Hosted](https://thegraph.com/explorer/subgraph/unlock-protocol/mainnet-v2)
 
 [Goerli (Ethereum testnet)](https://thegraph.com/hosted-service/subgraph/unlock-protocol/goerli-v2)
 
@@ -36,3 +38,16 @@ The Graph Protocol provides an accessible GraphQL service providing useful aggre
 [Arbitrum](https://thegraph.com/hosted-service/subgraph/unlock-protocol/arbitrum-v2)
 
 NB: As of 2022, September 29 a new version of the subgraph containing breaking changes has been deployed for all existing chains. Subsequently the subgraph URL has been updated with a `-v2` suffix pointing to the new version, as previous URLs will be shut down.
+
+## Ethereum Decentralized Mainnet
+
+- [Explorer Page](https://thegraph.com/explorer/subgraphs/8u7KcVRxjtTDRgEJup3UuPJk6YoRDTHNpSMk5BEpdw42?view=Overview)
+- Graphql Endpoint: https://api.thegraph.com/subgraphs/name/unlock-protocol/unlock
+- [Code Repo](https://github.com/unlock-protocol/unlock/tree/master/subgraph)
+
+## Helpful Resources
+
+- [Video Tutorial on creating an API Key](https://www.youtube.com/watch?v=UrfIpm-Vlgs)
+- [Managing your API Key & setting your indexer preferences](https://thegraph.com/docs/en/studio/managing-api-keys/)
+- [Querying from an application](https://thegraph.com/docs/en/developer/querying-from-your-app/)
+- [How to use the explorer and playground to query on-chain data](https://medium.com/@chidubem_/how-to-query-on-chain-data-with-the-graph-f8507488215)

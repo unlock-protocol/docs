@@ -116,7 +116,20 @@ const sidebars = {
             "tools/locksmith/webhooks",
           ],
         },
-        "tools/subgraph",
+        {
+          type: "category",
+          label: "Subgraphs",
+          link: {
+            type: "doc",
+            id: "tools/subgraph.md",
+          },
+          items: [
+            {
+              "docs/tools/entities.md",
+              "docs/tools/queries.md",
+            },
+          ],
+        },
         "tools/hardhat-plugin",
         "tools/rpc-provider",
       ],
