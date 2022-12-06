@@ -148,10 +148,6 @@ const config = {
             to: "/tools/unlock.js",
           },
           {
-            from: "/tools/subgraph",
-            to: "/tools/subgraph/subgraph",
-          },
-          {
             from: "/tools/entities",
             to: "/tools/subgraph/entities",
           },
