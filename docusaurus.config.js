@@ -40,7 +40,7 @@ const config = {
             to: "/",
           },
           {
-            from: "/unlock/locksmith/webhooks",
+            from: "/unlock/developer/locksmith/webhooks",
             to: "/tools/locksmith/webhooks",
           },
           {
