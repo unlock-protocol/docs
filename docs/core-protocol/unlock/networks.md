@@ -1,49 +1,10 @@
----
-title: Networks
-description: >-
-  Details on blockchain network deployments of Unlock Protocol.
----
-
-import { GoMarkGithub } from "react-icons/go";
-import { SiNpm } from "react-icons/si";
-
 # Networks
 
 You should **not need to deploy an Unlock contract yourself**. Here are the addresses of contracts deployed on respective networks and you can call them directly using the block explorer.
 
-## Package
-Included in the core protocol is a networks package. 
+The core team has built a `networks` [npm module](https://www.npmjs.com/package/@unlock-protocol/networks) that includes all the networks' addresses as well as [rpc endpoints](../../tools/rpc-provider.md) that you can use for debugging purposes: `@unlock-protocol/networks`.
 
-<a href="https://github.com/unlock-protocol/unlock/tree/master/packages/networks">
-  <button class="button button-primary margin-bottom--md">
-    <GoMarkGithub className='react-icons' /> Unlock Repo / Networks Subdirectory
-  </button>
-</a>
-
-This package includes all of the network addresses as well as [rpc endpoints](../../tools/rpc-provider.md) that you can use for development environments.
-
-<a href="https://www.npmjs.com/package/@unlock-protocol/networks">
-  <button class="button button-primary margin-bottom--md">
-    <SiNpm className='react-icons' /> npm @unlock-protocol/networks
-  </button>
-</a> 
-
-### Adding it in your project
-
-using yarn
-```shell
-yarn add @unlock-protocol/networks
-```
-or npm
-```shell
-npm i @unlock-protocol/networks
-```
-
-## Deployments
-
-### Mainnets
-
-#### Ethereum
+## Ethereum
 
 The most popular network
 
@@ -51,72 +12,7 @@ The most popular network
 - native currency: Ether (Eth)
 - unlockAddress: [`0x3d5409CcE1d45233dE1D4eBDEe74b8E004abDD13`](https://etherscan.io/address/0x3d5409CcE1d45233dE1D4eBDEe74b8E004abDD13)
 
-#### Optimism <button class="button icon-button icon-gasless"></button>
-
-Layer 2 network. Cheaper transaction cost.
-
-- chainId: 10
-- native currency: Eth (Eth)
-- unlockAddress: [`0x99b1348a9129ac49c6de7F11245773dE2f51fB0c`](https://optimistic.etherscan.io/address/0x99b1348a9129ac49c6de7F11245773dE2f51fB0c)
-
-#### Binance Smart Chain
-
-EVM compatible network. Cheaper transaction cost.
-
-- chainId: 56
-- native currency: BNB (BNB)
-- unlockAddress: [`0xeC83410DbC48C7797D2f2AFe624881674c65c856`](https://bscscan.com/address/0xeC83410DbC48C7797D2f2AFe624881674c65c856)
-
-#### Gnosis Chain <button class="button icon-button icon-gasless"></button>
-EVM compatible network whose base currency is a stable coin. Cheaper transaction cost.
-
-- chainId: 100
-- native currency: DAI (DAI)
-- unlockAddress: [`0x1bc53f4303c711cc693F6Ec3477B83703DcB317f`](https://blockscout.com/poa/xdai/address/0x1bc53f4303c711cc693F6Ec3477B83703DcB317f/transactions)
-
-#### Polygon <button class="button icon-button icon-gasless"></button>
-
-Popular side chain network. Cheaper transaction cost.
-
-- chainId: 137
-- native currency: Matic (MATIC)
-- unlockAddress: [`0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f`](https://polygonscan.com/address/0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f)
-
-#### Arbitrum <button class="button icon-button icon-gasless"></button>
-
-Arbitrum One is a Layer 2 (L2) chain running on top of Ethereum Mainnet that enables high-throughput, low cost smart contracts operations.
-
-- chainId: 42161
-- native currency: ETH (ETH)
-- unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://arbiscan.io/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
-
-#### Celo
-
-Celo is a EVM compatible proof-of-stake blockchain designed for mobile with the ability to pay gas with tokens or stablecoins.
-
-- chainId: 42220
-- native currency: CELO (CELO)
-- unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://celoscan.io/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
-
-#### Avalanche (C-Chain)
-
-Avalanche is an open, programmable smart contracts platform for decentralized applications.
-
-- chainId: 43114
-- native currency: AVAX (AVAX)
-- unlockAddress: [`0x70cBE5F72dD85aA634d07d2227a421144Af734b3`](https://snowtrace.io/address/0x70cBE5F72dD85aA634d07d2227a421144Af734b3)
-
-### Testnets
-
-#### Mumbai (Polygon)
-
-Polygon test network. Do not use for production
-
-- chainId: 80001
-- native currency: MATIC (MATIC)
-- unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://mumbai.polygonscan.com/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
-
-#### Goerli (Ethereum)
+## Goerli (Testnet)
 
 Main Ethereum test network. Do not use for production
 
@@ -124,14 +20,66 @@ Main Ethereum test network. Do not use for production
 - native currency: ETH (ETH)
 - unlockAddress: [`0x627118a4fB747016911e5cDA82e2E77C531e8206`](https://goerli.etherscan.io/address/0x627118a4fB747016911e5cDA82e2E77C531e8206)
 
-## Gasless Free Claims
-If a person doesn't have the gas to claim a free membership NFT then we've got you
-covered!
+## Optimism
 
-There are certain low cost networks for which we've enabled it so that when 
-purchasing when they get the payments page they see an option to 
+Layer 2 network. Cheaper transaction cost.
 
-<img class="half-width margin-bottom--md" alt="Gasless Free Claim Checkout Page" src="/img/core-protocol/networks/free-claims.png" />
+- chainId: 10
+- native currency: Eth (Eth)
+- unlockAddress: [`0x99b1348a9129ac49c6de7F11245773dE2f51fB0c`](https://optimistic.etherscan.io/address/0x99b1348a9129ac49c6de7F11245773dE2f51fB0c)
 
-Look for the <button class="button icon-button icon-gasless"></button> symbol for
-networks that you can setup for gasless free claims with our [checkout](/tools/checkout).
+## Binance Smart Chain
+
+EVM compatible network. Cheaper transaction cost.
+
+- chainId: 56
+- native currency: BNB (BNB)
+- unlockAddress: [`0xeC83410DbC48C7797D2f2AFe624881674c65c856`](https://bscscan.com/address/0xeC83410DbC48C7797D2f2AFe624881674c65c856)
+
+## Gnosis Chain
+
+EVM compatible network whose base currency is a stable coin. Cheaper transaction cost.
+
+- chainId: 100
+- native currency: DAI (DAI)
+- unlockAddress: [`0x1bc53f4303c711cc693F6Ec3477B83703DcB317f`](https://blockscout.com/poa/xdai/address/0x1bc53f4303c711cc693F6Ec3477B83703DcB317f/transactions)
+
+## Polygon
+
+Popular side chain network. Cheaper transaction cost.
+
+- chainId: 137
+- native currency: Matic (MATIC)
+- unlockAddress: [`0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f`](https://polygonscan.com/address/0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f)
+
+## Arbitrum
+
+Arbitrum One is a Layer 2 (L2) chain running on top of Ethereum Mainnet that enables high-throughput, low cost smart contracts operations.
+
+- chainId: 42161
+- native currency: ETH (ETH)
+- unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://arbiscan.io/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
+
+## Celo
+
+Celo is a EVM compatible proof-of-stake blockchain designed for mobile with the ability to pay gas with tokens or stablecoins.
+
+- chainId: 42220
+- native currency: CELO (CELO)
+- unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://celoscan.io/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
+
+## Avalanche (C-Chain)
+
+Avalanche is an open, programmable smart contracts platform for decentralized applications.
+
+- chainId: 43114
+- native currency: AVAX (AVAX)
+- unlockAddress: [`0x70cBE5F72dD85aA634d07d2227a421144Af734b3`](https://snowtrace.io/address/0x70cBE5F72dD85aA634d07d2227a421144Af734b3)
+
+## Mumbai (Polygon)
+
+Polygon test network. Do not use for production
+
+- chainId: 80001
+- native currency: MATIC (MATIC)
+- unlockAddress: [`0x1FF7e338d5E582138C46044dc238543Ce555C963`](https://mumbai.polygonscan.com/address/0x1FF7e338d5E582138C46044dc238543Ce555C963)
