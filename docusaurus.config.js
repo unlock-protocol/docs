@@ -40,7 +40,7 @@ const config = {
             to: "/",
           },
           {
-            from: "/unlock/developers/locksmith/webhooks",
+            from: "/unlock/tools/locksmith/webhooks",
             to: "/tools/locksmith/webhooks",
           },
           {
@@ -146,6 +146,14 @@ const config = {
           {
             from: "/developers/unlock.js",
             to: "/tools/unlock.js",
+          },
+          {
+            from: "/tools/entities",
+            to: "/tools/subgraph/entities",
+          },
+          {
+            from: "/tools/queries",
+            to: "/tools/subgraph/queries",
           },
           {
             from: "/basics/deploying-a-lock",
