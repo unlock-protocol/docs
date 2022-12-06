@@ -1,3 +1,10 @@
+---
+title: Queries
+description: Example of queries.
+---
+
+
+
 # Querying
 
 Below are some sample queries you can use to gather information from the Unlock contracts.

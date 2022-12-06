@@ -121,7 +121,7 @@ const sidebars = {
           label: "subgraph",
           link: {
             type: "doc",
-            id: "tools/subgraph/subgraph",
+            id: "tools/subgraph/README",
           },
           items: [
             {

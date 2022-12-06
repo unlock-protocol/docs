@@ -1,3 +1,9 @@
+---
+title: Entities
+description: List of Entities
+---
+
+
 # Entities
 
 - [`Lock`](#lock)
