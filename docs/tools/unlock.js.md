@@ -100,6 +100,7 @@ async function run() {
       expirationDuration: 12121311,
       keyPrice: "0.01", // Key price needs to be a string
     },
+    {}, // transaction options
     (error, hash) => {
       // This is the hash of the transaction!
       console.log({ hash });
@@ -147,6 +148,7 @@ async function run() {
     {
       lockAddress,
     },
+    {}, // transaction options
     (error, hash) => {
       // This is the hash of the transaction!
       console.log({ hash });
