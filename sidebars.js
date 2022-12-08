@@ -67,11 +67,13 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: "category",
           label: "Checkout",
-        
+          link: {
+            type: "doc",
+            id: "tools/checkout/README",
+          },
           items: ["tools/checkout/configuration", "tools/checkout/collecting-metadata"],
         },
         "tools/unlock.js",
