@@ -111,7 +111,6 @@ const sidebars = {
               href: "/api/locksmith",
               label: "API",
             },
-            "tools/locksmith/metadata",
             "tools/locksmith/webhooks",
           ],
         },

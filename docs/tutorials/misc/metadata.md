@@ -41,8 +41,6 @@ Some information is meant to be shared, but much information should be kept priv
 
 > Only authenticated lock owners can write key-specific metadata. Only authenticated users can write their own user-specific metadata.
 
-
-
 > Only authenticated lock owners and authenticated users can read protected user-specific metadata.
 
 
