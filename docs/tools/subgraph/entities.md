@@ -6,7 +6,7 @@ description: List of Entities
 
 # Entities
 
-- [`Entity`](#entity)
+- [`Lock`](#lock)
 - [`Key`](#key)
 - [`UnlockDailyData`](#unlockdailydata)
 - [`LockStats`](#lockstats)
