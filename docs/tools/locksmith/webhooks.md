@@ -1,5 +1,5 @@
 ---
-title: Locksmith Webhooks
+title: Webhooks
 description:
   Locksmith implements websub for Unlock Protocol and allows you to send real
   time updates to registered endpoints.
