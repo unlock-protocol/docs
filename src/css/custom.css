@@ -326,3 +326,26 @@ dd {
     width: 100%;
   }
 }
+
+/* Icons */
+
+.react-icons{
+  vertical-align: text-bottom;
+}
+
+/* Icon that is a round button */
+.icon-button {
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0.35em;
+  border-radius: 50%;
+}
+
+.icon-gasless{
+  background-image: url("/img/icons/gasless.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+}
+
+
