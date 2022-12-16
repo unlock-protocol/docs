@@ -153,9 +153,10 @@ Deactivate an existing keythe key will be expired and ownership records will be 
 ```solidity
 function cancelAndRefund(uint256 _tokenId) external nonpayable
 ```
-*Allows the key manager to expire a given tokenId and send a refund to the keyOwner based on the amount of time remaining.*
 
-> Note: _Cancel is enabled with a 10% penalty by default on all Locks._
+
+
+*allows the key manager to expire a given tokenId and send a refund to the keyOwner based on the amount of time remaining.*
 
 #### Parameters
 
