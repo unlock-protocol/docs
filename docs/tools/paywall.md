@@ -24,7 +24,9 @@ Registering event listeners.
 ```javascript
 window.addEventListener("unlockProtocol.eventName", handler);
 ```
+
 ### Status
+
 <hr />
 
 **event** `unlockProtocol.status`
