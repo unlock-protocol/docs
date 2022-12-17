@@ -5,7 +5,7 @@ description: >-
 ---
 # Paywall
 
-The Paywall is a lightweight JavaScript library which can track state and emits
+The Paywall is a simple JavaScript library which can track state and emits
 events based on ownership of keys to specified locks. It can be used to trigger
 a the Checkout for purchasing keys.
 
