@@ -5,7 +5,7 @@ description: >-
 ---
 # Paywall
 
-The Paywall is a lightweight JavaScript library which can track state and emits
+The Paywall is a simple JavaScript library which can track state and emits
 events based on ownership of keys to specified locks. It can be used to trigger
 a the Checkout for purchasing keys.
 
@@ -16,6 +16,7 @@ everything you need to know in [Checkout / Configuration](/tools/checkout/config
 out the JSON object you're going use.
 
 ## Events
+
 Once loaded the script will trigger events on the page’s ​window​ object. 
 
 Registering event listeners.
@@ -23,7 +24,9 @@ Registering event listeners.
 ```javascript
 window.addEventListener("unlockProtocol.eventName", handler);
 ```
+
 ### Status
+
 <hr />
 
 **event** `unlockProtocol.status`
