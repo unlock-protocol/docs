@@ -86,7 +86,7 @@ This event gets triggered when the modal is closed by the user. It does not give
 
 ## Initiate Checkout
 
-In order to purchase keys, Unlock provides a modal that lets the user pick the lock of their choice (based on [the configuration](../checkout/configuration)). The modal can be loaded by invoking the following:
+In order to purchase keys, Unlock provides a modal that lets the user pick the lock of their choice (based on [the configuration](../../tools/checkout/configuration)). The modal can be loaded by invoking the following:
 
 ```javascript
 window.unlockProtocol &&
