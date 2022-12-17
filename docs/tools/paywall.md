@@ -16,6 +16,7 @@ everything you need to know in [Checkout / Configuration](/tools/checkout/config
 out the JSON object you're going use.
 
 ## Events
+
 Once loaded the script will trigger events on the page’s ​window​ object. 
 
 Registering event listeners.
