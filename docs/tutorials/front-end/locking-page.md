@@ -39,11 +39,11 @@ There again, you will need to use a `<script>`element added to your page's HTML.
 Ideally, it should also be placed in the ​`<head>`​ section and will let you
 configure the behavior of the paywall.
 
-The Paywall actually invokes one of our other tools ["Checkout"](/tools/checkout)
+The Paywall actually invokes one of our other tools ["Checkout"](../../tools/checkout)
 and the configuration you build here is the same JSON object you build for
 configuring the Checkout.
 
-Please see this section on [how to build the configuration](/tools/checkout/configuration.md).
+Please see this section on [how to build the configuration](../../tools/checkout/configuration.md).
 
 ```javascript
 <script>
