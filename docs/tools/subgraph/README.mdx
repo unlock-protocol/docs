@@ -7,6 +7,15 @@ description: >-
   elements from a contract, use our subgraph!
 ---
 
+import { networks } from "@unlock-protocol/networks";
+
+networks.map((network) => {
+
+console.log(network);
+return <span>{network.name}</span>
+
+})
+
 # Unlock Subgraph Introduction
 
 Unlock has a GraphQL API Endpoint hosted by [The Graph](https://thegraph.com/docs/about/introduction#what-the-graph-is) called a subgraph for indexing and organizing data from the Unlock smart contracts.
