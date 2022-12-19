@@ -50,7 +50,7 @@ const sidebars = {
       link: { //added link tag to display sidebar on tools page
         type: "doc",
         id: "tools/README",
-      },      
+      },
       items: [
         "tools/dashboard",
         {
