@@ -17,6 +17,7 @@ const config = {
   organizationName: "unlock-protocol", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
   plugins: [
+    'docusaurus-node-polyfills',
     [
       require.resolve("docusaurus-gtm-plugin"),
       {
@@ -379,7 +380,7 @@ const config = {
     prism: {
       additionalLanguages: ["solidity"],
       theme: UnlockPrismTheme,
-    },
+    }
   },
 
   i18n: {

@@ -50,7 +50,7 @@ const sidebars = {
       link: { //added link tag to display sidebar on tools page
         type: "doc",
         id: "tools/README",
-      },      
+      },
       items: [
         "tools/dashboard",
         {
@@ -99,7 +99,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "subgraph",
+          label: "Subgraph",
           link: {
             type: "doc",
             id: "tools/subgraph/README",
