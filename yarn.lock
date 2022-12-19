@@ -2050,6 +2050,11 @@
   dependencies:
     "@types/node" "*"
 
+"@unlock-protocol/networks@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@unlock-protocol/networks/-/networks-0.0.9.tgz#07fd1ea333f4c897db41c710e09b4f5e3702a344"
+  integrity sha512-g+QZduTWq6YP7BCp51KsTfDb8wUpilYVQCVgBWRDvRuVY0a44CVFXPEZKZpbnt/LaotUujvgpmy05FuDzStCmA==
+
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.11.1.tgz#2bfd767eae1a6996f432ff7e8d7fc75679c0b6a7"
@@ -6697,7 +6702,7 @@ react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-icons@^4.7.1:
+react-icons@4.7.1:
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.7.1.tgz#0f4b25a5694e6972677cb189d2a72eabea7a8345"
   integrity sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==
