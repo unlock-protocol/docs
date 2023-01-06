@@ -195,11 +195,20 @@ const config = {
     ],
   ],
 
+
   themeConfig: {
+    start_urls: [
+      "https://docs.unlock-protocol.com"
+    ],
+    sitemap_urls: [
+      "https://docs.unlock-protocol.com/sitemap.xml"
+    ],  
     algolia: {
       appId: "J4FN2FD27Q",
       apiKey: "9bcefa2858ec26676689edd55f03fd26",
       indexName: "unlock-protocol",
+      contextualSearch: false,
+      searchPagePath: false,
     },
     metadata: [
       {
@@ -265,6 +274,7 @@ const config = {
         name: "twitter:image:alt",
         content: "Unlock logo with the word docs next to it",
       },
+      {name: 'docsearch:docusaurus_tag', content: 'current'}
     ],
     navbar: {
       title: "Unlock",
