@@ -39,11 +39,11 @@ There again, you will need to use a `<script>`element added to your page's HTML.
 Ideally, it should also be placed in the ​`<head>`​ section and will let you
 configure the behavior of the paywall.
 
-The Paywall actually invokes one of our other tools ["Checkout"](../checkout)
+The Paywall actually invokes one of our other tools ["Checkout"](../../tools/checkout)
 and the configuration you build here is the same JSON object you build for
 configuring the Checkout.
 
-Please see this section on [how to build the configuration](../checkout/configuration.md).
+Please see this section on [how to build the configuration](../../tools/checkout/configuration.md).
 
 ```javascript
 <script>
@@ -58,31 +58,10 @@ Important: `​unlockProtocolConfig​` is a global object (it should be defined
 
 ## Handle Events
 
-Once loaded the unlock script will trigger events on the page’s ​`window`​ object. These events let your web application adjust its behaving or the content it displayed based on the status.
+Once loaded the unlock script will trigger events on the page’s ​`window`​ object. 
+These events let your web application adjust its behaving or the content it 
+displayed based on the status. For a full list see [Paywall documentation](/../../tools/paywall).
 
-There are types of events being triggered:
-
-### Paywall status
-
-- Event Name: `unlockProtocol.status`
-- Values
-  - `event.detail.state`: `locked`or `unlocked`.
-
-### User info
-
-- Event Name: `unlockProtocol.authenticated`
-- Values
-  - `event.detail.address`: the Ethereum address of the connected user.
-  - `event.detail.signedMessage`: the signature perform by the user if your configuration includes a `messageToSign`option \([more info](../checkout/configuration#the-paywallconfig-object)\)
-
-_Note:_ if the even is triggered without any payload, please consider that the user has "logged out".
-
-### Transaction status
-
-- Event Name: `unlockProtocol.transactionSent`
-- Values
-  - `event.detail.hash`: the Ethereum transaction,
-  - `event.detail.lock`: the Ethereum address of the lock.
 
 Here is an example:
 
@@ -107,7 +86,7 @@ This event gets triggered when the modal is closed by the user. It does not give
 
 ## Initiate Checkout
 
-In order to purchase keys, Unlock provides a modal that lets the user pick the lock of their choice (based on [the configuration](../checkout/configuration)). The modal can be loaded by invoking the following:
+In order to purchase keys, Unlock provides a modal that lets the user pick the lock of their choice (based on [the configuration](../../tools/checkout/configuration)). The modal can be loaded by invoking the following:
 
 ```javascript
 window.unlockProtocol &&

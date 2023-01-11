@@ -17,6 +17,7 @@ const config = {
   organizationName: "unlock-protocol", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
   plugins: [
+    'docusaurus-node-polyfills',
     [
       require.resolve("docusaurus-gtm-plugin"),
       {
@@ -194,11 +195,20 @@ const config = {
     ],
   ],
 
+
   themeConfig: {
+    start_urls: [
+      "https://docs.unlock-protocol.com"
+    ],
+    sitemap_urls: [
+      "https://docs.unlock-protocol.com/sitemap.xml"
+    ],  
     algolia: {
       appId: "J4FN2FD27Q",
       apiKey: "9bcefa2858ec26676689edd55f03fd26",
       indexName: "unlock-protocol",
+      contextualSearch: false,
+      searchPagePath: false,
     },
     metadata: [
       {
@@ -264,6 +274,7 @@ const config = {
         name: "twitter:image:alt",
         content: "Unlock logo with the word docs next to it",
       },
+      {name: 'docsearch:docusaurus_tag', content: 'current'}
     ],
     navbar: {
       title: "Unlock",
@@ -379,7 +390,7 @@ const config = {
     prism: {
       additionalLanguages: ["solidity"],
       theme: UnlockPrismTheme,
-    },
+    }
   },
 
   i18n: {
