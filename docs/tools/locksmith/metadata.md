@@ -7,7 +7,7 @@ description: A guide to using metadata with Unlock Protocol.
 
 ## Kinds of Metadata
 
-Unlock keeps track of metadata in two different ways, depending on what the metadata is attached to.
+Unlock keeps track of off-chain metadata in two different ways, depending on what the metadata is attached to.
 
 ### Key-Specific Metadata
 
