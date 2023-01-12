@@ -1,6 +1,6 @@
 ---
-title: Using Metadata with Unlock Protocol
-description: A guide to using metadata with Unlock Protocol.
+title: Metadata
+description: A guide to using off-chain metadata with Unlock Protocol.
 ---
 
 # Metadata
