@@ -30,6 +30,5 @@
 /governance/grants-bounties-and-matchings                                 /governance/grants-bounties
 /basics/deploying-a-lock                                                  https://unlock-protocol.com/guides/how-to-create-a-lock/
 /tools/locksmith/authorization-strategy                                   /tools/locksmith/
-/tools/locksmith/metadata                                                 /tutorials/misc/metadata
 /tools/paywall/advanced-paywall-configuration                             /tools/paywall
 /tools/paywall/locking-page                                               /tutorials/front-end/locking-page
