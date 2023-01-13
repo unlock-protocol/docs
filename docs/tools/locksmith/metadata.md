@@ -1,13 +1,13 @@
 ---
-title: Using Metadata with Unlock Protocol
-description: A guide to using metadata with Unlock Protocol.
+title: Metadata
+description: A guide to using off-chain metadata with Unlock Protocol.
 ---
 
 # Metadata
 
 ## Kinds of Metadata
 
-Unlock keeps track of metadata in two different ways, depending on what the metadata is attached to.
+Unlock keeps track of off-chain metadata in two different ways, depending on what the metadata is attached to.
 
 ### Key-Specific Metadata
 
@@ -40,8 +40,6 @@ Some information is meant to be shared, but much information should be kept priv
 
 
 > Only authenticated lock owners can write key-specific metadata. Only authenticated users can write their own user-specific metadata.
-
-
 
 > Only authenticated lock owners and authenticated users can read protected user-specific metadata.
 
