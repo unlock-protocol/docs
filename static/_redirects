@@ -32,3 +32,4 @@
 /tools/locksmith/authorization-strategy                                   /tools/locksmith/
 /tools/paywall/advanced-paywall-configuration                             /tools/paywall
 /tools/paywall/locking-page                                               /tutorials/front-end/locking-page
+/developers/tutorials/backend-locking-with-express.js                     /tutorials/back-end/backend-locking-with-express.js
