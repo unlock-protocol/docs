@@ -168,7 +168,7 @@ As you complete the associated tasks be sure to update your milestones.
 Upon completion of the grant work, Unlock will ask you to complete a grant retrospective form with feedback and learnings, as well as submit a demonstration video, a link to a live (production) implementation for review, and other completion items. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, the grant payout will be initiated.
 
 ## Grant Payments
-Grant payouts are paid using UDT on the Polygon network. Grant payouts are delivered over a **one year vesting period** that begins vesting on the date of the grant application. When the grant work is completed, submitted, and approved, a first partial grant payout will be done by way of a "catchup" to the date of grant completion from the original grant submission date. The unvested balance left will be sent over incrementally between the grant completion date and one year from the grant date as it vests.
+Grant payouts are paid using UDT on the Polygon network. Grant payouts are delivered over a **one year vesting period** that begins vesting on the date of the grant application approval. When the grant work is completed, submitted, and approved, a first partial grant payout will be done by way of a "catchup" to the date of grant completion from the original grant submission date. The unvested balance left will be streamed between the grant completion date and one year from the grant date as it vests.
 
 Note: If the work of the grant has not been completed and delivered by one year after the grant date, it is assumed the grant has been abandoned.
 
