@@ -128,7 +128,7 @@ Milestone 2: Launch & Marketing
 - Launched app in Apple & Google stores
 - Initial partner outreach complete
 
-## After Approval
+## Grant Building
 
 After your application is approved you will be assigned your own “pod” workspace in Wonderverse. This is the place where the grants administrator will drop you resources, assign you tasks to stay on track or communicate additional information you might need about protocol updates and other funding opportunities. Feel free to use your workspace in any capacity you see fit. You MUST check in at least once a month in order to ensure your grant stays active but you will be warned in Wonderverse before it’s closed so be sure to set up your notification settings appropriately or visit your workspace regularly.
 
@@ -156,10 +156,20 @@ Below are some useful resources you should use to learn about Unlock Protocol, a
 
 [Creator Guides](https://unlock-protocol.com/guides/) - step-by-step guides on how to use our UI tools like the Unlock “Dashboard”, set up plugins, find integrations, configure credit card payments, and more.
 
-### Milestone Delivery  & Review Payments
+## Milestone Delivery
 
 Once the grants administrator creates your grant “pod” workspace, you’ll also see your milestones set there with associated deliverable tasks. Those will look something like the image below. 
 
 ![screen shot wonderverse for grantee handbook](/img/governance/grants/grantee-handbook-7.png)
 
-As you complete the associated tasks be sure to update your milestones. The final item will be the “Finished Milestone” bounty which you can mark as complete and attach any additional information we might need. This will trigger your milestone payment.
+As you complete the associated tasks be sure to update your milestones. 
+
+### Final Delivery
+Upon completion of the grant work, Unlock will ask you to complete a grant retrospective form with feedback and learnings, as well as submit a demonstration video, a link to a live (production) implementation for review, and other completion items. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, the grant payout will be initiated.
+
+## Grant Payments
+Grant payouts are paid using UDT on the Polygon network. Grant payouts are delivered over a **one year vesting period** that begins vesting on the date of the grant application. When the grant work is completed, submitted, and approved, a first partial grant payout will be done by way of a "catchup" to the date of grant completion from the original grant submission date. The unvested balance left will be sent over incrementally between the grant completion date and one year from the grant date as it vests.
+
+Note: If the work of the grant has not been completed and delivered by one year after the grant date, it is assumed the grant has been abandoned.
+
+
