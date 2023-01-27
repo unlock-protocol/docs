@@ -1,5 +1,5 @@
 ---
-title: Using Unlock Protocol's contract with Ethers
+title: Using Ethers for Unlock Protocol
 description: >-
   In this tutorial, we will see how to use Unlock's contract with the popular Ethers library.
 ---
