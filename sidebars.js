@@ -98,7 +98,7 @@ const sidebars = {
             type: "doc",
             id: "tools/subgraph/README",
           },
-          items: ["tools/subgraph/entities","tools/subgraph/queries"],
+          items: ["tools/subgraph/entities", "tools/subgraph/queries"],
         },
         "tools/hardhat-plugin",
         "tools/rpc-provider",
@@ -112,7 +112,7 @@ const sidebars = {
         id: "tutorials/README",
       },
       items: [
-        "tutorials/building-token-gated-applications", 
+        "tutorials/building-token-gated-applications",
         {
           type: "category",
           label: "Front-end",
@@ -137,8 +137,9 @@ const sidebars = {
           label: "Smart Contracts",
           items: [
             "tutorials/smart-contracts/deploying-locally",
-            "tutorials/smart-contracts/ethers",
             "tutorials/smart-contracts/using-unlock-in-other-contracts",
+            "tutorials/smart-contracts/ethers",
+            "tutorials/smart-contracts/deploying-from-another-contract",
             {
               type: "category",
               label: "Unlock Hooks",
