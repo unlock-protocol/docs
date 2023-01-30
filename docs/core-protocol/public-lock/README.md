@@ -6,33 +6,40 @@ description: >-
 
 # Public Lock
 
-A "Lock" is a customized smart contract for minting (creating) ERC-721 NFT's. They are the Unlock Protocol version of a "minting contract". They are created with the [Unlock](../../core-protocol/unlock/) smart contract, which is a "factory" contract. That factory contract uses the [Public Lock](../../core-protocol/public-lock/) template contact along with
+A "Lock" (`PublicLock.sol`) is a customized smart contract for minting (creating) ERC-721 NFT's. They are the Unlock Protocol version of a "minting contract". They are created with the [Unlock](../../core-protocol/unlock/) smart contract, which is a "factory" contract. That factory contract uses the [Public Lock](../../core-protocol/public-lock/) template contact along with
 with the configuration options you choose to record a new customized
 smart contract to the blockchain [network](../../core-protocol/unlock/networks) of your choice.
 
-## Lock Contract
-
-This is the contract (**PublicLock.sol**) which users can configure and deploy to restrict access to resources, such as a blog, a subset of software features, or an event.
-
-Each lock is a standalone contract with its own deployment, address, and storage. As per v9, locks can be entirely untethered and still fully functional even without access to the main Unlock contract.
+Each lock is a standalone contract with its own deployment, address, and storage.
 
 - Each lock contract is an [ERC-721](https://eips.ethereum.org/EIPS/eip-721) compliant contract capable of creating and managing NFTs (non-fungible tokens we call "Keys"), as well as restricting access based on the user's possession (or lack of) one of these keys.
 - Keys for one lock are valid only for the lock which created them.
 - A given user may own only 1 key (NFT) at a time as a default, but that can be changed using the `setMaxKeysPerAddress` function.
 
-You can call and inspect the Lock contracts directly using the block explorers as well.
-
-## Overview
-
-The Lock Smart Contract has multiple capabilities:
+Addittionaly, the Lock smart contract has multiple capabilities:
 
 - _Administrative_: these are the functions which change rights (see[ access control](./access-control/)) associated to the lock or individual parameters for the lock a such as its name or of course its price. Finally, there is a method to withdraw funds from the lock contract itself.
 - _Transferring key ownership_: keys can be purchased from the lock smart contract itself or from another user who purchased one previously. Another element is that keys can be purchased on behalf of somebody else \(this is important because this lets somebody pay gas fees on behalf of somebody else\)
 - _Changing key attributes_: the keys have an expiration date which can be changed \(for an earlier date by the lock owner\) as well as data attributes which can be changed to something else.
 
+## Interacting with Protocol Contracts
+
+Here are some popular JavaScript libaries that can be used to interact with blockchain smart contracts including [Unlock.sol](../../core-protocol/unlock/).
+
+- [web3.js](https://web3js.readthedocs.io/)
+- [Ethers](https://docs.ethers.io/)
+
+Tools we've built and maintain can be found in the ["Tools"](../../tools/) section of the docs. The following tools can be used for deploying locks.
+
+- [Unlock.js](../../tools/unlock.js) is our JavaScript library for interacting with the protocol. It can be used with node.js on the back-end or on the front-end in the browser. This is the library used by our Dashboard and front-end applications.
+
+- [Unlock Hardhat Plugin](../../tutorials/smart-contracts/deploying-locally) can be used to deploy locally. The plugin includes both tasks that can be added to your own hardhat script, or a cli.
+
+You can call and inspect the Lock contracts directly using the block explorers as well.
+
 ## Upgrades and customization
 
-All locks deployed prior to version 10 are NOT upgradable, which means their core logic will remain unchanged. Starting with version 10, locks are upgradable by their lock manager, through the Unlock contract.
+All locks deployed (version 10 and later) are upgradable by their lock manager, through the Unlock contract.
 
 Lock managers can also alter the behavior of their locks thru the use of [hooks](./hooks/).
 
@@ -51,19 +58,22 @@ The following are the signifigant changes and a full list of commits including b
 This allows for registration of custom functionality when keys are granted and when keys are renewed or extended.
 
 #### `setLockMetadata`
+
 The various features to set metadata (name, symbol and tokenURIs) have been regrouped into this single function.
 
 #### `updateLockConfig`
+
 The configuration for a key’s default duration and available quantity (both per user and in aggregate) have also been grouped into this single function.
 
 #### `expirationTimestamp`
+
 This adds the expiration timestamp on ExpirationDuration event emitted by the time machine when time gets added or substracted to/from a key.
 
-#### Subgraph events and schema changes
+#### Events and schema changes
+
 Added a new event `LockConfig`
 Added `maxNumberOfKeys` and `maxKeysPerAddress` to the lock schema
 Added `expirationTimestamp` to `ExpirationChanged` event
-
 
 ### Version 11
 
@@ -137,4 +147,3 @@ a617fdac8 dedupe zero address check (#8964)
 305d5bb57 fix(smart-contracts): remove unused logic from PublicLock contract (#8861)
 266e183d3 feat(smart-contracts): bump version for Publiclock v11 (#8864)
 ```
-
