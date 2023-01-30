@@ -98,7 +98,7 @@ const sidebars = {
             type: "doc",
             id: "tools/subgraph/README",
           },
-          items: ["tools/subgraph/entities","tools/subgraph/queries"],
+          items: ["tools/subgraph/entities", "tools/subgraph/queries"],
         },
         "tools/hardhat-plugin",
         "tools/rpc-provider",
@@ -112,14 +112,12 @@ const sidebars = {
         id: "tutorials/README",
       },
       items: [
-        "tutorials/building-token-gated-applications", 
+        "tutorials/building-token-gated-applications",
         {
           type: "category",
           label: "Front-end",
           items: [
             "tutorials/front-end/locking-page",
-            "tutorials/front-end/ad-free-experience",
-            "tutorials/front-end/locking-media-content",
             "tutorials/front-end/react-example",
             "tutorials/front-end/scaffold-eth"
           ]

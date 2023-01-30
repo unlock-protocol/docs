@@ -58,15 +58,14 @@ Important: `​unlockProtocolConfig​` is a global object (it should be defined
 
 ## Handle Events
 
-Once loaded the unlock script will trigger events on the page’s ​`window`​ object. 
-These events let your web application adjust its behaving or the content it 
+Once loaded the unlock script will trigger events on the page’s ​`window`​ object.
+These events let your web application adjust its behaving or the content it
 displayed based on the status. For a full list see [Paywall documentation](/../../tools/paywall).
-
 
 Here is an example:
 
 ```javascript
-window.addEventListener("unlockProtocol.status", function (e) {
+window.addEventListener("unlockProtocol.status", function(e) {
   var state = e.detail;
   // the state is a string whose value can either be 'unlocked' or 'locked'...
   // If state is 'unlocked': implement code here which will be triggered when
@@ -105,3 +104,79 @@ You can easily configure the following with your lock by replacing the lock addr
   borderRadius: "6px"
 }} scrolling="no" title="Unlock Sample" src="https://codepen.io/unlock-protocol/embed/bGWZvGM?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowTransparency="true" allowFullscreen="true">
 </iframe>
+
+## More examples
+
+### Ad-free experience
+
+You can easily use the approach detailed above to create an ad-free experience on your own site.
+
+Once you have [deployed a lock](https://unlock-protocol.com/guides/how-to-create-a-lock/), add the Unlock paywall application JavaScript to your page (see above) and configure it.
+
+Finally, add an event handler to capture the change of state between `locked` and `unlocked`; rendering ad components when relevant.
+
+```javascript
+window.addEventListener("unlockProtocol", function(e) {
+  var state = e.detail;
+
+  if (state === "locked") {
+    // load ad rendering component here
+  } else {
+    // current visitor is a member, do not load ads!
+  }
+});
+```
+
+While some tailoring may be required for your specific use case, this should provide a starting point towards utilizing the Unlock Protocol to provide your members with an Ad Free experience.
+
+### Locking Media Content
+
+We use the same approach again to lock media content (images, videos... etc). Here is an example of how to achieve this. We want to lock up access to [this video](https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4).
+
+HTML5 actually makes it very easy to embed any video in a document. Here's what it takes:
+
+```markup
+<video controls>
+  <source src="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4" type="video/mp4">
+</video>
+```
+
+For any web page which includes a lock, we use the same approach. First, we load the Paywall script, and then, we set the configuration for it (see above).
+
+JavaScript provides us with an API to control the video. We can use that to lock its access. The following sample provides details of how this can work. Note there are multiple ways of doing this; feel free to tinker around!
+
+```bash
+<script>
+(function() {
+  // Set a few default variables.
+  let isUnlocked = true;
+  const previewTime = 30;
+
+  window.addEventListener('unlockProtocol.status', function(e) {
+    var unlock = e.detail
+    isUnlocked = (unlock.state === 'unlocked')
+    // Optional: call video.play() to resume the video!
+  })
+
+
+  // This assumes there is a single video on the page. Otherwise use class selectors.
+  const video = document.querySelector('video');
+  video.addEventListener('timeupdate', (event) => {
+    // This event gets triggered every time there is an update in the current time.
+    // If the video is locked and the time is above previewTime seconds
+    if (!isUnlocked && video.currentTime > previewTime) {
+      // We stop the video go back to previewTime and pause the video
+      video.currentTime = previewTime
+      video.pause()
+      // We ask the user to get a membership by loading the checkout UI
+      unlockProtocol.loadCheckoutModal()
+    }
+  })
+})();
+</script>
+
+```
+
+After this, you are all done!
+
+_**Note:** This tutorial implements a front-end locking approach, which is possible to circumvent; a determined actor could tinker with the JavaScript console of their web browser and inspect the code to find a workaround. It is absolutely possible to address this using an approach that is more difficult to circumvent, but that requires a back-end integration, which is more advanced and is outside the scope of this tutorial._
