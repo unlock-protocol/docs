@@ -5,9 +5,9 @@ description: Utilizing Unlock Protocol to provide an ad free experience to membe
 
 # Building an Ad Free Experience
 
-The Unlock Protocol and its supporting software can be used for a multitude of uses cases. One of these use cases currently in the wild is leveraging the Unlock Protocol to provide an [Ad Free Experience ](https://www.forbes.com/sites/cbovaird/2020/01/15/what-really-drove-bitcoins-new-years-rally)to key holders.
+The Unlock Protocol and its supporting software can be used for a multitude of use cases. One of these use cases currently in the wild is leveraging the Unlock Protocol to provide an [Ad Free Experience ](https://www.forbes.com/sites/cbovaird/2020/01/15/what-really-drove-bitcoins-new-years-rally)to key holders.
 
-The general approach to towards the implementation follows the generic steps outline below.
+The general approach to towards the implementation follows the generic steps outlined below.
 
 1. The first step is to deploy a lock. Follow [these steps](https://docs.unlock-protocol.com/#create-a-lock) from the Unlock Dashboard.
 2. Add the Unlock paywall application JavaScript to your page:
