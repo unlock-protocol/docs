@@ -1,7 +1,7 @@
 ---
 title: Using Subgraphs
 description: >-
-  In this tutorial, we will see how to use the a subgraph in order to retrieve large amounts of data from smart contracts.
+  In this tutorial, we will see how to use a subgraph in order to retrieve large amounts of data from smart contracts.
 ---
 
 # Using Subgraphs
@@ -69,7 +69,7 @@ const query = `query Locks($owner: String!) {
   }
 }`;
 
-// We set the variable's value to the the user's address
+// We set the variable's value to the user's address
 const variables = { owner: userAddress };
 
 // We send a POST request to the subgraph endpoint of our choice (change if using a different network!)
