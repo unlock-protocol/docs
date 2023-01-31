@@ -118,8 +118,6 @@ const sidebars = {
           label: "Front-end",
           items: [
             "tutorials/front-end/locking-page",
-            "tutorials/front-end/ad-free-experience",
-            "tutorials/front-end/locking-media-content",
             "tutorials/front-end/react-example",
             "tutorials/front-end/scaffold-eth"
           ]

@@ -102,11 +102,19 @@ const config = {
           },
           {
             from: "/tutorials/ad-free-experience",
-            to: "/tutorials/front-end/ad-free-experience",
+            to: "/tutorials/front-end/locking-page",
+          },
+          {
+            from: "/tutorials/front-end/ad-free-experience",
+            to: "/tutorials/front-end/locking-page",
+          },
+          {
+            from: "/tutorials/front-end/locking-media-content",
+            to: "/tutorials/front-end/locking-page"
           },
           {
             from: "/tutorials/locking-media-content",
-            to: "/tutorials/front-end/locking-media-content",
+            to: "/tutorials/front-end/locking-page",
           },
           {
             from: "/tutorials/react-example",
@@ -202,7 +210,7 @@ const config = {
     ],
     sitemap_urls: [
       "https://docs.unlock-protocol.com/sitemap.xml"
-    ],  
+    ],
     algolia: {
       appId: "J4FN2FD27Q",
       apiKey: "9bcefa2858ec26676689edd55f03fd26",
@@ -274,7 +282,7 @@ const config = {
         name: "twitter:image:alt",
         content: "Unlock logo with the word docs next to it",
       },
-      {name: 'docsearch:docusaurus_tag', content: 'current'}
+      { name: 'docsearch:docusaurus_tag', content: 'current' }
     ],
     navbar: {
       title: "Unlock",
