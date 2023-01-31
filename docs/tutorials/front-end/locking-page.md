@@ -59,7 +59,7 @@ Important: `​unlockProtocolConfig​` is a global object (it should be defined
 ## Handle Events
 
 Once loaded the unlock script will trigger events on the page’s ​`window`​ object. 
-These events let your web application adjust its behaving or the content it 
+These events let your web application adjust its behavior or the content it 
 displayed based on the status. For a full list see [Paywall documentation](/../../tools/paywall).
 
 
