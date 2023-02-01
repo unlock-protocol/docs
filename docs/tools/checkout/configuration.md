@@ -43,6 +43,7 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 - `messageToSign`: _optional string_. If supplied, the user is prompted to sign this message using their wallet. If using a checkout URL, a `signature` query param is then appended to the `redirectUri` (see above). If using the embedded paywall, the `unlockProtocol.authenticated` includes the `signature` attribute.
 - `pessimistic`: _optional boolean_ defaults to `false`. By default, to reduce friction, we do not require users to wait for the transaction to be mined before offering them to be redirected. By setting this to `true`, users will need to wait for the transaction to have been mined in order to proceed to the next step.
 - `hideSoldOut`: _optional boolean_ defaults to `false`. When set to true, sold our locks are not shown to users when they load the checkout modal.
+- `expectedAddress`: _optional string_. If set, the user will be asked to switch their wallet address before proceeding. This is useful if you want to ensure that the user is using the same address as the one they used to purchase a membership.
 
 ### Locks
 
