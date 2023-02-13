@@ -33,3 +33,7 @@
 /tools/paywall/advanced-paywall-configuration                             /tools/paywall
 /tools/paywall/locking-page                                               /tutorials/front-end/locking-page
 /developers/tutorials/backend-locking-with-express.js                     /tutorials/back-end/backend-locking-with-express.js
+/tutorials/ad-free-experience                                             /tutorials/front-end/locking-page
+/tutorials/front-end/ad-free-experience                                   /tutorials/front-end/locking-page
+/tutorials/front-end/locking-media-content                                /tutorials/front-end/locking-page
+/tutorials/locking-media-content                                          /tutorials/front-end/locking-page
