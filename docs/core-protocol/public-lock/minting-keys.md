@@ -1,0 +1,35 @@
+---
+title: Minting Keys
+description: Membership NFTs are called keys and they can be minted from the Lock contract using two different methods.
+sidebar_position: 2
+---
+
+Keys are the Membership Non Fungible Tokens. They are minted from the Lock contract and there exists 2 methods to mint them: they can either be **purchased** or **granted**. Both of these can be used to mint keys one by one or multiple at a time.
+
+### Purchasing Keys
+
+Let's start by noting that this flow is uses the function [`purchase`](/core-protocol/smart-contracts-api/PublicLock#purchase) from the lock even if the keys are free. The best way to describe this flow is that it is _self-served_, which means that anyone can call this function to mint an NFT, whether these keys are free or paid.
+
+:::info
+Note: To disable purchases completely, the best approach is to set the maximum number of keys available for sale to be `0`.
+:::
+
+The `purchase` function can be used to purchase multiple keys at once, and the function takes arguments whichg are all `arrays` in order to accomodate this. Each of these arrays needs to be of the same size.
+
+One of the arguments is an array of recipients, which means that the wallet sending the transaction can be _different_ from the one who will receive the NFT memberships. This can be very useful when application is buying on behalf of users for examples, or when a payment happens "off-chain" (using credit card or other mechanism) and the payment provider then wants to mint the NFT membership to the user.
+
+Another argument is an array of key managers. The [key manager](/core-protocol/public-lock/access-control#keymanager) is the address that has the transfer and cancellation rights over the NFT being minted. For credit card purchases where the transaction cannot be considered final, we strongly advise this key manager to be controlled by the entity that triggered the card payment so that if the transaction is reversed, the NFT membership can also be cancelled.
+
+### Granting Keys
+
+The Lock contract also has a [`grantKeys`](/core-protocol/smart-contracts-api/PublicLock#grantkeys) method. This method can _only_ be called by [lock managers](/core-protocol/public-lock/access-control#lockmanager) or [key granters](/core-protocol/public-lock/access-control#keygranter) and can be used to mint/grant keys _for free_. This function does **not require** a payment and is not limited by the maximum number of keys for sale.
+
+Contrary to the previous method, the granter can also customize the expiration of each membership minted using this, which makes it a convenient method to grant _previews_ or free trials. However, there again, it is critical to set the [key manager](/core-protocol/public-lock/access-control#keymanager) accordingly in order to avoid abuses. For example, if the contract allows for refunds upon cancellation, a malicious recipient of a key airdroped could then claim a refund if they have also been set as _key manager_.
+
+### Renewals and extensions
+
+No new key or membership tokens are created upon renewals, their expiration is extended so that they are considered valid for a longer duration. For renewals and extension, each NFT needs to be extended one by one. However, there again, they can be extended using different methods:
+
+- [`extend`](/core-protocol/smart-contracts-api/PublicLock#extend) where the sender of the transaction _pays_ for the extension, even if they are not the owner of the NFT itself. It is advised here again to carefuly consider the key manager.
+- [`renewMembershipFor`](/core-protocol/smart-contracts-api/PublicLock#renewmembershipfor) which can only be called for ERC20 locks where the owner has approved the renewals through and ERC20 approval as _their_ balance will be reduced.
+- [`grantKeyExtension`](/core-protocol/smart-contracts-api/PublicLock#grantkeyextension) which is similar to `grantKeys` and can only be called by lock managers or key granters.

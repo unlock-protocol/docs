@@ -2,7 +2,7 @@
 title: Hooks
 description: >-
   The "Lock" contract includes hooks that let developers customize their behavior.
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Hooks
@@ -20,6 +20,7 @@ We currently support 7 hooks (as of v12). If your lock uses a previous version, 
 - <a href="#onkeytransferhook-hook">onKeyTransferHook</a>: called when a key is transfered from an address to another.
 
 ## onGrantKey Hook
+
 The `onGrantKeyHook` allows you to create custom logic that is called each time a key is granted. This could enable use cases to create custom logic when keys are granted outside of a purchase flow.
 
 A KeyGrantedHook should implement the following interface.
@@ -46,7 +47,9 @@ interface ILockKeyGrantHook
   ) external;
 }
 ```
+
 ## onKeyExtend Hook
+
 The `onKeyExtendHook` allows you create custom logic when a key is extended or renewed. This could enable use cases where for instance key metadata is updated, maybe you want to update the image when renewals happen. It could enable rewards programs where you increment a reward point total everytime a membership is renewed.
 
 A KeyExtendHook should implement the following interface.
@@ -69,6 +72,7 @@ interface ILockKeyExtendHook
   ) external;
 }
 ```
+
 ## OnKeyPurchase Hook
 
 The `onKeyPurchaseHook` allows you to create custom purchase logic, for instance dynamic pricing, etc.

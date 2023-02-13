@@ -86,7 +86,3 @@ Make sure you use a number and not a string! For the complete list check our
     ]
 }
 ```
-
-:::info
-[Kalidou](https://twitter.com/kld_diagne) from our team built a [tool](https://app.unlock-protocol.com/locks/checkout-url) for generating these json configuration files and encoded urls.
-:::
