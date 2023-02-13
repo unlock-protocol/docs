@@ -34,7 +34,7 @@ The second one is the `passport` instance for your application.&#x20;
 
 The 3rd one is completely optional and includes more advanced configuration:
 
-1. `providers` By default, the plugin uses a set of default providers by network. You may want to customize them in order to not be susject to the rate limiters. Use the following format:
+1. `providers` By default, the plugin uses a set of default providers by network. You may want to customize them in order to not be subject to the rate limiters. Use the following format:
 
 ```javascript
 providers: {
@@ -42,4 +42,4 @@ providers: {
 }
 ```
 
-1. `baseUrl` This string is the base URL for your application. By default is is set to the be the same as the one used by the route for which the middleware will be called.
+1. `baseUrl` This string is the base URL for your application. By default it is set to be the same as the one used by the route for which the middleware will be called.

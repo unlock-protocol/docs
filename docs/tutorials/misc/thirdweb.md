@@ -12,7 +12,7 @@ We released the [Public Lock contract to ThirdWeb's registry](https://thirdweb.c
 
 You can deploy membership contracts using Thirdweb's interface. On the [Public Lock](https://thirdweb.com/unlock-protocol.eth/PublicLock) page, click the `Deploy Now` button. This will open a form where you can complete the required configuration for the deployment of your lock. These values depend on what version of the [Public Lock](../../core-protocol/public-lock/) you want to deploy but will likely include the address of the first [lock manager](../../core-protocol/public-lock/access-control.md), the duration, the number of memberships, or the price and currency contract address.
 
-You will also be prompted to chose a network on which to deploy the contract. We recommend using a test network in order to build applications. You will be able to swap addresses for a production network when you are ready to ship your application!
+You will also be prompted to choose a network on which to deploy the contract. We recommend using a test network in order to build applications. You will be able to swap addresses for a production network when you are ready to ship your application!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cNdEFMm2pvI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -51,7 +51,7 @@ export default function Component() {
         _keyManagers,
         _data,
       ]);
-      console.info("contract call successs", data);
+      console.info("contract call success", data);
     } catch (err) {
       console.error("contract call failure", err);
     }

@@ -148,7 +148,7 @@ All in all, if you are already using Ethers, all of this should be pretty famili
 
 ## Deploying new Membership contract
 
-New Locks are deployed using the Unlock contract (it is a factory contract). For this, it is recommend to use the `createUpgradeableLockAtVersion` function. This function deploys a lock at a specific version and takes 2 arguments: a blob of all the arguments and the version number.
+New Locks are deployed using the Unlock contract (it is a factory contract). For this, it is recommended to use the `createUpgradeableLockAtVersion` function. This function deploys a lock at a specific version and takes 2 arguments: a blob of all the arguments and the version number.
 
 Here we deploy locks in version 11:
 

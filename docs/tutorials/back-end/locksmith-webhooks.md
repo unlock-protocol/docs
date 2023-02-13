@@ -5,7 +5,7 @@ description:
   time updates to registered endpoints.
 ---
 
-## Recieving updates on new locks
+## Receiving updates on new locks
 
 Let's send a subscribe request to receive updates on new locks.
 

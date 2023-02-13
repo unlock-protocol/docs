@@ -33,7 +33,7 @@ await unlock.createLock(lockArgs);
 
 ## Command Line Interface
 
-The plugin also come with a few CLI commands to help you get things started.
+The plugin also comes with a few CLI commands to help you get things started.
 
 To get the complete list of available commands
 
