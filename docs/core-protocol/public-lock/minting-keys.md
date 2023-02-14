@@ -26,7 +26,7 @@ Another argument is an array of key managers. The [key manager](/core-protocol/p
 
 The Lock contract also has a [`grantKeys`](/core-protocol/smart-contracts-api/PublicLock#grantkeys) method. This method can _only_ be called by [lock managers](/core-protocol/public-lock/access-control#lockmanager) or [key granters](/core-protocol/public-lock/access-control#keygranter) and can be used to mint/grant keys _for free_. This function does **not require** a payment and is not limited by the maximum number of keys for sale.
 
-Contrary to the previous method, the granter can also customize the expiration of each membership minted using this, which makes it a convenient method to grant _previews_ or free trials. However, there again, it is critical to set the [key manager](/core-protocol/public-lock/access-control#keymanager) accordingly in order to avoid abuses. For example, if the contract allows for refunds upon cancellation, a malicious recipient of a key airdroped could then claim a refund if they have also been set as _key manager_.
+Contrary to the previous method, the granter can also customize the expiration of each membership minted using this mechanism, which makes it a convenient method to grant _previews_ or free trials. However, there again, it is critical to set the [key manager](/core-protocol/public-lock/access-control#keymanager) accordingly in order to avoid abuses. For example, if the contract allows for refunds upon cancellation, a malicious recipient of a key airdroped could then claim a refund if they have also been set as _key manager_.
 
 ### Renewals and extensions
 
