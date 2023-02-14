@@ -30,7 +30,9 @@ Contrary to the previous method, the granter can also customize the expiration o
 
 ### Renewals and extensions
 
-No new key or membership tokens are created upon renewals, their expiration is extended so that they are considered valid for a longer duration. For renewals and extension, each NFT needs to be extended one by one. However, there again, they can be extended using different methods:
+When a Key is renewed, the Key's expiration date is extended so the Key is considered valid for a longer duration. No new keys or membership tokens are created upon renewals. 
+
+For renewals and extensions, each NFT needs to be extended individually. However, they can be extended using different methods:
 
 - [`extend`](/core-protocol/smart-contracts-api/PublicLock#extend) where the sender of the transaction _pays_ for the extension, even if they are not the owner of the NFT itself. It is advised here again to carefuly consider the key manager.
 - [`renewMembershipFor`](/core-protocol/smart-contracts-api/PublicLock#renewmembershipfor) which can only be called for ERC20 locks where the owner has approved the renewals through and ERC20 approval as _their_ balance will be reduced.
