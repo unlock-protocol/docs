@@ -10,7 +10,7 @@ There are two methods that can be used to mint Keys. Keys can either be **purcha
 
 ### Purchasing Keys
 
-Let's start by noting that this flow is uses the function [`purchase`](/core-protocol/smart-contracts-api/PublicLock#purchase) from the lock even if the keys are free. The best way to describe this flow is that it is _self-served_, which means that anyone can call this function to mint an NFT, whether these keys are free or paid.
+Let's start by noting that this flow uses the function [`purchase`](/core-protocol/smart-contracts-api/PublicLock#purchase) from the lock even if the keys are free. The best way to describe this flow is that it is _self-served_, which means that anyone can call this function to mint an NFT, whether these keys are free or paid.
 
 :::info
 Note: To disable purchases completely, the best approach is to set the maximum number of keys available for sale to be `0`.
