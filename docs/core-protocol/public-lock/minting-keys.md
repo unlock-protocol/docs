@@ -16,7 +16,7 @@ Let's start by noting that this flow uses the function [`purchase`](/core-protoc
 Note: To disable purchases completely, the best approach is to set the maximum number of keys available for sale to be `0`.
 :::
 
-The `purchase` function can be used to purchase multiple keys at once, and the function takes arguments whichg are all `arrays` in order to accomodate this. Each of these arrays needs to be of the same size.
+The `purchase` function can be used to purchase multiple keys at once, and the function takes arguments which are all `arrays` in order to accommodate this. Each of these arrays needs to be of the same size.
 
 One of the arguments is an array of recipients, which means that the wallet sending the transaction can be _different_ from the one who will receive the NFT memberships. This can be very useful when application is buying on behalf of users for examples, or when a payment happens "off-chain" (using credit card or other mechanism) and the payment provider then wants to mint the NFT membership to the user.
 
