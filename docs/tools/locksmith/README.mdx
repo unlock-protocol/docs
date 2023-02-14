@@ -46,6 +46,7 @@ const loginResponse = await service.login({
 // Use the token to make subsequent requests in the header as bearer token using axios middleware and refresh or re-login when the session expires.
 const { accessToken, walletAddress, refreshToken } = loginResponse.data;
 
+// Get key metadata from locksmith. If the request is authenticated, you will also receive protected metadata for the key and associated user.
 const keyResponse = await storage.keyMetadata(5, "0x", "1", {
   headers: {
     Authorization: `Bearer ${accessToken}`,
