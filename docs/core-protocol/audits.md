@@ -11,8 +11,8 @@ As of March 2022, our smart contracts have been audited by 3 different teams.
 
 Here are the results:
 
-| Akira Tech                             | ByteRocket                            | Code4rena                                  |
-| -------------------------------------- | ------------------------------------- | ------------------------------------------ |
+| Akira Tech                                                                               | ByteRocket                                                                                   | Code4rena                                                                                        |
+| ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | <a target="\_blank" href="/img/audits/akira.pdf"><img src="/img/audits/Akira.png" /></a> | <a target="\_blank" href="/img/audits/byterocket.pdf"><img src="/img/audits/Byte.png" /></a> | <a target="\_blank" href="/img/audits/code4rena.pdf"><img src="/img/audits/code4rena.png" /></a> |
 
 We are pleased with the results of these audits as they have identified **no issue that would jeopardize creators or members' funds systemically**. The audits did identify improvements that we have (or will) implement to simplify flows, make risky behaviors less error-prone, and optimize for reduced gas consumption.
@@ -60,9 +60,9 @@ All locks “callback” to Unlock upon key purchase. That is the mechanism used
 
 - Cap gas on `recordKeyPurchase` ✅
 - use `baseFee` ✅
-- `onTransfer` hook ⏰
-- Alter transfer to prevent malicious key manager attack ❓
+- `onTransfer` hook ✅
+- Alter transfer to prevent malicious key manager attack ✅
+- Uniswap v3 oracles ✅
+- Reset approvals on key transfers ✅ (ie if someone transfers a key we need to make sure that all approvals for that key are reset)
 - Use renewal snapshot to determine refund ⏰
-- Uniswap v3 oracles ⏰
 - Gas savings ⏰
-- Reset approvals on key transfers ⏰ (ie if someone transfers a key we need to make sure that all approvals for that key are reset)
