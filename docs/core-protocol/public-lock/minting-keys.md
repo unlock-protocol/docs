@@ -18,7 +18,7 @@ Note: To disable purchases completely, the best approach is to set the maximum n
 
 The `purchase` function can be used to purchase multiple keys at once, and the function takes arguments which are all `arrays` in order to accommodate this. Each of these arrays needs to be of the same size.
 
-One of the arguments is an array of recipients, which means that the wallet sending the transaction can be _different_ from the one who will receive the NFT memberships. This can be very useful when application is buying on behalf of users for examples, or when a payment happens "off-chain" (using credit card or other mechanism) and the payment provider then wants to mint the NFT membership to the user.
+One of the arguments is an array of recipients, which means that the wallet sending the transaction can be _different_ from the one who will receive the NFT memberships. This can be very useful when, for example, the application is buying on behalf of users or when a payment happens "off-chain" (using credit card or other mechanism) and the payment provider then wants to mint the NFT membership to the user.
 
 Another argument is an array of key managers. The [key manager](/core-protocol/public-lock/access-control#keymanager) is the address that has the transfer and cancellation rights over the NFT being minted. For credit card purchases where the transaction cannot be considered final, we strongly advise this key manager to be controlled by the entity that triggered the card payment so that if the transaction is reversed, the NFT membership can also be cancelled.
 
