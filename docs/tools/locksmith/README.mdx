@@ -16,9 +16,7 @@ Locksmith powers the following functionality at the moment.
 
 ## Authorization Strategy
 
-We use signed [SIWE](https://docs.login.xyz/general-information/siwe-overview/eip-4361) message to issue token for authentication. You will need to sign message using [siwe](https://docs.ssx.id/) library
-and send the signed message to the server. The server will verify the signature and issue a token for the user. You will receive a token with short expiry duration which
-needs to be passed in the header as bearer token for all subsequent requests. The other is refresh token which is used to get a new token when the current token expires.
+We use signed [SIWE](https://docs.login.xyz/general-information/siwe-overview/eip-4361) message to issue token for authentication. You will need to sign message using [siwe](https://docs.ssx.id/) library and send the signed message to the server. The server will verify the signature and issue a token for the user. You will receive a token with short expiry duration which needs to be passed in the header as bearer token for all subsequent requests. The other is refresh token which is used to get a new token when the current token expires.
 
 You can use LocksmithService to interact with Locksmith API. The following is an example of how to use it to send a login request.
 
