@@ -4,7 +4,9 @@ description: Membership NFTs are called keys and they can be minted from the Loc
 sidebar_position: 2
 ---
 
-Keys are the Membership Non Fungible Tokens. They are minted from the Lock contract and there exists 2 methods to mint them: they can either be **purchased** or **granted**. Both of these can be used to mint keys one by one or multiple at a time.
+In the Unlock Protocol ecosystem, Membership Non Fungible Tokens are called [Keys](https://unlock-protocol.com/guides/locksmith-lingo/). Keys are minted from the Lock contract.
+
+There are two methods that can be used to mint Keys. Keys can either be **purchased** or **granted**. Keys can be minted one-by-one or in batches (multiple Keys minted at one time) using either method.
 
 ### Purchasing Keys
 
