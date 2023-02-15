@@ -3,7 +3,7 @@ title: Contract Management
 description: >-
   A description of the updated contract management system for Unlock Protocol "Lock"
   contracts.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Contract Management
