@@ -241,7 +241,7 @@ function gasRefundValue() external view returns (uint256 _gasRefundValue)
 
 _gasRefundValue price in wei or token in smallest price unit
 
-*Returns the value/rpice to be refunded to the sender on purchase*
+*Returns the value/price to be refunded to the sender on purchase*
 
 
 #### Returns
