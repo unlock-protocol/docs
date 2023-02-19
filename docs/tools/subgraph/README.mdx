@@ -22,13 +22,19 @@ The links below provide a rudimentary tool to build and test your queries.
 <ul>
   {Object.keys(networks).map((network) => {
     if (network !== "localhost") {
-      return (
-        <li>
-          <a href={networks[network].subgraph.endpointV2}>
-            {networks[network].name}
-          </a>
-        </li>
-      );
+      const endpoint = networks[network].subgraph.endpointV2;
+      const m = endpoint.match(/unlock\-protocol\/(.*)/)
+      if (m && m[1]) {
+        return (
+          <li>
+            <a href={`https://thegraph.com/hosted-service/subgraph/unlock-protocol/${m[1]}`}>
+              {networks[network].name}
+            </a>
+          </li>
+        );
+      } else {
+        return null
+      }
     }
   })}
 </ul>
