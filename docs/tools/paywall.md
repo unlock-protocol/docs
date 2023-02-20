@@ -3,21 +3,43 @@ title: Paywall
 description: >-
   Guide to the Paywall JavaScript library.
 ---
+
 # Paywall
 
 The Paywall is a simple JavaScript library which can track state and emits
 events based on ownership of keys to specified locks. It can be used to trigger
 a the Checkout for purchasing keys.
 
+You can easily add it to any webpage with the following:
+
+```javascript
+<script>
+(function(d, s) {
+  var js = d.createElement(s),
+    sc = d.getElementsByTagName(s)[0];
+  js.src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
+  sc.parentNode.insertBefore(js, sc); }(document, "script"));
+</script>
+```
+
 ## Configuration
 
 The Paywall shares a configuration object with the Checkout and you can find
 everything you need to know in [Checkout / Configuration](/tools/checkout/configuration#the-paywallconfig-object) about how to build
-out the JSON object you're going use.
+out the JSON object you're going use. Then assign it to a global variable `unlockProtocolConfig`.
+
+```javascript
+<script>
+  var unlockProtocolConfig =
+  {
+    // paywallConfig object
+  }
+</script>
+```
 
 ## Events
 
-Once loaded the script will trigger events on the page’s ​window​ object. 
+Once loaded the script will trigger events on the page’s ​window​ object.
 
 Registering event listeners.
 
@@ -27,8 +49,6 @@ window.addEventListener("unlockProtocol.eventName", handler);
 
 ### Status
 
-<hr />
-
 **event** `unlockProtocol.status`
 
 Triggered when unlockProtocol status changes.
@@ -37,35 +57,31 @@ Triggered when unlockProtocol status changes.
 
 Handler event object properties.
 
-| name       | Description |    values |
-|------------|-----------|--------------|
-| state      | Representing whether or not the connected wallet has a valid key.| locked or unlocked *string*  |
-
+| name  | Description                                                       | values                      |
+| ----- | ----------------------------------------------------------------- | --------------------------- |
+| state | Representing whether or not the connected wallet has a valid key. | locked or unlocked _string_ |
 
 ### User info
-<hr />
 
 **event** `unlockProtocol.authenticated`
 
 Triggered when a user authenticates.
 
-| name       | Description |    values |
-|------------|-----------|--------------|
-| address    |Ethereum address of the connected user| *string* |
-| signedMessage | the signature perform by the user if your configuration includes a messageToSignoption| *string*|
-
+| name          | Description                                                                            | values   |
+| ------------- | -------------------------------------------------------------------------------------- | -------- |
+| address       | Ethereum address of the connected user                                                 | _string_ |
+| signedMessage | the signature perform by the user if your configuration includes a messageToSignoption | _string_ |
 
 Note: if the event is triggered without any payload, please consider that the user has "logged out".
 
 ### Transaction status
-<hr />
 
 **event** `unlockProtocol.transactionSent`
 
-| name       | Description |    values |
-|------------|-----------|--------------|
-| hash       |the Ethereum transaction| *string* |
-| lock       | the Ethereum address of the lock| *string* |
+| name | Description                      | values   |
+| ---- | -------------------------------- | -------- |
+| hash | the Ethereum transaction         | _string_ |
+| lock | the Ethereum address of the lock | _string_ |
 
 ## Pessimistic Unlocking
 
