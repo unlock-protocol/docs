@@ -38,7 +38,7 @@ This mechanism is fully on-chain, and there is no way to bypass it.
 
 The lock also has a mechanism to fully disable transfers for _any_ key, regardless of any other consideration, by setting a transfer fee of 100%.
 
-This means that the membership NFT becomes **Soul Boud Tokens** (SBT). Importantly a lock manager can always bypass this by transferring a key to another address, which is a handful feature when a user loses access to their wallet.
+This means that the membership NFT becomes a **Soul Bound Token** (SBT). Importantly, a lock manager can always bypass this by transferring a key to another address, which is a handy feature when a user loses access to their wallet.
 
 ## Advanced
 
