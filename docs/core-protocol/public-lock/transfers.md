@@ -4,7 +4,7 @@ description: The Public Lock contract implements the ERC721 specification, inclu
 sidebar_position: 4
 ---
 
-The Public Lock contract implements the [ERC721 specification](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721), including transfer functions (`transferFrom`, `safeTransferFrom`, and the related `approve` and `setApprovalForAll`), but their behavior can be customized.
+The Public Lock smart contract implements the [ERC721 specification](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721), including transfer functions (`transferFrom`, `safeTransferFrom`, and the related `approve` and `setApprovalForAll`), but their behavior can be customized.
 
 :::info
 Expired keys **can not** be transferred.
@@ -12,7 +12,7 @@ Expired keys **can not** be transferred.
 
 ## Key Managers
 
-Each NFT (called a key in the Unlock Protocol) has an `owner`. Additionally, it may have a `key manager`. The `key manager`, if set, is the address that **has the transfer rights** over this specific key.
+Each NFT (called a key in the Unlock Protocol) has an `owner`. Additionally, it may have a `key manager`. The `key manager`, if set, is the address that **has the transfer rights** over this specific key. This should not be confused with the `lock manager` (see the [contract management](./access-control.md) section for a summary of the role on a lock contract)
 
 The key manager can be set at the time of [minting](./minting-keys.md), either on purchases or on airdrops. Lock managers can also change the key manager for any key.
 
@@ -36,7 +36,7 @@ This mechanism is fully on-chain, and there is no way to bypass it.
 
 ### Disabling Transfers
 
-The lock also has a mechanism to fully disable transfers for _any_ key, regardless of any other consideration, by setting a transfer fee of 100%.
+The lock also has a mechanism to fully disable transfers for _any_ key, regardless of any other consideration, by setting a transfer fee of 100%. (you can use the lock's settings page on the [Unlock Dashboard](https://app.unlock-protocol.com/) or any block explorer.)
 
 This means that the membership NFT becomes a **Soul Bound Token** (SBT). Importantly, a lock manager can always bypass this by transferring a key to another address, which is a handy feature when a user loses access to their wallet.
 
