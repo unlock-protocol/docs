@@ -62,4 +62,4 @@ One of the core applications of this feature is to incentivize members to share 
 
 Transfers are one of the most critical aspects of the Public Lock contract, and the base set of features supported by the contract covers the most frequent user interactions. However, the smart contract also includes [hooks](./hooks.md) that can be used to alter its behavior.
 
-Using the `onKeyTransferHook`, a third-party contract can be triggered to perform custom actions when a transfer happens. For example, you can use this hook to implement custom logic on whether transfers should be enabled...
+Using the `onKeyTransferHook`, a third-party contract can be triggered to perform custom actions when a transfer happens. For example, you can use this hook to implement custom logic on whether transfers should be enabled.
