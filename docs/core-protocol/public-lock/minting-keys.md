@@ -13,7 +13,7 @@ There are two methods that can be used to mint Keys. Keys can either be **purcha
 Let's start by noting that this flow uses the function [`purchase`](/core-protocol/smart-contracts-api/PublicLock#purchase) from the lock even if the keys are free. The best way to describe this flow is that it is _self-served_, which means that anyone can call this function to mint an NFT, whether these keys are free or paid.
 
 :::info
-Note: To disable purchases completely, the best approach is to set the maximum number of keys available for sale to be `0`.
+To disable purchases completely, the best approach is to set the maximum number of keys available for sale to be `0`.
 :::
 
 The `purchase` function can be used to purchase multiple keys at once, and the function takes arguments which are all `arrays` in order to accommodate this. Each of these arrays needs to be of the same size.
@@ -30,7 +30,7 @@ Contrary to the previous method, the granter can also customize the expiration o
 
 ### Renewals and extensions
 
-When a Key is renewed, the Key's expiration date is extended so the Key is considered valid for a longer duration. No new keys or membership tokens are created upon renewals. 
+When a Key is renewed, the Key's expiration date is extended so the Key is considered valid for a longer duration. No new keys or membership tokens are created upon renewals.
 
 For renewals and extensions, each NFT needs to be extended individually. However, they can be extended using different methods:
 
