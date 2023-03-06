@@ -7,45 +7,76 @@ description: >-
 
 # Roadmap
 
-As of Summer 2022, the Unlock ecosystem consists of the following:
+As of March 2023, the Unlock ecosystem consists of the following:
 
-- A set of smart contracts which let creators deploy their locks, as well as lets consumers unlock the locks,
+- A set of smart contracts which let creators deploy their locks, as well as lets consumers unlock the locks, deployed on [multiple networks](../core-protocol/unlock/networks.md).
 - An [unlock-js](https://www.npmjs.com/package/@unlock-protocol/unlock-js) library that developers can use to interact with the contracts,
 - A [paywall application](https://paywall.unlock-protocol.com) that can be embedded on any website or application to limit access to members and then lets users purchase keys to unlock content,
-- An [unlock-app](https://app.unlock-protocol.com/dashboard) application that lets creators deploy their lock and view their members, as well as lets consumers view the keys they purchased and interact with them (keychain). The Unlock app also provides user accounts that enable people to create an account with their email and password and then purchase keys with their credit cards through Unlock Inc,
+- An [unlock-app](https://app.unlock-protocol.com/locks) application that lets creators deploy their lock and view their members, as well as lets consumers view the keys they purchased and interact with them (keychain). The Unlock app also provides user accounts that enable people to create an account with their email and password and then purchase keys with their credit cards through Unlock Inc,
 - The [Unlock Tokens](/governance/the-unlock-token/), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
 - The [Unlock DAO](https://unlock-protocol.com/blog/unlock-dao), a set of contracts that lets anyone who owns Unlock tokens submit proposals and vote on them in order to effectively govern the protocol and its treasury
+
+# June 30th 2023
+
+- Dashboard:
+  - Universal credit cards
+  - Events By Unlock 2.0
+- Dev tools:
+  - TBD
+- Contracts:
+  - Meta-transactions
+
+# March 31th 2023
+
+- Dashboard:
+  - Image Uploader ✅
+  - Custom Email content ✅
+  - Wallet-less airdrops ✅
+  - "Action" driven lock deployment ⏰
+  - Hook configuration UI ⏰
+- Checkout:
+  - Apple/Google wallet passes ✅
+  - Promo codes ✅
+  - Swap and Pay ⏰
+- Dev tools:
+  - Integrations: Ghost, Webflow, Wix ⏰
+- Contracts:
+  - Swap and Pay ✅
+  - Cross-chain purchases (pay from X, receive NFT on Y) with [Connext](https://www.connext.network/) ⏰
+  - Protocol fee: a small percentage is captured on every purchase transaction ⏰
+- Governance:
+  - Cross-chain governance ([Connext](https://www.connext.network/)) ⏰
 
 # December 31th 2022
 
 - Fully refactored Dashboard:
-  - "action" driven lock deployment
-  - Checkout configuration UI
-  - NFT metadata configuration
+  - "action" driven lock deployment ⏰
+  - Checkout configuration UI ✅
+  - NFT metadata configuration ✅
 - Locksmith
-  - Uniswap v3 price oracle for card payment
+  - Uniswap v3 price oracle for card payment ✅
 - Dev tools:
-  - OpenAPI generation
-  - Refactored Subgraphs
-  - Integrations: Ghost, Webflow, Wix
+  - OpenAPI generation ✅
+  - Refactored Subgraphs ✅
+  - Integrations: Ghost, Webflow, Wix ⏰
 - Contracts:
-  - Cross-chain purchases (pay from X, receive NFT on Y) with [Connext](https://www.connext.network/)
-  - Protocol fee: a small percentage is captured on every purchase transaction
-  - Move to Uniswap v3 for oracle
+  - Cross-chain purchases (pay from X, receive NFT on Y) with [Connext](https://www.connext.network/) ⏰
+  - Protocol fee: a small percentage is captured on every purchase transaction ⏰
+  - Move to Uniswap v3 for oracle ✅
 - Governance:
-  - Cross-chain governance ([Connext](https://www.connext.network/))
+  - Cross-chain governance ([Connext](https://www.connext.network/)) ⏰
 
 # June 30th 2022
 
-- Recurring memberships support in UI (dashboard, keychain) ⏰
+- Recurring memberships support in UI (dashboard, keychain) ✅
 - Refactored and redesigned checkout that supports the following ✅
   - Recurring ✅
   - Multiple memberships ✅
   - Metadata ✅
   - Credit card purchases ✅
-- Refactored Dashboard including ⏰
-  - Better features to configure locks ⏰
-  - Advanced configuration of purchase URL ⏰
+- Refactored Dashboard including ✅
+  - Better features to configure locks ✅
+  - Advanced configuration of purchase URL ✅
 - Ticket Verifiers ✅
 - New Docs websites ✅
 - New Guides website ✅
@@ -56,7 +87,7 @@ As of Summer 2022, the Unlock ecosystem consists of the following:
   - send QR code by email ✅
   - Update metadata ✅
   - Airdrop + email ✅
-  - Filtering by checked-in ⏰
+  - Filtering by checked-in ✅
 
 ## March 31st 2022
 
@@ -81,7 +112,7 @@ As of Summer 2022, the Unlock ecosystem consists of the following:
   - OAuth/OIDC flow for 3rd party applications who do not want to handle wallets ✅
   - Webhooks ability to register hooks when a transaction gets executed on a lock ✅
 - Creator tools:
-  - Multichain dashboard ⏰
+  - Multichain dashboard ✅
   - Persistent login ✅
   - Granting membership UI ✅
 - Member tools:
@@ -89,11 +120,11 @@ As of Summer 2022, the Unlock ecosystem consists of the following:
 
 ## August 2021
 
-- Decentralized governance (see below). Delayed as we're waiting for OpenZeppelin to ship its contract. ✅
+- Decentralized governance (see below). ✅
 - Launch Unlock on 2 more side-chains/network. ✅
-- Apple Pay or Google Pay or Paypal integration. Delayed ⏰
+- Apple Pay or Google Pay or Paypal integration. ✅
 - Customizable NFT icon from the dashboard. ✅
-- Lock configuration from dashboard (metadata collection). delayed ⏰
+- Lock configuration from dashboard (metadata collection). ✅
 - Full "static" website relaunch. ✅
 - First Hackathon (remote). ✅
 
@@ -103,10 +134,10 @@ As of Summer 2022, the Unlock ecosystem consists of the following:
 - Enable credit card checkout for any lock (if creator agrees to it!). ✅
 - Update home page design. ✅
 - Addition of a `/developer`landing page. ✅
-- Addition of a `/creator` landing page. ⏰
+- Addition of a `/creator` landing page. ✅
 - Formal launch of grant program process ([see grants page](/governance/grants-bounties)). ✅
-- Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.com/invite/Ah6ZEJyTDp) State: done. ✅
-- Developer forum launched on Discourse, State: shipped. ✅
+- Move community from [Telegram](https://t.me/unlockprotocol) to [Discord](https://discord.com/invite/Ah6ZEJyTDp). ✅
+- Developer forum launched on Discourse. ✅
 
 Misc: more/better docs, more 3rd party integrations... etc
 
@@ -114,11 +145,7 @@ Misc: more/better docs, more 3rd party integrations... etc
 
 These are opportunities we will eventually work on, based on user demand or available bandwidth.
 
-### Unlock App
-
-- Apple Pay/Google Pay support
-
 ### Tooling
 
-- Better integration tests
+- Better integration tests ⏰
 - IPFS front-end (partial ✅)
