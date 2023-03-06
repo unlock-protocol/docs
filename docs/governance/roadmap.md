@@ -16,7 +16,7 @@ As of March 2023, the Unlock ecosystem consists of the following:
 - The [Unlock Tokens](/governance/the-unlock-token/), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
 - The [Unlock DAO](https://unlock-protocol.com/blog/unlock-dao), a set of contracts that lets anyone who owns Unlock tokens submit proposals and vote on them in order to effectively govern the protocol and its treasury
 
-# June 30th 2022
+# June 30th 2023
 
 - Dashboard:
   - Universal credit cards
@@ -26,7 +26,7 @@ As of March 2023, the Unlock ecosystem consists of the following:
 - Contracts:
   - Meta-transactions
 
-# March 31th 2022
+# March 31th 2023
 
 - Dashboard:
   - Image Uploader ✅
