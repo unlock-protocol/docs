@@ -32,7 +32,7 @@ As of March 2023, the Unlock ecosystem consists of the following:
   - Image Uploader ✅
   - Custom Email content ✅
   - Wallet-less airdrops ✅
-  - "action" driven lock deployment ⏰
+  - "Action" driven lock deployment ⏰
   - Hook configuration UI ⏰
 - Checkout:
   - Apple/Google wallet passes ✅
