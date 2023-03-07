@@ -9,7 +9,7 @@ The `onKeyPurchaseHook` is called when a purchase is triggered and can be used t
 
 ## Code Required Hook
 
-You can use password restrict purchases on a lock. [Check this repo](https://github.com/unlock-protocol/password-required-hook) on more details on how to achieve this.
+You can password restrict purchases on a lock. [Check this repo](https://github.com/unlock-protocol/password-required-hook) on more details on how to achieve this.
 
 ## Discount Codes Hook
 
