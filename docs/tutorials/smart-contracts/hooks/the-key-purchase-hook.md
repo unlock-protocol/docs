@@ -13,4 +13,4 @@ You can password restrict purchases on a lock. [Check this repo](https://github.
 
 ## Discount Codes Hook
 
-You can use add discount codes (coupons) to provide discounts on purchases on a lock. [Check this repo](https://github.com/unlock-protocol/discount-hook) on more details on how to achieve this.
+You can use discount codes (coupons) to provide discounts on purchases on a lock. [Check this repo](https://github.com/unlock-protocol/discount-hook) on more details on how to achieve this.
