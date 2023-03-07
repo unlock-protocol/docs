@@ -141,6 +141,10 @@ const sidebars = {
             {
               type: "category",
               label: "Unlock Hooks",
+              link: {
+                type: "doc",
+                id: "tutorials/smart-contracts/hooks/README",
+              },
               items: ["tutorials/smart-contracts/hooks/using-on-key-purchase-hook-to-password-protect"]
             }
           ]
