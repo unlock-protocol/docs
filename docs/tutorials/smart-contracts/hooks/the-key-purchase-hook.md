@@ -3,6 +3,9 @@ title: The Key Purchase Hook
 description: Examples of using hooks to customize purchasing workflow on your lock.
 ---
 
+
+## The Key Purchase Hook
+
 The `onKeyPurchaseHook` is called when a purchase is triggered and can be used to customize how a purchase is executed.
 
 ## Code Required Hook
