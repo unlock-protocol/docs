@@ -2267,10 +2267,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@unlock-protocol/networks@0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@unlock-protocol/networks/-/networks-0.0.10.tgz#eeb17bbd78052664bec9596e67415a65202c5680"
-  integrity sha512-n3EFvRVIfl3R78bfNsWpdBedDJdBwzbul7RnRl4rKtXqRCqn/DY10zeO9VixrDCCcKed8Ft03YGFS2u1bqS2wQ==
+"@unlock-protocol/networks@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@unlock-protocol/networks/-/networks-0.0.11.tgz#ca5960c34a1dc369abba7b08a570dd9b090efae7"
+  integrity sha512-Z6uG+qN27es6zfqE9bfX1f/amMawLObsvsc8BSh6EWHc55Jo5Tp/kZ0UlJ3i/PbnldEHfVWmuIzqTFaxVql6cg==
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
