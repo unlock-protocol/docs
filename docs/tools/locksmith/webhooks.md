@@ -17,4 +17,6 @@ Currently the following topics are supported:
 
 - New Locks `https://locksmith.unlock-protocol.com/api/hooks/:network/locks/`
 - New Keys `https://locksmith.unlock-protocol.com/api/hooks/:network/keys` 
-- New Keys for a Lock `https://locksmith.unlock-protocol.com/api/hooks/:lockAddress/keys`
+- New Keys for a Lock `https://locksmith.unlock-protocol.com/api/hooks//:network/locks/:lock/keys`
+
+You need to replace `network` and `lock` with the respective network ID and Lock Address. 
