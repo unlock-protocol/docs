@@ -103,7 +103,7 @@ identify important dates.
 
 ### Success Metrics
 
-The final milestone will need to include success metrics or ROI. Here are some 
+The final milestone should include success metrics or ROI. Here are some 
 examples based on your application type. 
 
 - For a membership implementation: the number of members joined your through 
@@ -112,8 +112,7 @@ your platform.
 - For use with credentials: the number of credentials handed out. 
 - For educational materials: the number of people educated. 
 
-If you’re unsure about this then reach out to the grants administrator who can 
-be found on the current grants committee roster.
+If you’re unsure about this, reach out to the community in the comment thread of your grant application for help from your peers.
 
 ## Final Delivery: Share the results, show your work
 
