@@ -46,11 +46,9 @@ Before proposing a grant, projects considering applying for a grant should read 
 
 After familiarizing themselves with the grants material, a representative of the prospective grant project should fill out a [Grant Application in Unlock’s Github repository](https://github.com/unlock-protocol/unlock/issues/). They can do this by going to the Unlock Github repository and opening a new issue.
 
+![grant-1](https://user-images.githubusercontent.com/214760/229210596-df75ca2c-c26b-4cb3-a8c7-1165218ba8b2.png)
 
-
-![grant-1.png](Updated%20Grants%20flow%20for%20Unlock%20Protocol%20DAO%20347e43afa3c14f7d92ce9c98c2da55ed/grant-1.png)
-
-![grant-2.png](Updated%20Grants%20flow%20for%20Unlock%20Protocol%20DAO%20347e43afa3c14f7d92ce9c98c2da55ed/grant-2.png)
+![grant-2](https://user-images.githubusercontent.com/214760/229210663-efcd7525-8a2b-4e87-a8ea-3bbbff9425b5.png)
 
 The Grant application will open up as a form in Github that looks something like this:
 
