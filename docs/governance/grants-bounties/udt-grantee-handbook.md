@@ -34,7 +34,8 @@ The Unlock Labs team has put some thought into a process that the Unlock communi
 
 ## Recommended Grant Process
 
-![grant-0](https://user-images.githubusercontent.com/214760/229215174-ef3f194d-4ef5-4913-a309-78f9bdd3594c.png)
+![grant-0](https://user-images.githubusercontent.com/214760/229229944-4db2a144-7f83-48d7-ad11-7cc5f896130a.png)
+
 
 Let’s walk through the recommended process.
 
