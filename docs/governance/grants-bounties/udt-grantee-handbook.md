@@ -74,7 +74,7 @@ Once submitted for review, Grant applications can be viewed and commented on by 
 
 ![grant-4](https://user-images.githubusercontent.com/214760/229210991-73215c4d-8728-4523-ae9d-243129e31d2a.png)
 
-<blockqupote>
+<blockquote>
 ***A note on voting:** There are two primary kinds of voting mechanisms in the Unlock DAO. “Off-chain” voting, where Unlock DAO members can vote to communicate their positions on a proposal, and “on-chain” voting, where the votes not only communicate positions, but also result in automatic execution of the proposal if the proposal passes. These methods and their distinctions will be important in the following sections.*
 </blockquote>
 
@@ -92,23 +92,40 @@ While not “binding” in a technical sense, the off-chain Snapshot vote serves
 
 If the project team decides to build their project, go for it! Remember to keep the rest of the community informed during the project’s execution. Share progress, notes, demos, key milestones, screens, videos, and other markers of progress in the conversation thread for the application as the project proceeds forward.
 
-## Share the results, show your work
+## Setting Milestones
 
-When the items that were proposed in the original Grant are complete, share them! Share them in the application thread on Github, along with links to demos, videos, the project website, and other indicators that what was outlined in the original Grant application have been completed.
+### What is a milestone and why are they important?
+
+Project milestones mark specific points along a project’s timeline. They are checkpoints that
+identify when key developments or groups of activities have been completed. Milestones are
+powerful because they demonstrate forward progress. They help you monitor deadlines and
+identify important dates.
+
+### Success Metrics
+
+The final milestone will need to include success metrics or ROI. Here are some 
+examples based on your application type. 
+
+- For a membership implementation: the number of members joined your through 
+your platform. 
+- For an event: the number of tickets sold. 
+- For use with credentials: the number of credentials handed out. 
+- For educational materials: the number of people educated. 
+
+If you’re unsure about this then reach out to the grants administrator who can 
+be found on the current grants committee roster.
+
+## Final Delivery: Share the results, show your work
+
+When the items that were proposed in the original Grant are complete, share them! Share them in the application thread on Github, along with links to demos, videos, the project website, and other indicators that what was outlined in the original Grant application have been completed. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, you should move on to the next step.
+
+Note: If the work of the grant has not been completed and delivered by one year after the conversation around the grant was initiated, the community will likely assume the grant project has been abandoned.
 
 ## Submit your proposal to the Unlock DAO for distribution of the Grant
 
 While the earlier off-chain “temperature check” indicated directional support, a formal on-chain proposal and vote for the Grant distribution (using a system like [Tally](https://www.tally.xyz/gov/unlock), for instance), will complete the Grant process.
 
 Create an on-chain proposal that highlights the original Grant application, shows the work that was done, formally request a Grant amount from the DAO to be paid from the Unlock DAO timelock wallet, and open the voting. If the vote reaches quorum and passes, the proposal will be automatically executed and the Grant will be distributed from the Unlock DAO timelock wallet to the wallet indicated in the proposal.
-
-## Final Delivery  -- UPDATE SECTION
-Upon completion of the grant work, Unlock will ask you to complete a grant retrospective form with feedback and learnings, as well as submit a demonstration video, a link to a live (production) implementation for review, and other completion items. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, the grant payout will be initiated.
-
-## Grant Payments -- UPDATE SECTION
-Grant payouts are paid using UDT on the Polygon network. Grant payouts are delivered over a **one year vesting period** that begins vesting on the date of the grant application approval. When the grant work is completed, submitted, and approved, a first partial grant payout will be done by way of a "catchup" to the date of grant completion from the original grant approval date. The unvested balance left will be streamed between the grant completion date and one year from the grant approval date as it vests.
-
-Note: If the work of the grant has not been completed and delivered by one year after the grant approval date, it is assumed the grant has been abandoned.
 
 ### Resources
 
@@ -133,28 +150,5 @@ Below are some useful resources you should use to learn about Unlock Protocol, a
 [Developer Docs](https://docs.unlock-protocol.com/) - core protocol reference, APIs, tutorials, developer tools, and more
 
 [Creator Guides](https://unlock-protocol.com/guides/) - step-by-step guides on how to use our UI tools like the Unlock “Dashboard”, set up plugins, find integrations, configure credit card payments, and more.
-
-## Setting Milestones
-
-### What is a milestone and why are they important?
-
-Project milestones mark specific points along a project’s timeline. They are checkpoints that
-identify when key developments or groups of activities have been completed. Milestones are
-powerful because they demonstrate forward progress. They help you monitor deadlines and
-identify important dates.
-
-### Success Metrics
-
-The final milestone will need to include success metrics or ROI. Here are some 
-examples based on your application type. 
-
-- For a membership implementation: the number of members joined your through 
-your platform. 
-- For an event: the number of tickets sold. 
-- For use with credentials: the number of credentials handed out. 
-- For educational materials: the number of people educated. 
-
-If you’re unsure about this then reach out to the grants administrator who can 
-be found on the current grants committee roster.
 
 
