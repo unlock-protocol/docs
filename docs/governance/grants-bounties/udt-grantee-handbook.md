@@ -32,14 +32,14 @@ Currently in early 2023, the [Unlock DAO’s timelock contract](https://ethersca
 
 The Unlock Labs team has put some thought into a process that the Unlock community could use for grants going forward. The recommended process is shown below, and each step is explained in more detail underneath the image. (Of course, this is a suggestion — the community can make any proposals using any process it chooses.)
 
-## Recommended Grant Process
+## Recommended grant process
 
 ![grant-0](https://user-images.githubusercontent.com/214760/229229944-4db2a144-7f83-48d7-ad11-7cc5f896130a.png)
 
 
 Let’s walk through the recommended process.
 
-## First, get familiar with the Grant process itself
+## First, get familiar with the grant process itself
 
 Before proposing a grant, projects considering applying for a grant should read the [grants page on the Unlock website](https://unlock-protocol.com/grants), as well as read the Governance pages here in the Unlock project documentation.
 
@@ -51,11 +51,11 @@ After familiarizing themselves with the grants material, a representative of the
 
 ![grant-2](https://user-images.githubusercontent.com/214760/229210663-efcd7525-8a2b-4e87-a8ea-3bbbff9425b5.png)
 
-The Grant application will open up as a form in Github that looks something like this:
+The grant application will open up as a form in Github that looks something like this:
 
 ![grant-3](https://user-images.githubusercontent.com/214760/229210899-40875434-5ad9-4fba-abf2-26b162a20176.png)
 
-The Grant application will ask for the following information:
+The grant application will ask for the following information:
 
 - Description of the grant request
 - Website URL
@@ -64,14 +64,14 @@ The Grant application will ask for the following information:
 - Team background
 - Key milestones
 - Requested grant amount
-- Intention to release the Grant work as Open Source
+- Intention to release the grant work as Open Source
 - Anything else you think the community should know
 
 Fill out the form as completely as possible so other Unlock DAO community members can understand the application clearly.
 
-## Encourage conversation around the Grant application
+## Encourage conversation around the grant application
 
-Once submitted for review, Grant applications can be viewed and commented on by anyone in the Unlock community. Proposers should encourage and engage in discussion about the Grant application in the comments on the application itself on Github.
+Once submitted for review, grant applications can be viewed and commented on by anyone in the Unlock community. Proposers should encourage and engage in discussion about the grant application in the comments on the application itself on Github.
 
 ![grant-4](https://user-images.githubusercontent.com/214760/229210991-73215c4d-8728-4523-ae9d-243129e31d2a.png)
 
@@ -84,9 +84,9 @@ Before spending significant time or effort building in anticipation of receiving
 
 Taking an off-chain temperature check vote is optional, but it is recommended. Strong support from the community is an indicator that if the project were to be executed, the community would likely support the funding of the grant upon completion of the work.
 
-You can think of this temperature check as a “social contract.” If the DAO later rejects on-chain proposals that had previously been “approved” off-chain via Snapshots, it would likely chill the interest of future applicants in even submitting Grant applications, since prospective applicants may not trust the fact that the Grant payouts would be officially ratified once the on-chain vote is proposed in the future. 
+You can think of this temperature check as a “social contract.” If the DAO later rejects on-chain proposals that had previously been “approved” off-chain via Snapshots, it would likely chill the interest of future applicants in even submitting grant applications, since prospective applicants may not trust the fact that the ghrant payouts would be officially ratified once the on-chain vote is proposed in the future. 
 
-While not “binding” in a technical sense, the off-chain Snapshot vote serves an important purpose in getting the community’s tacit commitment to support the Grant application going forward.
+While not “binding” in a technical sense, the off-chain Snapshot vote serves an important purpose in getting the community’s tacit commitment to support the grant application going forward.
 
 ## Build in public, and keep the community appraised of progress
 
@@ -117,15 +117,15 @@ be found on the current grants committee roster.
 
 ## Final Delivery: Share the results, show your work
 
-When the items that were proposed in the original Grant are complete, share them! Share them in the application thread on Github, along with links to demos, videos, the project website, and other indicators that what was outlined in the original Grant application have been completed. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, you should move on to the next step.
+When the items that were proposed in the original grant are complete, share them! Share them in the application thread on Github, along with links to demos, videos, the project website, and other indicators that what was outlined in the original grant application have been completed. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, you should move on to the next step.
 
 Note: If the work of the grant has not been completed and delivered by one year after the conversation around the grant was initiated, the community will likely assume the grant project has been abandoned.
 
-## Submit your proposal to the Unlock DAO for distribution of the Grant
+## Submit your proposal to the Unlock DAO for distribution of the grant
 
-While the earlier off-chain “temperature check” indicated directional support, a formal on-chain proposal and vote for the Grant distribution (using a system like [Tally](https://www.tally.xyz/gov/unlock), for instance), will complete the Grant process.
+While the earlier off-chain “temperature check” indicated directional support, a formal on-chain proposal and vote for the grant distribution (using a system like [Tally](https://www.tally.xyz/gov/unlock), for instance), will complete the grant process.
 
-Create an on-chain proposal that highlights the original Grant application, shows the work that was done, formally request a Grant amount from the DAO to be paid from the Unlock DAO timelock wallet, and open the voting. If the vote reaches quorum and passes, the proposal will be automatically executed and the Grant will be distributed from the Unlock DAO timelock wallet to the wallet indicated in the proposal.
+Create an on-chain proposal that highlights the original grant application, shows the work that was done, formally request a grant amount from the DAO to be paid from the Unlock DAO timelock wallet, and open the voting. If the vote reaches quorum and passes, the proposal will be automatically executed and the grant will be distributed from the Unlock DAO timelock wallet to the wallet indicated in the proposal.
 
 ### Resources
 
