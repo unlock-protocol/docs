@@ -34,7 +34,7 @@ The Unlock Labs team has put some thought into a process that the Unlock communi
 
 ## Recommended Grant Process
 
-![Screen Shot 2023-03-30 at 4.14.40 PM.png](Updated%20Grants%20flow%20for%20Unlock%20Protocol%20DAO%20347e43afa3c14f7d92ce9c98c2da55ed/Screen_Shot_2023-03-30_at_4.14.40_PM.png)
+[grant-0](https://user-images.githubusercontent.com/214760/229214558-4b54ac34-759a-450c-8096-26db6de5c85c.png)
 
 Let’s walk through the recommended process.
 
