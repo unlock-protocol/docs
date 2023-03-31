@@ -75,9 +75,8 @@ Once submitted for review, Grant applications can be viewed and commented on by 
 
 ![grant-4](https://user-images.githubusercontent.com/214760/229210991-73215c4d-8728-4523-ae9d-243129e31d2a.png)
 
-<blockquote>
-A NOTE ON VOTING: There are two primary kinds of voting mechanisms in the Unlock DAO. “Off-chain” voting, where Unlock DAO members can vote to communicate their positions on a proposal, and “on-chain” voting, where the votes not only communicate positions, but also result in automatic execution of the proposal if the proposal passes. These methods and their distinctions will be important in the following sections.
-</blockquote>
+***A NOTE ON VOTING: There are two primary kinds of voting mechanisms in the Unlock DAO. “Off-chain” voting, where Unlock DAO members can vote to communicate their positions on a proposal, and “on-chain” voting, where the votes not only communicate positions, but also result in automatic execution of the proposal if the proposal passes. These methods and their distinctions will be important in the following sections.***
+
 
 ## Before starting work, take a temperature check from the Unlock DAO community
 
