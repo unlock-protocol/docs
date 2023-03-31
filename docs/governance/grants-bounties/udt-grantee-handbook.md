@@ -26,7 +26,7 @@ Grants are one of the features of the Unlock ecosystem. As Unlock continues to p
 
 Historically, the Unlock Labs team was actively involved in the grants through both managing the process as well as distributing grants via Unlock Labs. Going forward, Unlock Labs recommends the Unlock DAO take a more active role in grant activity. The reason for this is simple: much more community involvement in grants, powered by the Unlock DAO itself.
 
-Currently in early 2023, the [Unlock DAO’s timelock contract](https://etherscan.io/address/0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b) holds approximately 92,000 UDT governance tokens. These governance tokens can be distributed to members of the community as grants, if members of the DAO create proposals that pass the governance process. 
+Currently in early 2023, the [Unlock DAO’s timelock contract](https://etherscan.io/address/0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b) holds a significant number of UDT governance tokens. These governance tokens can be distributed to members of the community as grants, if members of the DAO create proposals that pass the governance process. 
 
 ***A reminder: Members of the Unlock DAO make proposals, and members of the Unlock DAO decide what to do with the DAO’s governance tokens.***
 
