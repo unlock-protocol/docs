@@ -22,9 +22,9 @@ Protocol should consider applying for a grant from the Unlock DAO.
 
 ## What are grants?
 
-Grants are one of the features of the Unlock ecosystem. As Unlock continues to progressively decentralize the decision-making and governance of the protocol itself, streamlining and further decentralizing the Grants process supports that goal.
+Grants are one of the features of the Unlock ecosystem. As Unlock continues to progressively decentralize the decision-making and governance of the protocol itself, streamlining and further decentralizing the grants process supports that goal.
 
-Historically, the Unlock Labs team was actively involved in the Grants through both managing the process as well as distributing Grants via Unlock Labs itself. Going forward, Unlock Labs recommends the Unlock DAO take a more active role in Grant activity. The reason for this is simple: much more community involvement in Grants, powered by the Unlock DAO itself.
+Historically, the Unlock Labs team was actively involved in the grants through both managing the process as well as distributing grants via Unlock Labs itself. Going forward, Unlock Labs recommends the Unlock DAO take a more active role in grant activity. The reason for this is simple: much more community involvement in grants, powered by the Unlock DAO itself.
 
 Currently in early 2023, the [Unlock DAO’s timelock contract](https://etherscan.io/address/0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b) holds approximately 92,000 UDT governance tokens. These governance tokens can be distributed to members of the community as grants, if members of the DAO create proposals that pass the governance process. 
 
@@ -40,11 +40,13 @@ Let’s walk through the recommended process.
 
 ## First, get familiar with the Grant process itself
 
-Before proposing a Grant, projects considering applying for a Grant should read the [Grants page on the Unlock website](https://unlock-protocol.com/grants), as well as read the Grants pages on the Unlock project documentation.
+Before proposing a grant, projects considering applying for a grant should read the [grants page on the Unlock website](https://unlock-protocol.com/grants), as well as read the Governance pages here in the Unlock project documentation.
 
-## Fill out a Grant application
+## Fill out a grant application
 
-After familiarizing themselves with the Grants material, a representative of the prospective Grant project should fill out a [Grant Application in Unlock’s Github repository](https://github.com/unlock-protocol/unlock/issues/). They can do this by going to the Unlock Github repository and opening a new issue.
+After familiarizing themselves with the grants material, a representative of the prospective grant project should fill out a [Grant Application in Unlock’s Github repository](https://github.com/unlock-protocol/unlock/issues/). They can do this by going to the Unlock Github repository and opening a new issue.
+
+
 
 ![grant-1.png](Updated%20Grants%20flow%20for%20Unlock%20Protocol%20DAO%20347e43afa3c14f7d92ce9c98c2da55ed/grant-1.png)
 
