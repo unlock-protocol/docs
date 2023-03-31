@@ -92,7 +92,7 @@ While not “binding” in a technical sense, the off-chain Snapshot vote serves
 
 If the project team decides to build their project, go for it! Remember to keep the rest of the community informed during the project’s execution. Share progress, notes, demos, key milestones, screens, videos, and other markers of progress in the conversation thread for the application as the project proceeds forward.
 
-## Setting Milestones
+## Setting milestones
 
 ### What is a milestone and why are they important?
 
@@ -101,7 +101,7 @@ identify when key developments or groups of activities have been completed. Mile
 powerful because they demonstrate forward progress. They help you monitor deadlines and
 identify important dates.
 
-### Success Metrics
+### Success metrics
 
 The final milestone should include success metrics or ROI. Here are some 
 examples based on your application type. 
