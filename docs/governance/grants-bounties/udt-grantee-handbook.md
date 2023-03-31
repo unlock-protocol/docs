@@ -126,7 +126,7 @@ While the earlier off-chain “temperature check” indicated directional suppor
 
 Create an on-chain proposal that highlights the original grant application, shows the work that was done, formally request a grant amount from the DAO to be paid from the Unlock DAO timelock wallet, and open the voting. If the vote reaches quorum and passes, the proposal will be automatically executed and the grant will be distributed from the Unlock DAO timelock wallet to the wallet indicated in the proposal.
 
-### Resources
+## Resources
 
 Below are some useful resources you should use to learn about Unlock Protocol, amplify your project, and connect with the ecosystem and community.
 
