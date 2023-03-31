@@ -84,7 +84,7 @@ Before spending significant time or effort building in anticipation of receiving
 
 Taking an off-chain temperature check vote is optional, but it is recommended. Strong support from the community is an indicator that if the project were to be executed, the community would likely support the funding of the grant upon completion of the work.
 
-You can think of this temperature check as a “social contract.” If the DAO later rejects on-chain proposals that had previously been “approved” off-chain via Snapshots, it would likely chill the interest of future applicants in even submitting grant applications, since prospective applicants may not trust the fact that the ghrant payouts would be officially ratified once the on-chain vote is proposed in the future. 
+You can think of this temperature check as a “social contract.” If the DAO later rejects on-chain proposals that had previously been “approved” off-chain via Snapshots, it would likely chill the interest of future applicants in even submitting grant applications, since prospective applicants may not trust the fact that the grant payouts would be officially ratified once the on-chain vote is proposed in the future. 
 
 While not “binding” in a technical sense, the off-chain Snapshot vote serves an important purpose in getting the community’s tacit commitment to support the grant application going forward.
 
