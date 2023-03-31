@@ -52,7 +52,7 @@ After familiarizing themselves with the grants material, a representative of the
 
 The Grant application will open up as a form in Github that looks something like this:
 
-![grant-3.png](Updated%20Grants%20flow%20for%20Unlock%20Protocol%20DAO%20347e43afa3c14f7d92ce9c98c2da55ed/grant-3.png)
+![grant-3](https://user-images.githubusercontent.com/214760/229210899-40875434-5ad9-4fba-abf2-26b162a20176.png)
 
 The Grant application will ask for the following information:
 
@@ -72,12 +72,11 @@ Fill out the form as completely as possible so other Unlock DAO community member
 
 Once submitted for review, Grant applications can be viewed and commented on by anyone in the Unlock community. Proposers should encourage and engage in discussion about the Grant application in the comments on the application itself on Github.
 
-![grant-4.png](Updated%20Grants%20flow%20for%20Unlock%20Protocol%20DAO%20347e43afa3c14f7d92ce9c98c2da55ed/grant-4.png)
+![grant-4](https://user-images.githubusercontent.com/214760/229210991-73215c4d-8728-4523-ae9d-243129e31d2a.png)
 
-<aside>
-💡 ***A note on voting:** There are two primary kinds of voting mechanisms in the Unlock DAO. “Off-chain” voting, where Unlock DAO members can vote to communicate their positions on a proposal, and “on-chain” voting, where the votes not only communicate positions, but also result in automatic execution of the proposal if the proposal passes. These methods and their distinctions will be important in the following sections.*
-
-</aside>
+<blockqupote>
+***A note on voting:** There are two primary kinds of voting mechanisms in the Unlock DAO. “Off-chain” voting, where Unlock DAO members can vote to communicate their positions on a proposal, and “on-chain” voting, where the votes not only communicate positions, but also result in automatic execution of the proposal if the proposal passes. These methods and their distinctions will be important in the following sections.*
+</blockquote>
 
 ## Before starting work, take a temperature check from the Unlock DAO community
 
