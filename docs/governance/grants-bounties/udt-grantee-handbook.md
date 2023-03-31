@@ -10,18 +10,17 @@ sidebar_position: 2
 ## Purpose
 
 This handbook intends to provide instructions to those interested in applying 
-for one of our UDT grants. This guide showcases applying for a grant, 
-establishing clear milestones, and provides a description of how a grant 
-application is processed and reviewed by the Grant Committee as well as the 
-milestone review and approval process.
+for a grant from the Unlock DAO. This guide showcases applying for a grant, 
+establishing clear milestones, and provides a description of how the grant process
+proceeds throughout the life of a grant.
 
 ## Eligibility
 
 Any educational program, integration, plugin, application, or event that will 
 increase the visibility, credibility, or Gross Network Product (GNP) of Unlock 
-Protocol may be eligible for a grant.
+Protocol should consider applying for a grant from the Unlock DAO.
 
-## Submitting an Application
+## Submitting an Application -- DELETE SECTION
 
 The Unlock Protocol UDT token grant program is administered using a management 
 tool called [Wonderverse](https://www.wonderverse.xyz/). This is the place where 
@@ -35,7 +34,7 @@ make the application with a team account or representative with the wallet your
 team wishes to use to receive payments. (Pro-tip: If you already use Discord, 
 you can connect Discord with Wonderverse and be sent notifications of updated 
 grant activity so you don’t miss anything.)
-## Getting Started
+## Getting Started -- DELETE SECTION
 
 Head over to the [“Grants” pod](https://app.wonderverse.xyz/pod/68474324611236166/boards) 
 of the Unlock Protocol Wonderverse workspace. This is the place where you’ll 
@@ -128,7 +127,7 @@ Milestone 2: Launch & Marketing
 - Launched app in Apple & Google stores
 - Initial partner outreach complete
 
-## Grant Building
+## Grant Building -- DELETE SECTION
 
 After your application is approved you will be assigned your own “pod” workspace in Wonderverse. This is the place where the grants administrator will drop you resources, assign you tasks to stay on track or communicate additional information you might need about protocol updates and other funding opportunities. Feel free to use your workspace in any capacity you see fit. You MUST check in at least once a month in order to ensure your grant stays active but you will be warned in Wonderverse before it’s closed so be sure to set up your notification settings appropriately or visit your workspace regularly.
 
@@ -156,7 +155,7 @@ Below are some useful resources you should use to learn about Unlock Protocol, a
 
 [Creator Guides](https://unlock-protocol.com/guides/) - step-by-step guides on how to use our UI tools like the Unlock “Dashboard”, set up plugins, find integrations, configure credit card payments, and more.
 
-## Milestone Delivery
+## Milestone Delivery -- DELETE SECTION
 
 Once the grants administrator creates your grant “pod” workspace, you’ll also see your milestones set there with associated deliverable tasks. Those will look something like the image below. 
 
@@ -164,10 +163,10 @@ Once the grants administrator creates your grant “pod” workspace, you’ll a
 
 As you complete the associated tasks be sure to update your milestones. 
 
-## Final Delivery
+## Final Delivery  -- UPDATE SECTION
 Upon completion of the grant work, Unlock will ask you to complete a grant retrospective form with feedback and learnings, as well as submit a demonstration video, a link to a live (production) implementation for review, and other completion items. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, the grant payout will be initiated.
 
-## Grant Payments
+## Grant Payments -- UPDATE SECTION
 Grant payouts are paid using UDT on the Polygon network. Grant payouts are delivered over a **one year vesting period** that begins vesting on the date of the grant application approval. When the grant work is completed, submitted, and approved, a first partial grant payout will be done by way of a "catchup" to the date of grant completion from the original grant approval date. The unvested balance left will be streamed between the grant completion date and one year from the grant approval date as it vests.
 
 Note: If the work of the grant has not been completed and delivered by one year after the grant approval date, it is assumed the grant has been abandoned.
