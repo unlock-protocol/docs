@@ -10,80 +10,89 @@ sidebar_position: 2
 ## Purpose
 
 This handbook intends to provide instructions to those interested in applying 
-for one of our UDT grants. This guide showcases applying for a grant, 
-establishing clear milestones, and provides a description of how a grant 
-application is processed and reviewed by the Grant Committee as well as the 
-milestone review and approval process.
+for a grant from the Unlock DAO. This guide showcases applying for a grant, 
+establishing clear milestones, and provides a description of how the grant process
+proceeds throughout the life of a grant.
 
 ## Eligibility
 
 Any educational program, integration, plugin, application, or event that will 
 increase the visibility, credibility, or Gross Network Product (GNP) of Unlock 
-Protocol may be eligible for a grant.
+Protocol should consider applying for a grant from the Unlock DAO.
 
-## Submitting an Application
+## What are grants?
 
-The Unlock Protocol UDT token grant program is administered using a management 
-tool called [Wonderverse](https://www.wonderverse.xyz/). This is the place where 
-you create your application, submit your milestone work for review, and 
-collaborate with the Unlock team and Grants Committee for support and resources.
+Grants are one of the features of the Unlock ecosystem. As Unlock continues to progressively decentralize the decision-making and governance of the protocol, streamlining and further decentralizing the grants process supports that goal.
 
-If you don't already have a Wonderverse account, you will need to create one. 
-Be sure to connect your wallet address so that, upon completion and approval, 
-your grant can be distributed to you! If you’re working in a team, be sure to 
-make the application with a team account or representative with the wallet your 
-team wishes to use to receive payments. (Pro-tip: If you already use Discord, 
-you can connect Discord with Wonderverse and be sent notifications of updated 
-grant activity so you don’t miss anything.)
-## Getting Started
+Historically, the Unlock Labs team was actively involved in the grants through both managing the process as well as distributing grants via Unlock Labs. Going forward, Unlock Labs recommends the Unlock DAO take a more active role in grant activity. The reason for this is simple: much more community involvement in grants, powered by the Unlock DAO itself.
 
-Head over to the [“Grants” pod](https://app.wonderverse.xyz/pod/68474324611236166/boards) 
-of the Unlock Protocol Wonderverse workspace. This is the place where you’ll 
-find general resources about grants and where the grants committee coordinates on 
-applications that are newly submitted and in review.
+Currently in early 2023, the [Unlock DAO’s timelock contract](https://etherscan.io/address/0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b) holds a significant number of UDT governance tokens. These governance tokens can be distributed to members of the community as grants, if members of the DAO create proposals that pass the governance process. 
 
-Create a new task by clicking on the large plus sign in the upper right-hand 
-corner.
+***A reminder: Members of the Unlock DAO make proposals, and members of the Unlock DAO decide what to do with the DAO’s governance tokens.***
 
-![screen shot wonderverse for grantee handbook](/img/governance/grants/grantee-handbook-1.png)
+The Unlock Labs team has put some thought into a process that the Unlock community could use for grants going forward. The recommended process is shown below, and each step is explained in more detail underneath the image. (Of course, this is a suggestion — the community can make any proposals using any process it chooses.)
 
-Click on “Task” from the list
+## Recommended grant process
 
-![screen shot wonderverse for grantee handbook](/img/governance/grants/grantee-handbook-2.png)
+![grant-0](https://user-images.githubusercontent.com/214760/229229944-4db2a144-7f83-48d7-ad11-7cc5f896130a.png)
 
-Click “Select Template” > “Open existing template”
 
-![screen shot wonderverse for grantee handbook](/img/governance/grants/grantee-handbook-3.png)
+Let’s walk through the recommended process.
 
-Choose the “Grant Application” from the list
+## First, get familiar with the grant process itself
 
-![screen shot wonderverse for grantee handbook](/img/governance/grants/grantee-handbook-4.png)
+Before proposing a grant, projects considering applying for a grant should read the [grants page on the Unlock website](https://unlock-protocol.com/grants), as well as read the Governance pages here in the Unlock project documentation.
 
-Fill out the information in the list. Not all of the information is required, but the more details you include, the more likely your application is to be accepted. 
+## Fill out a grant application
 
-Make sure you read through the section below called “Setting Milestones” in order to ensure your application is complete. Without proper milestones, your application will not be moved to committee review, also described below. 
+After familiarizing themselves with the grants material, a representative of the prospective grant project should fill out a [Grant Application in Unlock’s Github repository](https://github.com/unlock-protocol/unlock/issues/). They can do this by going to the Unlock Github repository and opening a new issue.
 
-Towards the bottom of the application, set yourself as the “Assignee,” as you’re the one completing the grant application task. This also ensures you receive notifications.
+![grant-1](https://user-images.githubusercontent.com/214760/229210596-df75ca2c-c26b-4cb3-a8c7-1165218ba8b2.png)
 
-Under “Tags,” add a tag for “Grant Application”
+![grant-2](https://user-images.githubusercontent.com/214760/229210663-efcd7525-8a2b-4e87-a8ea-3bbbff9425b5.png)
 
-![screen shot wonderverse for grantee handbook](/img/governance/grants/grantee-handbook-5.png)
+The grant application will open up as a form in Github that looks something like this:
 
-Click “Create Task”
+![grant-3](https://user-images.githubusercontent.com/214760/229210899-40875434-5ad9-4fba-abf2-26b162a20176.png)
 
-![screen shot wonderverse for grantee handbook](/img/governance/grants/grantee-handbook-6.png)
+The grant application will ask for the following information:
 
-Within 1 to 2 weeks of submittal, your application will be reviewed for completeness by a grants administrator. You will receive one of the following responses;
+- Description of the grant request
+- Website URL
+- Twitter, Github, LinkedIn, Discord handles
+- Estimated completion time
+- Team background
+- Key milestones
+- Requested grant amount
+- Intention to release the grant work as Open Source
+- Anything else you think the community should know
 
-1. Comments will be made with a request for more information about your project. 
-2. Denied outright because it doesn’t meet our minimum criteria.
-3. Notification that it’s been moved to the Grants Committee for review.
+Fill out the form as completely as possible so other Unlock DAO community members can understand the application clearly.
 
-If your grant application is moved to the Grants Committee to be reviewed, the Grants Administrator will assign it to be reviewed by the Grants Committee. As soon as at least 2 committee members have processed your application review, then a decision can be made regarding your grant application. 
+## Encourage conversation around the grant application
 
-The Grants Administrator will tally the scores given by the reviewers, average them and assign you to the proper grant level (# of UDT governance tokens) based on where you fall. For more information on how your application will be reviewed and how the levels are set, see the [“Grants Review Guide”](https://www.notion.so/Grant-Review-Guide-b02facce97164bec8652da9976da6418).
+Once submitted for review, grant applications can be viewed and commented on by anyone in the Unlock community. Proposers should encourage and engage in discussion about the grant application in the comments on the application itself on Github.
 
-## Setting Milestones
+![grant-4](https://user-images.githubusercontent.com/214760/229210991-73215c4d-8728-4523-ae9d-243129e31d2a.png)
+
+***A NOTE ON VOTING: There are two primary kinds of voting mechanisms in the Unlock DAO. “Off-chain” voting, where Unlock DAO members can vote to communicate their positions on a proposal, and “on-chain” voting, where the votes not only communicate positions, but also result in automatic execution of the proposal if the proposal passes. These methods and their distinctions will be important in the following sections.***
+
+
+## Before starting work, take a temperature check from the Unlock DAO community
+
+Before spending significant time or effort building in anticipation of receiving a grant, the applicant should strongly consider an off-chain “temperature check” proposal and vote using a system like [Snapshot](https://snapshot.org/#/unlock-protocol.eth). To do this, the applicant would create a proposal and encourage community members to indicate how they would likely vote on the proposal were it an on-chain vote. While the Snapshot vote is technically non-binding, it can give an indication of the interest in the grant application and a directional likelihood if the proposal would pass if proposed on-chain, and if the project proposed in the grant were completed as proposed.
+
+Taking an off-chain temperature check vote is optional, but it is recommended. Strong support from the community is an indicator that if the project were to be executed, the community would likely support the funding of the grant upon completion of the work.
+
+You can think of this temperature check as a “social contract.” If the DAO later rejects on-chain proposals that had previously been “approved” off-chain via Snapshots, it would likely chill the interest of future applicants in even submitting grant applications, since prospective applicants may not trust the fact that the grant payouts would be officially ratified once the on-chain vote is proposed in the future. 
+
+While not “binding” in a technical sense, the off-chain Snapshot vote serves an important purpose in getting the community’s tacit commitment to support the grant application going forward.
+
+## Build in public, and keep the community appraised of progress
+
+If the project team decides to build their project, go for it! Remember to keep the rest of the community informed during the project’s execution. Share progress, notes, demos, key milestones, screens, videos, and other markers of progress in the conversation thread for the application as the project proceeds forward.
+
+## Setting milestones
 
 ### What is a milestone and why are they important?
 
@@ -92,16 +101,9 @@ identify when key developments or groups of activities have been completed. Mile
 powerful because they demonstrate forward progress. They help you monitor deadlines and
 identify important dates.
 
-### Milestones vs. deliverables
+### Success metrics
 
-Deliverables are the building blocks of your project and can be used as evidence of
-milestone completion. They are the results you want to see once the milestone is complete.
-The milestone is a key checkpoint/ achievement, which can be seen as the cumulative result
-of completing each deliverable. A well-thought-out milestone will have several deliverables.
-
-### Success Metrics
-
-The final milestone will need to include success metrics or ROI. Here are some 
+The final milestone should include success metrics or ROI. Here are some 
 examples based on your application type. 
 
 - For a membership implementation: the number of members joined your through 
@@ -110,29 +112,21 @@ your platform.
 - For use with credentials: the number of credentials handed out. 
 - For educational materials: the number of people educated. 
 
-If you’re unsure about this then reach out to the grants administrator who can 
-be found on the current grants committee roster.
+If you’re unsure about this, reach out to the community in the comment thread of your grant application for help from your peers.
 
-### Examples
+## Final Delivery: Share the results, show your work
 
-Milestone 1: Product Development
+When the items that were proposed in the original grant are complete, share them! Share them in the application thread on Github, along with links to demos, videos, the project website, and other indicators that what was outlined in the original grant application have been completed. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, you should move on to the next step.
 
-- Create public project repository
-- Deploy smart contract hooks
-- Complete plugin code
-- Launch example implementation
+Note: If the work of the grant has not been completed and delivered by one year after the conversation around the grant was initiated, the community will likely assume the grant project has been abandoned.
 
-Milestone 2: Launch & Marketing
+## Submit your proposal to the Unlock DAO for distribution of the grant
 
-- Website with examples and how to’s up
-- Launched app in Apple & Google stores
-- Initial partner outreach complete
+While the earlier off-chain “temperature check” indicated directional support, a formal on-chain proposal and vote for the grant distribution (using a system like [Tally](https://www.tally.xyz/gov/unlock), for instance), will complete the grant process.
 
-## Grant Building
+Create an on-chain proposal that highlights the original grant application, shows the work that was done, formally request a grant amount from the DAO to be paid from the Unlock DAO timelock wallet, and open the voting. If the vote reaches quorum and passes, the proposal will be automatically executed and the grant will be distributed from the Unlock DAO timelock wallet to the wallet indicated in the proposal.
 
-After your application is approved you will be assigned your own “pod” workspace in Wonderverse. This is the place where the grants administrator will drop you resources, assign you tasks to stay on track or communicate additional information you might need about protocol updates and other funding opportunities. Feel free to use your workspace in any capacity you see fit. You MUST check in at least once a month in order to ensure your grant stays active but you will be warned in Wonderverse before it’s closed so be sure to set up your notification settings appropriately or visit your workspace regularly.
-
-### Resources
+## Resources
 
 Below are some useful resources you should use to learn about Unlock Protocol, amplify your project, and connect with the ecosystem and community.
 
@@ -155,21 +149,5 @@ Below are some useful resources you should use to learn about Unlock Protocol, a
 [Developer Docs](https://docs.unlock-protocol.com/) - core protocol reference, APIs, tutorials, developer tools, and more
 
 [Creator Guides](https://unlock-protocol.com/guides/) - step-by-step guides on how to use our UI tools like the Unlock “Dashboard”, set up plugins, find integrations, configure credit card payments, and more.
-
-## Milestone Delivery
-
-Once the grants administrator creates your grant “pod” workspace, you’ll also see your milestones set there with associated deliverable tasks. Those will look something like the image below. 
-
-![screen shot wonderverse for grantee handbook](/img/governance/grants/grantee-handbook-7.png)
-
-As you complete the associated tasks be sure to update your milestones. 
-
-## Final Delivery
-Upon completion of the grant work, Unlock will ask you to complete a grant retrospective form with feedback and learnings, as well as submit a demonstration video, a link to a live (production) implementation for review, and other completion items. If all in-scope items have been completed, the project is live, and the grant retrospective has been submitted, the grant payout will be initiated.
-
-## Grant Payments
-Grant payouts are paid using UDT on the Polygon network. Grant payouts are delivered over a **one year vesting period** that begins vesting on the date of the grant application approval. When the grant work is completed, submitted, and approved, a first partial grant payout will be done by way of a "catchup" to the date of grant completion from the original grant approval date. The unvested balance left will be streamed between the grant completion date and one year from the grant approval date as it vests.
-
-Note: If the work of the grant has not been completed and delivered by one year after the grant approval date, it is assumed the grant has been abandoned.
 
 
