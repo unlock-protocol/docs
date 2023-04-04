@@ -16,7 +16,7 @@ For this, we started with the [Guide written by the Magic team](https://vercel.c
 At the end of the tutorial, our application provides users with the ability to easily login with a link sent to their email. When using the Magic library, your application can access the RPC provider to connect to the blockchain. We will leverage this to add the Paywall application and connect it to the user's wallet directly so users can easily check-out and purchase a membership.
 
 :::warning
-Magic currently only supports a limited set of chain (no test network for example as of writting). Your locks will need to be one one of these chains. Similarly, you should not expect Magic users to have crypto-currencies to send the transactions themselves. For this we strongly recommand [enabling credit card purchases](https://unlock-protocol.com/guides/enabling-credit-cards/).
+Magic currently only supports a limited set of chains (for example, no test networks are available as of writing). Your locks will need to be one one of these chains. Similarly, you should not expect Magic users to have crypto-currencies to send the transactions themselves. For this we strongly recommend [enabling credit card purchases](https://unlock-protocol.com/guides/enabling-credit-cards/).
 :::
 
 1. Let's add the Paywall library
