@@ -21,7 +21,7 @@ Magic currently only supports a limited set of chains (for example, no test netw
 
 1. Let's add the Paywall library
 
-The library is a node module and can be added via `npm` or `yarn`. We also add the (optional) Unlock network package as it includes RPC endpoints you can optionnaly use. Feel free to replace them in your own application.
+The library is a node module and can be added via `npm` or `yarn`. We also add the (optional) Unlock network package as it includes RPC endpoints you can optionally use. Feel free to replace them in your own application.
 
 ```shell
 yarn add @unlock-protocol/paywall @unlock-protocol/networks
