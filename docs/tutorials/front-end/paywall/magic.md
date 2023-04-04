@@ -86,7 +86,7 @@ const checkout = async () => {
 
 There is a little bit going on here. First, we create a [paywall config object](../../../tools/paywall.md). This is a JSON object that lets us configure the Paywall application. You can build that object manually or use the `Download JSON` from the [Checkout builder](https://app.unlock-protocol.com/locks/checkout-url) on the Unlock dashboard.
 
-The one we use here is a pretty basic. We use a single lock at the address `0xbf49ca4bf09d4b720fe5fcaecce0fe5d5b1becb9`. We skip the step where users can change the recipient of the NFT they are purchasing and just use `My Membership` is the title on the modal.
+The one we use here is a pretty basic. We use a single lock at the address `0xbf49ca4bf09d4b720fe5fcaecce0fe5d5b1becb9`. We skip the step where users can change the recipient of the NFT they are purchasing and just use `My Membership` as the title on the modal.
 
 The critical part here is this line:
 
