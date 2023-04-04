@@ -98,7 +98,7 @@ As you can see, we instantiate the paywall object with the following:
 
 - the paywall config
 - the networks package
-- the [RPR provider served by the Magic](https://magic.link/docs/auth/blockchains/celo#use-magic-rpc-provider)!
+- the [RPC provider served by Magic](https://magic.link/docs/auth/blockchains/celo#use-magic-rpc-provider)!
 
 When instantiated with a provider, the paywall will use it rather than let the user chose their own.
 
