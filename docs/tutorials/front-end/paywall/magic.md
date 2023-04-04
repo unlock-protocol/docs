@@ -94,7 +94,7 @@ The critical part here is this line:
 const paywall = new Paywall(paywallConfig, networks, magic.rpcProvider);
 ```
 
-As you can see, we instantuate the paywall object with the following:
+As you can see, we instantiate the paywall object with the following:
 
 - the paywall config
 - the networks package
