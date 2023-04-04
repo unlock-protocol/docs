@@ -114,12 +114,23 @@ const sidebars = {
       items: [
         "tutorials/building-token-gated-applications",
         {
-          type: "category",
           label: "Front-end",
+          type: "category",
           items: [
             "tutorials/front-end/locking-page",
             "tutorials/front-end/react-example",
-            "tutorials/front-end/scaffold-eth"
+            "tutorials/front-end/scaffold-eth",
+            {
+              label: "Paywall",
+              link: {
+                type: "doc",
+                id: "tutorials/front-end/paywall/README",
+              },
+              type: "category",
+              items: [
+                "tutorials/front-end/paywall/magic",
+              ]
+            }
           ]
         },
         {
