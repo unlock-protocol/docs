@@ -1,7 +1,7 @@
 ---
 title: Grant Review Guide
 description:  >-
-  Explaination of the Unlock Inc. grants, participation in Gitcoin grants and 
+  Explanation of the Unlock Inc. grants, participation in Gitcoin grants and 
   bounties program.
 sidebar_position: 4
 ---
