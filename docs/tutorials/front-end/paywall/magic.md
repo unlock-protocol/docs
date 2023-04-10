@@ -5,7 +5,7 @@ description: >-
   Learn how to add the Unlock Paywall to a magic application!
 ---
 
-[Magic](https://magic.link/) gives developers the tools to make adoption frictionless, secure, and non-custodial. It provides an easy login mechanism via email to your users as well as a gives them a non-custodial web3 wallet that they can use with your application.
+[Magic](https://magic.link/) gives developers the tools to make adoption frictionless, secure, and non-custodial. It provides an easy login mechanism via email to your users as well as gives them a non-custodial web3 wallet that they can use with your application.
 
 :::note
 Please find the code for this tutorial in [our examples repository](https://github.com/unlock-protocol/examples/tree/main/paywall/magic).
@@ -16,7 +16,7 @@ For this, we started with the [Guide written by the Magic team](https://vercel.c
 At the end of the tutorial, our application provides users with the ability to easily login with a link sent to their email. When using the Magic library, your application can access the RPC provider to connect to the blockchain. We will leverage this to add the Paywall application and connect it to the user's wallet directly so users can easily check-out and purchase a membership.
 
 :::warning
-Magic currently only supports a limited set of chains (for example, no test networks are available as of writing). Your locks will need to be one one of these chains. Similarly, you should not expect Magic users to have crypto-currencies to send the transactions themselves. For this we strongly recommend [enabling credit card purchases](https://unlock-protocol.com/guides/enabling-credit-cards/).
+Magic currently only supports a limited set of chains (for example, no test networks are available as of writing). Your locks will need to be one of these chains. Similarly, you should not expect Magic users to have crypto-currencies to send the transactions themselves. For this we strongly recommend [enabling credit card purchases](https://unlock-protocol.com/guides/enabling-credit-cards/).
 :::
 
 1. Let's add the Paywall library
@@ -100,7 +100,7 @@ As you can see, we instantiate the paywall object with the following:
 - the networks package
 - the [RPC provider served by Magic](https://magic.link/docs/auth/blockchains/celo#use-magic-rpc-provider)!
 
-When instantiated with a provider, the paywall will use it rather than let the user chose their own.
+When instantiated with a provider, the paywall will use it rather than let the user choose their own.
 
 Finally, we open the checkout modal by calling `paywall.loadCheckoutModal();`
 

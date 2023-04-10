@@ -1,7 +1,7 @@
 ---
 title: The UDT Token Grants Program
 description:  >-
-  Explaination of the Unlock Protocol UDT Token Grants Program
+  Explanation of the Unlock Protocol UDT Token Grants Program
 sidebar_position: 1
 ---
 
