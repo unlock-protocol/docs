@@ -1,7 +1,7 @@
 ---
 title: Bounties
 description:  >-
-  Explaination of bounties at Unlock Protocol
+  Explanation of bounties at Unlock Protocol
 ---
 
 # Bounties

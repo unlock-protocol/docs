@@ -20,7 +20,7 @@ You can [earn UDT today by using the protocol](/governance/the-unlock-token), or
 
 ## What are the tokenomics of ɄDT?
 
-When Unlock Inc. created the [UDT tokens](/governance/the-unlock-token), a total of 1,000,000 tokens were premined. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 them to foster adoption of the protocol (the company will keep at least 200,000).
+When Unlock Inc. created the [UDT tokens](/governance/the-unlock-token), a total of 1,000,000 tokens were premined. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 of them to foster adoption of the protocol (the company will keep at least 200,000).
 
 As of November 1st 2021, the company has distributed about 120,000 tokens. By May 1st 2022, we want to have distributed another 200,000 tokens, totaling at least 300,000 tokens.
 
@@ -38,7 +38,7 @@ Unlock Inc. is founded by CEO Julien Genestoux and includes Austin Robey (Head o
 
 ## What is the Unlock DAO?
 
-The Unlock DAO is the decentralized organization of ɄDT token holders that govern and control the Unlock Protocol. Unlock Inc. is _one_ of the stakeholders on the DAO, and we expect other organizations to emerge and eventually lead some efforts independenly of Unlock Inc.
+The Unlock DAO is the decentralized organization of ɄDT token holders that govern and control the Unlock Protocol. Unlock Inc. is _one_ of the stakeholders on the DAO, and we expect other organizations to emerge and eventually lead some efforts independently of Unlock Inc.
 
 Governance happens through _proposals_.
 
@@ -46,9 +46,9 @@ Governance happens through _proposals_.
 
 A proposal is a blockchain-executable transaction: **it is code**. This means that proposals can only trigger "on-chain" actions. For example, a proposal could be "The DAO pays X tokens to address.eth", or "Change parameter P of smart contract to be K", but it cannot be "The Unlock Inc. team needs to travel to conference Y", or "John Doe needs to purchase UDT tokens on the Coinbase exchange".
 
-## What is the lifecycle of a proposal
+## What is the lifecycle of a proposal?
 
-Proposals start as discussions and conversations. We suggest using [Discourse](https://unlock.community) but they can happen anywhere as long as they are _visible_ by all token holders. These conversations can be initiated by any community member. In the begining, proposals are discussed between community members with the intention of making voting easier and straightforward by increasing awareness.
+Proposals start as discussions and conversations. We suggest using [Discourse](https://unlock.community) but they can happen anywhere as long as they are _visible_ by all token holders. These conversations can be initiated by any community member. In the beginning, proposals are discussed between community members with the intention of making voting easier and straightforward by increasing awareness.
 
 Once a relative consensus has been reached in the community, a community member will submit the proposal for votes, in the form of executable code.
 
@@ -78,7 +78,7 @@ The easiest way is to go to the [Unlock governance page on Tally](https://www.wi
 
 ## Is it possible to become a delegate and not currently hold any UDT
 
-No, delegation is the act of assiging the votes from address weighted by the number of tokens that this address owns. If you don't UDT, the weight would be 0 :)
+No, delegation is the act of assigning the votes from address weighted by the number of tokens that this address owns. If you don't UDT, the weight would be 0 :)
 
 ## Is there any minimum UDT holding threshold for delegate consideration
 
