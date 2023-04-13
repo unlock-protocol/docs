@@ -26,7 +26,7 @@ Additionally, the protocol itself distributes new tokens using a logarithmic cur
 
 ## What is Unlock Inc. (aka Unlock Labs)?
 
-Unlock Inc. is the company that wrote the first versions of the Unlock Protocol. It is now just one of the many stakeholders of the Unlock protocol DAO and community.
+Unlock Inc. is the company that wrote the first versions of the Unlock Protocol. It is now just one of the many stakeholders of the Unlock Protocol DAO and community.
 
 ## What is the Unlock DAO?
 
