@@ -1,4 +1,4 @@
-# PublicLock (v12)
+# IPublicLock
 
 
 
@@ -26,56 +26,6 @@ function DEFAULT_ADMIN_ROLE() external view returns (bytes32 role)
 | Name | Type | Description |
 |---|---|---|
 | role | bytes32 | undefined |
-
-### KEY_GRANTER_ROLE
-
-```solidity
-function KEY_GRANTER_ROLE() external view returns (bytes32 role)
-```
-
-
-
-
-
-
-#### Returns
-
-| Name | Type | Description |
-|---|---|---|
-| role | bytes32 | undefined |
-
-### LOCK_MANAGER_ROLE
-
-```solidity
-function LOCK_MANAGER_ROLE() external view returns (bytes32 role)
-```
-
-
-
-
-
-
-#### Returns
-
-| Name | Type | Description |
-|---|---|---|
-| role | bytes32 | undefined |
-
-### addKeyGranter
-
-```solidity
-function addKeyGranter(address account) external nonpayable
-```
-
-
-
-
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| account | address | undefined |
 
 ### addLockManager
 
@@ -189,7 +139,7 @@ function expireAndRefundFor(uint256 _tokenId, uint256 _amount) external nonpayab
 
 
 
-*Invoked by a Lock manager to expire the user&#39;s key  and perform a refund and cancellation of the keyThrows if called by other than a Lock managerThrows if _keyOwner does not have a valid key*
+*Invoked by a Lock manager to expire the user&#39;s key and perform a refund and cancellation of the keyThrows if called by other than a Lock managerThrows if _keyOwner does not have a valid key*
 
 #### Parameters
 
@@ -345,7 +295,7 @@ Innherited from Open Zeppelin AccessControl.sol
 function getTransferFee(uint256 _tokenId, uint256 _time) external view returns (uint256)
 ```
 
-Determines how much of a fee would need to be paid in order to transfer to another account.  This is pro-rated so the fee goes  down overtime.
+Determines how much of a fee would need to be paid in order to transfer to another account.  This is pro-rated so the fee goes down overtime.
 
 *Throws if _tokenId does not have a valid key*
 
@@ -487,28 +437,6 @@ function isApprovedForAll(address _owner, address _operator) external view retur
 |---|---|---|
 | _0 | bool | bool whether the given operator is approved by the given owner |
 
-### isKeyGranter
-
-```solidity
-function isKeyGranter(address account) external view returns (bool)
-```
-
-
-
-
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| account | address | undefined |
-
-#### Returns
-
-| Name | Type | Description |
-|---|---|---|
-| _0 | bool | undefined |
-
 ### isLockManager
 
 ```solidity
@@ -552,6 +480,29 @@ function isOwner(address account) external view returns (bool isOwner)
 | Name | Type | Description |
 |---|---|---|
 | isOwner | bool | undefined |
+
+### isRenewable
+
+```solidity
+function isRenewable(uint256 tokenId, address referrer) external view returns (bool)
+```
+
+
+
+*helper to check if a key is currently renewable  it will revert if the pricing or duration of the lock have been modified  unfavorably since the key was bought(price increase or duration decrease). It will also revert if a lock is not renewable or if the key is not ready for renewal yet  (at least 90% expired).*
+
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+| tokenId | uint256 | the id of the token to check |
+| referrer | address | the address where to send the referrer fee |
+
+#### Returns
+
+| Name | Type | Description |
+|---|---|---|
+| _0 | bool | true if the terms has changed |
 
 ### isValidKey
 
@@ -642,7 +593,7 @@ function keyPrice() external view returns (uint256)
 function lendKey(address from, address to, uint256 tokenId) external nonpayable
 ```
 
-Lending a key allows you to transfer the token while retaining the ownerships right by setting yourself as a key manager first. This function can only be called by 1) the key owner when no key manager is set or 2) the key manager. After calling the function, the `_recipent` will be the new owner, and the sender of the tx will become the key manager.
+Lending a key allows you to transfer the token while retaining the ownerships right by setting yourself as a key manager first.This function can only be called by 1) the key owner when no key manager is set or 2) the key manager. After calling the function, the `_recipent` will be the new owner, and the sender of the tx will become the key manager.
 
 
 
@@ -712,7 +663,7 @@ Merge existing keys
 function migrate(bytes _calldata) external nonpayable
 ```
 
-Migrate data from the previous single owner =&gt; key mapping to  the new data structure w multiple tokens.
+Migrate data from the previous single owner =&gt; key mapping to the new data structure w multiple tokens.
 
 *when all record schemas are sucessfully upgraded, this function will update the `schemaVersion` variable to the latest/current lock version*
 
@@ -881,7 +832,7 @@ Returns the address of the `onValidKeyHook` hook.
 function owner() external view returns (address owner)
 ```
 
-`owner()` is provided as an helper to mimick the `Ownable` contract ABI. The `Ownable` logic is used by many 3rd party services to determine contract ownership - e.g. who is allowed to edit metadata on Opensea. This logic is NOT used internally by the Unlock Protocol and is made  available only as a convenience helper.
+`owner()` is provided as an helper to mimick the `Ownable` contract ABI. The `Ownable` logic is used by many 3rd party services to determine contract ownership - e.g. who is allowed to edit metadata on Opensea.This logic is NOT used internally by the Unlock Protocol and is made available only as a convenience helper.
 
 
 
@@ -937,7 +888,7 @@ The version number of the current implementation on this network.
 function purchase(uint256[] _values, address[] _recipients, address[] _referrers, address[] _keyManagers, bytes[] _data) external payable returns (uint256[] tokenIds)
 ```
 
-when called for an existing and non-expired key, the `_keyManager` param will be ignored 
+when called for an existing and non-expired key, the `_keyManager` param will be ignored
 
 *Purchase functionSetting _value to keyPrice exactly doubles as a security feature. That way if the lock owner increases the price while my transaction is pending I can&#39;t be charged more than I expected (only applicable to ERC-20 when more than keyPrice is approved for spending).*
 
@@ -955,7 +906,7 @@ when called for an existing and non-expired key, the `_keyManager` param will be
 
 | Name | Type | Description |
 |---|---|---|
-| tokenIds | uint256[] | the ids of the created tokens  |
+| tokenIds | uint256[] | the ids of the created tokens |
 
 ### purchasePriceFor
 
@@ -1064,22 +1015,6 @@ function renounceRole(bytes32 role, address account) external nonpayable
 |---|---|---|
 | role | bytes32 | undefined |
 | account | address | undefined |
-
-### revokeKeyGranter
-
-```solidity
-function revokeKeyGranter(address _granter) external nonpayable
-```
-
-
-
-
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| _granter | address | undefined |
 
 ### revokeRole
 
@@ -1230,7 +1165,7 @@ Update transfer and cancel rights for a given key
 function setLockMetadata(string _lockName, string _lockSymbol, string _baseTokenURI) external nonpayable
 ```
 
-Allows the Lock owner to assign 
+Allows the Lock owner to assign
 
 
 
@@ -1264,7 +1199,7 @@ function setOwner(address account) external nonpayable
 function setReferrerFee(address _referrer, uint256 _feeBasisPoint) external nonpayable
 ```
 
-Set a specific percentage of the keyPrice to be sent to the referrer while purchasing,  extending or renewing a key. 
+Set a specific percentage of the keyPrice to be sent to the referrer while purchasing, extending or renewing a key.
 
 *To send a fixed percentage of the key price to all referrers, sett a percentage to `address(0)`*
 
@@ -1273,7 +1208,7 @@ Set a specific percentage of the keyPrice to be sent to the referrer while purch
 | Name | Type | Description |
 |---|---|---|
 | _referrer | address | the address of the referrer |
-| _feeBasisPoint | uint256 | the percentage of the price to be used for this  specific referrer (in basis points) |
+| _feeBasisPoint | uint256 | the percentage of the price to be used for this specific referrer (in basis points) |
 
 ### shareKey
 
@@ -1455,30 +1390,6 @@ function totalSupply() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | undefined |
 
-### transfer
-
-```solidity
-function transfer(uint256 _tokenId, address _to, uint256 _value) external nonpayable returns (bool success)
-```
-
-
-
-*The typical use case would be to call this with _value 1, which is on par with calling `transferFrom`. If the user has more than `expirationDuration` time remaining this may use the `shareKey` function to send some but not all of the token.*
-
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| _tokenId | uint256 | the id of the token to transfer time from |
-| _to | address | the recipient of the new token with time |
-| _value | uint256 | sends a token with _value * expirationDuration (the amount of time remaining on a standard purchase). |
-
-#### Returns
-
-| Name | Type | Description |
-|---|---|---|
-| success | bool | the result of the transfer operation |
-
 ### transferFeeBasisPoints
 
 ```solidity
@@ -1502,9 +1413,9 @@ function transferFeeBasisPoints() external view returns (uint256)
 function transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
-an ERC721-like function to transfer a token from one account to another. 
+an ERC721-like function to transfer a token from one account to another.
 
-*Requirements: if the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.  The key manager will be reset to address zero after the transfer*
+*Requirements: if the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. The key manager will be reset to address zero after the transfer*
 
 #### Parameters
 
@@ -1520,7 +1431,7 @@ an ERC721-like function to transfer a token from one account to another.
 function unlendKey(address _recipient, uint256 _tokenId) external nonpayable
 ```
 
-Unlend is called when you have lent a key and want to claim its full ownership back. 
+Unlend is called when you have lent a key and want to claim its full ownership back.
 
 *Only the key manager of the token can call this function*
 
@@ -1571,9 +1482,9 @@ A function which lets a Lock manager of the lock to change the price for future 
 function updateLockConfig(uint256 _newExpirationDuration, uint256 _maxNumberOfKeys, uint256 _maxKeysPerAcccount) external nonpayable
 ```
 
-Update the main key properties for the entire lock:   - default duration of each key - the maximum number of keys the lock can edit - the maximum number of keys a single address can holdkeys previously bought are unaffected by this changes in expiration duration (i.e. existing keys timestamps are not recalculated/updated)
+Update the main key properties for the entire lock: - default duration of each key - the maximum number of keys the lock can edit - the maximum number of keys a single address can holdkeys previously bought are unaffected by this changes in expiration duration (i.e. existing keys timestamps are not recalculated/updated)
 
-*_maxNumberOfKeys Can&#39;t be smaller than the existing supply *
+*_maxNumberOfKeys Can&#39;t be smaller than the existing supply*
 
 #### Parameters
 
@@ -1643,7 +1554,7 @@ function withdraw(address _tokenAddress, address payable _recipient, uint256 _am
 |---|---|---|
 | _tokenAddress | address | specifies the token address to withdraw or 0 for ETH. This is usually the same as `tokenAddress` in MixinFunds. |
 | _recipient | address payable | specifies the address that will receive the tokens |
-| _amount | uint256 | specifies the max amount to withdraw, which may be reduced when considering the available balance. Set to 0 or MAX_UINT to withdraw everything.  -- however be wary of draining funds as it breaks the `cancelAndRefund` and `expireAndRefundFor` use cases. |
+| _amount | uint256 | specifies the max amount to withdraw, which may be reduced when considering the available balance. Set to 0 or MAX_UINT to withdraw everything. -- however be wary of draining funds as it breaks the `cancelAndRefund` and `expireAndRefundFor` use cases. |
 
 
 
