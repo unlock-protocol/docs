@@ -1,4 +1,4 @@
-# Unlock (v11)
+# Unlock (v12)
 
 
 
@@ -16,7 +16,7 @@
 function __initializeOwnable(address sender) external nonpayable
 ```
 
-Initialize the Ownable contract, granting contract ownership to the specified sender 
+
 
 
 
@@ -194,6 +194,23 @@ function estimatedGasForPurchase() external view returns (uint256)
 |---|---|---|
 | _0 | uint256 | undefined |
 
+### getAdmin
+
+```solidity
+function getAdmin() external view returns (address)
+```
+
+Returns the ProxyAdmin contract address that manage upgrades for  the current Unlock contract.
+
+*this reads the address directly from storage, at the slot `_ADMIN_SLOT`  defined by Open Zeppelin&#39;s EIP1967 Proxy implementation which corresponds to the keccak-256 hash of &quot;eip1967.proxy.admin&quot; subtracted by 1*
+
+
+#### Returns
+
+| Name | Type | Description |
+|---|---|---|
+| _0 | address | undefined |
+
 ### getGlobalBaseTokenURI
 
 ```solidity
@@ -321,7 +338,7 @@ function isOwner() external view returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | bool | bool True of the caller is the owner |
+| _0 | bool | undefined |
 
 ### locks
 
@@ -381,10 +398,38 @@ function owner() external view returns (address)
 |---|---|---|
 | _0 | address | undefined |
 
+### postLockUpgrade
+
+```solidity
+function postLockUpgrade() external nonpayable
+```
+
+Call executed by a lock after its version upgrade triggred by `upgradeLock` - PublicLock v12 &gt; v13 (mainnet): migrate an existing Lock to another instance  of the Unlock contract
+
+*The `msg.sender` will be the upgraded lock*
+
+
+### protocolFee
+
+```solidity
+function protocolFee() external view returns (uint256)
+```
+
+The fee (in basis points) collected by the protocol on each purchase /  extension / renewal of a key
+
+
+
+
+#### Returns
+
+| Name | Type | Description |
+|---|---|---|
+| _0 | uint256 | the protocol fee in basic point |
+
 ### proxyAdminAddress
 
 ```solidity
-function proxyAdminAddress() external view returns (address)
+function proxyAdminAddress() external view returns (address _proxyAdminAddress)
 ```
 
 Retrieve the contract address of the proxy admin that manages the locks
@@ -396,7 +441,7 @@ Retrieve the contract address of the proxy admin that manages the locks
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | address | the address of the ProxyAdmin instance |
+| _proxyAdminAddress | address | the address of the ProxyAdmin instance |
 
 ### publicLockAddress
 
@@ -418,7 +463,7 @@ function publicLockAddress() external view returns (address)
 ### publicLockImpls
 
 ```solidity
-function publicLockImpls(uint16 _version) external view returns (address)
+function publicLockImpls(uint16 _version) external view returns (address _implAddress)
 ```
 
 Match lock templates addresses with version numbers
@@ -435,15 +480,15 @@ Match lock templates addresses with version numbers
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | address | address of the lock templates |
+| _implAddress | address | address of the lock templates |
 
 ### publicLockLatestVersion
 
 ```solidity
-function publicLockLatestVersion() external view returns (uint16)
+function publicLockLatestVersion() external view returns (uint16 _version)
 ```
 
-Retrieve the latest existing lock template version
+Retrive the latest existing lock template version
 
 
 
@@ -452,7 +497,7 @@ Retrieve the latest existing lock template version
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | uint16 | the version number of the latest template (used to deploy contracts) |
+| _version | uint16 | the version number of the latest template (used to deploy contracts) |
 
 ### publicLockVersions
 
@@ -570,6 +615,22 @@ allows the owner to set the oracle address to use for value conversions setting 
 |---|---|---|
 | _tokenAddress | address | undefined |
 | _oracleAddress | address | undefined |
+
+### setProtocolFee
+
+```solidity
+function setProtocolFee(uint256 _protocolFee) external nonpayable
+```
+
+Set the fee collected by the protocol
+
+
+
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+| _protocolFee | uint256 | fee (in basis points) |
 
 ### totalDiscountGranted
 
