@@ -1376,10 +1376,10 @@ Returns the number of keys owned by `_keyOwner` (expired or not)
 ### totalSupply
 
 ```solidity
-function totalSupply() external view returns (uint256)
+function totalSupply() external view returns (uint256 _totalKeysCreated)
 ```
 
-
+Returns the total number of keys, including non-valid ones
 
 
 
@@ -1388,7 +1388,7 @@ function totalSupply() external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-| _0 | uint256 | undefined |
+| _totalKeysCreated | uint256 | the total number of keys, valid or not |
 
 ### transferFeeBasisPoints
 
