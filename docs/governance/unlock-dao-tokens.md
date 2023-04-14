@@ -10,7 +10,7 @@ The Unlock DAO Tokens — previously known as Unlock Discount Tokens — (UDT) a
 UDT are perfectly _optional_. Creators can deploy lock without knowledge of UDT and their members can similarly purchase membership without knowing about UDT.
 :::
 
-UDT tokens were created on Ethereum at this address: [`0x90de74265a416e1393a450752175aed98fe11517`](https://etherscan.io/token/0x90de74265a416e1393a450752175aed98fe11517), and have also been bridged to multiple side-chains and networks such as Polygon, Gnosis-chain and others. The DAO may decide to add support for more networks.
+UDT tokens were created on Ethereum at this address: [`0x90de74265a416e1393a450752175aed98fe11517`](https://etherscan.io/token/0x90de74265a416e1393a450752175aed98fe11517), and have also been bridged to multiple side-chains and networks such as Polygon, Gnosis Chain and others. The DAO may decide to add support for more networks.
 
 The contract uses OpenZeppelin's ERC20 libraries. It was initally deployed to be upgradable but the proxy admin renounced its role, making the contract not upgradable anymore.
 
