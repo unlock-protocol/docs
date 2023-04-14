@@ -39,7 +39,7 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 - `title`: _optional string_, a title for your checkout. This will show up on the head.
 - `icon`: _optional string_, the URL for a icon to display in the top left corner of the modal.
 - `persistentCheckout`: _optional boolean_: `true` if the modal cannot be closed, defaults to `false` when embedded. When closed, the user will be redirected to the `redirect` query param when using a purchase address (see above).
-- `referrer`: _optional string_. The address which will [receive UDT tokens](../../governance/the-unlock-token/) (if the transaction is applicable)
+- `referrer`: _optional string_. The address which will [receive UDT tokens](../../governance/unlock-dao-tokens) (if the transaction is applicable)
 - `messageToSign`: _optional string_. If supplied, the user is prompted to sign this message using their wallet. If using a checkout URL, a `signature` query param is then appended to the `redirectUri` (see above). If using the embedded paywall, the `unlockProtocol.authenticated` includes the `signature` attribute.
 - `pessimistic`: _optional boolean_ defaults to `false`. By default, to reduce friction, we do not require users to wait for the transaction to be mined before offering them to be redirected. By setting this to `true`, users will need to wait for the transaction to have been mined in order to proceed to the next step.
 - `hideSoldOut`: _optional boolean_ defaults to `false`. When set to true, sold our locks are not shown to users when they load the checkout modal.
