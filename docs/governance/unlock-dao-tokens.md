@@ -31,7 +31,7 @@ The protocol aims at being governed by its implementers and users. As such, it a
 
 The amount of tokens distributed is calculated by the Unlock contract based on several factors, including the gas consumed by the purchase transaction and the contribution to the gross network product (the gross network product or GNP is the sum of the value of all transactions sent to the network).
 
-On the most popular [networks on which the Unlock protocol](../core-protocol/unlock/networks.md) has been deployed the Unlock contract owns a share of the governance tokens. These have been transfered from the DAO (or allocated by the Unlock Labs team as a way to boostrap adoption). These tokens are the ones that are distributed on each transaction.
+On the most popular [networks on which the Unlock protocol](../core-protocol/unlock/networks) has been deployed the Unlock contract owns a share of the governance tokens. These have been transfered from the DAO (or allocated by the Unlock Labs team as a way to boostrap adoption). These tokens are the ones that are distributed on each transaction.
 
 On each purchase (or renewal) transaction, the membership contract will invoke the Unlock contract. The Unlock contract will then consider the _value_ of the transaction (using an on-chain oracle if needed) relative to the sum of the values of all previous transactions (the gross network product). The Unlock contract also considers its own balance of tokens to determine exactly how many tokens should be distributed to the `referrer` address.
 
