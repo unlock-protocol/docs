@@ -4,7 +4,7 @@ description: The Unlock Token (UDT) and its tokenomics.
 sidebar_position: 1
 ---
 
-The Unlock DAO Tokens -previously known as Unlock Discount Tokens- (UDT) are the governance tokens for the Unlock Protocol. Holders of UDT collectively form the [Unlock DAO](./unlock-dao.md).
+The Unlock DAO Tokens — previously known as Unlock Discount Tokens — (UDT) are the governance tokens for the Unlock Protocol. Holders of UDT collectively form the [Unlock DAO](./unlock-dao.md).
 
 :::info
 UDT are perfectly _optional_. Creators can deploy lock without knowledge of UDT and their members can similarly purchase membership without knowing about UDT.
