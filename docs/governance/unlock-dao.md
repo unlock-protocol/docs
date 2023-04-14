@@ -6,7 +6,7 @@ description: >-
 sidebar_position: 2
 ---
 
-Collectively, UDT holders are members of the Unlock DAO. The Unlock DAO aims at governing the Unlock Protocol. In order to facilitate decision making, the Unlock DAO uses OpenZeppelin's [Governor contracts](https://blog.openzeppelin.com/governor-smart-contract/) and can be found at these addresses:
+Collectively, UDT holders are members of the Unlock DAO. The Unlock DAO aims at governing the Unlock Protocol. In order to facilitate decision making, the Unlock DAO uses OpenZeppelin's [Governor contracts](https://blog.openzeppelin.com/governor-smart-contract/) which can be found at these addresses:
 
 - [Governor Contract](https://etherscan.io/address/0x7757f7f21f5fa9b1fd168642b79416051cd0bb94) \(`0x7757f7f21f5fa9b1fd168642b79416051cd0bb94`\): where proposals and votes are handled
 - [TimeLock Contract](https://etherscan.io/address/0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b) \(`0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b`\): where proposals are executed and funds are managed.
