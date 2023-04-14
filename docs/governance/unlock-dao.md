@@ -57,7 +57,7 @@ Delegation is done _by address_, which means that there is no need to delegate a
 
 When a delegation was submitted, the "weight" of each address's vote is based on how many tokens have been delegated to them, at the time of the proposal submission.
 
-##### Unlock Lab Delegation
+##### Unlock Labs Delegation
 
 Unlock Inc. has indicated that we will not use the company's owned tokens to vote on proposals for as long as we own a majority of the governance tokens. However, in order to facilitate governance, we have delegated some of the tokens we own to multiple entities, including some of our investors, some projects that we're partnering with, as well as other DAOs and communities that the Unlock Inc. team feel bring valuable diversity of opinion, culture and help promote adoption of the protocol.
 
