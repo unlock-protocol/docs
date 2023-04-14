@@ -22,7 +22,7 @@ The governor contract has been configured with the following initial characteris
 - Quorum: 12,500 votes
 - Time lock duration: 7 days.
 
-All of these settings can be changed by the community through an onchain proposal.
+All of these settings can be changed by the Unlock DAO community through an onchain proposal.
 
 ### Allocated funds
 
