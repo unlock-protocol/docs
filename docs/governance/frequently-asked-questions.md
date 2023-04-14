@@ -1,5 +1,5 @@
 ---
-title: Unlock DAO - Frequently Asked Questions
+title: Frequently Asked Questions
 sidebar_position: 4
 description: Answering all of your faqs about Unlock DAO, UDT and governance.
 ---
@@ -16,25 +16,17 @@ description: Answering all of your faqs about Unlock DAO, UDT and governance.
 
 ## How do I get ɄDT?
 
-You can [earn UDT today by using the protocol](/governance/the-unlock-token), or through [grants](/governance/grants-bounties).
+You can [earn UDT today by using the protocol](/governance/unlock-dao-tokens), or through [grants](/governance/grants-bounties).
 
 ## What are the tokenomics of ɄDT?
 
-When Unlock Inc. created the [UDT tokens](/governance/the-unlock-token), a total of 1,000,000 tokens were premined. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 of them to foster adoption of the protocol (the company will keep at least 200,000).
-
-As of November 1st 2021, the company has distributed about 120,000 tokens. By May 1st 2022, we want to have distributed another 200,000 tokens, totaling at least 300,000 tokens.
-
-For this, we are considering 3 mechanisms: grants, bounties, and matchings.
+When Unlock Inc. created the [UDT tokens](/governance/unlock-dao-tokens), a total of 1,000,000 tokens were premined. These tokens are kept in Unlock's multisig wallet and our goal is to use 800,000 of them to foster adoption of the protocol (the company will keep at least 200,000).
 
 Additionally, the protocol itself distributes new tokens using a logarithmic curve, based on the usage of the protocol.
 
-## What is Unlock Inc.?
+## What is Unlock Inc. (aka Unlock Labs)?
 
-Unlock Inc. is the company that wrote the first versions of the Unlock Protocol, with the intention of progressively decentralizing to give control of the protocol to the Unlock community.
-
-## Who is on the Unlock Inc. team?
-
-Unlock Inc. is founded by CEO Julien Genestoux and includes Austin Robey (Head of Growth), Clément Renaud (Senior Software Engineer), Amber Case (Strategist), Crystal Street (Community Manager), and a few more contractors! We're _always_ hiring, so get in touch if you want to join us!
+Unlock Inc. is the company that wrote the first versions of the Unlock Protocol. It is now just one of the many stakeholders of the Unlock Protocol DAO and community.
 
 ## What is the Unlock DAO?
 
@@ -94,12 +86,4 @@ Unlock Inc. is not legally allowed to promote the token. Additionally, since thi
 
 ## Does the Unlock team promote its governance token?
 
-No, the Unlock Inc. team is not allowed to promote its governance token or discuss its price.
-
-## What is the path towards decentralization?
-
-As the usage and community of Unlock Protocol grow, UDT holders will gradually control more of the network. Eventually, they will fully govern the protocol and its treasury.
-
-## How does Unlock Inc. make money?
-
-As part of our roadmap, we plan on allowing users who do not know of cryptocurrencies or have a crypto wallet to pay us (Unlock Inc) with their credit card in order to perform the transaction on chain for them. In that context we will charge a convenience fee on top of the (crypto) price of the keys. This convenience fee will cover the gas price, the credit card transaction and a small margin for us.
+No, the Unlock Inc. team does not promote its governance token or discuss its price.

@@ -22,7 +22,7 @@ Unlock Protocol’s documentation is organized into the following categories.
 - **[Tutorials:](https://docs.unlock-protocol.com/tutorials/)** In-depth articles
   on specific use cases and implementations.
 - **[Governance:](https://docs.unlock-protocol.com/governance/)** Everything you
-  need to know about becoming a DAO member, [UDT](../governance/the-unlock-token/)
+  need to know about becoming a DAO member, [UDT](../governance/unlock-dao-tokens)
   governance tokens, and voting.
 
 We also have [Creator Guides](https://unlock-protocol.com/guides/) geared towards

@@ -13,7 +13,7 @@ As of March 2023, the Unlock ecosystem consists of the following:
 - An [unlock-js](https://www.npmjs.com/package/@unlock-protocol/unlock-js) library that developers can use to interact with the contracts,
 - A [paywall application](https://paywall.unlock-protocol.com) that can be embedded on any website or application to limit access to members and then lets users purchase keys to unlock content,
 - An [unlock-app](https://app.unlock-protocol.com/locks) application that lets creators deploy their lock and view their members, as well as lets consumers view the keys they purchased and interact with them (keychain). The Unlock app also provides user accounts that enable people to create an account with their email and password and then purchase keys with their credit cards through Unlock Inc,
-- The [Unlock Tokens](/governance/the-unlock-token/), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
+- The [Unlock Tokens](/governance/unlock-dao-tokens), a governance token for the Unlock ecosystem, is used to share ownership, as well as incentivize the use of the protocol.
 - The [Unlock DAO](https://unlock-protocol.com/blog/unlock-dao), a set of contracts that lets anyone who owns Unlock tokens submit proposals and vote on them in order to effectively govern the protocol and its treasury
 
 # June 30th 2023
@@ -130,7 +130,7 @@ As of March 2023, the Unlock ecosystem consists of the following:
 
 ## June 2021
 
-- Enable UDT rewards on xDAI ([or any other side chain](the-unlock-token/side-chains-and-layer-2.md)). ✅
+- Enable UDT rewards on xDAI or any other side chain. ✅
 - Enable credit card checkout for any lock (if creator agrees to it!). ✅
 - Update home page design. ✅
 - Addition of a `/developer`landing page. ✅
