@@ -86,4 +86,4 @@ Unlock Inc. is not legally allowed to promote the token. Additionally, since thi
 
 ## Does the Unlock team promote its governance token?
 
-No, the Unlock Inc. team does not to promote its governance token or discuss its price.
+No, the Unlock Inc. team does not promote its governance token or discuss its price.
