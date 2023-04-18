@@ -37,3 +37,9 @@ For renewals and extensions, each NFT needs to be extended individually. However
 - [`extend`](/core-protocol/smart-contracts-api/PublicLock#extend) where the sender of the transaction _pays_ for the extension, even if they are not the owner of the NFT itself. It is advised here again to carefuly consider the key manager.
 - [`renewMembershipFor`](/core-protocol/smart-contracts-api/PublicLock#renewmembershipfor) which can only be called for ERC20 locks where the owner has approved the renewals through an ERC20 approval as _their_ balance will be reduced.
 - [`grantKeyExtension`](/core-protocol/smart-contracts-api/PublicLock#grantkeyextension) which is similar to `grantKeys` and can only be called by lock managers or key granters.
+
+### Protocol Fee
+
+As for version 13, the protocol includes a fee switch. The **fee is initially set to 0**. If the [DAO community](../../governance/unlock-dao.md) decides to change this, then a share of the payment will be sent to the Unlock contract on the chain on which the lock has been deployed.
+
+This protocol fee aims at making the protocol economically sustainable by providing a budget to the DAO.
