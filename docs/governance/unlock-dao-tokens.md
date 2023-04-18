@@ -46,3 +46,11 @@ This design achieves the following characteristics:
 - Higher value transactions yield a larger amount of UDT tokens, everything else being equal,
 - Earlier transactions yield a larger amount of UDT tokens, everything else being equal,
 - The cost of buying UDT on a decentralized exchange is always lower than the cost of sending "fake" transactions to the network in order to collect UDT.
+
+## Protocol Fee
+
+As of Unlock version 13, the protocol includes a "fee switch" but the fee is currentky set to be 0%. This value could be changed by [DAO members](./unlock-dao.md) through an onchain proposal and vote.
+
+If the fee amount is larger than 0%, on every transaction for which there is a payment ([`purchase`](/core-protocol/smart-contracts-api/PublicLock#purchase), [`extend`](/core-protocol/smart-contracts-api/PublicLock#extend) or [`renewMembershipFor`](/core-protocol/smart-contracts-api/PublicLock#renewmembershipfor)), the lock contract will send a portion of the payment to the Unlock contract.
+
+The Unlock Labs team will submit a DAO proposal to add a mechanism that lets anyone submit a transaction to the Unlock contract in order to swap some of the fees collected into UDT tokens and burn these tokens.
