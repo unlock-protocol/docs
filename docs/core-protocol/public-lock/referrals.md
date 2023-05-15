@@ -14,7 +14,7 @@ The referrer can optionally receive a share of the price paid by the purchaser.
 
 ### Setting a referrer fee
 
-A lock manager can call the `setReferrerFee` function on the publick Lock contract to set a speficic referrer fee for a given address. This function takes 2 arguments. The first one is the address of a `referrer` and the second one is the referrer fee percentage, expressed in basis points.
+A lock manager can call the `setReferrerFee` function on the Public Lock contract to set a specific referrer fee for a given address. This function takes 2 arguments. The first one is the address of a `referrer` and the second one is the referrer fee percentage, expressed in basis points.
 
 As such as lock manager can set multiple referrer fees for various referrers. For example a given referrer could receive 10% of the price paid, while another one could receive 30%.
 
