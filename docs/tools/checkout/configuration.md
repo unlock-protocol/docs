@@ -45,6 +45,8 @@ The `paywallConfig` is a JSON object which includes a set of customizations for 
 - `hideSoldOut`: _optional boolean_ defaults to `false`. When set to true, sold our locks are not shown to users when they load the checkout modal.
 - `expectedAddress`: _optional string_. If set, the user will be asked to switch their wallet address before proceeding. This is useful if you want to ensure that the user is using the same address as the one they used to purchase a membership.
 
+- `skipSelect`: _optional boolean_. Skip selection screen if only single lock is available.
+
 ### Locks
 
 The locks object is a list of objects indexed by the lock address, where each object can include the following:
@@ -59,6 +61,7 @@ The locks object is a list of objects indexed by the lock address, where each ob
 - `captcha`: _optional boolean_. defaults to `false`. If set `true`, the users will be prompted to go through a captcha during the checkout process. This is better used in conjunction with a purchase hook that verifies that captcha is valid.
 - `password`: _optional boolean_. Defaults to `false`. If set to `true`, the user will be prompted to enter a password in order to complete their purchases. This will only be useful if the lock is connected to a hook that will handle the [password verification](../../tutorials/smart-contracts/hooks/using-on-key-purchase-hook-to-password-protect.md).
 - `dataBuilder`: _optional url_. If set to a url, checkout will call the URL through a proxy with `recipient`, `lockAddress`, and `network` field for a json response containing data _string_ field. This will be passed to the purchase function when user is claiming or buying the key as is. Make sure the returned data is valid bytes.
+- `skipRecipient`: _optional boolean_. Skip recipient screen if max recipients is 1.
 
 ### Network values
 
