@@ -1,6 +1,6 @@
 ---
 title: Renewals
-description: One of the unique characteristics of the Unlock Protocol is that it can create NFT that have an expiration date. Once expired these NFT can be renewed, or extended, providing the ability to do subscriptions!
+description: One of the unique characteristics of the Unlock Protocol is that it can create NFTs that have expiration dates. Once expired, these NFTs can be renewed, or extended, providing the ability to do subscriptions!
 sidebar_position: 3
 ---
 
