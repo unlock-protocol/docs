@@ -28,16 +28,6 @@ The Lock contract also has a [`grantKeys`](/core-protocol/smart-contracts-api/Pu
 
 Contrary to the previous method, the granter can also customize the expiration of each membership minted using this mechanism, which makes it a convenient method to grant _previews_ or free trials. However, there again, it is critical to set the [key manager](/core-protocol/public-lock/access-control#keymanager) accordingly in order to avoid abuses. For example, if the contract allows for refunds upon cancellation, a malicious recipient of an airdropped key could then claim a refund if they have also been set as _key manager_.
 
-### Renewals and extensions
-
-When a Key is renewed, the Key's expiration date is extended so the Key is considered valid for a longer duration. No new keys or membership tokens are created upon renewals.
-
-For renewals and extensions, each NFT needs to be extended individually. However, they can be extended using different methods:
-
-- [`extend`](/core-protocol/smart-contracts-api/PublicLock#extend) where the sender of the transaction _pays_ for the extension, even if they are not the owner of the NFT itself. It is advised here again to carefuly consider the key manager.
-- [`renewMembershipFor`](/core-protocol/smart-contracts-api/PublicLock#renewmembershipfor) which can only be called for ERC20 locks where the owner has approved the renewals through an ERC20 approval as _their_ balance will be reduced.
-- [`grantKeyExtension`](/core-protocol/smart-contracts-api/PublicLock#grantkeyextension) which is similar to `grantKeys` and can only be called by lock managers or key granters.
-
 ### Protocol Fee
 
 As for version 13, the protocol includes a fee switch. The **fee is initially set to 0**. If the [DAO community](../../governance/unlock-dao.md) decides to change this, then a share of the payment will be sent to the Unlock contract on the chain on which the lock has been deployed.

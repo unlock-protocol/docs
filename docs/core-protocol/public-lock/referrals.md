@@ -1,7 +1,7 @@
 ---
 title: Referrals
 description: The Public Lock membership contracts includes a referral mechanism.
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 Every transaction that includes a transfer of value between a purchaser and the Public Lock smart contracts includes a `referrer` parameter:
