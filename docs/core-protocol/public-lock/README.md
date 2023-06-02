@@ -47,6 +47,20 @@ Lock managers can also alter the behavior of their locks thru the use of [hooks]
 
 Changelogs can be found here for the last two versions.
 
+### Version 13
+
+**Released**: April 2023
+
+This new version improved gas consumption of most functions (by using Solidity custom errors instead of require statements). It solves issues that were appearing when canceling or burning membership keys. 
+
+The helpers functions `addKeyGranter` and `isKeyGranter` have been removed to reduce the size of the contract. The features are still accessible by calling directly `grantRole` and `hasRole` with `keccak256('KEY_GRANTER_ROLE')` as role.
+
+The following feature has been introduced:
+
+### `isRenewable`
+
+Easily check if a key is ready for renewal
+
 ### Version 12
 
 **Released**: October 2022
