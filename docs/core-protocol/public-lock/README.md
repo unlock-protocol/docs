@@ -57,7 +57,7 @@ The helpers functions `addKeyGranter` and `isKeyGranter` have been removed to re
 
 The following feature has been introduced:
 
-### `isRenewable`
+#### `isRenewable`
 
 Easily check if a key is ready for renewal
 
