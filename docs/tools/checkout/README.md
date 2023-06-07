@@ -54,6 +54,6 @@ see what your changes look like in realtime.
 
 
 If you'd like to use that configuration
-with your the [Paywall](../paywall) then download the configuration file by clicking on the "Download JSON" button. 
+with your [Paywall](../paywall), download the configuration file by clicking on the "Download JSON" button. 
 
 ![unlock dashboard checkout builder](/img/tools/checkout/dashboard-checkout-builder.png)
