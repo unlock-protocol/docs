@@ -25,7 +25,7 @@ As of April 2023, the supply of UDT is fixed and no new UDT can be minted.
 
 The protocol aims at being governed by its implementers and users. As such, it automatically distributes UDT tokens on every _purchase_ of a membership, on applicable networks. When making a key purchase, the application sending the transaction can optionally add a `referrer` address to its transaction. This address will receive UDT, if applicable.
 
-> Example: Alice has deployed a lock (memvership contract). Bob wants to purchase membership key from that lock. Bob uses an application created by Carol. The application will prompt Bob to submit a transaction through their wallet. This transaction has been constructed by Carol's application and Carol includes an address of hers as the `referrer`. After the transaction, Alice will receive the price of the membership paid by Bob, Bob will receive a membership NFT from Alice's contract and Carol will receive UDT tokens to join the protocol's governance.
+> Example: Alice has deployed a lock (membership contract). Bob wants to purchase membership key from that lock. Bob uses an application created by Carol. The application will prompt Bob to submit a transaction through their wallet. This transaction has been constructed by Carol's application and Carol includes an address of hers as the `referrer`. After the transaction, Alice will receive the price of the membership paid by Bob, Bob will receive a membership NFT from Alice's contract and Carol will receive UDT tokens to join the protocol's governance.
 
 ### Reward
 
@@ -49,7 +49,7 @@ This design achieves the following characteristics:
 
 ## Protocol Fee
 
-As of Unlock version 13, the protocol includes a "fee switch" but the fee is currentky set to be 0%. This value could be changed by [DAO members](./unlock-dao.md) through an onchain proposal and vote.
+As of Unlock version 13, the protocol includes a "fee switch" but the fee is currently set to be 0%. This value could be changed by [DAO members](./unlock-dao.md) through an onchain proposal and vote.
 
 If the fee amount is larger than 0%, on every transaction for which there is a payment ([`purchase`](/core-protocol/smart-contracts-api/PublicLock#purchase), [`extend`](/core-protocol/smart-contracts-api/PublicLock#extend) or [`renewMembershipFor`](/core-protocol/smart-contracts-api/PublicLock#renewmembershipfor)), the lock contract will send a portion of the payment to the Unlock contract.
 
