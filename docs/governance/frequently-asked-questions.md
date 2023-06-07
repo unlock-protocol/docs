@@ -66,7 +66,7 @@ As a **token holder**, I can either delegate my votes to another member of the c
 
 ## How do I delegate my tokens?
 
-The easiest way is to go to the [Unlock governance page on Tally](https://www.withtally.com/governance/unlock/) and connect your wallet and then you will be able to delegate your vote.
+If you want to have a say in the Unlock DAO, but don’t feel you have the time or ability to keep up with ongoing off-chain and onchain proposals and their related conversations and votes, you can delegate your votes to someone who will vote them on your behalf. [This guide shows you how to delegate off-chain and onchain voting power using Snapshot and Tally](https://unlock-protocol.com/guides/delegation/).
 
 ## Is it possible to become a delegate and not currently hold any UDT
 
