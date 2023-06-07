@@ -83,7 +83,7 @@ Note: if the event is triggered without any payload, please consider that the us
 | hash | the Ethereum transaction         | _string_ |
 | lock | the Ethereum address of the lock | _string_ |
 
-## User metadata
+### User metadata
 
 **event** `unlockProtocol.metadata`
 
