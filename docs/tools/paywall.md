@@ -83,6 +83,12 @@ Note: if the event is triggered without any payload, please consider that the us
 | hash | the Ethereum transaction         | _string_ |
 | lock | the Ethereum address of the lock | _string_ |
 
+## User metadata
+
+**event** `unlockProtocol.metadata`
+
+Sent collected metadata about all the recipients. This is triggered on confirmation of the transaction.
+
 ## Pessimistic Unlocking
 
 One of the features of the paywall application is that it [optimistically unlocks the page](https://unlock-protocol.com/blog/hello-optimistic-unlocking/). This feature improves the customer experience by immediately emitting the `unlocked` event when a transaction is sent, as long as the transaction is likely enough to eventually succeed.
