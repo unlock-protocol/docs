@@ -10,7 +10,7 @@ sidebar_position: 1
 
 ## Building your URL
 
-All of the purchase URsL start with the following base
+All of the purchase URLs start with the following base
 
 ```
 https://app.unlock-protocol.com/checkout?
