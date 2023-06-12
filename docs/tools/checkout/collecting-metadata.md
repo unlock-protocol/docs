@@ -4,6 +4,7 @@ description: >-
   Learn how to configure the checkout process in order to collect members
   information.
 ---
+
 import CodeBlock from '@theme/CodeBlock';
 
 # Collecting Metadata
@@ -23,9 +24,10 @@ The members of this array should have the following shape:
 ```bash
 {
   name: string,
-  type: 'text' | 'date' | 'color' | 'email' | 'url',
+  type: 'text' | 'date' | 'color' | 'email' | 'url' | 'hidden',
   required: boolean,
   defaultValue?: 'string',
+  value?: 'string',
   public?: true,
 }
 ```
@@ -44,6 +46,10 @@ storing the data.
 The `type` field maps to a certain subset of HTML `<input>` types, which
 influences how the form renders. The following configuration results in a
 checkout that looks like image below it.
+
+The `value` attribute is only used if the `type` is `hidden`. The `hidden` type can
+be used to attach specific user details to a user's membership NFT. As such it is
+only really useful if the checkout config is built in a dynamic way.
 
 ```json
 
@@ -97,7 +103,8 @@ checkout that looks like image below it.
           "public":false
        }
     ]
-  ```
+```
+
 <img alt="In this example, first and last names are required and all other fields are optional." class="half-width" src="/img/tools/checkout/collecting-metadata.gif" />
 
 After the user fills out the form and clicks the "Continue" button, they will be prompted to sign a message so the data can be verified as coming from them. After they sign, the key purchase will initiate.
