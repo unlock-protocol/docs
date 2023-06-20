@@ -193,6 +193,7 @@ main {
 dt{
   font-weight: bold;
   padding-top: 14px;
+  padding-bottom: 14px;
 }
 dd {
   margin-left: 15px;
