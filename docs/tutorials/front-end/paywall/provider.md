@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: provider
+title: Provider
 description: >-
   Learn how to use unlock authentication modal as a provider!
 ---

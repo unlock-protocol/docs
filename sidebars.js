@@ -47,7 +47,8 @@ const sidebars = {
     {
       label: "Tools",
       type: "category",
-      link: { //added link tag to display sidebar on tools page
+      link: {
+        //added link tag to display sidebar on tools page
         type: "doc",
         id: "tools/README",
       },
@@ -69,7 +70,10 @@ const sidebars = {
             type: "doc",
             id: "tools/checkout/README",
           },
-          items: ["tools/checkout/configuration", "tools/checkout/collecting-metadata"],
+          items: [
+            "tools/checkout/configuration",
+            "tools/checkout/collecting-metadata",
+          ],
         },
         "tools/unlock.js",
         "tools/paywall",
@@ -129,9 +133,10 @@ const sidebars = {
               type: "category",
               items: [
                 "tutorials/front-end/paywall/magic",
-              ]
-            }
-          ]
+                "tutorials/front-end/paywall/provider",
+              ],
+            },
+          ],
         },
         {
           type: "category",
@@ -139,7 +144,7 @@ const sidebars = {
           items: [
             "tutorials/back-end/backend-locking-with-express.js",
             "tutorials/back-end/locksmith-webhooks",
-          ]
+          ],
         },
         {
           type: "category",
@@ -156,10 +161,12 @@ const sidebars = {
                 type: "doc",
                 id: "tutorials/smart-contracts/hooks/README",
               },
-              items: ["tutorials/smart-contracts/hooks/using-on-key-purchase-hook-to-password-protect"]
-            }
-          ]
-        }
+              items: [
+                "tutorials/smart-contracts/hooks/using-on-key-purchase-hook-to-password-protect",
+              ],
+            },
+          ],
+        },
       ],
     },
     {
