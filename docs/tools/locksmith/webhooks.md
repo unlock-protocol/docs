@@ -11,7 +11,7 @@ Locksmith implements [Websub](https://www.w3.org/TR/websub) which allows anyone 
 
 Currently, locksmith support sending updates on new locks and keys. To subscribe, an application will need to send a post request to the hubs located at `/api/hooks/[topic]`. The body needs to match the schema specified in the [Websub w3c spec](https://www.w3.org/TR/websub/#x5-1-subscriber-sends-subscription-request).
 
-For examples on using the webhooks checkout the tutorial ["Using Webhooks with the Locksmith API"](../../tutorials/back-end/locksmith-webhooks).
+For examples on using the webhooks checkout the tutorial ["Using Webhooks with the Locksmith API"](../../tutorials/back-end/locksmith-webhooks.md).
 
 Currently the following topics are supported: 
 
