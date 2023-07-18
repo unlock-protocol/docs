@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Collectively, UDT holders are members of the Unlock DAO. The Unlock DAO aims at governing the Unlock Protocol. In order to facilitate decision making, the Unlock DAO uses OpenZeppelin's [Governor contracts](https://blog.openzeppelin.com/governor-smart-contract/) which can be found at these addresses:
 
-- [Governor Contract](https://etherscan.io/address/0x7757f7f21f5fa9b1fd168642b79416051cd0bb94) \(`0x7757f7f21f5fa9b1fd168642b79416051cd0bb94`\): where proposals and votes are handled
+- [Governor Contract](https://etherscan.io/address/0x440d9D4E66d39bb28FB58729Cb4D3ead2A595591) \(`0x440d9D4E66d39bb28FB58729Cb4D3ead2A595591`\): where proposals and votes are handled
 - [TimeLock Contract](https://etherscan.io/address/0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b) \(`0x17eedfb0a6e6e06e95b3a1f928dc4024240bc76b`\): where proposals are executed and funds are managed.
 
 > We recommend the use of [Tally's front-end application](https://www.tally.xyz/gov/unlock) to delegate votes, submit proposals as well as vote on the proposals previously submitted.
@@ -34,6 +34,8 @@ As part of the launch of the DAO, Unlock Inc. has allocated the following to the
 - We have also subsequently transfered the remainder of the first community airdrop to the DAO.
 
 As of April 2023, the Unlock DAO owns and manages about 92,450 of its own UDT tokens.
+
+In June 2023, the Governor contract was upgraded from `0x7757f7f21f5fa9b1fd168642b79416051cd0bb94` to `0x440d9D4E66d39bb28FB58729Cb4D3ead2A595591` via a DAO proposal that the community approved and executed onchain. This upgrade is the result of a vulnerability in the OpenZeppelin library and the new Governor contract is now upgradable.
 
 ### Voting
 
