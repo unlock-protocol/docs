@@ -2470,10 +2470,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@unlock-protocol/networks@0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@unlock-protocol/networks/-/networks-0.0.15.tgz#4187f6e6bf723d7bfc3319a46ea7b301094a9d88"
-  integrity sha512-d0S7NY9J8Xr/v3cmNDPgVcfK3yc252fkoyRVzDYYRLp0e4DEuTKvBYJpIenXmov6+iFZAuLsiBU9F1rOpcDZeA==
+"@unlock-protocol/networks@0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@unlock-protocol/networks/-/networks-0.0.16.tgz#770cfbd5007263f8d51ae0b35de76d76e6846967"
+  integrity sha512-rhqUm6Ib4Mh8Lhn/T8TqR4pjGej0YkvwytL5XI7keOm3Pog5xOrAQX20z3097dOZxkAXltlkrusTa5aiASKH+g==
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
